@@ -213,7 +213,7 @@
                 "slug": "real-valladolid-vs-castellon-2026-11-14"
             },
             "sha256": "8199a0b81263290d1bd3745a41a513de9cb6ee343744f713a90256827eac1909",
-            "commit": "pending",
+            "commit": "91696aa5fb4f0b7ca77577571f39aed5c92289de",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0002-r1.json",
             "status": "pending",
             "result": null
