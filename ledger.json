@@ -213,7 +213,7 @@
                 "slug": "almeria-vs-fc-andorra-2026-11-14"
             },
             "sha256": "a27a3b8415ecd5f99b802a6593461bae0b4f0e7304b3aa941cc1d0b870c5ae51",
-            "commit": "pending",
+            "commit": "602e465afef9680a714fe5a37ba2eae3d56dfa7b",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0004-r1.json",
             "status": "pending",
             "result": null
@@ -426,7 +426,7 @@
                 "slug": "mallorca-vs-cordoba-2026-11-14"
             },
             "sha256": "e328ee153f3365add96448d63a9cc8a52ae03a1cab293352664f0d8234df4515",
-            "commit": "pending",
+            "commit": "602e465afef9680a714fe5a37ba2eae3d56dfa7b",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0005-r1.json",
             "status": "pending",
             "result": null
