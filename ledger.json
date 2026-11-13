@@ -7,6 +7,432 @@
     "records": [
         {
             "record": {
+                "away": "fc-andorra",
+                "batch_id": "2026-11-13T0012Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-13T00:12:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0004",
+                "home": "almeria",
+                "inputs": {
+                    "elo_away": 1180.2,
+                    "elo_home": 1360.9,
+                    "lambda_away": 1.154447,
+                    "lambda_home": 2.156012,
+                    "last_result_used": "2026-11-09",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-13T18:08:54Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.600839,
+                        0.204644,
+                        0.194517
+                    ],
+                    "p_elo": [
+                        0.605851,
+                        0.242494,
+                        0.151655
+                    ],
+                    "p_market": [
+                        0.595731,
+                        0.21795,
+                        0.18632
+                    ],
+                    "p_stat": [
+                        0.611413,
+                        0.220053,
+                        0.168534
+                    ],
+                    "retained_mass": 0.999999999826,
+                    "rho": -0.013445,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-14T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-13T18:10:21Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.6094,
+                    "draw_risk": false,
+                    "over_2_5": 0.6387,
+                    "p": [
+                        0.6114,
+                        0.2201,
+                        0.1685
+                    ],
+                    "p_display": [
+                        61.1,
+                        22,
+                        16.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "2-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0997,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.099,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0863,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0788,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0716,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.21,
+                                "home": 0.66
+                            },
+                            "reasons": [
+                                "Almería lead the table with 5 wins and 1 draw at home (goals 15-5), while Andorra are 19th with 1 win in 6 away games.",
+                                "Almería are missing two regular starters on international duty and have several doubtful players, all from one source, so a slight downgrade.",
+                                "Andorra lose regular starter Owono to suspension and have two doubtful players (one source), which lowers their attack slightly."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reasons": [
+                                "Almería are top with 5W 1D 0L at home and 15-5 goals, while FC Andorra are 19th with only 1 away win and 7-11 away goals.",
+                                "Almería have won 8 of their last 10 in all competitions, including a 1-0 at Girona, whereas Andorra have lost 4 of their last 6 league games.",
+                                "Almería are missing several regular starters through international duty and injuries, so their attack is slightly downgraded; Andorra's main confirmed absence is suspended goalkeeper Jesús Owono."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.93,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.21,
+                                "home": 0.65
+                            },
+                            "reasons": [
+                                "League leaders Almería are unbeaten at home with 5 wins and 1 draw from 6 matches, while 19th-placed FC Andorra have lost 3 of their 6 away league fixtures.",
+                                "Almería won both head-to-head league meetings last season and enter this match unbeaten across their last 10 games in all competitions.",
+                                "One source lists regular starters Brian Cipenga and Stefan Džodić out on international duty for Almería alongside Nico Melamed out injured, while one source reports FC Andorra regular starter Jesús Owono is suspended."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.2,
+                                "home": 0.67
+                            },
+                            "reasons": [
+                                "Leaders Almería have won five of six home league matches, scoring 15 and conceding five, while 19th-placed Andorra have lost three of six away games.",
+                                "Almería are unbeaten in their last 10 matches and have won both of the last two league meetings with Andorra.",
+                                "Almería have two regular starters listed out and Andorra have a regular starter suspended, but all team-news reports are from one source."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.23,
+                                "home": 0.62
+                            },
+                            "reasons": [
+                                "Almería are 1st with 29 points from 13 and are unbeaten at home (5W 1D, 15-5), while Andorra are 19th with 11 points from 12.",
+                                "Andorra’s away record is 1W 2D 3L with 7 goals for and 11 against, so a home win is well above the league’s roughly 44–45% home-win base rate.",
+                                "Team news is single-source only: Almería list two regular starters out plus further absences, and Andorra’s regular starter Owono is suspended, so both expected-goals multipliers are slightly below 1.0 rather than confirmed by a second sour"
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6116,
+                        0.2233,
+                        0.1651
+                    ],
+                    "p_adj": [
+                        0.603073,
+                        0.225508,
+                        0.171419
+                    ],
+                    "p_llm": [
+                        0.644342,
+                        0.213982,
+                        0.141677
+                    ],
+                    "p_shadow": [
+                        0.611555,
+                        0.223317,
+                        0.165129
+                    ],
+                    "protocol": "panel-v2-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "almeria-vs-fc-andorra-2026-11-14"
+            },
+            "sha256": "a27a3b8415ecd5f99b802a6593461bae0b4f0e7304b3aa941cc1d0b870c5ae51",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0004-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "cordoba",
+                "batch_id": "2026-11-12T0011Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-12T00:11:52Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0005",
+                "home": "mallorca",
+                "inputs": {
+                    "elo_away": 1231.3,
+                    "elo_home": 1178.5,
+                    "lambda_away": 0.931644,
+                    "lambda_home": 1.547011,
+                    "last_result_used": "2026-11-09",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-13T18:08:54Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.515224,
+                        0.259118,
+                        0.225658
+                    ],
+                    "p_elo": [
+                        0.364597,
+                        0.28567,
+                        0.349733
+                    ],
+                    "p_market": [
+                        0.5038,
+                        0.238863,
+                        0.257337
+                    ],
+                    "p_stat": [
+                        0.442226,
+                        0.274306,
+                        0.283468
+                    ],
+                    "retained_mass": 0.999999999875,
+                    "rho": -0.013306,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-14T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-13T18:10:21Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.4847,
+                    "draw_risk": false,
+                    "over_2_5": 0.442,
+                    "p": [
+                        0.4422,
+                        0.2743,
+                        0.2835
+                    ],
+                    "p_display": [
+                        44.2,
+                        27.4,
+                        28.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1296,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.11,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0961,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0905,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0861,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reasons": [
+                                "Mallorca are strong at home (5W 0D 1L, goals 12-3), and have 12 rest days against Córdoba's 7.",
+                                "Córdoba are weaker on the road (2W 1D 4L, goals 11-14), though their goals total of 22 shows they can score.",
+                                "Mallorca are missing regular starters Valjent, Luvumbo and Morlanes, and Córdoba are missing Iker Álvarez; all of this news rests on one source, so the adjustments are small."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.24,
+                                "home": 0.55
+                            },
+                            "reasons": [
+                                "Mallorca have the strongest home record in the division this season with 5 wins from 6 and a 12-3 goal difference, while Córdoba have lost 4 of 7 away games.",
+                                "Mallorca are missing several regular starters including Valjent, Luvumbo and Morlanes, which slightly reduces their expected attacking output.",
+                                "Córdoba are also missing regular starter Iker Álvarez and have a short 7-day rest compared to Mallorca's 12 days."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.95,
+                            "m_home": 0.91,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reasons": [
+                                "Mallorca have a strong home record in La Liga 2 this season with five wins from six games and a 12-3 goal difference.",
+                                "Córdoba have struggled away from home, losing four of their seven road league fixtures while conceding 14 goals.",
+                                "One source reports three regular starters out for Mallorca due to injury and international duty, alongside one regular starter out for Córdoba."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 0.91,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.27,
+                                "home": 0.48
+                            },
+                            "reasons": [
+                                "Mallorca have won five of six home league matches, conceding only three goals, while Córdoba have lost four of seven away games.",
+                                "Mallorca are sixth with a 15-7 goal record; Córdoba are 11th and have conceded 22 in 13 league matches.",
+                                "Mallorca have regular starters Valjent, Luvumbo and Morlanes listed out, while Córdoba have regular-starter Iker Álvarez out; all team-news reports have one source."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.92,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reasons": [
+                                "Mallorca are 6th with a 5W-0D-1L home record and only 3 goals conceded in 6 home games, while Córdoba are 11th and 2W-1D-4L away.",
+                                "Team news is single-source only: Mallorca list three regular starters out, so expected goals are trimmed, and Córdoba list one regular starter out.",
+                                "Mallorca have 12 rest days to Córdoba’s 7, which supports a narrow home win rather than a high-scoring game."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4481,
+                        0.2775,
+                        0.2744
+                    ],
+                    "p_adj": [
+                        0.43055,
+                        0.281026,
+                        0.288424
+                    ],
+                    "p_llm": [
+                        0.51821,
+                        0.26026,
+                        0.22153
+                    ],
+                    "p_shadow": [
+                        0.448085,
+                        0.277535,
+                        0.274379
+                    ],
+                    "protocol": "panel-v2-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "mallorca-vs-cordoba-2026-11-14"
+            },
+            "sha256": "e328ee153f3365add96448d63a9cc8a52ae03a1cab293352664f0d8234df4515",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0005-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "sporting-gijon",
                 "batch_id": "2026-11-13T0012Z-model-predict",
                 "competition": "la-liga-2",
