@@ -7,6 +7,219 @@
     "records": [
         {
             "record": {
+                "away": "sporting-gijon",
+                "batch_id": "2026-11-13T0012Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-13T00:12:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0003",
+                "home": "real-sociedad-ii",
+                "inputs": {
+                    "elo_away": 1269.5,
+                    "elo_home": 1138.7,
+                    "lambda_away": 1.283536,
+                    "lambda_home": 1.316636,
+                    "last_result_used": "2026-11-09",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-13T16:05:26Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.374137,
+                        0.267235,
+                        0.358628
+                    ],
+                    "p_elo": [
+                        0.287,
+                        0.281521,
+                        0.431478
+                    ],
+                    "p_market": [
+                        0.385231,
+                        0.28861,
+                        0.326159
+                    ],
+                    "p_stat": [
+                        0.329021,
+                        0.27415,
+                        0.396829
+                    ],
+                    "retained_mass": 0.999999999727,
+                    "rho": -0.013445,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-14T15:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-13T16:06:41Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.5327,
+                    "draw_risk": false,
+                    "over_2_5": 0.4792,
+                    "p": [
+                        0.329,
+                        0.2742,
+                        0.3968
+                    ],
+                    "p_display": [
+                        32.9,
+                        27.4,
+                        39.7
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1305,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1036,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0891,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0845,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0779,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.27,
+                                "home": 0.31
+                            },
+                            "reasons": [
+                                "Sporting Gijón sit 7th with 22 points against 17th and 12 points for Real Sociedad II, who have lost 4 of 6 at home.",
+                                "Sporting lose Juan Otero to suspension, with Gelabert and two others doubtful, though all of this comes from one source, so I trim their attack only slightly.",
+                                "Real Sociedad II list no absences, but that comes from one source. Sporting have won the last two league meetings 1-0, and both sides score few goals, which points to a tight game."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.27,
+                                "home": 0.3
+                            },
+                            "reasons": [
+                                "Sporting Gijón are 7th with 22 points and have won 4 of 6 away games, while Real Sociedad II are 17th with only 1 home win from 6.",
+                                "Real Sociedad II have lost 7 of their last 10 and have conceded 22 goals in 13 games, including 10 at home.",
+                                "Sporting Gijón have several regular starters missing or doubtful, including suspended Juan Otero and injured Antonio Casas, so their away strength is slightly reduced."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.28,
+                                "home": 0.34
+                            },
+                            "reasons": [
+                                "Sporting Gijón sit 10 points ahead in the table and boast a strong away record of 4 wins from 6 matches.",
+                                "Real Sociedad II have struggled at home with 4 losses in 6 games, though they recently stabilized by keeping two straight clean sheets.",
+                                "Team news relies on only one source, which lists no absences for the hosts while noting Sporting Gijón regular starter Juan Otero is suspended and César Gelabert is doubtful."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.91,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.28,
+                                "home": 0.29
+                            },
+                            "reasons": [
+                                "Sporting are seventh with 22 points and have won four of six away league matches, while Real Sociedad II are 17th and have lost four of six at home.",
+                                "Real Sociedad II have taken four points from their last two league matches, but their home record is 6 goals scored and 10 conceded in six games.",
+                                "Sporting have Juan Otero suspended and several other players listed doubtful or out, but all of this team news has one source."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.25,
+                                "home": 0.27
+                            },
+                            "reasons": [
+                                "Sporting Gijón are 7th with 22 points from 13 games, while Real Sociedad II are 17th with 12 points and a 15-22 goal record.",
+                                "Real Sociedad II have only 1 win from 6 home league games (6-10); Sporting have 4 wins and no draws from 6 away (7-7).",
+                                "Team news is single-source only: one source lists Juan Otero suspended as a regular starter plus several doubtful or out, so the away adjustment is small; one source lists no home absences, which does not confirm a full squad."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3299,
+                        0.2759,
+                        0.3942
+                    ],
+                    "p_adj": [
+                        0.337044,
+                        0.277038,
+                        0.385918
+                    ],
+                    "p_llm": [
+                        0.301814,
+                        0.27039,
+                        0.427796
+                    ],
+                    "p_shadow": [
+                        0.329904,
+                        0.27588,
+                        0.394216
+                    ],
+                    "protocol": "panel-v2-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "real-sociedad-ii-vs-sporting-gijon-2026-11-14"
+            },
+            "sha256": "a9e729be0abe71eacb1a39f90d6017b6ccae2bff17d5b7d187af8c995c11b5e8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0003-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "blackpool",
                 "batch_id": "2026-11-13T0012Z-model-predict",
                 "competition": "league-one",
@@ -213,7 +426,7 @@
                 "slug": "afc-wimbledon-vs-blackpool-2026-11-14"
             },
             "sha256": "f483f3e2c28531d2b737f3a712091de2b9d49ce57a724116f4af700604d03456",
-            "commit": "pending",
+            "commit": "df3a27a97c0b7b747c14a148349a1f90ef132125",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0016-r1.json",
             "status": "pending",
             "result": null
@@ -426,7 +639,7 @@
                 "slug": "milton-keynes-dons-vs-burton-albion-2026-11-14"
             },
             "sha256": "e262c68fd34a465ef36d7b5e54897efd6d6e22a895dd8061d898502221103a25",
-            "commit": "pending",
+            "commit": "df3a27a97c0b7b747c14a148349a1f90ef132125",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0021-r1.json",
             "status": "pending",
             "result": null
@@ -639,7 +852,7 @@
                 "slug": "sheffield-wednesday-vs-plymouth-argyle-2026-11-14"
             },
             "sha256": "0cae917f248f33e4b403f19ceccd6df73a9541ef65fb44a1810bd5d6156be703",
-            "commit": "pending",
+            "commit": "df3a27a97c0b7b747c14a148349a1f90ef132125",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0023-r1.json",
             "status": "pending",
             "result": null
@@ -852,7 +1065,7 @@
                 "slug": "stockport-county-vs-reading-2026-11-14"
             },
             "sha256": "905ff93d1d824dd04b441f48b0e711d7d745f2d26d4ee05879cbee73a12eed40",
-            "commit": "pending",
+            "commit": "df3a27a97c0b7b747c14a148349a1f90ef132125",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0025-r1.json",
             "status": "pending",
             "result": null
@@ -1065,7 +1278,7 @@
                 "slug": "wigan-athletic-vs-barnsley-2026-11-14"
             },
             "sha256": "534fcfd444541b1a058997ca367675bc62104e824a758f96c7e762f312a8d605",
-            "commit": "pending",
+            "commit": "df3a27a97c0b7b747c14a148349a1f90ef132125",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0026-r1.json",
             "status": "pending",
             "result": null
