@@ -7,6 +7,1071 @@
     "records": [
         {
             "record": {
+                "away": "blackpool",
+                "batch_id": "2026-11-13T0012Z-model-predict",
+                "competition": "league-one",
+                "cutoff_utc": "2026-11-13T00:12:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0016",
+                "home": "afc-wimbledon",
+                "inputs": {
+                    "elo_away": 1165.9,
+                    "elo_home": 1049.9,
+                    "lambda_away": 1.396931,
+                    "lambda_home": 1.153737,
+                    "last_result_used": "2026-11-04",
+                    "market": {
+                        "books": 16,
+                        "captured_utc": "2026-11-13T15:05:26Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.308378,
+                        0.268627,
+                        0.422995
+                    ],
+                    "p_elo": [
+                        0.301227,
+                        0.283087,
+                        0.415686
+                    ],
+                    "p_market": [
+                        0.353621,
+                        0.277203,
+                        0.369176
+                    ],
+                    "p_stat": [
+                        0.303989,
+                        0.27434,
+                        0.42167
+                    ],
+                    "retained_mass": 0.999999999967,
+                    "rho": -0.016367,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-14T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-13T15:06:01Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.5187,
+                    "draw_risk": false,
+                    "over_2_5": 0.4673,
+                    "p": [
+                        0.304,
+                        0.2743,
+                        0.4217
+                    ],
+                    "p_display": [
+                        30.4,
+                        27.4,
+                        42.2
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1305,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1066,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0876,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0867,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0818,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.3,
+                                "home": 0.41
+                            },
+                            "reasons": [
+                                "Both sides are in the bottom half: AFC Wimbledon 18th with 13 points, Blackpool 19th with 12, so the match looks close.",
+                                "AFC Wimbledon have 2W 3D 1L at home, while Blackpool have only 1W 1D 4L away, which gives the hosts a small edge.",
+                                "Team news has one source for each side and lists no absences, so I keep both adjustments at 1.0."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.31,
+                                "home": 0.42
+                            },
+                            "reasons": [
+                                "AFC Wimbledon are 18th and Blackpool 19th, with nearly identical points totals, suggesting a closely matched contest.",
+                                "AFC Wimbledon have drawn 3 of 6 home league games, while Blackpool have lost 4 of 6 away league games, pointing to a low-scoring, tight match.",
+                                "Team news is limited: one source lists no absences for either side, so no adjustment is made for missing players."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.34,
+                                "home": 0.4
+                            },
+                            "reasons": [
+                                "AFC Wimbledon have been solid and low-scoring at home in the league (2W 3D 1L, goals 3-4), while Blackpool have struggled away (1W 1D 4L, goals 5-10).",
+                                "However, Wimbledon are winless in their last 10 matches across all competitions, whereas Blackpool sit just one point behind them with a game in hand and have superior overall goal-scoring output.",
+                                "One source lists no absences for either club yet, which does not confirm fully available squads, so team news adjustments remain at 1.0."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.33,
+                                "home": 0.38
+                            },
+                            "reasons": [
+                                "Wimbledon have been hard to beat at home (2W, 3D, 1L) but have scored only three goals in six league home matches.",
+                                "Blackpool have lost four of six league away games, while both sides sit near the bottom of the table with similar goal differences.",
+                                "Team-news lists show no absences for either side, but each is based on one source only."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.34,
+                                "home": 0.39
+                            },
+                            "reasons": [
+                                "Wimbledon are 18th with only 9 goals in 13 games, and at home they have 3 goals in 6 matches (2W 3D 1L).",
+                                "Blackpool are 19th and have won only 1 of 6 league away games, conceding 10.",
+                                "One source lists no absences for either side and does not confirm a full squad, so team-news multipliers stay at 1.0."
+                            ],
+                            "score": "0-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3237,
+                        0.2858,
+                        0.3905
+                    ],
+                    "p_adj": [
+                        0.30399,
+                        0.274341,
+                        0.42167
+                    ],
+                    "p_llm": [
+                        0.400119,
+                        0.323886,
+                        0.275995
+                    ],
+                    "p_shadow": [
+                        0.323699,
+                        0.285843,
+                        0.390458
+                    ],
+                    "protocol": "panel-v2-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "afc-wimbledon-vs-blackpool-2026-11-14"
+            },
+            "sha256": "f483f3e2c28531d2b737f3a712091de2b9d49ce57a724116f4af700604d03456",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0016-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "burton-albion",
+                "batch_id": "2026-11-13T0012Z-model-predict",
+                "competition": "league-one",
+                "cutoff_utc": "2026-11-13T00:12:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0021",
+                "home": "milton-keynes-dons",
+                "inputs": {
+                    "elo_away": 1126.6,
+                    "elo_home": 1070.4,
+                    "lambda_away": 1.163532,
+                    "lambda_home": 1.581276,
+                    "last_result_used": "2026-11-04",
+                    "market": {
+                        "books": 16,
+                        "captured_utc": "2026-11-13T15:05:26Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.468266,
+                        0.253239,
+                        0.278495
+                    ],
+                    "p_elo": [
+                        0.360996,
+                        0.285702,
+                        0.353302
+                    ],
+                    "p_market": [
+                        0.573157,
+                        0.229862,
+                        0.19698
+                    ],
+                    "p_stat": [
+                        0.415835,
+                        0.269105,
+                        0.31506
+                    ],
+                    "retained_mass": 0.999999999829,
+                    "rho": -0.016367,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-14T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-13T15:06:01Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.5532,
+                    "draw_risk": false,
+                    "over_2_5": 0.5105,
+                    "p": [
+                        0.4158,
+                        0.2691,
+                        0.3151
+                    ],
+                    "p_display": [
+                        41.6,
+                        26.9,
+                        31.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1277,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0885,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.083,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0824,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0778,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.27,
+                                "home": 0.47
+                            },
+                            "reasons": [
+                                "MK Dons are unbeaten in 6 of 7 home league games (3W 3D 1L, goals 15-10), while Burton have won only 2 of 7 away (6 goals scored).",
+                                "MK Dons are in strong recent form with a 6-1 win over Doncaster and a 4-1 win over Bromley, while Burton lost 0-2 at Wycombe and 0-3 to Notts County.",
+                                "Team news: one source lists no absences for either side, which does not confirm full squads, so no adjustment is made."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.27,
+                                "home": 0.52
+                            },
+                            "reasons": [
+                                "Milton Keynes Dons are 12th with a strong home record of 3W 3D 1L and 15 goals scored in 7 home league games, while Burton Albion have lost 4 of 7 away league games and scored only 6 away goals.",
+                                "MK Dons have won their last five matches in all competitions, scoring 15 goals in that run, whereas Burton Albion lost their most recent league away game 0-2 at Wycombe and were beaten 0-3 by Notts County in their last match.",
+                                "Team news is limited: one source lists no absences for either side, but that does not confirm full availability, so no team-news adjustment is applied."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.27,
+                                "home": 0.51
+                            },
+                            "reasons": [
+                                "Milton Keynes Dons are in strong recent form, winning five consecutive matches across all competitions and scoring 15 goals in that span.",
+                                "Burton Albion have struggled away from home in the league this season, losing four of their seven away fixtures and scoring just six goals.",
+                                "One source lists no absences for either team, so no team news adjustments have been made."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.28,
+                                "home": 0.48
+                            },
+                            "reasons": [
+                                "Milton Keynes Dons have a stronger home league record (3W-3D-1L, 15-10) than Burton's away record (2W-1D-4L, 6-11).",
+                                "MK Dons are unbeaten in their past six matches in all competitions, winning each of the last five, while Burton lost their latest match 0-3.",
+                                "Team-news availability is only reported by one source for both clubs, with no listed absences; this does not confirm fully available squads."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.28,
+                                "home": 0.49
+                            },
+                            "reasons": [
+                                "MK Dons are 12th with a home record of 3W 3D 1L and 15 goals in 7, while Burton are 15th and have scored only 6 in 7 away games.",
+                                "League One home-win base rates are 42% this season and 46% last season, and equal rest of 4 days does not shift that edge.",
+                                "One source lists no absences for either side yet, so that does not confirm full squads and team-news multipliers stay at 1.0."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4318,
+                        0.271,
+                        0.2972
+                    ],
+                    "p_adj": [
+                        0.415836,
+                        0.269105,
+                        0.31506
+                    ],
+                    "p_llm": [
+                        0.494156,
+                        0.274236,
+                        0.231608
+                    ],
+                    "p_shadow": [
+                        0.431813,
+                        0.270986,
+                        0.297201
+                    ],
+                    "protocol": "panel-v2-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "milton-keynes-dons-vs-burton-albion-2026-11-14"
+            },
+            "sha256": "e262c68fd34a465ef36d7b5e54897efd6d6e22a895dd8061d898502221103a25",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0021-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "plymouth-argyle",
+                "batch_id": "2026-11-13T0012Z-model-predict",
+                "competition": "league-one",
+                "cutoff_utc": "2026-11-13T00:12:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0023",
+                "home": "sheffield-wednesday",
+                "inputs": {
+                    "elo_away": 1206.5,
+                    "elo_home": 1077.4,
+                    "lambda_away": 1.329056,
+                    "lambda_home": 1.614544,
+                    "last_result_used": "2026-11-04",
+                    "market": {
+                        "books": 14,
+                        "captured_utc": "2026-11-13T15:05:26Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.439805,
+                        0.246618,
+                        0.313577
+                    ],
+                    "p_elo": [
+                        0.288635,
+                        0.281721,
+                        0.429644
+                    ],
+                    "p_market": [
+                        0.411605,
+                        0.255421,
+                        0.332974
+                    ],
+                    "p_stat": [
+                        0.361651,
+                        0.265492,
+                        0.372857
+                    ],
+                    "retained_mass": 0.999999999761,
+                    "rho": -0.016367,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-14T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-13T15:06:01Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.5967,
+                    "draw_risk": false,
+                    "over_2_5": 0.5564,
+                    "p": [
+                        0.3617,
+                        0.2654,
+                        0.3729
+                    ],
+                    "p_display": [
+                        36.2,
+                        26.5,
+                        37.3
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1236,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0893,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0811,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.075,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0684,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.29,
+                                "home": 0.42
+                            },
+                            "reasons": [
+                                "Sheffield Wednesday are strong at home (2W 4D 1L, goals 14-5), but they are winless in their last five league games (3D... 2L) and lost 0-4 to Accrington Stanley on Nov 11.",
+                                "Plymouth are 5th with a solid away record (4W 1D 2L), so the gap between the sides is small, and Wednesday's 4 home draws support a high draw share.",
+                                "Team news: one source lists no absences for either side, which does not confirm full squads, so both adjustments stay at 1.0."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.3,
+                                "home": 0.38
+                            },
+                            "reasons": [
+                                "Sheffield Wednesday have drawn 4 of 7 home league games this season and are winless in their last four matches, while Plymouth have won 4 of 7 away league games.",
+                                "The league base rates and both clubs' recent form point to a closely matched contest, with Wednesday's strong home goals record (14 scored, 5 conceded) offset by Plymouth's solid away record.",
+                                "Team news is limited: one source lists no absences for each side, but that does not confirm full availability, so no team-news adjustment is applied."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reasons": [
+                                "Sheffield Wednesday have proven difficult to beat at Hillsborough with only one loss and five goals conceded in seven home league games, though four of those matches ended in draws.",
+                                "Plymouth Argyle arrive in much better recent form with three wins and a draw in their last four outings across all competitions, compared to Sheffield Wednesday's six-game winless run.",
+                                "Team news adjustments are kept neutral because one source lists no absences for either club yet, which does not confirm fully available squads."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.31,
+                                "home": 0.38
+                            },
+                            "reasons": [
+                                "Sheffield Wednesday have conceded only five goals in seven home league matches, although four of those games were draws.",
+                                "Plymouth have won four of seven league away matches and sit fifth, three points above Wednesday.",
+                                "Both teams have only one-source empty absence lists, so availability is not confirmed rather than assumed fully fit."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.35,
+                                "home": 0.36
+                            },
+                            "reasons": [
+                                "Sheffield Wednesday are 9th with 20 points from 13 and a 22-14 goal record, but only 2 wins and 4 draws from 7 home league games, with 14 scored and 5 conceded.",
+                                "Plymouth are 5th on 23 points from 14 and have won 4 of 7 away league games, scoring 13 and conceding 12.",
+                                "One source lists no absences for either side, which does not confirm full squads, so team-news multipliers stay at 1.0."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3683,
+                        0.2744,
+                        0.3573
+                    ],
+                    "p_adj": [
+                        0.361651,
+                        0.265492,
+                        0.372857
+                    ],
+                    "p_llm": [
+                        0.39196,
+                        0.309872,
+                        0.298168
+                    ],
+                    "p_shadow": [
+                        0.368292,
+                        0.274404,
+                        0.357304
+                    ],
+                    "protocol": "panel-v2-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "sheffield-wednesday-vs-plymouth-argyle-2026-11-14"
+            },
+            "sha256": "0cae917f248f33e4b403f19ceccd6df73a9541ef65fb44a1810bd5d6156be703",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0023-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "reading",
+                "batch_id": "2026-11-13T0012Z-model-predict",
+                "competition": "league-one",
+                "cutoff_utc": "2026-11-13T00:12:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0025",
+                "home": "stockport-county",
+                "inputs": {
+                    "elo_away": 1227.2,
+                    "elo_home": 1288.3,
+                    "lambda_away": 1.159939,
+                    "lambda_home": 1.662948,
+                    "last_result_used": "2026-11-04",
+                    "market": {
+                        "books": 16,
+                        "captured_utc": "2026-11-13T15:05:26Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.489246,
+                        0.246508,
+                        0.264245
+                    ],
+                    "p_elo": [
+                        0.484851,
+                        0.273713,
+                        0.241436
+                    ],
+                    "p_market": [
+                        0.51758,
+                        0.242646,
+                        0.239775
+                    ],
+                    "p_stat": [
+                        0.491461,
+                        0.25792,
+                        0.250619
+                    ],
+                    "retained_mass": 0.999999999965,
+                    "rho": -0.016367,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-14T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-13T15:06:01Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.5609,
+                    "draw_risk": false,
+                    "over_2_5": 0.5325,
+                    "p": [
+                        0.4915,
+                        0.2579,
+                        0.2506
+                    ],
+                    "p_display": [
+                        49.1,
+                        25.8,
+                        25.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1219,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0974,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0958,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0826,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0641,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.27,
+                                "home": 0.47
+                            },
+                            "reasons": [
+                                "Stockport are 2nd and won 5 of 7 home league games (goals 16-9), which supports a home edge.",
+                                "Reading have won only 1 of 7 away league games (3 draws, 3 losses, goals 8-8), so they travel poorly.",
+                                "Team news is limited to one source listing no absences for either side, so no adjustment is made; both teams had 4 rest days."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.26,
+                                "home": 0.52
+                            },
+                            "reasons": [
+                                "Stockport are 2nd with a strong home record of 5W 0D 2L and 16 goals scored in 7 home league games, while Reading have only 1 away win in 7 with 8 goals scored.",
+                                "Stockport have won 6 of their last 10 and are unbeaten in 4 of their last 5, whereas Reading have lost 3 of their last 5 league matches.",
+                                "Head-to-head at Edgeley Park favours Stockport, who won 4-1 in 2024 and drew 1-1 in 2025, though Reading won the most recent meeting 1-0 at home."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.26,
+                                "home": 0.51
+                            },
+                            "reasons": [
+                                "Second-placed Stockport County hold a strong home league record with five wins from seven games, outscoring opponents 16 to 9.",
+                                "Sixth-placed Reading have won just one of their seven away league fixtures this season, recording three draws and three losses.",
+                                "Team news relies on one source listing no absences for either side, so expected goals adjustments remain neutral."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reasons": [
+                                "Stockport are second with 26 points and have won five of seven home league matches, scoring 16 goals.",
+                                "Reading are sixth but have won only one of seven away league matches.",
+                                "Both sides have four rest days, while each team-news list has no absences from only one source."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.27,
+                                "home": 0.51
+                            },
+                            "reasons": [
+                                "Stockport are 2nd with 26 points and a 5-0-2 home league record, while Reading are 6th and have only one away league win from seven.",
+                                "Reading's away league goals are 8-8, so Stockport's stronger home attack still points to a narrow home win rather than a clear away result.",
+                                "One source lists no absences for either side and does not confirm a fully available squad, so team news does not change expected goals."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4936,
+                        0.2596,
+                        0.2468
+                    ],
+                    "p_adj": [
+                        0.491461,
+                        0.25792,
+                        0.250619
+                    ],
+                    "p_llm": [
+                        0.502096,
+                        0.266165,
+                        0.231739
+                    ],
+                    "p_shadow": [
+                        0.493648,
+                        0.259589,
+                        0.246763
+                    ],
+                    "protocol": "panel-v2-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "stockport-county-vs-reading-2026-11-14"
+            },
+            "sha256": "905ff93d1d824dd04b441f48b0e711d7d745f2d26d4ee05879cbee73a12eed40",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0025-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "barnsley",
+                "batch_id": "2026-11-12T0011Z-model-predict",
+                "competition": "league-one",
+                "cutoff_utc": "2026-11-12T00:11:52Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0026",
+                "home": "wigan-athletic",
+                "inputs": {
+                    "elo_away": 1131.1,
+                    "elo_home": 1109.7,
+                    "lambda_away": 1.192715,
+                    "lambda_home": 1.340635,
+                    "last_result_used": "2026-11-04",
+                    "market": {
+                        "books": 16,
+                        "captured_utc": "2026-11-13T15:05:26Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.399409,
+                        0.271214,
+                        0.329377
+                    ],
+                    "p_elo": [
+                        0.397344,
+                        0.28446,
+                        0.318196
+                    ],
+                    "p_market": [
+                        0.399959,
+                        0.260939,
+                        0.339103
+                    ],
+                    "p_stat": [
+                        0.400137,
+                        0.276418,
+                        0.323445
+                    ],
+                    "retained_mass": 0.999999999756,
+                    "rho": -0.016337,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-14T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-13T15:06:01Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.5177,
+                    "draw_risk": false,
+                    "over_2_5": 0.463,
+                    "p": [
+                        0.4001,
+                        0.2765,
+                        0.3234
+                    ],
+                    "p_display": [
+                        40,
+                        27.7,
+                        32.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1315,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1045,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0909,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0852,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0831,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.29,
+                                "home": 0.43
+                            },
+                            "reasons": [
+                                "Both sides are in the bottom four (Wigan 21st, Barnsley 23rd), and Barnsley's away record is poor at 1W 1D 4L with 6-11 goals.",
+                                "Wigan has a slight home edge at 3W 1D 3L, with 4 rest days against Barnsley's 3.",
+                                "The last five league meetings were four draws and one Wigan win, and the cup meeting was also 1-1. Team news is limited to one source listing no absences, so no adjustment."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.31,
+                                "home": 0.42
+                            },
+                            "reasons": [
+                                "Wigan are 21st and Barnsley 23rd, with both sides in poor league form, so neither has a clear edge.",
+                                "The last five league meetings have all ended 1-1, including the most recent three.",
+                                "Wigan have won three of seven home league games while Barnsley have lost four of six away, but Barnsley's away record is only slightly worse than Wigan's home record."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.31,
+                                "home": 0.43
+                            },
+                            "reasons": [
+                                "Both clubs are struggling near the bottom of the table, with Wigan Athletic in 21st on 11 points and Barnsley in 23rd on 9 points.",
+                                "Five of the last six meetings between these sides across league and cup competitions have ended in 1-1 draws.",
+                                "Only one source provides team news for this match and lists no absences for either squad, so no team news adjustments are made."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.31,
+                                "home": 0.43
+                            },
+                            "reasons": [
+                                "Wigan are 21st and Barnsley 23rd, with both sides having conceded 22 league goals.",
+                                "Wigan’s home record is 3-1-3, while Barnsley have lost four of six away league matches.",
+                                "The past four league meetings have all finished 1-1; team-news lists show no absences but only one source for each club."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.33,
+                                "home": 0.4
+                            },
+                            "reasons": [
+                                "Wigan are 21st with 11 points from 14 and only 7 goals in 7 home league games, so a narrow home edge over a weaker side is more likely than a clear win.",
+                                "Barnsley are 23rd with 9 points from 12 and 1 win in 6 away league games, which keeps the away win below the league base rate.",
+                                "The last five league meetings were four draws and one Wigan win, all 1-1 or 1-0, and one source lists no absences for either side without confirming full squads."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4049,
+                        0.2832,
+                        0.3119
+                    ],
+                    "p_adj": [
+                        0.400137,
+                        0.276418,
+                        0.323445
+                    ],
+                    "p_llm": [
+                        0.422058,
+                        0.309905,
+                        0.268037
+                    ],
+                    "p_shadow": [
+                        0.404932,
+                        0.283165,
+                        0.311903
+                    ],
+                    "protocol": "panel-v2-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "wigan-athletic-vs-barnsley-2026-11-14"
+            },
+            "sha256": "534fcfd444541b1a058997ca367675bc62104e824a758f96c7e762f312a8d605",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0026-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "castellon",
                 "batch_id": "2026-11-13T0012Z-model-predict",
                 "competition": "la-liga-2",
