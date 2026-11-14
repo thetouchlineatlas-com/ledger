@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "ceuta",
+                "batch_id": "2026-11-14T0012Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-14T00:12:12Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0007",
+                "home": "tenerife",
+                "inputs": {
+                    "elo_away": 1110.9,
+                    "elo_home": 1143.7,
+                    "lambda_away": 0.937417,
+                    "lambda_home": 1.528498,
+                    "last_result_used": "2026-11-13",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-14T13:05:32Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.508977,
+                        0.261148,
+                        0.229875
+                    ],
+                    "p_elo": [
+                        0.454864,
+                        0.27857,
+                        0.266567
+                    ],
+                    "p_market": [
+                        0.529781,
+                        0.254721,
+                        0.215497
+                    ],
+                    "p_stat": [
+                        0.485891,
+                        0.268358,
+                        0.245752
+                    ],
+                    "retained_mass": 0.999999999893,
+                    "rho": -0.013701,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-15T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-14T13:07:28Z",
+                "model_version": "v1.3-2026-11",
+                "published": {
+                    "btts": 0.4805,
+                    "draw_risk": false,
+                    "over_2_5": 0.444,
+                    "p": [
+                        0.4859,
+                        0.2683,
+                        0.2458
+                    ],
+                    "p_display": [
+                        48.6,
+                        26.8,
+                        24.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1267,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1223,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0947,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.089,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0888,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.26,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Ceuta have lost 10 of 13 league games and conceded 18 goals in 6 away games, while Tenerife have drawn six of twelve and are hard to beat at home.",
+                                "Ceuta sit in the relegation zone, 7 points from safety, so they need points more, but Tenerife are only 4 points above the drop and cannot relax.",
+                                "Both sides miss players on international duty (one source only); Tenerife's Ranos has never started and Ceuta's Sevikyan has started 5 of 13, so the effect is small."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Ceuta are 7 points from safety and effectively need a result, but their away record is 0W 1D 5L with 4 goals scored and 18 conceded, so the pressure is unlikely to translate into control.",
+                                "Tenerife are missing only Dani Fernández and reserve forward Grant-Leon Ranos, while Ceuta lose midfielder Edgar Sevikyan and have Kenneth Obinna Mamah doubtful, so the home side's core is largely intact.",
+                                "Tenerife have drawn six of their last seven league games, but they are unbeaten in five at home and face a Ceuta side that has lost five of six away matches."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.23,
+                                "home": 0.65
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides have relegation concerns, with Tenerife four points above the drop zone and bottom-side Ceuta needing points desperately as they sit seven points from safety.",
+                                "Ceuta's porous away defense, which has conceded 18 goals in five losses and one draw across six road games, gives Tenerife a strong chance to end their four-match winless streak of draws.",
+                                "Only one source reports international duty and injury absences for squad players on both sides, such as Ceuta midfielder Edgar Sevikyan who has five starts, leaving both core lineups largely intact."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 0.99,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.24,
+                                "home": 0.6
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Ceuta are without midfielder Sevikyan, a five-start player, while Tenerife's only quantified absentee is a non-starting forward; both reports are from one source.",
+                                "Ceuta are seven points from safety and need a turnaround, but Tenerife can widen their four-point cushion over the relegation zone.",
+                                "Ceuta have lost five of six away league matches and conceded 18 goals, giving Tenerife a clear home-edge opportunity."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.26,
+                                "home": 0.57
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Ceuta are 22nd and 7 points from safety, so they need points more than 14th-placed Tenerife, who sit 4 points above the drop with promotion still distant.",
+                                "Ceuta have taken one point from six away league games and conceded 18, so an ordinary home side is favoured to keep them quiet.",
+                                "Listed absences come from one source only: Tenerife miss a non-starting forward with one league goal, and Ceuta a midfielder with 5 of 13 starts, so expected goals are left unchanged."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5046,
+                        0.2661,
+                        0.2292
+                    ],
+                    "p_adj": [
+                        0.486276,
+                        0.269347,
+                        0.244378
+                    ],
+                    "p_llm": [
+                        0.575893,
+                        0.24949,
+                        0.174617
+                    ],
+                    "p_shadow": [
+                        0.504648,
+                        0.266118,
+                        0.229235
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "tenerife-vs-ceuta-2026-11-15"
+            },
+            "sha256": "f2a615281766eb4aa7b7678015ae88a3a1c31bb773f5fec006855f50ff66ef52",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0007-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "girona",
                 "batch_id": "2026-11-13T0012Z-model-predict",
                 "competition": "la-liga-2",
