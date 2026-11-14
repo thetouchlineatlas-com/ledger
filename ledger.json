@@ -238,7 +238,7 @@
                 "slug": "eibar-vs-cadiz-2026-11-15"
             },
             "sha256": "9e680804e5222f1ec11faa36128914a5057fbad3d455fd22f26c6e0ec1da917b",
-            "commit": "pending",
+            "commit": "b642aa23273f416d1016693c64d783a9fc6d3ee6",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0009-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +476,7 @@
                 "slug": "eldense-vs-cd-sabadell-2026-11-15"
             },
             "sha256": "8e29f0bbd71b2d3cea561e6a4aea34a8daf132f890b03bf26983a20dac6d6c0b",
-            "commit": "pending",
+            "commit": "b642aa23273f416d1016693c64d783a9fc6d3ee6",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0010-r1.json",
             "status": "pending",
             "result": null
