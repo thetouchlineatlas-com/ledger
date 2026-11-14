@@ -238,7 +238,7 @@
                 "slug": "tenerife-vs-ceuta-2026-11-15"
             },
             "sha256": "f2a615281766eb4aa7b7678015ae88a3a1c31bb773f5fec006855f50ff66ef52",
-            "commit": "pending",
+            "commit": "fa081bb3f892769015c3602128d34512d8cc202a",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0007-r1.json",
             "status": "pending",
             "result": null
