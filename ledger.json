@@ -716,8 +716,12 @@
             "sha256": "f246d28c920df6d2535838186d53aa2735602efa2dfff202d9a94e0ea246d5c3",
             "commit": "f9613f38a6abf003c254def0c75b5888b07c8ac0",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0008-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1992
+            }
         },
         {
             "record": {
