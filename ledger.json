@@ -7,6 +7,720 @@
     "records": [
         {
             "record": {
+                "away": "shimizu-s-pulse",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0001",
+                "home": "kashima-antlers",
+                "inputs": {
+                    "elo_away": 1358.2,
+                    "elo_home": 1640.4,
+                    "lambda_away": 0.745935,
+                    "lambda_home": 1.849184,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-19T10:05:49Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.63426,
+                        0.22289,
+                        0.14285
+                    ],
+                    "p_elo": [
+                        0.695298,
+                        0.20773,
+                        0.096972
+                    ],
+                    "p_market": [
+                        0.628265,
+                        0.218778,
+                        0.152957
+                    ],
+                    "p_stat": [
+                        0.673702,
+                        0.212077,
+                        0.114221
+                    ],
+                    "retained_mass": 0.999999999842,
+                    "rho": -0.018752,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T10:08:20Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.4401,
+                    "draw_risk": false,
+                    "over_2_5": 0.4877,
+                    "p": [
+                        0.6737,
+                        0.2121,
+                        0.1142
+                    ],
+                    "p_display": [
+                        67.4,
+                        21.2,
+                        11.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1445,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1355,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1011,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0998,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0835,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.2,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Shimizu have lost their last five matches, scoring 0 in each and conceding 12, while Kashima have scored 3+ goals in four of their last eight games.",
+                                "Shimizu are 15th, only 2 points above the relegation zone, so they need points, while Kashima are 11 points clear of the drop and 10 behind the leaders.",
+                                "Kashima have had 5 rest days and 3 matches in 14 days, against 13 days and 1 match for Shimizu, which narrows the gap slightly."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.22,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Kashima have won 5 of 7 home league games and scored 15 goals at home, while Shimizu have lost 4 of 6 away and scored only 4 away goals, so the hosts' attacking edge at Kashima Soccer Stadium is a key difference.",
+                                "Shimizu are only 2 points above the relegation zone and have lost 8 of 14 league games, so they need points badly, but Kashima are 11 points clear of danger and can play with less pressure.",
+                                "Kashima have won the last four league meetings at home and are unbeaten in the last five head-to-head league matches, including a 1-0 home win in May 2025."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.21,
+                                "home": 0.65
+                            },
+                            "reason_types": [
+                                "form",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Shimizu S-Pulse enter on a four-match losing streak without scoring a single goal, whereas Kashima Antlers have won five of seven home league matches and scored nearly three times as many league goals overall.",
+                                "Shimizu S-Pulse have a significant rest advantage with 13 days off compared to five for Kashima Antlers, who also face a busy schedule ahead of an AFC Champions League Elite fixture five days later.",
+                                "One source lists no absences for either squad yet, so no expected goals adjustments are applied."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.24,
+                                "home": 0.59
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Shimizu are only two points above relegation, so the visitors have greater immediate need for a result.",
+                                "Kashima's five home league wins from seven and Shimizu's four away losses from six point strongly toward a home-controlled match.",
+                                "Kashima are unbeaten in the last five league meetings with Shimizu, winning four."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.23,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Shimizu sit only 2 points above the relegation zone after 14 games, so the points matter more to them than to Kashima, who are 11 points clear of the drop and 10 off the leaders.",
+                                "Kashima have had only 5 days' rest and three matches in the last 14 days, with an AFC Champions League Elite game five days later, while Shimizu have had 13 days' rest.",
+                                "Shimizu have scored just 4 goals and lost 4 of 6 away, against a Kashima side unbeaten in five of seven home league games, which points to a controlled home win rather than an open contest."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6624,
+                        0.2141,
+                        0.1235
+                    ],
+                    "p_adj": [
+                        0.673702,
+                        0.212077,
+                        0.11422
+                    ],
+                    "p_llm": [
+                        0.612915,
+                        0.220053,
+                        0.167032
+                    ],
+                    "p_shadow": [
+                        0.662425,
+                        0.214083,
+                        0.123492
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "kashima-antlers-vs-shimizu-s-pulse-2026-11-20"
+            },
+            "sha256": "3f56aaf38f41e2a8365609fd42378b41c685284fd20a0b8003d56b6c7768eb07",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0001-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "jef-united-ichihara-chiba",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0002",
+                "home": "kashiwa-reysol",
+                "inputs": {
+                    "elo_away": 1328.2,
+                    "elo_home": 1559.7,
+                    "lambda_away": 0.994664,
+                    "lambda_home": 2.070002,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 18,
+                        "captured_utc": "2026-11-19T10:05:49Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.619758,
+                        0.208724,
+                        0.171518
+                    ],
+                    "p_elo": [
+                        0.652566,
+                        0.225586,
+                        0.121848
+                    ],
+                    "p_market": [
+                        0.630992,
+                        0.20729,
+                        0.161718
+                    ],
+                    "p_stat": [
+                        0.644838,
+                        0.21404,
+                        0.141122
+                    ],
+                    "retained_mass": 0.999999999906,
+                    "rho": -0.018752,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T10:08:20Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.552,
+                    "draw_risk": false,
+                    "over_2_5": 0.5915,
+                    "p": [
+                        0.6448,
+                        0.2141,
+                        0.1411
+                    ],
+                    "p_display": [
+                        64.5,
+                        21.4,
+                        14.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.104,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1035,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.1004,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0986,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0718,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kashiwa are 2nd, 2 points off the lead, while JEF are 17th and only 1 point above the drop, so both sides need the points.",
+                                "Kashiwa have 5 rest days, 3 matches in the last 14 days and an AFC Champions League Elite trip 4 days later, against 12 rest days for JEF, so some rotation or fatigue is possible.",
+                                "Kashiwa have won 5 of 7 at home (17-11) and JEF have no away wins in 7 (8-17), though the two league meetings this season both produced 3 or more goals at each end."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.21,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Kashiwa are 2 points behind the leaders and chasing the title, while JEF are only 1 point above the relegation zone, so the home side has both the stronger incentive and far more quality.",
+                                "Kashiwa have won 8 of their last 9 in all competitions, including 5-4 and 2-1 wins over Kawasaki Frontale, while JEF have won only 2 of their last 10.",
+                                "Kashiwa have played 3 matches in the last 14 days and have an AFC Champions League match in 4 days, which may prompt some rotation, but JEF's 12-day rest does not offset the gap in away form: 0 wins in 7 away league games."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.2,
+                                "home": 0.65
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Kashiwa Reysol come off three matches in 14 days with an AFC Champions League Elite trip to Newcastle Jets four days later, whereas JEF United Ichihara-Chiba have had 12 days of rest.",
+                                "Kashiwa Reysol are on a five-match winning streak across all competitions and face an opponent winless in seven away league games, giving the hosts a decisive edge.",
+                                "One source lists no absences for either club yet, which does not confirm fully available squads so no team news adjustments are made."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.21,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kashiwa have had only five rest days and an AFC Champions League Elite trip four days later, while Chiba arrive after 12 days' rest.",
+                                "Kashiwa are two points off first place, while Chiba are only one point above relegation, giving both strong incentive but different pressure.",
+                                "Kashiwa's five wins in their last six matches and Chiba's 0-2-5 away league record point to a clear home edge despite Kashiwa's schedule."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Kashiwa have had only 5 rest days and three matches in the last 14, with an AFC Champions League Elite game four days later, while JEF have had 12 rest days and just one match in that span.",
+                                "Kashiwa are 2nd and only 2 points off the leaders, while JEF are 17th and just 1 point above the relegation zone, so both sides need points but for very different reasons.",
+                                "One source lists no absences for either side; that does not confirm either squad is fully available, so expected goals are left unadjusted."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6428,
+                        0.2137,
+                        0.1436
+                    ],
+                    "p_adj": [
+                        0.644838,
+                        0.21404,
+                        0.141122
+                    ],
+                    "p_llm": [
+                        0.634255,
+                        0.21199,
+                        0.153755
+                    ],
+                    "p_shadow": [
+                        0.642773,
+                        0.21365,
+                        0.143577
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "kashiwa-reysol-vs-jef-united-ichihara-chiba-2026-11-20"
+            },
+            "sha256": "22402c4a6e209b364315bd30ba3ab7fe87f136f22e79a4063a41f4865f2d68ca",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0002-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "mito-hollyhock",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0003",
+                "home": "vissel-kobe",
+                "inputs": {
+                    "elo_away": 1307.5,
+                    "elo_home": 1614.1,
+                    "lambda_away": 0.705876,
+                    "lambda_home": 2.062556,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-19T10:05:49Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.688628,
+                        0.196717,
+                        0.114655
+                    ],
+                    "p_elo": [
+                        0.714408,
+                        0.198989,
+                        0.086603
+                    ],
+                    "p_market": [
+                        0.675442,
+                        0.206247,
+                        0.118311
+                    ],
+                    "p_stat": [
+                        0.710123,
+                        0.193915,
+                        0.095962
+                    ],
+                    "retained_mass": 0.999999999911,
+                    "rho": -0.018747,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T10:08:20Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.4414,
+                    "draw_risk": false,
+                    "over_2_5": 0.5266,
+                    "p": [
+                        0.7101,
+                        0.1939,
+                        0.096
+                    ],
+                    "p_display": [
+                        71,
+                        19.4,
+                        9.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1377,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1317,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0972,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0946,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0918,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.23,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Mito have lost nine of 14 league games, conceded 26 and scored 0 in their last six matches in the fact sheet's recent run apart from a cup win, while Kobe are unbeaten at home (4W 3D).",
+                                "Mito sit 19th, 4 points from safety, so they need points, but Kobe are 5th and only 6 points behind the leaders.",
+                                "Kobe have only 5 rest days and a Champions League trip in 4 days, which may cost some energy, while Mito have 12 rest days; team news is from one source and lists no absences for either side."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.2,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Vissel Kobe are 6 points behind the leaders and need a home win to stay in the title race, while Mito are 4 points from safety in the relegation zone and desperate for points.",
+                                "Kobe are unbeaten at home in the league this season (4W 3D) and have scored 13 goals in those 7 games, whereas Mito have lost 5 of 7 away games and scored only 5 away goals.",
+                                "No absences are listed for either side, but the fact sheet notes this is based on one source and does not confirm full availability."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.2,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Vissel Kobe have played three matches in the past 14 days and face an away AFC Champions League Elite game in four days, whereas Mito Hollyhock have had 12 days of rest.",
+                                "Unbeaten at home in the league this season, Vissel Kobe face a Mito Hollyhock side on a six-match losing streak across all competitions and failing to score in their last four.",
+                                "Only one source lists no absences for either club so far, which does not confirm fully fit squads."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kobe have only five days' rest and an AFC Champions League trip four days later, while Mito have had 12 days to prepare.",
+                                "Mito are four points from safety in the relegation zone, increasing the importance of avoiding another defeat.",
+                                "Kobe are unbeaten in seven home league matches, whereas Mito have lost five of seven away league games and scored only five away goals."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.26,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kobe have had only 5 rest days, three matches in 14 days and an AFC Champions League Elite game four days later, so this is a congested week rather than a free league fixture.",
+                                "Mito are 19th and four points from safety with 24 games left, so they need the points more than fifth-placed Kobe, who are six off the leaders.",
+                                "Kobe are unbeaten at home (4W 3D, 13-7) while Mito have taken one point from five away defeats and conceded 15, which points to a tight home win rather than a high-scoring one."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6998,
+                        0.1979,
+                        0.1023
+                    ],
+                    "p_adj": [
+                        0.710123,
+                        0.193914,
+                        0.095962
+                    ],
+                    "p_llm": [
+                        0.655693,
+                        0.213383,
+                        0.130924
+                    ],
+                    "p_shadow": [
+                        0.699824,
+                        0.197926,
+                        0.102251
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "vissel-kobe-vs-mito-hollyhock-2026-11-20"
+            },
+            "sha256": "64e1c6404c69f5252fb746de1bea10a6a15c2e8809153c8561d4f4b995ae05b7",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0003-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "rc-celta-fortuna",
                 "batch_id": "2026-11-15T0012Z-model-predict",
                 "competition": "la-liga-2",
