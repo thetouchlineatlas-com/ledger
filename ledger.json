@@ -7,6 +7,949 @@
     "records": [
         {
             "record": {
+                "away": "1-fc-magdeburg",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0001",
+                "home": "arminia-bielefeld",
+                "inputs": {
+                    "elo_away": 1316.2,
+                    "elo_home": 1240,
+                    "lambda_away": 1.546397,
+                    "lambda_home": 1.837146,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-19T18:12:45Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.444092,
+                        0.232569,
+                        0.323339
+                    ],
+                    "p_elo": [
+                        0.340617,
+                        0.285493,
+                        0.37389
+                    ],
+                    "p_market": [
+                        0.427171,
+                        0.261365,
+                        0.311464
+                    ],
+                    "p_stat": [
+                        0.39262,
+                        0.25739,
+                        0.34999
+                    ],
+                    "retained_mass": 0.999999999844,
+                    "rho": -0.040888,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T18:15:52Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.6718,
+                    "draw_risk": false,
+                    "over_2_5": 0.6484,
+                    "p": [
+                        0.3926,
+                        0.2574,
+                        0.35
+                    ],
+                    "p_display": [
+                        39.3,
+                        25.7,
+                        35
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.111,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0807,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0783,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0758,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0525,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.27,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Magdeburg are 4th, 1 point off the play-off place and 4 off automatic promotion, while Bielefeld are 6th and 4 points off the play-offs, so both need points.",
+                                "Magdeburg are without starting midfielder Kwarteng (7 of 11 starts, one source), a small loss for a side with 25 goals; Bielefeld's Min is doubtful but has started only once.",
+                                "Bielefeld are unbeaten at home (3W 2D, 12 goals) and have won 4 of their last 5 league games, but Magdeburg score freely, with 25 goals in 11 games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Magdeburg are missing regular midfielder Moritz-Broni Kwarteng, who has started 7 of 11 league games and contributed 1 goal and 1 assist, though his absence is reported by only one source.",
+                                "Bielefeld are unbeaten at home this season (3W 2D) and have won their last two league games, while Magdeburg have only one away win in five.",
+                                "Magdeburg sit 4th and only 1 point off the promotion play-off place, so they need the points slightly more than 6th-placed Bielefeld, who are 4 points back."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.27,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "This meeting carries direct promotion implications, as 4th-placed Magdeburg sit one point off the play-off spot and 6th-placed Bielefeld can move level with them on 20 points with a home win.",
+                                "One source reports Magdeburg are missing regular starting midfielder Moritz-Broni Kwarteng (7 starts, 1 goal, 1 assist), slightly reducing their midfield depth compared to a largely full-strength Bielefeld.",
+                                "Bielefeld's unbeaten home league record (3W 2D) and four wins from their last five league games contrast with Magdeburg's modest away form of just one win and six goals in five trips."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.27,
+                                "home": 0.41
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Magdeburg are without regular-starting midfielder Kwarteng (7 league starts), though his absence is reported by one source.",
+                                "Bielefeld's unbeaten home league start (3 wins, 2 draws, 12 goals in five) offsets Magdeburg's stronger overall league position.",
+                                "Magdeburg are one point outside the promotion play-off places, while Bielefeld need to cut a four-point gap to third."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.28,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Bielefeld are unbeaten at home (3 wins, 2 draws, 12-6) while Magdeburg have only one win from five away (6-6), so the venue favours the hosts despite Magdeburg's higher league place and stronger overall attack.",
+                                "Magdeburg are without regular midfielder Kwarteng (7 of 11 starts, one goal and one assist, about 4% of their goals) on one source only; Bielefeld's only listed doubt is squad forward Min (1 start), also one source, so the gap is a modest m",
+                                "Magdeburg are one point off the play-off place and four off automatic promotion, Bielefeld four and seven off those spots, so both are in a promotion chase with Magdeburg slightly closer to climbing into third."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4032,
+                        0.2616,
+                        0.3352
+                    ],
+                    "p_adj": [
+                        0.397305,
+                        0.258233,
+                        0.344462
+                    ],
+                    "p_llm": [
+                        0.426148,
+                        0.274398,
+                        0.299454
+                    ],
+                    "p_shadow": [
+                        0.403215,
+                        0.261584,
+                        0.335201
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "arminia-bielefeld-vs-1-fc-magdeburg-2026-11-20"
+            },
+            "sha256": "9932d36f565c6f63a074aa153dfb00ee91be4494aaf74b1a601f5915534f8059",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0001-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "1-fc-heidenheim-1846",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0002",
+                "home": "sv-darmstadt-98",
+                "inputs": {
+                    "elo_away": 1205,
+                    "elo_home": 1244.5,
+                    "lambda_away": 1.359181,
+                    "lambda_home": 1.81223,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-19T18:12:45Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.47759,
+                        0.237679,
+                        0.284732
+                    ],
+                    "p_elo": [
+                        0.461935,
+                        0.277531,
+                        0.260533
+                    ],
+                    "p_market": [
+                        0.282575,
+                        0.244023,
+                        0.473402
+                    ],
+                    "p_stat": [
+                        0.473881,
+                        0.255141,
+                        0.270977
+                    ],
+                    "retained_mass": 0.99999999988,
+                    "rho": -0.040766,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T18:15:52Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.6299,
+                    "draw_risk": false,
+                    "over_2_5": 0.6083,
+                    "p": [
+                        0.4739,
+                        0.2551,
+                        0.271
+                    ],
+                    "p_display": [
+                        47.4,
+                        25.5,
+                        27.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1154,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0929,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0712,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0683,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0683,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.28,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Darmstadt are 17th and only 2 points from safety, so they need points more, while Heidenheim sit 7 points above the drop and 5 off the play-offs.",
+                                "Darmstadt have four injured players (Sickinger, Nürnberger, Marseiler, Papela), all from one source, with only Sickinger's role known (3 league starts), so the effect is small; Heidenheim miss only Kerber (1 start).",
+                                "Heidenheim have won only 1 of 5 away league games and conceded 11, while Darmstadt are unbeaten in 5 of 6 at home (2W 3D 1L), which keeps this close despite the gap in table position."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.3,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Darmstadt are missing several players, including midfielder Carlo Sickinger, though only one source lists each absence and their roles are limited; Heidenheim's only listed absence is a fringe midfielder, so the hosts' depth is slightly mor",
+                                "Darmstadt are in the relegation zone, two points from safety, and need the points more urgently than Heidenheim, who are seven points clear of the drop but five points off the promotion play-off places.",
+                                "Darmstadt have been stronger at home this season with only one home defeat in six, while Heidenheim have lost three of five away games, which narrows the gap between the sides."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.29,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Darmstadt start inside the relegation zone, two points from 16th-placed safety, giving them an urgent need for home points against seventh-placed Heidenheim.",
+                                "Despite sitting 17th overall, Darmstadt have accumulated all nine of their points at home (2W 3D 1L), which offsets Heidenheim's superior league standing given the visitors' 1W 1D 3L away record.",
+                                "All reported absences for both sides—four players for Darmstadt and one for Heidenheim—are backed by only one source with no confirmed regular starters missing."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.29,
+                                "home": 0.35
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Darmstadt have four injury absences, including midfielder Carlo Sickinger, but all are listed by one source; Heidenheim's single-source absence Luca Kerber has started only once.",
+                                "Darmstadt are two points from safety in the relegation zone, giving the home side added urgency for a result.",
+                                "Heidenheim's stronger overall position is offset by a 1W-1D-3L away league record, while Darmstadt have lost only once in six home matches."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.32,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Darmstadt are in the drop zone and only 2 points from safety with 23 games left, so avoiding defeat matters more here than Heidenheim's chase, which is still 5 points off the play-off places.",
+                                "Darmstadt have lost only once in six home league games but drawn three, while Heidenheim have lost three of five away, which points to a tight home edge rather than a comfortable win.",
+                                "Listed absences are single-source only, and the named midfielders are not regular starters (Sickinger 3 of 11, Kerber 1 of 11), so expected goals are left unchanged."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.451,
+                        0.2652,
+                        0.2838
+                    ],
+                    "p_adj": [
+                        0.467446,
+                        0.257251,
+                        0.275302
+                    ],
+                    "p_llm": [
+                        0.386409,
+                        0.296553,
+                        0.317038
+                    ],
+                    "p_shadow": [
+                        0.450957,
+                        0.265245,
+                        0.283798
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "sv-darmstadt-98-vs-1-fc-heidenheim-1846-2026-11-20"
+            },
+            "sha256": "f6295dbe54ee6575ec6214d95b8482f3eeb7d9ad56ca552eac7dc31412a43fd6",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0002-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "lyngby-boldklub",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "danish-superliga",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "dk-2627-0001",
+                "home": "agf-dk",
+                "inputs": {
+                    "elo_away": 1357.3,
+                    "elo_home": 1601.2,
+                    "lambda_away": 0.899223,
+                    "lambda_home": 2.027763,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-19T18:12:45Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.627537,
+                        0.222298,
+                        0.150165
+                    ],
+                    "p_elo": [
+                        0.663349,
+                        0.221297,
+                        0.115353
+                    ],
+                    "p_market": [
+                        0.570587,
+                        0.225851,
+                        0.203562
+                    ],
+                    "p_stat": [
+                        0.653456,
+                        0.21857,
+                        0.127974
+                    ],
+                    "retained_mass": 0.999999999931,
+                    "rho": -0.084153,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T18:15:52Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.5203,
+                    "draw_risk": false,
+                    "over_2_5": 0.5635,
+                    "p": [
+                        0.6535,
+                        0.2185,
+                        0.128
+                    ],
+                    "p_display": [
+                        65.4,
+                        21.8,
+                        12.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1147,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1045,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1041,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1031,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0775,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "AGF are without forward Janni Serra, who has 5 league goals (26% of the team's), and defender Frederik Tingager; both absences rest on one source only.",
+                                "Lyngby are level on 11 points with 11th place, the top relegation spot, while AGF are 4 points clear, so Lyngby need the points more.",
+                                "Lyngby have won 1 of 7 away league games and conceded 16 goals there, while AGF are unbeaten in 6 of 7 home games."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.27,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "AGF are missing Janni Serra, whose 5 league goals are 26% of the team's total, plus defender Frederik Tingager; Lyngby's only listed absence is Oskar Snorre, with no role detail, so the home attack is the main downgrade.",
+                                "Lyngby are level on points with the relegation place and need points badly, but AGF are only 4 points above the drop zone, so both sides have strong survival motivation.",
+                                "Lyngby have lost 6 of 7 away league games this season, while AGF have lost only once at home, making a home win the most likely outcome despite AGF's mid-table position."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists AGF without forward Janni Serra, who has scored 26% of their league goals, alongside defender Frederik Tingager.",
+                                "Lyngby Boldklub are in urgent need of points as they sit level on 11 points with the relegation zone, whereas AGF are four points clear.",
+                                "Lyngby's six losses from seven away league matches give AGF a clear advantage on home turf where they have lost just once all season."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.26,
+                                "home": 0.53
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "AGF's single-source absences include Serra, whose five league goals account for 26% of their total, reducing their attacking outlook.",
+                                "Lyngby are level with the top relegation place, so the points are particularly urgent in their fight to move clear.",
+                                "AGF's strong 3-3-1 home record meets a Lyngby side that has lost six of seven league away matches."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.27,
+                                "home": 0.51
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lyngby are level on points with 11th, the top relegation place, so they need the points more than AGF, who sit four points clear of the drop.",
+                                "One source lists Janni Serra out; he has 5 of AGF's 19 league goals (26%) from 5 starts, with defender Tingager also absent on one source, so AGF's attack is trimmed rather than wiped out.",
+                                "Lyngby have taken points in only 1 of 7 away league games (1W 0D 6L), so an away win is less likely than the league's 26% away-win base rate."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6185,
+                        0.234,
+                        0.1475
+                    ],
+                    "p_adj": [
+                        0.640566,
+                        0.225574,
+                        0.13386
+                    ],
+                    "p_llm": [
+                        0.524097,
+                        0.264126,
+                        0.211777
+                    ],
+                    "p_shadow": [
+                        0.618524,
+                        0.234001,
+                        0.147475
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "agf-dk-vs-lyngby-boldklub-2026-11-20"
+            },
+            "sha256": "29924fb28e23dfb518459381aabb51275f370e9335e9f36d4f1d24f929394e65",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/dk-2627-0001-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-nassr",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0019",
+                "home": "al-ahli",
+                "inputs": {
+                    "elo_away": 1787.6,
+                    "elo_home": 1677.5,
+                    "lambda_away": 1.75581,
+                    "lambda_home": 1.597623,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.344029,
+                        0.245835,
+                        0.410136
+                    ],
+                    "p_elo": [
+                        0.306887,
+                        0.283603,
+                        0.40951
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.324127,
+                        0.258633,
+                        0.41724
+                    ],
+                    "retained_mass": 0.999999999906,
+                    "rho": -0.093593,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T18:15:52Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.6714,
+                    "draw_risk": false,
+                    "over_2_5": 0.6467,
+                    "p": [
+                        0.3241,
+                        0.2587,
+                        0.4172
+                    ],
+                    "p_display": [
+                        32.4,
+                        25.9,
+                        41.7
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1129,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0876,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0738,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0724,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0548,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.24,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Nassr are 3rd and only 2 points off the leaders, while Al Ahli are 9 points back, so the visitors have more to gain from a win.",
+                                "Al Nassr's Coman is doubtful on one source, but he has 1 league goal (4% of the team's), so the effect is small; Al Ahli list no absences on one source, which is not a confirmed full squad.",
+                                "Al Ahli have won all 4 home league games 16-2, but Al Nassr have conceded only 11 goals in 11 games and won 9 of them."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Nassr are missing Sultan Al Ghannam and have Kingsley Coman doubtful; Coman has started 6 of 11 league games and scored 1 of Al Nassr's 28 league goals, so the away attack is slightly weakened.",
+                                "Al Nassr are 2 points behind the leaders and need the points more than Al Ahli, who are 9 points back in 6th.",
+                                "Al Ahli have won all 4 home league games this season with 16 goals scored and only 2 conceded, but Al Nassr have won 3 of 5 away league games."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.25,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Nassr sit just two points off the top of the table and have more immediate need for a win in the title race than sixth-placed Al Ahli, who trail the leaders by nine points.",
+                                "One source lists Al Nassr regular starter Kingsley Coman as doubtful and Sultan Al Ghannam as out, while only one source lists no absences for Al Ahli so far.",
+                                "Al Ahli's perfect home league record of four wins from four scoring 16 goals faces its toughest test yet against an Al Nassr side riding a six-match winning streak across all competitions."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.25,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Nassr may be without regular-starting forward Kingsley Coman, but the report is from one source and his one league goal limits the expected attacking reduction.",
+                                "Al Nassr are only two points off the leaders, so this is a high-value fixture in their title chase.",
+                                "Al Ahli's perfect home league record (four wins, 16-2 goals) makes them capable of matching an Al Nassr side with the league's stronger overall record."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.3,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Nassr are 2 points off the leaders with 23 games left, so a win matters more for the title race than it does for 6th-placed Al Ahli, who are 9 points back.",
+                                "Al Ahli are 4 wins from 4 at home (16-2), but Al Nassr have lost only once in 11 league games and score at the same rate with a much tighter defence (28-11), so the home edge is narrower than the perfect home record suggests.",
+                                "Team news is single-source only: Al Ahli have no absences listed, which does not confirm a full squad, while Al Nassr’s Kingsley Coman is only doubtful and has 1 of 28 league goals, and Sultan Al Ghannam is out with no role or starts given,"
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.3335,
+                        0.2603,
+                        0.4062
+                    ],
+                    "p_adj": [
+                        0.327403,
+                        0.259785,
+                        0.412812
+                    ],
+                    "p_llm": [
+                        0.358349,
+                        0.261681,
+                        0.379971
+                    ],
+                    "p_shadow": [
+                        0.333518,
+                        0.260278,
+                        0.406204
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "al-ahli-vs-al-nassr-2026-11-20"
+            },
+            "sha256": "9573fd24903db23f6a787636fab73abbaeb990c39f94bd78921e86ae0c4bc6e9",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0019-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "shimizu-s-pulse",
                 "batch_id": "2026-11-19T0013Z-model-predict",
                 "competition": "j1-league",
