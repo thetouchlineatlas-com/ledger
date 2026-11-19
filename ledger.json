@@ -238,7 +238,7 @@
                 "slug": "kashima-antlers-vs-shimizu-s-pulse-2026-11-20"
             },
             "sha256": "3f56aaf38f41e2a8365609fd42378b41c685284fd20a0b8003d56b6c7768eb07",
-            "commit": "pending",
+            "commit": "c7e63d62a2577d6b5d25e330d4f8344dff19d8fd",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0001-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +476,7 @@
                 "slug": "kashiwa-reysol-vs-jef-united-ichihara-chiba-2026-11-20"
             },
             "sha256": "22402c4a6e209b364315bd30ba3ab7fe87f136f22e79a4063a41f4865f2d68ca",
-            "commit": "pending",
+            "commit": "c7e63d62a2577d6b5d25e330d4f8344dff19d8fd",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0002-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +714,7 @@
                 "slug": "vissel-kobe-vs-mito-hollyhock-2026-11-20"
             },
             "sha256": "64e1c6404c69f5252fb746de1bea10a6a15c2e8809153c8561d4f4b995ae05b7",
-            "commit": "pending",
+            "commit": "c7e63d62a2577d6b5d25e330d4f8344dff19d8fd",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0003-r1.json",
             "status": "pending",
             "result": null
