@@ -238,7 +238,7 @@
                 "slug": "arminia-bielefeld-vs-1-fc-magdeburg-2026-11-20"
             },
             "sha256": "9932d36f565c6f63a074aa153dfb00ee91be4494aaf74b1a601f5915534f8059",
-            "commit": "pending",
+            "commit": "9c60b68b9fe854ab40a7af91705b3e60f1fb25b9",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0001-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +476,7 @@
                 "slug": "sv-darmstadt-98-vs-1-fc-heidenheim-1846-2026-11-20"
             },
             "sha256": "f6295dbe54ee6575ec6214d95b8482f3eeb7d9ad56ca552eac7dc31412a43fd6",
-            "commit": "pending",
+            "commit": "9c60b68b9fe854ab40a7af91705b3e60f1fb25b9",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0002-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +714,7 @@
                 "slug": "agf-dk-vs-lyngby-boldklub-2026-11-20"
             },
             "sha256": "29924fb28e23dfb518459381aabb51275f370e9335e9f36d4f1d24f929394e65",
-            "commit": "pending",
+            "commit": "9c60b68b9fe854ab40a7af91705b3e60f1fb25b9",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0001-r1.json",
             "status": "pending",
             "result": null
@@ -943,7 +943,7 @@
                 "slug": "al-ahli-vs-al-nassr-2026-11-20"
             },
             "sha256": "9573fd24903db23f6a787636fab73abbaeb990c39f94bd78921e86ae0c4bc6e9",
-            "commit": "pending",
+            "commit": "9c60b68b9fe854ab40a7af91705b3e60f1fb25b9",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0019-r1.json",
             "status": "pending",
             "result": null
