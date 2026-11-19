@@ -7,6 +7,3742 @@
     "records": [
         {
             "record": {
+                "away": "kvc-westerlo",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "belgian-pro-league",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "be-2627-0001",
+                "home": "cercle-brugge-ksv",
+                "inputs": {
+                    "elo_away": 1449.3,
+                    "elo_home": 1411.6,
+                    "lambda_away": 1.635444,
+                    "lambda_home": 1.94766,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-19T20:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.451182,
+                        0.223914,
+                        0.324904
+                    ],
+                    "p_elo": [
+                        0.380231,
+                        0.285295,
+                        0.334474
+                    ],
+                    "p_market": [
+                        0.471009,
+                        0.238026,
+                        0.290965
+                    ],
+                    "p_stat": [
+                        0.417746,
+                        0.25171,
+                        0.330544
+                    ],
+                    "retained_mass": 0.99999999996,
+                    "rho": -0.036794,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.6999,
+                    "draw_risk": false,
+                    "over_2_5": 0.6853,
+                    "p": [
+                        0.4177,
+                        0.2518,
+                        0.3305
+                    ],
+                    "p_display": [
+                        41.8,
+                        25.2,
+                        33
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1032,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0798,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0793,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0736,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0518,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.22,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Cercle sit 16th, only 2 points above the drop zone, while Westerlo are 7 points clear, so the hosts need the points more.",
+                                "Westerlo are without regular starting defender Dylan Ourega (9 of 11 starts) and Cercle's absent forwards are mostly fringe players, though all news comes from one source.",
+                                "Home wins are 52% of league matches this season but 41% last season; Westerlo's open games (26-30 goals) make a close contest likely."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.24,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Westerlo are missing regular starting defender Dylan Ourega (9 league starts) through injury, weakening a defence that has conceded 30 goals in 11 league games.",
+                                "Cercle Brugge are only 2 points above the relegation zone and need home points far more urgently than Westerlo, who sit 7 points clear of danger.",
+                                "Cercle Brugge have won the last two league meetings, including a 4-1 home win in August 2025, suggesting they match up well against Westerlo."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.24,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cercle Brugge sit 16th and just 2 points above the relegation zone, giving them greater urgency for points than 9th-placed Westerlo.",
+                                "All reported absences rely on one source, including regular starting defender Dylan Ourega (9 league starts) for a Westerlo side that has already conceded 30 league goals.",
+                                "Cercle Brugge have won their last two league games, whereas Westerlo have conceded 13 goals across a three-match winless league run."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.25,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "All listed absences are supported by one source: Cercle lose forward Manneh (one goal), while Westerlo are without regular-starting defender Ourega.",
+                                "Cercle are only two points above the relegation zone, giving the home side added need for a result.",
+                                "Westerlo's 26 league goals and Cercle's 22 conceded point to an away threat, despite Westerlo losing their last two matches."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.28,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cercle are 16th and only 2 points above the drop zone with 23 games left, so they need the result more than Westerlo, who sit 9th and 7 points clear of that line.",
+                                "Westerlo are without regular starter Dylan Ourega (defender, 9 of 11 league starts), listed by one source only; Cercle’s four absences are also one source and none is a regular starter, so their attack is barely affected.",
+                                "Westerlo have just lost 1-4 and 1-5 in the league after a high-scoring run, while Cercle have won their last two, which offsets Cercle’s weak home record of 1 win in 5."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "3/5",
+                    "ai_combined": [
+                        0.4134,
+                        0.2525,
+                        0.3342
+                    ],
+                    "p_adj": [
+                        0.419931,
+                        0.253661,
+                        0.326409
+                    ],
+                    "p_llm": [
+                        0.386916,
+                        0.246999,
+                        0.366085
+                    ],
+                    "p_shadow": [
+                        0.413354,
+                        0.252464,
+                        0.334182
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "cercle-brugge-ksv-vs-kvc-westerlo-2026-11-20"
+            },
+            "sha256": "bc69f43e6cc6f6f58bb2ff4c3a2046b04b5c27f9eb0770bdce0b521b28176584",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/be-2627-0001-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fc-koln",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "bundesliga",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "bl-2627-0086",
+                "home": "bayern-munich",
+                "inputs": {
+                    "elo_away": 1333.1,
+                    "elo_home": 1853.6,
+                    "lambda_away": 0.84629,
+                    "lambda_home": 3.692316,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-19T20:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.871213,
+                        0.085816,
+                        0.042971
+                    ],
+                    "p_elo": [
+                        0.843274,
+                        0.126892,
+                        0.029834
+                    ],
+                    "p_market": [
+                        0.913953,
+                        0.057629,
+                        0.028418
+                    ],
+                    "p_stat": [
+                        0.844585,
+                        0.114126,
+                        0.041289
+                    ],
+                    "retained_mass": 0.99999999992,
+                    "rho": -0.0684,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0521,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T19:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.568,
+                    "draw_risk": false,
+                    "over_2_5": 0.8185,
+                    "p": [
+                        0.8446,
+                        0.1141,
+                        0.0413
+                    ],
+                    "p_display": [
+                        84.5,
+                        11.4,
+                        4.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "3-0",
+                    "top_score_overall": "3-0",
+                    "top_scores": [
+                        {
+                            "p": 0.0869,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0802,
+                            "score": "4-0"
+                        },
+                        {
+                            "p": 0.0736,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0706,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0679,
+                            "score": "4-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.94,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.13,
+                                "home": 0.79
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Bayern are missing Neuer, Davies, Díaz (4 league goals, 14% of the team's) and Saibari, plus Upamecano is doubtful on one source, but the squad depth still leaves a large gap.",
+                                "Köln lack Dallinga (2 goals, 20% of their scoring) and Skhiri, with Ache doubtful, so an attack with 10 goals in 9 games is thinner still.",
+                                "Bayern have scored 20 goals in 4 home league games while Köln have lost 3 of 4 away with 3 goals scored, which points to a comfortable home win."
+                            ],
+                            "score": "3-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Bayern are missing several regular starters: goalkeeper Manuel Neuer, left-back Alphonso Davies, midfielder Ismael Saibari, and forward Luis Díaz, who has scored 14% of their league goals; Dayot Upamecano is also doubtful. This weakens Baye",
+                                "Köln are without Thijs Dallinga, who has scored 20% of their league goals, and have doubts over Ragnar Ache, who has scored 10%; their already limited attack is further depleted for a match in which they are heavy underdogs.",
+                                "Bayern have won 6 of their last 7 in all competitions and are unbeaten in the Bundesliga, while Köln have won only 2 of 9 league games and have lost 3 of 4 away matches, scoring just 3 away goals."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.89,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.14,
+                                "home": 0.78
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Bayern Munich are missing four confirmed regular starters in goalkeeper Manuel Neuer, defender Alphonso Davies, midfielder Ismael Saibari and forward Luis Díaz, with injured attackers accounting for 27% of their league goals, while centre-b",
+                                "Both teams have immediate pressure for points as Bayern Munich sit top only on goal difference, while 15th-placed Köln are just three points clear of the relegation zone.",
+                                "Bayern Munich's scoring rate of 20 goals across four unbeaten home league games heavily outweighs an away Köln side that remains winless in four road trips with eight goals conceded."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 0.93,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Bayern are without Neuer plus regular starters Davies, Saibari and Díaz, whose four league goals and creativity reduce their usual attacking level, while Köln miss forwards responsible for 30% of their league goals and midfielder Skhiri.",
+                                "Bayern's 20-4 home league record and Köln's winless 0-1-3 away record point to sustained Bayern territorial control despite the hosts' absences.",
+                                "Bayern have won each of the last six competitive meetings with Köln, including 5-1 in their latest home league meeting."
+                            ],
+                            "score": "3-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.16,
+                                "home": 0.74
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Unlike a full-strength Bayern, two sources confirm regular starters Díaz (14% of league goals), Saibari, Davies and Neuer are out, which trims the attack and changes the goalkeeper; Upamecano is only one source and doubtful, while Köln’s co",
+                                "Köln are only 3 points above the relegation places and need the points more, while Bayern are top and level with 2nd with 25 games left.",
+                                "Bayern have scored 20 and conceded 4 in four home games, while Köln have no away win and only 3 goals in four away games, so the gap still points to a home win even with Bayern’s absences."
+                            ],
+                            "score": "3-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.82,
+                        0.1285,
+                        0.0515
+                    ],
+                    "p_adj": [
+                        0.833823,
+                        0.122232,
+                        0.043945
+                    ],
+                    "p_llm": [
+                        0.75126,
+                        0.153491,
+                        0.095249
+                    ],
+                    "p_shadow": [
+                        0.820026,
+                        0.128462,
+                        0.051512
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "bayern-munich-vs-fc-koln-2026-11-20"
+            },
+            "sha256": "3e271ec242997613fcd7ad95d18583137f141336e58795e06f2204975332607d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/bl-2627-0086-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-faisaly",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0010",
+                "home": "al-ahli",
+                "inputs": {
+                    "elo_away": 1282.6,
+                    "elo_home": 1677.5,
+                    "lambda_away": 0.834719,
+                    "lambda_home": 2.759685,
+                    "last_result_used": "2026-10-31",
+                    "market": {
+                        "books": 14,
+                        "captured_utc": "2026-11-19T20:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.769345,
+                        0.149876,
+                        0.080779
+                    ],
+                    "p_elo": [
+                        0.775843,
+                        0.167592,
+                        0.056565
+                    ],
+                    "p_market": [
+                        0.295602,
+                        0.232265,
+                        0.472133
+                    ],
+                    "p_stat": [
+                        0.800576,
+                        0.142881,
+                        0.056543
+                    ],
+                    "retained_mass": 0.999999999857,
+                    "rho": -0.093593,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.5304,
+                    "draw_risk": false,
+                    "over_2_5": 0.7019,
+                    "p": [
+                        0.8006,
+                        0.1429,
+                        0.0565
+                    ],
+                    "p_display": [
+                        80.1,
+                        14.3,
+                        5.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1089,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1002,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0909,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0836,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0727,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.19,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Al Ahli have won all 4 home league games, scoring 16 and conceding 2, while Al Faisaly have won only 1 of 6 away (7-13).",
+                                "Al Faisaly sit 15th, only 4 points above the drop, and need points more, but their 24 goals conceded in 12 games make that hard against a side averaging 2.5 goals a game.",
+                                "Al Ahli have 0 rest days and play in the Champions League 3 days later, so rotation is possible, while Al Faisaly have had 20 days off; no absences are listed, and that comes from one source for Al Ahli and none readable for Al Faisaly."
+                            ],
+                            "score": "3-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.21,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "form",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Al Ahli have won all 4 home league games this season by a combined 16-2, while Al Faisaly have lost 3 of 6 away games and conceded 13 goals on the road.",
+                                "Al Ahli have had no rest day before this match and play an AFC Champions League Elite match 3 days later, which could lead to rotation, but Al Faisaly have had 20 days without a match and may lack sharpness.",
+                                "Al Faisaly are only 4 points above the relegation zone and need points, but Al Ahli are chasing the leaders from 9 points back and have a strong home record to protect."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Ahli may need to manage minutes with zero listed rest days and an AFC Champions League Elite match coming up in three days, whereas Al Faisaly have had 20 days of rest.",
+                                "Al Ahli have won all four of their home league matches by an aggregate score of 16-2, making them clear favourites against an Al Faisaly side that has lost three of six away trips.",
+                                "Team news comes from only one source for Al Ahli and is missing for Al Faisaly, so no confirmed absences can be factored in."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.2,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Ahli have no rest days and an AFC Champions League match three days later, while Al Faisaly have had 20 days off, which slightly tempers the home side's edge.",
+                                "Al Faisaly are only four points above relegation and have stronger urgency for a result, but Al Ahli remain nine points off the leaders.",
+                                "Al Ahli's four home league wins have produced 16 goals and only two conceded, whereas Al Faisaly have lost three of six away league matches and conceded 13."
+                            ],
+                            "score": "3-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Al Ahli have 0 rest days and an AFC Champions League Elite match three days later, while Al Faisaly have had 20 days off, so the hosts may be less fresh than in an ordinary league meeting.",
+                                "Al Ahli have won all four home league games by 16-2, which points to another home win against a side with one away win in six.",
+                                "Al Faisaly are only four points above the relegation places, so they need the points more than sixth-placed Al Ahli, who are nine behind the leaders with a game in hand."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7774,
+                        0.1539,
+                        0.0687
+                    ],
+                    "p_adj": [
+                        0.800576,
+                        0.142881,
+                        0.056543
+                    ],
+                    "p_llm": [
+                        0.65948,
+                        0.197945,
+                        0.142575
+                    ],
+                    "p_shadow": [
+                        0.777384,
+                        0.153944,
+                        0.068672
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-ahli-vs-al-faisaly-2026-11-20"
+            },
+            "sha256": "709a1e76129578cd2636ef122608f916b9276dc5f168c69a7883f95a11f3300c",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0010-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-fateh",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0011",
+                "home": "al-fayha",
+                "inputs": {
+                    "elo_away": 1380.5,
+                    "elo_home": 1399.8,
+                    "lambda_away": 1.258475,
+                    "lambda_home": 1.411543,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.394413,
+                        0.281996,
+                        0.323591
+                    ],
+                    "p_elo": [
+                        0.440465,
+                        0.280475,
+                        0.27906
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.42511,
+                        0.277089,
+                        0.297801
+                    ],
+                    "retained_mass": 0.999999999957,
+                    "rho": -0.093593,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.5515,
+                    "draw_risk": false,
+                    "over_2_5": 0.5011,
+                    "p": [
+                        0.4251,
+                        0.2771,
+                        0.2978
+                    ],
+                    "p_display": [
+                        42.5,
+                        27.7,
+                        29.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1322,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0936,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0929,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0794,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0744,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.27,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Fateh are 16th, 4 points from safety, while Al Fayha are 5 points clear of the drop, so the visitors need the points more but are the weaker side.",
+                                "Al Fateh have lost 8 of 12 league games and conceded 25 goals, while Al Fayha have scored 12 goals in 6 home games.",
+                                "No absences are listed for either side, but one source could not be read for each team, so the lists may be incomplete and both adjustments stay at 1.0."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Fateh are in the relegation zone, 4 points from safety, so they need points urgently, while Al Fayha are 5 points clear and can play with less desperation.",
+                                "Recent meetings are tight: four of the last five league clashes ended level or were decided by a single goal, including a 2-0 Al Fayha win in January 2026.",
+                                "Al Fayha have drawn five of their last ten matches and Al Fateh have lost eight of twelve league games, pointing to a low-scoring, closely fought contest."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.28,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "This is a crucial relegation six-pointer with 16th-placed Al Fateh needing points to close a four-point gap to safety, while 13th-placed Al Fayha sit just five points above the drop zone.",
+                                "No absences are listed for either club, though one source could not be read or matched for both sides, so full squad availability cannot be assumed.",
+                                "Al Fayha's scoring touch at home (12 goals in 6 games) gives them a clear attacking edge over an Al Fateh side that has lost six of their last seven matches and conceded 25 league goals."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.28,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "targets",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Fateh are four points from safety in the relegation zone, while Al Fayha are only five points clear, making this a high-value match for both sides.",
+                                "Al Fayha are unbeaten in the last five league meetings with Al Fateh and won each of the last two at home.",
+                                "Al Fateh have lost five of their last six matches, conceding 18 goals in that run, which gives Al Fayha an edge despite their own uneven results."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.28,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Fateh are in the relegation zone and 4 points from safety, so they need the points more than Al Fayha, who are 5 points clear of the drop.",
+                                "Al Fateh have lost five of their last six and scored only 6 in six away games, so an away win is less likely than the league's usual away rate.",
+                                "Al Fayha are unbeaten in the last five league meetings, including a 2-0 home win in January 2026."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4326,
+                        0.2783,
+                        0.2891
+                    ],
+                    "p_adj": [
+                        0.42511,
+                        0.277089,
+                        0.297801
+                    ],
+                    "p_llm": [
+                        0.462031,
+                        0.282217,
+                        0.255751
+                    ],
+                    "p_shadow": [
+                        0.432584,
+                        0.278322,
+                        0.289095
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "al-fayha-vs-al-fateh-2026-11-20"
+            },
+            "sha256": "ac63eff7254508edc4eae7c4718cc5a2f46095b2ed22e7a6827c892794dd05f1",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0011-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-diriyah",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0012",
+                "home": "al-hilal",
+                "inputs": {
+                    "elo_away": 1315.3,
+                    "elo_home": 1828.5,
+                    "lambda_away": 0.596435,
+                    "lambda_home": 2.323797,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.755911,
+                        0.172905,
+                        0.071184
+                    ],
+                    "p_elo": [
+                        0.839929,
+                        0.129077,
+                        0.030994
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.827956,
+                        0.13399,
+                        0.038054
+                    ],
+                    "retained_mass": 0.999999999932,
+                    "rho": -0.093674,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.3965,
+                    "draw_risk": false,
+                    "over_2_5": 0.5819,
+                    "p": [
+                        0.828,
+                        0.1339,
+                        0.0381
+                    ],
+                    "p_display": [
+                        82.8,
+                        13.4,
+                        3.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1595,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1296,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1235,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0951,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0737,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Hilal have won 10 of 11 league games with a 32-9 goal record, while Al Diriyah have scored only 10 goals in 12 games.",
+                                "Al Hilal lead by only 2 points and need to keep winning at the top, while Al Diriyah sit 9 points above the drop and have less riding on this match.",
+                                "No absences are listed for either side, but one source could not be read for each team, so team news is incomplete and the adjustments stay at 1.0."
+                            ],
+                            "score": "3-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Hilal are top but only 2 points clear of 2nd, so they need the win to protect their title lead, while Al Diriyah are 9 points above the relegation zone and under less immediate pressure.",
+                                "Al Hilal have won 9 of their last 10 in all competitions and are 5-0-1 at home this league season, while Al Diriyah have lost 3 of their last 4 league games.",
+                                "No absences are listed for either side, but the fact sheet notes one source could not be read for each club, so team news is incomplete rather than confirmed clean."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.07,
+                                "draw": 0.13,
+                                "home": 0.8
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Hilal need the points more to defend their slim two-point lead at the top of the table, whereas mid-table Al Diriyah sit comfortably nine points clear of the relegation zone.",
+                                "Al Hilal play an AFC Champions League Elite match away at Neftchi Fergana just three days later, which could encourage them to manage minutes once ahead.",
+                                "No absences are listed for either club, though one source could not be read for both sides so full squad availability is not confirmed."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Hilal have a Champions League trip three days later, but both sides arrive after long breaks and Al Diriyah have six days until their next match.",
+                                "Al Hilal are only two points clear at the top, so dropping points at home would materially affect the title race.",
+                                "Al Hilal have won nine of their last ten listed matches and scored 32 league goals in 11 games, a major attacking test for an Al Diriyah side with 10 goals in 12."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.19,
+                                "home": 0.7
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Hilal are top and only 2 points clear of 2nd, so they need the points more than Al Diriyah, who are 8th and 9 points above the relegation zone.",
+                                "Both sides are well rested, but Al Hilal's AFC Champions League Elite match is only 3 days later, which can limit how hard they push a league lead.",
+                                "No absences are listed for either side, but one source could not be read or matched, so fitness is not fully confirmed and neither attack is adjusted."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.8127,
+                        0.1412,
+                        0.0461
+                    ],
+                    "p_adj": [
+                        0.827956,
+                        0.13399,
+                        0.038054
+                    ],
+                    "p_llm": [
+                        0.733778,
+                        0.169148,
+                        0.097074
+                    ],
+                    "p_shadow": [
+                        0.812691,
+                        0.141162,
+                        0.046148
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-hilal-vs-al-diriyah-2026-11-20"
+            },
+            "sha256": "616878594a9e0b9c4ebd2f4bf9737e1643dac1b503c0e89c24a23aa2027b7a49",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0012-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-ittihad",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0013",
+                "home": "al-khaleej",
+                "inputs": {
+                    "elo_away": 1642.5,
+                    "elo_home": 1408.1,
+                    "lambda_away": 1.93416,
+                    "lambda_home": 1.187072,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.222166,
+                        0.239619,
+                        0.538215
+                    ],
+                    "p_elo": [
+                        0.197989,
+                        0.261665,
+                        0.540345
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.199738,
+                        0.242216,
+                        0.558046
+                    ],
+                    "retained_mass": 0.999999999701,
+                    "rho": -0.093674,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.6033,
+                    "draw_risk": false,
+                    "over_2_5": 0.6032,
+                    "p": [
+                        0.1997,
+                        0.2423,
+                        0.558
+                    ],
+                    "p_display": [
+                        20,
+                        24.2,
+                        55.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.112,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1015,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0855,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0786,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0655,
+                            "score": "1-3"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.26,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Ittihad are 4th on 24 points, 6 behind the leaders, and need points more than Al Khaleej, who sit 9 points above the relegation zone.",
+                                "Both sides have had no match in 14 days (22 and 18 rest days), but Al Ittihad play Pakhtakor in 3 days, which could affect their rotation.",
+                                "Four of the last five league meetings were draws or tight games, including 4-4 and 1-1 results, so a close, high-scoring match is plausible."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.3,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Ittihad are 6 points behind the leaders and need a win to stay in the title race, while mid-table Al Khaleej are 9 points clear of relegation and under less pressure.",
+                                "Al Ittihad have been stronger on the road this season (3W 2D 1L, 11-6 goals) than Al Khaleej have been at home (2W 3D 1L, 8-8), and Al Khaleej's recent heavy defeats to Al Hilal and Al Ahli show they can be opened up by top sides.",
+                                "Al Ittihad have won two of the last three league meetings, including a 1-0 away win in February 2026, though the most recent clash at this ground was a wild 4-4 draw."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.53,
+                                "draw": 0.27,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "head_to_head",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams return from an extended break of over 18 days, though Al Ittihad must manage minutes with an AFC Champions League Elite match against Pakhtakor coming up just three days later.",
+                                "Al Khaleej have held Al Ittihad to draws in each of their last three home league meetings (1-1, 1-1, and 4-4) and have already drawn six of their 12 league matches this season.",
+                                "No absences are listed for either club, though a second source could not be read or matched for both sides so no team-news adjustments are made."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.27,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Ittihad have an AFC Champions League Elite match three days later, although both sides have had long rests before this fixture.",
+                                "Al Ittihad are six points off the leaders, giving their pursuit of the top a stronger immediate incentive than Al Khaleej's nine-point relegation cushion.",
+                                "Al Ittihad's stronger away record (3W-2D-1L, 11-6 goals) supports them as favourites, but Al Khaleej's three home draws in six point to resistance."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.28,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are well rested (22 and 18 days), but Al Ittihad’s next match is AFC Champions League Elite against Pakhtakor only three days later, while Al Khaleej’s next league game is seven days away.",
+                                "Al Ittihad are 4th and six points behind the leaders with a game in hand, so the points matter more for them than for 9th-placed Al Khaleej, who are nine points above the relegation zone.",
+                                "No absences are listed for either side, and one source could not be read or matched for each club, so there is no confirmed team-news effect."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2096,
+                        0.2494,
+                        0.5411
+                    ],
+                    "p_adj": [
+                        0.199738,
+                        0.242216,
+                        0.558046
+                    ],
+                    "p_llm": [
+                        0.250854,
+                        0.276738,
+                        0.472408
+                    ],
+                    "p_shadow": [
+                        0.209561,
+                        0.249364,
+                        0.541074
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-khaleej-vs-al-ittihad-2026-11-20"
+            },
+            "sha256": "25e31cd323cff6083eee3eada1355e9880d8d2b899cbd8caaf6c7162fd15f054",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0013-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-qadsiah",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0014",
+                "home": "al-nassr",
+                "inputs": {
+                    "elo_away": 1680.8,
+                    "elo_home": 1787.6,
+                    "lambda_away": 1.528034,
+                    "lambda_home": 1.811532,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.436828,
+                        0.244802,
+                        0.31837
+                    ],
+                    "p_elo": [
+                        0.532579,
+                        0.263586,
+                        0.203835
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.500722,
+                        0.249252,
+                        0.250026
+                    ],
+                    "retained_mass": 0.999999999872,
+                    "rho": -0.093593,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.6638,
+                    "draw_risk": false,
+                    "over_2_5": 0.6477,
+                    "p": [
+                        0.5007,
+                        0.2493,
+                        0.25
+                    ],
+                    "p_display": [
+                        50.1,
+                        24.9,
+                        25
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1093,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1019,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0692,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0667,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0631,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.99,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.24,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Qadsiah won all four recent league meetings, including 3-1 in May 2026, and Al Nassr has not beaten them in that run.",
+                                "Both sides have 28 points and sit 2 behind the leaders, so a win here would put the winner right at the top of the table.",
+                                "Al Nassr's Coman is doubtful (one source), but he has only 1 league goal, 4% of the team's, so the effect is small; Al Qadsiah has no absences listed, though one source could not be read."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Nassr are missing regular starter Kingsley Coman (doubtful, 1 league goal) and Sultan Al Ghannam (out), though only one source lists each, so the attacking and defensive disruption is modest.",
+                                "Al Qadsiah have had 18 rest days and no matches in the last 14 days, while Al Nassr have had 0 rest days and played recently, which should help the away side's energy late in the game.",
+                                "Al Qadsiah have won the last four league meetings, including 2-1 and 3-1 wins at Al Nassr, so they have a clear recent edge in this fixture."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.25,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both clubs sit on 28 points just two points off the league lead, giving Al Nassr a direct opportunity to overtake second-placed Al Qadsiah with a game in hand.",
+                                "Only one source reports team news for this match, listing Al Nassr regular starter Kingsley Coman (4% of their league goals) as doubtful and Sultan Al Ghannam as out.",
+                                "At least one side's perfect record must end here, as Al Nassr have won all six home league matches while Al Qadsiah have won all six away from home, conceding just once."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Nassr have no rest days before kick-off whereas Al Qadsiah have had 18, although both have AFC matches four days later.",
+                                "Al Nassr's regular-starting forward Kingsley Coman is doubtful from one source and right-back Sultan Al Ghannam is out, slightly reducing the home attack.",
+                                "This pairs Al Nassr's perfect 6-0-0 home record with Al Qadsiah's perfect 6-0-0 away record, making a closely balanced result more likely."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.28,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Nassr have 0 rest days and one match in the last 14 days, against 18 rest days and none for Al Qadsiah, and both have an AFC Champions League Elite match four days later.",
+                                "Both sides are only 2 points off the leaders, so this is a title-race meeting, with Al Nassr still having played one fewer league game.",
+                                "Al Nassr's only listed issues are single-source — Coman doubtful and Al Ghannam out, with no role stats for Al Ghannam — and Al Qadsiah absences are missing because one source could not be read."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4746,
+                        0.2542,
+                        0.2712
+                    ],
+                    "p_adj": [
+                        0.496166,
+                        0.25083,
+                        0.253004
+                    ],
+                    "p_llm": [
+                        0.38812,
+                        0.261877,
+                        0.350003
+                    ],
+                    "p_shadow": [
+                        0.474587,
+                        0.254182,
+                        0.27123
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-nassr-vs-al-qadsiah-2026-11-20"
+            },
+            "sha256": "f972dd74523a95e9025330718779269fc9f6ba283346e922a25801a67619b957",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0014-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-hazem",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0015",
+                "home": "al-riyadh",
+                "inputs": {
+                    "elo_away": 1358.1,
+                    "elo_home": 1357.5,
+                    "lambda_away": 1.3316,
+                    "lambda_home": 1.319945,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.355235,
+                        0.284115,
+                        0.36065
+                    ],
+                    "p_elo": [
+                        0.419391,
+                        0.282751,
+                        0.297858
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.3919,
+                        0.280071,
+                        0.328029
+                    ],
+                    "retained_mass": 0.999999999653,
+                    "rho": -0.093593,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.5501,
+                    "draw_risk": false,
+                    "over_2_5": 0.4959,
+                    "p": [
+                        0.3919,
+                        0.2801,
+                        0.328
+                    ],
+                    "p_display": [
+                        39.2,
+                        28,
+                        32.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1337,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0903,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0899,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.081,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0751,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are close to the drop: Al Hazem are 4 points above the relegation zone and Al Riyadh 6, so a draw is a fair result for both.",
+                                "Both teams have had 22 days of rest with no matches in the last 14 days, so neither has a fatigue edge.",
+                                "No absences are listed for either side, but one source could not be read for each team, so the lack of news is not confirmed and both multipliers stay at 1.0."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.3,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Both sides are close to the relegation zone, with Al Hazem only 4 points above it and Al Riyadh 6, so this is a high-stakes meeting between direct rivals for survival.",
+                                "Al Riyadh have lost their last two home matches by heavy margins (0-6 and 0-4) and have conceded 11 goals in 5 home games, while Al Hazem have lost 4 of 6 away games, suggesting neither defence is reliable.",
+                                "Al Hazem have won the last two league meetings, including a 2-1 win at this stadium in December 2025, which may give them confidence despite their lower table position."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both teams sit in the bottom third of the table, with Al Hazem just four points above the relegation zone and Al Riyadh six points clear, giving this direct clash extra significance for survival.",
+                                "No absences are listed for either club, though team news relies on only one source as a second source could not be read.",
+                                "Al Riyadh have earned nine of their twelve points at home with three wins from five matches, which gives them an edge against an Al Hazem side that has lost four of six away league outings."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.29,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Al Hazem are only four points above relegation and have greater immediate need for a result than Al Riyadh, who are six clear.",
+                                "Both sides enter after heavy 0-6 and 2-4 defeats respectively, pointing to defensive volatility rather than a clear momentum edge.",
+                                "Home wins are the most common Saudi Pro League outcome this season (40%), but draws and away wins together remain frequent."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.28,
+                                "home": 0.41
+                            },
+                            "reason_types": [
+                                "targets",
+                                "head_to_head",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "This is a relegation scrap rather than an ordinary mid-table meeting: Al Hazem are only 4 points above the drop after 12 games, Al Riyadh 6 points clear after 11, so the visitors need the points more.",
+                                "Al Hazem have won the last two league meetings, 2-1 away in December 2025 and 2-1 at home in April 2026, which trims the home edge.",
+                                "No absences are listed for either side, but one source could not be read for each club, so fitness is unconfirmed and neither attack is adjusted."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3955,
+                        0.2805,
+                        0.324
+                    ],
+                    "p_adj": [
+                        0.3919,
+                        0.280071,
+                        0.328029
+                    ],
+                    "p_llm": [
+                        0.409984,
+                        0.281959,
+                        0.308057
+                    ],
+                    "p_shadow": [
+                        0.395518,
+                        0.280494,
+                        0.323988
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "al-riyadh-vs-al-hazem-2026-11-20"
+            },
+            "sha256": "0dd7bc942233f3cadd6882b4cbb56fe7f644bab9ec60fb23df657901eb6e08a4",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0015-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-ettifaq",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0016",
+                "home": "al-shabab",
+                "inputs": {
+                    "elo_away": 1501.7,
+                    "elo_home": 1494.9,
+                    "lambda_away": 1.320784,
+                    "lambda_home": 1.594396,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.427846,
+                        0.265839,
+                        0.306315
+                    ],
+                    "p_elo": [
+                        0.412789,
+                        0.283336,
+                        0.303875
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.428288,
+                        0.269415,
+                        0.302297
+                    ],
+                    "retained_mass": 0.999999999797,
+                    "rho": -0.093593,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.5956,
+                    "draw_risk": false,
+                    "over_2_5": 0.5563,
+                    "p": [
+                        0.4283,
+                        0.2694,
+                        0.3023
+                    ],
+                    "p_display": [
+                        42.8,
+                        27,
+                        30.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1265,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0911,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0758,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0744,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.069,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.28,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "The last three league meetings were draws or narrow results, with 1-1 in both 2025-11 and 2026-03, pointing to another tight game.",
+                                "No absences are listed for either side, but one source could not be read for each team, so the lists may be incomplete and both adjustments stay at 1.0.",
+                                "Al Ettifaq are unbeaten away this season (4W 2D, 10-4) while Al Shabab have only 2 wins in 7 at home, which offsets the home edge."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "form",
+                                "head_to_head",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Al Ettifaq are unbeaten away this season (4W 2D 0L, 10-4 goals), while Al Shabab have won only 2 of 7 home games, so the visitors' away strength offsets the home advantage.",
+                                "Al Ettifaq have not lost to Al Shabab in the last five league meetings (3W 2D), including a 1-0 win at this stadium in 2024.",
+                                "Al Ettifaq sit 7th and are chasing the top positions, while mid-table Al Shabab are 8 points clear of relegation, so the visitors may have slightly more urgency for points."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.29,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "No absences are listed for either side, though only one source could be read this time so expected goals remain unadjusted.",
+                                "Al Shabab enter on a four-match unbeaten run including a 6-1 win over Al Ahli, while Al Ettifaq remain unbeaten in all six away league games this season (4W 2D), pointing toward a closely contested match.",
+                                "Al Ettifaq are unbeaten in the last five league meetings between these clubs, with the two most recent clashes both ending 1-1."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.29,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "form",
+                                "head_to_head",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Ettifaq are unbeaten in six league away matches (4W, 2D) and have conceded only four goals, giving them a clear edge over Al Shabab's mixed home record.",
+                                "Al Ettifaq are unbeaten in the last five league meetings with Al Shabab, winning three, although the two latest matches were draws.",
+                                "No absences are listed for either side, but one team-news source could not be read or matched for each club."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.31,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Ettifaq are unbeaten in the last five league meetings, including a 1-0 win and a 1-1 at Al Shabab, so this is not a typical home edge.",
+                                "Al Ettifaq are unbeaten away (4W 2D, 10-4) while Al Shabab have only two wins in seven home games, so the visitors can take points here.",
+                                "No absences are listed for either side, but one source could not be read for each club, so fitness is not confirmed."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "3/5",
+                    "ai_combined": [
+                        0.4117,
+                        0.2745,
+                        0.3138
+                    ],
+                    "p_adj": [
+                        0.428288,
+                        0.269415,
+                        0.302297
+                    ],
+                    "p_llm": [
+                        0.347441,
+                        0.292578,
+                        0.359981
+                    ],
+                    "p_shadow": [
+                        0.411695,
+                        0.274534,
+                        0.313772
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-shabab-vs-al-ettifaq-2026-11-20"
+            },
+            "sha256": "10c0ba9b77cb528e36fbbb056e02e914ce2df8be38a676c459dfb89d6937a4eb",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0016-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "abha",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0017",
+                "home": "al-taawoun",
+                "inputs": {
+                    "elo_away": 1258.6,
+                    "elo_home": 1464.3,
+                    "lambda_away": 0.804183,
+                    "lambda_home": 1.722416,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.581985,
+                        0.256149,
+                        0.161866
+                    ],
+                    "p_elo": [
+                        0.629291,
+                        0.234348,
+                        0.136361
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.628575,
+                        0.235035,
+                        0.13639
+                    ],
+                    "retained_mass": 0.999999999943,
+                    "rho": -0.093593,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.457,
+                    "draw_risk": false,
+                    "over_2_5": 0.4733,
+                    "p": [
+                        0.6286,
+                        0.235,
+                        0.1364
+                    ],
+                    "p_display": [
+                        62.9,
+                        23.5,
+                        13.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1375,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1281,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1111,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.103,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0828,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.3,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are in the relegation zone, Al Taawoun 5 points and Abha 7 points from safety, so neither can afford to lose and a draw is more likely than usual.",
+                                "Neither side has won in the league (Al Taawoun 0W 5D, Abha 0W 3D), but Al Taawoun's four home draws and Abha's one away draw from six suggest a narrow edge for the hosts.",
+                                "No absences are listed for either side, but one source could not be read for each team, so the lists may be incomplete and the adjustments stay at 1.0."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.33,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are in the relegation zone and winless in the league, but Al Taawoun are 5 points from safety while Abha are 7 points adrift, making this a more urgent home opportunity for Al Taawoun.",
+                                "Al Taawoun have drawn four of six home league games and have been competitive in AFC Champions League Two, while Abha have lost five of six away league games, suggesting the hosts are better placed to edge a low-scoring contest.",
+                                "No absences are listed for either side, but the fact sheet notes one source could not be read for each team, so team news is incomplete rather than confirmed clean."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.33,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides sit at the bottom of the relegation zone without a league win all season, with 17th-placed Al Taawoun five points from safety and 18th-placed Abha seven points adrift, making this a crucial relegation six-pointer.",
+                                "Al Taawoun have drawn four of their six home league games while scoring just once at home, though they have found winning momentum in continental competition, whereas Abha have lost five of their six away matches.",
+                                "No absences are listed for either club, though a second source could not be read for both sides so unconfirmed squad news is left at neutral."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.31,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are in the relegation zone, with Al Taawoun five points from safety and Abha seven, making this a high-value six-pointer.",
+                                "Al Taawoun's four home draws and Abha's five away defeats point to a tight, low-scoring match with a marginal home edge.",
+                                "No absences are listed, but one team-news source could not be read or matched for each side, so no personnel adjustment is assumed."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.4,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both are in the relegation zone, with Al Taawoun 5 points from 15th and Abha 7 points adrift, so the points matter more than in an ordinary meeting and neither can afford a loose game.",
+                                "Al Taawoun have scored only 1 goal in 6 home league games and Abha have 1 draw and 5 losses away, so a low-scoring stalemate is more likely than the league’s usual home-win rate.",
+                                "No absences are listed for either side, but one source could not be read for each club, so fitness is not fully confirmed and is not used to adjust expected goals."
+                            ],
+                            "score": "0-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.5843,
+                        0.2567,
+                        0.159
+                    ],
+                    "p_adj": [
+                        0.628575,
+                        0.235035,
+                        0.13639
+                    ],
+                    "p_llm": [
+                        0.398294,
+                        0.333622,
+                        0.268083
+                    ],
+                    "p_shadow": [
+                        0.584288,
+                        0.256719,
+                        0.158994
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-taawoun-vs-abha-2026-11-20"
+            },
+            "sha256": "0745723d801831d2bf7588899007992ba6f2ac4c216fd2a3fec081013f735ab5",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0017-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-kholood",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0018",
+                "home": "neom-sc",
+                "inputs": {
+                    "elo_away": 1357.6,
+                    "elo_home": 1437.3,
+                    "lambda_away": 1.023232,
+                    "lambda_home": 1.749158,
+                    "last_result_used": "2026-10-31",
+                    "p_dc": [
+                        0.533546,
+                        0.256556,
+                        0.209898
+                    ],
+                    "p_elo": [
+                        0.504346,
+                        0.269927,
+                        0.225727
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.535707,
+                        0.256026,
+                        0.208267
+                    ],
+                    "retained_mass": 0.999999999929,
+                    "rho": -0.093593,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.5394,
+                    "draw_risk": false,
+                    "over_2_5": 0.5242,
+                    "p": [
+                        0.5357,
+                        0.256,
+                        0.2083
+                    ],
+                    "p_display": [
+                        53.6,
+                        25.6,
+                        20.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1221,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0993,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0982,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.096,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0728,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.24,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Kholood have lost five straight, conceding 16 goals in them (0-5, 2-3, 0-3, 3-5), and Neom have won 4 of their last 6 and kept clean sheets at home.",
+                                "Neom sit 5th, 8 points off the leaders, while Al Kholood are only 6 points above the relegation zone and need points.",
+                                "No absences are listed for either side, but one source could not be read for each team, so the lists may be incomplete and both adjustments stay at 1.0."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.24,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Neom SC have won their last two league matches and are 5th, while Al Kholood have lost four in a row and are winless away this season, so the hosts are in far stronger shape.",
+                                "Neom SC are 8 points behind the leaders and need a home win to stay in the title race, whereas Al Kholood are 6 points above the relegation zone and have less immediate pressure.",
+                                "No absences are listed for either side, but the fact sheet notes one source could not be read for each club, so team news is incomplete rather than confirmed clean."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.21,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "No absences are listed for either club, though one source could not be read or matched for both sides.",
+                                "Al Kholood enter on a five-match losing streak in which they conceded 18 goals and remain winless away, giving 5th-placed Neom SC a strong chance to capitalise after four wins in six home games.",
+                                "Both teams return from a three-week break with 21 and 22 rest days respectively, meaning neither side faces fixture congestion."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Neom have won four of their past six matches, while Al Kholood enter on five straight defeats and have conceded 18 goals in those games.",
+                                "Neom are eight points off the lead and need a home win to sustain their challenge, whereas Al Kholood are six points above relegation.",
+                                "No absences are listed for either side, but one team-news source could not be read or matched for each club."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.27,
+                                "home": 0.51
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "No absences are listed for either side, but one source could not be read or matched for each club, so the squads are treated as unchanged rather than confirmed fully fit.",
+                                "Al Kholood are only 6 points above the relegation zone and need points more urgently than Neom, who are 5th and 8 points off the leaders.",
+                                "Al Kholood have no away league wins this season (0W 3D 3L) and have lost their last four matches, so they are less likely to take points than their mid-table place suggests."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5388,
+                        0.2528,
+                        0.2084
+                    ],
+                    "p_adj": [
+                        0.535707,
+                        0.256026,
+                        0.208267
+                    ],
+                    "p_llm": [
+                        0.550881,
+                        0.240338,
+                        0.208781
+                    ],
+                    "p_shadow": [
+                        0.538769,
+                        0.252837,
+                        0.208394
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "neom-sc-vs-al-kholood-2026-11-20"
+            },
+            "sha256": "39b2460105e00ab6e8427bd0ada3243bf9eb83e8595658e1f1dc3d92babc0f0a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0018-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "le-havre-ac",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "ligue-1",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0015",
+                "home": "troyes",
+                "inputs": {
+                    "elo_away": 1329,
+                    "elo_home": 1297.3,
+                    "lambda_away": 1.158023,
+                    "lambda_home": 1.169947,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-19T20:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.356841,
+                        0.292178,
+                        0.350981
+                    ],
+                    "p_elo": [
+                        0.386509,
+                        0.28504,
+                        0.328451
+                    ],
+                    "p_market": [
+                        0.444246,
+                        0.273341,
+                        0.282413
+                    ],
+                    "p_stat": [
+                        0.371251,
+                        0.289087,
+                        0.339663
+                    ],
+                    "retained_mass": 0.999999999935,
+                    "rho": -0.03983,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0083,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.4775,
+                    "draw_risk": false,
+                    "over_2_5": 0.4124,
+                    "p": [
+                        0.3713,
+                        0.289,
+                        0.3397
+                    ],
+                    "p_display": [
+                        37.1,
+                        28.9,
+                        34
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1359,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1132,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1042,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1016,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0804,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.27,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are in the relegation zone, Troyes on 8 points and Le Havre on 2, 6 from safety, so a draw is more likely than usual and Le Havre need the points most.",
+                                "Troyes lose ever-present defender Michel Diaz to suspension and regular Anis Ouzenadji to injury, though each is listed by one source only, which weakens their back line.",
+                                "Le Havre have several defenders out and midfielders Ndiaye and Mwanga doubtful, all on one source, and they have conceded 22 goals in 10 games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.27,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Troyes are missing two regular starting defenders in Michel Diaz (10/10 league starts) and Anis Ouzenadji (5 starts), weakening a back line that has already conceded 17 goals in 10 Ligue 1 games.",
+                                "Le Havre have a long injury list including regular midfielders Rassoul Ndiaye and Junior Mwanga as doubts, plus several defenders out, which hurts a side with the league's worst record and only 2 points from 10 games.",
+                                "This is a relegation six-pointer: Troyes are level on points with 16th and can climb out of the bottom three, while Le Havre are 6 points from safety and desperately need a first league win."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.27,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "This bottom-two clash carries early relegation stakes, as 17th-placed Troyes can move out of the drop zone while 18th-placed Le Havre AC desperately need points to reduce a six-point gap to safety.",
+                                "One source reports that Troyes are missing regular defenders Michel Diaz and Anis Ouzenadji, while Le Havre AC have midfield regulars Junior Mwanga and Rassoul Ndiaye listed as doubtful by one source alongside confirmed defensive absences.",
+                                "Le Havre AC arrive on a six-match losing streak and are winless in 10 league games, giving Troyes a clear opportunity to secure only their second home league victory of the campaign."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.93,
+                            "m_home": 1.05,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.28,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Troyes are without a 10-start defender but Le Havre have several absences plus doubts over regular midfielders Ndiaye and Mwanga; some Troyes and Le Havre reports have only one source.",
+                                "This is a relegation-zone meeting, with Le Havre six points from safety and therefore under particular pressure to turn an eight-match winless start into points.",
+                                "Le Havre have lost eight of ten league matches and remain winless, while Troyes have taken two wins and conceded fewer league goals."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.3,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are in the relegation zone after 10 games; Le Havre are six points from safety with no wins, while Troyes are level with 16th only on goal difference, so Le Havre need the points more.",
+                                "Troyes are without ever-present defender Michel Diaz, suspended, and defender Anis Ouzenadji, both listed by one source only; Le Havre's confirmed absences are not regular starters and their regular midfielders are only doubtful.",
+                                "Le Havre are still winless in the league and have lost their last six matches, which makes an away win less likely than the league base rate even though Troyes have taken only one win from five home games."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3883,
+                        0.2908,
+                        0.321
+                    ],
+                    "p_adj": [
+                        0.370666,
+                        0.292957,
+                        0.336377
+                    ],
+                    "p_llm": [
+                        0.460158,
+                        0.277936,
+                        0.261906
+                    ],
+                    "p_shadow": [
+                        0.388256,
+                        0.290792,
+                        0.320952
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "troyes-vs-le-havre-ac-2026-11-20"
+            },
+            "sha256": "f5de5fb274efc29517bf67106e65c5f1de83ffe916dac019615356e5e4e2d30d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0015-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "sheffield-wednesday",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "league-one",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0028",
+                "home": "barnsley",
+                "inputs": {
+                    "elo_away": 1092.4,
+                    "elo_home": 1124.2,
+                    "lambda_away": 1.632421,
+                    "lambda_home": 1.395867,
+                    "last_result_used": "2026-11-14",
+                    "market": {
+                        "books": 14,
+                        "captured_utc": "2026-11-19T20:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.326749,
+                        0.243119,
+                        0.430131
+                    ],
+                    "p_elo": [
+                        0.453829,
+                        0.278716,
+                        0.267455
+                    ],
+                    "p_market": [
+                        0.312713,
+                        0.245196,
+                        0.442091
+                    ],
+                    "p_stat": [
+                        0.392594,
+                        0.262736,
+                        0.344669
+                    ],
+                    "retained_mass": 0.99999999971,
+                    "rho": -0.014612,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.6128,
+                    "draw_risk": false,
+                    "over_2_5": 0.5755,
+                    "p": [
+                        0.3926,
+                        0.2627,
+                        0.3447
+                    ],
+                    "p_display": [
+                        39.2,
+                        26.3,
+                        34.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1209,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0925,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0792,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0721,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0679,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.28,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Barnsley are 23rd and 3 points from safety, while Sheffield Wednesday are 5th and only 1 point clear of 7th, so both need the points.",
+                                "Barnsley have lost 8 of 13 league games (13 scored, 24 conceded) and have won only 1 of 6 at home, while Wednesday's 25-14 goal record is the better one.",
+                                "Only one source lists no absences for either side, which does not confirm full squads, so no adjustment is made."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.29,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Barnsley are in the relegation zone, 3 points from safety, while Sheffield Wednesday are 1 point clear of 7th in the promotion play-off places, so both sides need the points but Wednesday have the stronger incentive to protect a top-six spo",
+                                "Barnsley have lost 6 of their last 7 league matches and have only 1 home league win all season, while Sheffield Wednesday have won 3 of 6 away league games and beat Plymouth 3-0 in their last league outing.",
+                                "The last two league meetings both went to Barnsley, including a 4-2 home win in 2023, but that was under very different circumstances and is outweighed by the current gap in league position and away form."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.28,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams have immediate table pressure, with Barnsley in the relegation zone 3 points from safety and Sheffield Wednesday holding a 1-point buffer inside the promotion play-off places.",
+                                "Barnsley are winless in their last six league games and have lost five of those, giving fifth-placed Sheffield Wednesday a clear advantage despite playing away.",
+                                "One source lists no absences for either side yet, so no expected-goals adjustments are made rather than guessing at team news."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.27,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Barnsley are three points from safety while Wednesday are only one point above seventh, giving both strong league incentives but the visitors a higher current baseline.",
+                                "Barnsley have lost six of their past seven league matches, whereas Wednesday followed a difficult spell with a 3-0 win over Plymouth.",
+                                "Each side has no listed absences from only one source, so no availability-based goals adjustment is justified."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.28,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Barnsley are 23rd and 3 points from safety with 33 games left, so they need points more urgently than Wednesday, who are 5th, 1 point clear of 7th and 6 off automatic promotion.",
+                                "Barnsley have only 1 win from 6 home league games (6 goals) and lost their last four league matches, while Wednesday have 3 wins from 6 away and a far better goal difference.",
+                                "One source lists no absences for either side, which does not confirm full squads, so team news does not shift either attack."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3626,
+                        0.2683,
+                        0.3691
+                    ],
+                    "p_adj": [
+                        0.392594,
+                        0.262736,
+                        0.344669
+                    ],
+                    "p_llm": [
+                        0.253413,
+                        0.280478,
+                        0.466109
+                    ],
+                    "p_shadow": [
+                        0.362587,
+                        0.268341,
+                        0.369072
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "barnsley-vs-sheffield-wednesday-2026-11-20"
+            },
+            "sha256": "0318023a1bb33bf2cc04a44576905b718659e3b48f944c22f76fc664b5ec0da5",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0028-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "espanyol",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0099",
+                "home": "athletic-club",
+                "inputs": {
+                    "elo_away": 1361.5,
+                    "elo_home": 1490.9,
+                    "lambda_away": 0.845941,
+                    "lambda_home": 1.516788,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-19T20:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.526673,
+                        0.267731,
+                        0.205596
+                    ],
+                    "p_elo": [
+                        0.555577,
+                        0.257681,
+                        0.186742
+                    ],
+                    "p_market": [
+                        0.655008,
+                        0.211441,
+                        0.133551
+                    ],
+                    "p_stat": [
+                        0.554174,
+                        0.257318,
+                        0.188508
+                    ],
+                    "retained_mass": 0.999999999904,
+                    "rho": -0.033095,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.4462,
+                    "draw_risk": false,
+                    "over_2_5": 0.4254,
+                    "p": [
+                        0.5542,
+                        0.2573,
+                        0.1885
+                    ],
+                    "p_display": [
+                        55.4,
+                        25.7,
+                        18.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1461,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.12,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.114,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0964,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0943,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Athletic are missing three defenders and forwards: Paredes (2 league goals, 6 starts), Vivian and Eguiluz out, plus Guruzeta and Sannadi, so depth is thin and goals may be slightly reduced.",
+                                "Espanyol are only 2 points above the drop zone and need points more, while Athletic sit 6 clear and in mid-table comfort.",
+                                "Athletic have scored 11 goals in 6 home games while Espanyol have lost 5 of their last 8 games in all competitions, which favors the hosts despite the defensive absences."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Athletic Club are missing several defenders including regular starter Aitor Paredes, who has 2 league goals, plus Daniel Vivian and Unai Eguiluz, weakening their back line.",
+                                "Athletic Club are unbeaten in their last four home league games (3W 1D) and have scored 11 goals in 6 home matches, while Espanyol have lost 3 of their last 4 away league games.",
+                                "Espanyol sit only 2 points above the relegation zone and need points away from home, but Athletic Club's strong home form and 6-point cushion give the hosts a clear edge."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Athletic Club are missing regular starting defender Aitor Paredes (6 starts, 13% of their league goals) alongside Daniel Vivian and forwards Gorka Guruzeta and Maroan Sannadi, while Espanyol have regular starting midfielder Urko González li",
+                                "Espanyol sit just 2 points above the relegation zone after 12 games and face urgent pressure for points, whereas 7th-placed Athletic Club have a 6-point cushion with a game in hand.",
+                                "Athletic Club's strong home record of 11 goals scored and only 5 conceded across 6 games makes them clear favourites against an Espanyol side that has lost 6 of 12 league matches."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.95,
+                            "m_home": 0.91,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.28,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Athletic are without three defenders including regular starter Aitor Paredes plus three forwards, reducing both their defensive depth and attacking options.",
+                                "Espanyol are only two points above the relegation zone, giving the visitors added urgency to take something from the match.",
+                                "Athletic's 3-2-1 home league record with only five goals conceded still gives them a meaningful San Mamés edge over an Espanyol side with three away defeats in six."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.29,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Athletic are without regular starter Aitor Paredes (6 of 11 league starts and 13% of their league goals) plus other two-source absentees; Espanyol’s regular midfielder Urko González is listed by only one source, so that absence is less cert",
+                                "Espanyol are only 2 points above the relegation zone and need the points more than Athletic, who are 6 clear in 7th.",
+                                "Espanyol won the last two league meetings, including 2-1 at San Mamés, so this is not a routine Athletic home edge."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5405,
+                        0.2636,
+                        0.1959
+                    ],
+                    "p_adj": [
+                        0.546999,
+                        0.262291,
+                        0.19071
+                    ],
+                    "p_llm": [
+                        0.514126,
+                        0.268205,
+                        0.217669
+                    ],
+                    "p_shadow": [
+                        0.540507,
+                        0.263584,
+                        0.195909
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "athletic-club-vs-espanyol-2026-11-20"
+            },
+            "sha256": "29eae8b075d7fd69eb556e84be3cf22c9666cf629ff7358b3cc30c88406b9fc3",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0099-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "leganes",
+                "batch_id": "2026-11-18T1430Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-18T14:30:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0012",
+                "home": "fc-andorra",
+                "inputs": {
+                    "elo_away": 1133.5,
+                    "elo_home": 1176.2,
+                    "lambda_away": 1.004167,
+                    "lambda_home": 1.530101,
+                    "last_result_used": "2026-11-16",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-19T20:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.493972,
+                        0.258301,
+                        0.247728
+                    ],
+                    "p_elo": [
+                        0.465288,
+                        0.277016,
+                        0.257696
+                    ],
+                    "p_market": [
+                        0.513508,
+                        0.258846,
+                        0.227647
+                    ],
+                    "p_stat": [
+                        0.483533,
+                        0.265786,
+                        0.250682
+                    ],
+                    "retained_mass": 0.999999999892,
+                    "rho": -0.006095,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T19:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.4993,
+                    "draw_risk": false,
+                    "over_2_5": 0.4622,
+                    "p": [
+                        0.4835,
+                        0.2658,
+                        0.2507
+                    ],
+                    "p_display": [
+                        48.3,
+                        26.6,
+                        25.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1262,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1181,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0913,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0909,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0824,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.26,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "FC Andorra are without suspended defender Diego Alende (11 of 13 league starts) and goalkeeper Jesús Owono (6 starts), with two more doubtful, all from one source; that weakens their defence.",
+                                "Andorra are 21st and 2 points from safety, while Leganés are 2 points above the drop zone, so both need the points.",
+                                "Andorra played one match in the last 14 days, against three for Leganés, so they are the fresher side."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "FC Andorra are missing first-choice goalkeeper Jesús Owono and regular starting defender Diego Alende through suspension, weakening a defence that has already conceded 24 league goals.",
+                                "FC Andorra are in the relegation zone and two points from safety, so they need the home points more urgently than Leganés, who sit two points above the drop zone.",
+                                "Leganés have lost five of their last seven league games and have the division's joint-worst away scoring record with only five goals in seven away matches, which limits their threat despite Andorra's absences."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports FC Andorra are missing suspended regular-starting defender Diego Alende (11 of 13 league starts) and goalkeeper Jesús Owono (6 of 13 starts), weakening a defence that has already conceded 24 goals.",
+                                "Both clubs are fighting directly against the drop, with 21st-placed FC Andorra two points from safety and 16th-placed Leganés only two points above the relegation zone.",
+                                "Leganés have struggled on the road with four defeats and just five goals scored in seven away league matches, limiting their ability to fully exploit the hosts' defensive suspensions."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.04,
+                            "m_home": 0.93,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.27,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Andorra have a suspended goalkeeper who started 6 league matches and defender Alende, an 11-start regular, unavailable; both reports have only one source.",
+                                "Andorra are two points from safety and Leganés only two above relegation, so both have immediate survival points at stake.",
+                                "Leganés' 1-4-2 away return with only five goals scored gives Andorra a route to a result despite their own poor league position."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.31,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Andorra are without suspended regular defender Diego Alende (11 of 13 league starts) and goalkeeper Jesús Owono (6 starts); both are single-source, which modestly cuts their attacking threat.",
+                                "Andorra are in the relegation zone, two points from safety, while Leganés are only two above the drop, so Andorra need the points more.",
+                                "Leganés have played three matches in the last 14 days against one for Andorra, so the visitors come from the heavier run."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.4533,
+                        0.273,
+                        0.2736
+                    ],
+                    "p_adj": [
+                        0.469152,
+                        0.27127,
+                        0.259579
+                    ],
+                    "p_llm": [
+                        0.39009,
+                        0.276366,
+                        0.333544
+                    ],
+                    "p_shadow": [
+                        0.453348,
+                        0.273002,
+                        0.273649
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "fc-andorra-vs-leganes-2026-11-20"
+            },
+            "sha256": "0e9e7cd03ceadd7bfe6e1b43d5a8e2c19af392162eebf61d5d2fac1cf076bdd7",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0012-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "cesena",
+                "batch_id": "2026-11-19T0013Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-19T00:13:24Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0001",
+                "home": "hellas-verona",
+                "inputs": {
+                    "elo_away": 1139.8,
+                    "elo_home": 1128.9,
+                    "lambda_away": 1.069002,
+                    "lambda_home": 1.677129,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-19T20:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.502425,
+                        0.269143,
+                        0.228432
+                    ],
+                    "p_elo": [
+                        0.408419,
+                        0.283689,
+                        0.307892
+                    ],
+                    "p_market": [
+                        0.578206,
+                        0.242736,
+                        0.179058
+                    ],
+                    "p_stat": [
+                        0.458763,
+                        0.276317,
+                        0.26492
+                    ],
+                    "retained_mass": 0.999999999961,
+                    "rho": -0.116585,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-20T19:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-19T20:07:55Z",
+                "model_version": "v1.5-2026-11",
+                "published": {
+                    "btts": 0.5509,
+                    "draw_risk": false,
+                    "over_2_5": 0.5135,
+                    "p": [
+                        0.4588,
+                        0.2763,
+                        0.2649
+                    ],
+                    "p_display": [
+                        45.9,
+                        27.6,
+                        26.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1319,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0881,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.086,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0824,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0797,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.29,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Verona are missing several squad defenders and midfielders (Bradarić 4 starts, Korač 3, Compagnon doubtful), none are clear regulars, so only a small cut to their attack and defence; all listings rest on one source.",
+                                "Verona have scored 14 and conceded 6 in 6 home games, while Cesena have scored just 4 in 5 away games with 2 draws and 2 losses.",
+                                "Verona sit 1 point inside the play-off places and Cesena are 1 point outside them, so both need the points and a cautious game is plausible."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.33,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Verona are missing several defenders and midfielders, including Bradarić (4 starts, 2 assists) and Korač (3 starts), though none are their main scorer or first-choice goalkeeper; Cesena's absences are fringe players, so the home attack is l",
+                                "Verona sit 5th and are defending a promotion play-off place, only 1 point clear of 9th, while Cesena are 1 point outside the play-off spots, so both sides need points but Verona have home advantage in a direct play-off race.",
+                                "Verona are unbeaten in four league games (3W 1D) and have scored 14 goals in 6 home matches, while Cesena have won only once in 5 away games, suggesting Verona's home strength should edge a close contest."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.31,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Only one point separates 5th-placed Hellas Verona from 12th-placed Cesena, meaning a win for the visitors would lift them into the promotion play-off places at the hosts' expense.",
+                                "All reported absences for both clubs rely on just one source, with no confirmed regular starters missing, though Verona may lack defender Domagoj Bradarić who has four starts and two assists.",
+                                "Verona have scored 14 goals in six home matches while Cesena have managed just four goals in five away trips, giving the hosts a clear attacking edge at the Bentegodi."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.29,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Verona have single-source absences in Bradarić (four starts, two assists) and Korač, while Cesena's goalkeeper Klinsmann is also listed out by one source.",
+                                "Verona's 14-6 home scoring record and Cesena's 4-8 away return point to a home edge, though Cesena's six draws in 11 league matches keep the draw live.",
+                                "Verona are only one point above ninth and Cesena are one point outside the play-off places, giving both sides a direct incentive to avoid defeat."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.31,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Cesena are one point off the play-off places and Verona sit inside them only one point clear of 9th, so both have an immediate mid-table incentive rather than a dead rubber.",
+                                "Verona have scored 14 in six home games while Cesena have scored only four in five away games, which tilts this meeting toward a home win more than the league’s 36% home-win rate.",
+                                "Every listed absence is from one source and none is a regular starter, so neither side’s expected goals are cut for missing players."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4567,
+                        0.2836,
+                        0.2597
+                    ],
+                    "p_adj": [
+                        0.454475,
+                        0.277887,
+                        0.267638
+                    ],
+                    "p_llm": [
+                        0.464143,
+                        0.306325,
+                        0.229532
+                    ],
+                    "p_shadow": [
+                        0.456717,
+                        0.283557,
+                        0.259726
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "hellas-verona-vs-cesena-2026-11-20"
+            },
+            "sha256": "35e31e451e816514ee9402644109d4059a75eee653d64f4bbc0f9d98a9bfedb2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0001-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "1-fc-magdeburg",
                 "batch_id": "2026-11-18T1430Z-model-predict",
                 "competition": "2-bundesliga",
