@@ -7,6 +7,2386 @@
     "records": [
         {
             "record": {
+                "away": "queens-park-rangers",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0025",
+                "home": "millwall",
+                "inputs": {
+                    "elo_away": 1475.4,
+                    "elo_home": 1515.3,
+                    "lambda_away": 1.072573,
+                    "lambda_home": 1.523019,
+                    "last_result_used": "2026-11-07",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.473128,
+                        0.263149,
+                        0.263723
+                    ],
+                    "p_elo": [
+                        0.462359,
+                        0.277467,
+                        0.260174
+                    ],
+                    "p_market": [
+                        0.372077,
+                        0.266442,
+                        0.361481
+                    ],
+                    "p_stat": [
+                        0.452321,
+                        0.277626,
+                        0.270053
+                    ],
+                    "retained_mass": 0.999999999898,
+                    "rho": -0.028288,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5218,
+                    "draw_risk": false,
+                    "over_2_5": 0.4751,
+                    "p": [
+                        0.4523,
+                        0.2776,
+                        0.2701
+                    ],
+                    "p_display": [
+                        45.2,
+                        27.8,
+                        27
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1322,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1053,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0887,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0827,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0823,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.28,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Millwall have two defenders out (Leonard, Crama) and a doubtful goalkeeper (Marschall) and midfielder (de Norre), all from one source, which slightly weakens a side that has conceded 27 goals.",
+                                "QPR are 2 points off the play-offs and 5 off automatic promotion, while Millwall are 8 off the play-offs and 8 above the drop, so QPR need the points more.",
+                                "Millwall won the last three league meetings with QPR and won the August cup tie on penalties, which keeps this closer than QPR's table position suggests."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "QPR have several doubts in attack and midfield, including Burrell and Madsen who have scored 4 of their 24 league goals between them, while Millwall's absences are mostly squad defenders and a backup goalkeeper.",
+                                "QPR are only 2 points off the play-off places and have more to gain from a win, while Millwall are 8 points above the relegation zone and 8 points off the top six, so the away side's motivation is sharper.",
+                                "Millwall have won the last two league meetings at The Den, including a 2-0 win in April 2026, which supports a competitive home performance despite QPR's higher league position."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.29,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Queens Park Rangers sit just two points off the promotion play-off places and five off automatic promotion, giving them a stronger push for points than mid-table Millwall.",
+                                "All reported absences for both clubs rely on just one source, with Queens Park Rangers potentially missing semi-regulars Amadou Salif Mbengue, Nicolas Madsen, and Rumarn Burrell.",
+                                "Millwall have scored 15 goals in seven home league games compared to Queens Park Rangers' negative goal difference away from home (8-11), which balances out the visitors' higher league standing."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "QPR have defender Amadou Salif Mbengue out after seven league starts, while Burrell and Madsen are doubtful; all listed team-news items have only one source.",
+                                "QPR are only two points outside the play-off places, giving them a sharper immediate incentive than Millwall, who are eight points from both the play-offs and relegation zone.",
+                                "Millwall enter after consecutive 3-0 league defeats, whereas QPR won their latest match and have lost only three of 15 league games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.3,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "QPR are only 2 points off the play-off places, while Millwall are 8 clear of relegation and 8 off the play-offs, so the visitors have more riding on the result.",
+                                "Millwall's last two matches were both 0-3 defeats, which undercuts their otherwise useful home scoring just as they face a side that has drawn 3 of 7 away.",
+                                "Listed absences are single-source and none is a regular starter, so they do not justify a goals adjustment for either side."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4376,
+                        0.282,
+                        0.2804
+                    ],
+                    "p_adj": [
+                        0.452177,
+                        0.279288,
+                        0.268535
+                    ],
+                    "p_llm": [
+                        0.380022,
+                        0.290066,
+                        0.329911
+                    ],
+                    "p_shadow": [
+                        0.43762,
+                        0.281987,
+                        0.280394
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "millwall-vs-queens-park-rangers-2026-11-21"
+            },
+            "sha256": "098a3fb4ce5e40773c6384c017870cdcace93c96604c7fad8559c0cbf40a838b",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0025-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "cardiff-city",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0026",
+                "home": "norwich-city",
+                "inputs": {
+                    "elo_away": 1375.1,
+                    "elo_home": 1533.1,
+                    "lambda_away": 1.200822,
+                    "lambda_home": 2.191854,
+                    "last_result_used": "2026-11-07",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.596323,
+                        0.20548,
+                        0.198197
+                    ],
+                    "p_elo": [
+                        0.583998,
+                        0.249479,
+                        0.166523
+                    ],
+                    "p_market": [
+                        0.323384,
+                        0.290095,
+                        0.386522
+                    ],
+                    "p_stat": [
+                        0.562742,
+                        0.239973,
+                        0.197286
+                    ],
+                    "retained_mass": 0.999999999778,
+                    "rho": -0.028288,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6327,
+                    "draw_risk": false,
+                    "over_2_5": 0.6463,
+                    "p": [
+                        0.5627,
+                        0.24,
+                        0.1973
+                    ],
+                    "p_display": [
+                        56.3,
+                        24,
+                        19.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1063,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0915,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0762,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.068,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0672,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.25,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Norwich arrive on four straight wins with 15 goals scored, while Cardiff have only 6 goals and no wins in 7 away league games, with 14 conceded.",
+                                "Norwich are without forward Mohamed Touré (5 goals, 16% of the team's), and four others are doubtful on mostly one source; Cardiff's two doubts are minor.",
+                                "Norwich have won four of the last six meetings, including the Carabao Cup tie in August, and scored at least 2 in five of them."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.24,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Norwich are missing Mohamed Touré, a regular starter with 5 league goals (16% of their total), which slightly reduces their attacking threat; Cardiff's only doubtful regular is a defender with 2 starts, so their team news is minor.",
+                                "Norwich have won four straight league games, scoring 15 goals in that run, while Cardiff are winless away all season with 0 wins, 2 draws and 5 losses on the road.",
+                                "Norwich have won four of the last five league meetings, including a 4-2 home win in May 2025 and a 2-1 Carabao Cup win at Cardiff in August 2026."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.24,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source reports Norwich forward Mohamed Touré is out injured, removing 5 league goals (16% of the team's total) across 7 starts.",
+                                "Norwich enter on a four-match winning streak scoring 15 goals, whereas Cardiff are winless in 7 away league games (0W 2D 5L) and have been outscored 14-6 on the road.",
+                                "Norwich have won five of the last six meetings between these clubs, including all three home league fixtures and an away cup tie earlier this season."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.24,
+                                "home": 0.53
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Norwich are without Mohamed Touré, whose five league goals are 16% of their total, though the absence is reported by one source.",
+                                "Norwich have won their last four matches by a combined 15-3, while Cardiff remain winless in seven league away games.",
+                                "Norwich have won five of the last six meetings with Cardiff, including each of the last three at Carrow Road."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.2,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "form",
+                                "head_to_head",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Norwich have won their last four, scoring 15 goals, while Cardiff have no wins and only six goals in seven away league games, so the home side should control this more than their mixed home record suggests.",
+                                "Norwich have won four of the last five league meetings, usually scoring at least twice, which points to another open home win rather than a low-scoring stalemate.",
+                                "Mohamed Touré is listed out by one source only; he has five league goals (16% of Norwich's) but has started just 7 of 15, so the attacking hit is modest, and Cardiff's doubts are also single-source and unconfirmed."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5499,
+                        0.2411,
+                        0.2091
+                    ],
+                    "p_adj": [
+                        0.556718,
+                        0.242564,
+                        0.200718
+                    ],
+                    "p_llm": [
+                        0.52099,
+                        0.234119,
+                        0.244891
+                    ],
+                    "p_shadow": [
+                        0.549878,
+                        0.241069,
+                        0.209053
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "norwich-city-vs-cardiff-city-2026-11-21"
+            },
+            "sha256": "ad39d3cccc1366cd90e996fe35c0d0a49918af0f6a0d31571210f47577506150",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0026-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "derby-county",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0027",
+                "home": "southampton",
+                "inputs": {
+                    "elo_away": 1416.6,
+                    "elo_home": 1637,
+                    "lambda_away": 0.935975,
+                    "lambda_home": 2.102793,
+                    "last_result_used": "2026-11-07",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.639476,
+                        0.205365,
+                        0.155159
+                    ],
+                    "p_elo": [
+                        0.642732,
+                        0.22937,
+                        0.127898
+                    ],
+                    "p_market": [
+                        0.708422,
+                        0.174431,
+                        0.117147
+                    ],
+                    "p_stat": [
+                        0.609304,
+                        0.232452,
+                        0.158245
+                    ],
+                    "retained_mass": 0.999999999881,
+                    "rho": -0.028288,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5443,
+                    "draw_risk": false,
+                    "over_2_5": 0.5743,
+                    "p": [
+                        0.6093,
+                        0.2325,
+                        0.1582
+                    ],
+                    "p_display": [
+                        60.9,
+                        23.3,
+                        15.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1097,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1009,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0944,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0934,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0707,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Derby have many doubtful players, including Szmodics (12 starts, 21% of goals) and Taylor, mostly from one source, while Southampton's Larin (7 goals, 24%) and Schlotterbeck are doubtful.",
+                                "Southampton are only 2 points off the play-off places while Derby sit 5 points from safety and need points badly.",
+                                "Southampton have won 6 of 7 at home with a 20-5 goal record, while Derby have won 1 of 7 away and conceded 15."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.2,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Southampton's main scorer Cyle Larin (7 league goals, 24% of team's goals) is doubtful, and regular defender Keven Schlotterbeck is also doubtful, which could blunt their attack and unsettle their back line.",
+                                "Derby have several regular starters doubtful or out, including forward Sammie Szmodics (3 goals, 21% of team's goals) and midfielder Ryan Hedges, weakening a side already 5 points from safety.",
+                                "Southampton are 2 points off the play-off places and 5 off automatic promotion, so they need the points at home, while Derby are in the relegation zone and 5 points from safety."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides face doubts over key regular starters, with one source listing Southampton's top scorer Cyle Larin (24% of their league goals) and Derby's Sammie Szmodics (21% of their goals) as doubtful alongside confirmed two-source doubt Keve",
+                                "Both teams urgently need points at opposite ends of the table, as Southampton are two points outside the play-off places despite a four-point deduction while Derby County sit in the relegation zone five points from safety.",
+                                "Southampton's dominant unbeaten home record (six wins and one draw from seven matches, outscoring opponents 20-5) gives them a decisive edge over a Derby side that has lost four of seven away games."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 0.95,
+                            "m_home": 1.02,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.19,
+                                "home": 0.7
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Most injury reports are from one source: Southampton’s 7-goal forward Larin is doubtful, while Derby have doubts over regular starters Szmodics, Hedges and Taylor, slightly weakening Derby overall.",
+                                "Southampton’s 6-1-0 home record with 20 goals contrasts with Derby’s 1-2-4 away record and 15 goals conceded.",
+                                "Southampton are only two points outside the play-offs, whereas Derby are five points from safety, adding importance for both sides."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.93,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.21,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Derby are 23rd and five points from safety with 31 games left, so they need points more, while Southampton are only two points off the play-off places.",
+                                "Southampton's main scorer Larin (24% of league goals) is only doubtful via one source, and Derby's Szmodics (21% of goals) plus several defenders are doubtful or out, mostly from one source rather than confirmed.",
+                                "Southampton are unbeaten at home with 20 goals in seven games, while Derby have lost four of seven away and conceded 15, pointing to home control."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6232,
+                        0.2277,
+                        0.1492
+                    ],
+                    "p_adj": [
+                        0.608555,
+                        0.2353,
+                        0.156145
+                    ],
+                    "p_llm": [
+                        0.67909,
+                        0.197798,
+                        0.123112
+                    ],
+                    "p_shadow": [
+                        0.623162,
+                        0.227676,
+                        0.149162
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "southampton-vs-derby-county-2026-11-21"
+            },
+            "sha256": "2271d51766e3a0d40b7ededf802179b556075275f405abb9394c6c4199204cb9",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0027-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "wigan-athletic",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "league-one",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0034",
+                "home": "blackpool",
+                "inputs": {
+                    "elo_away": 1116.6,
+                    "elo_home": 1157.5,
+                    "lambda_away": 0.950268,
+                    "lambda_home": 1.336899,
+                    "last_result_used": "2026-11-14",
+                    "market": {
+                        "books": 15,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.454285,
+                        0.281584,
+                        0.264132
+                    ],
+                    "p_elo": [
+                        0.463437,
+                        0.277302,
+                        0.259261
+                    ],
+                    "p_market": [
+                        0.456551,
+                        0.264117,
+                        0.279333
+                    ],
+                    "p_stat": [
+                        0.462219,
+                        0.277937,
+                        0.259845
+                    ],
+                    "retained_mass": 0.999999999805,
+                    "rho": -0.014618,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4531,
+                    "draw_risk": false,
+                    "over_2_5": 0.4019,
+                    "p": [
+                        0.4622,
+                        0.278,
+                        0.2598
+                    ],
+                    "p_display": [
+                        46.2,
+                        27.8,
+                        26
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1362,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1292,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1021,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0931,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0923,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.29,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Blackpool are level on points with 21st and Wigan are only 2 points above the drop, so both sides need the points in a relegation six-pointer.",
+                                "Wigan have won their last four matches in all competitions, while Blackpool have lost 5 of their last 7 and are winless in their last 3 league games, but Wigan have lost 6 of 7 league away games.",
+                                "Only one source lists no absences for either side, which does not confirm full squads, so no team-news adjustment is made."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Both sides are near the relegation line: Blackpool are level on points with 21st, while Wigan are only 2 points above the drop zone, so this is a high-stakes meeting between two teams desperate to avoid being dragged into the bottom four.",
+                                "Wigan have lost all 7 away league games this season, scoring only 4 goals, which makes an away win unlikely despite their slightly better recent overall results.",
+                                "Recent league meetings have been tight, with three of the last five ending level, including a 1-1 draw in this fixture in March 2026."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.29,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams urgently need points to stay clear of the relegation zone, as Blackpool sit level on points with 21st place and Wigan are only two points above the drop with two extra games played.",
+                                "Wigan arrive unbeaten in five matches across all competitions, yet they remain winless in seven away league outings (0W 1D 6L, scoring just four goals), handing a clear advantage to a Blackpool side averaging two goals scored per home leagu",
+                                "Only one source lists no absences for either squad so far, so full player availability is not yet confirmed and no team news adjustments are applied."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.29,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both are close to the relegation line, with Blackpool level with 21st and Wigan only two points clear, raising the value of a home result.",
+                                "Wigan have lost six of seven league away matches and scored only four away goals, giving Blackpool a meaningful venue-based edge.",
+                                "Only one source currently lists no absences for either side, so no availability adjustment is justified."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.32,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "This is a relegation scrap rather than an ordinary meeting: Blackpool are level with 21st and Wigan are only 2 points above the drop zone.",
+                                "Wigan have not won any of seven league away games and have scored only 4, so an away win is less likely than the League One base rate.",
+                                "One source lists no absences for either side, which does not confirm full squads, so neither side's expected goals are adjusted."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4582,
+                        0.282,
+                        0.2598
+                    ],
+                    "p_adj": [
+                        0.462219,
+                        0.277937,
+                        0.259845
+                    ],
+                    "p_llm": [
+                        0.442085,
+                        0.298388,
+                        0.259527
+                    ],
+                    "p_shadow": [
+                        0.458206,
+                        0.281965,
+                        0.25983
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "blackpool-vs-wigan-athletic-2026-11-21"
+            },
+            "sha256": "e9b9f0d6dd3d3282f9c40109fcf2c9ec113ac9c15b16877021a77f96c8ef58a2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0034-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "bromley",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "league-one",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0035",
+                "home": "reading",
+                "inputs": {
+                    "elo_away": 990.9,
+                    "elo_home": 1218.7,
+                    "lambda_away": 0.878877,
+                    "lambda_home": 2.767024,
+                    "last_result_used": "2026-11-14",
+                    "market": {
+                        "books": 15,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.766361,
+                        0.142182,
+                        0.091457
+                    ],
+                    "p_elo": [
+                        0.649297,
+                        0.226857,
+                        0.123846
+                    ],
+                    "p_market": [
+                        0.701005,
+                        0.17966,
+                        0.119335
+                    ],
+                    "p_stat": [
+                        0.719654,
+                        0.176909,
+                        0.103437
+                    ],
+                    "retained_mass": 0.99999999985,
+                    "rho": -0.014618,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5613,
+                    "draw_risk": false,
+                    "over_2_5": 0.6892,
+                    "p": [
+                        0.7197,
+                        0.1769,
+                        0.1034
+                    ],
+                    "p_display": [
+                        72,
+                        17.7,
+                        10.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.0938,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0865,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0825,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0801,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0761,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Reading are 1 point off the play-off places while Bromley are 24th and 3 points from safety, so both sides need the points.",
+                                "Reading have won 5 of 7 at home with 17 goals scored, while Bromley have lost 5 of 7 away and conceded 19.",
+                                "Only one source lists no absences for either side, so this does not confirm full squads and no adjustment is made."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Reading are 1 point off the play-off places and have a strong incentive to beat bottom side Bromley, while Bromley are 3 points from safety and desperate for points.",
+                                "Reading have won 5 of 7 home league games this season, scoring 17 goals, while Bromley have lost 5 of 7 away league games and conceded 19.",
+                                "No confirmed absences are listed for either side, so team news is not expected to materially change the match."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.21,
+                                "home": 0.65
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams have clear early motivation, with Reading sitting just one point outside the play-off places while bottom-placed Bromley are three points from safety.",
+                                "Reading's five wins and 17 goals scored in seven home league games make them strong favourites against a Bromley side that has lost five of seven away matches while conceding 19.",
+                                "One source lists no absences for either squad yet, so no adjustment can be made without guessing at team news."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.2,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Reading are one point outside the play-offs, while bottom-side Bromley are three points from safety, raising the value of points for both sides.",
+                                "Reading's 5-1-1 home league record contrasts with Bromley's 1-1-5 away return, pointing to sustained home control.",
+                                "League One's 44% home-win rate provides a favourable baseline, amplified by the wide home-and-away performance gap."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Reading sit 1 point off the play-off places, while Bromley are in the drop zone and 3 points from safety, so both need points but the gap favours the side chasing promotion.",
+                                "Reading have taken 16 points from 7 home league games (17-7), against Bromley's 4 points from 7 away (9-19), so this is a much stronger home edge than a typical League One meeting.",
+                                "One source lists no absences for either side, which does not confirm a fully available squad, so expected goals are left unadjusted."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7028,
+                        0.1854,
+                        0.1118
+                    ],
+                    "p_adj": [
+                        0.719654,
+                        0.176909,
+                        0.103437
+                    ],
+                    "p_llm": [
+                        0.629231,
+                        0.220366,
+                        0.150403
+                    ],
+                    "p_shadow": [
+                        0.702751,
+                        0.185425,
+                        0.111823
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "reading-vs-bromley-2026-11-21"
+            },
+            "sha256": "8b7000d36e080017c03ba8e2bae305d06f0c4cd7e53e5d0cb6db71a9523ce1b9",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0035-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "deportivo-la-coruna",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0100",
+                "home": "alaves",
+                "inputs": {
+                    "elo_away": 1323.9,
+                    "elo_home": 1393.3,
+                    "lambda_away": 0.984153,
+                    "lambda_home": 1.34239,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.445264,
+                        0.284561,
+                        0.270174
+                    ],
+                    "p_elo": [
+                        0.493554,
+                        0.272083,
+                        0.234363
+                    ],
+                    "p_market": [
+                        0.439633,
+                        0.286448,
+                        0.273919
+                    ],
+                    "p_stat": [
+                        0.478198,
+                        0.274818,
+                        0.246984
+                    ],
+                    "retained_mass": 0.999999999793,
+                    "rho": -0.033126,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.464,
+                    "draw_risk": false,
+                    "over_2_5": 0.4151,
+                    "p": [
+                        0.4782,
+                        0.2748,
+                        0.247
+                    ],
+                    "p_display": [
+                        47.8,
+                        27.5,
+                        24.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1362,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1287,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0984,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0945,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.093,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.3,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Deportivo's Aubameyang is doubtful on one source's report; he has 5 of the side's 15 league goals (33%), so his absence would cut their attack, while Alavés miss only Mikel Rodríguez (1 goal) and Garcés.",
+                                "Alavés are only 3 points above the drop zone and need points at home more than 9th-placed Deportivo, who are 5 points clear.",
+                                "Deportivo have drawn 6 of 12 league games and won once away in 6, while Alavés have scored 11 goals at home, so a tight result with a slight home edge looks likely."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.31,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Deportivo's main scorer Aubameyang is doubtful; he has 5 of their 15 league goals (33%) plus 2 assists, so if he misses, their attack loses its most productive finisher.",
+                                "Alavés are only 3 points above the relegation zone and need the home points more urgently than Deportivo, who sit 5 points clear.",
+                                "Alavés have lost 4 of their last 6 league games, but their home record is solid (3W 1D 2L, 11-6 goals), which points to a tight contest against a Deportivo side with 3 draws in their last 4 away league games."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Deportivo La Coruña's attack could be weakened as regular starter Pierre-Emerick Aubameyang, who has scored 33% of their league goals, is listed as doubtful by one source, alongside defender Bright Ede who is listed by a second source.",
+                                "Alavés sit just three points above the relegation zone and need a positive home result before facing Real Madrid away next week.",
+                                "Deportivo La Coruña have drawn six of their 12 league games including three of six away, making another stalemate probable against an Alavés side winless in eight straight league outings."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.91,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.29,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Deportivo's Aubameyang is doubtful from one source; his five league goals account for 33% of their total, reducing their attacking outlook if unavailable.",
+                                "Alavés have won three of six home league matches while Deportivo have managed only one win in six away games, favouring the hosts in a close game.",
+                                "Alavés are only three points above relegation, so the home side have added urgency to convert their strong home record."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.34,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Deportivo's main scorer Aubameyang (5 goals, 33% of their league total, 6 starts) is only doubtful and comes from one source, so he is not treated as a confirmed absence; Alavés are without a squad midfielder (2 starts) and Garcés, whose ro",
+                                "Alavés sit only 3 points above the relegation zone after 12 games, so a home result matters more for them than for Deportivo, who are 5 points clear.",
+                                "Deportivo have drawn 3 of 6 away league games, while Alavés have no league win in the recent run since early September, which points to a tight game rather than a home rout."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4674,
+                        0.2829,
+                        0.2497
+                    ],
+                    "p_adj": [
+                        0.482483,
+                        0.27626,
+                        0.241257
+                    ],
+                    "p_llm": [
+                        0.407922,
+                        0.30798,
+                        0.284097
+                    ],
+                    "p_shadow": [
+                        0.467414,
+                        0.282852,
+                        0.249734
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "alaves-vs-deportivo-la-coruna-2026-11-21"
+            },
+            "sha256": "bec3a63e28417b5cdcde9bee1dfc0c0677d3a0dcddf4fd38c4a701e2d2b7d01d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0100-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fulham",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0097",
+                "home": "manchester-city",
+                "inputs": {
+                    "elo_away": 1439.1,
+                    "elo_home": 1718.4,
+                    "lambda_away": 0.866895,
+                    "lambda_home": 2.076867,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 24,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.648718,
+                        0.209416,
+                        0.141865
+                    ],
+                    "p_elo": [
+                        0.692963,
+                        0.208766,
+                        0.098272
+                    ],
+                    "p_market": [
+                        0.707625,
+                        0.172798,
+                        0.119577
+                    ],
+                    "p_stat": [
+                        0.674586,
+                        0.208331,
+                        0.117083
+                    ],
+                    "retained_mass": 0.999999999901,
+                    "rho": -0.051007,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5096,
+                    "draw_risk": false,
+                    "over_2_5": 0.5668,
+                    "p": [
+                        0.6746,
+                        0.2083,
+                        0.1171
+                    ],
+                    "p_display": [
+                        67.5,
+                        20.8,
+                        11.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1181,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1087,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1024,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0991,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0818,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.23,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Semenyo is out (6 league starts, 2 goals, 3 assists) and Guehi, a regular starter in defence, is doubtful, which trims City slightly.",
+                                "City are 6 points behind the leaders and have lost 3 of 10, while Fulham sit only 2 points above the drop and need points.",
+                                "City won all five recent league meetings, scoring at least two goals in each, and Fulham have scored only 3 goals in 5 away league games."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Manchester City are missing regular forward Antoine Semenyo, who has 2 league goals and 3 assists, and may also be without regular defender Marc Guehi; this removes a meaningful share of their attacking output and weakens their back line.",
+                                "Manchester City are 6 points behind the leaders and need a home win to stay in the title race, while Fulham are only 2 points above the relegation zone and also need points, but City's need is more urgent for the title.",
+                                "Manchester City have won all five recent league meetings with Fulham, including a 3-0 home win in February 2026, and have scored at least 2 goals in each of those matches."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Manchester City are without regular starting forward Antoine Semenyo (10% of their league goals and three assists) and have doubts over key defender Marc Guehi (started 9 of 10 games), while Abduqodir Khusanov is listed as doubtful by only ",
+                                "Manchester City must manage their squad with a Champions League match against Napoli coming just three days after this fixture, whereas Fulham have an eight-day gap before their next game.",
+                                "Manchester City have lost three of their last four league games to fall six points behind the leaders, making a home win essential against a Fulham side sitting just two points above the relegation zone."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.21,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "City are without regular-starting forward Antoine Semenyo, whose 2 goals and 3 assists reduce their attacking expectation; Guehi is only doubtful and Khusanov is listed by one source.",
+                                "Fulham are only two points above the relegation zone, while City need to make up a six-point gap to the leaders.",
+                                "City have won four of five home league matches, whereas Fulham have scored only three goals across five away league games."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.22,
+                                "home": 0.6
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Semenyo is confirmed out by two sources: a regular starter with 2 league goals (10% of City's) and 3 assists, a modest cut to City's attack; Guehi is only doubtful and Khusanov is one source, while Fulham's Cairney has started none of 10 le",
+                                "Fulham sit only 2 points above the relegation zone, so they need points more than a mid-table side, while City are 6 behind the leaders with 28 games left.",
+                                "City have won the last five league meetings, including 3-0 at home in February, so this fixture has rarely been shared."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6609,
+                        0.2122,
+                        0.1269
+                    ],
+                    "p_adj": [
+                        0.664286,
+                        0.214097,
+                        0.121617
+                    ],
+                    "p_llm": [
+                        0.646005,
+                        0.204094,
+                        0.149902
+                    ],
+                    "p_shadow": [
+                        0.660947,
+                        0.212173,
+                        0.126879
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "manchester-city-vs-fulham-2026-11-21"
+            },
+            "sha256": "a67ac70e4794800308c448918399deb8d3d201b8a54fe8eb7066c4f83dad77f2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0097-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "granada",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0013",
+                "home": "cd-sabadell",
+                "inputs": {
+                    "elo_away": 1267,
+                    "elo_home": 1135.2,
+                    "lambda_away": 1.030487,
+                    "lambda_home": 0.986608,
+                    "last_result_used": "2026-11-16",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.334324,
+                        0.308451,
+                        0.357224
+                    ],
+                    "p_elo": [
+                        0.286162,
+                        0.281417,
+                        0.432421
+                    ],
+                    "p_market": [
+                        0.38404,
+                        0.301444,
+                        0.314516
+                    ],
+                    "p_stat": [
+                        0.309612,
+                        0.294547,
+                        0.39584
+                    ],
+                    "retained_mass": 0.999999999855,
+                    "rho": -0.006019,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4009,
+                    "draw_risk": false,
+                    "over_2_5": 0.3322,
+                    "p": [
+                        0.3096,
+                        0.2946,
+                        0.3958
+                    ],
+                    "p_display": [
+                        31,
+                        29.4,
+                        39.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.151,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.13,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1278,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.1208,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0783,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.27,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Granada have won 8 of their last 9 in all competitions, while Sabadell have taken 1 win from their last 6 league games.",
+                                "Sabadell are without forward Gioacchini (3 league goals, 25% of the team's) and Català is suspended; Arnáiz is doubtful for Granada, with one source for each.",
+                                "Granada have 6 rest days against Sabadell's 3, and Sabadell played a Copa del Rey match three days ago."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.3,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sabadell are missing Nicholas Gioacchini, who has scored 3 of their 12 league goals (25%), and have José Luis Català suspended, weakening an attack that has only scored 12 in 14 games.",
+                                "Sabadell have played 3 matches in the last 14 days and have only 3 rest days before this match, while Granada have had 6 rest days and played just once in that period.",
+                                "Granada are 4 points off automatic promotion and need the points to keep pressure on the top two, while Sabadell are 5 points above the relegation zone and mainly need to avoid defeat."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.3,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "CD Sabadell have only three rest days after a midweek Copa del Rey trip and play their third match in 14 days, whereas Granada have had six days to prepare.",
+                                "One source lists Sabadell forward Nicholas Gioacchini (three league goals, 25% of their total) as out and Granada regular starter José Arnáiz (11 starts) as doubtful.",
+                                "Granada enter on a seven-match winning streak across all competitions, testing a Sabadell side that is unbeaten in six home league games but winless in their last five league outings."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.28,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sabadell's single-source absences include Gioacchini, whose three league goals are 25% of their total, while Granada's Arnáiz is only doubtful from one source.",
+                                "Sabadell have had three matches and only three rest days in the past 14 days, compared with Granada's one match and six rest days.",
+                                "Granada arrive on a six-match winning run, but Sabadell are unbeaten in six home league games, making a draw the likeliest single score."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.29,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sabadell have only 3 rest days after a midweek cup win and three matches in 14 days, while Granada have had 6 days and one match in that span.",
+                                "Sabadell are without Gioacchini, a forward with 3 of their 12 league goals, plus a suspension; both listings are one source only, and Granada’s Arnáiz is only doubtful on one source.",
+                                "Granada sit 3rd and 4 points off automatic promotion, so the points matter more than for 14th-placed Sabadell, who are 5 clear of the drop and 6 off the play-offs."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3033,
+                        0.2955,
+                        0.4013
+                    ],
+                    "p_adj": [
+                        0.305759,
+                        0.297174,
+                        0.397067
+                    ],
+                    "p_llm": [
+                        0.293219,
+                        0.28865,
+                        0.418132
+                    ],
+                    "p_shadow": [
+                        0.303254,
+                        0.295493,
+                        0.401253
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "cd-sabadell-vs-granada-2026-11-21"
+            },
+            "sha256": "30613633d185012c0c4ea1f28d0894291d521b95a816a380296f5aa506e054a4",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0013-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "caykur-rizespor",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0015",
+                "home": "amed-sfk",
+                "inputs": {
+                    "elo_away": 1418.9,
+                    "elo_home": 1380.4,
+                    "lambda_away": 1.282977,
+                    "lambda_home": 2.606697,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.6521,
+                        0.184631,
+                        0.163269
+                    ],
+                    "p_elo": [
+                        0.379434,
+                        0.285324,
+                        0.335242
+                    ],
+                    "p_market": [
+                        0.565228,
+                        0.227936,
+                        0.206836
+                    ],
+                    "p_stat": [
+                        0.525999,
+                        0.234634,
+                        0.239367
+                    ],
+                    "retained_mass": 0.999999999944,
+                    "rho": -0.089538,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6949,
+                    "draw_risk": false,
+                    "over_2_5": 0.7233,
+                    "p": [
+                        0.526,
+                        0.2346,
+                        0.2394
+                    ],
+                    "p_display": [
+                        52.6,
+                        23.5,
+                        23.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0947,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0727,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0719,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0643,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0625,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.2,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Amed SFK are without suspended Samuel Ballet (4 league goals, 14% of the team's) and Ermal Krasniqi (11 starts), plus defender Lumbardh Dellova; this trims their attack and back line, though one injury source only for two of them.",
+                                "Amed have won all 6 home league games with 19 goals scored, while Rizespor have lost 4 of their last 6 in all competitions and conceded 3 or more in two of them.",
+                                "Amed are 5 points off the leaders and chasing the title, while Rizespor are 6 points above the relegation zone and have less pressure."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.22,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Amed SFK are missing suspended forward Samuel Ballet and injured forward Ermal Krasniqi, who together account for 5 of their 28 league goals, plus injured regular defender Lumbardh Dellova; Rizespor's absences are mostly squad players, so A",
+                                "Amed SFK have won all 6 home league games this season, scoring 19 and conceding 4, while Rizespor have lost 3 of their last 5 league matches.",
+                                "Amed SFK are 5 points behind the leaders and need a home win to stay in the title race, while Rizespor are 6 points above the relegation zone and have less immediate pressure."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.9,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.24,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Amed SFK lose 14% of their league goals with regular forward Samuel Ballet suspended across two sources, while one source also lists regular starters Ermal Krasniqi and Lumbardh Dellova out injured.",
+                                "Amed SFK's perfect 6-0-0 home record and 19 goals scored in six home games make them clear favourites, though Caykur Rizespor have only lost one of their six away matches.",
+                                "Sitting 3rd and five points off the league leaders, Amed SFK have a strong incentive to attack and stay in the title race against 11th-placed Rizespor."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.23,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Amed are without suspended 4-goal forward Samuel Ballet and may also miss regular starters Krasniqi and Dellova, reducing their usual attacking edge; the latter two listings have only one source.",
+                                "Amed have won all six home league matches, scoring 19 goals, but Rizespor’s 3-2-1 away record makes them a credible resistance.",
+                                "Amed are five points off the lead, so the hosts have strong incentive to press for a home win despite the absences."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Amed are without suspended regular forward Samuel Ballet (4 goals, 14% of the side's league goals; two sources) plus, on one source only, every-game starter Ermal Krasniqi (1 goal, 2 assists) and regular defender Lumbardh Dellova, which tri",
+                                "Amed have won all six home league games 19-4, so they should still control the match, but Rizespor's away record of 3 wins, 2 draws and 1 loss (8-5) means they are not an easy visitor.",
+                                "Amed sit 5 points off the leaders and need the win to stay in the title race, while Rizespor are 11th and 6 points above the relegation zone, so the points matter more to the home side."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5157,
+                        0.2396,
+                        0.2447
+                    ],
+                    "p_adj": [
+                        0.504325,
+                        0.242741,
+                        0.252935
+                    ],
+                    "p_llm": [
+                        0.560894,
+                        0.225947,
+                        0.213159
+                    ],
+                    "p_shadow": [
+                        0.515743,
+                        0.239555,
+                        0.244702
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "amed-sfk-vs-caykur-rizespor-2026-11-21"
+            },
+            "sha256": "ab19334c17d334471ae70355a4146e4c140bcd4e26409412f262a2777fd8c710",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0015-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "samsunspor",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0016",
+                "home": "galatasaray",
+                "inputs": {
+                    "elo_away": 1417.1,
+                    "elo_home": 1800,
+                    "lambda_away": 0.848278,
+                    "lambda_home": 2.698096,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-20T13:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.757894,
+                        0.155489,
+                        0.086617
+                    ],
+                    "p_elo": [
+                        0.768236,
+                        0.171761,
+                        0.060003
+                    ],
+                    "p_market": [
+                        0.795771,
+                        0.128116,
+                        0.076113
+                    ],
+                    "p_stat": [
+                        0.777949,
+                        0.155756,
+                        0.066295
+                    ],
+                    "retained_mass": 0.999999999901,
+                    "rho": -0.089538,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T13:08:50Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5364,
+                    "draw_risk": false,
+                    "over_2_5": 0.6895,
+                    "p": [
+                        0.7779,
+                        0.1558,
+                        0.0663
+                    ],
+                    "p_display": [
+                        77.8,
+                        15.6,
+                        6.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1077,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0969,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0914,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0822,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0738,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.17,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Galatasaray are missing Osimhen (9 league goals, 33% of the team's) and first-choice keeper Çakır, with Sallai and Leão also out, so their goals and defence are weakened; two of these are single-source reports.",
+                                "Samsunspor are 17th and 1 point from safety, but they have lost 8 of 11 and conceded 26 goals, while Galatasaray lead by 3 points and need to keep pace.",
+                                "Both sides have had 14 days of rest, though Galatasaray face Aston Villa in 3 days and could rotate slightly."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.88,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.16,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Galatasaray are missing several key attackers: Osimhen (33% of league goals), Leão, Sallai and first-choice goalkeeper Çakır, which should reduce their usual attacking output.",
+                                "Galatasaray are top and only 3 points clear of 2nd, so they need the win to protect their title lead, while Samsunspor are in the relegation zone and 1 point from safety.",
+                                "Samsunspor have lost 8 of 11 league games and have only 1 away win, so even a weakened Galatasaray should control this at home."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.87,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Galatasaray are missing 40% of their league goals with forwards Victor Osimhen and Rafael Leão confirmed out by two sources, while one source also lists regular starters Uğurcan Çakır in goal and Roland Sallai as out.",
+                                "Galatasaray play Aston Villa in the Champions League three days after this match, which could prompt squad management compared to Samsunspor who have a full week until their next fixture.",
+                                "Both sides have high motivation as league leaders Galatasaray need a win to protect a three-point lead at the top, while 17th-placed Samsunspor are just one point from safety."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.03,
+                            "m_home": 0.85,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.24,
+                                "home": 0.6
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Galatasaray are without 9-goal Osimhen plus Leão, while regular starter Sallai and goalkeeper Çakır are also listed out by one source, reducing their attack and weakening their usual defensive security.",
+                                "Samsunspor are only one point from safety, so the relegation-zone side have a strong need to pursue a result despite the difficult venue.",
+                                "Galatasaray's unbeaten 5W-1D home league record contrasts with Samsunspor losing four of five away matches, favouring the hosts even with their absences."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.88,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.23,
+                                "home": 0.61
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Galatasaray are without Osimhen, 9 of their 27 league goals (33%) and 3 assists, plus Leão (2 goals); their first-choice goalkeeper Çakır and regular forward Sallai are listed out by only one source, so the attack and the last line are both",
+                                "Samsunspor sit 17th and one point from safety, so they need points more than Galatasaray, who are top and three clear of second.",
+                                "Both sides have had 14 days' rest, but Galatasaray's next match is a Champions League game against Aston Villa only three days later, which can temper how hard they push."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7406,
+                        0.1755,
+                        0.0839
+                    ],
+                    "p_adj": [
+                        0.755913,
+                        0.170586,
+                        0.073501
+                    ],
+                    "p_llm": [
+                        0.66832,
+                        0.192418,
+                        0.139263
+                    ],
+                    "p_shadow": [
+                        0.740641,
+                        0.175484,
+                        0.083875
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "galatasaray-vs-samsunspor-2026-11-21"
+            },
+            "sha256": "6fa0221909fd40fc8fc0f4dbc1ee3ab163e33f8cab27ff158cbd2faf34bf0db6",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0016-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "tsv-eintracht-braunschweig",
                 "batch_id": "2026-11-20T0231Z-model-predict",
                 "competition": "2-bundesliga",
@@ -238,7 +2618,7 @@
                 "slug": "1-fc-nurnberg-vs-tsv-eintracht-braunschweig-2026-11-21"
             },
             "sha256": "1a018fbc9e57abf4794664edd2cb47c153541abcaa7985c4d3a030385fbf3dc4",
-            "commit": "pending",
+            "commit": "e5b9ce9d5f00ccbd235867a445c72f697b38ff81",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0003-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +2856,7 @@
                 "slug": "hannover-96-vs-spvgg-greuther-furth-2026-11-21"
             },
             "sha256": "0b8bee99503e26a847de629670d45c40b6e70a556263c2c19894f4ee2cd7c796",
-            "commit": "pending",
+            "commit": "e5b9ce9d5f00ccbd235867a445c72f697b38ff81",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0004-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +3094,7 @@
                 "slug": "vfl-wolfsburg-vs-holstein-kiel-2026-11-21"
             },
             "sha256": "37fe0bdef69c6af68cb597ed110033892248df73878a39c5a018eba0494d5488",
-            "commit": "pending",
+            "commit": "e5b9ce9d5f00ccbd235867a445c72f697b38ff81",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0005-r1.json",
             "status": "pending",
             "result": null
