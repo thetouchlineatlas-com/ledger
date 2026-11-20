@@ -7,6 +7,1065 @@
     "records": [
         {
             "record": {
+                "away": "psv-eindhoven",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0013",
+                "home": "nec-nijmegen",
+                "inputs": {
+                    "elo_away": 1813,
+                    "elo_home": 1511.7,
+                    "lambda_away": 2.531548,
+                    "lambda_home": 1.536182,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T16:05:49Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.218038,
+                        0.194613,
+                        0.587349
+                    ],
+                    "p_elo": [
+                        0.151193,
+                        0.242263,
+                        0.606545
+                    ],
+                    "p_market": [
+                        0.232731,
+                        0.206519,
+                        0.56075
+                    ],
+                    "p_stat": [
+                        0.17664,
+                        0.212843,
+                        0.610517
+                    ],
+                    "retained_mass": 0.999999999739,
+                    "rho": -0.077197,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T15:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T16:08:33Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.7287,
+                    "draw_risk": false,
+                    "over_2_5": 0.767,
+                    "p": [
+                        0.1766,
+                        0.2129,
+                        0.6105
+                    ],
+                    "p_display": [
+                        17.7,
+                        21.3,
+                        61
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-2",
+                    "top_scores": [
+                        {
+                            "p": 0.0876,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0784,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0739,
+                            "score": "1-3"
+                        },
+                        {
+                            "p": 0.0708,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.057,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.54,
+                                "draw": 0.24,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "PSV play at Real Madrid in 3 days, so some rotation is possible, though both sides had 13 rest days.",
+                                "PSV have Dest (11 of 12 starts) doubtful on one source and Schouten and Nagalo out; NEC lack Nuytinck and Geiger, and Schuurs is doubtful, but none is a key scorer.",
+                                "NEC have not won at home in 6 league games (4 draws), while PSV have scored 19 goals in 6 away games, and recent meetings have been high scoring."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.6,
+                                "draw": 0.22,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "NEC are missing three confirmed absentees including midfielder Dennis Geiger and defender Bram Nuytinck, while Perr Schuurs is doubtful; Schuurs has 2 league goals and 2 assists from only 4 starts, so his potential absence removes a meaning",
+                                "PSV have several doubts, most notably regular starter Sergino Dest (11 of 12 league starts, 2 goals, 3 assists), but their squad depth is far greater and the confirmed absences do not include a first-choice regular starter.",
+                                "NEC have not won at home in the league this season (0W 4D 2L) and have drawn five of their last six league matches, while PSV have won four of six away league games and scored 19 away goals."
+                            ],
+                            "score": "1-3",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.52,
+                                "draw": 0.24,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "PSV travel to Real Madrid in the Champions League just three days after this fixture, which could lead to player management.",
+                                "PSV have confirmed absences including Jerdy Schouten, while regular starter Sergino Dest (11 league starts, 5 direct goal contributions) is listed as doubtful by one source.",
+                                "PSV need a win to protect a narrow one-point lead at the top of the table, facing an NEC side that is winless in six home league games."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.58,
+                                "draw": 0.23,
+                                "home": 0.19
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "NEC have several minor absences and Schuurs is a one-source doubt, while PSV have Schouten confirmed out and Dest is also only a one-source doubt.",
+                                "PSV’s Champions League trip to Real Madrid is only three days later, whereas NEC do not play again for five days.",
+                                "PSV have won four of six away league matches and scored 19 goals, while NEC are still without a home league win."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.55,
+                                "draw": 0.25,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "NEC have not won any of six home league games, so home advantage is weak, while PSV have won four of six away and scored 19 on the road.",
+                                "PSV are top and only 1 point clear of second, so they need the points more than NEC, who sit 5 above the drop with 22 games left.",
+                                "NEC's confirmed absentees are not regular starters; PSV's confirmed outs have no role detail here, and Dest is only a single-source doubtful, so neither side's expected goals are adjusted."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.1834,
+                        0.2197,
+                        0.5969
+                    ],
+                    "p_adj": [
+                        0.178159,
+                        0.215559,
+                        0.606282
+                    ],
+                    "p_llm": [
+                        0.205319,
+                        0.236262,
+                        0.558418
+                    ],
+                    "p_shadow": [
+                        0.183429,
+                        0.219719,
+                        0.596852
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "nec-nijmegen-vs-psv-eindhoven-2026-11-21"
+            },
+            "sha256": "90329b135aaeb5548b7ce4b971216632be95b6e3afb78a83bc98f10f956da9e2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0013-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "valencia",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0101",
+                "home": "rayo-vallecano",
+                "inputs": {
+                    "elo_away": 1417.4,
+                    "elo_home": 1433.4,
+                    "lambda_away": 0.927593,
+                    "lambda_home": 1.342075,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-20T16:05:49Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.458871,
+                        0.286559,
+                        0.25457
+                    ],
+                    "p_elo": [
+                        0.437004,
+                        0.280891,
+                        0.282105
+                    ],
+                    "p_market": [
+                        0.501733,
+                        0.268841,
+                        0.229426
+                    ],
+                    "p_stat": [
+                        0.455451,
+                        0.280516,
+                        0.264033
+                    ],
+                    "retained_mass": 0.999999999796,
+                    "rho": -0.033126,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T15:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T16:08:33Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4495,
+                    "draw_risk": false,
+                    "over_2_5": 0.3976,
+                    "p": [
+                        0.4555,
+                        0.2805,
+                        0.264
+                    ],
+                    "p_display": [
+                        45.6,
+                        28,
+                        26.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1334,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1301,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1053,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.095,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0924,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.29,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Valencia are 19th and 2 points from safety, Rayo 14th and 2 points above the drop, so a draw suits neither side much but defeat hurts both.",
+                                "Valencia lose regular starter Gayà to suspension and have Danjuma (10 starts) and Sadiq (25% of their goals) doubtful from one source, on top of the lowest scoring attack at 8 goals; Rayo's Álvaro García (3 goals, 10 starts) is doubtful.",
+                                "The last five league meetings produced one Rayo win and four draws, three of them 1-1, so a tight low-scoring game is likely."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.9,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Rayo are missing regular starter Álvaro García (3 goals, 2 assists) and Óscar Valentín, while Valencia are without regular starter José Gayà and have doubts over Danjuma and Sadiq, who account for a large share of Valencia's limited goals.",
+                                "Valencia are in the relegation zone, 2 points from safety, so they need points urgently, but Rayo are only 2 points above the drop zone and also cannot afford to lose.",
+                                "Rayo have won 3 of 5 home league games and beat Celta Vigo 3-0 in their last home match, while Valencia have lost 3 of their last 4 league games."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.3,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Valencia are without suspended regular left-back José Gayà and injured back-up Jesús Vázquez, while Rayo have two-source doubts over key attacker Álvaro García, who has scored 20% of their league goals.",
+                                "Both clubs are fighting early relegation pressure, with 19th-placed Valencia two points from safety and Rayo Vallecano sitting only two points above the drop zone.",
+                                "Four of the last five league meetings between these sides have ended level, including 1-1 draws in the three most recent clashes."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.9,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.29,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Rayo may lack Álvaro García, their 10-start midfielder with three league goals and two assists, while Valencia are without regular-starting defender José Gayà and have several attacking doubts; Danjuma and Sadiq are each listed by one sourc",
+                                "Valencia are in the relegation zone and two points from safety, while Rayo are only two points above it, making this a high-pressure six-pointer.",
+                                "Rayo’s 3-1-1 home league record gives them an edge over a Valencia side that has scored only eight league goals in 12 matches."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.31,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "José Gayà, a regular starter (9 of 12), is suspended, which weakens Valencia’s defence; Rayo’s confirmed absences are not first-choice, while Álvaro García (10 starts, 20% of their goals) is only doubtful and Danjuma and Sadiq are single-so",
+                                "Valencia are in the drop zone, 2 points from safety, so they need the result more than Rayo, who are 2 points above the relegation places, but Valencia have only 8 league goals in 12 games.",
+                                "Four of the last five league meetings were draws, three of them 1-1, so a low-scoring stalemate is a real alternative to a narrow home win."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4526,
+                        0.2891,
+                        0.2583
+                    ],
+                    "p_adj": [
+                        0.453221,
+                        0.286796,
+                        0.259982
+                    ],
+                    "p_llm": [
+                        0.450021,
+                        0.298216,
+                        0.251763
+                    ],
+                    "p_shadow": [
+                        0.452606,
+                        0.289062,
+                        0.258332
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "rayo-vallecano-vs-valencia-2026-11-21"
+            },
+            "sha256": "31273ab036b65bf734bba4133ce34a3ab05dd844f52ea2c7b55a76364550a9d2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0101-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "cadiz",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0014",
+                "home": "real-sociedad-ii",
+                "inputs": {
+                    "elo_away": 1143.9,
+                    "elo_home": 1139.3,
+                    "lambda_away": 1.144635,
+                    "lambda_home": 1.481606,
+                    "last_result_used": "2026-11-16",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-20T16:05:49Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.448494,
+                        0.259461,
+                        0.292045
+                    ],
+                    "p_elo": [
+                        0.415174,
+                        0.283132,
+                        0.301694
+                    ],
+                    "p_market": [
+                        0.447658,
+                        0.268502,
+                        0.28384
+                    ],
+                    "p_stat": [
+                        0.434408,
+                        0.269623,
+                        0.295969
+                    ],
+                    "retained_mass": 0.999999999928,
+                    "rho": -0.006019,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T15:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T16:08:33Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5302,
+                    "draw_risk": false,
+                    "over_2_5": 0.4845,
+                    "p": [
+                        0.4344,
+                        0.2696,
+                        0.296
+                    ],
+                    "p_display": [
+                        43.4,
+                        27,
+                        29.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1283,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1031,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.088,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0832,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0769,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.3,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are in the bottom three or near it, with Cádiz 2 points from safety and Real Sociedad II level with 19th, so a draw is a fair result for both.",
+                                "Real Sociedad II lose suspended regular defender Jon Balda (10 starts), while Cádiz are missing midfielder Jandro Orellana and others, all on one source, so both adjustments are small.",
+                                "Cádiz have not won away in 6 league games (3 draws), and Real Sociedad II have taken 4 points from their last 3 games, so little separates them."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Real Sociedad II are without suspended regular defender Jon Balda, who started 10 of 14 league games, weakening a home defence that has conceded 12 goals in 7 home matches.",
+                                "Cádiz have several single-source absences, including midfielder Jandro Orellana who started 6 of 14 league games, but no confirmed first-choice scorer is listed out, so the away attack is only slightly reduced.",
+                                "Both sides are in the relegation fight: Cádiz are 20th and 2 points from safety, while Real Sociedad II are 18th and level on points with the top relegation place, making this a high-stakes six-pointer."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.32,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are fighting directly at the relegation line, with 20th-placed Cádiz sitting two points behind 18th-placed Real Sociedad II, who are only out of the bottom four on goal difference.",
+                                "One source reports that Real Sociedad II are without suspended regular defender Jon Balda (10 starts) while Cádiz miss rotational midfielder Jandro Orellana (6 starts), slightly weakening the hosts at the back.",
+                                "Cádiz are still searching for their first away league win of the season (0W 3D 3L), while Real Sociedad II have steadied their form with a three-game unbeaten run after six straight defeats."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.29,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Real Sociedad II lose regular defender Jon Balda, while Cádiz midfielder Jandro Orellana has six league starts; all listed team news is from one source.",
+                                "Cádiz are two points from safety and Real Sociedad II are level with the relegation line, making this a high-stakes relegation-area meeting.",
+                                "Cádiz have not won any of six league away matches, while Real Sociedad II have taken four points from their last two games after a difficult run."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.34,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Unlike a mid-table meeting, Cádiz are in the drop zone and 2 points from safety while Real Sociedad II are level with the top relegation place, so both need the points.",
+                                "One source lists regular starter Jon Balda (defender, 10 of 14 league starts) as suspended, thinning the home defence; Cádiz absences are also single-source, and only Orellana has a listed role, with 6 of 14 starts.",
+                                "Real Sociedad II have only 1 win in 7 at home and Cádiz have 0 wins in 6 away, so a home win is less likely than the league’s usual home rate."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.42,
+                        0.279,
+                        0.301
+                    ],
+                    "p_adj": [
+                        0.431162,
+                        0.271935,
+                        0.296903
+                    ],
+                    "p_llm": [
+                        0.376102,
+                        0.307729,
+                        0.316169
+                    ],
+                    "p_shadow": [
+                        0.419983,
+                        0.279039,
+                        0.300978
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "real-sociedad-ii-vs-cadiz-2026-11-21"
+            },
+            "sha256": "6628ccfda36692d318105f5a8ef87b94ef51b0c5e905a20f7cb21598aaf1a736",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0014-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fenerbahce",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0017",
+                "home": "kocaelispor",
+                "inputs": {
+                    "elo_away": 1745,
+                    "elo_home": 1376.7,
+                    "lambda_away": 1.544749,
+                    "lambda_home": 0.878176,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T16:05:49Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.203132,
+                        0.277965,
+                        0.518903
+                    ],
+                    "p_elo": [
+                        0.113071,
+                        0.219732,
+                        0.667197
+                    ],
+                    "p_market": [
+                        0.156789,
+                        0.214486,
+                        0.628725
+                    ],
+                    "p_stat": [
+                        0.147369,
+                        0.245511,
+                        0.60712
+                    ],
+                    "retained_mass": 0.999999999877,
+                    "rho": -0.089538,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T16:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T16:08:33Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4597,
+                    "draw_risk": false,
+                    "over_2_5": 0.4515,
+                    "p": [
+                        0.1474,
+                        0.2455,
+                        0.6071
+                    ],
+                    "p_display": [
+                        14.7,
+                        24.6,
+                        60.7
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1476,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1238,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1157,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1087,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0878,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.94,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.24,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe are missing defenders Archie Brown (suspended, 7 league starts) and Nathan Aké (out, 8 starts) plus Oosterwolde, so their back line is thin; Kocaelispor have several doubtful players, mostly single-source reports.",
+                                "Fenerbahçe play at Shakhtar Donetsk in the Champions League four days later, which could mean some rotation, while Kocaelispor have had 14 days of rest.",
+                                "Fenerbahçe have scored 29 league goals in 11 games against Kocaelispor's 13, and they won both league meetings last season, so the away side is still favoured despite the absences."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.92,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.54,
+                                "draw": 0.24,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe are missing regular starting defenders Archie Brown (suspended) and Nathan Aké (out), plus Marco Asensio, which weakens their back line and removes a creative option, though their squad depth still gives them a clear edge.",
+                                "Kocaelispor have several doubtful defenders and forwards, including regular starter Massadio Haïdara and forward Rigoberto Rivas, so their ability to contain Fenerbahçe's attack is reduced.",
+                                "Fenerbahçe have scored 29 league goals in 11 games and won 5-0 at Çorum FK last time out, while Kocaelispor have only 13 goals, so the visitors' attacking output is far superior."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.52,
+                                "draw": 0.23,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe are without suspended regular starting defender Archie Brown according to two sources, while one source also lists regular defender Nathan Aké out injured and Kocaelispor regular defender Massadio Haïdara as doubtful.",
+                                "Fenerbahçe face a Champions League trip to Shakhtar Donetsk just four days after this fixture, which could lead to rotation compared to Kocaelispor's eight-day break until their next game.",
+                                "Although both clubs sit on 19 points from 11 matches, Fenerbahçe's superior attacking output of 29 league goals to Kocaelispor's 13 makes the visitors strong favourites to outscore their hosts."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.25,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe are without regular defensive starters Archie Brown (suspended) and Nathan Aké, raising Kocaelispor's scoring outlook; Aké's absence is listed by one source.",
+                                "Fenerbahçe's 29 league goals and 12 scored in six away matches give them the stronger attacking baseline, despite Kocaelispor conceding only twice in five home games.",
+                                "Fenerbahçe won both league meetings last season, 3-1 at home and 2-0 in Kocaeli."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.24,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe’s only two-source absence is suspended regular starter Archie Brown (7 of 11 league starts); Aké, Asensio and the other defensive names are single-source, and Kocaelispor’s listed doubts are mostly one source, so they are not tre",
+                                "Both sides have had 13–14 days’ rest and only one match in the previous fortnight, but Fenerbahçe’s Champions League trip is only four days later, which can blunt their intensity here.",
+                                "Fenerbahçe won both recent league meetings, including 0-2 at Kocaelispor, and have scored 29 league goals to the hosts’ 13 despite identical points."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.1689,
+                        0.2509,
+                        0.5802
+                    ],
+                    "p_adj": [
+                        0.150288,
+                        0.251574,
+                        0.598138
+                    ],
+                    "p_llm": [
+                        0.261266,
+                        0.240492,
+                        0.498242
+                    ],
+                    "p_shadow": [
+                        0.168902,
+                        0.25086,
+                        0.580239
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "kocaelispor-vs-fenerbahce-2026-11-21"
+            },
+            "sha256": "90b4662dd9a7185ee8f10b30a56703be1ec425c1452b214967340ffcd013b239",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0017-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "felgueiras-1932",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "taca-de-portugal",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "tp-2627-0006",
+                "home": "estoril-praia",
+                "inputs": {
+                    "elo_away": 1174.7,
+                    "elo_home": 1362.2,
+                    "lambda_away": 0.666275,
+                    "lambda_home": 1.653876,
+                    "last_result_used": "2026-11-08",
+                    "outside": {
+                        "club": "felgueiras-1932",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.612429,
+                        0.240277,
+                        0.147295
+                    ],
+                    "p_elo": [
+                        0.612429,
+                        0.240277,
+                        0.147295
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.612429,
+                        0.240277,
+                        0.147295
+                    ],
+                    "retained_mass": 0.999999999968,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "felgueiras-1932"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-21T16:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T16:08:33Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.3933,
+                    "draw_risk": false,
+                    "over_2_5": 0.4093,
+                    "p": [
+                        0.6124,
+                        0.2403,
+                        0.1473
+                    ],
+                    "p_display": [
+                        61.3,
+                        24,
+                        14.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1625,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1344,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1083,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0983,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0895,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "estoril-praia-vs-felgueiras-1932-2026-11-21"
+            },
+            "sha256": "6c26cb1ff48b33cca253e9d1a572a581c0543a37b2a4c2f9f62c2e78d1112e59",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/tp-2627-0006-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "sint-truidense-be",
                 "batch_id": "2026-11-20T0231Z-model-predict",
                 "competition": "belgian-pro-league",
@@ -238,7 +1297,7 @@
                 "slug": "royal-charleroi-sc-vs-sint-truidense-be-2026-11-21"
             },
             "sha256": "d57138de6286b022fc603dc4ab6cdf297d197a964f1a62af04b620323088f8f3",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0002-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +1535,7 @@
                 "slug": "union-berlin-vs-rb-leipzig-2026-11-21"
             },
             "sha256": "c52e70bdd3e875be44bdc1fc6c6135896636982352dcf2a1db1fc1a343fb23db",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0087-r1.json",
             "status": "pending",
             "result": null
@@ -716,7 +1775,7 @@
                 "slug": "bayer-leverkusen-vs-sc-paderborn-2026-11-21"
             },
             "sha256": "22bb738829f69d3d2a9038aa24f11603093913cf5303e5b87bb776a034a64d13",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0088-r1.json",
             "status": "pending",
             "result": null
@@ -954,7 +2013,7 @@
                 "slug": "borussia-monchengladbach-vs-borussia-dortmund-2026-11-21"
             },
             "sha256": "fa597c9512ff63963594134b94e100fc62a1188ec40c98be689d38ffe2029458",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0089-r1.json",
             "status": "pending",
             "result": null
@@ -1192,7 +2251,7 @@
                 "slug": "eintracht-frankfurt-vs-hoffenheim-2026-11-21"
             },
             "sha256": "263de3f1da3a8212e211ade10b690edd400c7d3163530f8c963cf5ae7f66602c",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0090-r1.json",
             "status": "pending",
             "result": null
@@ -1432,7 +2491,7 @@
                 "slug": "sv-elversberg-vs-sc-freiburg-2026-11-21"
             },
             "sha256": "79a78f4dcf83c5f459c40fee5bd42ff8f807b8bdea1468a5f4b1a79c0a81c68a",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0091-r1.json",
             "status": "pending",
             "result": null
@@ -1670,7 +2729,7 @@
                 "slug": "bolton-wanderers-vs-portsmouth-2026-11-21"
             },
             "sha256": "968c986184318c3aa4fb3fe3be266ea45482143c8d3bf18165aaabe23299dbc4",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0028-r1.json",
             "status": "pending",
             "result": null
@@ -1908,7 +2967,7 @@
                 "slug": "lincoln-city-vs-wrexham-2026-11-21"
             },
             "sha256": "576315d99454d2b20085a87c597f33f5800b9236205425897922a335047b4cca",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0029-r1.json",
             "status": "pending",
             "result": null
@@ -2146,7 +3205,7 @@
                 "slug": "middlesbrough-vs-bristol-city-2026-11-21"
             },
             "sha256": "f4f29773fe5850b09ce1157334a2123957dfca51049132ba1a0388f8721fe35a",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0030-r1.json",
             "status": "pending",
             "result": null
@@ -2384,7 +3443,7 @@
                 "slug": "sheffield-united-vs-watford-2026-11-21"
             },
             "sha256": "c623838f7b0c88683e036b9a2c564a57584cd6ad61103b85a49c3df87ae18f0a",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0031-r1.json",
             "status": "pending",
             "result": null
@@ -2622,7 +3681,7 @@
                 "slug": "stoke-city-vs-birmingham-city-2026-11-21"
             },
             "sha256": "b57f4ba517461e88504beef3238c810311d3dc451276ba97984ad8540d0c96eb",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0032-r1.json",
             "status": "pending",
             "result": null
@@ -2860,7 +3919,7 @@
                 "slug": "swansea-city-vs-west-bromwich-albion-2026-11-21"
             },
             "sha256": "cbdc4bca9b8f4262688af932a2ba953c9724d34a520f25b78350c9e188ed882d",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0033-r1.json",
             "status": "pending",
             "result": null
@@ -3098,7 +4157,7 @@
                 "slug": "west-ham-united-vs-preston-north-end-2026-11-21"
             },
             "sha256": "69d38385fc7f22320f91ba6bbd243dbadad1ddb3bc50e97ac8e53cf9a27fd87c",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0034-r1.json",
             "status": "pending",
             "result": null
@@ -3336,7 +4395,7 @@
                 "slug": "wolverhampton-wanderers-vs-charlton-athletic-2026-11-21"
             },
             "sha256": "e8d0e24762e812bd10bf014d2032e62c20f5dc78afd78ecce2babfa295d4776c",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0035-r1.json",
             "status": "pending",
             "result": null
@@ -3574,7 +4633,7 @@
                 "slug": "bradford-city-vs-doncaster-rovers-2026-11-21"
             },
             "sha256": "d401fc91beec7cf4f8ed5603eb86753217feb0fc12e1dc162862fe854b785a78",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0036-r1.json",
             "status": "pending",
             "result": null
@@ -3812,7 +4871,7 @@
                 "slug": "burton-albion-vs-luton-town-2026-11-21"
             },
             "sha256": "358e5b4fbb0e49ffc3ba06c205c41f8a9838f5980bacb5b323c079f3029fc35b",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0037-r1.json",
             "status": "pending",
             "result": null
@@ -4050,7 +5109,7 @@
                 "slug": "cambridge-united-vs-stockport-county-2026-11-21"
             },
             "sha256": "fdcafcc6fc1cb18cc10e491cf3ec9df9e00c26244a5a69aad572a31ea56fdc9b",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0038-r1.json",
             "status": "pending",
             "result": null
@@ -4288,7 +5347,7 @@
                 "slug": "huddersfield-town-vs-leicester-city-2026-11-21"
             },
             "sha256": "3405d0bf2e4c8b08b39361c84d6f70c19f08a01ea6f12539df60571a4410e97c",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0039-r1.json",
             "status": "pending",
             "result": null
@@ -4526,7 +5585,7 @@
                 "slug": "leyton-orient-vs-afc-wimbledon-2026-11-21"
             },
             "sha256": "b6474e168970d4618c04e5d7744312c4a4822df57e52a76dbd60ceb5b45047f5",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0040-r1.json",
             "status": "pending",
             "result": null
@@ -4764,7 +5823,7 @@
                 "slug": "mansfield-town-vs-milton-keynes-dons-2026-11-21"
             },
             "sha256": "333c9879149819517f9f928d5828ddb9785c21f7d381d1ee41193633fa166ad8",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0041-r1.json",
             "status": "pending",
             "result": null
@@ -5002,7 +6061,7 @@
                 "slug": "notts-county-vs-stevenage-2026-11-21"
             },
             "sha256": "b164ad566c4d2059f1261420e56cdff897ad592aee9f3fbd1b57e2320894d49e",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0042-r1.json",
             "status": "pending",
             "result": null
@@ -5240,7 +6299,7 @@
                 "slug": "oxford-united-vs-wycombe-wanderers-2026-11-21"
             },
             "sha256": "b61fd5595b9c28902e91a8df471b8bd75e9fefdd6f9e73e294bacff8e9ad8cca",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0043-r1.json",
             "status": "pending",
             "result": null
@@ -5478,7 +6537,7 @@
                 "slug": "plymouth-argyle-vs-peterborough-united-2026-11-21"
             },
             "sha256": "b07436f7bfbcafaa7b91c40726b33e58dba518a52cd4764b90cf562ab25f5951",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0044-r1.json",
             "status": "pending",
             "result": null
@@ -5716,7 +6775,7 @@
                 "slug": "bournemouth-vs-nottingham-forest-2026-11-21"
             },
             "sha256": "4d79e4733e196b43fec995863668296a8bd0e674ccb4a986cba9feceab82dcbb",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0098-r1.json",
             "status": "pending",
             "result": null
@@ -5954,7 +7013,7 @@
                 "slug": "aston-villa-vs-sunderland-2026-11-21"
             },
             "sha256": "400a205ef06c76e3379221c3b22b9219639537f0d354119a5b6701512d36e064",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0099-r1.json",
             "status": "pending",
             "result": null
@@ -6192,7 +7251,7 @@
                 "slug": "chelsea-vs-leeds-united-2026-11-21"
             },
             "sha256": "1c493f4a48ba8343a0bf448135cd559b3deb5d9cc9065fd46c1a5c03eafeead3",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0100-r1.json",
             "status": "pending",
             "result": null
@@ -6430,7 +7489,7 @@
                 "slug": "coventry-city-vs-crystal-palace-2026-11-21"
             },
             "sha256": "c30e7e436b758241c5e6dab0e330418cce03791327f72622f8a7c9d0f4406a8e",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0101-r1.json",
             "status": "pending",
             "result": null
@@ -6668,7 +7727,7 @@
                 "slug": "tottenham-hotspur-vs-ipswich-town-2026-11-21"
             },
             "sha256": "3a1d8e97798227967ad813b9243303e53b0caf8c5f37dff20cbc87258856a478",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0102-r1.json",
             "status": "pending",
             "result": null
@@ -6906,7 +7965,7 @@
                 "slug": "celtic-vs-st-mirren-2026-11-21"
             },
             "sha256": "cca919e1ba61a538df66985ea64313ec953d1de8812001c10f4c3ae5955c373a",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0008-r1.json",
             "status": "pending",
             "result": null
@@ -7144,7 +8203,7 @@
                 "slug": "falkirk-vs-st-johnstone-2026-11-21"
             },
             "sha256": "189e9d4fb7a9f0d6b0257422e4bc20cb3973c4edddc46b2fa0b56bc3d54b6e44",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0009-r1.json",
             "status": "pending",
             "result": null
@@ -7382,7 +8441,7 @@
                 "slug": "hibernian-vs-dundee-united-2026-11-21"
             },
             "sha256": "016cd0dadef9800a73a747b86bc6cb21c3dfe41debb0660c5cc29b5b57bd524b",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0010-r1.json",
             "status": "pending",
             "result": null
@@ -7620,7 +8679,7 @@
                 "slug": "kilmarnock-vs-aberdeen-2026-11-21"
             },
             "sha256": "58cb5c2decdd79936a4e2dbfc5a0ec42512e0b1f2c8b129b2ccc2ebcec531128",
-            "commit": "pending",
+            "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0011-r1.json",
             "status": "pending",
             "result": null
