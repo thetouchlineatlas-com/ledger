@@ -7,6 +7,2257 @@
     "records": [
         {
             "record": {
+                "away": "raal-la-louviere",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "belgian-pro-league",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "be-2627-0003",
+                "home": "racing-genk",
+                "inputs": {
+                    "elo_away": 1299.3,
+                    "elo_home": 1575,
+                    "lambda_away": 0.862864,
+                    "lambda_home": 2.023762,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.640195,
+                        0.212064,
+                        0.147741
+                    ],
+                    "p_elo": [
+                        0.689989,
+                        0.210075,
+                        0.099937
+                    ],
+                    "p_market": [
+                        0.679169,
+                        0.190255,
+                        0.130576
+                    ],
+                    "p_stat": [
+                        0.674127,
+                        0.20788,
+                        0.117993
+                    ],
+                    "retained_mass": 0.999999999933,
+                    "rho": -0.036959,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5019,
+                    "draw_risk": false,
+                    "over_2_5": 0.5554,
+                    "p": [
+                        0.6741,
+                        0.2079,
+                        0.118
+                    ],
+                    "p_display": [
+                        67.4,
+                        20.8,
+                        11.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1202,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.115,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1038,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.099,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0811,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.22,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Genk are unbeaten in 5 home league games (4W 1D, 13-4), while La Louvière have lost all 5 away games, conceding 15.",
+                                "La Louvière sit 17th, 2 points from safety, and need points more than 7th-placed Genk, who are 8 above the drop.",
+                                "The listed absences (one source each) are mostly non-starters, such as Genk's Akpan and Haroun and La Louvière's Ito and Soumaré, so no goals are clearly missing."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Genk are unbeaten at home this season with 4 wins and a draw, scoring 13 and conceding only 4, while La Louvière have lost all 5 away games by a combined 3-15.",
+                                "La Louvière are in the relegation zone and 2 points from safety, so they need points badly, but their away record gives little reason to expect them to take them at Cegeka Arena.",
+                                "The listed absences are mostly squad players or single-source reports; no first-choice regular starter is confirmed out for either side, so team news does not materially change the expected goals."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.16,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "RAAL La Louvière sit inside the relegation zone on 7 points and are in urgent need of results to close the two-point gap to safety.",
+                                "Genk's unbeaten home league record of four wins and a draw contrasts sharply with RAAL La Louvière's five defeats and 15 goals conceded across five away matches, making a comfortable home win likely.",
+                                "Reported injuries for both clubs come from only one source and involve non-regular starters or players without listed roles, leaving expected goals unadjusted."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.2,
+                                "home": 0.66
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Genk's 4W-1D-0L home record contrasts with La Louvière losing all five league away matches, strongly favouring the hosts.",
+                                "All reported absences come from one source; the known missing players have not been regular league starters, so no material goals adjustment is applied.",
+                                "La Louvière are two points from safety in the relegation zone and need points, but must pursue them in a venue where Genk have conceded only four league goals."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.21,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "La Louvière have lost all five away league games, scoring 3 and conceding 15, so this is a much harder away assignment than a mid-table meeting.",
+                                "La Louvière are 17th and two points from safety, while Genk are eight points clear of the drop, so the visitors need the points more but carry the pressure.",
+                                "Listed absences come from one source only, and the named players with known starts are not regular starters, so expected goals are left unchanged."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6723,
+                        0.2055,
+                        0.1222
+                    ],
+                    "p_adj": [
+                        0.674127,
+                        0.20788,
+                        0.117993
+                    ],
+                    "p_llm": [
+                        0.664014,
+                        0.195933,
+                        0.140053
+                    ],
+                    "p_shadow": [
+                        0.672338,
+                        0.205509,
+                        0.122153
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "racing-genk-vs-raal-la-louviere-2026-11-21"
+            },
+            "sha256": "4d52ebe6dcb17b9dd3d84c3a2f83f8a8e61b03590fe7876e822244f4103713ae",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/be-2627-0003-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "vfb-stuttgart",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "bundesliga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "bl-2627-0092",
+                "home": "schalke-04",
+                "inputs": {
+                    "elo_away": 1589.8,
+                    "elo_home": 1300.7,
+                    "lambda_away": 1.615908,
+                    "lambda_home": 0.941556,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.211546,
+                        0.264791,
+                        0.523663
+                    ],
+                    "p_elo": [
+                        0.159115,
+                        0.246107,
+                        0.594779
+                    ],
+                    "p_market": [
+                        0.235859,
+                        0.229789,
+                        0.534352
+                    ],
+                    "p_stat": [
+                        0.19056,
+                        0.260845,
+                        0.548595
+                    ],
+                    "retained_mass": 0.999999999774,
+                    "rho": -0.068584,
+                    "small_sample": [
+                        "schalke-04"
+                    ],
+                    "weights": {
+                        "temperature": 1.0521,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4949,
+                    "draw_risk": false,
+                    "over_2_5": 0.4735,
+                    "p": [
+                        0.1906,
+                        0.2608,
+                        0.5486
+                    ],
+                    "p_display": [
+                        19,
+                        26.1,
+                        54.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1241,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1227,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.106,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0998,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0843,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.27,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Schalke have Becker out and Gosens and goalkeeper Karius (ever-present, 9 of 9 starts) doubtful, all on one source, so the defence is thin; Stuttgart miss regular starters Stiller and Vagnoman.",
+                                "Schalke sit 17th, 1 point from safety, and have scored only 5 goals in 9 games; Stuttgart are 8th and 6 points clear of the drop, with Inter in the Champions League 4 days later.",
+                                "Schalke have lost 6 of their last 8 matches and have not scored at home in the league (0 goals in 4 games), so Stuttgart's stronger attack (15 goals) is favoured."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.94,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.29,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Schalke's first-choice goalkeeper Karius is doubtful and two regular defenders (Becker, Gosens) are out or doubtful, weakening a side that has scored only 5 league goals and failed to score in 4 of 4 home games.",
+                                "Stuttgart are missing regular starters Stiller and Vagnoman, who together have 2 goals and 3 assists, but their absences are less damaging than Schalke's defensive losses given Stuttgart's stronger squad depth.",
+                                "Schalke have not won at home this season (0W 2D 2L, 0 goals scored) and have lost 5 of their last 6 in all competitions, while Stuttgart have won 3 of their last 4 league matches."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.93,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.26,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides miss confirmed regular starters, with Stuttgart lacking midfielder Angelo Stiller and defender Josha Vagnoman (13% of their league goals), while Schalke lack defender Timo Becker and have first-choice goalkeeper Loris Karius and ",
+                                "Stuttgart face a Champions League trip to Internazionale just four days after this match, which could prompt rotation compared to Schalke's seven-day gap before their next league fixture.",
+                                "Schalke are winless in six league games and have failed to score a single goal in four home matches this season, giving Stuttgart a clear attacking edge despite their absences."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.02,
+                            "m_home": 0.99,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.28,
+                                "home": 0.23
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Schalke are without regular-starting defender Becker, while Karius and Gosens are only one-source doubts; Stuttgart also miss regular starters Stiller and Vagnoman, limiting midfield control and right-side output.",
+                                "Schalke are one point from safety in the relegation zone, so the home side have added urgency despite their attacking problems.",
+                                "Schalke have scored no goals in four league home matches, making Stuttgart's stronger away attack the likelier source of a breakthrough."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.3,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Confirmed absences are Schalke regular defender Becker and Stuttgart regulars Stiller (2 assists) and Vagnoman (13% of their league goals plus an assist); Schalke's Karius and Gosens are only one source and doubtful.",
+                                "Schalke sit 17th and need points more, one point from safety, while Stuttgart are 8th and six points above the drop zone.",
+                                "Schalke have scored no goals in four home league games, so a home win is less likely than the league's home-win rate even against an inconsistent Stuttgart side."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2004,
+                        0.2695,
+                        0.5301
+                    ],
+                    "p_adj": [
+                        0.189365,
+                        0.266086,
+                        0.544549
+                    ],
+                    "p_llm": [
+                        0.248623,
+                        0.280742,
+                        0.470636
+                    ],
+                    "p_shadow": [
+                        0.200401,
+                        0.269545,
+                        0.530053
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "schalke-04-vs-vfb-stuttgart-2026-11-21"
+            },
+            "sha256": "5610d0e8b6c9404170e3d121a2cae5f7bf18dd24b1f6135864b7f7f3ffc2e0bc",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/bl-2627-0092-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "sc-cambuur",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0014",
+                "home": "fc-utrecht",
+                "inputs": {
+                    "elo_away": 1288.1,
+                    "elo_home": 1509.1,
+                    "lambda_away": 1.527703,
+                    "lambda_home": 2.341308,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.552313,
+                        0.207282,
+                        0.240405
+                    ],
+                    "p_elo": [
+                        0.643226,
+                        0.229183,
+                        0.127591
+                    ],
+                    "p_market": [
+                        0.50051,
+                        0.235039,
+                        0.264451
+                    ],
+                    "p_stat": [
+                        0.613654,
+                        0.215093,
+                        0.171253
+                    ],
+                    "retained_mass": 0.999999999923,
+                    "rho": -0.077197,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.7113,
+                    "draw_risk": false,
+                    "over_2_5": 0.7414,
+                    "p": [
+                        0.6137,
+                        0.215,
+                        0.1713
+                    ],
+                    "p_display": [
+                        61.4,
+                        21.5,
+                        17.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "2-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0971,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0834,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0758,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0693,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0636,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.25,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Utrecht sit 14th, only 3 points above the relegation zone, so they need the points more than Cambuur, who are 6 points clear.",
+                                "Utrecht have five injured players, though the one with a known role (Paredes) has started 0 of 12 league games; Cambuur lose defender Amofa (5 starts), with news on most of their absentees from one source.",
+                                "Both defences are leaking goals (Utrecht conceded 34 and lost 2-3 to NEC; Cambuur conceded 5 to PSV), which points to a goal-heavy match."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.27,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Utrecht are missing several players, including Victor Jensen and Noah Ohio, though the fact sheet does not confirm their roles or league starts, so the attacking impact is uncertain; Cambuur's only confirmed regular starter absent is defend",
+                                "Utrecht have lost their last two Eredivisie matches and have only one home league win in six, while Cambuur have won three of their last four away league games and scored 11 away goals in 5 matches.",
+                                "Utrecht are only 3 points above the relegation zone and need the points more urgently, but Cambuur are 6 points clear and can play with less pressure."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.25,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "FC Utrecht sit just 3 points above the relegation zone and have a stronger urgent need for points than mid-table SC Cambuur.",
+                                "Utrecht have five injured players confirmed by two sources, though starting roles are unverified for four of them, while Cambuur lose squad defender Jamal Amofa (5 starts) with three other absences reported by only one source.",
+                                "Utrecht's leaky defence—conceding 18 goals in 6 home games—gives a clear opening to a Cambuur side unbeaten in four of their five away league trips."
+                            ],
+                            "score": "2-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.02,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.26,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cambuur are without defender Jamal Amofa, a five-start player with one assist, while their other listed absences are supported by only one source.",
+                                "Utrecht are only three points above the relegation zone, adding urgency after their poor start.",
+                                "Cambuur's strong away record (2W, 2D, 1L; 11-7 goals) contrasts with Utrecht's 1W, 2D, 3L home return."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.29,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Unlike a typical home edge, Utrecht have only 1 win from 6 league home games and have conceded 18 there, while Cambuur have 2 wins and 2 draws from 5 away with an 11-7 goal record.",
+                                "Utrecht sit 14th and only 3 points above the relegation zone, so they need the points more than Cambuur, who are 10th and 6 points clear.",
+                                "Several Utrecht absences are listed by two sources, but starts and roles are missing for most of them, so their weight is unclear; Cambuur's two-source absence is Amofa (5 of 12 starts), with the other outs single-source or non-starters."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.5599,
+                        0.2317,
+                        0.2083
+                    ],
+                    "p_adj": [
+                        0.609086,
+                        0.217104,
+                        0.17381
+                    ],
+                    "p_llm": [
+                        0.353757,
+                        0.266142,
+                        0.380101
+                    ],
+                    "p_shadow": [
+                        0.559945,
+                        0.23175,
+                        0.208306
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "fc-utrecht-vs-sc-cambuur-2026-11-21"
+            },
+            "sha256": "cd6398181c12d409d5122d1e6545bd70080eed63a07e15915c1de0cd7f69fba8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0014-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "excelsior",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0015",
+                "home": "feyenoord-rotterdam",
+                "inputs": {
+                    "elo_away": 1310,
+                    "elo_home": 1704.1,
+                    "lambda_away": 0.948161,
+                    "lambda_home": 2.878996,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.764299,
+                        0.145583,
+                        0.090118
+                    ],
+                    "p_elo": [
+                        0.775342,
+                        0.167869,
+                        0.056789
+                    ],
+                    "p_market": [
+                        0.827787,
+                        0.109011,
+                        0.063201
+                    ],
+                    "p_stat": [
+                        0.784941,
+                        0.149057,
+                        0.066002
+                    ],
+                    "retained_mass": 0.999999999714,
+                    "rho": -0.077197,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5803,
+                    "draw_risk": false,
+                    "over_2_5": 0.7362,
+                    "p": [
+                        0.7849,
+                        0.1491,
+                        0.066
+                    ],
+                    "p_display": [
+                        78.5,
+                        14.9,
+                        6.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.0927,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0889,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0879,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0843,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0656,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.17,
+                                "home": 0.7
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Feyenoord are missing five defenders and fullbacks (Nieuwkoop, Smal, St. Juste, Bos, Beelen), and Hadj Moussa (7 league goals, 19% of the team's) is doubtful on one source.",
+                                "Feyenoord are 1 point off the lead, while Excelsior are only 2 points above the relegation zone and have lost 6 of their last 7 games.",
+                                "Excelsior have conceded 9 to Twente and 4 to Heerenveen recently, but Feyenoord also let in 5 at Heerenveen, so the home side's depleted defence could give up a goal."
+                            ],
+                            "score": "3-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Feyenoord are missing several defenders (Nieuwkoop, Smal, St. Juste, Bos, Beelen) and key forward Anis Hadj Moussa is doubtful; Hadj Moussa has 7 league goals, 19% of the team's total, so his likely absence reduces Feyenoord's attacking thr",
+                                "Feyenoord are 1 point behind the leaders and need a home win to keep pressure on the title race, while Excelsior are only 2 points above the relegation zone and also need points, but the gap in quality and home advantage strongly favors Fey",
+                                "Feyenoord have won the last five league meetings, including 4-0 and 2-1 home wins, and Excelsior have lost 7 of 12 league games this season."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Feyenoord have five players confirmed out by two sources, while one source lists regular starting forward Anis Hadj Moussa (7 league goals, 19% of their total) as doubtful.",
+                                "Feyenoord play a Champions League match against Porto just three days after this game, which could invite squad rotation compared to Excelsior's seven-day gap.",
+                                "Both clubs have clear incentives in the table, with second-placed Feyenoord sitting one point off the league leaders and 15th-placed Excelsior just two points above the relegation zone."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.05,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Feyenoord have several confirmed defensive absences, while 11-start, seven-goal forward Hadj Moussa is doubtful from one source, reducing their attacking certainty and weakening their defensive depth.",
+                                "Feyenoord’s Champions League match against Porto is only three days later, creating a potential rotation and focus consideration despite their 13-day rest.",
+                                "Feyenoord have won each of the last five league meetings with Excelsior, scoring at least twice in all five."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1.05,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.25,
+                                "home": 0.57
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Five Feyenoord players are confirmed out by two sources, thinning the side, while main scorer Anis Hadj Moussa (7 goals, 19% of the team's, 11 starts) is only doubtful from one source; Excelsior's only listed absence, Nesto Groen, is also s",
+                                "Both sides are well rested (13 and 14 days), but Feyenoord's next match is Champions League against Porto only three days later, which can take the edge off a settled league XI.",
+                                "Feyenoord are one point behind the leaders in a title chase, while Excelsior are only two points above the relegation zone, so both need the result but the home side has more to gain by winning."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7551,
+                        0.1646,
+                        0.0803
+                    ],
+                    "p_adj": [
+                        0.775056,
+                        0.155333,
+                        0.069611
+                    ],
+                    "p_llm": [
+                        0.660353,
+                        0.20142,
+                        0.138226
+                    ],
+                    "p_shadow": [
+                        0.755086,
+                        0.164591,
+                        0.080322
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "feyenoord-rotterdam-vs-excelsior-2026-11-21"
+            },
+            "sha256": "391f42d7b1edfb1387dd8eff89ce0db6d01cae4376cf17c94df244988ffe23e8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0015-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "aek-athens-gr",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0001",
+                "home": "kalamata",
+                "inputs": {
+                    "elo_away": 1756.1,
+                    "elo_home": 1325.7,
+                    "lambda_away": 2.257394,
+                    "lambda_home": 0.907303,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.122467,
+                        0.213355,
+                        0.664179
+                    ],
+                    "p_elo": [
+                        0.085082,
+                        0.197631,
+                        0.717287
+                    ],
+                    "p_market": [
+                        0.11242,
+                        0.177019,
+                        0.710561
+                    ],
+                    "p_stat": [
+                        0.098528,
+                        0.201787,
+                        0.699685
+                    ],
+                    "retained_mass": 0.999999999957,
+                    "rho": -0.166945,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5423,
+                    "draw_risk": false,
+                    "over_2_5": 0.6192,
+                    "p": [
+                        0.0985,
+                        0.2018,
+                        0.6997
+                    ],
+                    "p_display": [
+                        9.8,
+                        20.2,
+                        70
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "0-2",
+                    "top_score_overall": "0-2",
+                    "top_scores": [
+                        {
+                            "p": 0.1133,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1028,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0955,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0853,
+                            "score": "0-3"
+                        },
+                        {
+                            "p": 0.0852,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.55,
+                                "draw": 0.25,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "AEK are without suspended regular starter Marin (8 of 9 starts, 4 assists), while Kalamata lack forward Vargas (3 league goals, 20% of the team's); both lists come from one source.",
+                                "AEK have a Champions League match at Como in 3 days, so some rotation is possible, though both sides have had 13 rest days.",
+                                "AEK have a 23-6 goal record and are 7 points off the leaders, while Kalamata's 0-5 loss at Olympiacos and four draws in recent matches suggest a side that struggles against top teams."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.58,
+                                "draw": 0.24,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kalamata are missing Kenneth Vargas, who has 3 of their 15 league goals, while AEK are without suspended regular starter Răzvan Marin, their main creative midfielder with 4 assists.",
+                                "AEK Athens sit 7 points behind the leaders and need a win to stay in the title race, whereas Kalamata are 6 points above the relegation zone and have less immediate pressure.",
+                                "AEK have scored 23 goals in 9 league games and conceded only 6, while Kalamata have conceded 19 in 10 and were beaten 5-0 at Olympiacos in their last away match against a top side."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.56,
+                                "draw": 0.25,
+                                "home": 0.19
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports AEK Athens are without suspended regular starter Răzvan Marin (8 starts, 4 assists), while Kalamata miss injured forward Kenneth Vargas, who has scored 20% of their league goals.",
+                                "AEK Athens face a UEFA Champions League trip to Como just three days after this match, which could prompt squad rotation compared to Kalamata's seven-day gap.",
+                                "Although AEK Athens have a far superior overall record, they have won just one of their four away league games (scoring four goals), giving competitive hosts Kalamata a chance to keep the scoreline close."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.91,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.27,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kalamata are without Kenneth Vargas, whose 3 league goals are 20% of their total, while AEK miss regular creator Răzvan Marin (4 assists); all listed absences have only one source.",
+                                "AEK have had 13 days' rest but face a Champions League trip to Como three days later, which may temper their approach.",
+                                "AEK's 23-6 league goal record and 6 wins in nine indicate a stronger underlying level, despite a modest 1W-2D-1L away record."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.3,
+                                "home": 0.26
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "AEK are without regular starter Marin (8 of 9 league starts, 4 assists), listed by one source only, which cuts their chance creation; Kalamata also miss Vargas (4 starts, 20% of their league goals) on one source, with the other named absenc",
+                                "Both sides have had 13 days' rest, but AEK's next match is a Champions League trip to Como only three days later, so this away league game sits just before a short turnaround.",
+                                "AEK's league away return is only 1 win and 4 goals in 4 games, so their much stronger overall record (20 points, 23-6) is less decisive on the road against a Kalamata side that has scored 10 in 5 home games."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.1163,
+                        0.2184,
+                        0.6653
+                    ],
+                    "p_adj": [
+                        0.099027,
+                        0.205771,
+                        0.695202
+                    ],
+                    "p_llm": [
+                        0.209271,
+                        0.262503,
+                        0.528226
+                    ],
+                    "p_shadow": [
+                        0.116281,
+                        0.218422,
+                        0.665297
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "kalamata-vs-aek-athens-gr-2026-11-21"
+            },
+            "sha256": "c498dd12c0f084e912ff3d26487021f8609731a14d3cfa6d0bbdf29a4a3749a0",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0001-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "real-betis",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0102",
+                "home": "sevilla",
+                "inputs": {
+                    "elo_away": 1567.8,
+                    "elo_home": 1413.1,
+                    "lambda_away": 1.418385,
+                    "lambda_home": 1.339838,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.35069,
+                        0.262767,
+                        0.386543
+                    ],
+                    "p_elo": [
+                        0.264857,
+                        0.278283,
+                        0.45686
+                    ],
+                    "p_market": [
+                        0.317081,
+                        0.276661,
+                        0.406258
+                    ],
+                    "p_stat": [
+                        0.304201,
+                        0.267921,
+                        0.427879
+                    ],
+                    "retained_mass": 0.999999999944,
+                    "rho": -0.033126,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5644,
+                    "draw_risk": false,
+                    "over_2_5": 0.519,
+                    "p": [
+                        0.3042,
+                        0.2679,
+                        0.4279
+                    ],
+                    "p_display": [
+                        30.4,
+                        26.8,
+                        42.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1269,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0951,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0946,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0706,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0702,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.28,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Sevilla have had 15 rest days and played nothing in the last 14 days, while Betis have 9 days of rest and a Champions League trip to Slovan Bratislava in 3 days, so Betis may rotate.",
+                                "Sevilla's doubtful forward Miguel Sierra (8 league starts, 2 goals, 12% of the team's) is a modest loss; Betis are without suspended midfielder Facundo Bernal (6 starts), and the news comes from one or two sources only.",
+                                "The last five league derbies produced two draws, two Betis wins and one Sevilla win, and Betis won the most recent meeting at Sevilla 2-0, so a tight game is likely."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Sevilla's main scorer Miguel Sierra is doubtful; his 2 league goals are 12% of the team's total, and if he misses out their attack loses its most regular forward starter.",
+                                "Real Betis are without suspended regular midfielder Facundo Bernal, who started 6 of 12 league games, weakening their midfield control in a derby.",
+                                "Real Betis have only 9 rest days and a Champions League match at Slovan Bratislava 3 days later, while Sevilla have had 15 rest days and no match in the previous 14 days."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.29,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Real Betis must manage a Champions League trip to Slovan Bratislava just three days after this derby, whereas Sevilla have had 15 rest days and a full week before their next fixture.",
+                                "Both sides face disruption to regular starters confirmed by two sources: Real Betis are missing suspended midfielder Facundo Bernal (6 starts), while Sevilla forward Miguel Sierra (8 starts, 12% of their league goals) is doubtful, alongside",
+                                "Real Betis have accrued eight more points than Sevilla across 12 games and lost only one of their six away league matches, giving the visitors a slight edge despite the hosts' rest advantage."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.29,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sevilla's eight-start forward Miguel Sierra, who has two league goals, is doubtful, while Betis are without six-start midfielder Facundo Bernal; several other injury listings have only one source.",
+                                "Betis have had two matches in the previous 14 days and face Champions League football three days later, whereas Sevilla have had 15 days' rest.",
+                                "Betis' stronger 8-2-2 league start and 3-2-1 away record give them an edge despite Sevilla's home advantage."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.32,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Betis have played twice in the last 14 days and face a Champions League match in three days, while Sevilla have had 15 days' rest and no match in that window.",
+                                "Facundo Bernal, a regular midfielder (6 of 12 league starts), is suspended on two sources; Sevilla's listed absences are doubtful or single-source, so they are not treated as confirmed outs.",
+                                "Betis are eight points and two places above Sevilla and have taken points in five of six away league games, which makes them the side more likely to edge a tight derby."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.309,
+                        0.2754,
+                        0.4157
+                    ],
+                    "p_adj": [
+                        0.303243,
+                        0.270459,
+                        0.426298
+                    ],
+                    "p_llm": [
+                        0.331528,
+                        0.294524,
+                        0.373947
+                    ],
+                    "p_shadow": [
+                        0.308983,
+                        0.275362,
+                        0.415654
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "sevilla-vs-real-betis-2026-11-21"
+            },
+            "sha256": "edd3a1f01c4578025bed0bfe09212b8d6b6d4127c0bd4c80bf3346a7c9abd022",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0102-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "arsenal",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0103",
+                "home": "newcastle-united",
+                "inputs": {
+                    "elo_away": 1746.2,
+                    "elo_home": 1481,
+                    "lambda_away": 1.65105,
+                    "lambda_home": 1.014004,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.226417,
+                        0.256851,
+                        0.516732
+                    ],
+                    "p_elo": [
+                        0.17537,
+                        0.253241,
+                        0.571389
+                    ],
+                    "p_market": [
+                        0.158227,
+                        0.220807,
+                        0.620966
+                    ],
+                    "p_stat": [
+                        0.198712,
+                        0.254856,
+                        0.546432
+                    ],
+                    "retained_mass": 0.999999999969,
+                    "rho": -0.051007,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5192,
+                    "draw_risk": false,
+                    "over_2_5": 0.4999,
+                    "p": [
+                        0.1987,
+                        0.2549,
+                        0.5464
+                    ],
+                    "p_display": [
+                        19.9,
+                        25.5,
+                        54.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1215,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1152,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1017,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.1003,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.075,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.27,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Arsenal are without Saka, a regular starter with 3 of the team's 15 league goals (20%), while Newcastle lose Joelinton; both absences are confirmed by two sources, so each side's attack dips slightly.",
+                                "Arsenal lead the league by 5 points and keep pushing for the title, while Newcastle in 12th are only 4 points above the relegation zone.",
+                                "Both sides had 14 rest days, but Arsenal face Dortmund in 3 days, which may cost some intensity late, while Newcastle's next match is 8 days away."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.29,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Arsenal are without Bukayo Saka, a regular starter who has scored 3 of their 15 league goals (20%), which blunts their attack; Newcastle's only confirmed regular-starter absence is Joelinton.",
+                                "Arsenal lead the table by 5 points and need the points to protect their title push, while Newcastle are only 4 points above the relegation zone and also need a result at home.",
+                                "Newcastle have lost 3 of their last 4 league games and have only 1 win in 5 home league matches, making them vulnerable despite home advantage."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.27,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Arsenal are without regular starter Bukayo Saka, removing 20% of their league goals this season, while Newcastle United are missing Joelinton.",
+                                "Arsenal face Borussia Dortmund in the Champions League just three days after this match, whereas Newcastle United have an eight-day break before their next fixture.",
+                                "Arsenal have won nine of their ten league games while conceding only five goals, making a tight away win likely against a Newcastle side with just one home league victory in five."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.91,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.27,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Arsenal are without regular starter Bukayo Saka, whose three league goals account for 20% of their total, reducing their attacking output.",
+                                "Arsenal's 9-1-0 league start and five goals conceded contrast with Newcastle taking five points from their last five league matches.",
+                                "Both teams have had 14 days' rest, though Arsenal have a Champions League match three days later."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.92,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.29,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Bukayo Saka, a regular starter with 3 of Arsenal's 15 league goals, is out on two sources; Newcastle's other listed absentee and Arsenal's Dowman and Zubimendi have started none of 10 league games, and Joelinton's starts are not given.",
+                                "Both sides have had 14 days' rest, but Arsenal face Borussia Dortmund in the Champions League three days later while Newcastle's next league match is eight days away.",
+                                "Arsenal have won four of five away league games and have yet to draw in the league, while Newcastle have only one win from five home games and have scored just six there."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2174,
+                        0.2658,
+                        0.5168
+                    ],
+                    "p_adj": [
+                        0.208017,
+                        0.262205,
+                        0.529778
+                    ],
+                    "p_llm": [
+                        0.25735,
+                        0.278576,
+                        0.464075
+                    ],
+                    "p_shadow": [
+                        0.217411,
+                        0.265827,
+                        0.516762
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "newcastle-united-vs-arsenal-2026-11-21"
+            },
+            "sha256": "6a14fffb7c962d7afcaf0fc659f8386022bf89c08e5d6c600d8f1659c0054a16",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0103-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "eldense",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0015",
+                "home": "castellon",
+                "inputs": {
+                    "elo_away": 1127.7,
+                    "elo_home": 1361.8,
+                    "lambda_away": 0.816561,
+                    "lambda_home": 2.054751,
+                    "last_result_used": "2026-11-16",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.660838,
+                        0.200889,
+                        0.138273
+                    ],
+                    "p_elo": [
+                        0.654816,
+                        0.224703,
+                        0.120481
+                    ],
+                    "p_market": [
+                        0.67847,
+                        0.188817,
+                        0.132713
+                    ],
+                    "p_stat": [
+                        0.665806,
+                        0.2089,
+                        0.125295
+                    ],
+                    "retained_mass": 0.999999999916,
+                    "rho": -0.006019,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4886,
+                    "draw_risk": false,
+                    "over_2_5": 0.5456,
+                    "p": [
+                        0.6658,
+                        0.2089,
+                        0.1253
+                    ],
+                    "p_display": [
+                        66.6,
+                        20.9,
+                        12.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1204,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1166,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0994,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0983,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0825,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Castellón have scored 12 and conceded 1 in 5 home league games, while Eldense have lost 5 of 7 away with 4 goals scored and 11 conceded.",
+                                "Castellón are 2nd, 2 points off the lead and 4 clear of 3rd, so they need points to hold an automatic promotion place; Eldense sit 4 points above the drop.",
+                                "Eldense's doubtful defender Jesús Clemente started 10 of 14 league games; this comes from one source, and Castellón's absences are not listed as regular starters."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.2,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Eldense's regular starting defender Jesús Clemente is doubtful; he has started 10 of 14 league games and scored 1 of their 15 goals, so his absence would weaken an away side already conceding 1.57 goals per away game.",
+                                "Castellón are unbeaten at home this season with 12 goals scored and only 1 conceded in 5 games, while Eldense have lost 5 of 7 away matches and scored just 4 away goals.",
+                                "Castellón sit 2nd and are 4 points clear of 3rd in the automatic promotion places, so they need the points to stay in the top two, while Eldense are only 4 points above the relegation zone and also need a result."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.21,
+                                "home": 0.66
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Castellón sit 2nd, just 2 points behind the leaders in the automatic promotion race, while Eldense are 15th and 4 points above the relegation zone.",
+                                "Castellón have conceded just once in five unbeaten home league games while scoring 12, making a clean sheet likely against an Eldense side with five losses in seven away trips.",
+                                "One source lists Eldense regular starter defender Jesús Clemente as doubtful alongside two Castellón injuries, leaving minor defensive uncertainty for the visitors."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Eldense defender Jesús Clemente is a doubtful regular starter (10 league starts), though this is reported by one source only.",
+                                "Castellón are two points off first and only four clear of third, so protecting automatic-promotion position adds urgency.",
+                                "Castellón's unbeaten home league record has produced 12 goals and conceded only one, while Eldense have lost five of seven away matches."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Castellón sit 2nd in the automatic promotion places, 2 points off the lead and 4 clear of 3rd, so they need the points more than Eldense, who are 7 off the play-offs and 4 above the drop.",
+                                "Castellón’s 12-1 home record and five goals conceded in 13 league games point to a controlled home win against an Eldense side that has lost five of seven away and scored only four.",
+                                "Team news is one source only: Eldense regular defender Jesús Clemente is only doubtful, and Castellón’s listed absences have no role details, so neither side’s expected goals is adjusted."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6647,
+                        0.2096,
+                        0.1257
+                    ],
+                    "p_adj": [
+                        0.667781,
+                        0.208463,
+                        0.123756
+                    ],
+                    "p_llm": [
+                        0.652194,
+                        0.213974,
+                        0.133832
+                    ],
+                    "p_shadow": [
+                        0.664703,
+                        0.209575,
+                        0.125722
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "castellon-vs-eldense-2026-11-21"
+            },
+            "sha256": "7bb9be410597ad028f44887d2b8ce2d0a58f82a2b84ab53b7d460b47bcef5277",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0015-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "hearts",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "scottish-premiership",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sp-2627-0012",
+                "home": "dundee",
+                "inputs": {
+                    "elo_away": 1593.6,
+                    "elo_home": 1395,
+                    "lambda_away": 1.705025,
+                    "lambda_home": 1.313827,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 18,
+                        "captured_utc": "2026-11-20T18:12:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.298085,
+                        0.233267,
+                        0.468648
+                    ],
+                    "p_elo": [
+                        0.226615,
+                        0.270157,
+                        0.503228
+                    ],
+                    "p_market": [
+                        0.283153,
+                        0.250859,
+                        0.465987
+                    ],
+                    "p_stat": [
+                        0.260185,
+                        0.251236,
+                        0.488579
+                    ],
+                    "retained_mass": 0.99999999995,
+                    "rho": 0.017926,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9921,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T17:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6004,
+                    "draw_risk": false,
+                    "over_2_5": 0.5763,
+                    "p": [
+                        0.2602,
+                        0.2512,
+                        0.4886
+                    ],
+                    "p_display": [
+                        26,
+                        25.1,
+                        48.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1157,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0973,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0889,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.074,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.066,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.92,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.25,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Hearts are missing a long list of players including Calvin Miller (5 league goals, 19% of the team's, 9 starts) and McEntee (6 starts), while Dundee's absentees (Murray, Wales, Robertson) have started only 1-2 games each.",
+                                "Hearts have lost four of their last five games in all competitions, conceding 5 to Falkirk and 7 to Celtic, while Dundee are 3W 2D 1L at home in the league.",
+                                "Both sides had about two weeks of rest, but Hearts face AS Monaco in the Conference League five days later, which may affect their approach."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Hearts are missing several regular starters, including Calvin Miller (5 league goals, 19% of their goals) and Oisin McEntee, plus multiple squad players, which weakens their attack and depth.",
+                                "Hearts have lost four of their last five in all competitions, conceding 13 goals in that run, while Dundee have won three of their last five at home.",
+                                "Hearts have won the last four league meetings, including a 2-1 win at Tynecastle in September, but Dundee won the most recent meeting at Dens Park in April 2025."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.9,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.25,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Hearts have a lengthy injury list including regular midfield starter Oisin McEntee (confirmed by a second source) and regular forward Calvin Miller (who has 19% of their league goals, though reported out by only one source), reducing their ",
+                                "Dundee have lost just once in six home league games this season, whereas Hearts enter on a four-match winless run across all competitions in which they conceded 12 goals.",
+                                "Hearts have won the last four league meetings between the sides, including a 2-1 victory earlier this season, which offsets some of Dundee's current home advantage."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.88,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Hearts are without regular forward Calvin Miller (5 league goals) plus several midfield and defensive options; some of those reports, including Miller's, are from one source.",
+                                "Dundee's 3-2-1 home record contrasts with Hearts losing three of six league away matches, strengthening Dundee's chance of taking a point or more.",
+                                "Hearts have won the last four league meetings, including September's 2-1 home victory, which keeps their win probability substantial despite the absences."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.31,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Hearts are without confirmed regular midfielder Oisin McEntee (two sources), while main attacking contributor Calvin Miller (9 league starts, 19% of Hearts' league goals) is listed out by only one source, so the away attack is trimmed rathe",
+                                "Hearts have lost four of their last six in all competitions, including 5-2 to Falkirk, which undercuts their fourth-place standing on an away trip where they have already lost three of six.",
+                                "Hearts have won four of the last five league meetings, including 2-1 in September, which keeps the away side competitive despite the absences and poor recent run."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.2952,
+                        0.2617,
+                        0.4431
+                    ],
+                    "p_adj": [
+                        0.27116,
+                        0.256693,
+                        0.472148
+                    ],
+                    "p_llm": [
+                        0.398257,
+                        0.271648,
+                        0.330095
+                    ],
+                    "p_shadow": [
+                        0.295197,
+                        0.261716,
+                        0.443087
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "dundee-vs-hearts-2026-11-21"
+            },
+            "sha256": "64ae71898fca543733c483a23dbbf9ab6227c9c224d42475bbc5712e43d95369",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sp-2627-0012-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "uniao-da-serra",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "taca-de-portugal",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "tp-2627-0008",
+                "home": "sporting-cp",
+                "inputs": {
+                    "elo_away": 1174.7,
+                    "elo_home": 1829,
+                    "lambda_away": 0.179312,
+                    "lambda_home": 2.638571,
+                    "last_result_used": "2026-11-08",
+                    "outside": {
+                        "club": "uniao-da-serra",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.893842,
+                        0.091517,
+                        0.014641
+                    ],
+                    "p_elo": [
+                        0.893842,
+                        0.091517,
+                        0.014641
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.893842,
+                        0.091517,
+                        0.014641
+                    ],
+                    "retained_mass": 0.999999999931,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "uniao-da-serra"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-21T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T18:17:29Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.1524,
+                    "draw_risk": false,
+                    "over_2_5": 0.5348,
+                    "p": [
+                        0.8938,
+                        0.0916,
+                        0.0146
+                    ],
+                    "p_display": [
+                        89.4,
+                        9.1,
+                        1.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.2079,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1829,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.1576,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1206,
+                            "score": "4-0"
+                        },
+                        {
+                            "p": 0.0637,
+                            "score": "5-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "sporting-cp-vs-uniao-da-serra-2026-11-21"
+            },
+            "sha256": "fd5d169e5343033d06d86d98d2443951d16ce1c61380e41dbc3e3bba611e022d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/tp-2627-0008-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "paris-saint-germain",
                 "batch_id": "2026-11-20T0231Z-model-predict",
                 "competition": "ligue-1",
@@ -238,7 +2489,7 @@
                 "slug": "nice-vs-paris-saint-germain-2026-11-21"
             },
             "sha256": "b6944481e0fed77d2774df75713cac7cf27d323989bc9ee70a7d5f2df5f568d4",
-            "commit": "pending",
+            "commit": "ee0b530fa045d311eeae781580045ff1d3dde713",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0029-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +2727,7 @@
                 "slug": "parma-vs-roma-2026-11-21"
             },
             "sha256": "0573a48410538e7217d0f5f6e1f0098ab9aeabf3ef18129d5bc0b3a5c271d832",
-            "commit": "pending",
+            "commit": "ee0b530fa045d311eeae781580045ff1d3dde713",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0020-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +2965,7 @@
                 "slug": "catanzaro-vs-palermo-2026-11-21"
             },
             "sha256": "4eed7d8c82ec2670960b7c82681892490e456f85efac71c21c894f850995efe1",
-            "commit": "pending",
+            "commit": "ee0b530fa045d311eeae781580045ff1d3dde713",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0007-r1.json",
             "status": "pending",
             "result": null
@@ -821,7 +3072,7 @@
                 "slug": "maritimo-vs-gd-chaves-2026-11-21"
             },
             "sha256": "79d3bc454e1c307b6a2d9bcfc492fd577a960a20707e5891a306f55e7455927e",
-            "commit": "pending",
+            "commit": "ee0b530fa045d311eeae781580045ff1d3dde713",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0007-r1.json",
             "status": "pending",
             "result": null
