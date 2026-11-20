@@ -7,6 +7,1779 @@
     "records": [
         {
             "record": {
+                "away": "cagliari",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0018",
+                "home": "como",
+                "inputs": {
+                    "elo_away": 1353.1,
+                    "elo_home": 1556.7,
+                    "lambda_away": 0.768489,
+                    "lambda_home": 1.768203,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-20T14:05:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.611193,
+                        0.231221,
+                        0.157585
+                    ],
+                    "p_elo": [
+                        0.627346,
+                        0.23505,
+                        0.137604
+                    ],
+                    "p_market": [
+                        0.744092,
+                        0.163334,
+                        0.092573
+                    ],
+                    "p_stat": [
+                        0.626415,
+                        0.230004,
+                        0.143582
+                    ],
+                    "retained_mass": 0.999999999917,
+                    "rho": -0.009464,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T14:17:19Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4447,
+                    "draw_risk": false,
+                    "over_2_5": 0.4674,
+                    "p": [
+                        0.6264,
+                        0.23,
+                        0.1436
+                    ],
+                    "p_display": [
+                        62.6,
+                        23,
+                        14.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1424,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1268,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.108,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0974,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0797,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.23,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cagliari are without regular midfielder Harry Winks (8 of 11 league starts) and defender Yerry Mina, while Como's missing forwards Kean and Addai have barely started, so the news favours Como.",
+                                "Como have Champions League v AEK Athens 3 days after this match, which may cost some intensity, while Cagliari have 14 rest days and a 9-day gap before Milan.",
+                                "Como are unbeaten at home (3W 1D, 5-1) and won 7 of their last 10 games, while Cagliari lost 4 of their last 5 away league games before beating Frosinone."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.22,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Cagliari are missing regular midfielder Harry Winks (8 league starts) and defender Yerry Mina (4 starts), weakening their spine; Como's main doubt is forward Assane Diao, who has 2 of their 18 league goals, so the home attack is only slight",
+                                "Como have won 5 of their last 6 Serie A matches and are unbeaten at home this season (3W 1D, 5-1 goals), while Cagliari have lost 4 of their last 5 away league games.",
+                                "Como sit 5th, 6 points off the top, and need the points to stay in the title race; Cagliari are 9 points clear of the drop zone, so the home side has the sharper incentive."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.95,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.24,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cagliari are missing regular midfielder Harry Winks (8 league starts) and four-start defender Yerry Mina, while Como have injury doubts over regular defender Trevoh Chalobah (6 starts) and forward Assane Diao (11% of their league goals).",
+                                "Como play a Champions League fixture against AEK Athens just three days after this match, which could prompt squad rotation compared to Cagliari who have nine days before their next game.",
+                                "Como are unbeaten at home in Serie A this season with just one goal conceded in four matches, putting them in position to control a Cagliari side that has lost its last three away games while conceding ten goals."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.23,
+                                "home": 0.57
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cagliari are without regular-starting midfielder Harry Winks and defender Yerry Mina, while Como have doubts over Diao, who has two league goals.",
+                                "Como face AEK Athens in the Champions League three days later, whereas Cagliari have nine days until AC Milan.",
+                                "Como's unbeaten home league record (3 wins, 1 draw, 5-1 goals) points to a controlled home performance against a Cagliari side with three away defeats in six."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.25,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cagliari are without regular starter Harry Winks (8 of 11 league starts) and defender Yerry Mina, both listed out by two sources, which weakens their midfield and back line; Como's notable names are only doubtful, and several other listings",
+                                "Both sides are well rested, but Como's Champions League match against AEK Athens is only three days later, so they may not empty the tank in a way an ordinary league meeting would demand.",
+                                "Como have won five of their last six before losing at Inter, while Cagliari lost four in a row before beating Frosinone, so the home side should control a match their own home games have kept tight (5-1 in four)."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.612,
+                        0.2336,
+                        0.1544
+                    ],
+                    "p_adj": [
+                        0.62518,
+                        0.232635,
+                        0.142185
+                    ],
+                    "p_llm": [
+                        0.554256,
+                        0.233927,
+                        0.211817
+                    ],
+                    "p_shadow": [
+                        0.612029,
+                        0.233552,
+                        0.154419
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "como-vs-cagliari-2026-11-21"
+            },
+            "sha256": "53b9789d2fd7d7ace8aea41a5959c2354738d1b4ddd8e8fe7563c48c6622619d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0018-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "lecce",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0019",
+                "home": "lazio",
+                "inputs": {
+                    "elo_away": 1306,
+                    "elo_home": 1585.5,
+                    "lambda_away": 0.708327,
+                    "lambda_home": 1.701637,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-20T14:05:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.611503,
+                        0.237463,
+                        0.151033
+                    ],
+                    "p_elo": [
+                        0.693161,
+                        0.208678,
+                        0.098161
+                    ],
+                    "p_market": [
+                        0.706604,
+                        0.184058,
+                        0.109338
+                    ],
+                    "p_stat": [
+                        0.661469,
+                        0.220028,
+                        0.118503
+                    ],
+                    "retained_mass": 0.999999999952,
+                    "rho": -0.009464,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T14:17:19Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4096,
+                    "draw_risk": false,
+                    "over_2_5": 0.4429,
+                    "p": [
+                        0.6615,
+                        0.22,
+                        0.1185
+                    ],
+                    "p_display": [
+                        66.1,
+                        22,
+                        11.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1642,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1407,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1012,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0996,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0842,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.21,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio are missing regular starters Zaccagni (5 assists) and Nuno Tavares (3 assists) plus defender Šutalo, which trims creativity and back-line depth; Lecce also lack forwards Monteiro and Pierotti, who started 5 league games each.",
+                                "Lazio lead Serie A by 1 point and cannot afford a slip, while Lecce are only 3 points above the drop and need points more than their away form suggests they will get.",
+                                "Lazio are unbeaten in 11 league games with 25 goals scored, while Lecce have lost 5 of their last 7 and conceded 5 at Frosinone."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio are missing regular starters Mattia Zaccagni, Nuno Tavares and Josip Šutalo, including Zaccagni's 5 assists and Tavares's 3 assists, which reduces their attacking width and creativity.",
+                                "Lazio are top and only 1 point clear of 2nd, so they need the points to protect the lead, while Lecce are 3 points above the relegation zone and also need a result.",
+                                "Lazio are unbeaten in 11 league games and have won 4 of 5 at home, while Lecce have lost 7 of 11 and conceded 22 goals, making a home win the most likely outcome."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.9,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio are missing regular starters Mattia Zaccagni and Nuno Tavares, who have combined for 3 league goals and 8 assists, while Josip Šutalo is also listed out by one source.",
+                                "With a 1-point lead at the top of the table, Lazio need a win to hold first place, whereas 14th-placed Lecce are trying to protect a 3-point cushion above the relegation zone.",
+                                "Unbeaten Lazio have scored 25 goals across 11 matches and are heavily favoured to break down a Lecce side that has lost 7 of 11 while conceding 22 goals."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.9,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.19,
+                                "home": 0.69
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio lose creator Zaccagni (2 goals, 5 assists) plus regular defenders Nuno Tavares and Šutalo; Šutalo's absence is listed by one source.",
+                                "Lecce are without forwards Monteiro and Pierotti, removing two players with five league starts each and 1 of their 12 league goals.",
+                                "Unbeaten Lazio have taken 29 points from 11 games, while Lecce have collected one point across their last three league matches."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.21,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio are without regular starters Zaccagni (10 league starts, 5 assists and 8% of their goals) and Tavares (10 starts, 3 assists), so chance creation is thinner; Šutalo is listed by only one source.",
+                                "Lazio are top and only 1 point clear of 2nd, while Lecce sit 14th and just 3 points above the relegation zone, so the home side has more to protect.",
+                                "Lazio are unbeaten in 11 (9 wins) and have lost none of five home games, while Lecce have seven losses and a negative away goal difference, so the hosts should control the match."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6589,
+                        0.2195,
+                        0.1216
+                    ],
+                    "p_adj": [
+                        0.653128,
+                        0.226295,
+                        0.120577
+                    ],
+                    "p_llm": [
+                        0.680717,
+                        0.193757,
+                        0.125527
+                    ],
+                    "p_shadow": [
+                        0.658895,
+                        0.219491,
+                        0.121614
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "lazio-vs-lecce-2026-11-21"
+            },
+            "sha256": "ff276f3c042dbf0f3205347ef18273470917f33eb1ec66e2a1d5ef7b6490ab7c",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0019-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "vicenza",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0002",
+                "home": "ascoli",
+                "inputs": {
+                    "elo_away": 1073.9,
+                    "elo_home": 1156.5,
+                    "lambda_away": 0.859714,
+                    "lambda_home": 2.028618,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T14:05:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.634246,
+                        0.226874,
+                        0.13888
+                    ],
+                    "p_elo": [
+                        0.507382,
+                        0.269293,
+                        0.223324
+                    ],
+                    "p_market": [
+                        0.539477,
+                        0.254541,
+                        0.205982
+                    ],
+                    "p_stat": [
+                        0.578766,
+                        0.246866,
+                        0.174369
+                    ],
+                    "retained_mass": 0.999999999931,
+                    "rho": -0.116504,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T14:17:19Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5209,
+                    "draw_risk": false,
+                    "over_2_5": 0.5402,
+                    "p": [
+                        0.5788,
+                        0.2468,
+                        0.1744
+                    ],
+                    "p_display": [
+                        57.9,
+                        24.7,
+                        17.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1179,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1045,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0927,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0899,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0729,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.29,
+                                "home": 0.53
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Ascoli sit 3rd, 3 points off automatic promotion, while Vicenza are 19th and only 1 point from safety, so both sides need the points.",
+                                "Vicenza have lost 5 of their last 6 and conceded 4 to Cremonese, while Ascoli are unbeaten in 9 and have drawn 4 of the last 5 without much scoring variance.",
+                                "No absences are listed for either side, but each list rests on one source that could not be read, so team news is unconfirmed and I keep both multipliers at 1.0."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.27,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Ascoli are 3rd and only 3 points off automatic promotion, while Vicenza are in the relegation zone and 1 point from safety, so the home side has a strong incentive to push for a win.",
+                                "Ascoli are unbeaten at home this season (3W 3D) and have won their last two home games, while Vicenza have lost their last three away matches and conceded 12 goals in 6 away games.",
+                                "No absences are listed for either side, but the team news sources for both clubs could not be fully read, so any missing regular starters would not be captured here."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.27,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams have immediate table motivation, with third-placed Ascoli sitting three points off automatic promotion while 19th-placed Vicenza are in the relegation zone and one point from safety.",
+                                "Ascoli's unbeaten six-game home run and tight defence of seven goals conceded in 11 matches gives them a clear edge over a Vicenza side on a three-match losing streak that has conceded 24 league goals.",
+                                "No absences are listed for either club, though team news comes from only one source as a second source could not be read for both sides."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.27,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Vicenza are one point from safety in the relegation zone, while Ascoli can move closer to automatic promotion from third.",
+                                "Ascoli are unbeaten in six and have conceded only four goals in six home league matches, whereas Vicenza have lost four of their past five.",
+                                "No absences are listed for either side, but one team-news source could not be matched for each club."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.28,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Ascoli sit in the play-off places, 3 points off automatic promotion, while Vicenza are in the relegation zone and only 1 point from safety, so the visitors need the points more but face a side still chasing a top-two finish.",
+                                "Ascoli are unbeaten at home (3W 3D, 9-4) and have conceded only 7 league goals all season, while Vicenza have taken just one win from six away games and conceded 12, which points to a tight home win rather than a high-scoring game.",
+                                "No absences are listed for either side, but one source could not be read or matched for this league, so fitness is not confirmed and expected goals are left unadjusted."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5736,
+                        0.2525,
+                        0.1739
+                    ],
+                    "p_adj": [
+                        0.578766,
+                        0.246865,
+                        0.174369
+                    ],
+                    "p_llm": [
+                        0.552175,
+                        0.276106,
+                        0.171719
+                    ],
+                    "p_shadow": [
+                        0.573555,
+                        0.252546,
+                        0.173899
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "ascoli-vs-vicenza-2026-11-21"
+            },
+            "sha256": "b4197a86b06e7efb3d021a91235fdb196baa57e747d9951c6b1524bf2dedb668",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0002-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "virtus-entella",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0003",
+                "home": "carrarese",
+                "inputs": {
+                    "elo_away": 1097.1,
+                    "elo_home": 1123.5,
+                    "lambda_away": 0.91277,
+                    "lambda_home": 1.276751,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T14:05:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.433142,
+                        0.316179,
+                        0.250679
+                    ],
+                    "p_elo": [
+                        0.447948,
+                        0.27952,
+                        0.272532
+                    ],
+                    "p_market": [
+                        0.40406,
+                        0.299479,
+                        0.296461
+                    ],
+                    "p_stat": [
+                        0.443727,
+                        0.29647,
+                        0.259802
+                    ],
+                    "retained_mass": 0.999999999892,
+                    "rho": -0.116504,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T14:17:19Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4425,
+                    "draw_risk": false,
+                    "over_2_5": 0.3813,
+                    "p": [
+                        0.4437,
+                        0.2965,
+                        0.2598
+                    ],
+                    "p_display": [
+                        44.4,
+                        29.6,
+                        26
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1366,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1309,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1193,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0935,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0902,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.31,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Virtus Entella are missing two regular defenders, Tiritiello (suspended) and Alborghetti (injured), who started 10 of 11 league games each; this is based on one source only. Carrarese's absentee Bonfanti has started 0 of 11, so it changes l",
+                                "Both sides sit on 10 points, 1 point above the relegation zone and 6 off the play-off places, so a draw helps neither much.",
+                                "Carrarese have lost 4 of their last 5 and score rarely (9 goals in 11), but Entella have lost their last 3 with a leaky defence, so the home side's edge is small."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.33,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Virtus Entella are missing two regular starting defenders in Tiritiello and Alborghetti, who together account for 18% of the team's league goals, plus suspended Chiappella and injured Bariti, weakening their back line for this away match.",
+                                "Both sides sit just one point above the relegation zone, so this is a direct six-pointer where a home win would lift Carrarese above Entella and ease their drop fears.",
+                                "Carrarese have won two of their last three home league games, while Entella have lost their last two matches without scoring, suggesting the hosts are better placed to take the points."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 1.07,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.33,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Virtus Entella missing regular central defenders Andrea Tiritiello and Mattia Alborghetti (10 starts and 1 goal each), weakening their backline and set-piece threat.",
+                                "Both clubs are tied on 10 points and sit just 1 point above the relegation zone, making this a tense six-pointer where avoiding defeat is vital.",
+                                "Both sides arrive on two-match losing streaks without scoring a goal, suggesting a cautious, low-scoring encounter."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.08,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.31,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Entella are without regular-starting defenders Tiritiello and Alborghetti, who have started 20 of 22 league matches between them, although all listed absences have only one source.",
+                                "Both sides sit one point above relegation, making this a high-value direct meeting in which neither can afford to lose ground.",
+                                "Carrarese have lost four of their past five matches, but Entella also arrive on consecutive scoreless defeats, favouring a low-scoring home edge."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.34,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sit on 10 points, one above the drop zone with 27 games left, so neither can treat this as a free swing and a cautious, low-scoring game is the likelier shape.",
+                                "One source lists Entella without two regular starting defenders, Tiritiello and Alborghetti (10 league starts each); Carrarese's only absence is Bonfanti, a forward with 0 starts, so home expected goals are unchanged.",
+                                "Carrarese have taken only 2 wins from 6 home games and have not drawn at Dei Marmi, while Entella's away record (2 wins, 1 draw from 5) keeps the visitors competitive despite both sides losing their last two."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4387,
+                        0.3026,
+                        0.2586
+                    ],
+                    "p_adj": [
+                        0.448551,
+                        0.297177,
+                        0.254272
+                    ],
+                    "p_llm": [
+                        0.399924,
+                        0.324243,
+                        0.275833
+                    ],
+                    "p_shadow": [
+                        0.438715,
+                        0.302638,
+                        0.258646
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "carrarese-vs-virtus-entella-2026-11-21"
+            },
+            "sha256": "0f9556a2d4f1143b603a34de3c75f281601f6bac0f03475f5a93ea0987d61343",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0003-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "juve-stabia",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0004",
+                "home": "modena",
+                "inputs": {
+                    "elo_away": 1198.6,
+                    "elo_home": 1243.7,
+                    "lambda_away": 0.904096,
+                    "lambda_home": 1.298703,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T14:05:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.441605,
+                        0.313892,
+                        0.244502
+                    ],
+                    "p_elo": [
+                        0.467853,
+                        0.276612,
+                        0.255535
+                    ],
+                    "p_market": [
+                        0.609022,
+                        0.224743,
+                        0.166235
+                    ],
+                    "p_stat": [
+                        0.458159,
+                        0.293726,
+                        0.248115
+                    ],
+                    "retained_mass": 0.999999999866,
+                    "rho": -0.116504,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T14:17:19Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4432,
+                    "draw_risk": false,
+                    "over_2_5": 0.3852,
+                    "p": [
+                        0.4582,
+                        0.2937,
+                        0.2481
+                    ],
+                    "p_display": [
+                        45.8,
+                        29.4,
+                        24.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1355,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1332,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1175,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0967,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0874,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.26,
+                                "home": 0.53
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Modena are missing two regular defenders, Zampano (7 starts) and Tonoli (8 starts, 3 assists), plus five others, all from one source, which trims their strength a little.",
+                                "Modena are 2nd, 3 points clear of 3rd and 4 behind the leaders, while Juve Stabia are only 3 points above the drop zone, so both need the points.",
+                                "Both sides had about two weeks' rest, but Juve Stabia play again in 3 days and Modena in 4, so rotation is possible."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.27,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Modena are missing two regular starting defenders in Zampano and Tonoli, plus several other squad players, which weakens their back line and depth.",
+                                "Modena are in the automatic promotion places and need points to stay clear of 3rd, while Juve Stabia are mid-table and only 3 points above the relegation zone, so the home side has the stronger immediate incentive.",
+                                "Modena have won three of the last five meetings, including a 3-0 home win in this fixture last season, though Juve Stabia won the most recent match 1-0 at Modena."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.31,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "One source lists seven Modena players out injured, including regular starting defenders Daniel Tonoli (eight starts, three assists) and Francesco Zampano (seven starts), while one source lists no absences yet for Juve Stabia.",
+                                "Juve Stabia have lost just once in six away games and would sit on 16 points without their four-point deduction, making them far tougher opponents than the 11-point gap in the table suggests.",
+                                "After 11 games, Modena sit second and need to protect a three-point cushion in the automatic promotion places, while Juve Stabia are three points above the relegation zone and four off the play-offs."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.04,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.29,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Modena's single-source injury list includes regular starting defenders Zampano and Tonoli, the latter with three assists, weakening both their defensive stability and width; Juve Stabia's no-absence report is also from one source only.",
+                                "Modena need points to protect a three-point automatic-promotion margin, while Juve Stabia are only three points above relegation.",
+                                "Modena have won four of their last six matches, but Juve Stabia have taken eight points from their last four and should be competitive despite the home side's higher standing."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.31,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "What stands out is Modena missing two regular starters, defender Zampano (7 of 11 starts) and defender Tonoli (8 of 11, 3 assists), all from one source only, which slightly cuts their expected goals and defensive stability.",
+                                "Modena are in the automatic promotion places, 4 points behind the leaders and only 3 clear of 3rd, so they need the points more than Juve Stabia, who are 3 above the drop and 4 off the play-offs.",
+                                "Juve Stabia have lost only once in six away games and conceded just six, so Modena's home edge is narrower than their second-place standing alone suggests."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4543,
+                        0.2965,
+                        0.2493
+                    ],
+                    "p_adj": [
+                        0.446341,
+                        0.298416,
+                        0.255242
+                    ],
+                    "p_llm": [
+                        0.485999,
+                        0.28791,
+                        0.226091
+                    ],
+                    "p_shadow": [
+                        0.45427,
+                        0.296458,
+                        0.249271
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "modena-vs-juve-stabia-2026-11-21"
+            },
+            "sha256": "15386315490f1f2626742940d772f1a6812a45f582457f9666525830ca40da8b",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0004-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "benevento",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0005",
+                "home": "sampdoria",
+                "inputs": {
+                    "elo_away": 1124.9,
+                    "elo_home": 1130.8,
+                    "lambda_away": 1.051837,
+                    "lambda_home": 1.118855,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T14:05:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.354593,
+                        0.324734,
+                        0.320672
+                    ],
+                    "p_elo": [
+                        0.426268,
+                        0.282076,
+                        0.291656
+                    ],
+                    "p_market": [
+                        0.360244,
+                        0.290533,
+                        0.349223
+                    ],
+                    "p_stat": [
+                        0.391348,
+                        0.302702,
+                        0.30595
+                    ],
+                    "retained_mass": 0.999999999972,
+                    "rho": -0.116504,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T14:17:19Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4489,
+                    "draw_risk": true,
+                    "over_2_5": 0.377,
+                    "p": [
+                        0.3913,
+                        0.3028,
+                        0.3059
+                    ],
+                    "p_display": [
+                        39.1,
+                        30.3,
+                        30.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1398,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1236,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.121,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0996,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0829,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.31,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sampdoria have eight players listed out, including regular starters Di Pardo and Verschaeren and forward Insigne (3 league goals, 27% of the team's); all from one source, so some uncertainty remains.",
+                                "Benevento sit in the play-off places, 7 points above the drop, while Sampdoria are only 2 points clear of relegation and need points more.",
+                                "Benevento have conceded just 11 goals in 11 games and are unbeaten in four of their last six, while Sampdoria have won two straight but have scored only 11 league goals."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.88,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.31,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sampdoria are missing several regulars, including defender Alessandro Di Pardo (9 starts), midfielder Yari Verschaeren (8 starts, 2 assists) and forward Lorenzo Insigne (3 goals, 27% of their league goals), which weakens both their defensiv",
+                                "Benevento sit 7th and are only 1 point clear of 9th, so they need points to protect a promotion play-off place, while Sampdoria are just 2 points above the relegation zone and also badly need a result.",
+                                "Sampdoria have won their last two league games, but Benevento have been more consistent overall and have lost only once in their last five, suggesting the visitors are slightly better placed despite the away fixture."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.9,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.33,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Sampdoria without regular starters Alessandro Di Pardo and Yari Verschaeren alongside Lorenzo Insigne, removing 36% of their league goals, whereas Benevento are only missing regular starter Edoardo Pierozzi.",
+                                "Both clubs have immediate table pressure with 27 games left, as Sampdoria sit just 2 points above the relegation zone and Benevento hold a 1-point lead inside the promotion play-off places.",
+                                "Sampdoria enter on consecutive clean-sheet wins to offset a weak early season, while Benevento have kept things tight away from home by conceding only 3 goals in 4 trips."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.86,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.31,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sampdoria are without regulars Di Pardo and Verschaeren plus Insigne, whose three goals are 27% of their league total; all listed absences have only one source.",
+                                "Sampdoria are only two points above the relegation zone, increasing the pressure to take something despite their depleted side.",
+                                "Benevento have lost only once in their last 10 matches and have conceded seven goals in that run, giving them a sturdier recent baseline."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 0.9,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.34,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "One source lists Sampdoria without regular defender Di Pardo (9 league starts), regular midfielder Verschaeren (8 starts, 2 assists) and Insigne (27% of their league goals), which cuts both their chance creation and defensive cover; Beneven",
+                                "Sampdoria sit only 2 points above the relegation zone, so a home slip tightens their survival margin, while Benevento are 1 point inside the play-off places and need the result more to stay there than to chase automatic promotion.",
+                                "This season's Serie B has produced home wins in only 36% of matches, with draws and away wins both at 32%, so a depleted home side does not get the usual home edge."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "1/5",
+                    "ai_combined": [
+                        0.3619,
+                        0.3121,
+                        0.326
+                    ],
+                    "p_adj": [
+                        0.375638,
+                        0.309176,
+                        0.315186
+                    ],
+                    "p_llm": [
+                        0.308963,
+                        0.321229,
+                        0.369808
+                    ],
+                    "p_shadow": [
+                        0.361887,
+                        0.312107,
+                        0.326006
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "sampdoria-vs-benevento-2026-11-21"
+            },
+            "sha256": "74c67782b2417f334b73a71537a0d83e1ec143e7b6a93d41c437ae3b2bfff0be",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0005-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "cremonese",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0006",
+                "home": "sudtirol",
+                "inputs": {
+                    "elo_away": 1125.3,
+                    "elo_home": 1161.1,
+                    "lambda_away": 1.182623,
+                    "lambda_home": 1.135178,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T14:05:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.331769,
+                        0.313102,
+                        0.355128
+                    ],
+                    "p_elo": [
+                        0.458074,
+                        0.278107,
+                        0.263819
+                    ],
+                    "p_market": [
+                        0.275772,
+                        0.29465,
+                        0.429578
+                    ],
+                    "p_stat": [
+                        0.394966,
+                        0.296839,
+                        0.308195
+                    ],
+                    "retained_mass": 0.999999999937,
+                    "rho": -0.116504,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T14:17:19Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4827,
+                    "draw_risk": false,
+                    "over_2_5": 0.4143,
+                    "p": [
+                        0.395,
+                        0.2968,
+                        0.3082
+                    ],
+                    "p_display": [
+                        39.5,
+                        29.7,
+                        30.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1399,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1148,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.108,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0894,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0877,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.33,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sudtirol lose suspended midfielder Vasić (8 starts, 2 goals, 2 assists) and Bjarkason, while Cremonese miss five players including defender Bianchetti and midfielders Gerli, Elia and Pontisso; all single-source reports.",
+                                "Both sides sit on 15 points, 1 point off the play-off places and 6 above the drop, so a draw is not a bad result for either.",
+                                "Sudtirol are unbeaten at home (2W 4D) but have drawn 5 of their last 8, while Cremonese have won their last 3 league games away or at home, which points to a tight match."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.36,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sudtirol are missing regular midfielder Aljoša Vasić, who has 2 goals and 2 assists, plus three other squad players; Cremonese have five absences including regular defender Matteo Bianchetti, so both midfields are weakened but neither side ",
+                                "Sudtirol are unbeaten at home this season with 2 wins and 4 draws, while Cremonese have won their last three league games, making a tight, low-scoring contest likely.",
+                                "Both sides are on 15 points and only 1 point off the promotion play-off places, so neither can afford to sit back despite the short rest before their next matches."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.95,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.36,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Sudtirol are missing suspended regular midfielder Aljoša Vasić, who has contributed two goals and two assists, while Cremonese lack regular defender Matteo Bianchetti and several midfield options.",
+                                "Both teams sit level on 15 points and just one point outside the promotion play-off zone, giving the winner an immediate chance to move into the top eight.",
+                                "Cremonese arrive on a three-match winning streak scoring eight goals, though they face a Sudtirol side that remains unbeaten in six home league games with four draws."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.91,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.35,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sudtirol miss suspended regular midfielder Vasić (2 goals, 2 assists) plus Bjarkason, while Cremonese lack regular defender Bianchetti and several midfield options; every absence is reported by one source.",
+                                "Both sides are one point outside the play-off places, making this a direct opportunity to move into the top eight.",
+                                "Cremonese arrive on three straight wins, but Sudtirol are unbeaten in six home league matches and have conceded only three goals there."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.37,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "What sets this apart is Sudtirol missing suspended regular midfielder Vasić (8 of 11 starts, 15% of their league goals and 2 assists), while Cremonese are without regular defender Bianchetti; every absence is from one source only.",
+                                "Both are on 15 points and only 1 point off the promotion play-off places, so neither side can afford a passive result.",
+                                "Cremonese's three straight wins meet a Sudtirol side that is unbeaten at home but has drawn 4 of 6 there and scored only 6, which points to a tight game rather than a home romp."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.377,
+                        0.3123,
+                        0.3107
+                    ],
+                    "p_adj": [
+                        0.390669,
+                        0.301965,
+                        0.307367
+                    ],
+                    "p_llm": [
+                        0.324062,
+                        0.354254,
+                        0.321683
+                    ],
+                    "p_shadow": [
+                        0.376983,
+                        0.312303,
+                        0.310714
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "sudtirol-vs-cremonese-2026-11-21"
+            },
+            "sha256": "59193d023ef8579697578a45355608772d90903509746e62efd1532b2864f568",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0006-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "arouca",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "taca-de-portugal",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "tp-2627-0005",
+                "home": "mafra",
+                "inputs": {
+                    "elo_away": 1461.8,
+                    "elo_home": 1174.7,
+                    "lambda_away": 1.611549,
+                    "lambda_home": 0.700367,
+                    "last_result_used": "2026-11-08",
+                    "outside": {
+                        "club": "mafra",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.160368,
+                        0.246692,
+                        0.592941
+                    ],
+                    "p_elo": [
+                        0.160368,
+                        0.246691,
+                        0.592941
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.160368,
+                        0.246691,
+                        0.592941
+                    ],
+                    "retained_mass": 0.999999999782,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "mafra"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-21T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T14:17:19Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4031,
+                    "draw_risk": false,
+                    "over_2_5": 0.4071,
+                    "p": [
+                        0.1604,
+                        0.2467,
+                        0.5929
+                    ],
+                    "p_display": [
+                        16,
+                        24.7,
+                        59.3
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1596,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1286,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1118,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0991,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0901,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "mafra-vs-arouca-2026-11-21"
+            },
+            "sha256": "1944ee67b5846cd76b5487ebc74227bfd23eb4bc4f5ba00159443e8b97a90433",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/tp-2627-0005-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "queens-park-rangers",
                 "batch_id": "2026-11-20T0231Z-model-predict",
                 "competition": "championship",
@@ -238,7 +2011,7 @@
                 "slug": "millwall-vs-queens-park-rangers-2026-11-21"
             },
             "sha256": "098a3fb4ce5e40773c6384c017870cdcace93c96604c7fad8559c0cbf40a838b",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0025-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +2249,7 @@
                 "slug": "norwich-city-vs-cardiff-city-2026-11-21"
             },
             "sha256": "ad39d3cccc1366cd90e996fe35c0d0a49918af0f6a0d31571210f47577506150",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0026-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +2487,7 @@
                 "slug": "southampton-vs-derby-county-2026-11-21"
             },
             "sha256": "2271d51766e3a0d40b7ededf802179b556075275f405abb9394c6c4199204cb9",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0027-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +2725,7 @@
                 "slug": "blackpool-vs-wigan-athletic-2026-11-21"
             },
             "sha256": "e9b9f0d6dd3d3282f9c40109fcf2c9ec113ac9c15b16877021a77f96c8ef58a2",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0034-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +2963,7 @@
                 "slug": "reading-vs-bromley-2026-11-21"
             },
             "sha256": "8b7000d36e080017c03ba8e2bae305d06f0c4cd7e53e5d0cb6db71a9523ce1b9",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0035-r1.json",
             "status": "pending",
             "result": null
@@ -1428,7 +3201,7 @@
                 "slug": "alaves-vs-deportivo-la-coruna-2026-11-21"
             },
             "sha256": "bec3a63e28417b5cdcde9bee1dfc0c0677d3a0dcddf4fd38c4a701e2d2b7d01d",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0100-r1.json",
             "status": "pending",
             "result": null
@@ -1666,7 +3439,7 @@
                 "slug": "manchester-city-vs-fulham-2026-11-21"
             },
             "sha256": "a67ac70e4794800308c448918399deb8d3d201b8a54fe8eb7066c4f83dad77f2",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0097-r1.json",
             "status": "pending",
             "result": null
@@ -1904,7 +3677,7 @@
                 "slug": "cd-sabadell-vs-granada-2026-11-21"
             },
             "sha256": "30613633d185012c0c4ea1f28d0894291d521b95a816a380296f5aa506e054a4",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0013-r1.json",
             "status": "pending",
             "result": null
@@ -2142,7 +3915,7 @@
                 "slug": "amed-sfk-vs-caykur-rizespor-2026-11-21"
             },
             "sha256": "ab19334c17d334471ae70355a4146e4c140bcd4e26409412f262a2777fd8c710",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0015-r1.json",
             "status": "pending",
             "result": null
@@ -2380,7 +4153,7 @@
                 "slug": "galatasaray-vs-samsunspor-2026-11-21"
             },
             "sha256": "6fa0221909fd40fc8fc0f4dbc1ee3ab163e33f8cab27ff158cbd2faf34bf0db6",
-            "commit": "pending",
+            "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0016-r1.json",
             "status": "pending",
             "result": null
