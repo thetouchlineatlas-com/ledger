@@ -7,6 +7,720 @@
     "records": [
         {
             "record": {
+                "away": "tsv-eintracht-braunschweig",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0003",
+                "home": "1-fc-nurnberg",
+                "inputs": {
+                    "elo_away": 1193.9,
+                    "elo_home": 1350.3,
+                    "lambda_away": 1.023876,
+                    "lambda_home": 1.995797,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T12:13:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.595075,
+                        0.220823,
+                        0.184102
+                    ],
+                    "p_elo": [
+                        0.582434,
+                        0.249956,
+                        0.16761
+                    ],
+                    "p_market": [
+                        0.566409,
+                        0.217924,
+                        0.215667
+                    ],
+                    "p_stat": [
+                        0.595576,
+                        0.232141,
+                        0.172282
+                    ],
+                    "retained_mass": 0.999999999946,
+                    "rho": -0.040662,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T12:21:34Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5601,
+                    "draw_risk": false,
+                    "over_2_5": 0.5776,
+                    "p": [
+                        0.5956,
+                        0.2321,
+                        0.1723
+                    ],
+                    "p_display": [
+                        59.6,
+                        23.2,
+                        17.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1091,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0996,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0973,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0935,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0663,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.23,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Nürnberg are without Zoma, who has 7 league goals (27% of the team's), plus Becker; Braunschweig miss midfielder Di Benedetto. All of this is from one source only, so it is not confirmed.",
+                                "Nürnberg are second and 3 points clear of 3rd in the automatic promotion places, while Braunschweig are 13th, only 2 points above the relegation zone.",
+                                "Nürnberg have won 4 of 6 home games (15-7), while Braunschweig have won 1 of 5 away games and lost 4."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.93,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Nürnberg are missing Mohamed Alì Zoma, their regular starting forward with 7 league goals (27% of the team's total), plus midfielder Finn Becker; Braunschweig are without regular midfielder Samuele Di Benedetto, so both attacks lose a key c",
+                                "Nürnberg sit 2nd and are defending an automatic promotion place, only 3 points clear of 3rd, so they need the points more than 13th-placed Braunschweig, who are just 2 points above the relegation zone and also under pressure.",
+                                "Nürnberg have won four of the last five league meetings, including the last three at home, most recently 2-1 in November 2025."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.92,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.23,
+                                "home": 0.59
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Nürnberg forward Mohamed Alì Zoma (27% of their league goals) and midfielder Finn Becker out injured, while Braunschweig miss regular midfielder Samuele Di Benedetto.",
+                                "Both teams need points at opposite ends of the table, with 2nd-placed Nürnberg defending a three-point cushion in the automatic promotion spots and 13th-placed Braunschweig sitting two points above the relegation zone.",
+                                "Nürnberg's strong attack at home (15 goals in six matches) gives them a clear edge against a Braunschweig side that has lost four of five away league games."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 0.89,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.27,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Nürnberg without Zoma, whose seven league goals are 27% of their total, as well as regular midfielder Becker; Braunschweig also miss regular midfielder Di Benedetto.",
+                                "Braunschweig are only two points above the relegation zone, increasing the value of taking at least a point despite their underdog status.",
+                                "Nürnberg have won their last two league matches and are 4-1-1 at home, while Braunschweig have lost four of five away league games."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 0.91,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.25,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source only lists Nürnberg without regular starter Mohamed Alì Zoma (7 league goals, 27% of the side's) and regular midfielder Finn Becker, a clear attack cut, plus Braunschweig without regular midfielder Samuele Di Benedetto; Jäkel's r",
+                                "Nürnberg sit in the automatic promotion places, 3 points clear of 3rd, while Braunschweig are only 2 points above the relegation zone and need points more.",
+                                "Braunschweig have won just 1 of 5 away league games (4 losses), so Nürnberg's home edge should still show even with the missing scorer."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5791,
+                        0.2409,
+                        0.18
+                    ],
+                    "p_adj": [
+                        0.581278,
+                        0.240178,
+                        0.178544
+                    ],
+                    "p_llm": [
+                        0.570276,
+                        0.243922,
+                        0.185802
+                    ],
+                    "p_shadow": [
+                        0.579087,
+                        0.240933,
+                        0.17998
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "1-fc-nurnberg-vs-tsv-eintracht-braunschweig-2026-11-21"
+            },
+            "sha256": "1a018fbc9e57abf4794664edd2cb47c153541abcaa7985c4d3a030385fbf3dc4",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0003-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "spvgg-greuther-furth",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0004",
+                "home": "hannover-96",
+                "inputs": {
+                    "elo_away": 1208.1,
+                    "elo_home": 1342.3,
+                    "lambda_away": 1.087928,
+                    "lambda_home": 1.914277,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T12:13:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.562094,
+                        0.229644,
+                        0.208261
+                    ],
+                    "p_elo": [
+                        0.560337,
+                        0.256377,
+                        0.183286
+                    ],
+                    "p_market": [
+                        0.555323,
+                        0.224219,
+                        0.220457
+                    ],
+                    "p_stat": [
+                        0.567539,
+                        0.240158,
+                        0.192303
+                    ],
+                    "retained_mass": 0.999999999742,
+                    "rho": -0.040662,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T12:21:34Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5715,
+                    "draw_risk": false,
+                    "over_2_5": 0.5742,
+                    "p": [
+                        0.5675,
+                        0.2402,
+                        0.1923
+                    ],
+                    "p_display": [
+                        56.8,
+                        24,
+                        19.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1126,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0919,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0918,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0638,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.28,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Hannover are missing Lars Gindorf, a regular starter with 3 league goals (25% of the team's), plus forward Benedikt Pichler, all from one source each, which trims their attack slightly.",
+                                "Fürth have had 15 days of rest and no matches in the last 14 days, against 13 days for Hannover, a small freshness edge for the visitors.",
+                                "Both sides sit on 12 points, 3 above the relegation zone and 9 off the play-offs, so each needs the points to avoid a drop fight."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.29,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Hannover are missing regular midfielder Lars Gindorf, who has scored 3 of their 12 league goals, plus forward Benedikt Pichler; Fürth's only listed absence is a defender with 0 league starts.",
+                                "Both sides sit on 12 points, only 3 above the relegation zone, so this is a direct six-pointer in the lower half rather than a promotion battle.",
+                                "Hannover have won only 2 of 5 home games and Fürth have lost 3 of 6 away, pointing to a tight, low-scoring contest between two struggling sides."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.28,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Hannover regular starter Lars Gindorf out injured, potentially depriving the hosts of 25% of their league goals this season.",
+                                "Both teams sit on 12 points just three points above the relegation zone, making this a crucial six-pointer to avoid slipping toward the bottom three.",
+                                "Fürth have conceded 13 goals across six away league games including back-to-back 3-0 road defeats, giving Hannover a clear opportunity to score despite their own attacking absences."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.29,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Hannover are without regular-starting midfielder Lars Gindorf, whose three league goals are 25% of their total; all listed absences are supported by only one source.",
+                                "Both clubs sit only three points above the relegation zone, increasing the value of avoiding defeat in an otherwise closely matched fixture.",
+                                "Fürth have lost three of six away league matches and conceded 13 goals, giving Hannover a modest home-edge despite their attacking absence."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.3,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Hannover are without regular starter Lars Gindorf, who has 3 of their 12 league goals (25%); all absences are single-source, while Fürth only miss Maxim Dal, who has not started a league game.",
+                                "Both sides sit on 12 points, 3 above the relegation zone and 9–12 off promotion places, so neither has a title or play-off push that outweighs the other.",
+                                "Fürth’s away record of 1 win, 2 draws and 3 defeats with 7 goals scored and 13 conceded still leaves Hannover favoured at home, but only modestly after losing a quarter of their league goals."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.53,
+                        0.2552,
+                        0.2148
+                    ],
+                    "p_adj": [
+                        0.554275,
+                        0.245977,
+                        0.199748
+                    ],
+                    "p_llm": [
+                        0.432041,
+                        0.288004,
+                        0.279955
+                    ],
+                    "p_shadow": [
+                        0.53004,
+                        0.255163,
+                        0.214796
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "hannover-96-vs-spvgg-greuther-furth-2026-11-21"
+            },
+            "sha256": "0b8bee99503e26a847de629670d45c40b6e70a556263c2c19894f4ee2cd7c796",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0004-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "holstein-kiel",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0005",
+                "home": "vfl-wolfsburg",
+                "inputs": {
+                    "elo_away": 1195.4,
+                    "elo_home": 1246.3,
+                    "lambda_away": 1.234857,
+                    "lambda_home": 2.042639,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-20T12:13:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.556488,
+                        0.220366,
+                        0.223146
+                    ],
+                    "p_elo": [
+                        0.474037,
+                        0.275601,
+                        0.250362
+                    ],
+                    "p_market": [
+                        0.568648,
+                        0.21714,
+                        0.214212
+                    ],
+                    "p_stat": [
+                        0.520291,
+                        0.24499,
+                        0.234719
+                    ],
+                    "retained_mass": 0.999999999923,
+                    "rho": -0.040662,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-21T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-20T12:21:34Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.628,
+                    "draw_risk": false,
+                    "over_2_5": 0.6265,
+                    "p": [
+                        0.5203,
+                        0.245,
+                        0.2347
+                    ],
+                    "p_display": [
+                        52,
+                        24.5,
+                        23.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1101,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0909,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0736,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0684,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0667,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Wolfsburg are unbeaten at home (3W 2D, 14-6) while Kiel have taken 1 point from 5 away games and scored only 2 goals.",
+                                "Wolfsburg are 2 points off the play-off places and 5 off automatic promotion, while Kiel are 3 points from safety in 18th and need points.",
+                                "Wolfsburg miss five players, but only Svanberg has a listed role (2 starts, 1 league goal) and the other four are single-source with no role data; Kiel's absences include Muqaj, who has not started."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.23,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Wolfsburg are 2 points off the promotion play-off places and 5 off automatic promotion, so they need a home win against the bottom side to keep pressure on the top three.",
+                                "Kiel have lost 4 of 5 away league games and scored only 2 away goals all season, while Wolfsburg are unbeaten at home with 14 goals in 5 home matches.",
+                                "Wolfsburg are missing several midfielders including Svanberg, but he has started only 2 of 11 league games and contributed 1 goal, so the impact is limited; Kiel's listed absences are mostly squad players."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.21,
+                                "home": 0.65
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams have immediate table pressure, with fifth-placed Wolfsburg sitting just two points outside the promotion play-off spot and bottom-side Kiel needing three points to escape the relegation zone.",
+                                "Wolfsburg are unbeaten at home with 14 goals scored in five league games, giving them a clear attacking edge over a Kiel side that is winless away with only two goals scored in five trips.",
+                                "All reported absences for both clubs rely on only one source and involve no confirmed regular league starters, leaving expected goal projections unchanged."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "All listed absences are supported by one source only, and the only quantified Wolfsburg absentee, Svanberg, has started just two league matches, so no team-news goal adjustment is made.",
+                                "Wolfsburg are two points off the promotion play-off place, while Kiel are three points from safety, giving both sides a clear need for points but with Wolfsburg better placed to exploit home advantage.",
+                                "Wolfsburg’s unbeaten 3W-2D home record includes 14 goals, whereas Kiel have no away win and only two away goals in five league trips, favouring a controlled home win."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Wolfsburg are only 2 points off the play-off places, while Kiel are in the drop zone and 3 points from safety, so both need points but the home side can chase the game.",
+                                "Kiel have 0 wins, 1 draw and 4 losses away and have scored only 2 goals on the road, so they are unlikely to take much from this match.",
+                                "Listed absences are one source only, and the players with known roles are not regular starters (Svanberg 2 of 11, Muqaj 0 of 11), so expected goals are left unchanged."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5426,
+                        0.2418,
+                        0.2155
+                    ],
+                    "p_adj": [
+                        0.520291,
+                        0.24499,
+                        0.234719
+                    ],
+                    "p_llm": [
+                        0.626415,
+                        0.224101,
+                        0.149483
+                    ],
+                    "p_shadow": [
+                        0.54263,
+                        0.241847,
+                        0.215522
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "vfl-wolfsburg-vs-holstein-kiel-2026-11-21"
+            },
+            "sha256": "37fe0bdef69c6af68cb597ed110033892248df73878a39c5a018eba0494d5488",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0005-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "gaziantep-fk",
                 "batch_id": "2026-11-20T0231Z-model-predict",
                 "competition": "super-lig",
@@ -238,7 +952,7 @@
                 "slug": "genclerbirligi-vs-gaziantep-fk-2026-11-21"
             },
             "sha256": "050120acc74b3096ac1a03e1a26caf88a0d8129104d29130c6855e78e086f351",
-            "commit": "pending",
+            "commit": "1bdc325ebb16cf8197dfd6398e19fbbfa3050f73",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0014-r1.json",
             "status": "pending",
             "result": null
@@ -345,7 +1059,7 @@
                 "slug": "atletico-cp-vs-casa-pia-2026-11-21"
             },
             "sha256": "d7557d8546f201974f12a07999d8ad1e8c8d50e109e91ae5dd02a90db1559be9",
-            "commit": "pending",
+            "commit": "1bdc325ebb16cf8197dfd6398e19fbbfa3050f73",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0004-r1.json",
             "status": "pending",
             "result": null
@@ -7037,8 +7751,12 @@
             "sha256": "3f56aaf38f41e2a8365609fd42378b41c685284fd20a0b8003d56b6c7768eb07",
             "commit": "c7e63d62a2577d6b5d25e330d4f8344dff19d8fd",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0001-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.2335
+            }
         },
         {
             "record": {
@@ -7275,8 +7993,12 @@
             "sha256": "22402c4a6e209b364315bd30ba3ab7fe87f136f22e79a4063a41f4865f2d68ca",
             "commit": "c7e63d62a2577d6b5d25e330d4f8344dff19d8fd",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0002-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-1",
+                "correct": false,
+                "rps": 0.5767
+            }
         },
         {
             "record": {
@@ -7513,8 +8235,12 @@
             "sha256": "64e1c6404c69f5252fb746de1bea10a6a15c2e8809153c8561d4f4b995ae05b7",
             "commit": "c7e63d62a2577d6b5d25e330d4f8344dff19d8fd",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0003-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-2",
+                "correct": false,
+                "rps": 0.6607
+            }
         },
         {
             "record": {
