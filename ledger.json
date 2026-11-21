@@ -7,6 +7,1196 @@
     "records": [
         {
             "record": {
+                "away": "fortuna-sittard",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0021",
+                "home": "go-ahead-eagles",
+                "inputs": {
+                    "elo_away": 1403.8,
+                    "elo_home": 1425.1,
+                    "lambda_away": 1.312491,
+                    "lambda_home": 1.805508,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-21T16:05:43Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.482343,
+                        0.246476,
+                        0.271181
+                    ],
+                    "p_elo": [
+                        0.44253,
+                        0.280219,
+                        0.277251
+                    ],
+                    "p_market": [
+                        0.57109,
+                        0.222653,
+                        0.206258
+                    ],
+                    "p_stat": [
+                        0.468147,
+                        0.260048,
+                        0.271806
+                    ],
+                    "retained_mass": 0.999999999887,
+                    "rho": -0.077453,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T15:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T16:10:00Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6221,
+                    "draw_risk": false,
+                    "over_2_5": 0.5976,
+                    "p": [
+                        0.4681,
+                        0.2601,
+                        0.2718
+                    ],
+                    "p_display": [
+                        46.8,
+                        26,
+                        27.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1192,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0919,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.07,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0696,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.069,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Go Ahead have several defenders doubtful, including regular starter Dean James (11 of 12 starts), plus Linthorst in midfield; most are single-source and expected back today, so the effect is small.",
+                                "Fortuna are unbeaten away (3W 3D) and drew their last four league games, while Go Ahead are unbeaten at home (3W 2D) but concede often (27 goals in 12).",
+                                "Four of the last five league meetings were draws or a one-sided win away from the home side, and the last two ended 2-2, pointing to a tight game."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.3,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Go Ahead Eagles have several defensive doubts, including regular starter Dean James (11 league starts) and midfielder Evert Linthorst (11 starts), while Fortuna Sittard's only listed doubt is Edouard Michut; this slightly weakens the home s",
+                                "Both sides are unbeaten in their respective home/away splits this season, with Go Ahead Eagles 3W 2D 0L at home and Fortuna Sittard 3W 3D 0L away, pointing to a closely contested match.",
+                                "The last two league meetings between these sides both ended 2-2, suggesting a draw is a strong possibility when they meet."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.29,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source lists regular starters Dean James and Evert Linthorst as doubtful for Go Ahead Eagles and Edouard Michut as doubtful for Fortuna Sittard, while confirmed home absences are non-starters.",
+                                "Both sides are unbeaten in their respective home and away league splits this season, with Go Ahead Eagles taking three wins and two draws at home while Fortuna Sittard have three wins and three draws on the road, pointing to a closely conte",
+                                "The last two league meetings between these clubs both ended in 2-2 draws, further supporting the likelihood of a shared result."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.29,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Go Ahead have single-source doubts over regular starters Dean James and Evert Linthorst, while Fortuna's regular midfielder Edouard Michut is also a single-source doubt.",
+                                "Both sides are unbeaten in league home/away play respectively—Go Ahead 3W-2D at De Adelaarshorst and Fortuna 3W-3D away—so neither has a clear venue-based edge.",
+                                "Two of the past three league meetings finished level, including a 2-2 draw in the latest meeting at De Adelaarshorst."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.33,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "The last two league meetings both ended 2-2, so a shared score is the clearest difference from a routine home win.",
+                                "Go Ahead are unbeaten at home (3W 2D, 14-8) but Fortuna are also unbeaten away (3W 3D, 12-9), so the venue edge is largely cancelled.",
+                                "Confirmed outs are squad players with no league starts; the regulars named are only doubtful and single-source, so neither side's expected goals are cut."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4465,
+                        0.2698,
+                        0.2837
+                    ],
+                    "p_adj": [
+                        0.463003,
+                        0.262397,
+                        0.2746
+                    ],
+                    "p_llm": [
+                        0.382102,
+                        0.298096,
+                        0.319802
+                    ],
+                    "p_shadow": [
+                        0.446525,
+                        0.269762,
+                        0.283713
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "go-ahead-eagles-vs-fortuna-sittard-2026-11-22"
+            },
+            "sha256": "7943fc304d9498fd35ef02fa968fa40249095cf63d84dabf4bc3cd9971576413",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0021-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "ofi-crete-gr",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0004",
+                "home": "panathinaikos-gr",
+                "inputs": {
+                    "elo_away": 1455.8,
+                    "elo_home": 1717.5,
+                    "lambda_away": 0.77282,
+                    "lambda_home": 2.145223,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-21T16:05:43Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.674688,
+                        0.218273,
+                        0.107039
+                    ],
+                    "p_elo": [
+                        0.678487,
+                        0.21503,
+                        0.106482
+                    ],
+                    "p_market": [
+                        0.706958,
+                        0.180883,
+                        0.112159
+                    ],
+                    "p_stat": [
+                        0.684235,
+                        0.21279,
+                        0.102975
+                    ],
+                    "retained_mass": 0.999999999839,
+                    "rho": -0.166945,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T15:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T16:10:00Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4883,
+                    "draw_risk": false,
+                    "over_2_5": 0.561,
+                    "p": [
+                        0.6842,
+                        0.2128,
+                        0.103
+                    ],
+                    "p_display": [
+                        68.4,
+                        21.3,
+                        10.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1261,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1024,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1019,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0975,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0902,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.94,
+                            "m_home": 0.99,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.2,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "OFI Crete are without Kenan Kodro, who has 4 of the team's 14 league goals (29%), and starting defender Krešimir Krizmanić; all absences rest on one source.",
+                                "Panathinaikos have won 5 of 5 at home with goals 16-3, and their only league loss came at Olympiacos, while OFI have lost 3 of 5 away.",
+                                "Panathinaikos lead by 4 points and can't slip, while OFI sit 10 behind the leaders and 11 above relegation, so they have less riding on this match."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.88,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "OFI Crete are missing their main scorer Kenan Kodro, who has 4 of their 14 league goals (29%), plus regular defender Krešimir Krizmanić, weakening both their attack and back line.",
+                                "Panathinaikos have won all 5 home league games this season by an aggregate of 16-3, while OFI have lost 3 of 5 away games, conceding 9 goals.",
+                                "Panathinaikos are 4 points clear at the top and need to keep winning to protect their title lead, while OFI are comfortably mid-table with an 11-point cushion above the relegation zone."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.88,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports OFI Crete are without regular starting forward Kenan Kodro, who accounts for 29% of their league goals, alongside regular starting defender Krešimir Krizmanić.",
+                                "Panathinaikos sit top of the table with a 4-point lead to protect, adding urgency to maintain their winning momentum.",
+                                "Panathinaikos have won all 5 home league games while outscoring opponents 16-3, pointing to a comfortable home win against an OFI Crete side with 3 losses in 5 away trips."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.87,
+                            "m_home": 1.05,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.19,
+                                "home": 0.69
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "OFI are without single-source-listed regular forward Kenan Kodro, scorer of 4 league goals (29% of their total), and regular defender Krešimir Krizmanić, reducing both their attack and defensive depth.",
+                                "Panathinaikos have won all five home league matches, scoring 16 and conceding only three, while OFI have lost three of five away league games.",
+                                "Panathinaikos have won the last four league meetings with OFI, including 3-2 and 4-1 in Athens."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.92,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.21,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source lists OFI regular starter Kenan Kodro out (4 league goals, 29% of the side's) plus regular defender Krizmanić, which trims the visitors' attack if it holds; Panathinaikos only lose a part-time midfielder (4 league starts, 5% of g",
+                                "Panathinaikos have won all five home league games 16-3 and dropped points only once in 10, so this is a much sharper home edge than a normal meeting of a top side and a mid-table visitor.",
+                                "Panathinaikos won the last three league meetings, including 3-2 and 4-1 at home, so recent history points the same way as the table."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6902,
+                        0.2086,
+                        0.1013
+                    ],
+                    "p_adj": [
+                        0.691843,
+                        0.212152,
+                        0.096006
+                    ],
+                    "p_llm": [
+                        0.68102,
+                        0.194168,
+                        0.124812
+                    ],
+                    "p_shadow": [
+                        0.690169,
+                        0.208579,
+                        0.101253
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "panathinaikos-gr-vs-ofi-crete-gr-2026-11-22"
+            },
+            "sha256": "9d1e77d8a2c2e1c4bb4d8c3a11ae1e9649f4f69af4230c0dfc735138dfa5cdc2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0004-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "real-sociedad",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0105",
+                "home": "racing-santander",
+                "inputs": {
+                    "elo_away": 1478.1,
+                    "elo_home": 1300.7,
+                    "lambda_away": 2.077578,
+                    "lambda_home": 1.560644,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-21T16:05:43Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.288768,
+                        0.216038,
+                        0.495193
+                    ],
+                    "p_elo": [
+                        0.244611,
+                        0.274406,
+                        0.480983
+                    ],
+                    "p_market": [
+                        0.531676,
+                        0.260743,
+                        0.207582
+                    ],
+                    "p_stat": [
+                        0.261928,
+                        0.238657,
+                        0.499415
+                    ],
+                    "retained_mass": 0.999999999899,
+                    "rho": -0.027462,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T15:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T16:10:00Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6978,
+                    "draw_risk": false,
+                    "over_2_5": 0.6974,
+                    "p": [
+                        0.2619,
+                        0.2387,
+                        0.4994
+                    ],
+                    "p_display": [
+                        26.2,
+                        23.9,
+                        49.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0968,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0893,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0764,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0619,
+                            "score": "1-3"
+                        },
+                        {
+                            "p": 0.0603,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.27,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Real Sociedad are missing Barrenetxea (8 starts, 10% of goals), Sarr and Herrera, though team news is mostly from one source; Racing lack regular starter Mantilla in defence.",
+                                "Racing have had 15 days of rest and no match in 14 days, while Real Sociedad travel to Crystal Palace in four days and may rotate.",
+                                "Racing are only 4 points above the relegation zone and need points at home, while Real Sociedad are 11 points off the lead in 5th."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.94,
+                            "m_home": 0.96,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.27,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Racing Santander are missing regular defender Álvaro Mantilla plus forward Andrés Martín and midfielder Maguette Gueye, while Real Sociedad are without regulars Ander Barrenetxea, Mamadou Sarr and Yangel Herrera; Sociedad's absences are mor",
+                                "Racing Santander have lost 6 of 12 league games and conceded 30 goals, while Real Sociedad have won 7 of 12 and sit 5th, so the visitors arrive as the stronger side despite their own injury issues.",
+                                "Real Sociedad are 5th and chasing European places, while Racing Santander are only 4 points above the relegation zone, so the away side has more margin but also more incentive to take points from a lower-half opponent."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.93,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.26,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides miss regular starters, with Real Sociedad losing forward Ander Barrenetxea (10% of their league goals) alongside single-source absences for Yangel Herrera and Mamadou Sarr, while Racing Santander are without starting defender Álv",
+                                "Real Sociedad face an away Europa League match against Crystal Palace just four days after this fixture, which may prompt rotation compared to a Racing side with five days until their next league game.",
+                                "Both teams play open football—Racing have conceded a league-high 30 goals in 12 games and Real Sociedad's six away games have yielded 26 total goals—pointing to a high-scoring encounter where the visitors' superior attacking quality should "
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 1.02,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.27,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Racing are without regular-starting defender Álvaro Mantilla, while Sociedad miss regular forward Ander Barrenetxea (2 goals, 2 assists); Herrera and Sarr are single-source absences.",
+                                "Sociedad have won six of their past eight competitive matches, giving the fifth-placed visitors the stronger underlying case despite Racing’s solid home return.",
+                                "Racing are only four points above the relegation zone, so the home side have added incentive to protect a point or push for a result."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 0.95,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.26,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Racing are without regular defender Álvaro Mantilla (10 of 12 league starts), while Sociedad are without regular forward Ander Barrenetxea (8 starts, 10% of their league goals and 2 assists); Herrera and Sarr are listed by only one source.",
+                                "Racing sit only 4 points above the relegation zone after 12 games, so they need the points more than fifth-placed Sociedad, who are 11 behind the leaders and 12 clear of the drop.",
+                                "Sociedad have 22 points from 12 and three away wins from six, against a Racing side whose home games have finished level at 11-11, so the visitors remain the stronger side even at El Sardinero."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2733,
+                        0.2482,
+                        0.4786
+                    ],
+                    "p_adj": [
+                        0.264821,
+                        0.243327,
+                        0.491851
+                    ],
+                    "p_llm": [
+                        0.30758,
+                        0.266564,
+                        0.425856
+                    ],
+                    "p_shadow": [
+                        0.273263,
+                        0.248165,
+                        0.478572
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "racing-santander-vs-real-sociedad-2026-11-22"
+            },
+            "sha256": "e528faeae98516d073be4c17b9f7a6d9ed51b1b439656bebccabb5d3e9926e15",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0105-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "las-palmas",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0018",
+                "home": "sporting-gijon",
+                "inputs": {
+                    "elo_away": 1242.1,
+                    "elo_home": 1268,
+                    "lambda_away": 1.114,
+                    "lambda_home": 1.336186,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T16:05:43Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.416906,
+                        0.272783,
+                        0.310311
+                    ],
+                    "p_elo": [
+                        0.447481,
+                        0.279582,
+                        0.272938
+                    ],
+                    "p_market": [
+                        0.459997,
+                        0.271141,
+                        0.268863
+                    ],
+                    "p_stat": [
+                        0.434955,
+                        0.274929,
+                        0.290116
+                    ],
+                    "retained_mass": 0.99999999979,
+                    "rho": -0.006249,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T15:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T16:10:00Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4963,
+                    "draw_risk": false,
+                    "over_2_5": 0.4431,
+                    "p": [
+                        0.435,
+                        0.2749,
+                        0.2901
+                    ],
+                    "p_display": [
+                        43.5,
+                        27.5,
+                        29
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1302,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1194,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0895,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0891,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0878,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.92,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.27,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Sporting Gijón lose ever-present midfielder Alex Corredera and forward Juan Otero to suspension, plus Alejo Sarco (3 goals) is out, with Gelabert and Casas doubtful; all single-source reports.",
+                                "Sporting Gijón are only 1 point off the play-off places while Las Palmas are 4 points off, so the home side has slightly more to gain.",
+                                "The last five league meetings were low scoring, with Las Palmas winning three and two draws, and no goals from Sporting in four of them."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.88,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Sporting Gijón are missing several regular starters: suspended forward Juan Otero and midfielder Alex Corredera, plus injured midfielder Manu Rodríguez, while top scorer Alejo Sarco (3 goals) is out and César Gelabert is doubtful. That remo",
+                                "Sporting are 1 point off the promotion play-off places and need the points more at home, while Las Palmas are 4 points off the play-offs and still within reach, so both sides have a clear incentive to push for a result.",
+                                "Las Palmas have won the last two meetings at El Molinón and are unbeaten in the last five head-to-head league matches, which gives them a psychological edge despite Sporting's home advantage."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.87,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source lists Sporting Gijón without suspended regular starters Alex Corredera and Juan Otero plus injured midfielder Manu Rodríguez and 3-goal forward Alejo Sarco, with starter César Gelabert also doubtful, weakening their spine and tak",
+                                "Sporting Gijón sit just 1 point outside the promotion play-off places while Las Palmas are 4 points off the top six, giving both sides strong incentive to push for points.",
+                                "Sporting Gijón have failed to win any of the last five league meetings against Las Palmas, scoring only once across those matches."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.86,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.29,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Sporting are without regular starters Otero, Corredera and Manu Rodríguez plus three-goal forward Sarco, materially reducing their attacking options; all team-news listings have only one source.",
+                                "Sporting are one point outside the play-off places, so the home side have a particularly strong need to arrest their recent league slide.",
+                                "Las Palmas are unbeaten in the last five league meetings and Sporting have failed to score in their last two home meetings with them."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.31,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "One source lists Sporting without suspended regulars Otero and ever-present Corredera plus injured Sarco (19% of their league goals) and midfielder Manu Rodríguez, so their attack is thinner than usual; Las Palmas’ listed absentees are most",
+                                "The last five league meetings were all low-scoring and Las Palmas are unbeaten in them (three wins, two draws), including three 0-1 or 0-0 results at this ground.",
+                                "Sporting are only 1 point off the play-off places, so a home result matters more for them than for Las Palmas, who are 4 points off that line and 7 above relegation."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.4049,
+                        0.2826,
+                        0.3125
+                    ],
+                    "p_adj": [
+                        0.411721,
+                        0.282511,
+                        0.305768
+                    ],
+                    "p_llm": [
+                        0.377654,
+                        0.282282,
+                        0.340064
+                    ],
+                    "p_shadow": [
+                        0.404883,
+                        0.282614,
+                        0.312503
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "sporting-gijon-vs-las-palmas-2026-11-22"
+            },
+            "sha256": "f5a9f727da5458048e915b2d7dd4c8bb81a4b1f26480fc70c8520ee3b062ac80",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0018-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "eyupspor",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0021",
+                "home": "trabzonspor",
+                "inputs": {
+                    "elo_away": 1293.2,
+                    "elo_home": 1643.5,
+                    "lambda_away": 0.728363,
+                    "lambda_home": 2.399789,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-21T16:05:43Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.737704,
+                        0.174777,
+                        0.087518
+                    ],
+                    "p_elo": [
+                        0.746311,
+                        0.183326,
+                        0.070363
+                    ],
+                    "p_market": [
+                        0.86059,
+                        0.095876,
+                        0.043534
+                    ],
+                    "p_stat": [
+                        0.756109,
+                        0.171408,
+                        0.072483
+                    ],
+                    "retained_mass": 0.999999999887,
+                    "rho": -0.089538,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T16:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T16:10:00Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4743,
+                    "draw_risk": false,
+                    "over_2_5": 0.6082,
+                    "p": [
+                        0.7561,
+                        0.1714,
+                        0.0725
+                    ],
+                    "p_display": [
+                        75.6,
+                        17.1,
+                        7.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1293,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1034,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.1007,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0942,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0818,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.06,
+                                "draw": 0.12,
+                                "home": 0.82
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Trabzonspor lose suspended starting defender Nwaiwu (confirmed by two sources) and Şimşir is out, with Muçi (6 assists) doubtful on one source, a small dent; Eyüpspor have several regular forwards doubtful, including Abdullahi who has 67% o",
+                                "Trabzonspor are 3 points off the leaders and need wins, while 18th-placed Eyüpspor are 5 points from safety with just 3 points from 11 games.",
+                                "Trabzonspor have won 5 of 5 at home with goals 15-1, while Eyüpspor have lost all 5 away with goals 1-19, so a heavy home win is likely."
+                            ],
+                            "score": "3-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.9,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.14,
+                                "home": 0.78
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Trabzonspor are missing suspended regular defender Nwaiwu and have several doubtful starters including Muçi (3 goals, 6 assists) and Şimşir, while Eyüpspor's attack is hit by doubts over Abdullahi (2 of their 3 league goals) and multiple re",
+                                "Trabzonspor have won all 5 home league games 15-1, while Eyüpspor have lost all 5 away league games 1-19, making a home win very likely.",
+                                "Trabzonspor are 3 points behind the leaders and need a win to keep pressure on the title race, while Eyüpspor are 5 points from safety and desperate for points but face a far stronger side."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.93,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.04,
+                                "draw": 0.09,
+                                "home": 0.87
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Trabzonspor's perfect 5W-0D-0L home record (15-1 goals) against Eyüpspor's 0W-0D-5L away record (1-19 goals) points to a heavy home win.",
+                                "Trabzonspor lack suspended ever-present defender Chibuike Nwaiwu, while one source lists key creator Ernest Muçi (3 goals, 6 assists) as doubtful and Aral Şimşir as out.",
+                                "Eyüpspor have regular defenders Simone Giordano and Talha Ülvan doubtful per two sources, while one source also doubts top scorer Ahmed Abdullahi (67% of their league goals)."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.89,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.07,
+                                "draw": 0.15,
+                                "home": 0.78
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Trabzonspor are without ever-present defender Nwaiwu and Şimşir, while Muçi—who has 3 goals and 6 assists—is only doubtful from one source, reducing their attacking adjustment.",
+                                "Eyüpspor's already limited attack has just 3 league goals, and Abdullahi, scorer of 2, is doubtful from one source alongside several other regular starters.",
+                                "Trabzonspor have won all five home league matches 15-1, whereas Eyüpspor have lost all five away games 1-19, strongly favouring a controlled home win."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.14,
+                                "home": 0.78
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Trabzonspor are 3 points off the leaders with 23 games left, while Eyüpspor sit in the relegation zone, 5 points from safety, so the points matter more to the visitors even if the gap in quality is huge.",
+                                "Confirmed absence is Nwaiwu, a defender who has started all 11 league games; Muçi (12% of goals, 6 assists) and Şimşir are only doubtful on one source, and Eyüpspor’s listed attackers and defenders are doubtful rather than confirmed out.",
+                                "Trabzonspor have won all five home league games 15-1, while Eyüpspor have lost all five away 1-19, so a home win is the clear lean rather than the league’s ordinary home-win rate."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7649,
+                        0.1647,
+                        0.0704
+                    ],
+                    "p_adj": [
+                        0.752668,
+                        0.175526,
+                        0.071806
+                    ],
+                    "p_llm": [
+                        0.80908,
+                        0.126597,
+                        0.064323
+                    ],
+                    "p_shadow": [
+                        0.764935,
+                        0.164703,
+                        0.070363
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "trabzonspor-vs-eyupspor-2026-11-22"
+            },
+            "sha256": "707a3f0770ecf9c02357764d35650f2938f22bad9e51b619dd515b8045231027",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0021-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "union-st-gilloise-be",
                 "batch_id": "2026-11-21T0014Z-model-predict",
                 "competition": "belgian-pro-league",
@@ -238,7 +1428,7 @@
                 "slug": "kv-kortrijk-vs-union-st-gilloise-be-2026-11-22"
             },
             "sha256": "ef0db7faa3486cb9fa456b9e940dcb2a99ce45f8d005cb64e657f6ab2ba4656b",
-            "commit": "pending",
+            "commit": "be8d29247efad1e6ce35b25089a480ee53018002",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0007-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +1666,7 @@
                 "slug": "fc-augsburg-vs-mainz-05-2026-11-22"
             },
             "sha256": "c13cc5047498d5ffc70657de171a5cdf46eb5bb6f878e727b2617541b74208a4",
-            "commit": "pending",
+            "commit": "be8d29247efad1e6ce35b25089a480ee53018002",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0093-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +1904,7 @@
                 "slug": "sonderjyske-vs-odense-boldklub-2026-11-22"
             },
             "sha256": "3392f68f37ef6a760a10099a8809cdd1f4d5560f84749c1ebd486bbce58d9442",
-            "commit": "pending",
+            "commit": "be8d29247efad1e6ce35b25089a480ee53018002",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0004-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +2142,7 @@
                 "slug": "panetolikos-vs-volos-nfc-2026-11-22"
             },
             "sha256": "ff2a43b183b1ffac2ebfc3443371c8372b094a5d540669ecd57e57644290f42f",
-            "commit": "pending",
+            "commit": "be8d29247efad1e6ce35b25089a480ee53018002",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0003-r1.json",
             "status": "pending",
             "result": null
@@ -21954,8 +23144,12 @@
             "sha256": "53b9789d2fd7d7ace8aea41a5959c2354738d1b4ddd8e8fe7563c48c6622619d",
             "commit": "7ef4b38916be9a9f625dafa6eb7d60f18c976c65",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0018-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.0801
+            }
         },
         {
             "record": {
@@ -22192,8 +23386,12 @@
             "sha256": "ff276f3c042dbf0f3205347ef18273470917f33eb1ec66e2a1d5ef7b6490ab7c",
             "commit": "7ef4b38916be9a9f625dafa6eb7d60f18c976c65",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0019-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-0",
+                "correct": true,
+                "rps": 0.0643
+            }
         },
         {
             "record": {
@@ -22430,8 +23628,12 @@
             "sha256": "b4197a86b06e7efb3d021a91235fdb196baa57e747d9951c6b1524bf2dedb668",
             "commit": "7ef4b38916be9a9f625dafa6eb7d60f18c976c65",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0002-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1827
+            }
         },
         {
             "record": {
@@ -22668,8 +23870,12 @@
             "sha256": "0f9556a2d4f1143b603a34de3c75f281601f6bac0f03475f5a93ea0987d61343",
             "commit": "7ef4b38916be9a9f625dafa6eb7d60f18c976c65",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0003-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1885
+            }
         },
         {
             "record": {
@@ -22906,8 +24112,12 @@
             "sha256": "15386315490f1f2626742940d772f1a6812a45f582457f9666525830ca40da8b",
             "commit": "7ef4b38916be9a9f625dafa6eb7d60f18c976c65",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0004-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.1776
+            }
         },
         {
             "record": {
@@ -23144,8 +24354,12 @@
             "sha256": "74c67782b2417f334b73a71537a0d83e1ec143e7b6a93d41c437ae3b2bfff0be",
             "commit": "7ef4b38916be9a9f625dafa6eb7d60f18c976c65",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0005-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-1",
+                "correct": true,
+                "rps": 0.232
+            }
         },
         {
             "record": {
@@ -23382,8 +24596,12 @@
             "sha256": "59193d023ef8579697578a45355608772d90903509746e62efd1532b2864f568",
             "commit": "7ef4b38916be9a9f625dafa6eb7d60f18c976c65",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0006-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.2305
+            }
         },
         {
             "record": {
