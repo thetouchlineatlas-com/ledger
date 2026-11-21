@@ -12322,8 +12322,12 @@
             "sha256": "b8dbc7088b37e1282b65963cdc0ae7290d240c701286b3693456fbffad3ad44f",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0006-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.2224
+            }
         },
         {
             "record": {
@@ -12560,8 +12564,12 @@
             "sha256": "f988d3ca982e98f8b450c603a8e2fa62f099ca823bd92629a163f5c213b73a1b",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0004-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-5",
+                "correct": true,
+                "rps": 0.075
+            }
         },
         {
             "record": {
@@ -12798,8 +12806,12 @@
             "sha256": "dca0efa939d8d2ed9745ee928a4a0083062025b44c0355f235813cce292d33d5",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0005-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1328
+            }
         },
         {
             "record": {
@@ -13036,8 +13048,12 @@
             "sha256": "c5386d989056546ad55cf64b5cf4f0434556c4cc8eaa8b802c811047173913f7",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0016-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-3",
+                "correct": true,
+                "rps": 0.2656
+            }
         },
         {
             "record": {
@@ -13274,8 +13290,12 @@
             "sha256": "0fcb94a40f87a111ed22806eec56fc983f773a4b56431948e74c733c7bfe6db6",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0017-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-3",
+                "correct": false,
+                "rps": 0.3648
+            }
         },
         {
             "record": {
@@ -13512,8 +13532,12 @@
             "sha256": "9cce5b4328c0039fca33f332e447843729b30a9b014b5d7b0092f158b68c85b2",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0030-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.2001
+            }
         },
         {
             "record": {
@@ -13750,8 +13774,12 @@
             "sha256": "5a2ee93c5931b10b2daaf941cdfcb5a644b76360033551c2a444809cdd4de8a5",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0031-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1651
+            }
         },
         {
             "record": {
@@ -13988,8 +14016,12 @@
             "sha256": "56f4e87b764f88a165cc07d5035e1043bad815e883b8fa09ceee15daac57de7b",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0032-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-1",
+                "correct": false,
+                "rps": 0.3673
+            }
         },
         {
             "record": {
@@ -14226,8 +14258,12 @@
             "sha256": "445478b4acce85ee7efa506b1ff32c0b8c4490e233a4a8922eb6d7d525e13564",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0033-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-1",
+                "correct": false,
+                "rps": 0.371
+            }
         },
         {
             "record": {
@@ -14464,8 +14500,12 @@
             "sha256": "beaefce6ebdc4bc80787823c916f25732a0df6164ce02ec4abaa36e87b98dd5e",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0103-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-1",
+                "correct": true,
+                "rps": 0.038
+            }
         },
         {
             "record": {
@@ -14702,8 +14742,12 @@
             "sha256": "875749a3a0d635f01f7c9e3d34d846f69df8c59430feaefa173166fa148260ee",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0016-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1238
+            }
         },
         {
             "record": {
@@ -14940,8 +14984,12 @@
             "sha256": "bc62d3ee1d74c855eabe0854ede81d9494d5f4aeb356e74c33d6fc59bd1a9168",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0021-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.0846
+            }
         },
         {
             "record": {
@@ -15178,8 +15226,12 @@
             "sha256": "40348ffa0e2cbd127c9c77b5aa284a3cdccb1da6a97f99036ad8c2468abaffe2",
             "commit": "cbe3243a03db84343571da8721fbdacf8d8061c6",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0013-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-2",
+                "correct": true,
+                "rps": 0.1406
+            }
         },
         {
             "record": {
