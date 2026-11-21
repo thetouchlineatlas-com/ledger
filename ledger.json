@@ -7,6 +7,2386 @@
     "records": [
         {
             "record": {
+                "away": "hertha-berlin",
+                "batch_id": "2026-11-20T2005Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-20T20:05:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0007",
+                "home": "energie-cottbus",
+                "inputs": {
+                    "elo_away": 1382.3,
+                    "elo_home": 1194.1,
+                    "lambda_away": 1.706753,
+                    "lambda_home": 1.446625,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.322878,
+                        0.242653,
+                        0.43447
+                    ],
+                    "p_elo": [
+                        0.235355,
+                        0.272319,
+                        0.492326
+                    ],
+                    "p_market": [
+                        0.190356,
+                        0.20163,
+                        0.608014
+                    ],
+                    "p_stat": [
+                        0.275407,
+                        0.256359,
+                        0.468234
+                    ],
+                    "retained_mass": 0.999999999946,
+                    "rho": -0.040342,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6326,
+                    "draw_risk": false,
+                    "over_2_5": 0.6063,
+                    "p": [
+                        0.2754,
+                        0.2564,
+                        0.4682
+                    ],
+                    "p_display": [
+                        27.6,
+                        25.6,
+                        46.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1159,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.097,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.074,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0688,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.067,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.55,
+                                "draw": 0.25,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Hertha lead the table with 31 points, 7 clear of 2nd, while Cottbus on 11 points are level with 17th, the top relegation place, and 12 off the play-offs.",
+                                "Cottbus are without defender Axel Borgmann (5 league starts) and forward Engelhardt, and Guttau is doubtful, all from one source; Hertha's two doubtful players have no league starts, so the effect is small.",
+                                "Hertha are unbeaten in 11 league games (10W 1D) with 14-5 away, while Cottbus have drawn 5 and conceded 20 goals, so an open game favours the visitors."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.58,
+                                "draw": 0.24,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Hertha are 7 points clear at the top and 8 clear of 3rd, so they can strengthen their automatic promotion grip, while Cottbus are level on points with the relegation place and need points badly.",
+                                "Hertha are unbeaten in 11 league games with 10 wins and have won 5 of 6 away, while Cottbus have won only 1 of 5 at home and are winless in their last 5 league matches.",
+                                "Cottbus are missing defender Axel Borgmann, a regular starter, but Hertha's doubtful players have not started a league game this season, so the team news slightly favours the visitors."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.61,
+                                "draw": 0.23,
+                                "home": 0.16
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Energie Cottbus are level on 11 points with 17th in the relegation places and urgently need points to stay above the drop zone, whereas Hertha Berlin hold a comfortable 7-point lead at the top of the table.",
+                                "Unbeaten Hertha Berlin have won 10 of their 11 league matches including five of six away from home, making them strong favourites against a Cottbus side winless in their last six outings.",
+                                "All reported absences rely on only one source, with defender Axel Borgmann (5 league starts) the only notable miss for the hosts and no regular starters listed out for Hertha."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.6,
+                                "draw": 0.24,
+                                "home": 0.16
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cottbus have defender Axel Borgmann out after five league starts; this is reported by one source and slightly weakens their defensive options.",
+                                "Cottbus are level on points with the relegation place, while Hertha are already eight points clear of third, making the home side's need for points more urgent.",
+                                "Hertha are unbeaten with 10 wins from 11 and have won five of six away league matches, whereas Cottbus have one home win in five."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.6,
+                                "draw": 0.24,
+                                "home": 0.16
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Cottbus are level with the top relegation place after 11 games, so they need points more than Hertha, who are already 7 clear of second and 8 clear of third.",
+                                "Hertha are unbeaten in 11 league games and have won five of six away, which points to them controlling this match despite Cottbus's recent run of draws.",
+                                "Listed absences are single-source only, and none is a regular starter (50% of league games), so they do not change either side's expected goals."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2497,
+                        0.2548,
+                        0.4956
+                    ],
+                    "p_adj": [
+                        0.272203,
+                        0.256596,
+                        0.471201
+                    ],
+                    "p_llm": [
+                        0.171494,
+                        0.240202,
+                        0.588304
+                    ],
+                    "p_shadow": [
+                        0.249677,
+                        0.254759,
+                        0.495564
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "energie-cottbus-vs-hertha-berlin-2026-11-22"
+            },
+            "sha256": "6f04d2cd3a271e44e1cb48bd606693ddb9437cae87a02eb35ed806007fb5663d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0007-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "dynamo-dresden",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0008",
+                "home": "kaiserslautern",
+                "inputs": {
+                    "elo_away": 1211.6,
+                    "elo_home": 1324.9,
+                    "lambda_away": 1.182026,
+                    "lambda_home": 1.700424,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.490543,
+                        0.248545,
+                        0.260911
+                    ],
+                    "p_elo": [
+                        0.53925,
+                        0.261941,
+                        0.198809
+                    ],
+                    "p_market": [
+                        0.444869,
+                        0.261577,
+                        0.293554
+                    ],
+                    "p_stat": [
+                        0.52058,
+                        0.25366,
+                        0.22576
+                    ],
+                    "retained_mass": 0.999999999952,
+                    "rho": -0.040375,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5714,
+                    "draw_risk": false,
+                    "over_2_5": 0.5494,
+                    "p": [
+                        0.5206,
+                        0.2536,
+                        0.2258
+                    ],
+                    "p_display": [
+                        52,
+                        25.4,
+                        22.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1195,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1016,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0962,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0859,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0618,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.27,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Kaiserslautern are 4th, 3 points off automatic promotion, while Dresden are 16th and level on 11 points with 17th, so the home side is chasing a promotion place and the visitors are fighting relegation.",
+                                "Dresden have lost 4 of 6 away games with 7 goals scored and 16 conceded, while Kaiserslautern have won 3 of 5 at home with only 3 conceded.",
+                                "Dresden have two players out and one doubtful, all listed by one source with no role details, so the effect is small; Kaiserslautern have one player out, also from one source."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.26,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Kaiserslautern are 3 points off automatic promotion and 2 points off the promotion play-off places, so they have a strong incentive to beat a side in the relegation play-off place.",
+                                "Kaiserslautern have won 5 of their last 7 league games and are unbeaten at home in 4 of 5, while Dresden are winless away this season with 4 defeats in 6.",
+                                "Dresden are missing Lars Bünning and Kenneth Schmidt, with Thomas Leon Keller doubtful, while Kaiserslautern's only listed absence is Owen Gibs, so the home side's squad is less disrupted."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.25,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams have urgent incentives at opposite ends of the table, with Kaiserslautern two points off the promotion play-off place and Dynamo Dresden sitting in the relegation play-off spot level on points with 17th.",
+                                "Kaiserslautern's disciplined defence (only seven league goals conceded in 11 matches) should give them the edge against a Dynamo Dresden side that is winless away and has conceded 16 goals in six road games.",
+                                "Listed absences for both sides come from only one source without confirmed starter roles, so expected goal adjustments remain neutral."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.26,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Dresden list Bünning and Schmidt out and Keller doubtful, but each report is from one source and no player-role data is provided, so no goals adjustment is made.",
+                                "Dresden are level on points with 17th and occupy the relegation play-off place, increasing the value of avoiding defeat.",
+                                "Kaiserslautern’s strong defensive home record (six scored, three conceded) meets a Dresden side still winless away and conceding 16 in six trips."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.27,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Dresden are in the relegation play-off place and level on points with 17th, so they need the result more, while Kaiserslautern are only 2 points off 3rd and 3 off automatic promotion.",
+                                "Dresden have no away league win in six (0W 2D 4L, 7-16), against a Kaiserslautern side that has taken 10 of 15 home points while scoring only six, which points to a narrow home win.",
+                                "Listed absences are single-source only and the sheet gives no starts, goals or role, so they do not change either side's expected goals."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5263,
+                        0.2555,
+                        0.2182
+                    ],
+                    "p_adj": [
+                        0.52058,
+                        0.25366,
+                        0.22576
+                    ],
+                    "p_llm": [
+                        0.548137,
+                        0.262121,
+                        0.189742
+                    ],
+                    "p_shadow": [
+                        0.526317,
+                        0.255495,
+                        0.218188
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "kaiserslautern-vs-dynamo-dresden-2026-11-22"
+            },
+            "sha256": "ba1d15b37a799410b8ab206eff5b766a42612be63237fc97c3c9eb349e19cbe6",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0008-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "vfl-osnabruck",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0009",
+                "home": "karlsruher-sc",
+                "inputs": {
+                    "elo_away": 1178.3,
+                    "elo_home": 1258.1,
+                    "lambda_away": 1.214508,
+                    "lambda_home": 2.096454,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.57251,
+                        0.215675,
+                        0.211816
+                    ],
+                    "p_elo": [
+                        0.504443,
+                        0.269907,
+                        0.22565
+                    ],
+                    "p_market": [
+                        0.414235,
+                        0.258675,
+                        0.32709
+                    ],
+                    "p_stat": [
+                        0.544253,
+                        0.239383,
+                        0.216364
+                    ],
+                    "retained_mass": 0.999999999886,
+                    "rho": -0.040375,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6269,
+                    "draw_risk": false,
+                    "over_2_5": 0.6339,
+                    "p": [
+                        0.5443,
+                        0.2393,
+                        0.2164
+                    ],
+                    "p_display": [
+                        54.4,
+                        23.9,
+                        21.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1072,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0926,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0762,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0691,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0656,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.27,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Karlsruher SC are missing goalkeeper Sebastian Jung (6 starts) and defender Marcel Franke (9 starts, a regular), which weakens a defence that has conceded 24 goals in 11 games; this is from one source only.",
+                                "Both sides have 11 points and sit 12 points off the play-off places, so this is a relegation six-pointer between 17th and 15th where a draw helps neither much.",
+                                "Osnabruck had 15 days of rest and no match in the previous 14 days, against 14 days and one match for Karlsruhe, which is a slight freshness edge for the visitors."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Karlsruhe are missing first-choice goalkeeper Sebastian Jung and regular centre-back Marcel Franke, weakening the spine of a side that has conceded 24 goals in 11 league games.",
+                                "Both sides are level on 11 points with Karlsruhe in the relegation zone on goal difference, so this is a direct six-pointer in the fight to avoid the drop.",
+                                "Karlsruhe have lost four of their last five league games and conceded 11 goals in their last three away matches, but they have won two of their last three at home."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.27,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Karlsruher SC without regular starting goalkeeper Sebastian Jung, starting defender Marcel Franke, and forward Moritz Broschinski (13% of their league goals), while one source lists no absences yet for Osnabruck.",
+                                "Both clubs sit level on 11 points at the relegation line, making this a direct six-pointer where Karlsruhe need a win to climb out of the drop zone on goal difference.",
+                                "Karlsruhe have won their last two home league matches (scoring six goals) while Osnabruck have lost three of their five away league games, giving the hosts an edge despite their defensive vulnerabilities."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Karlsruhe have only single-source absences, but regular goalkeeper Sebastian Jung and nine-start defender Marcel Franke being out weakens a side already conceding heavily; Broschinski also accounts for 13% of their league goals.",
+                                "Both teams are level on 11 points close to the relegation line, so this is a direct low-table points contest rather than a routine fixture.",
+                                "Karlsruhe's recent matches have been open, with 11 goals scored and 12 conceded in their last five, while Osnabrück have lost two straight."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.31,
+                                "home": 0.41
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source only lists Karlsruher without regular-starter goalkeeper Jung (6 of 11 league starts) and defender Franke (9 of 11), plus Broschinski (2 goals, 13% of the side’s league goals), so the home attack and defence are both thinner.",
+                                "Both sides have 11 points from 11 games: Karlsruhe are in the relegation zone on goal difference, level with 16th, and Osnabrück are level with 17th, so both need the points more than a mid-table meeting.",
+                                "In the last five league meetings Karlsruhe have three wins and a draw, which still tilts a tight bottom-half game toward the home side despite the absences."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5078,
+                        0.2534,
+                        0.2388
+                    ],
+                    "p_adj": [
+                        0.530346,
+                        0.244923,
+                        0.224731
+                    ],
+                    "p_llm": [
+                        0.418012,
+                        0.284065,
+                        0.297923
+                    ],
+                    "p_shadow": [
+                        0.507848,
+                        0.25337,
+                        0.238781
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "karlsruher-sc-vs-vfl-osnabruck-2026-11-22"
+            },
+            "sha256": "840d2ca66c4fb772223ac053ab535273d577253e2c329aeb5a3dbdce6bef5f6e",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0009-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "kaa-gent-be",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "belgian-pro-league",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "be-2627-0006",
+                "home": "waasland-beveren",
+                "inputs": {
+                    "elo_away": 1558.9,
+                    "elo_home": 1308.3,
+                    "lambda_away": 1.883538,
+                    "lambda_home": 1.15941,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.229571,
+                        0.230712,
+                        0.539717
+                    ],
+                    "p_elo": [
+                        0.185852,
+                        0.257349,
+                        0.556799
+                    ],
+                    "p_market": [
+                        0.255752,
+                        0.260096,
+                        0.484152
+                    ],
+                    "p_stat": [
+                        0.203838,
+                        0.241479,
+                        0.554682
+                    ],
+                    "retained_mass": 0.999999999795,
+                    "rho": -0.029503,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5867,
+                    "draw_risk": false,
+                    "over_2_5": 0.5837,
+                    "p": [
+                        0.2038,
+                        0.2415,
+                        0.5547
+                    ],
+                    "p_display": [
+                        20.4,
+                        24.1,
+                        55.5
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1122,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1008,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0892,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.087,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0633,
+                            "score": "1-3"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.58,
+                                "draw": 0.22,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Waasland-Beveren lose ever-present defender Christophe Janssens to suspension and forward Jearl Margaritha (2 goals, 15% of the team's) to injury, though team news comes from one source only.",
+                                "Gent sit 3rd, 1 point off the leaders, while Waasland-Beveren are 16th and only 3 points above the relegation zone.",
+                                "Gent have conceded just 6 goals in 11 league games, while Waasland-Beveren have lost 7 of 11 and let in 23."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.6,
+                                "draw": 0.22,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Waasland-Beveren are missing regular defender Christophe Janssens and forward Jearl Margaritha, who has 2 of their 13 league goals, weakening a side already 16th.",
+                                "KAA Gent sit 1 point behind the leaders and need the points to keep pressure on the title race, while Waasland-Beveren are only 3 points above the relegation zone.",
+                                "Waasland-Beveren have lost 4 of their last 5 league matches, including 0-3 at Standard Liège last time out, while Gent have won 3 of their last 4 league games."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.92,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.58,
+                                "draw": 0.22,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "One source lists Waasland-Beveren without ever-present defender Christophe Janssens and regular forward Jearl Margaritha (15% of their league goals), while KAA Gent miss regular defender Mouhamed Ngom.",
+                                "Both sides have clear incentives, with KAA Gent just one point off the league leaders and Waasland-Beveren sitting three points above the relegation zone.",
+                                "KAA Gent play a UEFA Conference League match against Red Star Belgrade four days later, which could invite rotation compared to Waasland-Beveren's six-day gap."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.6,
+                                "draw": 0.22,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Single-source reports list Waasland-Beveren without 11-start defender Janssens and forward Margaritha, whose 2 goals and 2 assists are a meaningful share of their output.",
+                                "Gent are one point off the lead, while Waasland-Beveren are only three points above relegation, increasing the stakes for both sides.",
+                                "Gent's 9-1-1 league record and league-best six goals conceded give them a major baseline edge despite Waasland-Beveren's respectable home results."
+                            ],
+                            "score": "0-2"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.24,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Single-source news only: Beveren are without ever-present defender Janssens and forward Margaritha (2 goals, 15% of their league total, plus 2 assists), while Gent miss regular defender Ngom and a squad forward, so Beveren's attack and back",
+                                "Gent are 1 point off the leaders and chasing the title, while Beveren sit only 3 points above the relegation places, so both need the result but Gent have the stronger incentive to keep winning.",
+                                "Gent have lost only once in 11 league games and conceded 6, against Beveren's 7 league defeats, which points to an away win even though Beveren have taken 9 points from 5 home games."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.199,
+                        0.2398,
+                        0.5613
+                    ],
+                    "p_adj": [
+                        0.197571,
+                        0.243614,
+                        0.558815
+                    ],
+                    "p_llm": [
+                        0.204447,
+                        0.224786,
+                        0.570767
+                    ],
+                    "p_shadow": [
+                        0.198959,
+                        0.239765,
+                        0.561276
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "waasland-beveren-vs-kaa-gent-be-2026-11-22"
+            },
+            "sha256": "634e0ea6d0486f474b323e0d1358423c24b30b481241d7efc401298cf9e772fd",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/be-2627-0006-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "silkeborg-if",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "danish-superliga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "dk-2627-0002",
+                "home": "ac-horsens",
+                "inputs": {
+                    "elo_away": 1451,
+                    "elo_home": 1390.3,
+                    "lambda_away": 1.443553,
+                    "lambda_home": 1.815532,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.456022,
+                        0.24477,
+                        0.299208
+                    ],
+                    "p_elo": [
+                        0.35643,
+                        0.285714,
+                        0.357856
+                    ],
+                    "p_market": [
+                        0.421194,
+                        0.263379,
+                        0.315427
+                    ],
+                    "p_stat": [
+                        0.407135,
+                        0.264184,
+                        0.328681
+                    ],
+                    "retained_mass": 0.999999999874,
+                    "rho": -0.084158,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6532,
+                    "draw_risk": false,
+                    "over_2_5": 0.6247,
+                    "p": [
+                        0.4071,
+                        0.2642,
+                        0.3287
+                    ],
+                    "p_display": [
+                        40.7,
+                        26.4,
+                        32.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1178,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0816,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0798,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0712,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0565,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.29,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Both sides are bunched just above the drop line, Horsens 5 points clear and Silkeborg 4, so neither wants to lose and a draw is a fair outcome.",
+                                "Silkeborg have three players out and Horsens two, all from one source only; the fact sheet gives no role details, so the adjustments are small.",
+                                "The meeting last month finished 3-3, and both sides have conceded often (24 and 23 league goals), which points to goals at both ends."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.31,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are only 4-5 points above the relegation zone, so this is a direct six-pointer between 8th and 9th; neither can afford to lose, which points toward a cautious, tight match.",
+                                "Team news is single-source only: Horsens list Kolskogen and Vestergaard out, Silkeborg list de Gevigney, Busch and Rödin out, but none are confirmed as regular starters in the fact sheet, so the effect is treated as neutral.",
+                                "Horsens have lost three straight league games without scoring, while Silkeborg have won only once in their last six league matches, so neither side arrives with momentum."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.29,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both teams sit just above the relegation zone with Silkeborg IF four points clear and AC Horsens five points clear, making avoiding defeat a priority for both sides.",
+                                "Reported injuries for both clubs are backed by only one source and lack player role data, so no expectation adjustments are made.",
+                                "Silkeborg IF have drawn six of their 14 league matches including a 3-3 tie with AC Horsens in October, pointing toward another closely contested game."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.29,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both teams have reported injuries, but every absence is from one source and no starter-role evidence is supplied, so no xG adjustment is made.",
+                                "Horsens and Silkeborg are only five and four points above the relegation zone respectively, increasing the value of avoiding defeat.",
+                                "Horsens have lost their last two league matches without scoring, while Silkeborg ended their run with a 1-0 win over Lyngby."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.31,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "form",
+                                "head_to_head",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Horsens have failed to score in their last three matches, so this looks tighter than their earlier high-scoring wins.",
+                                "The sides drew 3-3 in October, and Silkeborg’s away record of 1 win and 4 losses in 7 makes an away win the less likely split.",
+                                "Listed absences for both sides come from one source only and no roles, starts or goals are given, so expected goals are left unadjusted."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4096,
+                        0.2709,
+                        0.3195
+                    ],
+                    "p_adj": [
+                        0.407135,
+                        0.264184,
+                        0.328681
+                    ],
+                    "p_llm": [
+                        0.417987,
+                        0.298166,
+                        0.283847
+                    ],
+                    "p_shadow": [
+                        0.409643,
+                        0.270894,
+                        0.319462
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "ac-horsens-vs-silkeborg-if-2026-11-22"
+            },
+            "sha256": "4fdacad4084aa0bac78a0e7cae4d66a4126e1906ae1ce742628a0a0a50b8db69",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/dk-2627-0002-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "randers-fc",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "danish-superliga",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "dk-2627-0003",
+                "home": "viborg-ff",
+                "inputs": {
+                    "elo_away": 1422.3,
+                    "elo_home": 1560.4,
+                    "lambda_away": 1.039183,
+                    "lambda_home": 1.764375,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.534455,
+                        0.252876,
+                        0.212669
+                    ],
+                    "p_elo": [
+                        0.564284,
+                        0.255274,
+                        0.180441
+                    ],
+                    "p_market": [
+                        0.60837,
+                        0.210193,
+                        0.181436
+                    ],
+                    "p_stat": [
+                        0.555247,
+                        0.251858,
+                        0.192895
+                    ],
+                    "retained_mass": 0.999999999919,
+                    "rho": -0.083715,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5435,
+                    "draw_risk": false,
+                    "over_2_5": 0.5327,
+                    "p": [
+                        0.5552,
+                        0.2519,
+                        0.1929
+                    ],
+                    "p_display": [
+                        55.5,
+                        25.2,
+                        19.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1199,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1018,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.1014,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.098,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0696,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.24,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Viborg are 5W 0D 2L at home (13-6) and won 2-0 at Randers on 2026-10-11, while Randers have lost 8 of their last 9 games, including 1-6 v Nordsjælland.",
+                                "Viborg are 3rd, 6 points off the leaders, while Randers are 11th and in the relegation zone on goal difference, so both need the points.",
+                                "Randers are missing defender Wessel Dammers (5 league starts) and Lucas Lissens (2) from a leaky defence (27 conceded); Viborg's absentees are mostly non-starters (Mitchell 0 starts), based on one source."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Viborg are 3rd and chasing the leaders, while Randers are in the relegation zone on goal difference, so the home side has both the stronger incentive and the stronger squad to take the game to a struggling opponent.",
+                                "Viborg have won 3 of their last 4 league games, including a 2-0 win at Randers in October, while Randers have lost 5 of their last 6 in all competitions and conceded 6 at home to Nordsjælland last time out.",
+                                "Randers are missing three defenders through injury, including Wessel Dammers who has started 5 league games, which weakens a back line that has already conceded 27 goals in 14 matches."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.23,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Randers sit in the relegation zone only on goal difference, while third-placed Viborg are six points off the top of the table.",
+                                "All reported injuries for both clubs come from only one source, with Randers potentially missing three centre-backs who have combined for seven league starts.",
+                                "Randers enter on a four-match losing streak across all competitions, whereas Viborg have won five of their seven home league games and beat Randers 2-0 away last month."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.23,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Randers are missing defender Wessel Dammers, a five-start player, plus three other defenders, though all reported absences have only one source.",
+                                "Viborg are six points off the lead, while Randers are in the relegation zone on goal difference and need points to climb clear.",
+                                "Viborg have won their last two league matches and beat Randers 2-0 away in the reverse fixture, whereas Randers have lost six of their past seven matches in all competitions."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.23,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Randers are 11th and in the relegation zone on goal difference, level with 10th, so they need points more than Viborg, who sit 3rd and six points off the leaders.",
+                                "Randers have lost five straight league games, including 0-2 at home to Viborg and 1-6 to Nordsjælland, while Viborg have won three of their last four league matches and are unbeaten in five of seven home games.",
+                                "Listed absences are single-source only and none are regular starters (Dammers has five league starts, the rest fewer or unstated), so expected goals are left unchanged."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5654,
+                        0.2482,
+                        0.1864
+                    ],
+                    "p_adj": [
+                        0.558978,
+                        0.251641,
+                        0.189381
+                    ],
+                    "p_llm": [
+                        0.590691,
+                        0.234467,
+                        0.174842
+                    ],
+                    "p_shadow": [
+                        0.565368,
+                        0.24819,
+                        0.186441
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "viborg-ff-vs-randers-fc-2026-11-22"
+            },
+            "sha256": "3f8d4b4c4d0e4ca6d3288f36ca775910a070a4cf40c023453cc0c0c090595445",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/dk-2627-0003-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "villarreal",
+                "batch_id": "2026-11-20T2205Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-20T22:05:45Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0104",
+                "home": "barcelona",
+                "inputs": {
+                    "elo_away": 1562.4,
+                    "elo_home": 1822.1,
+                    "lambda_away": 1.15778,
+                    "lambda_home": 2.88729,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.727014,
+                        0.150703,
+                        0.122283
+                    ],
+                    "p_elo": [
+                        0.676885,
+                        0.215707,
+                        0.107408
+                    ],
+                    "p_market": [
+                        0.814258,
+                        0.118477,
+                        0.067265
+                    ],
+                    "p_stat": [
+                        0.723421,
+                        0.170933,
+                        0.105645
+                    ],
+                    "retained_mass": 0.9999999997,
+                    "rho": -0.027614,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6531,
+                    "draw_risk": false,
+                    "over_2_5": 0.7625,
+                    "p": [
+                        0.7234,
+                        0.171,
+                        0.1056
+                    ],
+                    "p_display": [
+                        72.3,
+                        17.1,
+                        10.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "2-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0841,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0809,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0726,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0699,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0682,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.14,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Barcelona are without Xavi Espart (8 league starts) and have Cubarsi (9 starts) doubtful, which thins the back line; the sources are single-source, so this is a small downgrade only.",
+                                "Barcelona lead by 3 points and cannot slip, while Villarreal are only 5 points above the relegation zone and need points, though they conceded 6 to PSG in their last European match.",
+                                "Barcelona have scored 24 goals in 6 home league games (5 wins), and Villarreal's away side leaks goals (8 conceded in 6), so a high-scoring home win is most likely."
+                            ],
+                            "score": "3-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Barcelona are missing regular starting defender Xavi Espart and have doubts over Pau Cubarsi, Jules Kounde and Dani Olmo, but their attack remains largely intact and Villarreal's own doubts include Gerard Moreno, who has scored 12% of their",
+                                "Barcelona are top and only 3 points clear of 2nd, so they need the win to protect their title lead, while Villarreal are 8th and 5 points above the relegation zone with less immediate pressure.",
+                                "Recent league meetings have been high-scoring and Barcelona won the last one 4-1 at home, though Villarreal have also won at Camp Nou in this fixture."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.95,
+                            "m_home": 0.95,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.15,
+                                "home": 0.74
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Barcelona have defensive issues with regular starter Xavi Espart out and Pau Cubarsi doubtful according to one source, while Villarreal have regular starter Juan Foyth and forwards Gerard Moreno (12% of their league goals) and Ilias Akhomac",
+                                "Barcelona need a win to protect or extend their three-point lead at the top of the table, whereas eighth-placed Villarreal sit just five points above the relegation zone.",
+                                "Barcelona's attack is averaging four goals per league game (48 in 12 matches, including 24 across six home games), giving them a massive firepower advantage over a Villarreal side that recently lost 6-0 at Paris Saint-Germain."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.18,
+                                "home": 0.7
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Villarreal may lack Gerard Moreno (2 league goals) and Ilias Akhomach (2 assists), reducing their attacking outlook, though both are only doubtful.",
+                                "Barcelona have confirmed injuries to Rodri and Roony Bardghji, while regular defenders Xavi Espart and Pau Cubarsi are respectively out and doubtful; several listings have only one source.",
+                                "Barcelona have won 11 of 12 league matches and scored 24 goals in six home games, making their attack a strong home advantage despite Villarreal's competitive away record."
+                            ],
+                            "score": "3-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.16,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Barcelona's only listed regular starter confirmed absent is defender Xavi Espart (8 of 12 league starts, 2% of goals), and that is one source only; Rodri and Bardghji are out on two sources but with no role given, so the attack is treated a",
+                                "Both sides have had 14 days and only one match in that span, but each has a Champions League game three days later, which can trim risk-taking late on.",
+                                "Barcelona have dropped points once in 12 league games and scored 24 in six home matches, so this is a much stronger home side than an ordinary meeting with 8th-placed Villarreal, who are 2W-2D-2L away."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7194,
+                        0.171,
+                        0.1096
+                    ],
+                    "p_adj": [
+                        0.718879,
+                        0.173931,
+                        0.10719
+                    ],
+                    "p_llm": [
+                        0.720765,
+                        0.159566,
+                        0.119669
+                    ],
+                    "p_shadow": [
+                        0.719406,
+                        0.170994,
+                        0.1096
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "barcelona-vs-villarreal-2026-11-22"
+            },
+            "sha256": "1b96ca771d201865513cd9c3d9fde18cba94bd4c996275d6d19ea1db9999082b",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0104-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "real-oviedo",
+                "batch_id": "2026-11-20T2205Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-20T22:05:45Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0017",
+                "home": "cordoba",
+                "inputs": {
+                    "elo_away": 1156.2,
+                    "elo_home": 1230.9,
+                    "lambda_away": 1.357477,
+                    "lambda_home": 1.528506,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.413792,
+                        0.248861,
+                        0.337347
+                    ],
+                    "p_elo": [
+                        0.499187,
+                        0.270976,
+                        0.229837
+                    ],
+                    "p_market": [
+                        0.500428,
+                        0.246538,
+                        0.253034
+                    ],
+                    "p_stat": [
+                        0.461201,
+                        0.259764,
+                        0.279036
+                    ],
+                    "retained_mass": 0.999999999873,
+                    "rho": -0.006144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5846,
+                    "draw_risk": false,
+                    "over_2_5": 0.5479,
+                    "p": [
+                        0.4612,
+                        0.2598,
+                        0.279
+                    ],
+                    "p_display": [
+                        46.1,
+                        26,
+                        27.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1216,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0986,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0943,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0727,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.065,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.99,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.26,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Real Oviedo are without regular starting defender Dani Calvo (11 of 14 league starts) and Christopher Ramos, which slightly weakens their back line; Córdoba's three absences (one out, two doubtful) have no listed role and come from one sour",
+                                "Oviedo sit 3 points off the play-off places and Córdoba 4, so a win lifts either side into the race while a loss pushes them back toward mid-table.",
+                                "Córdoba are strong at home (4W in 6, 11 goals) and score freely, but their 3-3 draw at Mallorca shows they also concede, which suggests a close, open game."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Real Oviedo are missing regular starting centre-back Dani Calvo, who has started 11 of 14 league games and scored 1 of their 20 goals, which slightly weakens their defence.",
+                                "Both sides are within touching distance of the promotion play-off places, with Real Oviedo only 3 points off 6th and Córdoba 4 points off, so the points matter to both.",
+                                "Córdoba have won 4 of 6 home league games this season, while Real Oviedo have won 4 of 7 away, so neither side has a decisive home/away edge."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.25,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Real Oviedo are without regular starting defender Dani Calvo (11 league starts), while both sides have other absences and doubts backed by only one source.",
+                                "Only one point separates 9th-placed Real Oviedo and 10th-placed Córdoba, with both sides sitting within four points of the promotion play-off places.",
+                                "Both teams have won four of their respective home and away league games while averaging over three total goals per match, pointing to an open contest."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.04,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.25,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Oviedo are without regular-starting defender Dani Calvo (11 league starts), which slightly improves Córdoba's attacking outlook; the absence is listed by one source.",
+                                "Both are within four points of the play-off places, so this is a meaningful direct opportunity rather than a low-stakes mid-table match.",
+                                "Córdoba have scored eight goals in their last three league matches, but Oviedo's 4-1-2 away record makes the visitors capable of matching them."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.28,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Oviedo are without regular starter Dani Calvo (11 of 14 league starts, one source only); Córdoba’s listed absences are also one source and are not identified as regular starters, so only a small cut to Oviedo’s expected goals.",
+                                "The sides are a point apart in 9th and 10th, with Oviedo 3 points and Córdoba 4 points off the play-off places, so neither has a clearer need for the points.",
+                                "Córdoba have won 4 of 6 at home with no draws, but Oviedo have won 4 of 7 away, so the venue edge is narrower than a typical home favourite."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4585,
+                        0.2607,
+                        0.2808
+                    ],
+                    "p_adj": [
+                        0.465465,
+                        0.260199,
+                        0.274335
+                    ],
+                    "p_llm": [
+                        0.430337,
+                        0.262032,
+                        0.307631
+                    ],
+                    "p_shadow": [
+                        0.458458,
+                        0.260702,
+                        0.28084
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "cordoba-vs-real-oviedo-2026-11-22"
+            },
+            "sha256": "4fe362cea3a3db3b6f4e46ed019d4b760cb9a5ead5fbe6e3a0c0ebc7f002ae0d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0017-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "alanyaspor",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0019",
+                "home": "kasimpasa",
+                "inputs": {
+                    "elo_away": 1413.2,
+                    "elo_home": 1463.1,
+                    "lambda_away": 1.087718,
+                    "lambda_home": 1.552959,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.469862,
+                        0.274832,
+                        0.255306
+                    ],
+                    "p_elo": [
+                        0.473034,
+                        0.275768,
+                        0.251198
+                    ],
+                    "p_market": [
+                        0.479707,
+                        0.268756,
+                        0.251537
+                    ],
+                    "p_stat": [
+                        0.477753,
+                        0.272496,
+                        0.249751
+                    ],
+                    "retained_mass": 0.999999999867,
+                    "rho": -0.089494,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5327,
+                    "draw_risk": false,
+                    "over_2_5": 0.4928,
+                    "p": [
+                        0.4778,
+                        0.2724,
+                        0.2498
+                    ],
+                    "p_display": [
+                        47.8,
+                        27.2,
+                        25
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1301,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1017,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0951,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0874,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0814,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.26,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kasımpaşa have several doubtful players (Baldursson a regular starter, Diabaté 1 league goal) and Elson Mendes is suspended, but only a few are regulars; Alanyaspor are without Fernandes and Aksoy is doubtful, with mixed sourcing.",
+                                "Alanyaspor are only 4 points above the relegation zone after conceding 18 goals, while Kasımpaşa sit 5th and 12 points clear of the drop.",
+                                "Kasımpaşa are unbeaten at home (1W 4D) and Alanyaspor have lost their last three league games without scoring more than once, conceding 7 and scoring 1."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.25,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Kasımpaşa are missing suspended Elson Mendes and have regular midfielder Andri Fannar Baldursson doubtful, but their absences are mostly squad players; Alanyaspor are missing Paolo Fernandes and have regular defender Fatih Aksoy doubtful, w",
+                                "Kasımpaşa are unbeaten in their last four league games with three wins, while Alanyaspor have lost their last three league matches by an aggregate of 0-10.",
+                                "Kasımpaşa have won the last five league meetings between these sides, including a 1-0 home win in April 2026."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Kasımpaşa have won all five recent league meetings against Alanyaspor, including four consecutive 2-1 victories prior to a 1-0 home win in April.",
+                                "Alanyaspor enter this match on a four-game league losing streak in which they were outscored 1-12, making them vulnerable against a Kasımpaşa side unbeaten at home (1W 4D).",
+                                "Both sides have doubts over a regular starter with 6 league starts—Kasımpaşa midfielder Andri Fannar Baldursson and Alanyaspor defender Fatih Aksoy—while Alanyaspor are also missing midfielder Paolo Fernandes (11% of their league goals, rep"
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.26,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kasımpaşa are without suspended Elson Mendes and may miss regular-starting midfielder Baldursson, while Alanyaspor's Paolo Fernandes is out; Fernandes' absence is listed by one source.",
+                                "Alanyaspor are only four points above the relegation zone, increasing the importance of avoiding another defeat.",
+                                "Kasımpaşa are unbeaten in five home league matches, whereas Alanyaspor have lost three of six away games and conceded 12 goals."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.29,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Kasımpaşa are unbeaten at home but have drawn 4 of 5 home league games (9-6), so a draw is more live than their 5th place and one league defeat would suggest.",
+                                "Alanyaspor are only 4 points above the relegation zone with a 9-18 goal record, so they need the points more than Kasımpaşa, who are 12 clear of the drop and 8 off the leaders.",
+                                "The only confirmed absence is suspended Elson Mendes, with no role given; Baldursson and Aksoy are doubtful regulars on two sources, and the other injuries or outs are single-source, so expected goals are left unchanged."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4865,
+                        0.2721,
+                        0.2413
+                    ],
+                    "p_adj": [
+                        0.477556,
+                        0.274414,
+                        0.24803
+                    ],
+                    "p_llm": [
+                        0.522329,
+                        0.262083,
+                        0.215587
+                    ],
+                    "p_shadow": [
+                        0.486549,
+                        0.272102,
+                        0.241349
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "kasimpasa-vs-alanyaspor-2026-11-22"
+            },
+            "sha256": "ed2e23a7b238518d18b3e7ff0696b3b81ba1d24b2b8d6a0f3aced63d4f4e2a12",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0019-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "besiktas",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0020",
+                "home": "konyaspor",
+                "inputs": {
+                    "elo_away": 1602.9,
+                    "elo_home": 1405.6,
+                    "lambda_away": 1.429816,
+                    "lambda_home": 1.030486,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-21T13:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.26061,
+                        0.28846,
+                        0.450929
+                    ],
+                    "p_elo": [
+                        0.227676,
+                        0.27043,
+                        0.501895
+                    ],
+                    "p_market": [
+                        0.176708,
+                        0.227526,
+                        0.595766
+                    ],
+                    "p_stat": [
+                        0.240123,
+                        0.27698,
+                        0.482896
+                    ],
+                    "retained_mass": 0.999999999957,
+                    "rho": -0.089494,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T13:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4971,
+                    "draw_risk": false,
+                    "over_2_5": 0.4508,
+                    "p": [
+                        0.2401,
+                        0.277,
+                        0.4829
+                    ],
+                    "p_display": [
+                        24,
+                        27.7,
+                        48.3
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1317,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1187,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0963,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0935,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0928,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.53,
+                                "draw": 0.25,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Konyaspor are without defender Adil Demirbağ (out, 7 league starts) and Awaziem (doubtful, 2 of the team's 6 goals), while Beşiktaş lose first-choice defender Agbadou (10 starts, one source), so both back lines are weakened.",
+                                "Konyaspor are level on 8 points with 16th, the top relegation place, and have scored only 6 goals in 11 games, while Beşiktaş sit 6 points behind the leaders.",
+                                "Konyaspor have had 15 days of rest with no matches in the last 14, while Beşiktaş play the Europa League 4 days later and may rotate."
+                            ],
+                            "score": "0-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.54,
+                                "draw": 0.24,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Konyaspor are missing regular centre-back Adil Demirbağ and have doubts over Chidozie Awaziem, who has scored 2 of their 6 league goals, weakening a side that has already scored only 6 times in 11 league games.",
+                                "Beşiktaş sit 4th and 6 points off the top, so they need the points to stay in the title race, while Konyaspor are level on points with the top relegation place and desperate for a result.",
+                                "Beşiktaş have won 4 of the last 5 league meetings, including a 2-0 away win at Konyaspor in October 2025."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1.04,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.24,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Konyaspor are missing regular starting defender Adil Demirbağ according to a second source, and one source lists fellow starter Chidozie Awaziem—who has scored a third of their league goals—as doubtful, though Beşiktaş also have regular def",
+                                "Konyaspor urgently need points to stay clear of the relegation zone as they sit 15th and level on points with 16th, whereas 4th-placed Beşiktaş are pushing to close a six-point gap to the league leaders.",
+                                "Although Beşiktaş have outscored Konyaspor 23 to 6 overall this season, their three losses in five away league games suggest the hosts still have a realistic chance to compete."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.53,
+                                "draw": 0.25,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Konyaspor are without regular centre-back Adil Demirbağ and Awaziem is doubtful on one source, while Beşiktaş's regular defender Agbadou is also listed out by one source.",
+                                "Konyaspor are level with the relegation place, whereas Beşiktaş remain six points off the leaders and need to maintain the chase.",
+                                "Konyaspor have scored only six league goals and lost four of their last six matches, making Beşiktaş's stronger overall attack the decisive edge despite their weak away record."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 0.9,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.26,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Konyaspor are without regular starter Demirbağ (two sources) and doubtful on Awaziem, a regular defender with 2 of their 6 league goals (one source); Beşiktaş’s only meaningful absence is regular starter Agbadou, also one source.",
+                                "Konyaspor are level with 16th, the top relegation place, so they need the points more than 4th-placed Beşiktaş, who are 6 behind the leaders with a Europa League game four days later.",
+                                "Beşiktaş’s league strength is tempered by a 1W-1D-3L away record (6-9), so a narrow away win is more plausible than a comfortable one against a side that has scored only 4 home goals in 6."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2368,
+                        0.2727,
+                        0.4905
+                    ],
+                    "p_adj": [
+                        0.237037,
+                        0.279013,
+                        0.48395
+                    ],
+                    "p_llm": [
+                        0.235511,
+                        0.248286,
+                        0.516203
+                    ],
+                    "p_shadow": [
+                        0.236839,
+                        0.272702,
+                        0.490459
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "konyaspor-vs-besiktas-2026-11-22"
+            },
+            "sha256": "27a621325a70ac764079185a52489a371786d6dcdba3a2b8006d3eed55d4bfda",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0020-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "blackburn-rovers",
                 "batch_id": "2026-11-21T0014Z-model-predict",
                 "competition": "championship",
@@ -238,7 +2618,7 @@
                 "slug": "burnley-vs-blackburn-rovers-2026-11-22"
             },
             "sha256": "030388f7f2148d31d7394d3a34900240596debb1d3eac721e38f00b82801ed20",
-            "commit": "pending",
+            "commit": "40a8270538d98f569be1b2a9651f61698e68598d",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0036-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +2856,7 @@
                 "slug": "fc-twente-vs-willem-ii-2026-11-22"
             },
             "sha256": "d4e66b8a4c1933401bf0d6f52e4d2257f91b311775e332e6aed2f7d9dc6c4909",
-            "commit": "pending",
+            "commit": "40a8270538d98f569be1b2a9651f61698e68598d",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0018-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +3094,7 @@
                 "slug": "juventus-vs-venezia-2026-11-22"
             },
             "sha256": "54e87dc1e89265737f70fb145fce7cf676e3a569103c7bdd8700b865d8b36620",
-            "commit": "pending",
+            "commit": "40a8270538d98f569be1b2a9651f61698e68598d",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0022-r1.json",
             "status": "pending",
             "result": null
@@ -21371,8 +23751,12 @@
             "sha256": "050120acc74b3096ac1a03e1a26caf88a0d8129104d29130c6855e78e086f351",
             "commit": "1bdc325ebb16cf8197dfd6398e19fbbfa3050f73",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0014-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1999
+            }
         },
         {
             "record": {
@@ -21478,8 +23862,12 @@
             "sha256": "d7557d8546f201974f12a07999d8ad1e8c8d50e109e91ae5dd02a90db1559be9",
             "commit": "1bdc325ebb16cf8197dfd6398e19fbbfa3050f73",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0004-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-0",
+                "correct": false,
+                "rps": 0.4015
+            }
         },
         {
             "record": {
