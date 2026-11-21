@@ -7,6 +7,958 @@
     "records": [
         {
             "record": {
+                "away": "union-st-gilloise-be",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "belgian-pro-league",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "be-2627-0007",
+                "home": "kv-kortrijk",
+                "inputs": {
+                    "elo_away": 1788.3,
+                    "elo_home": 1266.6,
+                    "lambda_away": 2.156107,
+                    "lambda_home": 0.568015,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T15:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.0816,
+                        0.178906,
+                        0.739493
+                    ],
+                    "p_elo": [
+                        0.054694,
+                        0.165243,
+                        0.780063
+                    ],
+                    "p_market": [
+                        0.112127,
+                        0.18261,
+                        0.705263
+                    ],
+                    "p_stat": [
+                        0.063545,
+                        0.167559,
+                        0.768896
+                    ],
+                    "retained_mass": 0.999999999826,
+                    "rho": -0.029503,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T15:08:39Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.3806,
+                    "draw_risk": false,
+                    "over_2_5": 0.5203,
+                    "p": [
+                        0.0635,
+                        0.1676,
+                        0.7689
+                    ],
+                    "p_display": [
+                        6.3,
+                        16.8,
+                        76.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "0-2",
+                    "top_score_overall": "0-2",
+                    "top_scores": [
+                        {
+                            "p": 0.1586,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1446,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.114,
+                            "score": "0-3"
+                        },
+                        {
+                            "p": 0.0901,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0775,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.79,
+                                "draw": 0.14,
+                                "home": 0.07
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Union lead the league by 1 point on 29 from 11 games, while Kortrijk are 18th and 6 points from safety, so Union have the stronger reason to take all three points.",
+                                "Union are missing forward Mateo Biondic (4 assists) and defender Kevin Mac Allister, both regular starters, but only 7% and 3% of their goals are lost, and all absences have one source only.",
+                                "Kortrijk have lost 9 of 11 games with 4 goals scored, and Union have won all 5 away league games, scoring 15."
+                            ],
+                            "score": "0-3"
+                        },
+                        "deepseek": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.78,
+                                "draw": 0.14,
+                                "home": 0.08
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Union Saint-Gilloise are missing three regular starters in Biondic, Mac Allister and Kričfaluši, but their squad depth and league-leading attack should absorb this against the bottom side.",
+                                "Kortrijk are 6 points from safety in the relegation zone and desperate for points, while Union are top and only 1 point clear, so both need the win but Union have far more quality.",
+                                "Kortrijk have lost 9 of 11 league games and scored only 4 goals all season, while Union are unbeaten with 5 away wins from 5 and 15 away goals."
+                            ],
+                            "score": "0-3",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.95,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.75,
+                                "draw": 0.16,
+                                "home": 0.09
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Union Saint-Gilloise lead the league by just one point while KV Kortrijk sit bottom and six points from safety, giving both sides urgent motivation.",
+                                "One source lists Union Saint-Gilloise regular starters Mateo Biondic (two goals, four assists) and Kevin Mac Allister as injured, slightly reducing the visitors' attacking and defensive strength.",
+                                "Union Saint-Gilloise have won all five away league games outscoring hosts 15-4, whereas KV Kortrijk have lost nine of 11 overall and scored only four league goals all season."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.95,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.81,
+                                "draw": 0.13,
+                                "home": 0.06
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Both sides have only one-source absence reports; Kortrijk lose Jamie Roche, whose one goal is 25% of their league output, while Union are without two regular-starting defenders and forward Mateo Biondic.",
+                                "Union's perfect five-win away league record (15-4 goals) meets a Kortrijk side with one home win and only three home goals in five.",
+                                "Kortrijk are six points from safety, but Union's one-point lead at the top gives the unbeaten leaders strong incentive to maintain their pace."
+                            ],
+                            "score": "0-2"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.73,
+                                "draw": 0.18,
+                                "home": 0.09
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kortrijk are 18th and 6 points from safety after scoring only 4 league goals, while Union are top and 1 point clear, so the leaders can chase the win without the same survival pressure.",
+                                "One source only: Union miss regular forward Biondic (2 goals, 4 assists) and regular defender Mac Allister, a modest cut to their attack and defence, while Kortrijk’s absences are not regular starters.",
+                                "Union have won all 5 away league games 15-4 and are unbeaten, against a Kortrijk side with 4 home losses from 5 and just 4 goals in 11 league games, so a clean-sheet away win is the likeliest path."
+                            ],
+                            "score": "0-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.0675,
+                        0.1681,
+                        0.7644
+                    ],
+                    "p_adj": [
+                        0.065231,
+                        0.173035,
+                        0.761734
+                    ],
+                    "p_llm": [
+                        0.077275,
+                        0.149346,
+                        0.773379
+                    ],
+                    "p_shadow": [
+                        0.06751,
+                        0.168091,
+                        0.764399
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "kv-kortrijk-vs-union-st-gilloise-be-2026-11-22"
+            },
+            "sha256": "ef0db7faa3486cb9fa456b9e940dcb2a99ce45f8d005cb64e657f6ab2ba4656b",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/be-2627-0007-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "mainz-05",
+                "batch_id": "2026-11-20T2205Z-model-predict",
+                "competition": "bundesliga",
+                "cutoff_utc": "2026-11-20T22:05:45Z",
+                "data_status": "limited_context",
+                "fixture_id": "bl-2627-0093",
+                "home": "fc-augsburg",
+                "inputs": {
+                    "elo_away": 1462.8,
+                    "elo_home": 1430.1,
+                    "lambda_away": 1.444536,
+                    "lambda_home": 1.585992,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-21T15:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.402426,
+                        0.257034,
+                        0.34054
+                    ],
+                    "p_elo": [
+                        0.385442,
+                        0.285087,
+                        0.329471
+                    ],
+                    "p_market": [
+                        0.363346,
+                        0.24095,
+                        0.395704
+                    ],
+                    "p_stat": [
+                        0.391,
+                        0.27378,
+                        0.335219
+                    ],
+                    "retained_mass": 0.999999999775,
+                    "rho": -0.072664,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0521,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T14:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T15:08:39Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6195,
+                    "draw_risk": false,
+                    "over_2_5": 0.5776,
+                    "p": [
+                        0.391,
+                        0.2738,
+                        0.3352
+                    ],
+                    "p_display": [
+                        39.1,
+                        27.4,
+                        33.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1264,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0852,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0787,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0675,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0666,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.24,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Augsburg are missing several regular starters, including defenders Matsima and Brackelmann and midfielders Massengo and Ibrahimović, which weakens a defence that has conceded 20 goals in 9 games; some of these absences rest on one source.",
+                                "Augsburg are only 3 points above the relegation zone and Mainz 4 points, so both sides need the points and the match carries real weight.",
+                                "Mainz have won the last four league meetings, including 4-1 at Augsburg in September 2025, which offsets some of Augsburg's home edge."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Augsburg are missing four regular starters, including both first-choice centre-backs Matsima and Brackelmann and midfielders Massengo and Ibrahimović, which weakens a defence that has already conceded 20 league goals.",
+                                "Mainz have won 3 of 4 away league games this season, while Augsburg have won only 1 of 5 at home, suggesting Mainz can take points at the WWK Arena.",
+                                "Both sides sit just above the relegation zone, with Augsburg only 3 points clear and Mainz 4 points clear, so neither can afford to lose this six-pointer."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.89,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.25,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Augsburg's defense and midfield are heavily depleted, with regular starters Matsima (9 starts) and Brackelmann (7 starts) confirmed out by two sources, while one source also lists regular midfielders Massengo (9 starts) and Ibrahimović (7 s",
+                                "Mainz are unbeaten in the last five league meetings against Augsburg, winning four of them including both recent trips to the WWK Arena.",
+                                "Mainz have won three of their four away league matches this season, giving them a strong edge against an Augsburg side on a seven-game winless run in the Bundesliga."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.89,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.25,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Augsburg are without four regular starters, including ever-present midfielder Massengo and defenders Matsima and Brackelmann, weakening both their midfield balance and defensive depth; some absences are listed by one source.",
+                                "Mainz have won three of four Bundesliga away matches, while Augsburg enter after consecutive league defeats and have conceded seven goals across them.",
+                                "Mainz are unbeaten in the last five league meetings with Augsburg, winning four, including both of the last two by multi-goal margins."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.29,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Augsburg are missing confirmed regular defenders Matsima (9 of 9) and Brackelmann (7 of 9), with every-game midfielder Massengo and Ibrahimović (7 of 9) out on one source each; Mainz’s absentees are not regular starters, so the home side’s ",
+                                "This is not an even rivalry: Mainz are unbeaten in the last five league meetings and won both recent visits here, 3-2 and 4-1.",
+                                "With 25 games left the drop zone is not urgent, but Augsburg are only 3 points above 17th and Mainz 4, so Augsburg need the points more from a match they have struggled to win at home."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.3713,
+                        0.2742,
+                        0.3544
+                    ],
+                    "p_adj": [
+                        0.376238,
+                        0.277481,
+                        0.346281
+                    ],
+                    "p_llm": [
+                        0.351231,
+                        0.260903,
+                        0.387867
+                    ],
+                    "p_shadow": [
+                        0.371319,
+                        0.274246,
+                        0.354436
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "fc-augsburg-vs-mainz-05-2026-11-22"
+            },
+            "sha256": "c13cc5047498d5ffc70657de171a5cdf46eb5bb6f878e727b2617541b74208a4",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/bl-2627-0093-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "odense-boldklub",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "danish-superliga",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "dk-2627-0004",
+                "home": "sonderjyske",
+                "inputs": {
+                    "elo_away": 1431.8,
+                    "elo_home": 1418.5,
+                    "lambda_away": 1.515043,
+                    "lambda_home": 1.61982,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T15:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.395263,
+                        0.254637,
+                        0.350099
+                    ],
+                    "p_elo": [
+                        0.405927,
+                        0.283878,
+                        0.310196
+                    ],
+                    "p_market": [
+                        0.325947,
+                        0.248534,
+                        0.425519
+                    ],
+                    "p_stat": [
+                        0.40274,
+                        0.267575,
+                        0.329685
+                    ],
+                    "retained_mass": 0.999999999672,
+                    "rho": -0.084158,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T15:08:39Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6374,
+                    "draw_risk": false,
+                    "over_2_5": 0.6018,
+                    "p": [
+                        0.4027,
+                        0.2676,
+                        0.3297
+                    ],
+                    "p_display": [
+                        40.3,
+                        26.7,
+                        33
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1216,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0881,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0762,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0688,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0626,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.29,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Sønderjyske are 12th and 2 points from safety, while Odense are 7th and 6 points above the drop, so the hosts need the points more.",
+                                "Sønderjyske lack suspended regular midfielder Sefer Emini (8 starts) and defender Dalton Wilkins; Odense miss four players, but only Niemiec is a forward and he has 1 start; all from one source.",
+                                "Three of the last five league meetings were draws and the other two finished 1-0, so this fixture tends to be tight."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sønderjyske are missing regular midfielder Sefer Emini through suspension, removing a starter with 2 assists from a side already bottom of the table.",
+                                "Sønderjyske are in the relegation zone and 2 points from safety, so they need the points more urgently than mid-table Odense, who are 6 points clear of the drop.",
+                                "Odense have lost only one of their last five league games, while Sønderjyske have conceded 12 goals in their last four Superliga matches."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.29,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sønderjyske are bottom of the table on 9 points and need a win to close the two-point gap to safety, while Odense Boldklub sit six points above the relegation zone.",
+                                "All reported absences come from only one source, with Sønderjyske's regular starting midfielder Sefer Emini listed as suspended after making 8 starts and 2 assists.",
+                                "Odense Boldklub have drawn four of their seven away league matches and conceded only seven goals on the road, which should limit a Sønderjyske side that has lost nine of 14 games."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.95,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.3,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sønderjyske are without regular-starting midfielder Sefer Emini (two assists), while all listed absences for both teams are supported by only one source.",
+                                "Sønderjyske sit two points from safety and need the points, but OB have a stronger 17-point return and a six-point cushion over the relegation zone.",
+                                "OB's four-game unbeaten league run before their narrow Viborg loss, including draws at Copenhagen and Nordsjælland, suggests they can avoid defeat despite their low-scoring away record."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.32,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sønderjyske are in the drop zone, 2 points from safety, so they need the points more than Odense, who are 6 points above the relegation line.",
+                                "Sefer Emini, a regular-starting midfielder with 2 assists, is listed suspended, but only one source; the other named absences are not regular starters or have no role detail, also one source each.",
+                                "Odense have drawn 4 of 7 away games and scored only 6, so their higher league place has not turned into many away wins."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.3835,
+                        0.2756,
+                        0.3409
+                    ],
+                    "p_adj": [
+                        0.398222,
+                        0.269442,
+                        0.332336
+                    ],
+                    "p_llm": [
+                        0.326933,
+                        0.298896,
+                        0.374171
+                    ],
+                    "p_shadow": [
+                        0.383501,
+                        0.275582,
+                        0.340918
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "sonderjyske-vs-odense-boldklub-2026-11-22"
+            },
+            "sha256": "3392f68f37ef6a760a10099a8809cdd1f4d5560f84749c1ebd486bbce58d9442",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/dk-2627-0004-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "volos-nfc",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0003",
+                "home": "panetolikos",
+                "inputs": {
+                    "elo_away": 1304.7,
+                    "elo_home": 1373.6,
+                    "lambda_away": 0.952393,
+                    "lambda_home": 1.299388,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-21T15:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.423383,
+                        0.325246,
+                        0.251371
+                    ],
+                    "p_elo": [
+                        0.493101,
+                        0.27217,
+                        0.234729
+                    ],
+                    "p_market": [
+                        0.794599,
+                        0.135249,
+                        0.070152
+                    ],
+                    "p_stat": [
+                        0.461441,
+                        0.297188,
+                        0.241371
+                    ],
+                    "retained_mass": 0.999999999864,
+                    "rho": -0.167281,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T15:08:39Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.462,
+                    "draw_risk": false,
+                    "over_2_5": 0.4019,
+                    "p": [
+                        0.4614,
+                        0.2972,
+                        0.2414
+                    ],
+                    "p_display": [
+                        46.1,
+                        29.7,
+                        24.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1389,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1253,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.116,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0968,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0922,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.25,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Volos NFC are without suspended ever-present defender Kargas and forward Comba (9 starts), plus injured defender Agyakwa, while Panetolikos miss four players including Djenepo, Granath and Mavrias; all from one source only.",
+                                "Panetolikos are 10th and only 3 points above the drop, while winless Volos NFC sit 6 points from safety, so both need the points badly.",
+                                "Panetolikos have lost seven straight, but Volos NFC have lost 8 of their last 10 and conceded 11 goals in 5 away league games."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.88,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.25,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Panetolikos are missing three regular starters including Granath, whose 2 league goals are 25% of the team's total, and Djenepo, a first-choice forward, which blunts an attack that has scored only 8 league goals.",
+                                "Volos are without suspended regulars Kargas and Comba plus injured defender Agyakwa, removing three starters from a side already bottom on 0 points and with only 7 league goals.",
+                                "Panetolikos sit 3 points above the relegation zone and need a home win against the league's bottom side to create a cushion, while Volos are 6 points from safety and desperate for points."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.9,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.3,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists three regular starters out for each side, accounting for 37% of Panetolikos's league goals and 42% of Volos NFC's, which should reduce the attacking output of both teams.",
+                                "Both clubs face early relegation pressure, with bottom-placed Volos NFC already six points from safety and Panetolikos just three points above the drop zone.",
+                                "Despite losing seven straight league games without scoring in the last five, Panetolikos have a great chance to end their drought against a winless Volos side that has lost four of five away trips."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.88,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.29,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides have only single-source absence reports, but Panetolikos lose three regular starters while Volos are without ever-present defender Kargas, regular forward Comba and defender Agyakwa.",
+                                "Volos are six points from safety and need a result urgently, while Panetolikos are only three points above relegation and cannot afford to lose at home.",
+                                "Volos have no away win in five league trips and have conceded 11 goals, giving Panetolikos a modest home edge despite their own seven-match losing run."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.92,
+                            "m_home": 0.9,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.31,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are short of regular starters and every absence is only from one source: Panetolikos miss a first-choice forward plus Granath and Mavrias (37% of their league goals), while Volos miss an ever-present defender and a regular forwar",
+                                "Volos are in the relegation zone on 0 points and 6 from safety, so they need the points more than Panetolikos, who are only 3 above the drop.",
+                                "Panetolikos have lost their last seven and scored none in the last five, which cuts into home advantage against a Volos side that still has no league win and only one away draw."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4558,
+                        0.301,
+                        0.2431
+                    ],
+                    "p_adj": [
+                        0.451212,
+                        0.306548,
+                        0.24224
+                    ],
+                    "p_llm": [
+                        0.474088,
+                        0.279522,
+                        0.24639
+                    ],
+                    "p_shadow": [
+                        0.455832,
+                        0.301031,
+                        0.243137
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "panetolikos-vs-volos-nfc-2026-11-22"
+            },
+            "sha256": "ff2a43b183b1ffac2ebfc3443371c8372b094a5d540669ecd57e57644290f42f",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0003-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "ado-den-haag",
                 "batch_id": "2026-11-21T0014Z-model-predict",
                 "competition": "eredivisie",
@@ -238,7 +1190,7 @@
                 "slug": "ajax-amsterdam-vs-ado-den-haag-2026-11-22"
             },
             "sha256": "00c17b7aadb2283329b3d01beab83a8c7b44c000bfc08328e397bb291dc93cd7",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0019-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +1428,7 @@
                 "slug": "sparta-rotterdam-vs-az-alkmaar-2026-11-22"
             },
             "sha256": "adaea7542fa97a0492f057645594d37cd00ec6f439fab70dbd4064d0aa501e38",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0020-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +1666,7 @@
                 "slug": "levadiakos-vs-atromitos-2026-11-22"
             },
             "sha256": "92a61992989919dc7ab6a63d93a9d89a53440e86bf7ce41ab5c7cfdeac12e7e1",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0002-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +1904,7 @@
                 "slug": "paris-fc-vs-angers-2026-11-22"
             },
             "sha256": "e836d944daee347e8078ab476f6a08bd3aacc10a9122806e23f6ad9d61c858e1",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0045-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +2142,7 @@
                 "slug": "hull-city-vs-brighton-2026-11-22"
             },
             "sha256": "af40f12adf9ffece1202ddc6271374d766c065ca6d8900a4d5ae0a60e1cabf7f",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0104-r1.json",
             "status": "pending",
             "result": null
@@ -1428,7 +2380,7 @@
                 "slug": "bologna-vs-udinese-2026-11-22"
             },
             "sha256": "268107fe4ded19c0b3cbf15efa3642b8db7fc50676676d3219a04f2539f1a0d6",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0023-r1.json",
             "status": "pending",
             "result": null
@@ -1666,7 +2618,7 @@
                 "slug": "sassuolo-vs-genoa-2026-11-22"
             },
             "sha256": "abd4567db8f91199a3f9a8a4016097e33db447069db87ad039081767cb1812f2",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0024-r1.json",
             "status": "pending",
             "result": null
@@ -1904,7 +2856,7 @@
                 "slug": "us-avellino-vs-mantova-2026-11-22"
             },
             "sha256": "aeed6ba4613cb6c72a63094496218024b988e44b665292b3d7b29882ceca57a3",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0009-r1.json",
             "status": "pending",
             "result": null
@@ -2011,7 +2963,7 @@
                 "slug": "gil-vicente-vs-olhanense-2026-11-22"
             },
             "sha256": "94248c525b71473825be6ca25732b84037cce8571dfa7fb302ab77f0b53f5c2f",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0009-r1.json",
             "status": "pending",
             "result": null
@@ -2118,7 +3070,7 @@
                 "slug": "vianense-vs-rio-ave-2026-11-22"
             },
             "sha256": "7be9060ca39a600d282b6dd404d2990025e0629b3a2149a4051fa709c45f5421",
-            "commit": "pending",
+            "commit": "4085301c115aafa3966f33d991b8245f55228f66",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0010-r1.json",
             "status": "pending",
             "result": null
@@ -22537,7 +23489,7 @@
             "sha256": "1944ee67b5846cd76b5487ebc74227bfd23eb4bc4f5ba00159443e8b97a90433",
             "commit": "7ef4b38916be9a9f625dafa6eb7d60f18c976c65",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0005-r1.json",
-            "status": "pending",
+            "status": "voided",
             "result": null
         },
         {
@@ -22775,8 +23727,12 @@
             "sha256": "098a3fb4ce5e40773c6384c017870cdcace93c96604c7fad8559c0cbf40a838b",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0025-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-1",
+                "correct": false,
+                "rps": 0.3687
+            }
         },
         {
             "record": {
@@ -23013,8 +23969,12 @@
             "sha256": "ad39d3cccc1366cd90e996fe35c0d0a49918af0f6a0d31571210f47577506150",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0026-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-1",
+                "correct": true,
+                "rps": 0.1151
+            }
         },
         {
             "record": {
@@ -23251,8 +24211,12 @@
             "sha256": "2271d51766e3a0d40b7ededf802179b556075275f405abb9394c6c4199204cb9",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0027-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.0888
+            }
         },
         {
             "record": {
@@ -23489,8 +24453,12 @@
             "sha256": "e9b9f0d6dd3d3282f9c40109fcf2c9ec113ac9c15b16877021a77f96c8ef58a2",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0034-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-2",
+                "correct": false,
+                "rps": 0.3808
+            }
         },
         {
             "record": {
@@ -23727,8 +24695,12 @@
             "sha256": "8b7000d36e080017c03ba8e2bae305d06f0c4cd7e53e5d0cb6db71a9523ce1b9",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0035-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-1",
+                "correct": false,
+                "rps": 0.6609
+            }
         },
         {
             "record": {
@@ -23965,8 +24937,12 @@
             "sha256": "bec3a63e28417b5cdcde9bee1dfc0c0677d3a0dcddf4fd38c4a701e2d2b7d01d",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0100-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-1",
+                "correct": true,
+                "rps": 0.1666
+            }
         },
         {
             "record": {
@@ -24203,8 +25179,12 @@
             "sha256": "a67ac70e4794800308c448918399deb8d3d201b8a54fe8eb7066c4f83dad77f2",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0097-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.2344
+            }
         },
         {
             "record": {
@@ -24441,8 +25421,12 @@
             "sha256": "30613633d185012c0c4ea1f28d0894291d521b95a816a380296f5aa506e054a4",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0013-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1263
+            }
         },
         {
             "record": {
@@ -24679,8 +25663,12 @@
             "sha256": "ab19334c17d334471ae70355a4146e4c140bcd4e26409412f262a2777fd8c710",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0015-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-2",
+                "correct": false,
+                "rps": 0.4276
+            }
         },
         {
             "record": {
@@ -24917,8 +25905,12 @@
             "sha256": "6fa0221909fd40fc8fc0f4dbc1ee3ab163e33f8cab27ff158cbd2faf34bf0db6",
             "commit": "7f02a690856c06854636ff11c94ef28b6c5858e9",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0016-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-1",
+                "correct": true,
+                "rps": 0.0269
+            }
         },
         {
             "record": {
