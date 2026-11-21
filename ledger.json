@@ -7,6 +7,1541 @@
     "records": [
         {
             "record": {
+                "away": "oh-leuven",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "belgian-pro-league",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "be-2627-0008",
+                "home": "anderlecht-be",
+                "inputs": {
+                    "elo_away": 1391,
+                    "elo_home": 1555.5,
+                    "lambda_away": 0.875948,
+                    "lambda_home": 1.700403,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T18:11:42Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.56546,
+                        0.245861,
+                        0.188679
+                    ],
+                    "p_elo": [
+                        0.590417,
+                        0.247488,
+                        0.162095
+                    ],
+                    "p_market": [
+                        0.661339,
+                        0.197962,
+                        0.1407
+                    ],
+                    "p_stat": [
+                        0.584374,
+                        0.244092,
+                        0.171533
+                    ],
+                    "retained_mass": 0.999999999953,
+                    "rho": -0.029503,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T18:15:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.479,
+                    "draw_risk": false,
+                    "over_2_5": 0.4775,
+                    "p": [
+                        0.5844,
+                        0.2441,
+                        0.1715
+                    ],
+                    "p_display": [
+                        58.4,
+                        24.4,
+                        17.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1302,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1158,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1136,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0995,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0788,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.23,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Anderlecht lose regular starting defender Giulian Biancone (suspended, 9 of 11 league starts) plus Camara and Hey, while Leuven miss midfielder Verstraete (5 starts); all from one source only.",
+                                "Anderlecht have won 4 of 5 at home with goals 10-2, while Leuven have won only 1 of 5 away and conceded 9.",
+                                "Anderlecht play at OFI Crete four days later, so some rotation is possible, while Leuven had 15 days of rest and no match in the past 14."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Anderlecht are missing suspended regular defender Giulian Biancone (9 league starts) plus injured Lucas Hey and Ilay Camara, weakening a defence that has conceded only 2 goals in 5 home league games.",
+                                "OH Leuven are without suspended midfielder Birger Verstraete (5 league starts) and injured Manuel Osifo and Thibaud Verlinden, reducing their depth for an away match where they have lost 3 of 5.",
+                                "Anderlecht are unbeaten at home in the league this season (4W 1D, 10-2 goals), while OH Leuven have won only once away, so the hosts' strong Lotto Park record points to a comfortable home win."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Anderlecht regular starter Giulian Biancone (9 of 11 starts) and OH Leuven midfielder Birger Verstraete (5 of 11 starts) as suspended, slightly weakening both sides defensively.",
+                                "Both teams are fully rested after a two-week break, though Anderlecht may look to manage minutes ahead of their Europa League trip to OFI Crete four days later.",
+                                "Anderlecht's unbeaten home league record of four wins and two goals conceded from five games gives them a clear edge, even with OH Leuven riding a seven-match unbeaten run across all competitions."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.22,
+                                "home": 0.61
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Anderlecht are without regular-starting defender Giulian Biancone (9 league starts), while OH Leuven miss midfielder Birger Verstraete (5 starts); all listed absences have only one source.",
+                                "Anderlecht's 4-1-0 home league record, with a 10-2 goal difference, strongly favours them against an OH Leuven side with three defeats in five away games.",
+                                "Anderlecht are nine points off the leaders and need home wins to maintain their chase, while OH Leuven sit only five points above the relegation zone."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Anderlecht are without regular starter Biancone (defender, 9 of 11 league starts, suspended), but that and the other listed absences are one source only and none is a main scorer, so the attacking hit is small.",
+                                "Anderlecht are unbeaten at home (4W 1D, 10-2) while Leuven have one win in five away (4-9), so this looks more one-sided than the older draw-heavy meetings.",
+                                "Both sides are well rested (14 and 15 days), though Anderlecht’s Europa League trip is only four days later, which slightly tempers how hard they push."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5836,
+                        0.2427,
+                        0.1736
+                    ],
+                    "p_adj": [
+                        0.58032,
+                        0.246977,
+                        0.172703
+                    ],
+                    "p_llm": [
+                        0.596591,
+                        0.226328,
+                        0.177081
+                    ],
+                    "p_shadow": [
+                        0.583649,
+                        0.242748,
+                        0.173603
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "anderlecht-be-vs-oh-leuven-2026-11-22"
+            },
+            "sha256": "988b4a8691af73e4c0dbeca0b7f248b2535253bc29dc72cbc578b94425f96a13",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/be-2627-0008-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "standard-liege",
+                "batch_id": "2026-11-20T2205Z-model-predict",
+                "competition": "belgian-pro-league",
+                "cutoff_utc": "2026-11-20T22:05:45Z",
+                "data_status": "limited_context",
+                "fixture_id": "be-2627-0009",
+                "home": "lommel-sk",
+                "inputs": {
+                    "elo_away": 1461.5,
+                    "elo_home": 1366.8,
+                    "lambda_away": 0.956541,
+                    "lambda_home": 1.304666,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T18:11:42Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.441798,
+                        0.288667,
+                        0.269535
+                    ],
+                    "p_elo": [
+                        0.322014,
+                        0.284697,
+                        0.393289
+                    ],
+                    "p_market": [
+                        0.287525,
+                        0.251724,
+                        0.460751
+                    ],
+                    "p_stat": [
+                        0.382457,
+                        0.288648,
+                        0.328896
+                    ],
+                    "retained_mass": 0.999999999856,
+                    "rho": -0.029619,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T18:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T18:15:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4537,
+                    "draw_risk": false,
+                    "over_2_5": 0.3917,
+                    "p": [
+                        0.3825,
+                        0.2886,
+                        0.3289
+                    ],
+                    "p_display": [
+                        38.2,
+                        28.9,
+                        32.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1339,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.117,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1144,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1081,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0768,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Standard are missing regular starters Fossey (9 league starts) and Nielsen (8 starts, 2 goals, 3 assists), while Lommel lack midfielder Wouters (6 starts); all from one source only.",
+                                "Both sides have had 15-16 days of rest with no match in the previous 14 days, so fatigue does not separate them.",
+                                "Home wins are 52% this season but 41% last season, and Lommel's 2W 1D 2L at home with only 2 goals conceded supports a modest home edge."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Standard Liège are missing regular starters Marlon Fossey and Casper Nielsen; Nielsen has 2 goals and 3 assists, so their attack loses a key creator.",
+                                "Lommel are without regular midfielder Dries Wouters, but their other listed absences are squad players, so the home side's disruption is smaller.",
+                                "Lommel have kept three home clean sheets in five league games and conceded only 2 home goals, while Standard have lost 3 of 5 away matches."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.25,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "One source reports Standard Liège are without regular starters Marlon Fossey and Casper Nielsen, removing 11% of their league goals and four assists, while Lommel SK miss regular midfielder Dries Wouters according to one source.",
+                                "Lommel SK have conceded only two goals in five home league games, giving them a strong defensive platform against a Standard Liège side that has lost three of its last four away trips.",
+                                "With Lommel SK in 6th on 16 points and Standard Liège in 8th on 15 points after 11 games, a win here gives either side an edge in the early race for the top six."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.91,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.27,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Standard are without regulars Fossey and Nielsen, whose 2 goals and 3 assists remove a notable share of their midfield output; all listed absences are supported by one source.",
+                                "Lommel are missing regular-starting midfielder Dries Wouters, though defender De Grand had started only once in the league.",
+                                "Lommel have conceded only twice in five home league matches, while Standard have lost three of five away games, favouring a tight home-side performance."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.28,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "All absences are from one source only, but Standard’s list includes regular starter Casper Nielsen (2 goals, 11% of their league goals, 3 assists) and regular defender Marlon Fossey, which trims their midfield and defensive control more tha",
+                                "Lommel have conceded only 2 goals in 5 home games, while Standard have won just 1 of 5 away, so the clearer edge is Lommel’s home defensive control rather than the one-point table gap.",
+                                "Both sides have 15–16 rest days and no match in the previous 14 days, so neither carries a crowded-run disadvantage into a tight mid-table meeting."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.395,
+                        0.2879,
+                        0.3171
+                    ],
+                    "p_adj": [
+                        0.385448,
+                        0.292794,
+                        0.321758
+                    ],
+                    "p_llm": [
+                        0.434178,
+                        0.268029,
+                        0.297793
+                    ],
+                    "p_shadow": [
+                        0.395045,
+                        0.28789,
+                        0.317064
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "lommel-sk-vs-standard-liege-2026-11-22"
+            },
+            "sha256": "26d5e88545c6a0d9826d77372e9369300b76e978847ad82564e77441bd0ecded",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/be-2627-0009-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "kifisia",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0006",
+                "home": "paok",
+                "inputs": {
+                    "elo_away": 1381.7,
+                    "elo_home": 1717.4,
+                    "lambda_away": 0.836488,
+                    "lambda_home": 2.587314,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-21T18:11:42Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.738135,
+                        0.175407,
+                        0.086458
+                    ],
+                    "p_elo": [
+                        0.736022,
+                        0.188526,
+                        0.075452
+                    ],
+                    "p_market": [
+                        0.70748,
+                        0.180567,
+                        0.111953
+                    ],
+                    "p_stat": [
+                        0.745402,
+                        0.17742,
+                        0.077178
+                    ],
+                    "retained_mass": 0.99999999995,
+                    "rho": -0.167281,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T18:15:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5349,
+                    "draw_risk": false,
+                    "over_2_5": 0.6645,
+                    "p": [
+                        0.7454,
+                        0.1774,
+                        0.0772
+                    ],
+                    "p_display": [
+                        74.5,
+                        17.8,
+                        7.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1101,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.095,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0921,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0833,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0795,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.89,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.2,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Kifisia are without four suspended players, including Sagal (10 of 10 starts, 27% of their goals), Manso and Roukounakis, plus starter Antonisse; this is from one source.",
+                                "PAOK are missing both main goalkeepers, Pavlenka and Monastirlis, plus midfielder Jakić, which costs some stability, but the depth in attack is largely intact; one source only.",
+                                "PAOK won all four recent league meetings, scoring 16 goals and conceding 3, and this season they have won 4 of 5 at home."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.88,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kifisia are missing four suspended regular starters, including Sagal (27% of their league goals) and Roukounakis (10/10 starts), plus injured regular starter Antonisse, which severely weakens their attack and midfield.",
+                                "PAOK have won all four recent league meetings, scoring 15 goals and conceding 2, including a 3-0 home win in this fixture last season.",
+                                "PAOK are unbeaten in their last three league games and have won 4 of 5 at home, while Kifisia have lost 2 of their last 3 at home but won their most recent away game."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.85,
+                            "m_home": 0.92,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source reports Kifisia are without four regular starters including forward Ángelo Sagal (27% of their league goals) and midfielder Jeremy Antonisse (7%), significantly weakening their spine and attack.",
+                                "According to one source, PAOK are missing regular starting midfielder Kristijan Jakić alongside goalkeepers Jirí Pavlenka (5 starts) and Dimitrios Monastirlis (3 starts), leaving them vulnerable in goal.",
+                                "PAOK have won all four previous league meetings against Kifisia by an aggregate score of 15-2, pointing to a major gulf in class."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.87,
+                            "m_home": 1.08,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.21,
+                                "home": 0.66
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kifisia are without regular starters Sagal (4 league goals), Manso, Roukounakis and Antonisse, plus Sousa, removing 5 of their 15 league goals; all absences are listed by one source.",
+                                "PAOK also have single-source injuries, including regular goalkeeper Pavlenka and midfielder Jakić, but Kifisia's much heavier loss of established attackers and starters is the larger change.",
+                                "PAOK's 4 wins from 5 home league matches, scoring 11 goals, meets a Kifisia side whose away record is strong but whose depleted lineup should make sustaining it difficult."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.88,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "All absences are one source only, so they are not confirmed, but Kifisia are listed without regulars Sagal (4 goals, 27% of their league goals, 10 of 10 starts), Roukounakis (10 of 10), Manso and Antonisse, which cuts their attack and spine",
+                                "PAOK have won the last four league meetings, including 6-0 and 4-1 away and 3-0 at home, so this is not an ordinary home fixture against a mid-table side.",
+                                "PAOK have taken four wins from five league games at Toumba (11-5), which points to a home win even though Kifisia have won three of five away."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.735,
+                        0.1822,
+                        0.0828
+                    ],
+                    "p_adj": [
+                        0.75014,
+                        0.177556,
+                        0.072304
+                    ],
+                    "p_llm": [
+                        0.662672,
+                        0.197772,
+                        0.139556
+                    ],
+                    "p_shadow": [
+                        0.734956,
+                        0.182218,
+                        0.082826
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "paok-vs-kifisia-2026-11-22"
+            },
+            "sha256": "cbffa8598ee30ee55d916f9ffa8587f3e309a2e919f313850f2e1b709e986ec6",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0006-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "malaga",
+                "batch_id": "2026-11-20T2205Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-20T22:05:45Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0106",
+                "home": "osasuna",
+                "inputs": {
+                    "elo_away": 1264.1,
+                    "elo_home": 1388,
+                    "lambda_away": 0.807254,
+                    "lambda_home": 1.804617,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-21T18:11:42Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.607577,
+                        0.232079,
+                        0.160344
+                    ],
+                    "p_elo": [
+                        0.549953,
+                        0.259186,
+                        0.190861
+                    ],
+                    "p_market": [
+                        0.531515,
+                        0.260604,
+                        0.207881
+                    ],
+                    "p_stat": [
+                        0.594034,
+                        0.239012,
+                        0.166954
+                    ],
+                    "retained_mass": 0.999999999889,
+                    "rho": -0.027614,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T18:15:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4681,
+                    "draw_risk": false,
+                    "over_2_5": 0.4812,
+                    "p": [
+                        0.594,
+                        0.239,
+                        0.167
+                    ],
+                    "p_display": [
+                        59.4,
+                        23.9,
+                        16.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1266,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1168,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1132,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0943,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0786,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.28,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Osasuna are without starting goalkeeper Aitor Fernández and left-back Abel Bretones (10 of 12 starts), with several more defenders doubtful, which weakens their back line; Málaga also lack Aznou and doubtful regular Puga.",
+                                "Málaga are 20th, 6 points from safety, while Osasuna are only 2 points above the drop, so both need points badly but Málaga's need is greater.",
+                                "Málaga have no league wins in 12 and have conceded 11 goals in 6 away games, while Osasuna are unbeaten in 3 home draws and a win at El Sadar this season in a stable home setup."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.28,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Osasuna are missing first-choice goalkeeper Aitor Fernández and regular defender Abel Bretones, while several other defenders are doubtful, weakening a side that has conceded 23 goals in 12 league games.",
+                                "Málaga are bottom and six points from safety, so they need the points more, but Osasuna are only two points above the relegation zone and also cannot afford to lose at home.",
+                                "Osasuna have been hard to beat at El Sadar with only one home league defeat, while Málaga are winless away this season with four defeats in six."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.27,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "This is a relegation six-pointer with Osasuna sitting just two points above the drop zone and bottom-side Málaga already six points adrift of safety.",
+                                "Osasuna are missing regular starting defender Abel Bretones (10 starts) according to a second source and goalkeeper Aitor Fernández (6 starts) according to one source, while one source lists Málaga's regular starting defender Carlos Puga (7",
+                                "Osasuna's tight home defense that has conceded only four goals in six games should contain a winless Málaga side that has scored just three times in six away trips."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.08,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.29,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Osasuna are without regular defender Abel Bretones (10 league starts) and goalkeeper Aitor Fernández (6 starts, listed by one source), which modestly raises Málaga’s scoring outlook.",
+                                "This is a high-pressure relegation match: Osasuna are only two points above the drop zone, while bottom-side Málaga are six points from safety.",
+                                "Osasuna’s unbeaten 2W-3D-1L home record and Málaga’s winless 0W-2D-4L away record favour a narrow home result."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.3,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Málaga are in the drop zone, 6 points from safety with no league win, so they need points more than Osasuna, who are only 2 above the relegation places.",
+                                "Osasuna are without regular starter Abel Bretones (10 of 12, two sources); goalkeeper Aitor Fernández is listed out by one source only, and Málaga regular defender Carlos Puga is only doubtful on one source.",
+                                "Málaga are still winless in 12 league games and have 0 wins from 6 away (2 draws), which caps the away-win chance even though Osasuna have scored only 5 in 6 home games."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5719,
+                        0.2514,
+                        0.1767
+                    ],
+                    "p_adj": [
+                        0.588446,
+                        0.243151,
+                        0.168403
+                    ],
+                    "p_llm": [
+                        0.504088,
+                        0.284169,
+                        0.211743
+                    ],
+                    "p_shadow": [
+                        0.571852,
+                        0.251439,
+                        0.176709
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "osasuna-vs-malaga-2026-11-22"
+            },
+            "sha256": "f6f86c815bead1fb841950ac1cb961f287e57432aabe83de957a34388a18426a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0106-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "eibar",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0019",
+                "home": "girona",
+                "inputs": {
+                    "elo_away": 1332.6,
+                    "elo_home": 1182.6,
+                    "lambda_away": 0.979343,
+                    "lambda_home": 1.311532,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T18:11:42Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.441304,
+                        0.280949,
+                        0.277747
+                    ],
+                    "p_elo": [
+                        0.269166,
+                        0.278993,
+                        0.451842
+                    ],
+                    "p_market": [
+                        0.5317,
+                        0.248623,
+                        0.219677
+                    ],
+                    "p_stat": [
+                        0.352534,
+                        0.284851,
+                        0.362615
+                    ],
+                    "retained_mass": 0.999999999846,
+                    "rho": -0.006249,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T18:15:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4595,
+                    "draw_risk": false,
+                    "over_2_5": 0.3975,
+                    "p": [
+                        0.3525,
+                        0.2849,
+                        0.3626
+                    ],
+                    "p_display": [
+                        35.2,
+                        28.5,
+                        36.3
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1326,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1283,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1053,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1034,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0831,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.28,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Girona lose regular starting defender Álex Moreno to suspension (14 of 14 starts, 2 assists), plus Bryan Gil and Jastin García out; all news is from one source.",
+                                "Both sides sit level on 24 points in the play-off places, 1 point clear of 7th and 6 off automatic promotion, so a draw suits neither much but a loss hurts.",
+                                "Eibar have drawn 3 of their last 5 league games and Girona lost two of their last four, so neither side arrives in clear form."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.99,
+                            "m_home": 0.96,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Girona are without suspended regular left-back Álex Moreno, who has started all 14 league games and contributed 2 assists, weakening their defence and build-up.",
+                                "Both sides are level on 24 points in the promotion play-off places and only 1 point clear of 7th, so neither can afford to lose ground in the race for the top six.",
+                                "Girona have lost two of their last three league games, while Eibar are winless in four league matches, suggesting two promotion contenders short on momentum."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.95,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.27,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Girona defender Álex Moreno, who has started all 14 league games, is suspended, while Eibar regular starter Juan Bernat is doubtful.",
+                                "Both sides sit level on 24 points inside the promotion play-off places with just a one-point cushion over seventh, giving this direct clash extra significance.",
+                                "Eibar have slowed after a strong start with three draws and two losses in their last five league games, giving Girona the edge at home where they average two goals per game."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.08,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.27,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Girona are without 14-start defender Álex Moreno and six-start forward Bryan Gil, though all listed team news is from one source; Moreno's suspension particularly weakens the home defence.",
+                                "Both sides are only one point above seventh and six points from automatic promotion, making this a high-value direct play-off race match.",
+                                "Girona's strong 16-7 home scoring record meets an Eibar side that has won four of six away league matches, pointing to a closely balanced contest."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.29,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Girona and Eibar are level on 24 points in the play-off places, one point above 7th and six off automatic promotion, so this is a direct fight for the same spots rather than an ordinary meeting.",
+                                "Girona miss ever-present defender Álex Moreno (suspended, 14 of 14 starts, 2 assists) and Bryan Gil (6 starts, 4% of league goals); that is one source only, while Eibar’s Juan Bernat is only doubtful.",
+                                "Eibar have won four of six away and drawn none, so they are likelier to take something on the road than a typical La Liga 2 visitor against a Girona side that has won only four of eight at home."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3609,
+                        0.2856,
+                        0.3535
+                    ],
+                    "p_adj": [
+                        0.346586,
+                        0.287195,
+                        0.366219
+                    ],
+                    "p_llm": [
+                        0.419984,
+                        0.276283,
+                        0.303734
+                    ],
+                    "p_shadow": [
+                        0.360915,
+                        0.285576,
+                        0.353509
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "girona-vs-eibar-2026-11-22"
+            },
+            "sha256": "3e1f5f311498bd1560cb1fc14c44710e4bb235c36f1b4861625ec73bf75892c4",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0019-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "real-valladolid",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0020",
+                "home": "rc-celta-fortuna",
+                "inputs": {
+                    "elo_away": 1159.3,
+                    "elo_home": 1116.9,
+                    "lambda_away": 1.474592,
+                    "lambda_home": 1.452192,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-21T18:11:42Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.371084,
+                        0.247871,
+                        0.381045
+                    ],
+                    "p_elo": [
+                        0.375388,
+                        0.285452,
+                        0.339161
+                    ],
+                    "p_market": [
+                        0.272879,
+                        0.258251,
+                        0.46887
+                    ],
+                    "p_stat": [
+                        0.3747,
+                        0.264737,
+                        0.360563
+                    ],
+                    "retained_mass": 0.999999999882,
+                    "rho": -0.006249,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T18:15:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5956,
+                    "draw_risk": false,
+                    "over_2_5": 0.5547,
+                    "p": [
+                        0.3747,
+                        0.2647,
+                        0.3606
+                    ],
+                    "p_display": [
+                        37.5,
+                        26.5,
+                        36
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1233,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0841,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.08,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0778,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0741,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.27,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Celta Fortuna have several players out or doubtful, none with a listed role, and Valladolid lose regular midfielder Thiago Ojeda to suspension; all of it rests on one source.",
+                                "Celta Fortuna are level on points with the relegation zone, while Valladolid sit 6 points off the play-offs and 5 above the drop, so both need points.",
+                                "Celta Fortuna have lost 7 of 14 and conceded 26 goals, including 5 at Girona, but Valladolid are winless in 3 away league games out of 7 and have scored only 7 away."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.27,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Real Valladolid are missing suspended regular midfielder Thiago Ojeda (9 league starts, 1 assist) plus injured Juanmi Latasa and Guille Bueno, weakening their midfield and depth.",
+                                "Celta Fortuna are level on points with the top relegation place and need the points more urgently at home, while Valladolid sit five points above the drop zone.",
+                                "Celta Fortuna have lost three of their last four league games and have only two home wins in seven, but Valladolid have just one away win in seven, making a close match likely."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.28,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Real Valladolid regular starter Thiago Ojeda as suspended in midfield after starting nine of 14 league games, alongside several other single-source absences for both sides.",
+                                "RC Celta Fortuna urgently need points as they sit level with the relegation zone on 13 points, whereas Real Valladolid are five points clear and looking to close a six-point gap to the play-offs.",
+                                "Despite only winning one of their last ten games overall, RC Celta Fortuna are unbeaten in four consecutive home matches, which should help them compete against a Real Valladolid side with just one away league win."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.28,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "All team-news items have only one source; Valladolid’s suspended regular-starting midfielder Thiago Ojeda has started 9 league matches, slightly reducing their midfield strength.",
+                                "Celta are level on points with the top relegation place, making home points especially important.",
+                                "Celta have won only once in their last 10 matches, while Valladolid have won five, giving the visitors the stronger recent baseline despite their poor away record."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.31,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Celta Fortuna are level on points with 19th, the top relegation place, so they need the points more than Valladolid, who are five clear of the drop and six off the play-off places.",
+                                "Valladolid are without regular midfielder Thiago Ojeda, suspended after starting 9 of 14 league games with one assist; Celta’s four listed absences come from one source and none is identified as a regular starter.",
+                                "Celta have only one win in their last ten matches, which offsets home advantage against a Valladolid side that has taken just one win and scored seven goals in seven away league games."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "1/5",
+                    "ai_combined": [
+                        0.3714,
+                        0.2694,
+                        0.3592
+                    ],
+                    "p_adj": [
+                        0.377243,
+                        0.26625,
+                        0.356507
+                    ],
+                    "p_llm": [
+                        0.348268,
+                        0.282098,
+                        0.369634
+                    ],
+                    "p_shadow": [
+                        0.371372,
+                        0.269427,
+                        0.359201
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "rc-celta-fortuna-vs-real-valladolid-2026-11-22"
+            },
+            "sha256": "a0bf453f8bc12b1cf9a4ee572a089003c428ae9e77308df58f4ace85b2ead80d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0020-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "portimonense",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "taca-de-portugal",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "tp-2627-0011",
+                "home": "estrela-amadora",
+                "inputs": {
+                    "elo_away": 1174.7,
+                    "elo_home": 1319.9,
+                    "lambda_away": 0.738227,
+                    "lambda_home": 1.565859,
+                    "last_result_used": "2026-11-08",
+                    "outside": {
+                        "club": "portimonense",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.571402,
+                        0.253237,
+                        0.175361
+                    ],
+                    "p_elo": [
+                        0.571402,
+                        0.253237,
+                        0.175361
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.571402,
+                        0.253237,
+                        0.175361
+                    ],
+                    "retained_mass": 0.999999999852,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "portimonense"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-22T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T18:15:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.413,
+                    "draw_risk": false,
+                    "over_2_5": 0.4051,
+                    "p": [
+                        0.5714,
+                        0.2532,
+                        0.1754
+                    ],
+                    "p_display": [
+                        57.2,
+                        25.3,
+                        17.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1564,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1224,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1154,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0998,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0904,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "estrela-amadora-vs-portimonense-2026-11-22"
+            },
+            "sha256": "65db1f1a98f02c57d65863f381b0d009bb2d3e703d6a3120b943a0a5883efa48",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/tp-2627-0011-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "hamburger-sv",
                 "batch_id": "2026-11-20T2205Z-model-predict",
                 "competition": "bundesliga",
@@ -238,7 +1773,7 @@
                 "slug": "werder-bremen-vs-hamburger-sv-2026-11-22"
             },
             "sha256": "0402a7ed28f859d3109896f4ab33762da38988ee76d8642ab35d32bb3f09e213",
-            "commit": "pending",
+            "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0094-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +2011,7 @@
                 "slug": "fc-nordsjaelland-vs-fc-copenhagen-2026-11-22"
             },
             "sha256": "7010c3143f76034bccb0fbd65f496e36db1aab2431097e990275c763c1021b14",
-            "commit": "pending",
+            "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0005-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +2249,7 @@
                 "slug": "olympiacos-gr-vs-iraklis-2026-11-22"
             },
             "sha256": "c7b25c097c495cce686c29672dc83c389e345779e65c0b55c40ab0017bc93269",
-            "commit": "pending",
+            "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0005-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +2487,7 @@
                 "slug": "lorient-vs-stade-rennais-2026-11-22"
             },
             "sha256": "4a2ee651c3080dc1f736d677b06afe10b08cd92091c085a6e83cac41ade90aab",
-            "commit": "pending",
+            "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0046-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +2725,7 @@
                 "slug": "liverpool-vs-manchester-united-2026-11-22"
             },
             "sha256": "a31d86b08d10e18dd6fdbe7f361c19b05f4fd84fc04a44a04d33cb45c97525cb",
-            "commit": "pending",
+            "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0105-r1.json",
             "status": "pending",
             "result": null
@@ -1428,7 +2963,7 @@
                 "slug": "ac-milan-vs-frosinone-2026-11-22"
             },
             "sha256": "7b71218e7fdc4723730f1472ecd8ed8f7e8192a9418b80d5672084a33713a80d",
-            "commit": "pending",
+            "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0025-r1.json",
             "status": "pending",
             "result": null
@@ -1666,7 +3201,7 @@
                 "slug": "arezzo-vs-padova-2026-11-22"
             },
             "sha256": "d2801ab882c7c529e985607fd0aa5d3af53b68e3679e82926014ba6185214435",
-            "commit": "pending",
+            "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0010-r1.json",
             "status": "pending",
             "result": null
@@ -16131,8 +17666,12 @@
             "sha256": "90329b135aaeb5548b7ce4b971216632be95b6e3afb78a83bc98f10f956da9e2",
             "commit": "abf24e74c3a0c74cc0d0d07cafc323729766288c",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0013-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-4",
+                "correct": true,
+                "rps": 0.0914
+            }
         },
         {
             "record": {
@@ -16369,8 +17908,12 @@
             "sha256": "31273ab036b65bf734bba4133ce34a3ab05dd844f52ea2c7b55a76364550a9d2",
             "commit": "abf24e74c3a0c74cc0d0d07cafc323729766288c",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0101-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-1",
+                "correct": false,
+                "rps": 0.3746
+            }
         },
         {
             "record": {
@@ -16607,8 +18150,12 @@
             "sha256": "6628ccfda36692d318105f5a8ef87b94ef51b0c5e905a20f7cb21598aaf1a736",
             "commit": "abf24e74c3a0c74cc0d0d07cafc323729766288c",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0014-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-3",
+                "correct": false,
+                "rps": 0.3422
+            }
         },
         {
             "record": {
@@ -16845,8 +18392,12 @@
             "sha256": "90b4662dd9a7185ee8f10b30a56703be1ec425c1452b214967340ffcd013b239",
             "commit": "abf24e74c3a0c74cc0d0d07cafc323729766288c",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0017-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1951
+            }
         },
         {
             "record": {
