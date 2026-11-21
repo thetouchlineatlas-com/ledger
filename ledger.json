@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "goztepe",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0018",
+                "home": "erzurum-bb",
+                "inputs": {
+                    "elo_away": 1477.9,
+                    "elo_home": 1316.3,
+                    "lambda_away": 1.458148,
+                    "lambda_home": 1.050589,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T11:05:44Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.261202,
+                        0.285029,
+                        0.453769
+                    ],
+                    "p_elo": [
+                        0.258628,
+                        0.277187,
+                        0.464185
+                    ],
+                    "p_market": [
+                        0.321686,
+                        0.286289,
+                        0.392025
+                    ],
+                    "p_stat": [
+                        0.256713,
+                        0.278574,
+                        0.464713
+                    ],
+                    "retained_mass": 0.999999999943,
+                    "rho": -0.089494,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T10:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T11:11:43Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5084,
+                    "draw_risk": false,
+                    "over_2_5": 0.461,
+                    "p": [
+                        0.2567,
+                        0.2786,
+                        0.4647
+                    ],
+                    "p_display": [
+                        25.7,
+                        27.8,
+                        46.5
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1327,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1101,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0931,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0904,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0886,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.26,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Göztepe have four doubtful players, including defender Sundberg (4 of 11 starts) and Bayrak (1 of 11); these are mostly squad players listed by one source, so the effect is small.",
+                                "Both sides have had two weeks of rest (14 and 15 days), so neither has a fatigue edge before the next league fixtures.",
+                                "Göztepe score freely away (15 goals in 6 games) but concede too, while Erzurum BB have scored only 5 goals in 5 home games, which points to a close, low-margin match."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.99,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.27,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Göztepe have four defenders doubtful, including Noah Sonko Sundberg who has started 4 of 11 league games, but none is a confirmed regular starter, so the away defence is only slightly weakened.",
+                                "Göztepe have won three of their last four away league games, scoring 8 goals in that run, which offsets Erzurum BB's solid home record of 3 wins from 5.",
+                                "Both sides sit mid-table with a similar cushion above the relegation zone, so neither has a sharper need for the points than the other."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.26,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Göztepe's strong away scoring record of 15 goals in six trips makes them slight favourites against an Erzurum BB side coming off back-to-back defeats.",
+                                "Göztepe have four players listed as doubtful, though three are reported by only one source and none are confirmed regular starters.",
+                                "Separated by just one point in mid-table, both sides have a comfortable six- to seven-point cushion above the relegation zone with 23 games remaining."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.02,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.25,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Göztepe have defensive doubts, but Bayrak and Sonko Sundberg are each listed by one source and neither has started half of the league matches, so the home attacking uplift is slight.",
+                                "Göztepe won four of five before their last-match defeat, including away wins at Fenerbahçe and Kocaelispor, supporting an away edge.",
+                                "This season's Süper Lig has produced away wins in 36% of matches, unusually close to the 47% home-win rate."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.27,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Göztepe have taken 11 points from 6 away games and scored 15, including a 2-1 win at Fenerbahçe, while Erzurum have managed only 5 goals in 5 home games, so the visitors are better placed to win a low-scoring match.",
+                                "Göztepe list four doubtful players, but only Furkan Bayır is backed by a second source and the named defenders are not regular starters (Bayrak 1 of 11, Sundberg 4 of 11), so neither side's expected goals are adjusted.",
+                                "This season's Süper Lig has produced away wins in 36% of 99 matches and draws in only 16%, so an away result is less unusual than last season's 29% away-win rate."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.2743,
+                        0.2768,
+                        0.4489
+                    ],
+                    "p_adj": [
+                        0.257986,
+                        0.279341,
+                        0.462673
+                    ],
+                    "p_llm": [
+                        0.345418,
+                        0.262929,
+                        0.391653
+                    ],
+                    "p_shadow": [
+                        0.274322,
+                        0.276815,
+                        0.448863
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "erzurum-bb-vs-goztepe-2026-11-22"
+            },
+            "sha256": "389a63b72e89f1f7031ff6f21380234162e90b4424f19c66403d544cc63d9b99",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0018-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "braga",
                 "batch_id": "2026-11-20T0231Z-model-predict",
                 "competition": "taca-de-portugal",
