@@ -7,6 +7,1672 @@
     "records": [
         {
             "record": {
+                "away": "hamburger-sv",
+                "batch_id": "2026-11-20T2205Z-model-predict",
+                "competition": "bundesliga",
+                "cutoff_utc": "2026-11-20T22:05:45Z",
+                "data_status": "limited_context",
+                "fixture_id": "bl-2627-0094",
+                "home": "werder-bremen",
+                "inputs": {
+                    "elo_away": 1362.1,
+                    "elo_home": 1436,
+                    "lambda_away": 1.14351,
+                    "lambda_home": 1.681759,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-21T17:07:32Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.491186,
+                        0.257948,
+                        0.250866
+                    ],
+                    "p_elo": [
+                        0.498307,
+                        0.271152,
+                        0.230541
+                    ],
+                    "p_market": [
+                        0.59769,
+                        0.21474,
+                        0.187571
+                    ],
+                    "p_stat": [
+                        0.486575,
+                        0.2683,
+                        0.245125
+                    ],
+                    "retained_mass": 0.999999999959,
+                    "rho": -0.072664,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0521,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T16:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T17:10:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5652,
+                    "draw_risk": false,
+                    "over_2_5": 0.5328,
+                    "p": [
+                        0.4866,
+                        0.2683,
+                        0.2451
+                    ],
+                    "p_display": [
+                        48.7,
+                        26.8,
+                        24.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1272,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.095,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0906,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0831,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0703,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.23,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Hamburg are missing regular starters Torunarigha, Lokonga and Remberg plus forward Poulsen (20% of their goals), and several more are doubtful on one source each.",
+                                "Bremen are unbeaten at home (3W 1D, 10 goals in 4), while Hamburg have lost 4 of 5 away and conceded 13.",
+                                "Hamburg are only 6 points above the relegation zone and need points more than Bremen, who are 9 clear."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.88,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.22,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Hamburg are missing several regular starters, including midfielder Albert Sambi Lokonga and forward Yussuf Poulsen, whose 2 league goals are 20% of their total; defender Miro Muheim, who has 3 of their 10 league goals, is also doubtful.",
+                                "Werder Bremen are unbeaten at home this season with 3 wins and 1 draw, while Hamburg have lost 4 of 5 away games and conceded 13 goals on the road.",
+                                "Werder Bremen sit 6th and are 9 points clear of the relegation zone, while Hamburg are only 6 points above it, so the visitors need a result more urgently."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.88,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.21,
+                                "home": 0.59
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Hamburger SV are missing confirmed regular starters Jordan Torunarigha, Albert Sambi Lokonga and Nicolai Remberg, plus Yussuf Poulsen who has scored 20% of their league goals.",
+                                "One source also lists Hamburger SV regular starter Nicolas Capaldo and defender Miro Muheim, who accounts for 30% of their league goals, as doubtful, while Werder Bremen lack confirmed squad players including Mitchell Weiser.",
+                                "Werder Bremen are unbeaten at home with three wins and ten goals scored in four games, giving them a clear edge over a Hamburger SV side that has lost four of five away trips while conceding 13 goals."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.87,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.23,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Hamburg are without regular starters Torunarigha, Lokonga and Remberg plus Poulsen, whose two goals are 20% of their league output; their further doubtful players are reported by one source.",
+                                "Bremen's unbeaten home league record (3W, 1D, 10-5 goals) meets an HSV away record of four defeats in five and 4-13 goals, favouring the hosts.",
+                                "Werder won their last two home league meetings with Hamburg, 1-0 and 3-1."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 0.91,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.25,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Hamburg are without regular starters Lokonga, Remberg and Torunarigha, plus Poulsen (20% of their league goals); other listed Hamburg players are only doubtful on one source and expected back, so they are not counted as absences.",
+                                "Hamburg have won only one of five away league games and conceded 13, so this looks more like another low-scoring away trip than a typical mid-table visit.",
+                                "Bremen won the last league meeting at Weserstadion 3-1, in line with their recent home league results against Hamburg."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5078,
+                        0.2624,
+                        0.2298
+                    ],
+                    "p_adj": [
+                        0.495955,
+                        0.2713,
+                        0.232745
+                    ],
+                    "p_llm": [
+                        0.55459,
+                        0.228251,
+                        0.217159
+                    ],
+                    "p_shadow": [
+                        0.507778,
+                        0.262403,
+                        0.229819
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "werder-bremen-vs-hamburger-sv-2026-11-22"
+            },
+            "sha256": "0402a7ed28f859d3109896f4ab33762da38988ee76d8642ab35d32bb3f09e213",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/bl-2627-0094-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fc-copenhagen",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "danish-superliga",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "dk-2627-0005",
+                "home": "fc-nordsjaelland",
+                "inputs": {
+                    "elo_away": 1692.5,
+                    "elo_home": 1604.6,
+                    "lambda_away": 1.631765,
+                    "lambda_home": 1.426492,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-21T17:07:32Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.32666,
+                        0.257315,
+                        0.416025
+                    ],
+                    "p_elo": [
+                        0.328855,
+                        0.285059,
+                        0.386086
+                    ],
+                    "p_market": [
+                        0.376275,
+                        0.267665,
+                        0.35606
+                    ],
+                    "p_stat": [
+                        0.327718,
+                        0.269479,
+                        0.402802
+                    ],
+                    "retained_mass": 0.999999999701,
+                    "rho": -0.083715,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T17:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T17:10:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6231,
+                    "draw_risk": false,
+                    "over_2_5": 0.5853,
+                    "p": [
+                        0.3277,
+                        0.2695,
+                        0.4028
+                    ],
+                    "p_display": [
+                        32.8,
+                        26.9,
+                        40.3
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1241,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0864,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0782,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0666,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0653,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.27,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Copenhagen lead on 32 points, level with 2nd, while 4th-placed Nordsjælland are 9 points off the top, so the visitors have more to protect.",
+                                "Copenhagen's Maseko has started only 2 of 14 league games (2 goals, 7% of the team's), so his absence changes little; Nordsjælland's Alio and Mohammed are out, but the sheet gives no role details and lists one source each.",
+                                "Copenhagen won 4 of the last 5 league meetings, including 2-0 on 3 September, though Nordsjælland won the February fixture."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.27,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "FC Copenhagen are missing Thapelo Maseko, a forward with 2 league goals, but he has started only 2 of 14 league games, so the attack is barely weakened; FC Nordsjælland's absentees Alio and Mohammed are single-source and their roles are unc",
+                                "FC Copenhagen are top and level on points with 2nd, so they need the points to stay ahead in the title race, while FC Nordsjælland are 9 points behind the leaders and have little pressure from below.",
+                                "FC Copenhagen have won 4 of the last 5 league meetings, including a 2-0 home win in September, and FC Nordsjælland have lost their last two home games against them."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.25,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "FC Copenhagen are level on points with second place at the top of the table, giving them an urgent need to win to defend their lead while FC Nordsjælland sit nine points back in fourth.",
+                                "Both teams return well-rested after a 14-day break, though FC Copenhagen must manage their squad ahead of a European trip to Inter D'Escaldes just four days later.",
+                                "All four reported injuries across both clubs are backed by only one source and do not involve confirmed regular league starters, leaving expected goal adjustments unchanged."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.26,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Copenhagen's Maseko is out after only two league starts but has scored two league goals; the absence is reported by one source, so it slightly reduces their attacking expectation.",
+                                "Copenhagen are top but level on points with second, making a win valuable in the title race.",
+                                "Copenhagen have won four of their past five matches, while Nordsjælland have been more volatile despite their strong home record."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.29,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Unlike a normal league week, Copenhagen have a Conference League trip four days later, so this away match sits just before a short turnaround even though both sides have had 14 days' rest.",
+                                "Copenhagen are top and level with second, so they need the points to stay clear, while Nordsjælland are 9 behind the leaders and 12 above the drop zone.",
+                                "Nordsjælland have lost their last two home league meetings with Copenhagen, 0-1 and 1-3, and lost 2-0 in the sides' September meeting."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3212,
+                        0.2698,
+                        0.4091
+                    ],
+                    "p_adj": [
+                        0.329189,
+                        0.270016,
+                        0.400794
+                    ],
+                    "p_llm": [
+                        0.289895,
+                        0.267897,
+                        0.442209
+                    ],
+                    "p_shadow": [
+                        0.32116,
+                        0.269788,
+                        0.409053
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "fc-nordsjaelland-vs-fc-copenhagen-2026-11-22"
+            },
+            "sha256": "7010c3143f76034bccb0fbd65f496e36db1aab2431097e990275c763c1021b14",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/dk-2627-0005-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "iraklis",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0005",
+                "home": "olympiacos-gr",
+                "inputs": {
+                    "elo_away": 1320.1,
+                    "elo_home": 1794.1,
+                    "lambda_away": 0.510559,
+                    "lambda_home": 2.028823,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-21T17:07:32Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.719924,
+                        0.211775,
+                        0.068301
+                    ],
+                    "p_elo": [
+                        0.820843,
+                        0.141203,
+                        0.037953
+                    ],
+                    "p_market": [
+                        0.834242,
+                        0.117761,
+                        0.047997
+                    ],
+                    "p_stat": [
+                        0.782298,
+                        0.169373,
+                        0.048329
+                    ],
+                    "retained_mass": 0.99999999993,
+                    "rho": -0.167281,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T17:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T17:10:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.3469,
+                    "draw_risk": false,
+                    "over_2_5": 0.4879,
+                    "p": [
+                        0.7823,
+                        0.1694,
+                        0.0483
+                    ],
+                    "p_display": [
+                        78.2,
+                        17,
+                        4.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1765,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1591,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1194,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0901,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0763,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.23,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Olympiacos are missing midfielders Puerta (6 league starts) and Hezze (4) plus forward El Kaabi (3), all from one source, which trims depth slightly; Iraklis' two injured players have no listed role.",
+                                "Olympiacos are 4 points behind the leaders and need the win, while Iraklis in 9th are only 4 points above the relegation zone.",
+                                "Olympiacos have conceded 5 goals in 10 league games and won 3 of 5 at home, while Iraklis have drawn 3 of 6 away but score little."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Olympiacos are missing regular midfielders Puerta and Hezze plus forward El Kaabi, which slightly reduces their attacking depth, though their squad remains far stronger than Iraklis's.",
+                                "Olympiacos sit 4 points behind the leaders and need a home win to keep the title race close, while Iraklis are only 4 points above the relegation zone and also need points, but the gap in quality is large.",
+                                "Olympiacos have won 8 of their last 10 in all competitions and are unbeaten in that run, while Iraklis have won only 2 of 10 league games and have lost their last two home matches."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.16,
+                                "home": 0.76
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Olympiacos regular midfielder Gustavo Puerta along with squad options Santiago Hezze and Ayoub El Kaabi as out injured, slightly trimming the hosts' attacking and midfield depth.",
+                                "Although both teams arrive after a 14-day break, Olympiacos face AC Milan in the UEFA Europa League just four days later, which could encourage squad management once ahead.",
+                                "Olympiacos have conceded only two goals across five home league games and are unbeaten in their last ten matches overall, pointing to a controlled home win against an Iraklis side winless in four."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.91,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.21,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Olympiacos have four injury absences reported by one source, including regular-starting midfielder Gustavo Puerta and forward Ayoub El Kaabi, reducing their attacking expectation.",
+                                "Olympiacos are four points off the lead and have a direct need to keep pace, while Iraklis are only four points above relegation.",
+                                "Olympiacos have conceded only two goals in five home league matches, a difficult platform for an Iraklis side with one away win in six."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Every absence is single-source only: Olympiacos lose regular midfielder Puerta (6 of 10 league starts) plus Hezze, El Kaabi (3 starts) and Yazıcı, which trims midfield options rather than a proven main scorer, while Iraklis’s two outs have ",
+                                "Both sides have had 14 rest days and only one match in the last fortnight, but Olympiacos face AC Milan in the Europa League four days later, so this league game sits just before a bigger European fixture.",
+                                "Iraklis are only 4 points above the relegation places and need points, while Olympiacos, 4 behind the leaders, can play from a position of strength at home."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7596,
+                        0.1809,
+                        0.0595
+                    ],
+                    "p_adj": [
+                        0.773725,
+                        0.17558,
+                        0.050695
+                    ],
+                    "p_llm": [
+                        0.690209,
+                        0.19931,
+                        0.110481
+                    ],
+                    "p_shadow": [
+                        0.759607,
+                        0.180888,
+                        0.059505
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "olympiacos-gr-vs-iraklis-2026-11-22"
+            },
+            "sha256": "c7b25c097c495cce686c29672dc83c389e345779e65c0b55c40ab0017bc93269",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0005-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "stade-rennais",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "ligue-1",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0046",
+                "home": "lorient",
+                "inputs": {
+                    "elo_away": 1553.4,
+                    "elo_home": 1419.7,
+                    "lambda_away": 1.517716,
+                    "lambda_home": 1.50913,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-21T16:05:43Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.372676,
+                        0.250887,
+                        0.376437
+                    ],
+                    "p_elo": [
+                        0.284303,
+                        0.28118,
+                        0.434517
+                    ],
+                    "p_market": [
+                        0.327616,
+                        0.271566,
+                        0.400818
+                    ],
+                    "p_stat": [
+                        0.327053,
+                        0.267313,
+                        0.405635
+                    ],
+                    "retained_mass": 0.999999999814,
+                    "rho": -0.041071,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0083,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T16:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T17:10:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6165,
+                    "draw_risk": false,
+                    "over_2_5": 0.5772,
+                    "p": [
+                        0.3271,
+                        0.2673,
+                        0.4056
+                    ],
+                    "p_display": [
+                        32.7,
+                        26.7,
+                        40.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1231,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0908,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0743,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0735,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0677,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Rennes' Lepaul, who has 7 of the side's 21 league goals (33%), is doubtful on two sources, and Frankowski (8 starts) is out on one source; Lorient lack forward Baldé and defender Katseris.",
+                                "Lorient won the last four league meetings with Rennes, including 4-0 at home and 2-0 away in January 2026.",
+                                "Both sides have had 14 rest days, but Rennes face a Europa League trip to Nijmegen 4 days later while Lorient play PSG 6 days later."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Rennes' top scorer Estéban Lepaul (7 league goals, 33% of their total) is doubtful, and regular midfielder Frankowski is out, weakening their attack.",
+                                "Lorient have won the last five league meetings, including a 4-0 home win in August 2025, so they have a clear psychological edge in this derby.",
+                                "Rennes have lost three of their last four away league games and conceded 14 goals in 4 away matches, while Lorient have kept three clean sheets in their last five home games."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.95,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Stade Rennais have top scorer Estéban Lepaul (33% of their league goals) doubtful according to two sources and regular starter Przemysław Frankowski out according to one source, while Lorient miss three-assist defender Panos Katseris (two s",
+                                "Stade Rennais travel for a Europa League match just four days after this fixture, which could prompt rotation compared to Lorient who have six days before their next game.",
+                                "Stade Rennais have conceded 14 goals across four away league matches ( losing three), giving Lorient's compact defense (eight goals conceded in 10 games) a clear path to points at home."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.9,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.27,
+                                "home": 0.41
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Rennes have regular midfielder Frankowski out and leading scorer Lepaul doubtful (7 league goals), while Lorient miss Katseris' three assists; Frankowski and Lorient forward Baldé are listed by one source.",
+                                "Lorient have won each of the last five league meetings with Rennes, including their last two home fixtures in this rivalry.",
+                                "Rennes have lost all three league away matches and conceded 14 goals in four away games, giving Lorient a meaningful home opportunity despite their modest scoring record."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.29,
+                                "home": 0.41
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Unlike a typical mid-table meeting, Lorient have won the last five league games against Rennes, including 4-0 at home and 2-0 away.",
+                                "Rennes have only one win from four away league games and have conceded 14, so an away result is less likely than the league's usual away-win rate.",
+                                "Lepaul, with 33% of Rennes' league goals, is only doubtful on two sources, Frankowski's absence is one source, and Lorient's Baldé is one source and just 11% of their goals."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3453,
+                        0.2739,
+                        0.3808
+                    ],
+                    "p_adj": [
+                        0.329932,
+                        0.271929,
+                        0.398139
+                    ],
+                    "p_llm": [
+                        0.407976,
+                        0.277998,
+                        0.314026
+                    ],
+                    "p_shadow": [
+                        0.345259,
+                        0.273938,
+                        0.380803
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "lorient-vs-stade-rennais-2026-11-22"
+            },
+            "sha256": "4a2ee651c3080dc1f736d677b06afe10b08cd92091c085a6e83cac41ade90aab",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0046-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "manchester-united",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0105",
+                "home": "liverpool",
+                "inputs": {
+                    "elo_away": 1508.4,
+                    "elo_home": 1639.1,
+                    "lambda_away": 1.211893,
+                    "lambda_home": 2.008304,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-21T17:07:32Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.553243,
+                        0.224927,
+                        0.22183
+                    ],
+                    "p_elo": [
+                        0.556963,
+                        0.257305,
+                        0.185733
+                    ],
+                    "p_market": [
+                        0.57049,
+                        0.220521,
+                        0.208989
+                    ],
+                    "p_stat": [
+                        0.557736,
+                        0.240029,
+                        0.202235
+                    ],
+                    "retained_mass": 0.99999999994,
+                    "rho": -0.050969,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T16:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T17:10:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6159,
+                    "draw_risk": false,
+                    "over_2_5": 0.6196,
+                    "p": [
+                        0.5577,
+                        0.2401,
+                        0.2022
+                    ],
+                    "p_display": [
+                        55.8,
+                        24,
+                        20.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1091,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0984,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0812,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0759,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0659,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Manchester United have many doubtful defenders, including Maguire (started 10 of 10) and Shaw, plus Baleba and Ugarte out, though most are listed on one source only.",
+                                "United are 18th, 1 point from safety, while Liverpool are 4th and 9 points off the lead, so both need points before a Champions League match 3 days later.",
+                                "United have lost 4 of their last 6 in all competitions and conceded 19 league goals, though they drew 4-4 at home to Villa."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Manchester United have several key defensive doubts: Harry Maguire has started all 10 league games and Luke Shaw has started 5, while Patrick Dorgu and Ayden Heaven are also doubtful, weakening a back line that has conceded 19 goals in 10 l",
+                                "Manchester United are 18th and in the relegation zone, 1 point from safety, so they need points badly, but Liverpool are 4th and 10 points above the drop, with less desperation and more quality.",
+                                "Liverpool have won 4 of their last 5 league matches, while Manchester United have not won away in the league this season and have lost 4 of their last 5 league games."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Manchester United arrive in the relegation zone on 8 points and 1 point from safety, whereas 4th-placed Liverpool are 10 points clear of the bottom three.",
+                                "Manchester United's defence and midfield are disrupted with Manuel Ugarte and Carlos Baleba out, while regular starters Luke Shaw (two sources) and ever-present Harry Maguire (one source) are doubtful.",
+                                "Manchester United are winless in five away league matches and have conceded 19 goals in 10 games, giving Liverpool a clear chance to improve on a modest home record of one win in five."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.93,
+                            "m_home": 1.04,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.27,
+                                "home": 0.53
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "United are without midfield option Carlos Baleba and Manuel Ugarte, while regular-starting defender Harry Maguire is doubtful from one source, weakening their defensive spine.",
+                                "United are in the relegation zone and one point from safety, so the visitors have immediate need for a result despite Liverpool's higher league position.",
+                                "Liverpool's one league home win in five and United's three away draws in five point to a competitive match rather than a clear home rout."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.3,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Liverpool’s Anfield record is only 1 win, 2 draws and 2 losses with 4 goals scored, so the table gap does not translate into a typical home win.",
+                                "United are 18th and 1 point from safety, so they need the result more than 4th-placed Liverpool, who are 9 points off the leaders.",
+                                "United won the last two league meetings, including 1-2 at Anfield, which supports another tight game rather than a home rout."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5584,
+                        0.2439,
+                        0.1976
+                    ],
+                    "p_adj": [
+                        0.56443,
+                        0.239518,
+                        0.196051
+                    ],
+                    "p_llm": [
+                        0.53418,
+                        0.262039,
+                        0.203782
+                    ],
+                    "p_shadow": [
+                        0.558424,
+                        0.24394,
+                        0.197636
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "liverpool-vs-manchester-united-2026-11-22"
+            },
+            "sha256": "a31d86b08d10e18dd6fdbe7f361c19b05f4fd84fc04a44a04d33cb45c97525cb",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0105-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "frosinone",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0025",
+                "home": "ac-milan",
+                "inputs": {
+                    "elo_away": 1310.8,
+                    "elo_home": 1622.9,
+                    "lambda_away": 1.2785,
+                    "lambda_home": 2.027637,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 24,
+                        "captured_utc": "2026-11-21T17:07:32Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.546492,
+                        0.216005,
+                        0.237503
+                    ],
+                    "p_elo": [
+                        0.718658,
+                        0.196981,
+                        0.084362
+                    ],
+                    "p_market": [
+                        0.624765,
+                        0.198791,
+                        0.176444
+                    ],
+                    "p_stat": [
+                        0.650485,
+                        0.208091,
+                        0.141424
+                    ],
+                    "retained_mass": 0.999999999931,
+                    "rho": -0.009464,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T17:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T17:10:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6211,
+                    "draw_risk": false,
+                    "over_2_5": 0.6491,
+                    "p": [
+                        0.6505,
+                        0.2081,
+                        0.1414
+                    ],
+                    "p_display": [
+                        65.1,
+                        20.8,
+                        14.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "2-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1147,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0924,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0897,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0874,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0775,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.88,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.22,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frosinone are without Antonio Raimondo (8 league goals, 33% of the team's) and suspended regular defender Gabriele Bracaglia, which weakens both attack and back line.",
+                                "AC Milan miss Samuel Chukwueze, a regular starter, plus Loftus-Cheek, Saelemaekers and Gabbia, but these are mostly rotation players, and the Terracciano and Tomori doubts are single-source.",
+                                "Milan have won 4 of 5 at home with 13 goals, while Frosinone have taken 5 points from 5 away games and sit 5 points further from the leaders."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.88,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.2,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frosinone are missing regular starters Antonio Raimondo (8 league goals, 33% of their goals) and Gabriele Bracaglia (10 league starts), which removes their main scorer and a key defender.",
+                                "AC Milan are without regular starter Samuel Chukwueze (6 league starts, 2 assists) and have several squad players out, but their core XI is largely intact.",
+                                "AC Milan have won 4 of 5 home league games this season, while Frosinone have won only 1 of 5 away league games."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.88,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.19,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Frosinone are missing suspended regular defender Gabriele Bracaglia and injured top scorer Antonio Raimondo, removing 33% of their league goals.",
+                                "AC Milan are without regular starting forward Samuel Chukwueze and several squad players according to one source, slightly reducing their attacking depth.",
+                                "Even with Frosinone performing well in sixth place, their solitary win in five away matches leaves them vulnerable against an AC Milan side with four wins from five at San Siro."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.88,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.22,
+                                "home": 0.6
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frosinone are without Raimondo, whose 8 goals are 33% of their league total, while regular-starting defender Bracaglia is suspended; both absences have only one source.",
+                                "Milan miss regular-starting forward Chukwueze (2 assists) plus Loftus-Cheek, but Frosinone's depleted defence offsets much of the attacking loss.",
+                                "Milan's 4 wins from 5 home league matches and 13 home goals make them strong favourites against a Frosinone side with one away win in five."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.88,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frosinone are without regular starter Raimondo, listed out by one source with 8 league goals (33% of the side's), and regular defender Bracaglia is suspended; Milan's list is one source only and is mostly squad players plus Chukwueze (6 sta",
+                                "Milan won the last three league meetings, including 2-0 and 3-1 at home, so this is not a level historical contest.",
+                                "Milan have taken 12 of 15 home league points (13 goals), while Frosinone have only one away league win in five, which outweighs the four-point table gap."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6482,
+                        0.2101,
+                        0.1417
+                    ],
+                    "p_adj": [
+                        0.65907,
+                        0.208207,
+                        0.132723
+                    ],
+                    "p_llm": [
+                        0.601328,
+                        0.216069,
+                        0.182603
+                    ],
+                    "p_shadow": [
+                        0.648184,
+                        0.21011,
+                        0.141706
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "ac-milan-vs-frosinone-2026-11-22"
+            },
+            "sha256": "7b71218e7fdc4723730f1472ecd8ed8f7e8192a9418b80d5672084a33713a80d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0025-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "padova",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0010",
+                "home": "arezzo",
+                "inputs": {
+                    "elo_away": 1130.2,
+                    "elo_home": 1076.3,
+                    "lambda_away": 1.316931,
+                    "lambda_home": 1.002875,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T16:05:43Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.269063,
+                        0.307982,
+                        0.422955
+                    ],
+                    "p_elo": [
+                        0.363405,
+                        0.285683,
+                        0.350912
+                    ],
+                    "p_market": [
+                        0.404222,
+                        0.288078,
+                        0.3077
+                    ],
+                    "p_stat": [
+                        0.313877,
+                        0.29734,
+                        0.388783
+                    ],
+                    "retained_mass": 0.999999999836,
+                    "rho": -0.116209,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T16:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T17:10:25Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4772,
+                    "draw_risk": false,
+                    "over_2_5": 0.4121,
+                    "p": [
+                        0.3139,
+                        0.2973,
+                        0.3888
+                    ],
+                    "p_display": [
+                        31.4,
+                        29.7,
+                        38.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1399,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1094,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.1051,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0974,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0786,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.31,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Padova are missing four injured forwards (Lasagna, Caprari, Zanimacchia, Buonaiuto), though none is a regular starter and each is single-source, so attacking output dips only slightly; Arezzo's absences are two rotation midfielders.",
+                                "Arezzo are only 2 points above the relegation zone and need points, while Padova are 1 point off the play-offs, so both have something to fight for.",
+                                "Arezzo have scored 3 goals in 5 home games (0W 2D 3L) and lost 5 of their last 7, so a home win looks less likely than the league's usual base rate suggests."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.33,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Padova are missing four forwards including Gianluca Caprari, who started 4 of 11 league games, and Kevin Lasagna, so their attack is weakened; Arezzo's absences are only squad midfielders.",
+                                "Padova sit 1 point off the promotion play-off places and need the points more, while Arezzo are only 2 points above the relegation zone and have yet to win at home this season.",
+                                "Arezzo have lost 6 of their last 10 and are winless in 5 home league games, scoring just 3 goals at home, which makes a home win less likely than the league base rate."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.34,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides have an immediate stake in the table, with Arezzo sitting just two points above the relegation zone and Padova one point outside the promotion play-off places.",
+                                "Arezzo are winless at home in five league matches and have failed to score in four of their last five games overall, whereas Padova arrive on a four-match unbeaten run.",
+                                "All reported absences for both clubs are backed by only one source and involve non-regular starters with four or fewer league starts."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.9,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.34,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Padova have four injured attacking players, including Caprari with four league starts, though all absences are reported by one source, reducing their expected output.",
+                                "Arezzo are only two points above the relegation zone, so the home side have particular need to halt a poor run.",
+                                "Arezzo have no home league win in five and have scored only three home goals, which gives Padova a clear edge despite their own attacking absences."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.35,
+                                "home": 0.26
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Arezzo sit only 2 points above the relegation zone, so avoiding defeat matters more than in a normal mid-table game, while Padova are 1 point off the play-off places.",
+                                "Arezzo have not won any of five home games and have scored only 3 there, so home advantage is thin against a side that has already won twice away.",
+                                "This season Serie B home wins are only 36%, with draws and away wins both at 32%, which fits a low-scoring away edge rather than a strong home favourite."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3095,
+                        0.3075,
+                        0.3829
+                    ],
+                    "p_adj": [
+                        0.317249,
+                        0.300967,
+                        0.381784
+                    ],
+                    "p_llm": [
+                        0.279473,
+                        0.334202,
+                        0.386325
+                    ],
+                    "p_shadow": [
+                        0.309513,
+                        0.307544,
+                        0.382943
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "arezzo-vs-padova-2026-11-22"
+            },
+            "sha256": "d2801ab882c7c529e985607fd0aa5d3af53b68e3679e82926014ba6185214435",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0010-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "fortuna-sittard",
                 "batch_id": "2026-11-21T0014Z-model-predict",
                 "competition": "eredivisie",
@@ -238,7 +1904,7 @@
                 "slug": "go-ahead-eagles-vs-fortuna-sittard-2026-11-22"
             },
             "sha256": "7943fc304d9498fd35ef02fa968fa40249095cf63d84dabf4bc3cd9971576413",
-            "commit": "pending",
+            "commit": "ae17a35f87d9135e802d9433856442a969cb6e03",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0021-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +2142,7 @@
                 "slug": "panathinaikos-gr-vs-ofi-crete-gr-2026-11-22"
             },
             "sha256": "9d1e77d8a2c2e1c4bb4d8c3a11ae1e9649f4f69af4230c0dfc735138dfa5cdc2",
-            "commit": "pending",
+            "commit": "ae17a35f87d9135e802d9433856442a969cb6e03",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0004-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +2380,7 @@
                 "slug": "racing-santander-vs-real-sociedad-2026-11-22"
             },
             "sha256": "e528faeae98516d073be4c17b9f7a6d9ed51b1b439656bebccabb5d3e9926e15",
-            "commit": "pending",
+            "commit": "ae17a35f87d9135e802d9433856442a969cb6e03",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0105-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +2618,7 @@
                 "slug": "sporting-gijon-vs-las-palmas-2026-11-22"
             },
             "sha256": "f5a9f727da5458048e915b2d7dd4c8bb81a4b1f26480fc70c8520ee3b062ac80",
-            "commit": "pending",
+            "commit": "ae17a35f87d9135e802d9433856442a969cb6e03",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0018-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +2856,7 @@
                 "slug": "trabzonspor-vs-eyupspor-2026-11-22"
             },
             "sha256": "707a3f0770ecf9c02357764d35650f2938f22bad9e51b619dd515b8045231027",
-            "commit": "pending",
+            "commit": "ae17a35f87d9135e802d9433856442a969cb6e03",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0021-r1.json",
             "status": "pending",
             "result": null
@@ -15524,8 +17190,12 @@
             "sha256": "d57138de6286b022fc603dc4ab6cdf297d197a964f1a62af04b620323088f8f3",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0002-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1476
+            }
         },
         {
             "record": {
@@ -15762,8 +17432,12 @@
             "sha256": "c52e70bdd3e875be44bdc1fc6c6135896636982352dcf2a1db1fc1a343fb23db",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0087-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-5",
+                "correct": true,
+                "rps": 0.1385
+            }
         },
         {
             "record": {
@@ -16002,8 +17676,12 @@
             "sha256": "22bb738829f69d3d2a9038aa24f11603093913cf5303e5b87bb776a034a64d13",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0088-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-0",
+                "correct": true,
+                "rps": 0.0551
+            }
         },
         {
             "record": {
@@ -16240,8 +17918,12 @@
             "sha256": "fa597c9512ff63963594134b94e100fc62a1188ec40c98be689d38ffe2029458",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0089-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.106
+            }
         },
         {
             "record": {
@@ -16478,8 +18160,12 @@
             "sha256": "263de3f1da3a8212e211ade10b690edd400c7d3163530f8c963cf5ae7f66602c",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0090-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1942
+            }
         },
         {
             "record": {
@@ -16718,8 +18404,12 @@
             "sha256": "79a78f4dcf83c5f459c40fee5bd42ff8f807b8bdea1468a5f4b1a79c0a81c68a",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0091-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.2188
+            }
         },
         {
             "record": {
@@ -16956,8 +18646,12 @@
             "sha256": "968c986184318c3aa4fb3fe3be266ea45482143c8d3bf18165aaabe23299dbc4",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0028-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1318
+            }
         },
         {
             "record": {
@@ -17194,8 +18888,12 @@
             "sha256": "576315d99454d2b20085a87c597f33f5800b9236205425897922a335047b4cca",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0029-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.2001
+            }
         },
         {
             "record": {
@@ -17432,8 +19130,12 @@
             "sha256": "f4f29773fe5850b09ce1157334a2123957dfca51049132ba1a0388f8721fe35a",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0030-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.1256
+            }
         },
         {
             "record": {
@@ -17670,8 +19372,12 @@
             "sha256": "c623838f7b0c88683e036b9a2c564a57584cd6ad61103b85a49c3df87ae18f0a",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0031-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-0",
+                "correct": true,
+                "rps": 0.1354
+            }
         },
         {
             "record": {
@@ -17908,8 +19614,12 @@
             "sha256": "b57f4ba517461e88504beef3238c810311d3dc451276ba97984ad8540d0c96eb",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0032-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.2634
+            }
         },
         {
             "record": {
@@ -18146,8 +19856,12 @@
             "sha256": "cbdc4bca9b8f4262688af932a2ba953c9724d34a520f25b78350c9e188ed882d",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0033-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1269
+            }
         },
         {
             "record": {
@@ -18384,8 +20098,12 @@
             "sha256": "69d38385fc7f22320f91ba6bbd243dbadad1ddb3bc50e97ac8e53cf9a27fd87c",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0034-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.2487
+            }
         },
         {
             "record": {
@@ -18622,8 +20340,12 @@
             "sha256": "e8d0e24762e812bd10bf014d2032e62c20f5dc78afd78ecce2babfa295d4776c",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0035-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-1",
+                "correct": true,
+                "rps": 0.084
+            }
         },
         {
             "record": {
@@ -18860,8 +20582,12 @@
             "sha256": "d401fc91beec7cf4f8ed5603eb86753217feb0fc12e1dc162862fe854b785a78",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0036-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1574
+            }
         },
         {
             "record": {
@@ -19098,8 +20824,12 @@
             "sha256": "358e5b4fbb0e49ffc3ba06c205c41f8a9838f5980bacb5b323c079f3029fc35b",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0037-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-2",
+                "correct": true,
+                "rps": 0.2073
+            }
         },
         {
             "record": {
@@ -19336,8 +21066,12 @@
             "sha256": "fdcafcc6fc1cb18cc10e491cf3ec9df9e00c26244a5a69aad572a31ea56fdc9b",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0038-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-3",
+                "correct": true,
+                "rps": 0.1397
+            }
         },
         {
             "record": {
@@ -19574,8 +21308,12 @@
             "sha256": "3405d0bf2e4c8b08b39361c84d6f70c19f08a01ea6f12539df60571a4410e97c",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0039-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-1",
+                "correct": false,
+                "rps": 0.5004
+            }
         },
         {
             "record": {
@@ -19812,8 +21550,12 @@
             "sha256": "b6474e168970d4618c04e5d7744312c4a4822df57e52a76dbd60ceb5b45047f5",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0040-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-1",
+                "correct": true,
+                "rps": 0.1146
+            }
         },
         {
             "record": {
@@ -20050,8 +21792,12 @@
             "sha256": "333c9879149819517f9f928d5828ddb9785c21f7d381d1ee41193633fa166ad8",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0041-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1603
+            }
         },
         {
             "record": {
@@ -20288,8 +22034,12 @@
             "sha256": "b164ad566c4d2059f1261420e56cdff897ad592aee9f3fbd1b57e2320894d49e",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0042-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.2455
+            }
         },
         {
             "record": {
@@ -20526,8 +22276,12 @@
             "sha256": "b61fd5595b9c28902e91a8df471b8bd75e9fefdd6f9e73e294bacff8e9ad8cca",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0043-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-3",
+                "correct": true,
+                "rps": 0.2457
+            }
         },
         {
             "record": {
@@ -20764,8 +22518,12 @@
             "sha256": "b07436f7bfbcafaa7b91c40726b33e58dba518a52cd4764b90cf562ab25f5951",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0044-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-2",
+                "correct": false,
+                "rps": 0.4502
+            }
         },
         {
             "record": {
@@ -21002,8 +22760,12 @@
             "sha256": "4d79e4733e196b43fec995863668296a8bd0e674ccb4a986cba9feceab82dcbb",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0098-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.1621
+            }
         },
         {
             "record": {
@@ -21240,8 +23002,12 @@
             "sha256": "400a205ef06c76e3379221c3b22b9219639537f0d354119a5b6701512d36e064",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0099-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1916
+            }
         },
         {
             "record": {
@@ -21478,8 +23244,12 @@
             "sha256": "1c493f4a48ba8343a0bf448135cd559b3deb5d9cc9065fd46c1a5c03eafeead3",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0100-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-4",
+                "correct": false,
+                "rps": 0.4175
+            }
         },
         {
             "record": {
@@ -21716,8 +23486,12 @@
             "sha256": "c30e7e436b758241c5e6dab0e330418cce03791327f72622f8a7c9d0f4406a8e",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0101-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "3-2",
+                "correct": false,
+                "rps": 0.2782
+            }
         },
         {
             "record": {
@@ -21954,8 +23728,12 @@
             "sha256": "3a1d8e97798227967ad813b9243303e53b0caf8c5f37dff20cbc87258856a478",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0102-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.1069
+            }
         },
         {
             "record": {
@@ -22192,8 +23970,12 @@
             "sha256": "cca919e1ba61a538df66985ea64313ec953d1de8812001c10f4c3ae5955c373a",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0008-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-1",
+                "correct": true,
+                "rps": 0.0228
+            }
         },
         {
             "record": {
@@ -22430,8 +24212,12 @@
             "sha256": "189e9d4fb7a9f0d6b0257422e4bc20cb3973c4edddc46b2fa0b56bc3d54b6e44",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0009-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-1",
+                "correct": true,
+                "rps": 0.1173
+            }
         },
         {
             "record": {
@@ -22668,8 +24454,12 @@
             "sha256": "016cd0dadef9800a73a747b86bc6cb21c3dfe41debb0660c5cc29b5b57bd524b",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0010-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-4",
+                "correct": false,
+                "rps": 0.4448
+            }
         },
         {
             "record": {
@@ -22906,8 +24696,12 @@
             "sha256": "58cb5c2decdd79936a4e2dbfc5a0ec42512e0b1f2c8b129b2ccc2ebcec531128",
             "commit": "5e663c04e61f4ea0413530b5580bd25fe488fe9f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0011-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-4",
+                "correct": false,
+                "rps": 0.3098
+            }
         },
         {
             "record": {
