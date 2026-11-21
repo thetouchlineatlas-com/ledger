@@ -238,7 +238,7 @@
                 "slug": "marseille-vs-le-mans-2026-11-22"
             },
             "sha256": "82bf457e2d4a303a5edc40999e80fe9dd84b13d7a34b7dc69f0e9987a01210b5",
-            "commit": "pending",
+            "commit": "4bccbb58e988c956edd399da8912b8a0b227724d",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0047-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +476,7 @@
                 "slug": "getafe-vs-atletico-madrid-2026-11-22"
             },
             "sha256": "e5df50daae7b4c04ede0859a0ae8409a4de7e1b37267113fc4a42937a5361987",
-            "commit": "pending",
+            "commit": "4bccbb58e988c956edd399da8912b8a0b227724d",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0107-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +714,7 @@
                 "slug": "burgos-vs-albacete-2026-11-22"
             },
             "sha256": "e5fdc24a8b92412f9bc9d0fc897e9cd5ab5543f6c73bb527b562c2c1ada07f0c",
-            "commit": "pending",
+            "commit": "4bccbb58e988c956edd399da8912b8a0b227724d",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0021-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +952,7 @@
                 "slug": "atalanta-vs-inter-milan-2026-11-22"
             },
             "sha256": "f0f8a5a7738ca005ac2d04e510efbafe9be5b195ce2ee9238a9071337978bd41",
-            "commit": "pending",
+            "commit": "4bccbb58e988c956edd399da8912b8a0b227724d",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0026-r1.json",
             "status": "pending",
             "result": null
@@ -15416,8 +15416,12 @@
             "sha256": "c16b28bcc420c68ea00438d5c998ea9d2aaba9102d42e801ece39ed83d399428",
             "commit": "cf5e8d7e9d2085edda98745fac19eea866582983",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0008-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.2664
+            }
         },
         {
             "record": {
@@ -16140,8 +16144,12 @@
             "sha256": "cd6398181c12d409d5122d1e6545bd70080eed63a07e15915c1de0cd7f69fba8",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0014-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-3",
+                "correct": false,
+                "rps": 0.5317
+            }
         },
         {
             "record": {
