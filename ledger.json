@@ -238,7 +238,7 @@
                 "slug": "anderlecht-be-vs-oh-leuven-2026-11-22"
             },
             "sha256": "988b4a8691af73e4c0dbeca0b7f248b2535253bc29dc72cbc578b94425f96a13",
-            "commit": "pending",
+            "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0008-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +476,7 @@
                 "slug": "lommel-sk-vs-standard-liege-2026-11-22"
             },
             "sha256": "26d5e88545c6a0d9826d77372e9369300b76e978847ad82564e77441bd0ecded",
-            "commit": "pending",
+            "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0009-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +714,7 @@
                 "slug": "paok-vs-kifisia-2026-11-22"
             },
             "sha256": "cbffa8598ee30ee55d916f9ffa8587f3e309a2e919f313850f2e1b709e986ec6",
-            "commit": "pending",
+            "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0006-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +952,7 @@
                 "slug": "osasuna-vs-malaga-2026-11-22"
             },
             "sha256": "f6f86c815bead1fb841950ac1cb961f287e57432aabe83de957a34388a18426a",
-            "commit": "pending",
+            "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0106-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +1190,7 @@
                 "slug": "girona-vs-eibar-2026-11-22"
             },
             "sha256": "3e1f5f311498bd1560cb1fc14c44710e4bb235c36f1b4861625ec73bf75892c4",
-            "commit": "pending",
+            "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0019-r1.json",
             "status": "pending",
             "result": null
@@ -1428,7 +1428,7 @@
                 "slug": "rc-celta-fortuna-vs-real-valladolid-2026-11-22"
             },
             "sha256": "a0bf453f8bc12b1cf9a4ee572a089003c428ae9e77308df58f4ace85b2ead80d",
-            "commit": "pending",
+            "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0020-r1.json",
             "status": "pending",
             "result": null
@@ -1535,7 +1535,7 @@
                 "slug": "estrela-amadora-vs-portimonense-2026-11-22"
             },
             "sha256": "65db1f1a98f02c57d65863f381b0d009bb2d3e703d6a3120b943a0a5883efa48",
-            "commit": "pending",
+            "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0011-r1.json",
             "status": "pending",
             "result": null
@@ -16845,8 +16845,12 @@
             "sha256": "b6944481e0fed77d2774df75713cac7cf27d323989bc9ee70a7d5f2df5f568d4",
             "commit": "ee0b530fa045d311eeae781580045ff1d3dde713",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0029-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-3",
+                "correct": true,
+                "rps": 0.1003
+            }
         },
         {
             "record": {
@@ -17083,8 +17087,12 @@
             "sha256": "0573a48410538e7217d0f5f6e1f0098ab9aeabf3ef18129d5bc0b3a5c271d832",
             "commit": "ee0b530fa045d311eeae781580045ff1d3dde713",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0020-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-5",
+                "correct": true,
+                "rps": 0.0792
+            }
         },
         {
             "record": {
@@ -17321,8 +17329,12 @@
             "sha256": "4eed7d8c82ec2670960b7c82681892490e456f85efac71c21c894f850995efe1",
             "commit": "ee0b530fa045d311eeae781580045ff1d3dde713",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0007-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "3-1",
+                "correct": false,
+                "rps": 0.3499
+            }
         },
         {
             "record": {
@@ -18503,8 +18515,12 @@
             "sha256": "6c26cb1ff48b33cca253e9d1a572a581c0543a37b2a4c2f9f62c2e78d1112e59",
             "commit": "abf24e74c3a0c74cc0d0d07cafc323729766288c",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0006-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-3",
+                "correct": false,
+                "rps": 0.5511
+            }
         },
         {
             "record": {
