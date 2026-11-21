@@ -7,6 +7,958 @@
     "records": [
         {
             "record": {
+                "away": "le-mans",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "ligue-1",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0047",
+                "home": "marseille",
+                "inputs": {
+                    "elo_away": 1304,
+                    "elo_home": 1606,
+                    "lambda_away": 0.987252,
+                    "lambda_home": 2.579598,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-21T20:07:41Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.713368,
+                        0.167129,
+                        0.119503
+                    ],
+                    "p_elo": [
+                        0.710917,
+                        0.200621,
+                        0.088462
+                    ],
+                    "p_market": [
+                        0.663953,
+                        0.193254,
+                        0.142794
+                    ],
+                    "p_stat": [
+                        0.710876,
+                        0.184841,
+                        0.104283
+                    ],
+                    "retained_mass": 0.99999999965,
+                    "rho": -0.041071,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0083,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T20:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.5864,
+                    "draw_risk": false,
+                    "over_2_5": 0.6856,
+                    "p": [
+                        0.7109,
+                        0.1848,
+                        0.1043
+                    ],
+                    "p_display": [
+                        71.1,
+                        18.5,
+                        10.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.0936,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0925,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0828,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0805,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0795,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.2,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Le Mans are missing midfielder Bourabaa (3 of the team's 12 league goals) and defenders Sidibé and Eyoum, with Yohou, a regular starter at centre-back, doubtful; most of this news rests on one source.",
+                                "Le Mans sit level on points with 17th and in the play-off place, while Marseille are 5 points off the lead and need points to stay in the title race.",
+                                "Le Mans are winless in 5 away games (0W 2D 3L, 5-10) and Marseille score freely at home with 13 goals in 5 league games."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.92,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Le Mans are missing regular starter Adil Bourabaa, who has 3 of their 12 league goals and 2 assists, plus first-choice defender Samuel Yohou is doubtful, weakening a side already level on points with the relegation play-off place.",
+                                "Marseille sit 4th and 5 points off the top, so they need a home win to keep pressure on the leaders, while Le Mans are level with 17th and fighting to climb out of the relegation play-off spot.",
+                                "Marseille have won their last four Ligue 1 matches, scoring 13 goals in that run, while Le Mans have not won in five league games and have lost three of five away matches this season."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Le Mans are without regular starting midfielder Adil Bourabaa, who accounts for 25% of their league goals and two assists, while regular starting defender Samuel Yohou is doubtful.",
+                                "Both sides have urgent targets, with Marseille five points off the league lead and Le Mans sitting in the relegation play-off spot only on goal difference.",
+                                "Marseille enter on a four-match winning streak across all competitions and average over two goals per game, whereas Le Mans are winless away from home."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.9,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.21,
+                                "home": 0.66
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Le Mans are without Bourabaa, whose 3 goals are 25% of their league total plus two assists; his absence is listed by one source, while regular defender Yohou is also doubtful.",
+                                "Marseille have won five of their past six matches, whereas Le Mans are winless away in five league trips, reinforcing the home side's edge.",
+                                "Le Mans begin in the relegation play-off place and level with the bottom three, so they need points but face a major step up in opponent quality."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.19,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Le Mans are level with 17th in the relegation play-off place, so they need points more than 4th-placed Marseille, who sit 10 points clear of the drop.",
+                                "On one source only, Le Mans are without regular midfielder Bourabaa (3 league goals, 25% of their total, plus 2 assists), with Yohou doubtful on one source; Marseille’s confirmed outs are Emerson, whose role is not stated, and Cornelius, wh",
+                                "Marseille have no league draws and a strong recent run, while Le Mans have not won away (0W 2D 3L), which favours a home win over another Le Mans draw."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7107,
+                        0.1844,
+                        0.1049
+                    ],
+                    "p_adj": [
+                        0.718996,
+                        0.182334,
+                        0.098671
+                    ],
+                    "p_llm": [
+                        0.674812,
+                        0.191909,
+                        0.133279
+                    ],
+                    "p_shadow": [
+                        0.710695,
+                        0.184407,
+                        0.104898
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "marseille-vs-le-mans-2026-11-22"
+            },
+            "sha256": "82bf457e2d4a303a5edc40999e80fe9dd84b13d7a34b7dc69f0e9987a01210b5",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0047-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "atletico-madrid",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0107",
+                "home": "getafe",
+                "inputs": {
+                    "elo_away": 1649.8,
+                    "elo_home": 1402.8,
+                    "lambda_away": 1.237545,
+                    "lambda_home": 0.801029,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-21T20:07:41Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.236559,
+                        0.302128,
+                        0.461314
+                    ],
+                    "p_elo": [
+                        0.188487,
+                        0.258325,
+                        0.553188
+                    ],
+                    "p_market": [
+                        0.137704,
+                        0.232219,
+                        0.630077
+                    ],
+                    "p_stat": [
+                        0.205286,
+                        0.276347,
+                        0.518367
+                    ],
+                    "retained_mass": 0.999999999928,
+                    "rho": -0.027462,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T20:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.3879,
+                    "draw_risk": false,
+                    "over_2_5": 0.3435,
+                    "p": [
+                        0.2053,
+                        0.2763,
+                        0.5184
+                    ],
+                    "p_display": [
+                        20.5,
+                        27.6,
+                        51.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1771,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1223,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.1213,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1121,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0898,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.29,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Getafe are without suspended regular midfielder Gudelj (9 of 12 starts) plus injured Uche and Juanmi, while Atlético are missing starters Pubill and Lookman, with Grimaldo (4 goals, 17% of team's) doubtful on one source.",
+                                "Getafe sit 15th, only 2 points above the relegation zone, while Atlético are 5 points off the leaders and need points after losing to Barcelona.",
+                                "Atlético won four of the last five league meetings, mostly by one goal, which points to a tight game again."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.94,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.28,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Getafe are missing regular midfield starter Gudelj (suspended) plus Uche and Juanmi, while Atlético are without regular starters Pubill and Lookman and have Grimaldo doubtful, so both attacks are weakened but Getafe's thin squad is hit hard",
+                                "Getafe are unbeaten at home in La Liga this season (3W 3D) and have scored 8 of their 8 league goals at the Coliseum, but Atlético have won 5 of 6 away games, so the visitors' away strength offsets Getafe's home resilience.",
+                                "Atlético have won 4 of the last 5 league meetings, including a 1-0 at the Coliseum in November 2025, and also beat Getafe 5-0 in the Copa del Rey in 2025."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.3,
+                                "home": 0.21
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Atlético Madrid are missing regular starters Marc Pubill and Ademola Lookman, while one source lists key defender Alejandro Grimaldo (17% of their league goals) as doubtful, and Getafe are without suspended regular midfield starter Nemanja ",
+                                "Getafe are unbeaten in all six home league matches this season conceding just four goals, which should make this a tight contest against an Atlético side that has won five of six away league fixtures.",
+                                "Both sides have high stakes for points as Getafe sit just two points above the relegation zone and third-placed Atlético Madrid try to close a five-point gap to the league leaders."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.92,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.53,
+                                "draw": 0.27,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Atlético have confirmed absences of regular starters Marc Pubill and Ademola Lookman, while Grimaldo (four league goals) is doubtful from one source, reducing their attacking and defensive depth.",
+                                "Getafe are without regular-starting midfielder Nemanja Gudelj through suspension, a meaningful loss of midfield continuity.",
+                                "Atlético's 5-1-0 away league record contrasts with Getafe's low overall scoring output of eight goals in 12 league matches, although Getafe remain unbeaten at home."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.29,
+                                "home": 0.21
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Getafe are without suspended regular starter Gudelj (9 of 12 league starts, two sources), plus Uche and Juanmi (two sources, roles not listed); Atlético miss regular starters Pubill and Lookman (two sources), while Grimaldo, with 17% of the",
+                                "Getafe sit just 2 points above the relegation zone and need a home result, while Atlético are 5 points off the leaders and still chasing the title.",
+                                "Getafe are unbeaten at home but have scored only 8 league goals all season, whereas Atlético have won 5 of 6 away, so the visitors’ away record should decide a low-scoring match."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2088,
+                        0.2833,
+                        0.508
+                    ],
+                    "p_adj": [
+                        0.205733,
+                        0.282413,
+                        0.511854
+                    ],
+                    "p_llm": [
+                        0.221246,
+                        0.286492,
+                        0.492263
+                    ],
+                    "p_shadow": [
+                        0.208779,
+                        0.283268,
+                        0.507953
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "getafe-vs-atletico-madrid-2026-11-22"
+            },
+            "sha256": "e5df50daae7b4c04ede0859a0ae8409a4de7e1b37267113fc4a42937a5361987",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0107-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "albacete",
+                "batch_id": "2026-11-20T2205Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-20T22:05:45Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0021",
+                "home": "burgos",
+                "inputs": {
+                    "elo_away": 1219.7,
+                    "elo_home": 1310.8,
+                    "lambda_away": 0.870378,
+                    "lambda_home": 1.377257,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-21T20:07:41Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.486315,
+                        0.277256,
+                        0.236429
+                    ],
+                    "p_elo": [
+                        0.51627,
+                        0.267372,
+                        0.216358
+                    ],
+                    "p_market": [
+                        0.472647,
+                        0.280944,
+                        0.246409
+                    ],
+                    "p_stat": [
+                        0.505764,
+                        0.270555,
+                        0.223681
+                    ],
+                    "retained_mass": 0.999999999974,
+                    "rho": -0.006144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T20:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4333,
+                    "draw_risk": false,
+                    "over_2_5": 0.393,
+                    "p": [
+                        0.5058,
+                        0.2705,
+                        0.2237
+                    ],
+                    "p_display": [
+                        50.6,
+                        27,
+                        22.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1505,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1243,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1042,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1038,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0907,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.26,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Albacete lose suspended regular forward José Corpas (12 of 14 starts) and have several doubtful forwards including Higinio Marín (3 goals, 21% of team), all on one source; Burgos miss midfielder David González (out) and Karrikaburu is doubt",
+                                "Burgos are in the play-off places, 1 point clear of 7th and 6 off automatic promotion, while Albacete are in the relegation zone and 11 points off the play-offs.",
+                                "Burgos have had 9 rest days with one match in 14 days, against Albacete's 6 days and two matches, a small freshness edge for the home side."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.24,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burgos are missing regular midfielder David González (10 league starts, 3 goals) and may be without forward Jon Karrikaburu (3 goals), removing two of their main attacking contributors; Albacete are without suspended regular forward José Co",
+                                "Burgos sit 6th and are defending a promotion play-off place, only 1 point clear of 7th, so they need the points to stay in the top six; Albacete are in the relegation zone on goal difference and also badly need a result, but their away reco",
+                                "Burgos have won 5 of 8 home league games this season, while Albacete have lost 5 of 7 away games and conceded 15 goals on the road, which points to a comfortable home win."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.95,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Burgos miss regular midfielder David González (15% of their league goals) with Jon Karrikaburu (another 15%) doubtful, while Albacete have regular forward José Corpas suspended and defender Fran Gámez doubtful.",
+                                "Both sides have immediate pressure for points, with Burgos defending a one-point cushion in the final play-off spot and Albacete sitting in the relegation zone solely on goal difference.",
+                                "Albacete enter on a five-match winning streak across all competitions, making them a much tougher prospect than their five away league defeats suggest against a Burgos side that has won five of eight at home."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.91,
+                            "m_home": 0.95,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.25,
+                                "home": 0.53
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burgos are without regular-starting midfielder David González, whose three league goals and one assist are missing; Karrikaburu is also doubtful, with both reports from one source.",
+                                "Albacete are missing regular-starting forward José Corpas through suspension, while 3-goal forward Higinio Marín and regular defender Fran Gámez are doubtful; all are listed by one source.",
+                                "Burgos’ 5-2-1 home record contrasts with Albacete’s 1-1-5 away record, favouring the hosts despite Albacete’s recent winning run."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Single-source news only: Burgos are without regular starter David González (10 league starts, 15% of their goals) and Albacete have regular starter José Corpas suspended (12 starts), so both attacks are slightly weakened rather than fully f",
+                                "Albacete are in the relegation zone, level with 18th, so they need the points more than Burgos, who are in the play-off places and only one point clear of 7th.",
+                                "Albacete’s five-match winning run makes an away result more plausible than their 1W-1D-5L away record and 19th place would suggest against a Burgos side that has taken 17 points from eight home games."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5087,
+                        0.2712,
+                        0.2201
+                    ],
+                    "p_adj": [
+                        0.505782,
+                        0.274623,
+                        0.219595
+                    ],
+                    "p_llm": [
+                        0.52004,
+                        0.257923,
+                        0.222037
+                    ],
+                    "p_shadow": [
+                        0.508662,
+                        0.271231,
+                        0.220107
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "burgos-vs-albacete-2026-11-22"
+            },
+            "sha256": "e5fdc24a8b92412f9bc9d0fc897e9cd5ab5543f6c73bb527b562c2c1ada07f0c",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0021-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "inter-milan",
+                "batch_id": "2026-11-20T0231Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-20T02:31:44Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0026",
+                "home": "atalanta",
+                "inputs": {
+                    "elo_away": 1776.9,
+                    "elo_home": 1548.7,
+                    "lambda_away": 1.88913,
+                    "lambda_home": 1.270226,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-21T20:07:41Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.255747,
+                        0.226355,
+                        0.517898
+                    ],
+                    "p_elo": [
+                        0.202773,
+                        0.263244,
+                        0.533983
+                    ],
+                    "p_market": [
+                        0.1801,
+                        0.201518,
+                        0.618382
+                    ],
+                    "p_stat": [
+                        0.22557,
+                        0.242226,
+                        0.532204
+                    ],
+                    "retained_mass": 0.999999999786,
+                    "rho": -0.009464,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T20:10:32Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.6146,
+                    "draw_risk": false,
+                    "over_2_5": 0.6073,
+                    "p": [
+                        0.2256,
+                        0.2422,
+                        0.5322
+                    ],
+                    "p_display": [
+                        22.6,
+                        24.2,
+                        53.2
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.11,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0989,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0814,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0778,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0654,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.94,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.25,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Inter may be without Thuram (6 of 28 league goals), Lautaro (4 goals, listed out) and Zielinski, though most are single-source doubtful and due back on match day, so the attack is trimmed only modestly.",
+                                "Inter are 1 point off the leaders and need the win more, while Atalanta sit 12th, 7 points above relegation.",
+                                "Inter won four of the last five league meetings and have not lost to Atalanta in that run, scoring 1 or more in all of them."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.58,
+                                "draw": 0.24,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Internazionale may be without several regular starters, including top scorer Marcus Thuram (6 league goals, 21% of the team's goals) and Lautaro Martinez (4 goals), but most are listed only by one source and are doubtful rather than confirm",
+                                "Internazionale have dominated this fixture, winning four of the last five league meetings and keeping a clean sheet in each of those wins, including 2-0 and 1-0 away wins at Atalanta.",
+                                "Internazionale are 1 point behind the leaders and need the points to keep pressure on the title race, while 12th-placed Atalanta are only 7 points above the relegation zone and also need a result."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.25,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source reports Internazionale forwards Lautaro Martinez and Ange-Yoan Bonny out and regular starter Marcus Thuram doubtful, placing 12 of their 28 league goals (42%) at risk alongside doubtful regular starters Manuel Akanji and Piotr Zi",
+                                "Internazionale have strong incentive to push for three points as they sit second and just one point behind the Serie A leaders, whereas 12th-placed Atalanta are in mid-table, seven points clear of the relegation zone.",
+                                "Internazionale are unbeaten across the last seven league and cup meetings between these clubs, winning six and conceding only one goal in that run."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.9,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.28,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Inter are without Lautaro Martínez (4 league goals) and Ange-Yoan Bonny (2), reducing their attack; several other doubts are supported by only one source.",
+                                "Inter are unbeaten in the last seven competitive meetings with Atalanta, winning six of them.",
+                                "Inter are one point off first place, so a win would directly strengthen their title challenge."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.53,
+                                "draw": 0.24,
+                                "home": 0.23
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Atalanta have not beaten Inter in the listed meetings and lost their last two home league games 0-2 and 0-1.",
+                                "Inter are 1 point off the leaders after 11 games, while 12th-placed Atalanta are 7 clear of relegation, so Inter need the points more.",
+                                "Named absences are doubtful and almost all from one source, including Thuram and Lautaro, so they are not treated as confirmed outs."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2321,
+                        0.2484,
+                        0.5195
+                    ],
+                    "p_adj": [
+                        0.229578,
+                        0.247158,
+                        0.523264
+                    ],
+                    "p_llm": [
+                        0.242314,
+                        0.253123,
+                        0.504563
+                    ],
+                    "p_shadow": [
+                        0.232098,
+                        0.24837,
+                        0.519532
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "atalanta-vs-inter-milan-2026-11-22"
+            },
+            "sha256": "f0f8a5a7738ca005ac2d04e510efbafe9be5b195ce2ee9238a9071337978bd41",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0026-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "macarthur-fc",
                 "batch_id": "2026-11-21T1921Z-model-predict",
                 "competition": "a-league",
@@ -108,7 +1060,7 @@
                 "slug": "wellington-phoenix-vs-macarthur-fc-2026-11-22"
             },
             "sha256": "995589498ab23d916090d3c36446a3d28f0d3c0dc05d7ee975bb708d28532c35",
-            "commit": "pending",
+            "commit": "5b6354f8a38a1fb06eca87d12076de8275526fd9",
             "file": "https://thetouchlineatlas.com/ledger/al-2627-0001-r1.json",
             "status": "pending",
             "result": null
@@ -14946,8 +15898,12 @@
             "sha256": "5610d0e8b6c9404170e3d121a2cae5f7bf18dd24b1f6135864b7f7f3ffc2e0bc",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0092-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1686
+            }
         },
         {
             "record": {
@@ -15422,8 +16378,12 @@
             "sha256": "391f42d7b1edfb1387dd8eff89ce0db6d01cae4376cf17c94df244988ffe23e8",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0015-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-3",
+                "correct": false,
+                "rps": 0.7442
+            }
         },
         {
             "record": {
@@ -15660,8 +16620,12 @@
             "sha256": "c498dd12c0f084e912ff3d26487021f8609731a14d3cfa6d0bbdf29a4a3749a0",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0001-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.0499
+            }
         },
         {
             "record": {
@@ -15898,8 +16862,12 @@
             "sha256": "edd3a1f01c4578025bed0bfe09212b8d6b6d4127c0bd4c80bf3346a7c9abd022",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0102-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1378
+            }
         },
         {
             "record": {
@@ -16136,8 +17104,12 @@
             "sha256": "6a14fffb7c962d7afcaf0fc659f8386022bf89c08e5d6c600d8f1659c0054a16",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0103-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.169
+            }
         },
         {
             "record": {
@@ -16374,8 +17346,12 @@
             "sha256": "7bb9be410597ad028f44887d2b8ce2d0a58f82a2b84ab53b7d460b47bcef5277",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0015-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.0637
+            }
         },
         {
             "record": {
@@ -16612,8 +17588,12 @@
             "sha256": "64ae71898fca543733c483a23dbbf9ab6227c9c224d42475bbc5712e43d95369",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0012-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-8",
+                "correct": true,
+                "rps": 0.1646
+            }
         },
         {
             "record": {
@@ -16719,8 +17699,12 @@
             "sha256": "fd5d169e5343033d06d86d98d2443951d16ce1c61380e41dbc3e3bba611e022d",
             "commit": "3dd4ba346519cf7316330102deecfe7d20b4c16f",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0008-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-0",
+                "correct": true,
+                "rps": 0.0057
+            }
         },
         {
             "record": {
@@ -17552,8 +18536,12 @@
             "sha256": "79d3bc454e1c307b6a2d9bcfc492fd577a960a20707e5891a306f55e7455927e",
             "commit": "ee0b530fa045d311eeae781580045ff1d3dde713",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0007-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1599
+            }
         },
         {
             "record": {
