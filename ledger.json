@@ -7,6 +7,720 @@
     "records": [
         {
             "record": {
+                "away": "blackburn-rovers",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0036",
+                "home": "burnley",
+                "inputs": {
+                    "elo_away": 1461.6,
+                    "elo_home": 1565.5,
+                    "lambda_away": 0.964802,
+                    "lambda_home": 1.572981,
+                    "last_result_used": "2026-11-07",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-21T12:14:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.511853,
+                        0.259738,
+                        0.22841
+                    ],
+                    "p_elo": [
+                        0.529598,
+                        0.264303,
+                        0.206099
+                    ],
+                    "p_market": [
+                        0.505894,
+                        0.252035,
+                        0.242071
+                    ],
+                    "p_stat": [
+                        0.499547,
+                        0.271175,
+                        0.229279
+                    ],
+                    "retained_mass": 0.999999999843,
+                    "rho": -0.02827,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T12:22:52Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.497,
+                    "draw_risk": false,
+                    "over_2_5": 0.4616,
+                    "p": [
+                        0.4995,
+                        0.2712,
+                        0.2293
+                    ],
+                    "p_display": [
+                        50,
+                        27.1,
+                        22.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1288,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.118,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0954,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0921,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0861,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.28,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burnley sit 22nd, 5 points from safety, and need points more than Blackburn, who are 11 points above the drop and 5 off the play-offs.",
+                                "Burnley have several forwards out or doubtful (Satpaev out, Broja and Bruun Larsen doubtful), but most are single-source and none carries a large share of goals; Blackburn's Morishita (11 starts) is doubtful.",
+                                "Burnley have drawn 5 of 7 home games without a win, and their last two league games conceded 4 and 5, so a draw or a narrow result is plausible."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.31,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Burnley are missing regular starter Jacob Bruun Larsen (2 goals, 2 assists) and have several other doubts, but most absentees are squad players, so the attack is only slightly weakened.",
+                                "Blackburn are likely without regular midfielder Ryoya Morishita (2 goals, 2 assists), a modest loss, while other absentees are fringe players.",
+                                "Burnley are in the relegation zone and need points badly at home, while Blackburn are mid-table and still within reach of the play-offs, giving both sides something to play for."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.34,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burnley sit in the relegation zone five points from safety and urgently need a win, while Blackburn are five points off the play-off places.",
+                                "Both teams have a regular starter listed as doubtful by one source, with Jacob Bruun Larsen for Burnley and Ryoya Morishita for Blackburn each accounting for 9% of their side's league goals.",
+                                "Burnley are winless in seven home league matches with five draws, which points toward another stalemate against a Blackburn side that has won only once in seven away games."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.31,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burnley have single-source absences/doubts including regular forward Jacob Bruun Larsen (2 goals, 2 assists), slightly reducing their attacking outlook.",
+                                "Burnley are five points from safety in the relegation zone, so the home side have a greater immediate need to turn draws into points.",
+                                "Burnley are winless in seven home league matches while Blackburn have taken only one win from seven away, making another tight, draw-prone contest plausible."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.38,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Burnley are in the drop zone, five points from safety after 15 games, so they need the points more than Blackburn, who are five off the play-offs but 11 clear of the bottom three.",
+                                "Burnley have not won any of seven home games (five draws), so a home win is less likely than the league’s 43% and another draw fits the pattern against a side with only one away win.",
+                                "Listed absences are almost all one source and doubtful, with no confirmed loss of a main scorer, so expected goals are left unchanged."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.4611,
+                        0.2858,
+                        0.253
+                    ],
+                    "p_adj": [
+                        0.496264,
+                        0.273519,
+                        0.230217
+                    ],
+                    "p_llm": [
+                        0.326099,
+                        0.323461,
+                        0.35044
+                    ],
+                    "p_shadow": [
+                        0.461114,
+                        0.28584,
+                        0.253046
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "burnley-vs-blackburn-rovers-2026-11-22"
+            },
+            "sha256": "030388f7f2148d31d7394d3a34900240596debb1d3eac721e38f00b82801ed20",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0036-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "willem-ii",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0018",
+                "home": "fc-twente",
+                "inputs": {
+                    "elo_away": 1200.8,
+                    "elo_home": 1629.7,
+                    "lambda_away": 0.689339,
+                    "lambda_home": 3.073144,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-21T12:14:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.837466,
+                        0.113128,
+                        0.049407
+                    ],
+                    "p_elo": [
+                        0.796298,
+                        0.155969,
+                        0.047733
+                    ],
+                    "p_market": [
+                        0.903553,
+                        0.064063,
+                        0.032385
+                    ],
+                    "p_stat": [
+                        0.830915,
+                        0.125208,
+                        0.043877
+                    ],
+                    "retained_mass": 0.999999999874,
+                    "rho": -0.077453,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T11:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T12:22:52Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.4818,
+                    "draw_risk": false,
+                    "over_2_5": 0.7198,
+                    "p": [
+                        0.8309,
+                        0.1252,
+                        0.0439
+                    ],
+                    "p_display": [
+                        83.1,
+                        12.5,
+                        4.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "3-0",
+                    "top_score_overall": "3-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1115,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.1088,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0856,
+                            "score": "4-0"
+                        },
+                        {
+                            "p": 0.0768,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.075,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.07,
+                                "draw": 0.11,
+                                "home": 0.82
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Willem II are winless in 12 league games (0W 3D 9L) and have conceded 40 goals, including 0-7 at PSV, while Twente have scored 30 and just won 9-0 at Excelsior.",
+                                "Twente are without regular goalkeeper Lars Unnerstall (6 of 12 starts) and defender Max Bruns, but both have cover and neither is a main scorer, so the effect is small; Willem II's goalkeeper Didillon is doubtful on one source.",
+                                "Twente are 2 points off the leaders and need the points for the title race, while Willem II are 7 points from safety and have the league's worst away record (0W 1D 5L, 6-23)."
+                            ],
+                            "score": "3-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "FC Twente are missing first-choice goalkeeper Lars Unnerstall (6 league starts) and defender Max Bruns (5 starts), which slightly weakens their back line, though their attack remains intact.",
+                                "FC Twente are 2 points behind the leaders and need a home win to keep pressure on the title race, while Willem II are 7 points from safety and desperate for points.",
+                                "Willem II have lost 9 of 12 league games and conceded 40 goals, including 0-7 at PSV and 1-6 at home to Cambuur, suggesting they are vulnerable to a heavy defeat against a strong Twente side."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1.05,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.06,
+                                "draw": 0.12,
+                                "home": 0.82
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "FC Twente are missing regular starter goalkeeper Lars Unnerstall (6 league starts) and defender Max Bruns (5 starts), which leaves their defence slightly more vulnerable.",
+                                "Both sides have strong incentives as 4th-placed Twente sit just 2 points behind the league leaders while bottom-placed Willem II are 7 points adrift of safety.",
+                                "Winless Willem II have conceded 40 goals in 12 league matches (including 23 in 6 away games), pointing to a heavy defeat against a Twente side that has scored 30 league goals."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Twente are without regular-starting goalkeeper Lars Unnerstall, but Willem II's attack has scored only 11 league goals; Willem II also have defensive absences, while their goalkeeper doubt is supported by one source.",
+                                "Twente are two points off the lead, whereas bottom-placed Willem II are seven points from safety and under greater pressure for a result.",
+                                "Twente's strong home attack meets a Willem II side that has lost five of six league away matches and conceded 23 goals in them."
+                            ],
+                            "score": "3-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.14,
+                                "home": 0.78
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Twente are 2 points off the leaders, while Willem II are 18th, winless in the league and 7 points from safety, so the points matter far more to a side that has already conceded 40.",
+                                "Twente’s regular goalkeeper Lars Unnerstall (6 of 12 league starts) is out on two sources; the other listed absences are not main scorers, and Willem II’s doubtful names are only one source.",
+                                "Willem II have 1 point and 23 goals conceded from 6 away league games, against a Twente side that has scored 30 in 12 and recently won 9-0."
+                            ],
+                            "score": "3-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.8183,
+                        0.1311,
+                        0.0507
+                    ],
+                    "p_adj": [
+                        0.827332,
+                        0.127715,
+                        0.044954
+                    ],
+                    "p_llm": [
+                        0.77524,
+                        0.143883,
+                        0.080877
+                    ],
+                    "p_shadow": [
+                        0.818283,
+                        0.131059,
+                        0.050658
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "fc-twente-vs-willem-ii-2026-11-22"
+            },
+            "sha256": "d4e66b8a4c1933401bf0d6f52e4d2257f91b311775e332e6aed2f7d9dc6c4909",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0018-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "venezia",
+                "batch_id": "2026-11-21T0014Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-21T00:14:00Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0022",
+                "home": "juventus",
+                "inputs": {
+                    "elo_away": 1212.3,
+                    "elo_home": 1605.9,
+                    "lambda_away": 0.634321,
+                    "lambda_home": 1.876482,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-21T12:14:47Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.670196,
+                        0.212591,
+                        0.117213
+                    ],
+                    "p_elo": [
+                        0.775062,
+                        0.168023,
+                        0.056914
+                    ],
+                    "p_market": [
+                        0.716238,
+                        0.176798,
+                        0.106965
+                    ],
+                    "p_stat": [
+                        0.734993,
+                        0.186237,
+                        0.078771
+                    ],
+                    "retained_mass": 0.999999999806,
+                    "rho": -0.009674,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-22T11:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-21T12:22:52Z",
+                "model_version": "v1.6-2026-11",
+                "published": {
+                    "btts": 0.3888,
+                    "draw_risk": false,
+                    "over_2_5": 0.4747,
+                    "p": [
+                        0.735,
+                        0.1862,
+                        0.0788
+                    ],
+                    "p_display": [
+                        73.5,
+                        18.6,
+                        7.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1661,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1568,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0995,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0981,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0855,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.2,
+                                "home": 0.66
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Juventus are without Kalulu, an ever-present starting defender (11 of 11 league starts), plus Locatelli, and several forwards are doubtful; this trims their attack and defence slightly, though most listed players are rotation options.",
+                                "Venezia are 19th, 2 points from safety, and have lost 9 of 11, while Juventus sit 11 points above the drop and can focus on the Europa League match four days later.",
+                                "Venezia have lost all 5 away league games with 3 goals scored and 10 conceded, while Juventus have won 3 of 5 at home."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Juventus are missing regular starting defender Pierre Kalulu (11 of 11 league starts) and have several other injury doubts, but Venezia's absences are mostly squad players, so the hosts' depth is only mildly affected.",
+                                "Venezia have lost all five away league games this season, scoring only 3 goals, while Juventus have won 3 of 5 at home, making a home win the clear baseline.",
+                                "Venezia are in the relegation zone, 2 points from safety, and need points badly, but their away record and 8 goals in 11 games suggest they will struggle to take them from Juventus."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Juventus are missing ever-present defender Pierre Kalulu along with several midfielders and forwards, while productive substitute Edon Zhegrova (13% of their league goals) is listed as doubtful by one source.",
+                                "Relegation-threatened Venezia are two points from safety and badly need points, whereas seventh-placed Juventus must keep winning to close an 11-point gap to the league leaders.",
+                                "Venezia have lost all five of their away league matches while scoring just three times, making an upset unlikely against a Juventus side that has won three of five at home."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.19,
+                                "home": 0.7
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Juventus are without ever-present defender Pierre Kalulu and midfielder Manuel Locatelli, while Venezia have several absences but no listed regular starter confirmed out.",
+                                "Venezia are two points from safety and need a result, but Juventus have a clear quality advantage at home.",
+                                "Venezia have lost all five league away matches, scoring three times, which points to another difficult attacking assignment in Turin."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Venezia are 19th and two points from safety, so they need the points more than 7th-placed Juventus, who are 11 clear of the drop.",
+                                "Juventus are without regular starter Pierre Kalulu (11 of 11 league starts); other listed absences are non-starters, doubtful or lack a stated role, and several are one source only.",
+                                "Venezia have lost all five away league games (3-10), so an away result is less likely than this season’s high away-win rate implies."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7241,
+                        0.1895,
+                        0.0864
+                    ],
+                    "p_adj": [
+                        0.731719,
+                        0.189107,
+                        0.079174
+                    ],
+                    "p_llm": [
+                        0.688992,
+                        0.189556,
+                        0.121452
+                    ],
+                    "p_shadow": [
+                        0.724118,
+                        0.189498,
+                        0.086385
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "juventus-vs-venezia-2026-11-22"
+            },
+            "sha256": "54e87dc1e89265737f70fb145fce7cf676e3a569103c7bdd8700b865d8b36620",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0022-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "goztepe",
                 "batch_id": "2026-11-21T0014Z-model-predict",
                 "competition": "super-lig",
@@ -238,7 +952,7 @@
                 "slug": "erzurum-bb-vs-goztepe-2026-11-22"
             },
             "sha256": "389a63b72e89f1f7031ff6f21380234162e90b4424f19c66403d544cc63d9b99",
-            "commit": "pending",
+            "commit": "ba85b0cf608a7d287645bc90b4715155daec0604",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0018-r1.json",
             "status": "pending",
             "result": null
