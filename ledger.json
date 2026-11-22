@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "corum-fk",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0022",
+                "home": "istanbul-basaksehir",
+                "inputs": {
+                    "elo_away": 1351.3,
+                    "elo_home": 1557.7,
+                    "lambda_away": 1.283476,
+                    "lambda_home": 2.364806,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-22T17:08:05Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.607664,
+                        0.202962,
+                        0.189373
+                    ],
+                    "p_elo": [
+                        0.629895,
+                        0.234129,
+                        0.135976
+                    ],
+                    "p_market": [
+                        0.509546,
+                        0.242712,
+                        0.247742
+                    ],
+                    "p_stat": [
+                        0.632454,
+                        0.212905,
+                        0.154641
+                    ],
+                    "retained_mass": 0.99999999991,
+                    "rho": -0.084633,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-23T17:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-22T17:12:47Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6613,
+                    "draw_risk": false,
+                    "over_2_5": 0.7035,
+                    "p": [
+                        0.6325,
+                        0.2129,
+                        0.1546
+                    ],
+                    "p_display": [
+                        63.2,
+                        21.3,
+                        15.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "2-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0973,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0899,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0767,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0758,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0629,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.22,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Basaksehir may miss starting goalkeeper Şengezer (8 of 11 starts, two sources, doubtful) plus defenders Kharebashvili and Opéri, each on one source only, which weakens their back line a little.",
+                                "Basaksehir have scored 16 and conceded 7 in 6 home games, while Çorum come off a 0-5 loss to Fenerbahçe and have a shaky defence away.",
+                                "Both sides have had about two weeks without a match, so neither has a rest advantage and the absences carry more weight."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.22,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Basaksehir's first-choice goalkeeper Muhammed Şengezer is doubtful, and if he misses out it weakens a home side that has conceded 7 goals in 6 home league games.",
+                                "Basaksehir have won their last two league games and are strong at home (4W 1D 1L), while Çorum's away form is mixed and they were beaten 5-0 by Fenerbahçe last time out.",
+                                "Both sides are mid-table and comfortably clear of the relegation zone, so neither has a desperate points incentive, which slightly favours the home side's superior home record."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.23,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Istanbul Basaksehir have doubts over regular starting goalkeeper Muhammed Şengezer (8 starts) and two defenders listed by one source, while Çorum FK miss midfielder Berat Özdemir (5 starts).",
+                                "Both teams play open, high-scoring football, with Basaksehir scoring 16 goals in six home wins/draws/losses and Çorum FK netting 15 while conceding 12 across six away trips.",
+                                "Separated by just one point in mid-table—with Basaksehir 9 points and Çorum FK 8 points clear of relegation—both sides have the freedom to attack for a top-half spot."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.03,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.22,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Başakşehir goalkeeper Muhammed Şengezer is a two-source doubt, while their other defensive doubts and Çorum's Fredy report have only one source; Çorum also miss midfielder Berat Özdemir.",
+                                "Başakşehir's 4-1-1 home record includes 16 goals in six games, but Çorum have scored 15 in six away matches, pointing to a competitive high-scoring home edge.",
+                                "Home wins have been the most frequent Süper Lig outcome this season (48%), supporting Başakşehir's home advantage."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.26,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Basaksehir have taken 4 wins from 6 at home and scored 16 there, while Çorum have scored 15 in 6 away games, so the hosts are favourites in an open match rather than a shutout.",
+                                "Şengezer, the regular goalkeeper (8 of 11 starts), is only doubtful on two sources, the other Basaksehir doubts are single-source, and Çorum’s confirmed absence Özdemir has started just 5 of 11, so expected goals are left unchanged.",
+                                "This season only 17% of Süper Lig matches have been draws, so two sides a point apart are still more likely to produce a winner than a stalemate."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6002,
+                        0.2207,
+                        0.1791
+                    ],
+                    "p_adj": [
+                        0.625505,
+                        0.216226,
+                        0.158269
+                    ],
+                    "p_llm": [
+                        0.488422,
+                        0.230057,
+                        0.281521
+                    ],
+                    "p_shadow": [
+                        0.600217,
+                        0.220729,
+                        0.179054
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "istanbul-basaksehir-vs-corum-fk-2026-11-23"
+            },
+            "sha256": "2bc1cbaad052fabb86f8bdd57231a601e723f39d7b8d589137ddd7736ceadcc9",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0022-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "aris",
                 "batch_id": "2026-11-22T0014Z-model-predict",
                 "competition": "greek-super-league",
@@ -5933,8 +6171,12 @@
             "sha256": "ef0db7faa3486cb9fa456b9e940dcb2a99ce45f8d005cb64e657f6ab2ba4656b",
             "commit": "be8d29247efad1e6ce35b25089a480ee53018002",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0007-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.0287
+            }
         },
         {
             "record": {
@@ -6171,8 +6413,12 @@
             "sha256": "c13cc5047498d5ffc70657de171a5cdf46eb5bb6f878e727b2617541b74208a4",
             "commit": "be8d29247efad1e6ce35b25089a480ee53018002",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0093-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-1",
+                "correct": true,
+                "rps": 0.2416
+            }
         },
         {
             "record": {
@@ -6409,8 +6655,12 @@
             "sha256": "3392f68f37ef6a760a10099a8809cdd1f4d5560f84749c1ebd486bbce58d9442",
             "commit": "be8d29247efad1e6ce35b25089a480ee53018002",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0004-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-2",
+                "correct": false,
+                "rps": 0.3057
+            }
         },
         {
             "record": {
@@ -6647,8 +6897,12 @@
             "sha256": "ff2a43b183b1ffac2ebfc3443371c8372b094a5d540669ecd57e57644290f42f",
             "commit": "be8d29247efad1e6ce35b25089a480ee53018002",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0003-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1742
+            }
         },
         {
             "record": {
