@@ -7,6 +7,1434 @@
     "records": [
         {
             "record": {
+                "away": "grenoble",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "ligue-2",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "f2-2627-0001",
+                "home": "nantes",
+                "inputs": {
+                    "elo_away": 1201.9,
+                    "elo_home": 1144.5,
+                    "lambda_away": 1.164252,
+                    "lambda_home": 1.210119,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-22T20:07:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.373855,
+                        0.27464,
+                        0.351505
+                    ],
+                    "p_elo": [
+                        0.3599,
+                        0.285708,
+                        0.354392
+                    ],
+                    "p_market": [
+                        0.657695,
+                        0.220722,
+                        0.121584
+                    ],
+                    "p_stat": [
+                        0.367695,
+                        0.278859,
+                        0.353446
+                    ],
+                    "retained_mass": 0.999999999914,
+                    "rho": 0.013928,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-23T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-22T20:10:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.482,
+                    "draw_risk": false,
+                    "over_2_5": 0.4222,
+                    "p": [
+                        0.3677,
+                        0.2789,
+                        0.3534
+                    ],
+                    "p_display": [
+                        36.8,
+                        27.9,
+                        35.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1313,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1126,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1108,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0927,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.078,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.28,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Nantes are 1 point above the drop zone and Grenoble sit 18th on goal difference, so both need the points and a cautious, tight game is likely.",
+                                "No absences are listed for either side, but one source's unavailable list could not be read, so team news is incomplete and both adjustments stay at 1.0.",
+                                "Nantes have won 2 of their last 3 league games while Grenoble's 4 losses in 5 before the Reims win suggest a leaky away side with 12 goals conceded in 6 away games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are near the bottom: Nantes are only 1 point above the relegation zone, while Grenoble are in it on goal difference, so this is a high-stakes six-pointer where neither can afford to lose.",
+                                "Nantes have won their last two competitive matches, including a 2-0 league win at Pau, while Grenoble have lost four of their last five league games, suggesting the home side arrives with more momentum.",
+                                "No confirmed absences are listed for either side, but the unavailable lists could not be read for one source each, so team news is incomplete rather than clean."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.28,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both teams urgently need points to escape the bottom four, with Nantes sitting just one point above the relegation zone and Grenoble inside it on goal difference.",
+                                "No absences are listed for either club, though one source could not be read for both sides so we do not guess at unconfirmed squad availability.",
+                                "Nantes have won just once in six home league games while Grenoble have lost four of six away, making a close contest likely despite both teams winning their last two outings."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.28,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Both are close to the relegation line, with Grenoble in the zone and Nantes only one point clear, increasing the value of a cautious result.",
+                                "Grenoble have lost four of their past six league matches, while Nantes' latest league outing was a 2-0 win at Pau.",
+                                "Ligue 2 home wins have occurred in 42% of matches this season, supporting a modest Nantes home edge."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.34,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Grenoble sit in the drop zone on goal difference, level on 11 points with 16th, while Nantes are only one point above the relegation places, so both need the points more than a mid-table side would.",
+                                "Nantes have taken just one win from six home league games (6-10), so home advantage is weaker than the league base rate and a low-scoring draw is the likeliest outcome.",
+                                "No absences are listed for either side, but each unavailable list could not be read from one source, so fitness is not treated as confirmed and expected goals are left unadjusted."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.379,
+                        0.2819,
+                        0.3391
+                    ],
+                    "p_adj": [
+                        0.367695,
+                        0.278859,
+                        0.353446
+                    ],
+                    "p_llm": [
+                        0.423692,
+                        0.291868,
+                        0.28444
+                    ],
+                    "p_shadow": [
+                        0.378988,
+                        0.281949,
+                        0.339064
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "nantes-vs-grenoble-2026-11-23"
+            },
+            "sha256": "12accac281526f8f6db3cf0fafd13c1154d69c4ac1ab1f2572f0ec9f2bac46b2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/f2-2627-0001-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "dunkerque",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "ligue-2",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "f2-2627-0002",
+                "home": "sochaux",
+                "inputs": {
+                    "elo_away": 1253.7,
+                    "elo_home": 1130.3,
+                    "lambda_away": 1.281294,
+                    "lambda_home": 1.00575,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-22T20:07:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.293251,
+                        0.277521,
+                        0.429228
+                    ],
+                    "p_elo": [
+                        0.294054,
+                        0.282346,
+                        0.423601
+                    ],
+                    "p_market": [
+                        0.405521,
+                        0.281484,
+                        0.312995
+                    ],
+                    "p_stat": [
+                        0.292559,
+                        0.27854,
+                        0.428901
+                    ],
+                    "retained_mass": 0.999999999883,
+                    "rho": 0.013928,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-23T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-22T20:10:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4565,
+                    "draw_risk": false,
+                    "over_2_5": 0.4002,
+                    "p": [
+                        0.2926,
+                        0.2785,
+                        0.4289
+                    ],
+                    "p_display": [
+                        29.3,
+                        27.8,
+                        42.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1319,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1295,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1037,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1001,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0838,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.3,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Sochaux sit 17th in the relegation zone on goal difference and need points more, while Dunkerque are 4 points clear of the drop and 5 off the play-offs.",
+                                "Sochaux have lost four of their last five league games and scored 8 goals in 12, while Dunkerque's 17 goals suggest a livelier attack but they have won only one away game in five.",
+                                "No absences are listed for either side, but the unavailable list could not be read from one source for each, so no adjustment is made."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.31,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Sochaux are in the relegation zone on goal difference and need points urgently at home, while Dunkerque are 4 points above the drop zone and 5 off the promotion play-offs, so both have something to play for but Sochaux's need is more acute.",
+                                "Sochaux have lost four of their last five league games and scored only 8 goals in 12 matches, which makes a home win less likely than the league's 42% home base rate.",
+                                "No absences are listed for either side, but one source's unavailable list could not be read for both clubs, so team news is incomplete rather than confirmed clean."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.31,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Sochaux start in the relegation zone on goal difference, giving the hosts an urgent need for points to climb out of the bottom places.",
+                                "Sochaux have lost four straight league matches and scored just eight goals in 12 games, which limits their advantage against a Dunkerque side that has lost three of five away fixtures.",
+                                "No absences are listed for either club as one source could not be read this time, so no team news adjustments are made."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.3,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Sochaux are in the relegation zone on goal difference, making home points particularly important, while Dunkerque remain only four points clear of it.",
+                                "Sochaux have lost four straight league matches and scored only once in that run, whereas Dunkerque have taken four points from their last two league games.",
+                                "Ligue 2 away wins have occurred in 33% of matches this season, close to home wins at 42%, so Dunkerque's stronger overall record keeps this finely balanced."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.31,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Sochaux are level with 16th in the relegation zone and need the points more than Dunkerque, who are 4 points above the drop and 5 off the play-off places.",
+                                "Sochaux have lost their last four league games and failed to score in three of them, which undercuts a modest home record against a Dunkerque side that recently beat Guingamp 3-0.",
+                                "Unavailable lists for both clubs could not be read, so no fitness effect is applied rather than guessing who is missing."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.3055,
+                        0.2847,
+                        0.4097
+                    ],
+                    "p_adj": [
+                        0.292559,
+                        0.278539,
+                        0.428901
+                    ],
+                    "p_llm": [
+                        0.357924,
+                        0.306201,
+                        0.335875
+                    ],
+                    "p_shadow": [
+                        0.305548,
+                        0.284748,
+                        0.409705
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "sochaux-vs-dunkerque-2026-11-23"
+            },
+            "sha256": "10e9289615c75e291ee9c948b1ee0f43218816171071aa6f2635f12a0c2bd593",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/f2-2627-0002-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "elche",
+                "batch_id": "2026-11-21T2205Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-21T22:05:52Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0108",
+                "home": "levante",
+                "inputs": {
+                    "elo_away": 1339.8,
+                    "elo_home": 1346.8,
+                    "lambda_away": 1.249075,
+                    "lambda_home": 1.684173,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-22T20:07:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.47306,
+                        0.245741,
+                        0.281199
+                    ],
+                    "p_elo": [
+                        0.427415,
+                        0.281957,
+                        0.290628
+                    ],
+                    "p_market": [
+                        0.439408,
+                        0.26459,
+                        0.296002
+                    ],
+                    "p_stat": [
+                        0.457774,
+                        0.25924,
+                        0.282986
+                    ],
+                    "retained_mass": 0.999999999958,
+                    "rho": -0.026499,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-23T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-22T20:10:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5874,
+                    "draw_risk": false,
+                    "over_2_5": 0.5569,
+                    "p": [
+                        0.4578,
+                        0.2592,
+                        0.283
+                    ],
+                    "p_display": [
+                        45.8,
+                        25.9,
+                        28.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1212,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0912,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0839,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.073,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0704,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.28,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Elche have several doubtful regulars (Villar 11 starts, Sangare 10 starts, Aguado 6 starts) and Houary is out; most are single-source, so the effect is modest.",
+                                "Both sides are in the relegation zone, Levante 1 point and Elche 2 points from safety, so a draw helps neither much but both will be cautious.",
+                                "Elche have had 15 rest days against 11 for Levante, a small freshness edge for the visitors, though Levante's only recent match was a Copa tie."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.3,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Elche have several injury doubts in midfield and defence, including regular starters Marc Aguado, Buba Sangare and Gonzalo Villar, which could weaken their spine and slightly reduce their attacking output.",
+                                "Both sides are in the relegation zone and separated by only one point, so this is a direct six-pointer where Levante can climb out of the bottom three with a win.",
+                                "Elche have had 15 rest days and no match in the last 14 days, while Levante played a Copa del Rey tie 11 days ago, giving Elche a freshness edge that may offset their away status."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides sit in the relegation zone separated by just one point, making this a crucial direct battle to climb out of the bottom three.",
+                                "Elche have forward Ali Houary out and regular starter Marc Aguado doubtful across two sources, while one source lists regular starters Gonzalo Villar and Buba Sangare as doubtful and lists no absences for Levante.",
+                                "Elche have lost only one of their six away league games this season (2W 3D 1L), giving them a solid chance to take something against a Levante side with five draws in twelve matches."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.3,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Elche are without forward Ali Houary, who has scored 2 league goals, while several further doubts include regular starters and some are reported by only one source.",
+                                "This is a direct relegation-zone meeting, with Levante one point and Elche two points from safety, increasing the value of avoiding defeat.",
+                                "Elche's 2W-3D-1L away record and 10-6 away goals make them more competitive than their 19th-place standing suggests."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.32,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are in the drop zone after 12 games, Levante one point from 17th and Elche two, so this is a must-not-lose six-pointer rather than an ordinary meeting.",
+                                "Elche have forward Ali Houary out (4 league starts, two sources) and regular starters Aguado, Villar and Sangare only doubtful, some on one source; Levante have no absences listed, and that comes from one source only.",
+                                "Elche have lost only one of six away league games (10-6), so Levante’s home scoring (13 in 5) is less likely to turn into a comfortable win than the league home-win rate suggests."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4516,
+                        0.2677,
+                        0.2807
+                    ],
+                    "p_adj": [
+                        0.463657,
+                        0.259764,
+                        0.276579
+                    ],
+                    "p_llm": [
+                        0.404033,
+                        0.300072,
+                        0.295894
+                    ],
+                    "p_shadow": [
+                        0.451621,
+                        0.267696,
+                        0.280683
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "levante-vs-elche-2026-11-23"
+            },
+            "sha256": "83ee3437f75ff137c0f26ed36b90d1a50fa42bd8efdaa621a92ecafc73f271c5",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0108-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "everton",
+                "batch_id": "2026-11-21T1921Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-21T19:21:25Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0106",
+                "home": "brentford",
+                "inputs": {
+                    "elo_away": 1460.6,
+                    "elo_home": 1494.3,
+                    "lambda_away": 1.040813,
+                    "lambda_home": 1.477001,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-22T20:07:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.464684,
+                        0.276192,
+                        0.259124
+                    ],
+                    "p_elo": [
+                        0.455821,
+                        0.278433,
+                        0.265746
+                    ],
+                    "p_market": [
+                        0.420934,
+                        0.269959,
+                        0.309107
+                    ],
+                    "p_stat": [
+                        0.461361,
+                        0.276815,
+                        0.261824
+                    ],
+                    "retained_mass": 0.999999999933,
+                    "rho": -0.060451,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-23T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-22T20:10:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5069,
+                    "draw_risk": false,
+                    "over_2_5": 0.4604,
+                    "p": [
+                        0.4614,
+                        0.2768,
+                        0.2618
+                    ],
+                    "p_display": [
+                        46.1,
+                        27.7,
+                        26.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1317,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1108,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0909,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0883,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0873,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Brentford are without suspended Igor Thiago, a 10-of-10 starter at forward with 2 goals and 2 assists, plus defenders Collins and Hickey who each started 3 league games, so attack and back line are thinner.",
+                                "Both sides have had 15-17 days of rest and nothing in the previous 14 days, so fatigue is not a factor; Everton face Liverpool 6 days later and Brentford play at Manchester United 5 days later.",
+                                "The last five league meetings produced three draws, with Brentford winning 4-2 and 2-2 in the two most recent, so a tight, high-scoring game is typical."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Brentford are without suspended regular striker Igor Thiago, who has started all 10 league games and contributed 2 goals and 2 assists, removing a key part of their attack.",
+                                "Brentford have lost their last two league games and have only one win in their last five, while Everton have won their last three in all competitions, suggesting the visitors arrive in better rhythm.",
+                                "The last two league meetings at Brentford both ended level, including a 2-2 draw in April 2026, pointing to a closely contested match."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.32,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Brentford are without ever-present forward Igor Thiago through suspension, removing a regular starter who has contributed two goals and two assists, along with defenders Nathan Collins and Aaron Hickey.",
+                                "Only one source lists no absences for Everton so far, which does not confirm a fully available away squad.",
+                                "Nine of the two sides' combined 20 league matches this season have ended level, and Everton's three draws in five away trips point toward another close contest against a strong Brentford home defense."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.91,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.29,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Brentford are without ever-present forward Igor Thiago, whose two goals and two assists remove a meaningful share of their attack; Everton's empty list is based on one source only.",
+                                "Brentford's 10-3 home league goal record gives them an edge at the Gtech, but Everton have lost only one of five league away matches.",
+                                "The past two league meetings at Brentford finished 1-1 and 2-2, pointing to another closely balanced contest."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.34,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Brentford are without suspended regular starter Igor Thiago (10 of 10 league starts, 12% of their goals and 2 assists); Everton have no listed absences, but that comes from one source and does not confirm a full squad.",
+                                "Recent league meetings have often been tight, including 1-1 and 2-2 at Brentford and a 0-0, so a share of the points is a familiar outcome.",
+                                "Everton have drawn three of five away league games and scored only four, which points to a low-scoring away performance even against Brentford's strong home record of 10-3."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4383,
+                        0.2867,
+                        0.275
+                    ],
+                    "p_adj": [
+                        0.447351,
+                        0.281959,
+                        0.270689
+                    ],
+                    "p_llm": [
+                        0.402342,
+                        0.305716,
+                        0.291941
+                    ],
+                    "p_shadow": [
+                        0.438255,
+                        0.286749,
+                        0.274995
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "brentford-vs-everton-2026-11-23"
+            },
+            "sha256": "44e3346ca8f2005f91f89bc611c777c60433ec72e86ffa1625084a5b85c922bb",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0106-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "almeria",
+                "batch_id": "2026-11-21T2205Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-21T22:05:52Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0022",
+                "home": "ceuta",
+                "inputs": {
+                    "elo_away": 1364.5,
+                    "elo_home": 1101.3,
+                    "lambda_away": 2.02633,
+                    "lambda_home": 1.201806,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-22T20:07:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.221107,
+                        0.215617,
+                        0.563276
+                    ],
+                    "p_elo": [
+                        0.176787,
+                        0.253818,
+                        0.569396
+                    ],
+                    "p_market": [
+                        0.262939,
+                        0.241235,
+                        0.495826
+                    ],
+                    "p_stat": [
+                        0.194888,
+                        0.231597,
+                        0.573515
+                    ],
+                    "retained_mass": 0.999999999932,
+                    "rho": -0.011106,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-23T19:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-22T20:10:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6113,
+                    "draw_risk": false,
+                    "over_2_5": 0.6217,
+                    "p": [
+                        0.1949,
+                        0.2316,
+                        0.5735
+                    ],
+                    "p_display": [
+                        19.5,
+                        23.2,
+                        57.3
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1048,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0996,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0828,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0807,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0672,
+                            "score": "1-3"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.67,
+                                "draw": 0.2,
+                                "home": 0.13
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Almería are 2nd, 1 point off the leaders and 5 clear of 3rd, while Ceuta are 8 points from safety in the relegation zone.",
+                                "Ceuta have lost 6 of their last 7 league games, scoring 0 in the last 3, with a 10-32 goal difference against Almería's 26-11.",
+                                "Almería's Nico Melamed is out and Rodrigo Ely is doubtful (2 league starts), and Ceuta's Edgar Sevikyan is doubtful (6 starts); all are single-source reports, so the effect is small."
+                            ],
+                            "score": "0-2"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.7,
+                                "draw": 0.18,
+                                "home": 0.12
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Almería are 1 point off the top and 5 clear of 3rd, so they need a win to keep automatic promotion pressure on the leaders; Ceuta are 8 points from safety and already in deep relegation trouble.",
+                                "Ceuta have lost 5 of their last 6 league games and have only 1 home win all season, while Almería have won 4 of their last 5 league matches.",
+                                "Almería are missing Nico Melamed, but Ceuta's only listed concern is a doubtful midfielder, so neither side's expected goals are changed much."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.65,
+                                "draw": 0.21,
+                                "home": 0.14
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams have urgent table objectives, with Almería needing a win to overtake the league leaders just one point ahead while Ceuta sit bottom and eight points adrift of safety.",
+                                "Ceuta enter this match on a six-game losing streak in the league having failed to score in their last three, making it difficult to resist an Almería side unbeaten in their last ten outings.",
+                                "All reported injuries for both sides rely on only one source and involve non-regular starters or unspecified roles, leaving expected lineups largely unaffected."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.66,
+                                "draw": 0.22,
+                                "home": 0.12
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Ceuta's Sevikyan and Almería's Melamed/Ely are reported by only one source, and the identified starters are not established regulars, so no goals adjustment is applied.",
+                                "Ceuta are eight points from safety after taking five from 14, while Almería are one point off first and defending an automatic-promotion place.",
+                                "Almería have won four of seven away league matches and arrive with six wins in their last eight matches, whereas Ceuta have lost five straight league games."
+                            ],
+                            "score": "0-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.62,
+                                "draw": 0.24,
+                                "home": 0.14
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Ceuta sit 22nd, 8 points from safety with 28 games left, while Almería are 2nd, 1 point off the lead and 5 clear of 3rd, so the visitors have the stronger case to take the points.",
+                                "Ceuta have failed to score in their last three league games and have one home win in seven, while Almería have four away wins and have dropped only two league games all season.",
+                                "Listed absences are single-source only: Sevikyan is a doubtful midfielder with 6 starts, Ely has just 2, and Melamed’s role is not given, so neither side’s expected goals is adjusted."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.1803,
+                        0.2277,
+                        0.5919
+                    ],
+                    "p_adj": [
+                        0.194888,
+                        0.231598,
+                        0.573515
+                    ],
+                    "p_llm": [
+                        0.129923,
+                        0.209414,
+                        0.660662
+                    ],
+                    "p_shadow": [
+                        0.180309,
+                        0.227741,
+                        0.59195
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "ceuta-vs-almeria-2026-11-23"
+            },
+            "sha256": "78e41539490ffaafbff9f7309a16ecc0d1c38fe7232cab63f00b7764916a2007",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0022-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fiorentina",
+                "batch_id": "2026-11-22T1406Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-22T14:06:16Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0027",
+                "home": "monza",
+                "inputs": {
+                    "elo_away": 1447.9,
+                    "elo_home": 1230.7,
+                    "lambda_away": 1.799183,
+                    "lambda_home": 1.235627,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 24,
+                        "captured_utc": "2026-11-22T20:07:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.261905,
+                        0.232606,
+                        0.505489
+                    ],
+                    "p_elo": [
+                        0.211496,
+                        0.265953,
+                        0.522551
+                    ],
+                    "p_market": [
+                        0.254652,
+                        0.245289,
+                        0.500059
+                    ],
+                    "p_stat": [
+                        0.233307,
+                        0.246908,
+                        0.519785
+                    ],
+                    "retained_mass": 0.999999999893,
+                    "rho": -0.00612,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-23T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-22T20:10:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5956,
+                    "draw_risk": false,
+                    "over_2_5": 0.5808,
+                    "p": [
+                        0.2333,
+                        0.2469,
+                        0.5198
+                    ],
+                    "p_display": [
+                        23.3,
+                        24.7,
+                        52
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1142,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0989,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0883,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.08,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0631,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.27,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Fiorentina have several doubtful players (Kean, Ndour a regular starter with 2 assists, Sottil, Atta) and Pongračić is out, mostly on one source each, so a small cut to their attack; Monza are without coach Jurić (suspended) and Folorunsho,",
+                                "Monza are 18th and 1 point from safety while Fiorentina are only 2 points above the drop, so both sides badly need points and a draw is a decent outcome.",
+                                "Home wins are 48% this season but only 39% last season, and draws are 17% against 26%, so I take a middle view with a slightly higher draw chance."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.28,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Monza are missing suspended Ivan Jurić and injured Michael Folorunsho, while regular defender Samuele Birindelli is doubtful; Fiorentina have several doubts including regular midfielder Cher Ndour and Moise Kean, so both attacks may be slig",
+                                "This is a relegation six-pointer: Monza are 18th, one point from safety, while Fiorentina are 15th and only two points above the drop zone, so both sides badly need the points.",
+                                "Monza have lost five straight league games, but Fiorentina have also been inconsistent and have lost three of five away matches, making a tight contest likely."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.27,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are fighting directly to stay out of the relegation zone, with 18th-placed Monza one point from safety and 15th-placed Fiorentina only two points ahead of them.",
+                                "Both teams have one source listing a regular starter who has started 10 of 11 league games as doubtful—defender Samuele Birindelli for Monza and midfielder Cher Ndour for Fiorentina—while Fiorentina also have Moise Kean doubtful according t",
+                                "Fiorentina enter in better momentum after going unbeaten in their last three matches against Atalanta, Sassuolo and Juventus, whereas Monza have lost four straight games."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.01,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.25,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Fiorentina are without defenders Pongračić and Parisi, slightly improving Monza's attacking outlook, though several other listings have only one source.",
+                                "This is a direct relegation-area match: Monza are one point from safety and Fiorentina only two points above the drop zone.",
+                                "Monza have lost five straight matches, while Fiorentina are unbeaten in their last three and scored eight goals across them."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.29,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Monza are in the drop zone, one point from safety, while Fiorentina are only two points above it, so both need points but a defeat hurts Monza more.",
+                                "Confirmed absences are not first-choice scorers or keepers, and the regular-starter doubts for Birindelli and Ndour rest on one source, so expected goals are left unchanged.",
+                                "Fiorentina are unbeaten in their last three, including a 4-2 away win, while Monza have lost four of their last five, which trims the home edge."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "3/5",
+                    "ai_combined": [
+                        0.2552,
+                        0.2563,
+                        0.4885
+                    ],
+                    "p_adj": [
+                        0.234503,
+                        0.250136,
+                        0.515361
+                    ],
+                    "p_llm": [
+                        0.34592,
+                        0.272958,
+                        0.381121
+                    ],
+                    "p_shadow": [
+                        0.255202,
+                        0.256289,
+                        0.488509
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "monza-vs-fiorentina-2026-11-23"
+            },
+            "sha256": "243dcc2f9becab0af6b040bd7bd8f74dda2065dcb3cd2f512e23d925de9232c9",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0027-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "fc-midtjylland-dk",
                 "batch_id": "2026-11-22T0014Z-model-predict",
                 "competition": "danish-superliga",
@@ -2018,8 +3446,12 @@
             "sha256": "988b4a8691af73e4c0dbeca0b7f248b2535253bc29dc72cbc578b94425f96a13",
             "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0008-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1011
+            }
         },
         {
             "record": {
@@ -2494,8 +3926,12 @@
             "sha256": "cbffa8598ee30ee55d916f9ffa8587f3e309a2e919f313850f2e1b709e986ec6",
             "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0006-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-0",
+                "correct": true,
+                "rps": 0.0354
+            }
         },
         {
             "record": {
@@ -2732,8 +4168,12 @@
             "sha256": "f6f86c815bead1fb841950ac1cb961f287e57432aabe83de957a34388a18426a",
             "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0106-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.0964
+            }
         },
         {
             "record": {
@@ -2970,8 +4410,12 @@
             "sha256": "3e1f5f311498bd1560cb1fc14c44710e4bb235c36f1b4861625ec73bf75892c4",
             "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0019-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-1",
+                "correct": false,
+                "rps": 0.2754
+            }
         },
         {
             "record": {
@@ -3208,8 +4652,12 @@
             "sha256": "a0bf453f8bc12b1cf9a4ee572a089003c428ae9e77308df58f4ace85b2ead80d",
             "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0020-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1352
+            }
         },
         {
             "record": {
@@ -3315,8 +4763,12 @@
             "sha256": "65db1f1a98f02c57d65863f381b0d009bb2d3e703d6a3120b943a0a5883efa48",
             "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/tp-2627-0011-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1072
+            }
         },
         {
             "record": {
