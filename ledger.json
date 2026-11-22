@@ -238,7 +238,7 @@
                 "slug": "brondby-if-vs-fc-midtjylland-dk-2026-11-23"
             },
             "sha256": "3fb6b5c78692c2235ad1554eebf35e2452f20f5fc51588558850507404818054",
-            "commit": "pending",
+            "commit": "b4bdb23ae02c3bef796d5786d04471cf9f3bf456",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0006-r1.json",
             "status": "pending",
             "result": null
@@ -3553,8 +3553,12 @@
             "sha256": "0402a7ed28f859d3109896f4ab33762da38988ee76d8642ab35d32bb3f09e213",
             "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0094-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-0",
+                "correct": true,
+                "rps": 0.1618
+            }
         },
         {
             "record": {
@@ -3791,8 +3795,12 @@
             "sha256": "7010c3143f76034bccb0fbd65f496e36db1aab2431097e990275c763c1021b14",
             "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0005-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "5-0",
+                "correct": false,
+                "rps": 0.3071
+            }
         },
         {
             "record": {
@@ -4029,8 +4037,12 @@
             "sha256": "c7b25c097c495cce686c29672dc83c389e345779e65c0b55c40ab0017bc93269",
             "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0005-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "6-2",
+                "correct": true,
+                "rps": 0.0249
+            }
         },
         {
             "record": {
@@ -4267,8 +4279,12 @@
             "sha256": "4a2ee651c3080dc1f736d677b06afe10b08cd92091c085a6e83cac41ade90aab",
             "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0046-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1358
+            }
         },
         {
             "record": {
@@ -4505,8 +4521,12 @@
             "sha256": "a31d86b08d10e18dd6fdbe7f361c19b05f4fd84fc04a44a04d33cb45c97525cb",
             "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0105-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-0",
+                "correct": true,
+                "rps": 0.1183
+            }
         },
         {
             "record": {
@@ -4743,8 +4763,12 @@
             "sha256": "7b71218e7fdc4723730f1472ecd8ed8f7e8192a9418b80d5672084a33713a80d",
             "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0025-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "5-1",
+                "correct": true,
+                "rps": 0.0711
+            }
         },
         {
             "record": {
@@ -4981,8 +5005,12 @@
             "sha256": "d2801ab882c7c529e985607fd0aa5d3af53b68e3679e82926014ba6185214435",
             "commit": "655023a2e630c2cf3927e4dd1e6f4de5e00b935e",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0010-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1248
+            }
         },
         {
             "record": {
