@@ -2382,8 +2382,12 @@
             "sha256": "82bf457e2d4a303a5edc40999e80fe9dd84b13d7a34b7dc69f0e9987a01210b5",
             "commit": "4bccbb58e988c956edd399da8912b8a0b227724d",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0047-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-3",
+                "correct": false,
+                "rps": 0.6538
+            }
         },
         {
             "record": {
@@ -2620,8 +2624,12 @@
             "sha256": "e5df50daae7b4c04ede0859a0ae8409a4de7e1b37267113fc4a42937a5361987",
             "commit": "4bccbb58e988c956edd399da8912b8a0b227724d",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0107-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-3",
+                "correct": true,
+                "rps": 0.137
+            }
         },
         {
             "record": {
@@ -2858,8 +2866,12 @@
             "sha256": "e5fdc24a8b92412f9bc9d0fc897e9cd5ab5543f6c73bb527b562c2c1ada07f0c",
             "commit": "4bccbb58e988c956edd399da8912b8a0b227724d",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0021-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1471
+            }
         },
         {
             "record": {
@@ -3096,8 +3108,12 @@
             "sha256": "f0f8a5a7738ca005ac2d04e510efbafe9be5b195ce2ee9238a9071337978bd41",
             "commit": "4bccbb58e988c956edd399da8912b8a0b227724d",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0026-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "4-4",
+                "correct": false,
+                "rps": 0.1671
+            }
         },
         {
             "record": {
