@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "aris",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0007",
+                "home": "asteras-tripoli",
+                "inputs": {
+                    "elo_away": 1559.8,
+                    "elo_home": 1385,
+                    "lambda_away": 1.242629,
+                    "lambda_home": 1.039095,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-22T15:05:50Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.286671,
+                        0.325959,
+                        0.387371
+                    ],
+                    "p_elo": [
+                        0.246991,
+                        0.274909,
+                        0.4781
+                    ],
+                    "p_market": [
+                        0.277733,
+                        0.293718,
+                        0.428548
+                    ],
+                    "p_stat": [
+                        0.265552,
+                        0.299644,
+                        0.434804
+                    ],
+                    "retained_mass": 0.999999999917,
+                    "rho": -0.162404,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-23T15:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-22T15:08:10Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4751,
+                    "draw_risk": false,
+                    "over_2_5": 0.4092,
+                    "p": [
+                        0.2656,
+                        0.2996,
+                        0.4348
+                    ],
+                    "p_display": [
+                        26.6,
+                        29.9,
+                        43.5
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1409,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1184,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1135,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0919,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0885,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.28,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Aris are missing several midfield regulars: Hongla, Račić (9 starts, 4 assists) and Gianniotas are out and Jensen is doubtful, all on one source, which cuts their creativity.",
+                                "Asteras sit 11th, only 1 point above the relegation zone, and need points, while Aris are 5th and 8 points off the leaders.",
+                                "Asteras have won 1 of 10 league games and drawn 4, and Aris lost 3-0 at Levadiakos on 1 Nov before beating Panetolikos 3-0 on 7 Nov, so Aris are the stronger side but their away record is shaky."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.9,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.3,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Aris are missing several regular starters, including Uroš Račić (9 league starts, 4 assists) and Martin Hongla (6 starts), which weakens their midfield and creativity.",
+                                "Asteras have doubts over regular midfielders Dimitrios Kourbelis (9 starts) and Julián Bartolo (7 starts, 2 goals), reducing their control and attacking threat.",
+                                "Asteras are only 1 point above the relegation zone and need points at home, while Aris are chasing a top-five finish and will be motivated to bounce back from a 0-3 away loss."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.3,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Aris missing three regular starters including key creative midfielder Uroš Račić (4 assists), while Asteras have doubts over regular starters Dimitrios Kourbelis and Julián Bartolo (22% of their league goals).",
+                                "Asteras Tripoli sit just 1 point above the relegation zone and urgently need points to stay clear of the bottom two, whereas fifth-placed Aris are chasing the top of the table.",
+                                "Asteras Tripoli have kept home games tight by conceding just 6 goals in 6 league outings, which should curb an Aris side that has conceded 13 goals across 5 away matches."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.89,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.3,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Aris have several single-source absences, notably Račić (nine starts, four assists), Hongla and Gianniotas, reducing their midfield creation and attack.",
+                                "Asteras are only one point above the relegation zone, increasing the importance of avoiding defeat at home.",
+                                "Aris have won three of their past five competitive matches, but their league away record includes three losses and 13 goals conceded in five games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.88,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.34,
+                                "home": 0.26
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "From one source only, Aris are without regular creator Račić (9 league starts, 4 assists) plus Hongla and Gianniotas, with Jensen doubtful, which cuts their chance of controlling an away game; Asteras have two doubtful regular midfielders, ",
+                                "Asteras are only one point above the relegation zone after 10 games, so avoiding defeat matters more to them than it does to fifth-placed Aris, eight points off the leaders.",
+                                "Asteras have won just one of six home league games and scored only four goals there, so a low-scoring draw fits better than a home surge despite Aris's better overall record."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2763,
+                        0.307,
+                        0.4167
+                    ],
+                    "p_adj": [
+                        0.271998,
+                        0.307703,
+                        0.420299
+                    ],
+                    "p_llm": [
+                        0.293768,
+                        0.303782,
+                        0.40245
+                    ],
+                    "p_shadow": [
+                        0.276274,
+                        0.306976,
+                        0.41675
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "asteras-tripoli-vs-aris-2026-11-23"
+            },
+            "sha256": "19b68c4f5bd97dd566234104d3be7be8449baf602b4b623f26da7e6f924ac193",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0007-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "le-mans",
                 "batch_id": "2026-11-21T0014Z-model-predict",
                 "competition": "ligue-1",
@@ -8765,8 +9003,12 @@
             "sha256": "6f04d2cd3a271e44e1cb48bd606693ddb9437cae87a02eb35ed806007fb5663d",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0007-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-4",
+                "correct": true,
+                "rps": 0.1793
+            }
         },
         {
             "record": {
@@ -9003,8 +9245,12 @@
             "sha256": "ba1d15b37a799410b8ab206eff5b766a42612be63237fc97c3c9eb349e19cbe6",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0008-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.161
+            }
         },
         {
             "record": {
@@ -9241,8 +9487,12 @@
             "sha256": "840d2ca66c4fb772223ac053ab535273d577253e2c329aeb5a3dbdce6bef5f6e",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0009-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1715
+            }
         },
         {
             "record": {
@@ -9479,8 +9729,12 @@
             "sha256": "634e0ea6d0486f474b323e0d1358423c24b30b481241d7efc401298cf9e772fd",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0006-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-0",
+                "correct": false,
+                "rps": 0.4708
+            }
         },
         {
             "record": {
@@ -9717,8 +9971,12 @@
             "sha256": "4fdacad4084aa0bac78a0e7cae4d66a4126e1906ae1ce742628a0a0a50b8db69",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0002-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-1",
+                "correct": true,
+                "rps": 0.2298
+            }
         },
         {
             "record": {
@@ -9955,8 +10213,12 @@
             "sha256": "3f8d4b4c4d0e4ca6d3288f36ca775910a070a4cf40c023453cc0c0c090595445",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0003-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1727
+            }
         },
         {
             "record": {
@@ -10193,8 +10455,12 @@
             "sha256": "1b96ca771d201865513cd9c3d9fde18cba94bd4c996275d6d19ea1db9999082b",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0104-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-2",
+                "correct": true,
+                "rps": 0.0438
+            }
         },
         {
             "record": {
@@ -10431,8 +10697,12 @@
             "sha256": "4fe362cea3a3db3b6f4e46ed019d4b760cb9a5ead5fbe6e3a0c0ebc7f002ae0d",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0017-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-0",
+                "correct": true,
+                "rps": 0.1841
+            }
         },
         {
             "record": {
@@ -10669,8 +10939,12 @@
             "sha256": "ed2e23a7b238518d18b3e7ff0696b3b81ba1d24b2b8d6a0f3aced63d4f4e2a12",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0019-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-1",
+                "correct": true,
+                "rps": 0.1675
+            }
         },
         {
             "record": {
@@ -10907,8 +11181,12 @@
             "sha256": "27a621325a70ac764079185a52489a371786d6dcdba3a2b8006d3eed55d4bfda",
             "commit": "c7bac134e9ff046be749917371fc48e78af69bc6",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0020-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-4",
+                "correct": true,
+                "rps": 0.1625
+            }
         },
         {
             "record": {
