@@ -238,7 +238,7 @@
                 "slug": "nantes-vs-grenoble-2026-11-23"
             },
             "sha256": "12accac281526f8f6db3cf0fafd13c1154d69c4ac1ab1f2572f0ec9f2bac46b2",
-            "commit": "pending",
+            "commit": "f271431ceb1ee4257946da133ac062f6f9ab9675",
             "file": "https://thetouchlineatlas.com/ledger/f2-2627-0001-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +476,7 @@
                 "slug": "sochaux-vs-dunkerque-2026-11-23"
             },
             "sha256": "10e9289615c75e291ee9c948b1ee0f43218816171071aa6f2635f12a0c2bd593",
-            "commit": "pending",
+            "commit": "f271431ceb1ee4257946da133ac062f6f9ab9675",
             "file": "https://thetouchlineatlas.com/ledger/f2-2627-0002-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +714,7 @@
                 "slug": "levante-vs-elche-2026-11-23"
             },
             "sha256": "83ee3437f75ff137c0f26ed36b90d1a50fa42bd8efdaa621a92ecafc73f271c5",
-            "commit": "pending",
+            "commit": "f271431ceb1ee4257946da133ac062f6f9ab9675",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0108-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +952,7 @@
                 "slug": "brentford-vs-everton-2026-11-23"
             },
             "sha256": "44e3346ca8f2005f91f89bc611c777c60433ec72e86ffa1625084a5b85c922bb",
-            "commit": "pending",
+            "commit": "f271431ceb1ee4257946da133ac062f6f9ab9675",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0106-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +1190,7 @@
                 "slug": "ceuta-vs-almeria-2026-11-23"
             },
             "sha256": "78e41539490ffaafbff9f7309a16ecc0d1c38fe7232cab63f00b7764916a2007",
-            "commit": "pending",
+            "commit": "f271431ceb1ee4257946da133ac062f6f9ab9675",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0022-r1.json",
             "status": "pending",
             "result": null
@@ -1428,7 +1428,7 @@
                 "slug": "monza-vs-fiorentina-2026-11-23"
             },
             "sha256": "243dcc2f9becab0af6b040bd7bd8f74dda2065dcb3cd2f512e23d925de9232c9",
-            "commit": "pending",
+            "commit": "f271431ceb1ee4257946da133ac062f6f9ab9675",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0027-r1.json",
             "status": "pending",
             "result": null
@@ -3688,8 +3688,12 @@
             "sha256": "26d5e88545c6a0d9826d77372e9369300b76e978847ad82564e77441bd0ecded",
             "commit": "d21767d7056d71efd3366922f40e952181e7f92f",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0009-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-2",
+                "correct": false,
+                "rps": 0.2983
+            }
         },
         {
             "record": {
