@@ -7,6 +7,720 @@
     "records": [
         {
             "record": {
+                "away": "lask-linz",
+                "batch_id": "2026-11-23T0305Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-23T03:05:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0019",
+                "home": "bodo-glimt",
+                "inputs": {
+                    "elo_away": 1547.7,
+                    "elo_home": 1763.4,
+                    "lambda_away": 1.03603,
+                    "lambda_home": 2.694114,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-23T18:12:39Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.725554,
+                        0.152124,
+                        0.122322
+                    ],
+                    "p_elo": [
+                        0.656227,
+                        0.224146,
+                        0.119627
+                    ],
+                    "p_market": [
+                        0.642533,
+                        0.183249,
+                        0.174218
+                    ],
+                    "p_stat": [
+                        0.697292,
+                        0.172831,
+                        0.129877
+                    ],
+                    "retained_mass": 0.999999999903,
+                    "rho": 0.02144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-24T17:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-23T18:18:44Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6072,
+                    "draw_risk": false,
+                    "over_2_5": 0.7112,
+                    "p": [
+                        0.6973,
+                        0.1728,
+                        0.1299
+                    ],
+                    "p_display": [
+                        69.7,
+                        17.3,
+                        13
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "2-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0867,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0837,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0778,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0751,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0744,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.18,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "base_rate",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Bodo/Glimt are without Håkon Evjen and August Mikkelsen, and LASK without George Bello and Ramiz Harakaté, all from one source, so the effect on each side is small.",
+                                "Home sides win 50-56% of Champions League matches, and Aspmyra's home advantage supports Bodo/Glimt.",
+                                "Both sides score freely (Bodo 4-2 at Molde, LASK 4-0 v Slovan) and concede often, so a goal-filled game with a narrow home win is likely."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.18,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Bodo/Glimt are missing Håkon Evjen and August Mikkelsen, both listed as out by one source; Evjen is a regular attacking contributor, so their creative depth is slightly reduced.",
+                                "Bodo/Glimt have won 4 of their last 5 at home in all competitions, including a 1-0 Champions League win over Borussia Dortmund, while LASK have lost 3 of their last 5 away matches.",
+                                "Champions League matches this season have produced a home win 56% of the time, supporting a home-leaning forecast at Aspmyra Stadion."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.22,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Both sides have two injured players listed by only one source and without appearance records, including Håkon Evjen and August Mikkelsen for Bodo/Glimt and George Bello and Ramiz Harakaté for LASK Linz, leaving the exact impact on the start",
+                                "Both clubs enter on strong runs and have proven competitive in the Champions League, with Bodo/Glimt keeping clean sheets at home against Borussia Dortmund and Lille while LASK Linz enters on a five-match winning streak that includes Europe",
+                                "Bodo/Glimt has four days of rest compared to three for LASK Linz, though both teams had a light schedule with just one match in the preceding two weeks."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.21,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Both sides have two injury absences listed by only one source, with no player-role details provided, so no xG adjustment is applied.",
+                                "Bodø/Glimt are unbeaten in their two Champions League home matches, beating Borussia Dortmund and drawing with Lille, which strengthens their home edge.",
+                                "Champions League matches this season have produced home wins more often than either draws or away wins (56%)."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.22,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Unlike a routine league meeting, both sides have already produced big Champions League results this season, but Bodo/Glimt's home win over Dortmund and unbeaten home European record tilt this toward the hosts more than LASK's mixed away nig",
+                                "Evjen and Mikkelsen for Bodo/Glimt and Bello and Harakaté for LASK are listed out by one source only, with no starts, goals or assists given, so they do not change either side's expected goals.",
+                                "This season's Champions League has ended in a home win in 56% of matches and a draw in only 10%, so a home win is more likely than last season's more even split."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6642,
+                        0.1825,
+                        0.1533
+                    ],
+                    "p_adj": [
+                        0.694009,
+                        0.175246,
+                        0.130745
+                    ],
+                    "p_llm": [
+                        0.525048,
+                        0.202163,
+                        0.272789
+                    ],
+                    "p_shadow": [
+                        0.664227,
+                        0.182492,
+                        0.153281
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "bodo-glimt-vs-lask-linz-2026-11-24"
+            },
+            "sha256": "45da26b4451a6455cf6226a135dd9722faf4ebe55f9b862c7fa2030ab258e1db",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0019-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "aston-villa",
+                "batch_id": "2026-11-23T0305Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-23T03:05:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0020",
+                "home": "galatasaray",
+                "inputs": {
+                    "elo_away": 1979.2,
+                    "elo_home": 1760.3,
+                    "lambda_away": 1.941421,
+                    "lambda_home": 1.293364,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-23T18:12:39Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.256179,
+                        0.21636,
+                        0.52746
+                    ],
+                    "p_elo": [
+                        0.226357,
+                        0.270091,
+                        0.503552
+                    ],
+                    "p_market": [
+                        0.330883,
+                        0.240789,
+                        0.428327
+                    ],
+                    "p_stat": [
+                        0.25457,
+                        0.231484,
+                        0.513946
+                    ],
+                    "retained_mass": 0.999999999964,
+                    "rho": 0.02144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-24T17:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-23T18:18:44Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6235,
+                    "draw_risk": false,
+                    "over_2_5": 0.6224,
+                    "p": [
+                        0.2546,
+                        0.2315,
+                        0.5139
+                    ],
+                    "p_display": [
+                        25.5,
+                        23.1,
+                        51.4
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1035,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0935,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0765,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0723,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0664,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.25,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Galatasaray miss Rafael Leão and Villa miss Cash, Ruggeri and Onana, all from one source only, so the adjustments are small; Villa lose a full-back pair and a midfielder.",
+                                "Galatasaray have won 8 of their last 9 and are 6W 1D 0L at home in the league, while Villa are winless in their last four league games (3 draws, 0-3 at Barcelona).",
+                                "Home wins are 50-56% in this Champions League, with draws only 10-18%, though Villa's 4-4 and 6-0 results suggest open games."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.22,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Aston Villa are missing three players listed as out by one source each, including Amadou Onana, a regular central midfielder, which slightly weakens their midfield depth.",
+                                "Galatasaray have won their last seven matches in all competitions, including home wins over Fenerbahçe and VfB Stuttgart, while Aston Villa have won only one of their last five.",
+                                "Champions League matches this season have ended in a home win 56% of the time, supporting a home-leaning forecast."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.24,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "The injuries to Rafael Leão for Galatasaray and Matty Cash, Matteo Ruggeri and Amadou Onana for Aston Villa are each reported by only one source with no stats or starter roles provided, so team news is not confirmed.",
+                                "Galatasaray bring a seven-match winning streak across all competitions into this fixture, whereas Aston Villa are winless in their last five games.",
+                                "Home sides have won 56% of Champions League matches this season compared to just 10% ending in draws, giving the hosts a solid baseline advantage."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.25,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Villa have Cash, Ruggeri and Onana listed out, but each absence is reported by one source, so the impact is not treated as confirmed.",
+                                "Galatasaray have won seven of their last eight matches and are unbeaten in seven Süper Lig home games, supporting a strong home performance.",
+                                "Champions League home wins have accounted for 56% of matches this season, reinforcing the home edge at RAMS Park."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.26,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "What sets this apart is the absences, all from one source only and without starts or goals in the sheet: Leão is listed out for Galatasaray, and Cash, Ruggeri and Onana for Villa, so neither multiplier is moved off 1.0.",
+                                "Galatasaray have won seven in a row after the 1-4 Barcelona loss, including CL wins over Lille and Stuttgart, while Villa have drawn three of their last four and lost 0-3 at Barcelona.",
+                                "This season’s Champions League sample is unusually home-heavy and low on draws (56% and 10% from 72 matches), so last season’s 18% draw rate is the better check on a tight score."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.2929,
+                        0.2388,
+                        0.4683
+                    ],
+                    "p_adj": [
+                        0.25457,
+                        0.231484,
+                        0.513946
+                    ],
+                    "p_llm": [
+                        0.46414,
+                        0.244277,
+                        0.291583
+                    ],
+                    "p_shadow": [
+                        0.292945,
+                        0.238783,
+                        0.468272
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "galatasaray-vs-aston-villa-2026-11-24"
+            },
+            "sha256": "db1b9dc9ff096e0b76409f295c2d9300c746b9af11d12873d72bb97c23d65b4e",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0020-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "catanzaro",
+                "batch_id": "2026-11-23T0014Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-23T00:14:41Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0011",
+                "home": "juve-stabia",
+                "inputs": {
+                    "elo_away": 1193.6,
+                    "elo_home": 1189.7,
+                    "lambda_away": 1.147204,
+                    "lambda_home": 1.421606,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-23T18:12:39Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.419721,
+                        0.289395,
+                        0.290883
+                    ],
+                    "p_elo": [
+                        0.415919,
+                        0.283066,
+                        0.301015
+                    ],
+                    "p_market": [
+                        0.498929,
+                        0.261669,
+                        0.239402
+                    ],
+                    "p_stat": [
+                        0.420099,
+                        0.284999,
+                        0.294902
+                    ],
+                    "retained_mass": 0.999999999958,
+                    "rho": -0.106467,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-24T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-23T18:18:44Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5302,
+                    "draw_risk": false,
+                    "over_2_5": 0.4753,
+                    "p": [
+                        0.4201,
+                        0.285,
+                        0.2949
+                    ],
+                    "p_display": [
+                        42,
+                        28.5,
+                        29.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1362,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0957,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0889,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0886,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0775,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.32,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Juve Stabia sit 2 points above the drop zone while Catanzaro are 20th, 1 point from safety, so both need points and a draw is a real chance.",
+                                "Catanzaro have no away win and have conceded 13 in 7 road games, whereas Juve Stabia have lost only 2 of 5 at home despite a 0-2 defeat at Modena.",
+                                "The last four league meetings had no home or away pattern: two draws at 2-2 and 1-1, one 0-0 and one 2-0, which favors a low-scoring tight game."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.31,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Catanzaro are in the relegation zone, 1 point from safety, so they need points badly, but Juve Stabia are only 2 points above the drop zone and also cannot afford to lose.",
+                                "Catanzaro have not won away all season (0W 2D 5L), while Juve Stabia have won two of their last three home league games.",
+                                "No absences are listed for either side, but the fact sheet notes this is based on one source and does not confirm fully available squads."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.31,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams are fighting to stay out of the relegation zone, with bottom-placed Catanzaro one point from safety and Juve Stabia only two points above the drop after a four-point deduction.",
+                                "Catanzaro are winless in seven away league matches with five defeats and thirteen goals conceded, which gives Juve Stabia a clear edge at home.",
+                                "One source lists no absences for either side yet, so expected goal adjustments remain neutral rather than guessing at missing players."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.3,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Catanzaro are in the relegation zone and one point from safety, while Juve Stabia are only two points above it, making this a high-value direct survival fixture.",
+                                "Juve Stabia have won three of their past six league matches, whereas Catanzaro remain winless away in seven league trips.",
+                                "Only one source currently lists no absences for either side, so no availability-based expected-goals adjustment is justified."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.31,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Catanzaro are in the drop zone, one point from safety, so they need the result more than Juve Stabia, who sit only two points above 18th.",
+                                "Catanzaro have no away win in seven (two draws, five losses, 7-13), so their road record points to another low return even against a modest home side.",
+                                "One source lists no absences for either side, which does not confirm that either squad is fully available."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4256,
+                        0.2902,
+                        0.2841
+                    ],
+                    "p_adj": [
+                        0.420099,
+                        0.284999,
+                        0.294902
+                    ],
+                    "p_llm": [
+                        0.446023,
+                        0.31046,
+                        0.243517
+                    ],
+                    "p_shadow": [
+                        0.425628,
+                        0.290237,
+                        0.284136
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "juve-stabia-vs-catanzaro-2026-11-24"
+            },
+            "sha256": "1796270938720a192755356077200e1665aa44f6477100b5990e5eb3f84652b8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0011-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "grenoble",
                 "batch_id": "2026-11-22T0014Z-model-predict",
                 "competition": "ligue-2",
