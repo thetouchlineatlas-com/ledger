@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "cerezo-osaka",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0017",
+                "home": "urawa-red-diamonds",
+                "inputs": {
+                    "elo_away": 1475.5,
+                    "elo_home": 1492.3,
+                    "lambda_away": 1.233722,
+                    "lambda_home": 1.56008,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-24T11:05:55Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.44735,
+                        0.25282,
+                        0.29983
+                    ],
+                    "p_elo": [
+                        0.437914,
+                        0.280783,
+                        0.281302
+                    ],
+                    "p_market": [
+                        0.521656,
+                        0.234623,
+                        0.243721
+                    ],
+                    "p_stat": [
+                        0.445775,
+                        0.264872,
+                        0.289353
+                    ],
+                    "retained_mass": 0.999999999854,
+                    "rho": -0.01486,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T10:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T11:11:04Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5645,
+                    "draw_risk": false,
+                    "over_2_5": 0.5252,
+                    "p": [
+                        0.4458,
+                        0.2648,
+                        0.2894
+                    ],
+                    "p_display": [
+                        44.6,
+                        26.5,
+                        28.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1252,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0934,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0915,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0742,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0712,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.25,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Cerezo Osaka are only 5 points above the relegation zone with 23 games left, while Urawa are 10 clear, so the visitors need points more but have been the weaker side.",
+                                "Urawa are 4W 0D 2L at home with 12 goals scored, while Cerezo have won once in seven away league games and conceded 18; the two League Cup meetings this month (2-0, 1-1) were also close.",
+                                "One source lists no absences for either side, which does not confirm full squads, so no adjustment is made."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.26,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Urawa have not beaten Cerezo in their last five league meetings, but they did win the most recent cup meeting 2-0 at home on 11 November, suggesting they can break that league pattern at Saitama Stadium.",
+                                "Urawa's home league record is strong at 4 wins from 6, while Cerezo have lost 4 of 7 away games and conceded 18 goals on the road, pointing to a home win.",
+                                "Cerezo are only 5 points above the relegation zone and need points, but their away form and recent 0-3 home loss to FC Tokyo make a recovery here difficult."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.26,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "These sides met twice in the League Cup earlier this month, with Urawa winning 2-0 at home before a 1-1 draw in Osaka.",
+                                "Urawa have won four of their six home league matches, whereas Cerezo Osaka have conceded 18 goals across seven away league games with just one win.",
+                                "Only one source provides team news for this match and lists no absences yet, which does not confirm fully available squads ahead of their next league games in three days."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.25,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Urawa have just beaten Cerezo 2-0 at home and drawn 1-1 away in the League Cup this month, reversing a previously difficult league matchup.",
+                                "Urawa's four home league wins from six and Cerezo's one away win from seven give the hosts a meaningful venue edge.",
+                                "Only one source lists no absences for either side, so there is no verified personnel adjustment to make."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.28,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Unlike older league meetings that mostly went Cerezo’s way, these sides met twice in the League Cup this month, with Urawa winning 2-0 at home and drawing 1-1 away.",
+                                "Cerezo have taken only one win from seven away league games and conceded 18, so an away result is harder than a typical J1 trip.",
+                                "Both sides have played three matches in the last 14 days and have another league game only three days later, which points to a tighter, lower-scoring match."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4535,
+                        0.264,
+                        0.2825
+                    ],
+                    "p_adj": [
+                        0.445775,
+                        0.264872,
+                        0.289353
+                    ],
+                    "p_llm": [
+                        0.484113,
+                        0.259893,
+                        0.255994
+                    ],
+                    "p_shadow": [
+                        0.453459,
+                        0.264024,
+                        0.282517
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "urawa-red-diamonds-vs-cerezo-osaka-2026-11-25"
+            },
+            "sha256": "bd02366309506753739bc73d3b97a7bb504f7bfc258b8c163c3922dad21bc27c",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0017-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "yokohama-f-marinos",
                 "batch_id": "2026-11-21T1921Z-model-predict",
                 "competition": "j1-league",
@@ -238,7 +476,7 @@
                 "slug": "avispa-fukuoka-vs-yokohama-f-marinos-2026-11-25"
             },
             "sha256": "8cffa65f4ef76bd7cf7689fbbce3580da43300f4c72a4b4483b070aee8bf86b8",
-            "commit": "pending",
+            "commit": "94e7776b57e2125787328777983f8cf94882c4b0",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0011-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +714,7 @@
                 "slug": "fagiano-okayama-vs-shimizu-s-pulse-2026-11-25"
             },
             "sha256": "428744daa731bba31c84bbf99268f18aea31174a1fe3fb157e9fd024d9ae7d9b",
-            "commit": "pending",
+            "commit": "94e7776b57e2125787328777983f8cf94882c4b0",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0012-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +952,7 @@
                 "slug": "fc-tokyo-vs-sanfrecce-hiroshima-2026-11-25"
             },
             "sha256": "23772ee3239d695748127d7820e49bbe915340f9979f594f93c9d6a2f7619a15",
-            "commit": "pending",
+            "commit": "94e7776b57e2125787328777983f8cf94882c4b0",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0013-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +1190,7 @@
                 "slug": "jef-united-ichihara-chiba-vs-nagoya-grampus-2026-11-25"
             },
             "sha256": "51f6554966731a6c899b7e5350909353829b856b071fa6d430fc3f6727e9ef99",
-            "commit": "pending",
+            "commit": "94e7776b57e2125787328777983f8cf94882c4b0",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0014-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +1428,7 @@
                 "slug": "mito-hollyhock-vs-tokyo-verdy-1969-2026-11-25"
             },
             "sha256": "e51b60c2f50c5649cc5fd147c5a683c6ede06547d55e3f6292b9843acb9b238a",
-            "commit": "pending",
+            "commit": "94e7776b57e2125787328777983f8cf94882c4b0",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0015-r1.json",
             "status": "pending",
             "result": null
@@ -1428,7 +1666,7 @@
                 "slug": "v-varen-nagasaki-vs-kawasaki-frontale-2026-11-25"
             },
             "sha256": "cae3b5108491bdf48f9fad5ffe6ac70fad85a213647dc5a4011059f50fdf7976",
-            "commit": "pending",
+            "commit": "94e7776b57e2125787328777983f8cf94882c4b0",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0016-r1.json",
             "status": "pending",
             "result": null
