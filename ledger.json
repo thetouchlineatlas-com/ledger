@@ -238,7 +238,7 @@
                 "slug": "bolton-wanderers-vs-west-bromwich-albion-2026-11-25"
             },
             "sha256": "5b24f0d00c0dd2d8ad21ec8791e6129bf37469e21a8ad6bddf714ecff806e746",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0045-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +476,7 @@
                 "slug": "burnley-vs-birmingham-city-2026-11-25"
             },
             "sha256": "039d84d648725143e97bcfb35d2e74dcba8b1f89cec5c7472cdd6238c5a3986c",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0046-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +714,7 @@
                 "slug": "watford-vs-blackburn-rovers-2026-11-25"
             },
             "sha256": "5edcc036d63202eac32120247929b28f1b65e883ad441888d6e126940a285881",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0047-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +952,7 @@
                 "slug": "stoke-city-vs-millwall-2026-11-25"
             },
             "sha256": "010f9b3c8b7c8d2be08307b41bb00d5c8a97135caaa830430d99649325ab568f",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0048-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +1190,7 @@
                 "slug": "atletico-madrid-vs-viking-fk-2026-11-25"
             },
             "sha256": "80432c6a0436a165683c3b09f470b97f5d0dc2ac3e0591976d2a54a920c24db8",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0030-r1.json",
             "status": "pending",
             "result": null
@@ -1428,7 +1428,7 @@
                 "slug": "club-brugge-vs-liverpool-2026-11-25"
             },
             "sha256": "6d2f5574e784cc14871978fb090189d11907fd1852e8491a46c0dc05cce8b824",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0031-r1.json",
             "status": "pending",
             "result": null
@@ -1666,7 +1666,7 @@
                 "slug": "inter-milan-vs-vfb-stuttgart-2026-11-25"
             },
             "sha256": "9425f2a93683d555a7d6246461d9039a6c75fb36f1fa3f5aa1a7943b9b536d29",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0032-r1.json",
             "status": "pending",
             "result": null
@@ -1904,7 +1904,7 @@
                 "slug": "lille-vs-bayern-munich-2026-11-25"
             },
             "sha256": "3213eaf7155b354942623dad9fa6f77fa308d7f64c6da96adab9957724cbaee4",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0033-r1.json",
             "status": "pending",
             "result": null
@@ -2142,7 +2142,7 @@
                 "slug": "paris-saint-germain-vs-roma-2026-11-25"
             },
             "sha256": "ca52b95fb54fd6e9a94f05bfe5ad3aa6b9a7561ecb82481b4df36bfd7d52a88c",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0034-r1.json",
             "status": "pending",
             "result": null
@@ -2382,7 +2382,7 @@
                 "slug": "shakhtar-donetsk-vs-fenerbahce-2026-11-25"
             },
             "sha256": "d31e44c5b3649036174d503eb8670310cbe05fc38268611888ea4312b0bb595a",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0035-r1.json",
             "status": "pending",
             "result": null
@@ -2620,7 +2620,7 @@
                 "slug": "sporting-cp-vs-manchester-united-2026-11-25"
             },
             "sha256": "19798d6cb1053c2bf79ad414d107b72e52db70b821c36a7ae265306d0e5a88c2",
-            "commit": "pending",
+            "commit": "506172c6657fb13b76a28cd80189e22c2c0346e5",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0036-r1.json",
             "status": "pending",
             "result": null
@@ -10958,8 +10958,12 @@
             "sha256": "0cac67a12a8e6db79483034821312a252551b152391c6b764f56ae413527ab99",
             "commit": "0c66813fc8a3cc5896110ac82d1c36a1909a38e6",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0012-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "5-0",
+                "correct": true,
+                "rps": 0.1835
+            }
         },
         {
             "record": {
@@ -11196,8 +11200,12 @@
             "sha256": "b1eae777f4a8aaacc0ccd176aab959a38aa319c8b5954dc84f22676118aa1fc3",
             "commit": "0c66813fc8a3cc5896110ac82d1c36a1909a38e6",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0013-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "5-1",
+                "correct": true,
+                "rps": 0.2444
+            }
         },
         {
             "record": {
@@ -11434,8 +11442,12 @@
             "sha256": "fb4c565bcfcd889c30f574bc76eda1d5397d44578da41e4eb1538acdc4484800",
             "commit": "0c66813fc8a3cc5896110ac82d1c36a1909a38e6",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0014-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-1",
+                "correct": true,
+                "rps": 0.1023
+            }
         },
         {
             "record": {
@@ -11672,8 +11684,12 @@
             "sha256": "d1843d75372c0a62e2921a1ab5820b23e3eeff43b12608fa37c8ef0c84a47631",
             "commit": "0c66813fc8a3cc5896110ac82d1c36a1909a38e6",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0015-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-1",
+                "correct": false,
+                "rps": 0.2706
+            }
         },
         {
             "record": {
@@ -11910,8 +11926,12 @@
             "sha256": "0ebd87f72173512d787dd4a215a7a7517490bfa6c7c1b65e1c631414626d71b4",
             "commit": "0c66813fc8a3cc5896110ac82d1c36a1909a38e6",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0016-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-1",
+                "correct": true,
+                "rps": 0.2538
+            }
         },
         {
             "record": {
