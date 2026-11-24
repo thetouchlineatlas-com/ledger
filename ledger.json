@@ -7,6 +7,720 @@
     "records": [
         {
             "record": {
+                "away": "arezzo",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0018",
+                "home": "mantova",
+                "inputs": {
+                    "elo_away": 1076.2,
+                    "elo_home": 1162.4,
+                    "lambda_away": 0.91201,
+                    "lambda_home": 1.91893,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-24T19:05:57Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.598624,
+                        0.239077,
+                        0.162298
+                    ],
+                    "p_elo": [
+                        0.511158,
+                        0.268489,
+                        0.220353
+                    ],
+                    "p_market": [
+                        0.57624,
+                        0.237152,
+                        0.186609
+                    ],
+                    "p_stat": [
+                        0.561317,
+                        0.251994,
+                        0.186689
+                    ],
+                    "retained_mass": 0.999999999733,
+                    "rho": -0.106545,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T19:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T19:08:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5268,
+                    "draw_risk": false,
+                    "over_2_5": 0.531,
+                    "p": [
+                        0.5613,
+                        0.252,
+                        0.1867
+                    ],
+                    "p_display": [
+                        56.1,
+                        25.2,
+                        18.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1203,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1018,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0958,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0928,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0737,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.3,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Mantova sit 6th, 3 points clear of 9th in the play-off places, while Arezzo are only 2 points above the relegation zone and 6 off the play-offs.",
+                                "Mantova miss midfielder Jonathan Silva (6 starts) and Arezzo miss Chierico and Viviani, minor rotation options; all from one source, so the effect is small.",
+                                "Mantova lost 1-4 at Avellino in their last match, but Arezzo have scored only 10 goals in 12 games and are away from a solid base."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.3,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Mantova are 6th and only 3 points clear of 9th, so they need a home win to protect their promotion play-off place, while Arezzo are just 2 points above the relegation zone and also need points.",
+                                "Mantova are missing regular starting midfielder Jonathan Silva, but Arezzo's absences are less damaging: Chierico and Viviani have only 5 league starts between them, though Chierico accounts for 10% of Arezzo's league goals.",
+                                "Mantova have lost 3 of their last 5 league games, including a 1-4 defeat at Avellino, but Arezzo have won only once in their last 7 and have the division's weakest away goal difference among the bottom sides."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.3,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Mantova midfielder Jonathan Silva (6 starts) as out, while Arezzo could miss midfielders Luca Chierico and Mattia Viviani.",
+                                "Both teams have clear incentives, with Mantova defending a 3-point cushion inside the play-off places and Arezzo sitting just 2 points above the relegation zone.",
+                                "Both sides enter on five-match winless runs, though Mantova's superior overall goal difference (+1 vs -11) makes them home favourites."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.3,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both absence lists come from one source: Mantova miss regular midfielder Jonathan Silva, while Arezzo lose two midfielders including Chierico, whose goal accounts for 10% of their league total.",
+                                "Arezzo are only two points above relegation, so the visitors have greater immediate pressure to take something from the match.",
+                                "Mantova's home record is even, but Arezzo have conceded 21 league goals in 12 games, making a narrow home edge more likely."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.32,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Arezzo sit only 2 points above the relegation zone and need points more urgently, while Mantova are in the play-off places and 3 points clear of 9th.",
+                                "Team news is single-source only: Mantova miss regular-starter midfielder Jonathan Silva (6 of 12 starts), while Arezzo's absentees are squad midfielders (3 and 2 starts; Chierico has 10% of their goals).",
+                                "Mantova's home games have been level at 7-7 (2W 2D 2L) and they just lost 1-4, so the table gap does not translate into a clear home edge against an away side that has won 3 of 6 on the road."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5383,
+                        0.2642,
+                        0.1975
+                    ],
+                    "p_adj": [
+                        0.559215,
+                        0.253949,
+                        0.186837
+                    ],
+                    "p_llm": [
+                        0.454048,
+                        0.304036,
+                        0.241916
+                    ],
+                    "p_shadow": [
+                        0.538334,
+                        0.26421,
+                        0.197456
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "mantova-vs-arezzo-2026-11-25"
+            },
+            "sha256": "c38c5a845376f293a513b0a9a0ee36a7b6abae0415932707f02af8806e7b35a8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0018-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "sampdoria",
+                "batch_id": "2026-11-22T1905Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-22T19:05:54Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0019",
+                "home": "padova",
+                "inputs": {
+                    "elo_away": 1140.5,
+                    "elo_home": 1130.3,
+                    "lambda_away": 0.912305,
+                    "lambda_home": 1.242597,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-24T19:05:57Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.424643,
+                        0.317576,
+                        0.257781
+                    ],
+                    "p_elo": [
+                        0.409182,
+                        0.283629,
+                        0.307189
+                    ],
+                    "p_market": [
+                        0.292474,
+                        0.297647,
+                        0.409879
+                    ],
+                    "p_stat": [
+                        0.419767,
+                        0.299695,
+                        0.280538
+                    ],
+                    "retained_mass": 0.999999999923,
+                    "rho": -0.10646,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T19:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T19:08:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4361,
+                    "draw_risk": false,
+                    "over_2_5": 0.3708,
+                    "p": [
+                        0.4198,
+                        0.2997,
+                        0.2805
+                    ],
+                    "p_display": [
+                        42,
+                        30,
+                        28
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1372,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1286,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1226,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0998,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0885,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.3,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Padova are missing three forwards (Lasagna, Caprari, Zanimacchia), though none is a regular starter, and Calabro is suspended; Sampdoria lose regular starters Di Pardo and Verschaeren; all of this is from one source only.",
+                                "Sampdoria are 4 points above the drop zone and 4 off the play-offs, while Padova are 2 points off the play-offs, so both need points in a tight mid-table.",
+                                "Sampdoria have won 3 of their last 4 but have only 1 away win this season (5-13 goals), while Padova have drawn their last 3 and are level in home results."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.31,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sampdoria are missing regular starters Alessandro Di Pardo (9 league starts) and Yari Verschaeren (8 starts, 1 goal, 2 assists), weakening their defence and midfield; Padova's absences are mostly squad forwards, so the away side's team news",
+                                "Both sides are mid-table but Sampdoria are only 4 points above the relegation zone and 4 points off the play-off places, so they need points to avoid being dragged into danger, while Padova are 6 points clear of the drop zone.",
+                                "Sampdoria have won their last three league games, including a 3-1 home win over Benevento, while Padova are unbeaten in five but have drawn three of those, suggesting a tight contest."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.95,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.33,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Sampdoria are missing regular starters Alessandro Di Pardo (9 starts) and Yari Verschaeren (8 starts, 1 goal, 2 assists), while Padova lack several rotation forwards.",
+                                "Padova sit just 2 points outside the promotion play-off places on 16 points, whereas 13th-placed Sampdoria are 4 points behind the top eight and 4 points above the relegation zone.",
+                                "Sampdoria have won three consecutive games to overcome a poor 1W-2D-4L away record, meeting a Padova side unbeaten in five matches after drawing their last three."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.9,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.32,
+                                "home": 0.41
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Both teams have only single-source absence reports, but Sampdoria are without regular starters Di Pardo and Verschaeren while Padova have several forward absences.",
+                                "Sampdoria arrive on a three-match winning run, but their 1-2-4 away record and 5-13 away goals still favour Padova avoiding defeat.",
+                                "Padova are two points from the play-off places, while Sampdoria are only four points above relegation, giving both sides a strong need for points."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.92,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.34,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sampdoria are without two regular starters, defender Di Pardo (9 of 12) and midfielder Verschaeren (8 of 12, 2 assists and 7% of their goals), all from one source, which trims their away side; Padova's listed absences are also one source an",
+                                "Sampdoria have won their last three, including away at Carrarese, but that has to be set against only one win in seven away games, so the venue still points to a tight Padova result rather than an away win.",
+                                "Padova are only two points off the play-off places and Sampdoria four, so both need the points, with Sampdoria also only four above the relegation zone."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4141,
+                        0.3064,
+                        0.2795
+                    ],
+                    "p_adj": [
+                        0.420102,
+                        0.303005,
+                        0.276893
+                    ],
+                    "p_llm": [
+                        0.390156,
+                        0.320026,
+                        0.289818
+                    ],
+                    "p_shadow": [
+                        0.414058,
+                        0.306427,
+                        0.279515
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "padova-vs-sampdoria-2026-11-25"
+            },
+            "sha256": "57c0bbfb46bc4f055f9b2649549fce57a13f1785a1162b406880a22525efd3d2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0019-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "modena",
+                "batch_id": "2026-11-23T0014Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-23T00:14:41Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0020",
+                "home": "pisa",
+                "inputs": {
+                    "elo_away": 1252.5,
+                    "elo_home": 1135.6,
+                    "lambda_away": 1.177605,
+                    "lambda_home": 1.460823,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-24T19:05:57Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.423326,
+                        0.28476,
+                        0.291914
+                    ],
+                    "p_elo": [
+                        0.300334,
+                        0.283,
+                        0.416666
+                    ],
+                    "p_market": [
+                        0.406377,
+                        0.284754,
+                        0.308869
+                    ],
+                    "p_stat": [
+                        0.361135,
+                        0.28584,
+                        0.353024
+                    ],
+                    "retained_mass": 0.99999999994,
+                    "rho": -0.106467,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T19:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T19:08:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5461,
+                    "draw_risk": false,
+                    "over_2_5": 0.4897,
+                    "p": [
+                        0.3611,
+                        0.2859,
+                        0.353
+                    ],
+                    "p_display": [
+                        36.1,
+                        28.6,
+                        35.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1366,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0875,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.086,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0849,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0779,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.3,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Modena are 2nd, 1 point off the lead and 5 clear of 3rd, while Pisa are 7 points off automatic promotion and need points to stay in the play-off places.",
+                                "Modena have six players listed out or doubtful, including regular starters Zampano (out) and Tonoli (doubtful, 3 assists); all from one source, so the effect is modest.",
+                                "Modena have conceded only 10 goals in 12 games and have won 4 of 6 away, while Pisa have conceded 12 in 6 home games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.31,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Modena are missing regular starter Francesco Zampano and have doubts over regular defender Daniel Tonoli, while Pisa's only listed absence is Mateus Lusuardi, so Modena's defensive depth is slightly reduced.",
+                                "Modena sit 2nd and are 1 point behind the leaders with automatic promotion at stake, while Pisa are 5th and 7 points off 2nd, so the away side has a stronger immediate incentive to push for the win.",
+                                "Modena have won three of the last five league meetings, including a 2-1 win at Pisa in April 2025, and Pisa have not beaten them in that span."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.32,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Modena regular starter Francesco Zampano (7 league starts) out and regular starter Daniel Tonoli (8 league starts, 3 assists) doubtful alongside four other injured players, weakening the visitors' flanks.",
+                                "Modena sit 2nd and 1 point off the title lead while 5th-placed Pisa are 7 points behind them in a direct clash for promotion spots.",
+                                "Modena have won four of their six away league games while Pisa have leaked 12 goals in six home matches, offsetting the hosts' ground advantage."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.95,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.29,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Modena have regular midfielder Zampano out and regular defender Tonoli doubtful, though all listed news comes from one source.",
+                                "Modena’s five-match unbeaten run includes consecutive 2-0 wins, while Pisa have won only one of their last five league matches.",
+                                "Modena are unbeaten in the last five league meetings with Pisa, winning four."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.28,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "This is not an even historical meeting: Modena are unbeaten in the last five league games against Pisa (four wins, one draw), including a 2-1 win in Pisa in April 2025.",
+                                "Modena sit 2nd, one point off the leaders and five clear of 3rd, so they are protecting an automatic promotion place; Pisa are seven off automatic promotion and only three clear of 9th in the play-off band.",
+                                "Team news is one source only: Modena miss regular-starting midfielder Zampano (7 of 12 starts) and have regular defender Tonoli (8 starts, 3 assists) doubtful, a modest trim rather than a loss of their main scorers; Pisa's listed absence is"
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.354,
+                        0.2904,
+                        0.3556
+                    ],
+                    "p_adj": [
+                        0.366547,
+                        0.287367,
+                        0.346086
+                    ],
+                    "p_llm": [
+                        0.305852,
+                        0.30059,
+                        0.393557
+                    ],
+                    "p_shadow": [
+                        0.354018,
+                        0.290378,
+                        0.355604
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "pisa-vs-modena-2026-11-25"
+            },
+            "sha256": "827a8ac8a7c4282d40bf519de21b1a8787628db59f0404bba6b11121b2d50dcd",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0020-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "barcelona",
                 "batch_id": "2026-11-24T0014Z-model-predict",
                 "competition": "champions-league",
@@ -240,7 +954,7 @@
                 "slug": "sabah-fk-vs-barcelona-2026-11-25"
             },
             "sha256": "8ff398f5af6fa2fb557dc48af50bd824783a8929456cfcdf3fddab7fa82d2fa9",
-            "commit": "pending",
+            "commit": "f9b1012c6663a70a1a7aaf3f92bf453806daef9c",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0028-r1.json",
             "status": "pending",
             "result": null
@@ -480,7 +1194,7 @@
                 "slug": "slavia-prague-vs-villarreal-2026-11-25"
             },
             "sha256": "e8968f4d7047e23fad103e8c33806a9ab3fd4bf0e1e23f5ac3be591a11d13b19",
-            "commit": "pending",
+            "commit": "f9b1012c6663a70a1a7aaf3f92bf453806daef9c",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0029-r1.json",
             "status": "pending",
             "result": null
@@ -718,7 +1432,7 @@
                 "slug": "cremonese-vs-us-avellino-2026-11-25"
             },
             "sha256": "883056a9998c1a148a1e4f6e3715a5f8211148b79e52dc265fb53d01f01f10e9",
-            "commit": "pending",
+            "commit": "f9b1012c6663a70a1a7aaf3f92bf453806daef9c",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0017-r1.json",
             "status": "pending",
             "result": null
