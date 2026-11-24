@@ -7,6 +7,1434 @@
     "records": [
         {
             "record": {
+                "away": "yokohama-f-marinos",
+                "batch_id": "2026-11-21T1921Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-21T19:21:25Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0011",
+                "home": "avispa-fukuoka",
+                "inputs": {
+                    "elo_away": 1518.1,
+                    "elo_home": 1364.8,
+                    "lambda_away": 1.416152,
+                    "lambda_home": 1.040424,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-24T10:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.274997,
+                        0.270676,
+                        0.454327
+                    ],
+                    "p_elo": [
+                        0.266189,
+                        0.278507,
+                        0.455304
+                    ],
+                    "p_market": [
+                        0.303785,
+                        0.276547,
+                        0.419668
+                    ],
+                    "p_stat": [
+                        0.268907,
+                        0.272992,
+                        0.458101
+                    ],
+                    "retained_mass": 0.999999999962,
+                    "rho": -0.014838,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T10:08:58Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4921,
+                    "draw_risk": false,
+                    "over_2_5": 0.4444,
+                    "p": [
+                        0.2689,
+                        0.273,
+                        0.4581
+                    ],
+                    "p_display": [
+                        26.9,
+                        27.3,
+                        45.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1293,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1205,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0902,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0884,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0867,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.29,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Fukuoka are 20th, 6 points from safety with 23 games left, so they need points badly, but they have lost 11 of 15 and scored only 14 goals.",
+                                "Fukuoka have lost 7 of their last 8 league games, while Marinos have drawn 8 of 15 league games and are unbeaten away in 7 of 8.",
+                                "Home wins happen about 43% of the time in J1, but Fukuoka's weak form and 2-2-4 home record justify a lower home figure; no absences are listed for either side, from one source only."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.28,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Avispa Fukuoka are 20th and six points from safety with 23 games left, so they need points badly, but that desperation has not translated into results at home (2W 2D 4L).",
+                                "Fukuoka have lost five of their last six league matches and have taken only one point from their last four, while Marinos are unbeaten in their last five league games (2W 3D).",
+                                "Fukuoka won the last two meetings at Best Denki Stadium, but Marinos won the most recent league meeting 2-0 in September 2025."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.31,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Avispa Fukuoka sit bottom in 20th and six points from safety, giving them an urgent need for points to close the relegation gap with 23 games remaining.",
+                                "Avispa Fukuoka are winless in their last six league matches with five defeats, whereas Yokohama F. Marinos have lost just once in eight away league games (2W 5D 1L), making the visitors clear favourites.",
+                                "Only one source provides team news for this match with no absences listed for either club, so full squad availability is not confirmed and no expected-goals adjustments are applied."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.31,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Avispa are six points from safety and need a result, but their 2-2-11 league record indicates a difficult relegation fight.",
+                                "Avispa have lost seven of their last eight matches, while Marinos have scored in each of their last seven.",
+                                "Only one source lists no absences for either side, so full squad availability is not confirmed and no news adjustment is made."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.33,
+                                "home": 0.26
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Avispa are in the relegation zone, six points from 17th, so they need the points more than Marinos, who are 11 points above the drop.",
+                                "Marinos have played three matches in the last 14 days to Avispa's one, and both sides are back in league action four days later.",
+                                "Marinos have drawn five of eight away league games and lost only once, so a tight away result is more plausible than a home turnaround from Avispa's recent defeats."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2695,
+                        0.2791,
+                        0.4514
+                    ],
+                    "p_adj": [
+                        0.268907,
+                        0.272992,
+                        0.458102
+                    ],
+                    "p_llm": [
+                        0.271222,
+                        0.304202,
+                        0.424576
+                    ],
+                    "p_shadow": [
+                        0.269496,
+                        0.279099,
+                        0.451405
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "avispa-fukuoka-vs-yokohama-f-marinos-2026-11-25"
+            },
+            "sha256": "8cffa65f4ef76bd7cf7689fbbce3580da43300f4c72a4b4483b070aee8bf86b8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0011-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "shimizu-s-pulse",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0012",
+                "home": "fagiano-okayama",
+                "inputs": {
+                    "elo_away": 1362.7,
+                    "elo_home": 1428.5,
+                    "lambda_away": 0.92991,
+                    "lambda_home": 1.311484,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-24T10:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.452086,
+                        0.28513,
+                        0.262784
+                    ],
+                    "p_elo": [
+                        0.489851,
+                        0.272789,
+                        0.23736
+                    ],
+                    "p_market": [
+                        0.470602,
+                        0.279295,
+                        0.250102
+                    ],
+                    "p_stat": [
+                        0.474629,
+                        0.277537,
+                        0.247834
+                    ],
+                    "retained_mass": 0.999999999848,
+                    "rho": -0.01486,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T10:08:58Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.442,
+                    "draw_risk": false,
+                    "over_2_5": 0.3914,
+                    "p": [
+                        0.4746,
+                        0.2776,
+                        0.2478
+                    ],
+                    "p_display": [
+                        47.5,
+                        27.7,
+                        24.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1443,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1281,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1054,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.096,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0914,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.28,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "head_to_head",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Shimizu are only 3 points above the relegation zone and have scored 11 goals in 15 games, so they need points but lack attacking output.",
+                                "Okayama are unbeaten in the last four league meetings (2 wins, 2 draws), and the last two were low-scoring.",
+                                "One source lists no absences for either side, which does not confirm full squads, so no adjustment is applied."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Shimizu S-Pulse are only 3 points above the relegation zone and need points badly, but Okayama are 8 points clear and can play with less pressure.",
+                                "Okayama won the most recent meeting 2-0 at home in May and are unbeaten in the last four league meetings with Shimizu.",
+                                "Shimizu have lost four of their last five league matches and scored only 2 goals in that run, while Okayama won away at Gamba Osaka last time out."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.27,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Shimizu S-Pulse sit just three points above the relegation zone and need points urgently, while Fagiano Okayama have a safer eight-point cushion in tenth.",
+                                "Shimizu S-Pulse are winless in their last six league games and failed to score in four of them, giving Fagiano Okayama a clear edge after their recent away win at Gamba Osaka.",
+                                "Only one source provides team news for this match with no absences listed for either side, so squad availability cannot be fully confirmed."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.28,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Okayama are unbeaten in the last four league meetings with Shimizu, winning the two most recent home fixtures.",
+                                "Shimizu sit only three points above the relegation zone, increasing the value of even an away draw for them.",
+                                "Shimizu have won none of their past six matches and scored only two goals in that run, favouring a low-scoring Okayama edge."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.3,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Shimizu are only 3 points above the relegation zone after 15 games, while Okayama are 8 clear, so the visitors need the points more but have far less margin for another defeat.",
+                                "Shimizu have managed one goal in their last five matches (four losses and a draw), which makes an away win unlikely against a side that just won at Gamba Osaka.",
+                                "One source lists no absences for either side, which does not confirm a fully available squad, so neither expected-goals figure is adjusted."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4706,
+                        0.2785,
+                        0.2509
+                    ],
+                    "p_adj": [
+                        0.474629,
+                        0.277537,
+                        0.247834
+                    ],
+                    "p_llm": [
+                        0.45424,
+                        0.282198,
+                        0.263562
+                    ],
+                    "p_shadow": [
+                        0.470552,
+                        0.278506,
+                        0.250941
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "fagiano-okayama-vs-shimizu-s-pulse-2026-11-25"
+            },
+            "sha256": "428744daa731bba31c84bbf99268f18aea31174a1fe3fb157e9fd024d9ae7d9b",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0012-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "sanfrecce-hiroshima",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0013",
+                "home": "fc-tokyo",
+                "inputs": {
+                    "elo_away": 1631.8,
+                    "elo_home": 1604.3,
+                    "lambda_away": 1.20799,
+                    "lambda_home": 1.251239,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-24T10:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.372163,
+                        0.276433,
+                        0.351404
+                    ],
+                    "p_elo": [
+                        0.390929,
+                        0.284824,
+                        0.324247
+                    ],
+                    "p_market": [
+                        0.401297,
+                        0.263583,
+                        0.335119
+                    ],
+                    "p_stat": [
+                        0.382838,
+                        0.279424,
+                        0.337738
+                    ],
+                    "retained_mass": 0.999999999865,
+                    "rho": -0.01486,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T10:08:58Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5032,
+                    "draw_risk": false,
+                    "over_2_5": 0.4447,
+                    "p": [
+                        0.3828,
+                        0.2795,
+                        0.3377
+                    ],
+                    "p_display": [
+                        38.3,
+                        27.9,
+                        33.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1326,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1081,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0974,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0884,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0832,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.27,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "First hosts second with FC Tokyo 5 points clear on 36, so a home win would stretch the lead to 8 while a Hiroshima win would cut it to 2.",
+                                "Tokyo have scored 36 and conceded 8 in 15 games and won 6 of 8 at home, while Hiroshima have drawn their last two league games and won only 4 of 8 away.",
+                                "Only one source lists no absences for either side, so team news is unconfirmed and no adjustment is made."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.27,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "FC Tokyo lead Sanfrecce by 5 points, so a home win would stretch the gap to 8 with 22 games left, while Sanfrecce need at least a draw to keep the title race close.",
+                                "FC Tokyo have won 9 of their last 10 and are 6W 1D 1L at home with 17-5 goals, while Sanfrecce's away record is more modest at 4W 2D 2L.",
+                                "Sanfrecce have not lost to FC Tokyo in the last five league meetings, including a 3-0 win in this fixture in May 2025, which tempers the home side's edge."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.27,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "This top-of-the-table clash sees first-placed FC Tokyo defending a five-point lead over second-placed Sanfrecce Hiroshima, putting the onus on the visitors to push for a win to cut the gap.",
+                                "FC Tokyo have kept nine clean sheets in their last ten matches across all competitions and conceded only five goals in eight home league games, giving them a strong defensive edge.",
+                                "Only one source lists no absences for either club so far, which does not confirm fully fit squads and leaves expected goal adjustments neutral at 1.0."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.27,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "This is a direct top-two meeting, with Sanfrecce five points behind leaders FC Tokyo and able to reduce the gap sharply.",
+                                "FC Tokyo have won eight of their last ten matches while conceding only one goal, making their home edge meaningful against another high-scoring side.",
+                                "Sanfrecce are unbeaten in the last five league meetings, including two wins at Tokyo Stadium."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.26,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "This is a title meeting: Tokyo are 1st, five points clear of 2nd-placed Hiroshima, with 23 games left, so both sides need the points and neither can treat it as a dead rubber.",
+                                "Tokyo have conceded only eight goals in 15 league games and won six of eight at home, which makes a home win more likely than the league base rate even against another high-scoring side.",
+                                "Hiroshima have taken points in the last five league meetings, including a 3-0 win at Tokyo, so their recent record against this opponent keeps the away chance alive."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3993,
+                        0.278,
+                        0.3227
+                    ],
+                    "p_adj": [
+                        0.382838,
+                        0.279424,
+                        0.337738
+                    ],
+                    "p_llm": [
+                        0.466149,
+                        0.268572,
+                        0.265279
+                    ],
+                    "p_shadow": [
+                        0.399314,
+                        0.277985,
+                        0.322702
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "fc-tokyo-vs-sanfrecce-hiroshima-2026-11-25"
+            },
+            "sha256": "23772ee3239d695748127d7820e49bbe915340f9979f594f93c9d6a2f7619a15",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0013-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "nagoya-grampus",
+                "batch_id": "2026-11-21T1921Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-21T19:21:25Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0014",
+                "home": "jef-united-ichihara-chiba",
+                "inputs": {
+                    "elo_away": 1441.8,
+                    "elo_home": 1339.7,
+                    "lambda_away": 1.420877,
+                    "lambda_home": 1.345982,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-24T10:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.353974,
+                        0.257913,
+                        0.388113
+                    ],
+                    "p_elo": [
+                        0.314686,
+                        0.284219,
+                        0.401095
+                    ],
+                    "p_market": [
+                        0.291253,
+                        0.264665,
+                        0.444083
+                    ],
+                    "p_stat": [
+                        0.333987,
+                        0.269487,
+                        0.396526
+                    ],
+                    "retained_mass": 0.999999999942,
+                    "rho": -0.014838,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T10:08:58Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5657,
+                    "draw_risk": false,
+                    "over_2_5": 0.5188,
+                    "p": [
+                        0.334,
+                        0.2695,
+                        0.3965
+                    ],
+                    "p_display": [
+                        33.4,
+                        27,
+                        39.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1275,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0894,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0873,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0781,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0763,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.28,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are close to the drop, with Nagoya 3 points and JEF 4 points above the relegation zone, so a draw is a more acceptable result than usual.",
+                                "JEF have won their last three league games, while Nagoya have lost three of their last four league games and drew 0-0 last time out, which favours the hosts.",
+                                "One source lists no absences for either side, which does not confirm full squads, so I made no team news adjustment."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.3,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are only 3-4 points above the relegation zone, so this is a direct six-pointer where neither can afford to lose.",
+                                "JEF United have won their last three league matches, including a 3-0 home win over Avispa Fukuoka, while Nagoya are winless in their last four league games.",
+                                "No absences are listed for either side, but the fact sheet notes this is based on one source and does not confirm full availability."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.28,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "With Nagoya Grampus just three points above the relegation zone and JEF United four points clear, both sides need points to create breathing room, though 23 league matches remain.",
+                                "JEF United carry strong momentum into this match after winning their last three games without conceding a goal, whereas Nagoya Grampus are winless in their last six outings.",
+                                "One source lists no absences for either squad yet, so no adjustment is made to expected goals."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.28,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Both clubs are only three to four points above relegation, making this a high-value match for immediate safety.",
+                                "JEF arrive on a three-match winning run without conceding, while Nagoya are winless in their last four matches.",
+                                "J1 home wins have occurred in 43% of matches this season, and JEF's home record is stronger than Nagoya's away record."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.29,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sit just above the drop, JEF 4 points and Nagoya 3 clear of 18th with 23 games left, so neither can treat this as a free mid-table game.",
+                                "JEF have won their last three, including 1-0 at Kashiwa, while Nagoya have one point from their last three and only two wins in eight away league games.",
+                                "One source lists no absences for either side, which does not confirm a fully available squad, so expected goals are left unadjusted."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3543,
+                        0.2743,
+                        0.3714
+                    ],
+                    "p_adj": [
+                        0.333987,
+                        0.269487,
+                        0.396526
+                    ],
+                    "p_llm": [
+                        0.436018,
+                        0.286287,
+                        0.277695
+                    ],
+                    "p_shadow": [
+                        0.354296,
+                        0.274329,
+                        0.371375
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "jef-united-ichihara-chiba-vs-nagoya-grampus-2026-11-25"
+            },
+            "sha256": "51f6554966731a6c899b7e5350909353829b856b071fa6d430fc3f6727e9ef99",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0014-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "tokyo-verdy-1969",
+                "batch_id": "2026-11-23T0014Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-23T00:14:41Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0015",
+                "home": "mito-hollyhock",
+                "inputs": {
+                    "elo_away": 1391,
+                    "elo_home": 1319.7,
+                    "lambda_away": 1.134439,
+                    "lambda_home": 1.090068,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-24T10:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.342256,
+                        0.293257,
+                        0.364487
+                    ],
+                    "p_elo": [
+                        0.345612,
+                        0.285607,
+                        0.368781
+                    ],
+                    "p_market": [
+                        0.318225,
+                        0.303747,
+                        0.378028
+                    ],
+                    "p_stat": [
+                        0.344175,
+                        0.288334,
+                        0.367491
+                    ],
+                    "retained_mass": 0.999999999963,
+                    "rho": -0.014795,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T10:08:58Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4511,
+                    "draw_risk": false,
+                    "over_2_5": 0.3854,
+                    "p": [
+                        0.3442,
+                        0.2883,
+                        0.3675
+                    ],
+                    "p_display": [
+                        34.4,
+                        28.8,
+                        36.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1334,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1217,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1165,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1082,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0765,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.3,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "head_to_head",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Mito are 19th, 2 points from safety, while Verdy sit 3 points above the drop, so both need points in a close relegation scrap.",
+                                "Verdy won both league meetings this season (3-1 and 1-0), but Mito have just won at Kobe 2-1 and are no longer a pushover.",
+                                "Mito have won 1 of 7 at home with 7 goals scored, while Verdy have drawn 3 of 6 away, so a draw is more likely than the league's 25-28% base rate."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.3,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Mito are in the relegation zone, 2 points from safety, so they need the points badly, but that pressure has not translated into home results this season.",
+                                "Mito have lost 7 of their last 9 league matches and have only 1 home league win all season, while Verdy have won 3 of their last 4 league games.",
+                                "Verdy have won both league meetings this season, including a 1-0 win at Kasamatsu Stadium in May."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.3,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are fighting near the bottom of the table, with 19th-placed Mito needing a win to climb out of the relegation zone and leapfrog 15th-placed Tokyo Verdy, who sit just three points above the drop.",
+                                "Tokyo Verdy arrive unbeaten in their last five league games and have lost only once in six away matches, giving them a clear edge over a Mito side that has lost four of seven home fixtures.",
+                                "One source lists no absences for either club yet, so no lineup adjustments are made as full squad availability is not confirmed."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.31,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Tokyo Verdy won both league meetings this season, including a 1-0 victory at Mito.",
+                                "Verdy's recent unbeaten league run contrasts with Mito's six losses in their previous seven league matches before winning at Vissel Kobe.",
+                                "Mito are two points from safety while Verdy are only three above the relegation zone, making this a high-stakes lower-table match."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.31,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "targets",
+                                "head_to_head",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Mito are 19th and 2 points from safety, so they need the points more than Verdy, who sit 3 points above the relegation zone.",
+                                "Verdy have won both league meetings this season, including 0-1 at Mito.",
+                                "One source lists no absences for either side, which does not confirm that either squad is fully available."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.335,
+                        0.2917,
+                        0.3733
+                    ],
+                    "p_adj": [
+                        0.344175,
+                        0.288334,
+                        0.367491
+                    ],
+                    "p_llm": [
+                        0.29957,
+                        0.304382,
+                        0.396048
+                    ],
+                    "p_shadow": [
+                        0.335,
+                        0.291691,
+                        0.373309
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "mito-hollyhock-vs-tokyo-verdy-1969-2026-11-25"
+            },
+            "sha256": "e51b60c2f50c5649cc5fd147c5a683c6ede06547d55e3f6292b9843acb9b238a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0015-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "kawasaki-frontale",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0016",
+                "home": "v-varen-nagasaki",
+                "inputs": {
+                    "elo_away": 1524.3,
+                    "elo_home": 1372.4,
+                    "lambda_away": 1.653872,
+                    "lambda_home": 1.416143,
+                    "last_result_used": "2026-11-21",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-24T10:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.327736,
+                        0.241268,
+                        0.430995
+                    ],
+                    "p_elo": [
+                        0.26741,
+                        0.278708,
+                        0.453881
+                    ],
+                    "p_market": [
+                        0.251026,
+                        0.235093,
+                        0.513881
+                    ],
+                    "p_stat": [
+                        0.295644,
+                        0.258088,
+                        0.446268
+                    ],
+                    "retained_mass": 0.999999999965,
+                    "rho": -0.01486,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T10:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T10:08:58Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6179,
+                    "draw_risk": false,
+                    "over_2_5": 0.5872,
+                    "p": [
+                        0.2956,
+                        0.2581,
+                        0.4463
+                    ],
+                    "p_display": [
+                        29.6,
+                        25.8,
+                        44.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.118,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0931,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0778,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0694,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0681,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.27,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Nagasaki sit 17th, only 2 points above the drop line, so they need points at home more than 6th-placed Kawasaki, who are 11 points off the lead.",
+                                "Only one source lists no absences for either side, so team news is unconfirmed and no adjustment is made.",
+                                "Kawasaki have lost four of their last six and allowed 24 league goals, while Nagasaki's recent 0-0 at Machida Zelvia and 1-1 at Avispa Fukuoka show a side that is hard to beat but low-scoring."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.28,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Kawasaki Frontale have won 5 of their last 6 league matches, while V-Varen Nagasaki have won only 1 of their last 10 in all competitions and sit 2 points above the relegation zone.",
+                                "V-Varen Nagasaki are only 2 points above the relegation zone and need points at home, but Kawasaki Frontale are 6th and chasing the leaders, so the visitors also have a clear incentive.",
+                                "Kawasaki Frontale have played 3 matches in the last 14 days compared with 1 for V-Varen Nagasaki, which could slightly blunt the visitors' sharp recent league form."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.26,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "V-Varen Nagasaki sit just two points above the relegation zone and urgently need a result to stay clear of the bottom three.",
+                                "One source lists no absences for either side yet, so no lineup adjustments are made rather than guessing.",
+                                "Although Kawasaki Frontale are 11 points ahead in the table, Nagasaki have lost only twice in seven home league games while Frontale have won just two of seven away, pointing to a competitive contest."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.29,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Nagasaki are only two points above relegation and have added urgency to turn a solid home record into points.",
+                                "Kawasaki have won five of their last ten matches but their 2-2-3 away league record makes them less imposing away from home.",
+                                "Each side has only one source listing no absences, which does not confirm a fully available squad."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.29,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Nagasaki sit 17th, only 2 points above the relegation zone with 23 games left, so the points matter more here than for 6th-placed Kawasaki, who are 11 points off the leaders.",
+                                "Kawasaki have played 3 matches in the previous 14 days against Nagasaki's 1, so the visitors arrive more congested despite both sides having 4 rest days and another league game in 4 days.",
+                                "One source lists no absences for either side yet, which does not confirm a fully available squad, so there is no confirmed absence to adjust expected goals."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3017,
+                        0.2622,
+                        0.4361
+                    ],
+                    "p_adj": [
+                        0.295644,
+                        0.258088,
+                        0.446268
+                    ],
+                    "p_llm": [
+                        0.325851,
+                        0.278336,
+                        0.395812
+                    ],
+                    "p_shadow": [
+                        0.301707,
+                        0.262238,
+                        0.436055
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "v-varen-nagasaki-vs-kawasaki-frontale-2026-11-25"
+            },
+            "sha256": "cae3b5108491bdf48f9fad5ffe6ac70fad85a213647dc5a4011059f50fdf7976",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0016-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "wrexham",
                 "batch_id": "2026-11-22T1406Z-model-predict",
                 "competition": "championship",
