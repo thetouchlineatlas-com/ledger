@@ -7,6 +7,2626 @@
     "records": [
         {
             "record": {
+                "away": "west-bromwich-albion",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0045",
+                "home": "bolton-wanderers",
+                "inputs": {
+                    "elo_away": 1533.2,
+                    "elo_home": 1351.6,
+                    "lambda_away": 1.517277,
+                    "lambda_home": 1.174444,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.29127,
+                        0.260016,
+                        0.448715
+                    ],
+                    "p_elo": [
+                        0.241028,
+                        0.273622,
+                        0.48535
+                    ],
+                    "p_market": [
+                        0.268612,
+                        0.257926,
+                        0.473462
+                    ],
+                    "p_stat": [
+                        0.273178,
+                        0.274803,
+                        0.452019
+                    ],
+                    "retained_mass": 0.999999999901,
+                    "rho": -0.023927,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5458,
+                    "draw_risk": false,
+                    "over_2_5": 0.4997,
+                    "p": [
+                        0.2732,
+                        0.2748,
+                        0.452
+                    ],
+                    "p_display": [
+                        27.3,
+                        27.5,
+                        45.2
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1307,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1007,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0923,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0786,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0747,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.94,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.27,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "West Brom may be without Isaac Price (7 goals, 28% of the team's) and Diakité (12 starts), but Bolton also lack Erhahon and Toal, with Larrazabal doubtful; all from one source.",
+                                "West Brom are 3 points off automatic promotion, while Bolton are 9 off the play-offs and only 7 above the drop.",
+                                "Bolton have lost 5 of 8 at home (10-16), while West Brom have 4 wins in 8 away games and are unbeaten in their last 4 league matches."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.27,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "West Brom are missing regular midfielders Isaac Price (7 goals, 3 assists) and Ousmane Diakité, with Price doubtful; that removes a large share of their attacking output and weakens their midfield, though their away record remains strong.",
+                                "Bolton are missing regular midfielder Ethan Erhahon and have doubts over regular defender Gaizka Larrazabal, while several squad forwards are out, reducing their depth against a top-six side.",
+                                "West Brom are 3 points off automatic promotion and only 2 points clear of 7th, so they need the points more than Bolton, who are 7 points above the relegation zone and 9 off the play-offs."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.93,
+                            "m_home": 0.95,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.27,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Team news comes from only one source, listing West Brom midfielder Isaac Price (28% of their league goals) as doubtful and Ousmane Diakité out, while Bolton lack regular starter Ethan Erhahon and may miss Gaizka Larrazabal (4 assists).",
+                                "West Brom sit in fifth place just three points off both automatic promotion and the league lead, giving them an immediate push for the top spots compared to 17th-placed Bolton.",
+                                "Bolton's five defeats in eight home league matches leave them vulnerable against a West Brom side that is unbeaten in seven games and has won half of its eight away fixtures."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.89,
+                            "m_home": 0.95,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.28,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "West Brom's Price is doubtful despite providing 7 league goals and 3 assists, while regular midfielders Diakité and Collyer are out; all reports are from one source.",
+                                "Bolton are without regular midfielder Erhahon and defender Toal, with regular full-back Larrazabal doubtful, weakening a side that has conceded 30 league goals.",
+                                "West Brom's 4-2-2 away record contrasts with Bolton losing five of eight home league matches, supporting the visitors despite their midfield absences."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.29,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "All absences are from one source: Bolton are without regular midfielder Erhahon and have regular defender Larrazabal doubtful, while West Brom are without regular midfielder Diakité and have Isaac Price, 7 goals and 28% of their league goal",
+                                "West Brom, 5th and 3 points off the leaders with a 2-point cushion over 7th, need the points more than Bolton, who are 7 points above the relegation zone and 9 off the play-offs.",
+                                "Bolton have lost 5 of 8 at home (10-16), so their home record does not offset West Brom's 4 wins from 8 away."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2728,
+                        0.2791,
+                        0.4481
+                    ],
+                    "p_adj": [
+                        0.274636,
+                        0.279832,
+                        0.445532
+                    ],
+                    "p_llm": [
+                        0.265531,
+                        0.276324,
+                        0.458145
+                    ],
+                    "p_shadow": [
+                        0.272806,
+                        0.279142,
+                        0.448052
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "bolton-wanderers-vs-west-bromwich-albion-2026-11-25"
+            },
+            "sha256": "5b24f0d00c0dd2d8ad21ec8791e6129bf37469e21a8ad6bddf714ecff806e746",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0045-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "birmingham-city",
+                "batch_id": "2026-11-23T0014Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-23T00:14:41Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0046",
+                "home": "burnley",
+                "inputs": {
+                    "elo_away": 1511,
+                    "elo_home": 1563.1,
+                    "lambda_away": 1.163182,
+                    "lambda_home": 1.474229,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.440185,
+                        0.263879,
+                        0.295936
+                    ],
+                    "p_elo": [
+                        0.475315,
+                        0.275386,
+                        0.249299
+                    ],
+                    "p_market": [
+                        0.351369,
+                        0.264419,
+                        0.384212
+                    ],
+                    "p_stat": [
+                        0.443715,
+                        0.277206,
+                        0.279079
+                    ],
+                    "retained_mass": 0.999999999932,
+                    "rho": -0.023951,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5362,
+                    "draw_risk": false,
+                    "over_2_5": 0.4867,
+                    "p": [
+                        0.4437,
+                        0.2772,
+                        0.2791
+                    ],
+                    "p_display": [
+                        44.4,
+                        27.7,
+                        27.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.132,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1034,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0912,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0784,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0782,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.28,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burnley have eight players listed, including Roberts suspended, Satpaev and Mejbri out and Bruun Larsen (8 starts, 2 goals) doubtful, though most are rotation players and all news comes from one source.",
+                                "Burnley are 4 points from safety in the relegation zone, while 4th-placed Birmingham are 3 points off automatic promotion and need wins.",
+                                "Burnley have drawn 6 of 8 home games and conceded in most matches, while Birmingham have the league's best defence (15 conceded) and win away about half the time."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.31,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burnley are missing several regulars: Jacob Bruun Larsen (8 starts, 2 goals, 2 assists) is doubtful, while Connor Roberts, Hannibal Mejbri and Dastan Satpaev are out, weakening a side already winless at home.",
+                                "Birmingham City are 3 points off automatic promotion and only 2 points clear of 7th, so they need the points to protect a play-off place, while Burnley are 4 points from safety in the relegation zone.",
+                                "Burnley have 0 wins in 8 home league games this season, while Birmingham have won 4 of 8 away games, making an away win the most likely outcome despite the league's home-win base rate."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.34,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides have plenty to play for with 30 games remaining, as Birmingham City are three points off automatic promotion while Burnley sit in the relegation zone four points from safety.",
+                                "One source lists regular starting forward Jacob Bruun Larsen (two goals and two assists) as doubtful for Burnley alongside several squad players, whereas Birmingham City have only one doubtful player reported by a single source.",
+                                "Burnley are winless at home in the league this season with six draws from eight games, making another stalemate or an away win for fourth-placed Birmingham City strong possibilities."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.53,
+                                "draw": 0.27,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burnley have a suspended defender and several forward concerns, including regular starter Jacob Bruun Larsen (2 goals, 2 assists), though much of the news is from one source.",
+                                "Burnley are four points from safety, while Birmingham are three points off automatic promotion, giving both strong points incentives but Birmingham the stronger season-long position.",
+                                "Burnley remain winless in eight home league matches, whereas Birmingham have won four of eight away matches and have seven wins in their last ten games."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.32,
+                                "home": 0.23
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "This is a bottom-side home side against a top-four visitor: Burnley are 22nd and 4 points from safety, while Birmingham are 4th, 2 points clear of 7th and 3 off automatic promotion, so the visitors can treat a point as useful and Burnley mu",
+                                "Burnley are still winless in 8 home league games (6 draws), so their Turf Moor pattern points more to a low-scoring draw than a home win despite Championship home-win base rates near 41–44%.",
+                                "Burnley’s only notable name is doubtful regular starter Jacob Bruun Larsen (8 league starts, 8% of their goals), and that plus the other absences is single-source except Bashir Humphreys; Birmingham have only a one-source doubtful and one s"
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3926,
+                        0.2895,
+                        0.318
+                    ],
+                    "p_adj": [
+                        0.435156,
+                        0.280111,
+                        0.284733
+                    ],
+                    "p_llm": [
+                        0.239704,
+                        0.304343,
+                        0.455953
+                    ],
+                    "p_shadow": [
+                        0.392562,
+                        0.289464,
+                        0.317975
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "burnley-vs-birmingham-city-2026-11-25"
+            },
+            "sha256": "039d84d648725143e97bcfb35d2e74dcba8b1f89cec5c7472cdd6238c5a3986c",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0046-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "blackburn-rovers",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0047",
+                "home": "watford",
+                "inputs": {
+                    "elo_away": 1464,
+                    "elo_home": 1397.8,
+                    "lambda_away": 1.118893,
+                    "lambda_home": 1.185686,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.371736,
+                        0.28949,
+                        0.338774
+                    ],
+                    "p_elo": [
+                        0.350816,
+                        0.285682,
+                        0.363502
+                    ],
+                    "p_market": [
+                        0.379132,
+                        0.271448,
+                        0.34942
+                    ],
+                    "p_stat": [
+                        0.35824,
+                        0.29254,
+                        0.34922
+                    ],
+                    "retained_mass": 0.999999999939,
+                    "rho": -0.023927,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4716,
+                    "draw_risk": false,
+                    "over_2_5": 0.4041,
+                    "p": [
+                        0.3582,
+                        0.2926,
+                        0.3492
+                    ],
+                    "p_display": [
+                        35.8,
+                        29.3,
+                        34.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.137,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1118,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.111,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1041,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0764,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.28,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Blackburn are without first-choice goalkeeper Balázs Tóth (12 of 16 starts, two sources) and may lack defender Tom Atcheson (doubtful, one source), while Watford's absences are mostly fringe players.",
+                                "Watford are 21st and only 4 points above the drop, so they need points at home more than Blackburn, who are 11 clear of the relegation zone and 5 off the play-offs.",
+                                "Watford have lost 8 of their last 10 in all competitions, conceding 4 in two of the last five, while Blackburn's 1W 4D 3L away record keeps this close."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.29,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Blackburn are missing first-choice goalkeeper Balázs Tóth (12 league starts) and have a doubt over regular defender Tom Atcheson (11 starts), which weakens a defence that has conceded 15 away goals in 8 games.",
+                                "Watford sit only 4 points above the relegation zone and need home points far more urgently than Blackburn, who are 11 points clear of danger and 5 off the play-offs.",
+                                "Watford have lost 4 of their last 5 league games and were beaten 4-0 at Sheffield United last time out, but their home record of 4W 2D 2L is much stronger than their overall form."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1.05,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.29,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Blackburn are without first-choice goalkeeper Balázs Tóth (confirmed by a second source after starting 12 of 16 league games) and have regular defender Tom Atcheson (11 starts) listed as doubtful by one source, while Watford's injuries only",
+                                "Despite sitting eight places lower in the table, Watford have taken 14 of their 15 points at Vicarage Road (4W 2D 2L), which counters a Blackburn side with just one win from eight away league games (1W 4D 3L).",
+                                "With 30 games remaining, Watford sit just four points above the relegation zone and urgently need home points to stay clear of the bottom three, whereas Blackburn are five points off the play-offs."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 1.05,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.31,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Blackburn are without regular first-choice goalkeeper Balázs Tóth (12 league starts), while defender Tom Atcheson is doubtful; Watford's listed absences are single-source and Antonio has no league starts.",
+                                "Watford are only four points above the relegation zone, giving the home side added need to turn their solid home return into points.",
+                                "Blackburn's away record of one win in eight but four draws makes a tight game more likely despite their stronger overall league position."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 1.04,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.33,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Watford are only 4 points above the relegation zone after 16 games, so they need the points more than 13th-placed Blackburn, who are 5 off the play-offs and 11 clear of the drop.",
+                                "Blackburn’s first-choice goalkeeper Balázs Tóth, who has started 12 of 16 league games, is out with two sources; Atcheson is only a single-source doubtful, and Watford’s listed absences are single-source, with Antonio having started none of",
+                                "Blackburn have won only 1 of 8 away and drawn 4, while Watford have taken points in 6 of 8 at home, so this looks tighter than the 7-point table gap."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3728,
+                        0.2939,
+                        0.3333
+                    ],
+                    "p_adj": [
+                        0.368434,
+                        0.29232,
+                        0.339247
+                    ],
+                    "p_llm": [
+                        0.390172,
+                        0.300006,
+                        0.309821
+                    ],
+                    "p_shadow": [
+                        0.372805,
+                        0.293938,
+                        0.333256
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "watford-vs-blackburn-rovers-2026-11-25"
+            },
+            "sha256": "5edcc036d63202eac32120247929b28f1b65e883ad441888d6e126940a285881",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0047-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "millwall",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0048",
+                "home": "stoke-city",
+                "inputs": {
+                    "elo_away": 1506.3,
+                    "elo_home": 1477.5,
+                    "lambda_away": 1.062956,
+                    "lambda_home": 1.23206,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.397222,
+                        0.289065,
+                        0.313713
+                    ],
+                    "p_elo": [
+                        0.389512,
+                        0.284896,
+                        0.325591
+                    ],
+                    "p_market": [
+                        0.421992,
+                        0.280316,
+                        0.297691
+                    ],
+                    "p_stat": [
+                        0.38659,
+                        0.292026,
+                        0.321384
+                    ],
+                    "retained_mass": 0.999999999922,
+                    "rho": -0.023927,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-25T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4676,
+                    "draw_risk": false,
+                    "over_2_5": 0.4016,
+                    "p": [
+                        0.3866,
+                        0.292,
+                        0.3214
+                    ],
+                    "p_display": [
+                        38.7,
+                        29.2,
+                        32.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1365,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1177,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1065,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.105,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0791,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Stoke are 2nd, level on points with the leaders and 1 point clear of 3rd, while Millwall are 16th and 9 points off the play-offs, so Stoke need the points more.",
+                                "Millwall lose ever-present left-back Zak Sturge to suspension and have several defenders and a goalkeeper out, while Stoke's doubtful forwards Hirst and Cissé have only 3 league goals between them; all news is from one source.",
+                                "Millwall have lost four of their last five and scored 0 in each, while Stoke have won 8 of their last 10 and are strong at home (13-6)."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Stoke are missing regular midfielder Djibril Soumaré (15 league starts) and have doubts over George Hirst and Lamine Cissé, while Millwall are without regular defender Zak Sturge (16 starts) and three other defenders, weakening both sides b",
+                                "Stoke are level on points with the leaders and only 1 point clear of 3rd in the automatic promotion race, so they need the points to protect a top-two place, while mid-table Millwall have little immediate pressure.",
+                                "Stoke have won five of their last six league games and are strong at home, whereas Millwall have lost three straight away league matches and have the division's worst away defensive record among the teams in this match."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Stoke City have the stronger urgency for points to defend their automatic promotion spot, sitting level with the leaders and only one point clear of third-placed rivals.",
+                                "One source reports Millwall defender Zak Sturge is suspended after starting all 16 league games and Stoke midfielder Djibril Soumaré (15 starts) is doubtful, weakening both sides' backline and midfield stability.",
+                                "Stoke arrive on a four-match winning run and have conceded just six goals in eight home games, whereas Millwall have lost three straight without scoring and conceded 18 goals in eight away trips."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Millwall are without ever-present defender Zak Sturge, while Stoke have regular-starting midfielder Djibril Soumaré and forward George Hirst doubtful; all listed news is from one source.",
+                                "Stoke are level with the leaders and only one point above third, so this is a significant home opportunity in the automatic-promotion race.",
+                                "Stoke have won seven of their past eight matches and conceded only five, whereas Millwall have lost four of their last five, strengthening the home edge."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.93,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.26,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Stoke are level with the leaders and only 1 point clear of 3rd, so the points matter more here than for Millwall, who are 9 off the play-offs and 7 above relegation.",
+                                "Millwall miss every-game defender Zak Sturge through suspension (one source); Stoke's list is also one source, mostly doubtful, with only a part-time defender suspended.",
+                                "Millwall have lost three of their last four and won only 2 of 8 away, so they arrive in poor shape against a side that has won seven of its last eight."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4195,
+                        0.2887,
+                        0.2918
+                    ],
+                    "p_adj": [
+                        0.387274,
+                        0.295002,
+                        0.317724
+                    ],
+                    "p_llm": [
+                        0.550229,
+                        0.252213,
+                        0.197558
+                    ],
+                    "p_shadow": [
+                        0.419534,
+                        0.288707,
+                        0.291758
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "stoke-city-vs-millwall-2026-11-25"
+            },
+            "sha256": "010f9b3c8b7c8d2be08307b41bb00d5c8a97135caaa830430d99649325ab568f",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0048-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "viking-fk",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0030",
+                "home": "atletico-madrid",
+                "inputs": {
+                    "elo_away": 1674.3,
+                    "elo_home": 1895.1,
+                    "lambda_away": 1.076743,
+                    "lambda_home": 3.015778,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.763649,
+                        0.132169,
+                        0.104181
+                    ],
+                    "p_elo": [
+                        0.66068,
+                        0.222373,
+                        0.116948
+                    ],
+                    "p_market": [
+                        0.884964,
+                        0.081532,
+                        0.033504
+                    ],
+                    "p_stat": [
+                        0.729291,
+                        0.155752,
+                        0.114957
+                    ],
+                    "retained_mass": 0.999999999909,
+                    "rho": 0.02144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-25T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6342,
+                    "draw_risk": false,
+                    "over_2_5": 0.7657,
+                    "p": [
+                        0.7293,
+                        0.1557,
+                        0.115
+                    ],
+                    "p_display": [
+                        72.9,
+                        15.6,
+                        11.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "3-1",
+                    "top_score_overall": "3-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0785,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0781,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0729,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0725,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0625,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.16,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Atlético have Lookman and Pubill out and Romero doubtful, all from one source, so I trim their expected goals slightly; Viking also have four players out, from one source, with no role details given.",
+                                "Atlético won 3-0 at Getafe after two straight defeats, while Viking have conceded 3 or more in three of their last five away or European games, which suggests an open match favouring the home side.",
+                                "Home sides win 50-56% of Champions League matches, and Atlético's 4W 1D 1L home league record puts them above that."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.15,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Atlético are missing Ademola Lookman, a key attacking option, and have doubts over Cristian Romero, while Viking are without several listed absentees including Anders Bærtelsen and Martin Roseth; both sides' depth is reduced, but Atlético's",
+                                "Atlético have won 4 of their last 5 at home in La Liga and beat Manchester United 2-0 at the Metropolitano in this competition, while Viking have lost their last two away European matches and conceded 3 goals in each.",
+                                "Champions League home teams have won 56% of matches this season, supporting a strong home lean in a mismatch between a top La Liga side and a Norwegian visitor."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.05,
+                                "draw": 0.1,
+                                "home": 0.85
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Every reported absence or doubt for both Atlético Madrid and Viking FK is backed by only one source and includes no squad role or appearance data.",
+                                "Atlético Madrid have won seven of their last ten games across all competitions while keeping five clean sheets, whereas Viking FK have conceded three goals in four of their last six matches.",
+                                "Both clubs come into this tie well rested after playing just one match in the previous 14 days, though Viking FK hold a slight four-to-three-day rest advantage."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.92,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.17,
+                                "home": 0.7
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Viking have four single-source absences, including three defenders, which weakens their options against Atlético; Atlético's Lookman absence slightly reduces their attacking depth.",
+                                "Both sides have had light recent schedules, but Atlético have one fewer rest day and an away league match three days later.",
+                                "Atlético's 3-0 win at Getafe followed a strong domestic start, while Viking conceded three goals in each of their last two away matches."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.16,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Atlético have won seven of their last ten, including 2-0 against Manchester United in this competition, while Viking’s Champions League results are a 3-3 with Bayern, a 1-3 loss at Aston Villa and a 4-1 win over Sabah.",
+                                "Both sides have several listed absences, all from one source only, and the sheet gives no starts, goals or assists, so they are not treated as confirmed hits to expected goals.",
+                                "Champions League home wins are already about 50–56%, and Atlético’s third-place La Liga standing (31 points, 26-10) against a Norwegian side widens that home edge."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7304,
+                        0.1559,
+                        0.1137
+                    ],
+                    "p_adj": [
+                        0.725934,
+                        0.158121,
+                        0.115945
+                    ],
+                    "p_llm": [
+                        0.747858,
+                        0.147052,
+                        0.10509
+                    ],
+                    "p_shadow": [
+                        0.730415,
+                        0.155875,
+                        0.113711
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "atletico-madrid-vs-viking-fk-2026-11-25"
+            },
+            "sha256": "80432c6a0436a165683c3b09f470b97f5d0dc2ac3e0591976d2a54a920c24db8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0030-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "liverpool",
+                "batch_id": "2026-11-23T2205Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-23T22:05:53Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0031",
+                "home": "club-brugge",
+                "inputs": {
+                    "elo_away": 2029.5,
+                    "elo_home": 1867.2,
+                    "lambda_away": 1.838219,
+                    "lambda_home": 1.652587,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.35281,
+                        0.218234,
+                        0.428956
+                    ],
+                    "p_elo": [
+                        0.276183,
+                        0.280065,
+                        0.443752
+                    ],
+                    "p_market": [
+                        0.208357,
+                        0.20064,
+                        0.591003
+                    ],
+                    "p_stat": [
+                        0.337198,
+                        0.234473,
+                        0.428328
+                    ],
+                    "retained_mass": 0.999999999824,
+                    "rho": 0.02144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-25T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6817,
+                    "draw_risk": false,
+                    "over_2_5": 0.6729,
+                    "p": [
+                        0.3372,
+                        0.2345,
+                        0.4283
+                    ],
+                    "p_display": [
+                        33.7,
+                        23.5,
+                        42.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0973,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.085,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0756,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0731,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0579,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.23,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Liverpool have Ekitiké out and Bradley, Leoni and Gravenberch doubtful, all from one source, which trims their attack and midfield depth slightly; Brugge are missing Ordóñez and Virgili, also from one source.",
+                                "Brugge have had 17 days without a match, while Liverpool play on 3 days' rest and face Everton 4 days later, so some rotation is possible.",
+                                "Liverpool beat Manchester United 4-0 in their last game and have won 4 of 5 away league games, but they lost 2-3 at Fenerbahce in this competition, which suggests they can be exposed in Europe."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.6,
+                                "draw": 0.22,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Liverpool have only 3 rest days after a 4-0 win over Manchester United, while Club Brugge have had 17 days without a match, which may offset some of the visitors' quality edge early on.",
+                                "Liverpool are missing Hugo Ekitiké and have Gravenberch, Bradley and Leoni doubtful, but none is confirmed as a regular starter by the fact sheet, so the away attack is only slightly reduced.",
+                                "Liverpool have won 4 of 5 away league games and scored 10 goals in those matches, while Club Brugge's only recent slip was a draw at home to Anderlecht, suggesting the visitors can outscore a solid home side."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.62,
+                                "draw": 0.2,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Liverpool have only three rest days after facing Manchester United, whereas Club Brugge have not played a competitive match in 17 days.",
+                                "All reported absences and doubts for both sides are backed by only one source with no player usage data available, so team news adjustments are kept neutral.",
+                                "Liverpool's unbeaten Premier League away record of four wins and one draw from five games makes them strong favourites despite Club Brugge's seven-match unbeaten run."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.24,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Liverpool are without Hugo Ekitiké, while Bradley, Leoni and Gravenberch are only doubtful and all listings come from one source, slightly reducing their attacking outlook.",
+                                "Club Brugge have had 17 rest days versus Liverpool's three, giving the hosts a substantial freshness advantage.",
+                                "Liverpool's unbeaten Premier League away record (four wins and a draw, 10-4 goals) still supports them as narrow favourites despite the short turnaround."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.25,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Club Brugge have had 17 days' rest and no match in the previous 14 days, while Liverpool have had only 3 days since beating Manchester United and face Everton four days later.",
+                                "Liverpool are unbeaten away in the Premier League (4W 1D, 10-4) but lost their last European away match 2-3 at Fenerbahce, so the trip is not a routine one.",
+                                "Listed absences are one source only—Ordóñez and Virgili out for Brugge, Ekitiké out and Bradley, Leoni and Gravenberch doubtful for Liverpool—with no starts or goals given, so they are not treated as confirmed hits to expected goals."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3212,
+                        0.2357,
+                        0.4431
+                    ],
+                    "p_adj": [
+                        0.342039,
+                        0.235796,
+                        0.422165
+                    ],
+                    "p_llm": [
+                        0.244066,
+                        0.230195,
+                        0.52574
+                    ],
+                    "p_shadow": [
+                        0.321166,
+                        0.23573,
+                        0.443104
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "club-brugge-vs-liverpool-2026-11-25"
+            },
+            "sha256": "6d2f5574e784cc14871978fb090189d11907fd1852e8491a46c0dc05cce8b824",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0031-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "vfb-stuttgart",
+                "batch_id": "2026-11-23T2205Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-23T22:05:53Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0032",
+                "home": "inter-milan",
+                "inputs": {
+                    "elo_away": 1793.1,
+                    "elo_home": 1932.1,
+                    "lambda_away": 1.010406,
+                    "lambda_home": 2.228158,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.651134,
+                        0.187778,
+                        0.161088
+                    ],
+                    "p_elo": [
+                        0.585017,
+                        0.249166,
+                        0.165817
+                    ],
+                    "p_market": [
+                        0.687632,
+                        0.165227,
+                        0.147141
+                    ],
+                    "p_stat": [
+                        0.624641,
+                        0.205863,
+                        0.169496
+                    ],
+                    "retained_mass": 0.999999999716,
+                    "rho": 0.02144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-25T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5716,
+                    "draw_risk": false,
+                    "over_2_5": 0.6205,
+                    "p": [
+                        0.6246,
+                        0.2059,
+                        0.1695
+                    ],
+                    "p_display": [
+                        62.5,
+                        20.6,
+                        16.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0947,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0944,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0934,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0856,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0701,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.2,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Inter are without Çalhanoğlu (out) and Bonny (out) with Zieliński doubtful, while Stuttgart miss Jaquez, Sauer and Diehl with Stiller doubtful; all of this comes from one source, so the effect is modest.",
+                                "Inter won all 6 home league games (19-7) but conceded 4 at Atalanta, while Stuttgart have scored only 8 away league goals in 6 games, so Inter are clear favourites with some defensive risk.",
+                                "Both sides play again on 2026-11-28 with 3 to 4 rest days, so neither has a clear freshness edge."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.18,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Inter are missing Hakan Çalhanoğlu, their main creative midfielder, and Ange-Yoan Bonny, while Piotr Zieliński is doubtful, which slightly reduces their attacking control.",
+                                "Inter have won all six Serie A home games this season, scoring 19 goals, while Stuttgart have lost three of six Bundesliga away games.",
+                                "Champions League matches this season have produced 56% home wins, supporting Inter's strong home advantage at San Siro."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.18,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "One source lists key midfielders Hakan Çalhanoğlu and Piotr Zieliński for Internazionale and Angelo Stiller for VfB Stuttgart as out or doubtful without confirmed season appearance data.",
+                                "Internazionale's perfect Serie A home record of six wins and 19 goals scored makes them heavy favourites against a Stuttgart side with three losses in six domestic away games.",
+                                "Stuttgart have four rest days compared to Internazionale's three following a 4-4 draw at Atalanta, though both teams had a light schedule of just one match over the last two weeks."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.22,
+                                "home": 0.57
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Inter's reported loss of Çalhanoğlu weakens their midfield control, while Stuttgart have reported absences including Jaquez and Diehl; all team-news listings come from one source.",
+                                "Inter have won all six Serie A home matches, scoring 19 goals, whereas Stuttgart have lost three of six Bundesliga away games.",
+                                "Champions League home wins have accounted for 56% of matches this season, supporting Inter's home edge."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.21,
+                                "home": 0.61
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Inter are 6 wins from 6 at home in Serie A (19-7) and have just won 3-0 at Feyenoord, so they should control San Siro against a Stuttgart side that lost 0-2 at Galatasaray and only drew Atlético.",
+                                "Every listed absence is one source only, including Çalhanoğlu and Bonny out for Inter and Stiller doubtful for Stuttgart, so none is treated as a confirmed cut to either side's expected goals.",
+                                "This season's Champions League has ended in a home win in 56% of 72 matches and a draw in only 10%, which supports a home win more than last season's 18% draw rate."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6156,
+                        0.2085,
+                        0.1759
+                    ],
+                    "p_adj": [
+                        0.616598,
+                        0.211151,
+                        0.172251
+                    ],
+                    "p_llm": [
+                        0.611055,
+                        0.198018,
+                        0.190927
+                    ],
+                    "p_shadow": [
+                        0.615624,
+                        0.208503,
+                        0.175873
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "inter-milan-vs-vfb-stuttgart-2026-11-25"
+            },
+            "sha256": "9425f2a93683d555a7d6246461d9039a6c75fb36f1fa3f5aa1a7943b9b536d29",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0032-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "bayern-munich",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0033",
+                "home": "lille",
+                "inputs": {
+                    "elo_away": 2065.9,
+                    "elo_home": 1736.7,
+                    "lambda_away": 2.096311,
+                    "lambda_home": 0.935153,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.160377,
+                        0.196555,
+                        0.643068
+                    ],
+                    "p_elo": [
+                        0.146294,
+                        0.239756,
+                        0.613949
+                    ],
+                    "p_market": [
+                        0.187307,
+                        0.226253,
+                        0.58644
+                    ],
+                    "p_stat": [
+                        0.16478,
+                        0.211387,
+                        0.623833
+                    ],
+                    "retained_mass": 0.999999999886,
+                    "rho": 0.02144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-25T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5356,
+                    "draw_risk": false,
+                    "over_2_5": 0.5777,
+                    "p": [
+                        0.1648,
+                        0.2114,
+                        0.6238
+                    ],
+                    "p_display": [
+                        16.5,
+                        21.1,
+                        62.4
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-2",
+                    "top_score_overall": "0-2",
+                    "top_scores": [
+                        {
+                            "p": 0.1028,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1001,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0995,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0962,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0719,
+                            "score": "0-3"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.9,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.62,
+                                "draw": 0.21,
+                                "home": 0.17
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Bayern list Kane, Neuer, Davies and Gnabry as out and Olise and Díaz as doubtful, all from one source, so their goals are likely to dip; Lille's absences (Nianzou, Santos, Igamane) are also single-source.",
+                                "Lille have lost 0-3 at Arsenal and 2-4 at home to Galatasaray in this competition and are coming off a 0-1 home loss to Lyon, while Bayern are unbeaten in the league with 30 goals in 10 games.",
+                                "Home wins are 56% of Champions League matches this season but only 50% last season, and Bayern's strength outweighs that home edge."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.9,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.24,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Bayern are missing Harry Kane, their main scorer, plus Manuel Neuer, Alphonso Davies, Serge Gnabry and Ismael Saibari, with Michael Olise and Luis Díaz doubtful, which removes a large share of their usual attacking output and weakens their ",
+                                "Lille's absentees are less damaging: Nianzou, Santos and Igamane are all listed by only one source, and none is described as a first-choice regular starter in the fact sheet.",
+                                "Lille have lost their last two Champions League home matches 0-3 to Arsenal and 2-4 to Galatasaray, while Bayern won 2-0 at Atlético Madrid in their most recent European away game."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.86,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.24,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Bayern Munich are missing key figures including Harry Kane, Manuel Neuer, Alphonso Davies and Serge Gnabry, with Michael Olise and Luis Díaz also doubtful, which significantly reduces their expected output.",
+                                "Lille have Tanguy Nianzou, Tiago Santos and Hamza Igamane listed out by one source, though player roles and appearance data are missing for this match.",
+                                "Bayern Munich are unbeaten in their last ten matches across all competitions including a 2-0 away win at Atlético Madrid, whereas Lille are winless in three recent Champions League fixtures."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.87,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.25,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Bayern's Harry Kane, Manuel Neuer, Alphonso Davies and Serge Gnabry are listed out, reducing both their attacking ceiling and defensive security; all reports are from one source.",
+                                "Bayern have scored 18 goals across their last six matches and won at Atlético in their latest Champions League away game, giving them an edge despite the absences.",
+                                "Champions League home wins have been common this season, so Lille's home setting keeps the draw and home-win paths substantial."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.9,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.27,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "What sets this apart is a long Bayern absence list (Kane, Neuer, Davies, Gnabry and Saibari out; Olise and Díaz doubtful) plus Lille's Nianzou, Santos and Igamane, all from one source only, with no starts or goals given, so the attack hit i",
+                                "Bayern are unbeaten in the Bundesliga and won away at Atlético, while Lille have lost two of three Champions League games, including 0-3 at Arsenal, so the visitors remain the likelier winners even if depleted.",
+                                "This season's Champions League sample is home-heavy (56% home wins, only 10% draws), which caps Lille's edge at home against a side that has already taken points on the road."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.1935,
+                        0.2309,
+                        0.5756
+                    ],
+                    "p_adj": [
+                        0.178284,
+                        0.226513,
+                        0.595203
+                    ],
+                    "p_llm": [
+                        0.262906,
+                        0.244,
+                        0.493094
+                    ],
+                    "p_shadow": [
+                        0.193497,
+                        0.230875,
+                        0.575628
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "lille-vs-bayern-munich-2026-11-25"
+            },
+            "sha256": "3213eaf7155b354942623dad9fa6f77fa308d7f64c6da96adab9957724cbaee4",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0033-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "roma",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0034",
+                "home": "paris-saint-germain",
+                "inputs": {
+                    "elo_away": 1859.7,
+                    "elo_home": 2017.4,
+                    "lambda_away": 1.0593,
+                    "lambda_home": 2.28139,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.650027,
+                        0.185227,
+                        0.164747
+                    ],
+                    "p_elo": [
+                        0.603023,
+                        0.243431,
+                        0.153546
+                    ],
+                    "p_market": [
+                        0.675248,
+                        0.180661,
+                        0.14409
+                    ],
+                    "p_stat": [
+                        0.627328,
+                        0.202789,
+                        0.169884
+                    ],
+                    "retained_mass": 0.999999999949,
+                    "rho": 0.02144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-25T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5904,
+                    "draw_risk": false,
+                    "over_2_5": 0.6418,
+                    "p": [
+                        0.6273,
+                        0.2028,
+                        0.1699
+                    ],
+                    "p_display": [
+                        62.7,
+                        20.3,
+                        17
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "2-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0942,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0917,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0889,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0797,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0716,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.22,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "PSG are missing Doué and Kvaratskhelia, two attackers, and Roma are without Balerdi, Rensch and Pellegrini, so both sides lose some strength; each absence rests on one source only.",
+                                "Both teams score freely, PSG with 25 league goals in 11 games and Roma with 36 in 12, so a goal-heavy match is likely, though PSG's home edge keeps them ahead.",
+                                "Champions League home wins run at 50-56% with draws at 10-18%, which supports a home lean and a modest draw chance."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.18,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "PSG are missing Khvicha Kvaratskhelia and Désiré Doué, two attacking regulars, which slightly reduces their usual home attacking edge.",
+                                "Roma are without Lorenzo Pellegrini plus defenders Leonardo Balerdi and Devyne Rensch, weakening their midfield and back line for a tough away test.",
+                                "PSG have won ten straight matches in all competitions, including heavy Champions League wins over Manchester City, Barcelona and Villarreal, while Roma have lost two of their last three European away games."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.21,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Both sides have unconfirmed injuries reported by only one source, including attackers Khvicha Kvaratskhelia and Désiré Doué for Paris Saint-Germain, and Lorenzo Pellegrini, Leonardo Balerdi and Devyne Rensch for AS Roma.",
+                                "Paris Saint-Germain enter on a ten-match winning streak across all competitions, including four-goal displays against Manchester City and Barcelona, whereas AS Roma lost recent European tests to Real Madrid and Manchester United.",
+                                "Home teams have won 56% of Champions League matches this season, giving the French hosts a strong baseline advantage at the Parc des Princes."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.95,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.21,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "PSG have Désiré Doué and Khvicha Kvaratskhelia reported out by one source, while Roma have three single-source absences including Lorenzo Pellegrini.",
+                                "PSG have won all ten listed recent matches, including Champions League wins over Manchester City, Barcelona and Villarreal, though Roma's unbeaten league start keeps the away threat significant.",
+                                "Champions League home-win rates this season (56%) and last season (50%) support PSG's home edge."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.22,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Absences are single-source only, so not confirmed: PSG are listed without Doué and Kvaratskhelia, two attacking options, and Roma without Pellegrini plus defenders Balerdi and Rensch, which trims both attacks slightly rather than rewriting ",
+                                "PSG have won their last 10, including 4-2 at Manchester City, 4-2 against Barcelona and 6-0 at Villarreal, so they arrive as the side more likely to turn a high-scoring game into a home win against a Roma side that has already lost twice in",
+                                "This season's Champions League has been unusually home-sided (56% home wins, 10% draws in 72 matches), which supports PSG at Parc des Princes more than last season's 18% draw rate would."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6028,
+                        0.2097,
+                        0.1875
+                    ],
+                    "p_adj": [
+                        0.617786,
+                        0.209227,
+                        0.172986
+                    ],
+                    "p_llm": [
+                        0.537364,
+                        0.208287,
+                        0.254349
+                    ],
+                    "p_shadow": [
+                        0.602792,
+                        0.209735,
+                        0.187473
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "paris-saint-germain-vs-roma-2026-11-25"
+            },
+            "sha256": "ca52b95fb54fd6e9a94f05bfe5ad3aa6b9a7561ecb82481b4df36bfd7d52a88c",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0034-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fenerbahce",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0035",
+                "home": "shakhtar-donetsk",
+                "inputs": {
+                    "elo_away": 1725.5,
+                    "elo_home": 1462.2,
+                    "lambda_away": 1.483209,
+                    "lambda_home": 1.32383,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.34071,
+                        0.246449,
+                        0.41284
+                    ],
+                    "p_elo": [
+                        0.191263,
+                        0.25933,
+                        0.549407
+                    ],
+                    "p_market": [
+                        0.334879,
+                        0.268644,
+                        0.396477
+                    ],
+                    "p_stat": [
+                        0.308336,
+                        0.255295,
+                        0.436369
+                    ],
+                    "retained_mass": 0.999999999914,
+                    "rho": 0.02144,
+                    "small_sample": [
+                        "shakhtar-donetsk"
+                    ],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-25T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5669,
+                    "draw_risk": false,
+                    "over_2_5": 0.5298,
+                    "p": [
+                        0.3083,
+                        0.2553,
+                        0.4364
+                    ],
+                    "p_display": [
+                        30.8,
+                        25.5,
+                        43.7
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1202,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0974,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0929,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0746,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.071,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.25,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Shakhtar are missing four players (Pedrinho, Eguinaldo, Marlon Santos, Kauã Elias) and Fenerbahçe are missing Oosterwolde, Aké and Asensio with Diouf doubtful, but each list comes from one source and no starter roles are given, so both side",
+                                "Fenerbahçe have scored 31 goals in 12 league games but conceded in four of their last five matches, while Shakhtar have lost both of their Champions League games against stronger sides 0-1, so the match looks tight with goals at both ends.",
+                                "Shakhtar are nominally at home but the game is at Stamford Bridge, so home advantage is weaker than the 56% home win rate this season suggests."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.24,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Shakhtar are missing four players through injury, including regular starters Pedrinho and Eguinaldo, which weakens their attacking depth.",
+                                "Fenerbahçe are without key defenders Oosterwolde and Aké, plus Asensio, reducing their defensive stability and creative options.",
+                                "Shakhtar have drawn their last two domestic matches and lost two of their last three Champions League games, suggesting they may struggle to dominate this fixture."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.25,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Being played at neutral Stamford Bridge reduces the typical Champions League home advantage, while Shakhtar have five rest days compared to four for Fenerbahçe.",
+                                "All reported absences—including Shakhtar's Pedrinho and Eguinaldo, plus Fenerbahçe's Nathan Aké and Marco Asensio—are backed by only one source without appearance data to confirm their starting roles.",
+                                "Shakhtar are winless in their last three outings with just one goal scored, whereas Fenerbahçe beat Liverpool 3-2 in their last European match and average two away goals per game in the Süper Lig."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.27,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Both sides have several reported absences, but every listing is from one source and no starter-role evidence is supplied, so no goals adjustment is applied.",
+                                "Fenerbahçe’s 3-2 Champions League win over Liverpool offsets their uneven domestic run and gives them the stronger recent European ceiling.",
+                                "Champions League home-win rates are high, but Fenerbahçe’s overall squad strength keeps the away side marginally favoured despite Shakhtar being designated home."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.28,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "base_rate",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides list several players out, but every absence is one source only and the sheet gives no starts, goals or assists, so there is no confirmed edge and expected goals are left unchanged.",
+                                "Champions League home wins are common this season (56%), but this Shakhtar home game is at Stamford Bridge, so that home-win rate overstates their edge.",
+                                "Shakhtar have lost two of three Champions League games 0-1, while Fenerbahçe’s European results swing from 0-6 at Aston Villa to a 3-2 win over Liverpool, pointing to a tight, low-scoring game rather than a clear home win."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.3158,
+                        0.2599,
+                        0.4243
+                    ],
+                    "p_adj": [
+                        0.306819,
+                        0.259903,
+                        0.433278
+                    ],
+                    "p_llm": [
+                        0.353,
+                        0.258673,
+                        0.388327
+                    ],
+                    "p_shadow": [
+                        0.315832,
+                        0.259893,
+                        0.424275
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "shakhtar-donetsk-vs-fenerbahce-2026-11-25"
+            },
+            "sha256": "d31e44c5b3649036174d503eb8670310cbe05fc38268611888ea4312b0bb595a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0035-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "manchester-united",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "champions-league",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "cl-2627-0036",
+                "home": "sporting-cp",
+                "inputs": {
+                    "elo_away": 1904.8,
+                    "elo_home": 1885.7,
+                    "lambda_away": 1.233288,
+                    "lambda_home": 1.82659,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-24T20:07:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.515247,
+                        0.224683,
+                        0.260071
+                    ],
+                    "p_elo": [
+                        0.420954,
+                        0.282603,
+                        0.296442
+                    ],
+                    "p_market": [
+                        0.382517,
+                        0.255013,
+                        0.36247
+                    ],
+                    "p_stat": [
+                        0.488255,
+                        0.240469,
+                        0.271276
+                    ],
+                    "retained_mass": 0.999999999867,
+                    "rho": 0.02144,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-25T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-24T20:10:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5971,
+                    "draw_risk": false,
+                    "over_2_5": 0.5843,
+                    "p": [
+                        0.4883,
+                        0.2404,
+                        0.2713
+                    ],
+                    "p_display": [
+                        48.8,
+                        24.1,
+                        27.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1106,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0914,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0833,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0741,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.068,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.2,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Manchester United are missing Baleba, Ugarte and Šeško, with Shaw and Rashford doubtful, which weakens midfield and attack; all of this comes from one source, so it is unconfirmed.",
+                                "United have lost 0-4 at Liverpool and conceded 23 goals in 11 league games, while Sporting have won 8 of their last 10 matches including a 4-0 cup win.",
+                                "United have 3 rest days and face Brentford 3 days later, against Sporting's 4 rest days, so United may be stretched."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.92,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.18,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Manchester United are missing several regulars: Šeško, Ugarte and Baleba are out, with Rashford and Shaw doubtful, which weakens their attack and midfield depth.",
+                                "Sporting have won five of their last six in all competitions, while United have lost four of their last six and were beaten 4-0 at Liverpool in their most recent away game.",
+                                "Champions League home sides have won 56% of matches this season, supporting a home-leaning forecast."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.22,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Sporting CP arrive on a five-match winning run across all competitions, while Manchester United sit 19th in the Premier League and remain winless away from home after losing 4-0 at Liverpool.",
+                                "All reported absences for both sides—including Debast and Nuno Santos for Sporting, plus Baleba, Ugarte, and Šeško for United—come from only one source without confirmed season appearance data.",
+                                "Sporting CP have four rest days before facing title rivals Porto four days later, whereas Manchester United have three rest days before and after this trip as they battle domestic relegation."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.9,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.22,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Manchester United have single-source reports of Šeško, Baleba and Ugarte out, reducing both their attacking focal point and midfield options; Shaw and Rashford are also only doubtful from one source.",
+                                "Sporting have won six of their past seven matches, while United arrive after a 0-4 league defeat and remain winless in six Premier League away games.",
+                                "Sporting have one extra rest day before a home match, though both sides have had only one fixture in the preceding 14 days."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "United are winless in six league away games (0W 3D 3L, 4 goals) and have been beaten heavily on the road, so Sporting’s recent Champions League wins are more likely to carry the night.",
+                                "Both clubs’ listed absences and doubts come from one source only, and starter status is not confirmed, so expected goals are left unadjusted rather than treating those names as verified first-choice losses.",
+                                "This season’s Champions League has produced a home win in 56% of 72 matches and a draw in only 10%, which supports a home win more than a share of the points."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5232,
+                        0.2345,
+                        0.2423
+                    ],
+                    "p_adj": [
+                        0.505513,
+                        0.240864,
+                        0.253623
+                    ],
+                    "p_llm": [
+                        0.592954,
+                        0.207859,
+                        0.199187
+                    ],
+                    "p_shadow": [
+                        0.523248,
+                        0.234471,
+                        0.242282
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "sporting-cp-vs-manchester-united-2026-11-25"
+            },
+            "sha256": "19798d6cb1053c2bf79ad414d107b72e52db70b821c36a7ae265306d0e5a88c2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cl-2627-0036-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "arezzo",
                 "batch_id": "2026-11-24T0014Z-model-predict",
                 "competition": "serie-b",
@@ -238,7 +2858,7 @@
                 "slug": "mantova-vs-arezzo-2026-11-25"
             },
             "sha256": "c38c5a845376f293a513b0a9a0ee36a7b6abae0415932707f02af8806e7b35a8",
-            "commit": "pending",
+            "commit": "a454f3fe820117d505c55a6947b1a7cea13a9025",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0018-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +3096,7 @@
                 "slug": "padova-vs-sampdoria-2026-11-25"
             },
             "sha256": "57c0bbfb46bc4f055f9b2649549fce57a13f1785a1162b406880a22525efd3d2",
-            "commit": "pending",
+            "commit": "a454f3fe820117d505c55a6947b1a7cea13a9025",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0019-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +3334,7 @@
                 "slug": "pisa-vs-modena-2026-11-25"
             },
             "sha256": "827a8ac8a7c4282d40bf519de21b1a8787628db59f0404bba6b11121b2d50dcd",
-            "commit": "pending",
+            "commit": "a454f3fe820117d505c55a6947b1a7cea13a9025",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0020-r1.json",
             "status": "pending",
             "result": null
@@ -9528,8 +12148,12 @@
             "sha256": "45da26b4451a6455cf6226a135dd9722faf4ebe55f9b862c7fa2030ab258e1db",
             "commit": "68041116fc9af4b1b48b488d3735247ece71822f",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0019-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.0543
+            }
         },
         {
             "record": {
@@ -9766,8 +12390,12 @@
             "sha256": "db1b9dc9ff096e0b76409f295c2d9300c746b9af11d12873d72bb97c23d65b4e",
             "commit": "68041116fc9af4b1b48b488d3735247ece71822f",
             "file": "https://thetouchlineatlas.com/ledger/cl-2627-0020-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-0",
+                "correct": false,
+                "rps": 0.4099
+            }
         },
         {
             "record": {
@@ -10004,8 +12632,12 @@
             "sha256": "1796270938720a192755356077200e1665aa44f6477100b5990e5eb3f84652b8",
             "commit": "68041116fc9af4b1b48b488d3735247ece71822f",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0011-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-3",
+                "correct": false,
+                "rps": 0.3368
+            }
         },
         {
             "record": {
