@@ -7,6 +7,482 @@
     "records": [
         {
             "record": {
+                "away": "al-shabab",
+                "batch_id": "2026-11-23T0014Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-23T00:14:41Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0002",
+                "home": "abha",
+                "inputs": {
+                    "elo_away": 1494.9,
+                    "elo_home": 1258.6,
+                    "lambda_away": 1.90983,
+                    "lambda_home": 0.971208,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 14,
+                        "captured_utc": "2026-11-25T15:05:50Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.177579,
+                        0.238964,
+                        0.583458
+                    ],
+                    "p_elo": [
+                        0.196541,
+                        0.261174,
+                        0.542284
+                    ],
+                    "p_market": [
+                        0.239855,
+                        0.242998,
+                        0.517148
+                    ],
+                    "p_stat": [
+                        0.175776,
+                        0.241136,
+                        0.583088
+                    ],
+                    "retained_mass": 0.99999999975,
+                    "rho": -0.093543,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-26T15:05:00Z",
+                "late": false,
+                "locked_at": "2026-11-25T15:08:41Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5395,
+                    "draw_risk": false,
+                    "over_2_5": 0.5489,
+                    "p": [
+                        0.1758,
+                        0.2411,
+                        0.5831
+                    ],
+                    "p_display": [
+                        17.6,
+                        24.1,
+                        58.3
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1148,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1022,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0993,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0973,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0664,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.27,
+                                "home": 0.23
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Abha are missing several players on one-source injury reports, including Nabil Fekir (regular starter, 1 of the team's 7 league goals) and defenders Abdou Diallo and Khaled Al Shamrani, which thins a side that has conceded 19 goals.",
+                                "Abha are 18th with 3 points, 7 from safety and still winless, while Al Shabab are 8 points clear of the drop and have less pressure.",
+                                "Al Shabab arrive after wins of 3-0, 3-1 and 6-1 in their last four games, while Abha have lost 8 of 11 league games and scored only 7 goals."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.88,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.55,
+                                "draw": 0.27,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Abha are missing several regulars, including forward Nabil Fekir (1 of their 7 league goals) and defenders Diallo and Al Shamrani, which weakens an already goal-shy side.",
+                                "Abha are 7 points from safety in the relegation zone and need a result, but Al Shabab are 8 points clear of the drop and can play with less pressure.",
+                                "Al Shabab have won three of the last four league meetings, including 4-0 and 5-0 wins, and also beat Abha on penalties in the King's Cup."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.59,
+                                "draw": 0.25,
+                                "home": 0.16
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists regular starting forward Nabil Fekir (14% of Abha's league goals) and defenders Abdou Diallo and Khaled Al Shamrani as injured, further weakening a side that has only scored 7 league goals.",
+                                "Abha sit bottom of the table on 3 points and are already 7 points adrift of safety, giving them an urgent need for points despite facing a much stronger opponent.",
+                                "Winless Abha have lost 8 of their 11 league matches, whereas Al Shabab enter the break unbeaten in four across all competitions having scored 14 goals in that run."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.89,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.54,
+                                "draw": 0.27,
+                                "home": 0.19
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Abha have single-source reports of Fekir (one of their seven league goals) plus defenders Diallo and Al Shamrani out, reducing an already blunt attack and weakening their defensive options.",
+                                "Winless Abha have taken three points from 11 league games, while Al Shabab enter on three straight wins including 6-1 against Al Ahli.",
+                                "Abha are seven points from safety and need a result urgently, but that pressure comes with no league win yet this season."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.56,
+                                "draw": 0.27,
+                                "home": 0.17
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Abha sit 18th and 7 points from safety after 11 games, so they need points more than 10th-placed Al Shabab, who are 8 clear of the drop, but Abha have scored only 7 league goals.",
+                                "One source lists regular starter Nabil Fekir out (6 of 11 starts, 1 of Abha's 7 league goals) plus defenders Diallo and Al Shamrani, a modest attack hit that is not confirmed by a second source.",
+                                "Al Shabab have won three of their last four, scoring 14, while Abha remain winless with only 3 goals in 5 home games, so the visitors look likelier to edge a low-scoring game."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.1682,
+                        0.245,
+                        0.5868
+                    ],
+                    "p_adj": [
+                        0.164136,
+                        0.239692,
+                        0.596172
+                    ],
+                    "p_llm": [
+                        0.18497,
+                        0.266512,
+                        0.548518
+                    ],
+                    "p_shadow": [
+                        0.168231,
+                        0.245013,
+                        0.586756
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "abha-vs-al-shabab-2026-11-26"
+            },
+            "sha256": "734c2f506202c5aed08f90cf172b83bc999aa9a091daa475bc50fbc17d031a7f",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0002-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-riyadh",
+                "batch_id": "2026-11-25T0014Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-25T00:14:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0004",
+                "home": "al-fateh",
+                "inputs": {
+                    "elo_away": 1357.5,
+                    "elo_home": 1380.5,
+                    "lambda_away": 1.168165,
+                    "lambda_home": 1.584454,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 14,
+                        "captured_utc": "2026-11-25T15:05:50Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.458891,
+                        0.271103,
+                        0.270006
+                    ],
+                    "p_elo": [
+                        0.444436,
+                        0.279978,
+                        0.275586
+                    ],
+                    "p_market": [
+                        0.431774,
+                        0.257362,
+                        0.310864
+                    ],
+                    "p_stat": [
+                        0.462542,
+                        0.270181,
+                        0.267277
+                    ],
+                    "retained_mass": 0.999999999824,
+                    "rho": -0.093581,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-26T14:25:00Z",
+                "late": false,
+                "locked_at": "2026-11-25T15:08:41Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5585,
+                    "draw_risk": false,
+                    "over_2_5": 0.5196,
+                    "p": [
+                        0.4625,
+                        0.2702,
+                        0.2673
+                    ],
+                    "p_display": [
+                        46.3,
+                        27,
+                        26.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1286,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0942,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0907,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0807,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0746,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.28,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Al Fateh sit 16th, 4 points from safety, so they need points more than Al Riyadh, who are 6 points clear of the drop.",
+                                "Both defences leak (Al Fateh 25 conceded in 12, Al Riyadh 25 in 11), and Al Fateh have 0 wins in 6 at home, so a low-margin draw or narrow result is plausible.",
+                                "Both sides have had over 26 rest days, but Al Riyadh have a King's Cup tie 4 days later, which may slightly split their focus."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.3,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Fateh are in the relegation zone, 4 points from safety, so they need the points more urgently than Al Riyadh, who are 6 points above the drop zone.",
+                                "Al Fateh have lost 5 of 6 home league games this season, while Al Riyadh have lost 3 of 6 away, so neither side has shown reliable home/away form.",
+                                "The last five league meetings have been close, with three draws and one win each, including a 2-2 draw in this fixture in 2024."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.3,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Fateh sit inside the relegation zone four points from safety, giving them a more urgent need for points than an Al Riyadh side that can move further clear of the bottom three with a draw.",
+                                "Neither side has won in their respective home or away league outings this season, with Al Fateh losing five of six at home and Al Riyadh drawing three of six on the road, pointing toward a tight, low-margin contest.",
+                                "Only one source provides team news with no absences listed for either club, so no line-up adjustments are made despite full squad availability not being confirmed."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.31,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "No absences are listed for either side, but each squad-status list comes from one source only, so full availability is not confirmed.",
+                                "Al Fateh are four points from safety and need to arrest a home run of five defeats in six, while Al Riyadh are only six points clear of the relegation zone.",
+                                "Al Fateh have lost four straight league matches, whereas Al Riyadh have three wins in their last six league games despite their heavy latest defeat."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.35,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Fateh are 16th and 4 points from safety, so they need the result more than Al Riyadh, who are 6 points above the relegation zone.",
+                                "Al Fateh are winless at home (0-1-5) and Al Riyadh are winless away with three draws in six, so a tight game is more likely than a routine home win.",
+                                "One source lists no absences for either side, which does not confirm full squads, so expected goals are left unadjusted."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "3/5",
+                    "ai_combined": [
+                        0.4366,
+                        0.2789,
+                        0.2844
+                    ],
+                    "p_adj": [
+                        0.462542,
+                        0.270181,
+                        0.267277
+                    ],
+                    "p_llm": [
+                        0.337209,
+                        0.308191,
+                        0.3546
+                    ],
+                    "p_shadow": [
+                        0.436646,
+                        0.278943,
+                        0.284411
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-fateh-vs-al-riyadh-2026-11-26"
+            },
+            "sha256": "e2a59645800b7be842eaf3e32001bdc331732c11e6443a9034b2bf56c77a4c3a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0004-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "west-bromwich-albion",
                 "batch_id": "2026-11-24T0014Z-model-predict",
                 "competition": "championship",
