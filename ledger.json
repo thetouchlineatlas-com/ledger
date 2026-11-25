@@ -240,7 +240,7 @@
                 "slug": "ajax-amsterdam-vs-fc-thun-2026-11-26"
             },
             "sha256": "789e18e30372d880722b90fbfc8df484e7a229a5b5841712774662c1297b0007",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0020-r1.json",
             "status": "pending",
             "result": null
@@ -480,7 +480,7 @@
                 "slug": "brighton-vs-csu-craiova-2026-11-26"
             },
             "sha256": "bcb8f984a58696f8096f735a68f0b3cd6047854c2ca31592dacaf2f965f3c292",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0021-r1.json",
             "status": "pending",
             "result": null
@@ -721,7 +721,7 @@
                 "slug": "egnatia-vs-lincoln-red-imps-2026-11-26"
             },
             "sha256": "140666910b9dfc84e857a269407c1c0475df49d21760a36ee71439a6936ddac7",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0022-r1.json",
             "status": "pending",
             "result": null
@@ -959,7 +959,7 @@
                 "slug": "hearts-vs-as-monaco-2026-11-26"
             },
             "sha256": "0675db188651fe09505732ea0868190c129a2badcc7aa2539146bad19361d7ea",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0023-r1.json",
             "status": "pending",
             "result": null
@@ -1199,7 +1199,7 @@
                 "slug": "iberia-1999-vs-getafe-2026-11-26"
             },
             "sha256": "96928da9af5c3a0ec933defd66967fd7fcb405b292ed42b17a819336b4006843",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0024-r1.json",
             "status": "pending",
             "result": null
@@ -1440,7 +1440,7 @@
                 "slug": "jablonec-vs-fc-lugano-2026-11-26"
             },
             "sha256": "b83b270a1f59be038861fa797d1754657767aff5fec127feb7882fcbb988e232",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0025-r1.json",
             "status": "pending",
             "result": null
@@ -1681,7 +1681,7 @@
                 "slug": "kauno-zalgiris-vs-riga-fc-2026-11-26"
             },
             "sha256": "a001129705401947f93cd2502f3362784e6be61ca7ab19449d392bf0448f822f",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0026-r1.json",
             "status": "pending",
             "result": null
@@ -1919,7 +1919,7 @@
                 "slug": "pafos-vs-fc-midtjylland-2026-11-26"
             },
             "sha256": "0f3db929cae2301a5f28cadb4b4446b4c4302179a0dc0e8ea42db4e373c6a71b",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0027-r1.json",
             "status": "pending",
             "result": null
@@ -2157,7 +2157,7 @@
                 "slug": "sk-brann-vs-agf-2026-11-26"
             },
             "sha256": "4682c31b12e5652da7bdec962d412c38e92d21d04ed455e9149260d757af6642",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0028-r1.json",
             "status": "pending",
             "result": null
@@ -2397,7 +2397,7 @@
                 "slug": "besiktas-vs-hapoel-be-er-2026-11-26"
             },
             "sha256": "3cd790d988b632bf0ad3934873623b4dbfb9949745eaec55361eb029fecf4b96",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/el-2627-0019-r1.json",
             "status": "pending",
             "result": null
@@ -2635,7 +2635,7 @@
                 "slug": "celta-vigo-vs-bournemouth-2026-11-26"
             },
             "sha256": "ff6f02c28ebd15bdba1c1ffc1e1d00e00bdd6c14a76b8f39eb61ea6ff8065cfa",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/el-2627-0020-r1.json",
             "status": "pending",
             "result": null
@@ -2875,7 +2875,7 @@
                 "slug": "dinamo-zagreb-vs-bayer-leverkusen-2026-11-26"
             },
             "sha256": "645ce74d85d7d8d5465028c8bb9129637f8ddfa8a10da1324c83325df9f9319d",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/el-2627-0021-r1.json",
             "status": "pending",
             "result": null
@@ -3115,7 +3115,7 @@
                 "slug": "marseille-vs-levski-sofia-2026-11-26"
             },
             "sha256": "afd7637f27fa50252fc5c19468aef3e8fea27deb5430b6ca19b1d73c191b56f2",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/el-2627-0022-r1.json",
             "status": "pending",
             "result": null
@@ -3353,7 +3353,7 @@
                 "slug": "olympiacos-vs-ac-milan-2026-11-26"
             },
             "sha256": "51068dea8f4b3e6867b6f9d6e43ef2845f6c9faede2ccc2d21c0143ff77a50ac",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/el-2627-0023-r1.json",
             "status": "pending",
             "result": null
@@ -3593,7 +3593,7 @@
                 "slug": "rb-salzburg-vs-ararat-armenia-2026-11-26"
             },
             "sha256": "eb2c4de97d77a09bee49a6a2a29ba6f9af07ae4397000e790cfdea584f002a7c",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/el-2627-0024-r1.json",
             "status": "pending",
             "result": null
@@ -3833,7 +3833,7 @@
                 "slug": "union-st-gilloise-vs-lech-poznan-2026-11-26"
             },
             "sha256": "9b89ac3e6ee0df8844bc28d4c719d66c68740cc4147ccacee1013aaf24071de3",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/el-2627-0025-r1.json",
             "status": "pending",
             "result": null
@@ -4073,7 +4073,7 @@
                 "slug": "viktoria-plzen-vs-benfica-2026-11-26"
             },
             "sha256": "5a19e0097d7103af2c33876b3e1f197be559a46f9fe3572c6ba0c1276db02a7d",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/el-2627-0026-r1.json",
             "status": "pending",
             "result": null
@@ -4311,7 +4311,7 @@
                 "slug": "al-faisaly-vs-al-diriyah-2026-11-26"
             },
             "sha256": "5cd47c11afe923747777dda53e46b784054047590d1acbac9c3c6c1921dc69ae",
-            "commit": "pending",
+            "commit": "15d974e2e90c22d1af82bcd60e6b54975f932829",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0007-r1.json",
             "status": "pending",
             "result": null
