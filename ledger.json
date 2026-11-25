@@ -7,6 +7,246 @@
     "records": [
         {
             "record": {
+                "away": "mjallby-aif",
+                "batch_id": "2026-11-25T0014Z-model-predict",
+                "competition": "conference-league",
+                "cutoff_utc": "2026-11-25T00:14:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ec-2627-0019",
+                "home": "kairat-almaty",
+                "inputs": {
+                    "elo_away": 1383.1,
+                    "elo_home": 1274.5,
+                    "lambda_away": 0.855362,
+                    "lambda_home": 1.12531,
+                    "last_result_used": "2026-11-24",
+                    "market": {
+                        "books": 15,
+                        "captured_utc": "2026-11-25T16:05:52Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.420747,
+                        0.299955,
+                        0.279299
+                    ],
+                    "p_elo": [
+                        0.328155,
+                        0.285025,
+                        0.386819
+                    ],
+                    "p_market": [
+                        0.437369,
+                        0.27453,
+                        0.288101
+                    ],
+                    "p_stat": [
+                        0.39882,
+                        0.300018,
+                        0.301162
+                    ],
+                    "retained_mass": 0.999999999978,
+                    "rho": 0.024175,
+                    "small_sample": [
+                        "kairat-almaty"
+                    ],
+                    "weights": {
+                        "temperature": 1.05,
+                        "w_dc": 0.8
+                    }
+                },
+                "kickoff_utc": "2026-11-26T15:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-25T16:08:43Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.3853,
+                    "draw_risk": true,
+                    "over_2_5": 0.3174,
+                    "p": [
+                        0.3988,
+                        0.3,
+                        0.3012
+                    ],
+                    "p_display": [
+                        39.9,
+                        30,
+                        30.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1502,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1348,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.1307,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1296,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0828,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.29,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kairat have had 21 days of rest and no match in the last 14 days, while Mjällby have had 5 days and play Halmstads BK in 3 days, so rotation or fatigue is possible.",
+                                "Mjällby are missing Dalsgaard and Stavitski with Bergström doubtful, and Kairat are without Jorginho; all of this comes from one source and the players' roles are not in the fact sheet, so the adjustments are small.",
+                                "Kairat have drawn their last three games, including 1-1 at Atalanta, while Mjällby have drawn 1-1 or 0-0 in four of their last five, which points to a low-scoring game."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.94,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Mjällby are missing regulars Villum Dalsgaard and Timo Stavitski, with Jacob Bergström doubtful, which weakens their attack and depth; Kairat are only missing Jorginho, so the home side's squad is closer to full strength.",
+                                "Kairat have had 21 days' rest and no match in the last 14 days, while Mjällby played Malmö five days ago and have a league match at Halmstad three days after this, so the visitors may be more fatigued and distracted.",
+                                "Kairat have drawn three of their last four Conference League matches, including away at Atalanta and Riga, while Mjällby have won their last two Conference League home games but have been less convincing on the road, drawing at Iberia 1999."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kairat Almaty have not played for 21 days with their domestic season finished, while Mjällby AIF have five days of rest and a domestic league match at Halmstads BK just three days later.",
+                                "All reported injuries for both sides are backed by only one source and lack role data, with Mjällby AIF listing three absent or doubtful players to Kairat Almaty's one.",
+                                "Mjällby AIF are unbeaten in their three Conference League matches with two wins and a draw, whereas Kairat Almaty are winless in three and lost 5-1 in their only recent home match in the competition."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.29,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kairat have had 21 rest days and no match in the prior fortnight, while Mjällby have only five days' rest and play again three days later.",
+                                "All listed injury reports are from one source, so Jorginho's absence and Mjällby's Bergström doubt, Dalsgaard and Stavitski absences are not given an assumed goals impact.",
+                                "Mjällby are difficult to beat, with four draws and two wins in their past seven matches, which supports a relatively high draw chance despite Kairat's home edge."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.3,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kairat have had 21 days since their last match and none in the previous 14, while Mjällby have had only 5 days' rest and a Swedish league match three days later, so the visitors may be less fresh or manage minutes.",
+                                "Listed absences are one source only, with no positions, league starts, goals or assists given, so they are not treated as confirmed first-choice losses.",
+                                "Kairat's only listed European home game was a 1-5 loss, while Mjällby are unbeaten in their three listed Conference League matches, which keeps the away side competitive despite the rest gap."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4081,
+                        0.3018,
+                        0.2901
+                    ],
+                    "p_adj": [
+                        0.402642,
+                        0.302987,
+                        0.29437
+                    ],
+                    "p_llm": [
+                        0.43008,
+                        0.296456,
+                        0.273464
+                    ],
+                    "p_shadow": [
+                        0.4081,
+                        0.301754,
+                        0.290146
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "kairat-almaty-vs-mjallby-aif-2026-11-26"
+            },
+            "sha256": "d7e66e89b44321eae830f752ffe67a92f3fb01a6749ae0803fe1551a619b9162",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ec-2627-0019-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "al-shabab",
                 "batch_id": "2026-11-23T0014Z-model-predict",
                 "competition": "saudi-pro-league",
@@ -238,7 +478,7 @@
                 "slug": "abha-vs-al-shabab-2026-11-26"
             },
             "sha256": "734c2f506202c5aed08f90cf172b83bc999aa9a091daa475bc50fbc17d031a7f",
-            "commit": "pending",
+            "commit": "df3188ac15d3cb58193cccae7ab6b1be7ce52a37",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0002-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +716,7 @@
                 "slug": "al-fateh-vs-al-riyadh-2026-11-26"
             },
             "sha256": "e2a59645800b7be842eaf3e32001bdc331732c11e6443a9034b2bf56c77a4c3a",
-            "commit": "pending",
+            "commit": "df3188ac15d3cb58193cccae7ab6b1be7ce52a37",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0004-r1.json",
             "status": "pending",
             "result": null
