@@ -7,6 +7,482 @@
     "records": [
         {
             "record": {
+                "away": "konyaspor",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0023",
+                "home": "alanyaspor",
+                "inputs": {
+                    "elo_away": 1397.5,
+                    "elo_home": 1407.4,
+                    "lambda_away": 1.029465,
+                    "lambda_home": 1.338159,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-26T17:05:52Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.427801,
+                        0.29438,
+                        0.27782
+                    ],
+                    "p_elo": [
+                        0.43049,
+                        0.281629,
+                        0.28788
+                    ],
+                    "p_market": [
+                        0.369843,
+                        0.288395,
+                        0.341762
+                    ],
+                    "p_stat": [
+                        0.43357,
+                        0.285871,
+                        0.280559
+                    ],
+                    "retained_mass": 0.999999999798,
+                    "rho": -0.076353,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-27T17:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-26T17:08:31Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.482,
+                    "draw_risk": false,
+                    "over_2_5": 0.4248,
+                    "p": [
+                        0.4336,
+                        0.2858,
+                        0.2806
+                    ],
+                    "p_display": [
+                        43.4,
+                        28.6,
+                        28
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1349,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1171,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1005,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0875,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0875,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.26,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Konyaspor sit level on points with 16th and Alanyaspor are only 4 above the drop, so this is a relegation six-pointer where a draw helps neither much.",
+                                "Konyaspor may be missing three regular defenders (Demirbağ out, Awaziem and Baniya doubtful, mostly one source), while Alanyaspor lose ever-present defender Aliti to suspension.",
+                                "Alanyaspor won all five recent league meetings, though by one goal in the last four, and Konyaspor have lost 4 of 5 away games this season."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Konyaspor's defence is hit hard: Demirbağ is out and Awaziem and Baniya are doubtful, with Awaziem also contributing 2 of Konyaspor's 8 league goals, so their already-leaky back line and limited attack are weakened.",
+                                "Konyaspor are level on points with the top relegation place and need the points more, while Alanyaspor sit 4 points above the drop zone, making this a direct survival six-pointer.",
+                                "Alanyaspor have won the last five league meetings, including a 2-1 home win in February 2026, giving them a clear recent edge in this matchup."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.93,
+                            "m_home": 1.05,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.27,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Konyaspor have a depleted defence with starter Adil Demirbağ confirmed out by a second source and starters Chidozie Awaziem (who has 25% of their league goals) and Rayyan Baniya listed as doubtful by one source, while one source lists Alany",
+                                "This is a direct relegation six-pointer with 15th-placed Konyaspor only staying out of the drop zone on goal difference and 14th-placed Alanyaspor looking to protect a four-point cushion.",
+                                "Alanyaspor have won all five of the recent league meetings between the sides, with the last four each finishing 2-1 in their favour."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 1.08,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.29,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Konyaspor have one confirmed regular-starting defender out and two more regular defenders doubtful, while Alanyaspor lose ever-present defender Fidan Aliti to suspension; the doubtful reports have only one source.",
+                                "Konyaspor are level with the top relegation place, so the visitors have especially urgent need to avoid another defeat.",
+                                "Alanyaspor have won each of the last five league meetings with Konyaspor, including both most recent home meetings by 2-1."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.91,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.28,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Konyaspor are level on points with 16th, the top relegation place, so they need the result more than Alanyaspor, who sit four points above the drop.",
+                                "Konyaspor have a confirmed regular starter out in Demirbağ plus two other regular defenders doubtful on one source each, including Awaziem (25% of their league goals); Alanyaspor’s ever-present defender Aliti is listed suspended by one sour",
+                                "Alanyaspor have won the last five league meetings, including both recent home games 2-1, against a side with no away win this season."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4414,
+                        0.2869,
+                        0.2717
+                    ],
+                    "p_adj": [
+                        0.436747,
+                        0.289537,
+                        0.273716
+                    ],
+                    "p_llm": [
+                        0.46011,
+                        0.276249,
+                        0.263641
+                    ],
+                    "p_shadow": [
+                        0.441401,
+                        0.286881,
+                        0.271719
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "alanyaspor-vs-konyaspor-2026-11-27"
+            },
+            "sha256": "abbc481d35b6b4234d54e89c95803ec75a74c03d77c426cced9cbc28f0a5a83f",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0023-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "kasimpasa",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0024",
+                "home": "caykur-rizespor",
+                "inputs": {
+                    "elo_away": 1469,
+                    "elo_home": 1430.6,
+                    "lambda_away": 1.312478,
+                    "lambda_home": 1.552513,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-26T17:05:52Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.421148,
+                        0.26522,
+                        0.313632
+                    ],
+                    "p_elo": [
+                        0.379558,
+                        0.285319,
+                        0.335123
+                    ],
+                    "p_market": [
+                        0.499803,
+                        0.247646,
+                        0.252551
+                    ],
+                    "p_stat": [
+                        0.403168,
+                        0.272895,
+                        0.323937
+                    ],
+                    "retained_mass": 0.999999999855,
+                    "rho": -0.076353,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-27T17:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-26T17:08:31Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.587,
+                    "draw_risk": false,
+                    "over_2_5": 0.5429,
+                    "p": [
+                        0.4032,
+                        0.2729,
+                        0.3239
+                    ],
+                    "p_display": [
+                        40.3,
+                        27.3,
+                        32.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1286,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0863,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0787,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0762,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0681,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.27,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Kasımpaşa lose regular defender Ayberk Karapo (suspended, 9 of 12 starts) and have several doubtful players; Rizespor's goalkeeper Yahia Fofana (9 starts) is doubtful on one source.",
+                                "Kasımpaşa are unbeaten in away league games except one (4W 1D 1L) while Rizespor have won just 1 of 5 at home, conceding 11.",
+                                "Home wins are 48% this season but only 42% last season, with draws at 16% against 29%, so I blend the two and lean toward a draw."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.25,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Rizespor's first-choice goalkeeper Yahia Fofana is doubtful, and Kasımpaşa are missing regular starting defender Ayberk Karapo through suspension, weakening both back lines but Rizespor's potential loss in goal is more disruptive.",
+                                "Rizespor have lost 4 of 5 home league games this season, while Kasımpaşa have won 4 of 6 away, making the visitors' away form a strong signal for this match.",
+                                "Kasımpaşa are 5th and chasing the leaders, 8 points behind, so they need the points more than mid-table Rizespor, who are 9 points clear of the relegation zone."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.25,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Kasımpaşa are missing suspended regular-starting defender Ayberk Karapo (9 starts), while Rizespor's first-choice goalkeeper Yahia Fofana (9 starts) is listed as doubtful by only one source.",
+                                "Kasımpaşa have won four of their six away league matches while Rizespor have lost four of their five at home, making the visitors slight favourites despite travelling.",
+                                "Kasımpaşa are unbeaten in their last three visits to Rizespor, winning the most recent two league meetings at this stadium."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.25,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Kasımpaşa are without regular-starting defender Ayberk Karapo, while Rizespor's regular goalkeeper Yahia Fofana is only doubtful and listed by one source.",
+                                "Kasımpaşa's strong away return (4 wins from 6, conceding five) meets a Rizespor home record of four losses in five, favouring the visitors despite the venue.",
+                                "Kasımpaşa have won three of the last five league meetings, including each of the last two at Çaykur Didi."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.27,
+                                "home": 0.26
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Rizespor have only 1 win from 5 home league games (5-11), while Kasımpaşa have won 4 of 6 away (8-5), so the usual home advantage is reversed.",
+                                "Kasımpaşa are without regular starter Ayberk Karapo (9 of 12 league starts, two sources); Rizespor’s first-choice keeper Fofana is only doubtful on one source and is not treated as confirmed out.",
+                                "Kasımpaşa have won the last two league visits here, 0-1 and 1-2, in a run of low-scoring meetings at this ground."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.382,
+                        0.2733,
+                        0.3447
+                    ],
+                    "p_adj": [
+                        0.403485,
+                        0.274912,
+                        0.321603
+                    ],
+                    "p_llm": [
+                        0.298398,
+                        0.25947,
+                        0.442132
+                    ],
+                    "p_shadow": [
+                        0.382016,
+                        0.273295,
+                        0.344689
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "caykur-rizespor-vs-kasimpasa-2026-11-27"
+            },
+            "sha256": "266d3a4a09da3191bdb5a50ed34133e5add91768c0b333c469bde22a58ee4897",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0024-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "al-fayha",
                 "batch_id": "2026-11-24T0014Z-model-predict",
                 "competition": "saudi-pro-league",
@@ -10048,8 +10524,12 @@
             "sha256": "734c2f506202c5aed08f90cf172b83bc999aa9a091daa475bc50fbc17d031a7f",
             "commit": "df3188ac15d3cb58193cccae7ab6b1be7ce52a37",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0002-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.1024
+            }
         },
         {
             "record": {
@@ -10286,8 +10766,12 @@
             "sha256": "e2a59645800b7be842eaf3e32001bdc331732c11e6443a9034b2bf56c77a4c3a",
             "commit": "df3188ac15d3cb58193cccae7ab6b1be7ce52a37",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0004-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.1802
+            }
         },
         {
             "record": {
