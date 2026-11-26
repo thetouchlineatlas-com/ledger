@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "melbourne-city-fc",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "a-league",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "al-2627-0002",
+                "home": "macarthur-fc",
+                "inputs": {
+                    "elo_away": 1544.9,
+                    "elo_home": 1432.6,
+                    "lambda_away": 1.561481,
+                    "lambda_home": 1.360891,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-26T09:05:48Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.323494,
+                        0.263891,
+                        0.412615
+                    ],
+                    "p_elo": [
+                        0.304711,
+                        0.283412,
+                        0.411877
+                    ],
+                    "p_market": [
+                        0.281632,
+                        0.259088,
+                        0.459281
+                    ],
+                    "p_stat": [
+                        0.316729,
+                        0.280349,
+                        0.402922
+                    ],
+                    "retained_mass": 0.999999999836,
+                    "rho": -0.081279,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.1315,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-27T08:40:00Z",
+                "late": false,
+                "locked_at": "2026-11-26T09:08:57Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6005,
+                    "draw_risk": false,
+                    "over_2_5": 0.5532,
+                    "p": [
+                        0.3167,
+                        0.2804,
+                        0.4029
+                    ],
+                    "p_display": [
+                        31.7,
+                        28,
+                        40.3
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1314,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0872,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0762,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.073,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.067,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.28,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Macarthur won 3 of the last 5 league meetings, including a 6-2 win in January 2026, and Melbourne City won only one.",
+                                "Melbourne City have had 20 days without a match against 5 for Macarthur, which could mean rest or lost rhythm, so I treat it as roughly neutral.",
+                                "No absences are listed for either side, but the list for each team comes from one source and could not be read, so the neutral adjustments are not confirmed."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.31,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "head_to_head",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Melbourne City have had 20 days' rest and no match in the last 14 days, while Macarthur played 5 days ago, so the visitors should be fresher late in the game.",
+                                "Macarthur have won three of the last five league meetings at this ground, including a 6-2 win in January 2026, so they have a clear recent edge in this fixture.",
+                                "Both sides are within 3 points of the leaders, so neither has a stronger motivation edge; this is a meeting of two teams chasing the top of the table."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.29,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Melbourne City FC enter after a 20-day break compared to 5 rest days for Macarthur FC, giving the visitors extra freshness alongside possible match rust.",
+                                "No absences are listed for either club because one source could not be read this time, so neither side receives a line-up adjustment.",
+                                "Macarthur FC have won all three of the recent home meetings in this fixture by an aggregate score of 9-2, offsetting Melbourne City FC's traditional strength."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.32,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "head_to_head",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Melbourne City have had 20 rest days and no match in the previous 14 days, compared with Macarthur's five rest days, giving the visitors fresher preparation.",
+                                "Macarthur have won their last three home league meetings with Melbourne City, including 6-2 in January 2026.",
+                                "Macarthur's home league record is an even 1W-1D-1L, while Melbourne City are winless in two away matches, pointing to a tight home-leaning contest."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.31,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "head_to_head",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Melbourne City have had 20 rest days and no match in the last 14, against Macarthur's 5 days and one recent match, so the visitors should be the fresher side.",
+                                "Macarthur have won the last three home league meetings with City, including 6-2, which tilts a tight early-season match toward the hosts.",
+                                "Unavailable lists for both clubs could not be read from one source, and no absences are listed, so expected goals are left unadjusted."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3349,
+                        0.2861,
+                        0.379
+                    ],
+                    "p_adj": [
+                        0.316729,
+                        0.280349,
+                        0.402922
+                    ],
+                    "p_llm": [
+                        0.408231,
+                        0.302344,
+                        0.289426
+                    ],
+                    "p_shadow": [
+                        0.334908,
+                        0.286058,
+                        0.379034
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "macarthur-fc-vs-melbourne-city-fc-2026-11-27"
+            },
+            "sha256": "95e70ff0977f35c7bfd68a2658c993c3b9c4fe5f0f4bc54ab6205e7ce191a5dd",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/al-2627-0002-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "atalanta",
                 "batch_id": "2026-11-25T0014Z-model-predict",
                 "competition": "conference-league",
