@@ -7,6 +7,958 @@
     "records": [
         {
             "record": {
+                "away": "1-fc-nurnberg",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0010",
+                "home": "1-fc-heidenheim-1846",
+                "inputs": {
+                    "elo_away": 1339.7,
+                    "elo_home": 1196.1,
+                    "lambda_away": 1.644993,
+                    "lambda_home": 1.658892,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-26T18:12:34Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.382923,
+                        0.240007,
+                        0.37707
+                    ],
+                    "p_elo": [
+                        0.275006,
+                        0.279892,
+                        0.445102
+                    ],
+                    "p_market": [
+                        0.443498,
+                        0.238075,
+                        0.318428
+                    ],
+                    "p_stat": [
+                        0.326358,
+                        0.259162,
+                        0.41448
+                    ],
+                    "retained_mass": 0.999999999938,
+                    "rho": -0.049453,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-27T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-26T18:16:07Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6626,
+                    "draw_risk": false,
+                    "over_2_5": 0.635,
+                    "p": [
+                        0.3264,
+                        0.2591,
+                        0.4145
+                    ],
+                    "p_display": [
+                        32.6,
+                        25.9,
+                        41.5
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1136,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0906,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0738,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0709,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.061,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.92,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.28,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Nürnberg are without Zoma, who has 7 of the side's 27 league goals (26%), plus midfielder Becker; this is single-source news and cuts their attack.",
+                                "Heidenheim lose first-choice keeper Dähne (9 of 12 starts) and defender Föhrenbach (11 of 12), a modest blow to a defence that has conceded 23, also single-source.",
+                                "Nürnberg are 2nd and 1 point clear of 3rd, while Heidenheim sit 8 points off the top two and only 5 above the drop, so both have reasons to push for points."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.9,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.29,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Heidenheim are missing first-choice goalkeeper Thomas Dähne and regular defender Jonas Föhrenbach, weakening a home side that has conceded 9 goals in 6 home league games.",
+                                "Nürnberg are without Mohamed Alì Zoma, whose 7 league goals are 26% of their total, and regular midfielder Finn Becker, reducing their attacking threat.",
+                                "Nürnberg sit 2nd and are defending an automatic promotion place with only a 1-point cushion over 3rd, so they need points despite their away record; Heidenheim are mid-table and 8 points off the top 2."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.9,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.3,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Nürnberg are without forward Mohamed Alì Zoma (26% of their league goals) and starter Finn Becker, while Heidenheim miss first-choice goalkeeper Thomas Dähne and regular defender Jonas Föhrenbach.",
+                                "Nürnberg need a result to protect their automatic promotion spot as they sit second by just a single point, whereas seventh-placed Heidenheim are eight points behind them.",
+                                "Both sides have avoided defeat in their respective home and away league games this season, though Heidenheim are winless in their last seven overall."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.89,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.29,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Nürnberg are without Zoma, whose seven league goals account for 26% of their total, while Heidenheim miss regular goalkeeper Dähne and defender Föhrenbach; all listed absences are from one source.",
+                                "Heidenheim are unbeaten in six home league matches, but Nürnberg have also avoided defeat in all five away league games, pointing to a closely balanced fixture.",
+                                "Nürnberg need points to protect a one-point automatic-promotion cushion, while Heidenheim are seven points off the play-off places."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.9,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.32,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both injury lists are single-source only: Nürnberg are without regular forward Zoma, 7 of their 27 league goals (26%), plus a regular midfielder, while Heidenheim are without first-choice goalkeeper Dähne (9 of 12 starts) and regular defend",
+                                "Nürnberg sit in the automatic promotion places and are only 1 point clear of 3rd, so they need the result more than mid-table Heidenheim, who are 7 points off the play-off places and 5 above the relegation zone.",
+                                "Heidenheim’s last three home games were all draws and they have lost three of their last five, while Nürnberg are still unbeaten away (3W 2D), which points to a tight game rather than a home rout."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.3388,
+                        0.2715,
+                        0.3896
+                    ],
+                    "p_adj": [
+                        0.33431,
+                        0.265373,
+                        0.400318
+                    ],
+                    "p_llm": [
+                        0.355832,
+                        0.296162,
+                        0.348006
+                    ],
+                    "p_shadow": [
+                        0.338835,
+                        0.271526,
+                        0.389639
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "1-fc-heidenheim-1846-vs-1-fc-nurnberg-2026-11-27"
+            },
+            "sha256": "cd7f89db9845d827fb82afcba20c1df0b7165242ee537c2b7021cc2310b09c71",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0010-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "sv-darmstadt-98",
+                "batch_id": "2026-11-22T1505Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-22T15:05:52Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0011",
+                "home": "vfl-bochum",
+                "inputs": {
+                    "elo_away": 1253.5,
+                    "elo_home": 1222,
+                    "lambda_away": 1.162322,
+                    "lambda_home": 1.458618,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-26T18:12:34Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.433214,
+                        0.271407,
+                        0.295379
+                    ],
+                    "p_elo": [
+                        0.386681,
+                        0.285032,
+                        0.328287
+                    ],
+                    "p_market": [
+                        0.535882,
+                        0.234241,
+                        0.229876
+                    ],
+                    "p_stat": [
+                        0.411797,
+                        0.277083,
+                        0.31112
+                    ],
+                    "retained_mass": 0.999999999941,
+                    "rho": -0.049188,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-27T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-26T18:16:07Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5352,
+                    "draw_risk": false,
+                    "over_2_5": 0.4844,
+                    "p": [
+                        0.4118,
+                        0.2771,
+                        0.3111
+                    ],
+                    "p_display": [
+                        41.2,
+                        27.7,
+                        31.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1321,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0951,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0855,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0827,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0805,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.26,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Darmstadt are missing first-choice goalkeeper Marcel Schuhen and regular defender Patric Pfeiffer (both started 10 of 12), which weakens a defence that has conceded 22 goals; this comes from one source.",
+                                "Darmstadt have lost all 5 away league games with 1-15 goals, while Bochum's absentees are mostly squad players.",
+                                "Darmstadt sit 1 point above the drop zone and Bochum only 3, so both need points, but Bochum have home advantage."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.92,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.26,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Darmstadt are missing first-choice goalkeeper Marcel Schuhen (10 league starts) and regular centre-back Patric Pfeiffer (10 starts), weakening the spine of a side that has conceded 22 goals in 12 games.",
+                                "Darmstadt have lost all five away league games this season, scoring once and conceding 15, while Bochum have won three of their last four in all competitions.",
+                                "Darmstadt sit 16th, only one point above the relegation zone and in the relegation play-off place, so they need points badly, but their away record and absentees make an immediate turnaround unlikely."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 1.07,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "One source lists Darmstadt without regular starters Marcel Schuhen in goal and defender Patric Pfeiffer (10 league starts each), which further weakens a defence that has already conceded 22 goals.",
+                                "Darmstadt have lost all five away league games this season by an aggregate score of 1-15, giving Bochum a clear chance to improve on a modest home record.",
+                                "Sitting in the 16th-placed relegation play-off spot and just two points behind Bochum, Darmstadt are under immediate pressure to halt their away slide and climb out of the bottom three."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.08,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.26,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Darmstadt have a regular starting goalkeeper and defender out, though both absences are reported by one source, increasing Bochum's attacking edge.",
+                                "Darmstadt have lost all five league away matches, conceding 15 goals and scoring once, which makes Bochum's home advantage more valuable despite their modest home record.",
+                                "Darmstadt sit in the relegation play-off place and only one point above automatic relegation, so the visitors have strong incentive to avoid another away defeat."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.91,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.29,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source only: Darmstadt are without regular goalkeeper Schuhen and regular defender Pfeiffer (10 league starts each), which weakens them more than Bochum’s listed absences, none of whom are regular starters.",
+                                "Darmstadt sit in the relegation play-off place, one point above the drop zone, so they need the points more than Bochum, who are three points clear of that line and well off promotion.",
+                                "Darmstadt have taken no points from five away games (1-15), so even Bochum’s modest home record (1 win in 6) still points to a narrow home edge rather than an away result."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4421,
+                        0.2771,
+                        0.2808
+                    ],
+                    "p_adj": [
+                        0.421327,
+                        0.278844,
+                        0.299828
+                    ],
+                    "p_llm": [
+                        0.524305,
+                        0.264175,
+                        0.211521
+                    ],
+                    "p_shadow": [
+                        0.442094,
+                        0.277058,
+                        0.280848
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "vfl-bochum-vs-sv-darmstadt-98-2026-11-27"
+            },
+            "sha256": "9a9445b5e0d809bcc37edbcbd7b4b011422b3224301c889cafe69420b26bfbc9",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0011-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "brondby-if",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "danish-superliga",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "dk-2627-0007",
+                "home": "sonderjyske",
+                "inputs": {
+                    "elo_away": 1572.5,
+                    "elo_home": 1410.3,
+                    "lambda_away": 1.716936,
+                    "lambda_home": 1.317497,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-26T18:12:34Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.284939,
+                        0.256409,
+                        0.458652
+                    ],
+                    "p_elo": [
+                        0.258117,
+                        0.277094,
+                        0.464789
+                    ],
+                    "p_market": [
+                        0.209753,
+                        0.225335,
+                        0.564913
+                    ],
+                    "p_stat": [
+                        0.269664,
+                        0.264927,
+                        0.465408
+                    ],
+                    "retained_mass": 0.999999999944,
+                    "rho": -0.092371,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-27T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-26T18:16:07Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6122,
+                    "draw_risk": false,
+                    "over_2_5": 0.5816,
+                    "p": [
+                        0.2697,
+                        0.2649,
+                        0.4654
+                    ],
+                    "p_display": [
+                        27,
+                        26.5,
+                        46.5
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1228,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0948,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0736,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0719,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0678,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.27,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sønderjyske are 12th, 3 points from safety with 17 games left, so they need points more than mid-table Brøndby, who sit 11 points clear of the drop.",
+                                "Brøndby lose regular starting defender Luis Binks (11 starts), and Sønderjyske lack Dalton Wilkins and Ebube Duru; both lists come from one source and none is a main scorer, so the effect is small.",
+                                "Sønderjyske have conceded 35 goals in 15 games and lost 10, while Brøndby have lost their last two, so the gap in quality is narrower than the table suggests."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.27,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Brøndby are missing regular starting centre-back Luis Binks (11 league starts, 2 assists), which weakens their defence, while Sønderjyske's absentees are less central: Dalton Wilkins has only 3 league starts and Ebube Duru's role is unclear",
+                                "Sønderjyske are in the relegation zone, 3 points from safety with 17 games left, so they need points badly, but Brøndby are 11 points clear of the drop and can play with less pressure.",
+                                "Sønderjyske have lost 4 of their last 5 league games and have only 2 home wins all season, while Brøndby have won 3 of their last 5 in the league, suggesting the visitors are in better shape despite their own recent defeats to Copenhagen an"
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.25,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports that Brøndby IF regular starter defender Luis Binks is out injured after starting 11 of 15 league games, which slightly weakens the visitors' back line.",
+                                "Bottom-placed Sønderjyske are in the relegation zone and three points from safety, giving them an urgent need for points despite losing 10 of their 15 league matches.",
+                                "Sønderjyske have conceded 35 goals in 15 games and lost five of their eight home fixtures, giving fifth-placed Brøndby IF a clear opportunity to bounce back from two consecutive defeats."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.03,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.27,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Brøndby are without regular-starting defender Luis Binks (11 league starts), a single-source absence that modestly weakens their defensive balance.",
+                                "Sønderjyske are three points from safety and therefore have greater immediate need for a result, but their position also reflects a difficult season.",
+                                "Sønderjyske have lost five of their past seven matches and conceded 19 goals in that run, while Brøndby have won four of their past seven."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.31,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Sønderjyske are in the drop zone and only 3 points from safety, so they need the result more than Brøndby, who are 11 points clear of the relegation places.",
+                                "Brøndby are without regular starter Luis Binks (11 of 15 league starts), listed by one source only; Sønderjyske’s absences are a 3-start defender and an unrated player, also one source each, so the attacking hit is small.",
+                                "Despite the table gap, Sønderjyske won both listed home league meetings, 2-0 and 3-0, which supports a tighter game than Brøndby’s higher place implies."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2774,
+                        0.2687,
+                        0.4539
+                    ],
+                    "p_adj": [
+                        0.2723,
+                        0.267241,
+                        0.460458
+                    ],
+                    "p_llm": [
+                        0.29794,
+                        0.274132,
+                        0.427928
+                    ],
+                    "p_shadow": [
+                        0.277353,
+                        0.26871,
+                        0.453937
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "sonderjyske-vs-brondby-if-2026-11-27"
+            },
+            "sha256": "53b34214f0cd1d79736474015737c04da3b574062983e8b536293cbe41016ddf",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/dk-2627-0007-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "neom-sc",
+                "batch_id": "2026-11-23T0014Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-23T00:14:41Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0006",
+                "home": "al-ittihad",
+                "inputs": {
+                    "elo_away": 1437.3,
+                    "elo_home": 1642.5,
+                    "lambda_away": 1.06842,
+                    "lambda_home": 1.577237,
+                    "last_result_used": "2026-11-20",
+                    "market": {
+                        "books": 14,
+                        "captured_utc": "2026-11-26T18:12:34Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.480133,
+                        0.273778,
+                        0.246089
+                    ],
+                    "p_elo": [
+                        0.628893,
+                        0.234492,
+                        0.136615
+                    ],
+                    "p_market": [
+                        0.509945,
+                        0.242955,
+                        0.2471
+                    ],
+                    "p_stat": [
+                        0.576783,
+                        0.248458,
+                        0.174759
+                    ],
+                    "retained_mass": 0.999999999836,
+                    "rho": -0.093543,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-27T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-26T18:16:07Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5231,
+                    "draw_risk": false,
+                    "over_2_5": 0.5051,
+                    "p": [
+                        0.5768,
+                        0.2484,
+                        0.1748
+                    ],
+                    "p_display": [
+                        57.7,
+                        24.8,
+                        17.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.121,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1186,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1133,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.106,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0745,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.25,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Neom SC have had 28 rest days and no matches in the last 14 days, while Al Ittihad play again in 3 days in the King's Cup after 4 days of rest, so Al Ittihad may rotate.",
+                                "Al Ittihad have one player out and two doubtful, all from one source; Kadish, a defender who started 5 of 11 league games, is the only one with a known role, so the effect is small.",
+                                "The last two league meetings produced 4 and 7 goals, with one win each, which points to open play and goals at both ends."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.26,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Neom SC have had 28 rest days and no match in the last 14 days, while Al Ittihad played on 23 November and have only 4 rest days, so the visitors should be fresher but may lack match rhythm.",
+                                "Al Ittihad have three defensive concerns: regular starter Hassan Kadish is doubtful, Ahmed Sharahili is doubtful, and Hamed Al Ghamdi is out, though all are single-source injury reports.",
+                                "Al Ittihad are 6 points off the lead and Neom SC 8 points off it, so both still need points, but the home side's stronger home record gives them the edge in a close top-six meeting."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.25,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Al Ittihad enter with only four rest days after their continental match and face a cup tie three days later, whereas Neom SC have not played for 28 days.",
+                                "All reported injuries for both clubs come from only one source and include no confirmed regular starters, leaving expected goals unadjusted.",
+                                "Al Ittihad's unbeaten home league record of four wins and one draw gives them a clear edge against a Neom SC side that has conceded only four goals in six away games."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.27,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Neom have had 28 days without a match versus Al Ittihad's four, while Al Ittihad also have a King's Cup tie three days later.",
+                                "Al Ittihad list Al Ghamdi out and Kadish and Sharahili doubtful, but all reports are from one source and the listed defensive starter has only five league starts.",
+                                "Al Ittihad's 4W-1D home league record gives them a meaningful edge, although Neom's away defence has conceded only four goals in six matches."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.29,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Ittihad have only four days' rest after an AFC match and a King's Cup tie in three days, while Neom have had 28 days without a match.",
+                                "Fifth and sixth are only two points apart and both remain in the title race, so a draw still has value for either side.",
+                                "Listed absences are one source only and mostly doubtful, and no confirmed regular starter is missing, so expected goals are left unchanged."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5578,
+                        0.2525,
+                        0.1897
+                    ],
+                    "p_adj": [
+                        0.576783,
+                        0.248458,
+                        0.174759
+                    ],
+                    "p_llm": [
+                        0.478156,
+                        0.263975,
+                        0.25787
+                    ],
+                    "p_shadow": [
+                        0.557817,
+                        0.252513,
+                        0.18967
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-ittihad-vs-neom-sc-2026-11-27"
+            },
+            "sha256": "6e4d506bb007646612139f537fcb838ad271392f761b0d93f05b26fe56bd1204",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0006-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "konyaspor",
                 "batch_id": "2026-11-26T0014Z-model-predict",
                 "competition": "super-lig",
@@ -238,7 +1190,7 @@
                 "slug": "alanyaspor-vs-konyaspor-2026-11-27"
             },
             "sha256": "abbc481d35b6b4234d54e89c95803ec75a74c03d77c426cced9cbc28f0a5a83f",
-            "commit": "pending",
+            "commit": "3171185f2a1287e027e2dded51c3c29226b2338c",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0023-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +1428,7 @@
                 "slug": "caykur-rizespor-vs-kasimpasa-2026-11-27"
             },
             "sha256": "266d3a4a09da3191bdb5a50ed34133e5add91768c0b333c469bde22a58ee4897",
-            "commit": "pending",
+            "commit": "3171185f2a1287e027e2dded51c3c29226b2338c",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0024-r1.json",
             "status": "pending",
             "result": null
@@ -10286,8 +11238,12 @@
             "sha256": "d7e66e89b44321eae830f752ffe67a92f3fb01a6749ae0803fe1551a619b9162",
             "commit": "a9c510da9b1019b1c8605c3443a3b2eb37c15c77",
             "file": "https://thetouchlineatlas.com/ledger/ec-2627-0019-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.2261
+            }
         },
         {
             "record": {
