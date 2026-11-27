@@ -7,6 +7,3028 @@
     "records": [
         {
             "record": {
+                "away": "kv-mechelen",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "belgian-pro-league",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "be-2627-0012",
+                "home": "cercle-brugge-ksv",
+                "inputs": {
+                    "elo_away": 1428.7,
+                    "elo_home": 1418.8,
+                    "lambda_away": 1.323645,
+                    "lambda_home": 1.724722,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.467543,
+                        0.238976,
+                        0.293481
+                    ],
+                    "p_elo": [
+                        0.409434,
+                        0.283609,
+                        0.306956
+                    ],
+                    "p_market": [
+                        0.485693,
+                        0.254051,
+                        0.260257
+                    ],
+                    "p_stat": [
+                        0.441197,
+                        0.259051,
+                        0.299751
+                    ],
+                    "retained_mass": 0.999999999941,
+                    "rho": -0.015271,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.61,
+                    "draw_risk": false,
+                    "over_2_5": 0.5805,
+                    "p": [
+                        0.4412,
+                        0.259,
+                        0.2998
+                    ],
+                    "p_display": [
+                        44.1,
+                        25.9,
+                        30
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1192,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0881,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0756,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0732,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.067,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.26,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides sit on 12 points, 5 above the relegation zone, so the match is a direct six-pointer and likely cautious.",
+                                "Cercle miss forwards Manneh (1 league goal) and others who rarely start, so little attacking output is lost; all absences come from one source.",
+                                "Cercle have won 3 straight, while Mechelen have lost their last 2 and conceded 6 goals, giving the home side a slight edge."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are missing only fringe or single-source injury doubts: Cercle's absent forwards have combined for 1 league goal and 4 starts, while Mechelen's absent defenders have 1 league start between them, so neither attack nor defence is m",
+                                "Both clubs sit on 12 points, only 5 above the relegation zone, making this a direct six-pointer where a draw helps neither side escape the bottom cluster.",
+                                "Cercle have won three straight league games, including a 1-0 home win over Westerlo, while Mechelen were beaten 5-1 at home by Club Brugge last time out, giving the hosts a clear momentum edge."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.24,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both teams sit on 12 points just five points clear of the relegation zone, making this a direct six-pointer to pull away from the bottom.",
+                                "Cercle Brugge enter with momentum after winning three straight league matches, whereas KV Mechelen have lost their last two games by a combined score of 1-7.",
+                                "All listed absences for both sides are reported by only one source and involve squad players with three or fewer league starts, leaving the starting lineups unaffected."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.27,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cercle are without forward Abdoulie Manneh, whose goal represents 7% of their league output, although all listed absences are from one source.",
+                                "Both clubs are only five points above the relegation zone, making this a direct lower-table match in which avoiding defeat carries added value.",
+                                "Cercle have won their past three matches while Mechelen have lost their past two, giving the hosts a modest current edge."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.29,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides are level on 12 points and only 5 above the drop zone, so this is a direct relegation six-pointer rather than an ordinary mid-table meeting.",
+                                "Cercle have won their last three matches 2-1, 1-0 and 1-0, while Mechelen have lost their last two 0-2 and 1-5, which tilts a tight bottom-half game toward the hosts.",
+                                "Listed absences are all from one source and none is a regular starter (Cercle's highest is Manneh with 3 of 12 starts and 7% of league goals), so expected goals are left unchanged."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4393,
+                        0.2604,
+                        0.3002
+                    ],
+                    "p_adj": [
+                        0.441197,
+                        0.259051,
+                        0.299751
+                    ],
+                    "p_llm": [
+                        0.431851,
+                        0.266042,
+                        0.302107
+                    ],
+                    "p_shadow": [
+                        0.439326,
+                        0.260443,
+                        0.300231
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "cercle-brugge-ksv-vs-kv-mechelen-2026-11-28"
+            },
+            "sha256": "10cd9d79b0a2282a178053f4c58493dc62a5ca198d0656ca861dffccc3102630",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/be-2627-0012-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "eintracht-frankfurt",
+                "batch_id": "2026-11-22T1905Z-model-predict",
+                "competition": "bundesliga",
+                "cutoff_utc": "2026-11-22T19:05:54Z",
+                "data_status": "limited_context",
+                "fixture_id": "bl-2627-0100",
+                "home": "vfb-stuttgart",
+                "inputs": {
+                    "elo_away": 1512.8,
+                    "elo_home": 1586.5,
+                    "lambda_away": 1.361478,
+                    "lambda_home": 2.251895,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.570795,
+                        0.208732,
+                        0.220474
+                    ],
+                    "p_elo": [
+                        0.498104,
+                        0.271192,
+                        0.230704
+                    ],
+                    "p_market": [
+                        0.528694,
+                        0.210568,
+                        0.260737
+                    ],
+                    "p_stat": [
+                        0.524721,
+                        0.243678,
+                        0.231601
+                    ],
+                    "retained_mass": 0.999999999959,
+                    "rho": -0.057367,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0521,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6793,
+                    "draw_risk": false,
+                    "over_2_5": 0.6868,
+                    "p": [
+                        0.5247,
+                        0.2437,
+                        0.2316
+                    ],
+                    "p_display": [
+                        52.5,
+                        24.4,
+                        23.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.102,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0856,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.074,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0642,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0628,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.24,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Stuttgart have 3 rest days after a Champions League trip to Inter, against 7 for Frankfurt, and a cup tie follows on 2026-12-01.",
+                                "Frankfurt's Can Uzun (regular starter, 2 goals, 1 assist) is doubtful on one source, and Stuttgart's Diehl is out and Darvich doubtful, also on one source; none of these are big scorers, so the effect is small.",
+                                "Home wins are 50% this season and 44% last season, and Stuttgart's home goal record of 7-5 backs a modest edge."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frankfurt's regular starter Can Uzun is doubtful through illness; he has 2 of their 16 league goals and 1 assist, so his likely absence slightly reduces their attacking threat.",
+                                "Stuttgart have had only 3 rest days and played twice in the last 14 days including a Champions League trip to Inter, while Frankfurt have had 7 rest days and only one match in that period.",
+                                "Stuttgart have won their last two home league games and beat Leverkusen 4-2 away, but Frankfurt have also won their last two league matches, keeping a clean sheet in the most recent one."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.25,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Eintracht Frankfurt have a clear freshness advantage with 7 rest days compared to VfB Stuttgart's 3 days following a midweek Champions League trip to Internazionale.",
+                                "Eintracht Frankfurt regular starter Can Uzun (7 league starts, 12% of their league goals) is listed as doubtful by one source, while VfB Stuttgart's listed absences also rely on only one source.",
+                                "Eintracht Frankfurt have conceded 13 goals across 5 away league matches this season, giving VfB Stuttgart's attack plenty of opportunity despite the hosts' tighter turnaround."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.25,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Stuttgart have only three rest days after their Champions League defeat at Inter, versus Frankfurt's seven, which narrows the home advantage.",
+                                "Frankfurt's regular-starting midfielder Can Uzun is doubtful; his 2 league goals and assist would slightly reduce their attacking output if absent, though this is reported by one source.",
+                                "Frankfurt arrive on a four-match unbeaten league run, while Stuttgart have taken four points from their last two Bundesliga fixtures."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.28,
+                                "home": 0.41
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Stuttgart have only 3 days' rest after a Champions League defeat and a cup tie 3 days later, while Frankfurt have had 7 days since their last match.",
+                                "Stuttgart's listed absences and doubts come from one source with no role detail, and Frankfurt's only regular starter named, Can Uzun, is doubtful rather than confirmed out, so expected goals are left unchanged.",
+                                "The last three league meetings produced results and goals on both sides (3-2, 2-2, 1-0), which fits a tight game more than a one-sided home win."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5078,
+                        0.2474,
+                        0.2448
+                    ],
+                    "p_adj": [
+                        0.527489,
+                        0.243556,
+                        0.228955
+                    ],
+                    "p_llm": [
+                        0.428013,
+                        0.258165,
+                        0.313822
+                    ],
+                    "p_shadow": [
+                        0.507844,
+                        0.247359,
+                        0.244797
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "vfb-stuttgart-vs-eintracht-frankfurt-2026-11-28"
+            },
+            "sha256": "ba9ecd77c757eb9a4f92a7610dc23ffdf07445167a5c6c9312f91c29703a5373",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/bl-2627-0100-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "montpellier",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "coupe-de-france",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "cf-2627-0005",
+                "home": "avenir-foot-lozere",
+                "inputs": {
+                    "elo_away": 1285.5,
+                    "elo_home": 922.7,
+                    "lambda_away": 1.768017,
+                    "lambda_home": 0.579431,
+                    "last_result_used": "2026-11-21",
+                    "outside": {
+                        "club": "avenir-foot-lozere",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.11594,
+                        0.221695,
+                        0.662365
+                    ],
+                    "p_elo": [
+                        0.11594,
+                        0.221695,
+                        0.662365
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.11594,
+                        0.221695,
+                        0.662365
+                    ],
+                    "retained_mass": 0.999999999917,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "avenir-foot-lozere"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.3647,
+                    "draw_risk": false,
+                    "over_2_5": 0.4165,
+                    "p": [
+                        0.1159,
+                        0.2217,
+                        0.6624
+                    ],
+                    "p_display": [
+                        11.6,
+                        22.2,
+                        66.2
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1691,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1494,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.098,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0956,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0881,
+                            "score": "0-3"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "avenir-foot-lozere-vs-montpellier-2026-11-28"
+            },
+            "sha256": "1a2341c6fd10e8ed7679c599dce87f0e2e5c078ea7d1dbd7727d25f1fb3020cd",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cf-2627-0005-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "pau",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "coupe-de-france",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "cf-2627-0006",
+                "home": "castanet",
+                "inputs": {
+                    "elo_away": 1224.9,
+                    "elo_home": 922.7,
+                    "lambda_away": 1.642654,
+                    "lambda_home": 0.675219,
+                    "last_result_used": "2026-11-21",
+                    "outside": {
+                        "club": "castanet",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.150684,
+                        0.242007,
+                        0.607308
+                    ],
+                    "p_elo": [
+                        0.150684,
+                        0.242007,
+                        0.607308
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.150684,
+                        0.242007,
+                        0.607308
+                    ],
+                    "retained_mass": 0.999999999971,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "castanet"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.396,
+                    "draw_risk": false,
+                    "over_2_5": 0.4087,
+                    "p": [
+                        0.1507,
+                        0.242,
+                        0.6073
+                    ],
+                    "p_display": [
+                        15.1,
+                        24.2,
+                        60.7
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1618,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1329,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1092,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0985,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0897,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "castanet-vs-pau-2026-11-28"
+            },
+            "sha256": "1546d49f59c80f278c96ca66dc14dceaf63e4332f2677477a59acdbb8526f199",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cf-2627-0006-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "as-nancy-lorraine",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "coupe-de-france",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "cf-2627-0007",
+                "home": "furiani-agliani",
+                "inputs": {
+                    "elo_away": 1230.1,
+                    "elo_home": 922.7,
+                    "lambda_away": 1.653577,
+                    "lambda_home": 0.666512,
+                    "last_result_used": "2026-11-21",
+                    "outside": {
+                        "club": "furiani-agliani",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.147385,
+                        0.240323,
+                        0.612292
+                    ],
+                    "p_elo": [
+                        0.147385,
+                        0.240323,
+                        0.612292
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.147385,
+                        0.240323,
+                        0.612292
+                    ],
+                    "retained_mass": 0.999999999968,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "furiani-agliani"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-28T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.3934,
+                    "draw_risk": false,
+                    "over_2_5": 0.4093,
+                    "p": [
+                        0.1474,
+                        0.2403,
+                        0.6123
+                    ],
+                    "p_display": [
+                        14.8,
+                        24,
+                        61.2
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1625,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1343,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1083,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0983,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0895,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "furiani-agliani-vs-as-nancy-lorraine-2026-11-28"
+            },
+            "sha256": "da24d593bec576bb9c7d2cae7d57bd206d476bbaad6af3237e0e90b22a29558e",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cf-2627-0007-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "stade-laval",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "coupe-de-france",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "cf-2627-0008",
+                "home": "lannion",
+                "inputs": {
+                    "elo_away": 1182.6,
+                    "elo_home": 922.7,
+                    "lambda_away": 1.554765,
+                    "lambda_home": 0.747579,
+                    "last_result_used": "2026-11-21",
+                    "outside": {
+                        "club": "lannion",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.179139,
+                        0.25476,
+                        0.566101
+                    ],
+                    "p_elo": [
+                        0.179139,
+                        0.25476,
+                        0.566101
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.179139,
+                        0.25476,
+                        0.566101
+                    ],
+                    "retained_mass": 0.999999999866,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "lannion"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-28T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4153,
+                    "draw_risk": false,
+                    "over_2_5": 0.4046,
+                    "p": [
+                        0.1791,
+                        0.2548,
+                        0.5661
+                    ],
+                    "p_display": [
+                        17.9,
+                        25.5,
+                        56.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1555,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1209,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1163,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0904,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "lannion-vs-stade-laval-2026-11-28"
+            },
+            "sha256": "1562362bc571f3b1fddf18a3182b48d877b3d04cacd9e27896c623cc8caa7c6b",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cf-2627-0008-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "clermont-foot",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "coupe-de-france",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "cf-2627-0009",
+                "home": "montlucon-football",
+                "inputs": {
+                    "elo_away": 1162.1,
+                    "elo_home": 922.7,
+                    "lambda_away": 1.511965,
+                    "lambda_home": 0.784207,
+                    "last_result_used": "2026-11-21",
+                    "outside": {
+                        "club": "montlucon-football",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.194212,
+                        0.260371,
+                        0.545417
+                    ],
+                    "p_elo": [
+                        0.194212,
+                        0.260371,
+                        0.545417
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.194212,
+                        0.260371,
+                        0.545417
+                    ],
+                    "retained_mass": 0.999999999908,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "montlucon-football"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-28T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4237,
+                    "draw_risk": false,
+                    "over_2_5": 0.4029,
+                    "p": [
+                        0.1942,
+                        0.2604,
+                        0.5454
+                    ],
+                    "p_display": [
+                        19.4,
+                        26.1,
+                        54.5
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1522,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1193,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.115,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1007,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0902,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "montlucon-football-vs-clermont-foot-2026-11-28"
+            },
+            "sha256": "5514328c467b7a8731d67f763ace4f775dae727b14ee3963c6eb8aea03301545",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cf-2627-0009-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "villefranche",
+                "batch_id": "2026-11-22T0014Z-model-predict",
+                "competition": "coupe-de-france",
+                "cutoff_utc": "2026-11-22T00:14:43Z",
+                "data_status": "limited_context",
+                "fixture_id": "cf-2627-0010",
+                "home": "saint-etienne",
+                "inputs": {
+                    "elo_away": 922.7,
+                    "elo_home": 1328.7,
+                    "lambda_away": 0.371493,
+                    "lambda_home": 2.105028,
+                    "last_result_used": "2026-11-21",
+                    "outside": {
+                        "club": "villefranche",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.782686,
+                        0.163771,
+                        0.053543
+                    ],
+                    "p_elo": [
+                        0.782686,
+                        0.163771,
+                        0.053543
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.782686,
+                        0.163771,
+                        0.053543
+                    ],
+                    "retained_mass": 0.999999999879,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "villefranche"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-28T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.2725,
+                    "draw_risk": false,
+                    "over_2_5": 0.4501,
+                    "p": [
+                        0.7827,
+                        0.1638,
+                        0.0535
+                    ],
+                    "p_display": [
+                        78.3,
+                        16.4,
+                        5.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1862,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1769,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1306,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.084,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0692,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "saint-etienne-vs-villefranche-2026-11-28"
+            },
+            "sha256": "9cb7b2ce8d636ef540a898c2925e66aecc0dcf183ccdb5cd5620bc9bba4c445b",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cf-2627-0010-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "go-ahead-eagles",
+                "batch_id": "2026-11-23T0014Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-23T00:14:41Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0024",
+                "home": "psv-eindhoven",
+                "inputs": {
+                    "elo_away": 1416.3,
+                    "elo_home": 1820.2,
+                    "lambda_away": 1.145921,
+                    "lambda_home": 3.265223,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.778761,
+                        0.128607,
+                        0.092631
+                    ],
+                    "p_elo": [
+                        0.781417,
+                        0.164484,
+                        0.054099
+                    ],
+                    "p_market": [
+                        0.796499,
+                        0.117625,
+                        0.085877
+                    ],
+                    "p_stat": [
+                        0.796342,
+                        0.138338,
+                        0.065321
+                    ],
+                    "retained_mass": 0.999999999648,
+                    "rho": -0.066646,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6579,
+                    "draw_risk": false,
+                    "over_2_5": 0.8146,
+                    "p": [
+                        0.7963,
+                        0.1384,
+                        0.0653
+                    ],
+                    "p_display": [
+                        79.6,
+                        13.9,
+                        6.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "3-1",
+                    "top_score_overall": "3-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0825,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0758,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.072,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0674,
+                            "score": "4-1"
+                        },
+                        {
+                            "p": 0.0662,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.17,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "PSV are without regular right-back Mauro Júnior (13 of 13 starts, 2 goals, 2 assists) plus Schouten and Nagalo, which trims their output slightly; Go Ahead's Dean James and Linthorst are doubtful on one source only.",
+                                "PSV have 4 rest days after the 1-5 loss at Real Madrid, while Go Ahead have 6 days but a KNVB Beker tie three days later.",
+                                "PSV have scored 21 and conceded 5 in 6 home league games without losing, while Go Ahead have lost 3 of 7 away and conceded 19."
+                            ],
+                            "score": "3-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "PSV are missing regular starting defender Mauro Júnior, who has started all 13 league games and contributed 2 goals and 2 assists, plus midfielders Schouten and Nagalo; this slightly weakens their back line and build-up.",
+                                "PSV are unbeaten at home in the Eredivisie this season with 21 goals scored in 6 games, while Go Ahead Eagles have lost 3 of 7 away games and conceded 19 away goals.",
+                                "PSV are top by only 1 point and need the win to protect their title lead, while Go Ahead Eagles sit mid-table with an 8-point cushion above the relegation zone and less immediate pressure."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.14,
+                                "home": 0.78
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "PSV Eindhoven are without defender Mauro Júnior, who has started all 13 league games, while Go Ahead Eagles have regular starters Dean James and Evert Linthorst listed as doubtful by one source.",
+                                "PSV Eindhoven lead the Eredivisie by just a single point over second place, giving them a stronger urgent need for points than mid-table Go Ahead Eagles.",
+                                "PSV Eindhoven have scored 21 goals across six unbeaten home league matches, which points to a comfortable home win against an away side that has conceded 19 goals in seven road games."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.09,
+                                "draw": 0.15,
+                                "home": 0.76
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "PSV are without ever-present defender Mauro Júnior, whose two goals and two assists slightly reduce their outlook, while Go Ahead’s doubts over Dean James and Evert Linthorst come from one source.",
+                                "PSV are only one point clear at the top, giving them strong incentive to protect first place at home.",
+                                "PSV’s unbeaten league home record has produced 21 goals in six matches, while Go Ahead have conceded 19 in seven away games."
+                            ],
+                            "score": "3-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.21,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "PSV are without regular starter Mauro Júnior (13 of 13 league starts, 5% of their goals); Go Ahead’s regular starters James and Linthorst are only doubtful and listed by one source, so they are not treated as confirmed absences.",
+                                "PSV are only 1 point clear at the top and need the points more than 9th-placed Go Ahead, who are 8 points above the relegation zone.",
+                                "PSV are unbeaten at home (21-5 in six) while Go Ahead have one win in seven away games (10-19), which points to a controlled home win rather than a tight contest."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7793,
+                        0.1466,
+                        0.0741
+                    ],
+                    "p_adj": [
+                        0.792228,
+                        0.141278,
+                        0.066493
+                    ],
+                    "p_llm": [
+                        0.719352,
+                        0.16758,
+                        0.113067
+                    ],
+                    "p_shadow": [
+                        0.779257,
+                        0.146594,
+                        0.074149
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "psv-eindhoven-vs-go-ahead-eagles-2026-11-28"
+            },
+            "sha256": "6486017b944ebada2a470335ad632101ade5ab7bf6a55edcc1561191de7566f2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0024-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "kalamata",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0010",
+                "home": "kifisia",
+                "inputs": {
+                    "elo_away": 1323,
+                    "elo_home": 1377,
+                    "lambda_away": 1.290988,
+                    "lambda_home": 1.756632,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.467243,
+                        0.267184,
+                        0.265573
+                    ],
+                    "p_elo": [
+                        0.477307,
+                        0.275046,
+                        0.247647
+                    ],
+                    "p_market": [
+                        0.523324,
+                        0.256819,
+                        0.219857
+                    ],
+                    "p_stat": [
+                        0.47607,
+                        0.269418,
+                        0.254512
+                    ],
+                    "retained_mass": 0.999999999924,
+                    "rho": -0.154431,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6165,
+                    "draw_risk": false,
+                    "over_2_5": 0.5867,
+                    "p": [
+                        0.4761,
+                        0.2694,
+                        0.2545
+                    ],
+                    "p_display": [
+                        47.6,
+                        26.9,
+                        25.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1253,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0963,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0746,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.068,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0666,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Kifisia are without suspended starting defender Roshon van Eijma and midfielder Jeremy Antonisse (8 starts), both from one source, which weakens the defence of a side that has conceded 19.",
+                                "Kalamata are missing forward Kenneth Vargas (3 goals, 20% of the team's) and may lack Jovanny Bolívar (3 goals, 20%), so up to 40% of their goals are at risk; all from one source.",
+                                "Kalamata are only 5 points above the drop zone against Kifisia's 7, so they need the point slightly more, but both sides are in mid-table and the match is tight."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.91,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kifisia are missing regular starters Roshon van Eijma and Jeremy Antonisse, while Kalamata could be without Jovanny Bolívar and Kenneth Vargas, who together account for 40% of Kalamata's league goals.",
+                                "Both sides sit just above the relegation zone, with Kifisia 7 points clear and Kalamata only 5 points clear, so Kalamata have slightly more need for points.",
+                                "Kifisia have lost their last two home league games, while Kalamata have taken points from three of their last four away matches, suggesting a close contest."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.95,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.28,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Kifisia are without regular starters Roshon van Eijma in defence and Jeremy Antonisse in midfield, while Kalamata are missing injured forward Kenneth Vargas and have a doubt over Jovanny Bolívar, who together account for ",
+                                "Just two points separate seventh-placed Kifisia and eighth-placed Kalamata, making this a direct contest to build a safer cushion above the relegation zone.",
+                                "Both sides have identical 1W-2D-2L records in their respective home and away league outings, pointing toward a closely contested match where Kalamata's leaky away defence (10 goals conceded in 5 games) gives Kifisia a slight edge."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.87,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.29,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kalamata have two injured forwards who have supplied 6 of their 15 league goals, while Bolívar is also doubtful; all team-news reports are from one source.",
+                                "Kifisia are without regular-starting defender van Eijma and regular-starting midfielder Antonisse, slightly weakening their home side.",
+                                "Kalamata's 1-1-2 away record includes 10 goals conceded in five trips, giving Kifisia a modest home edge despite their own mixed home record."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.93,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.32,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "One source only: Kifisia are without regular starters van Eijma (defender, 7 league starts) and Antonisse (midfielder, 8 starts, 7% of league goals), while Kalamata are without Vargas (4 starts, 20% of league goals) and have Bolívar doubtfu",
+                                "Kifisia have only one win in five home league games (6-6) and Kalamata only one win and five goals in five away, so this looks tighter and lower-scoring than a typical Super League home edge.",
+                                "With 21 games left, Kifisia are 7 points above the drop zone and Kalamata 5, so neither side is in an immediate must-win scrap, which fits a cautious 1-1 more than an open chase."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4665,
+                        0.2774,
+                        0.2561
+                    ],
+                    "p_adj": [
+                        0.47668,
+                        0.274446,
+                        0.248874
+                    ],
+                    "p_llm": [
+                        0.426125,
+                        0.287995,
+                        0.28588
+                    ],
+                    "p_shadow": [
+                        0.466537,
+                        0.277358,
+                        0.256105
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "kifisia-vs-kalamata-2026-11-28"
+            },
+            "sha256": "eb0df197931d61fac02092291bbb0a6859a1e4f940821bc19427552f7a277329",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0010-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-taawoun",
+                "batch_id": "2026-11-26T2008Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-26T20:08:08Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0009",
+                "home": "al-ahli",
+                "inputs": {
+                    "elo_away": 1464.3,
+                    "elo_home": 1689.9,
+                    "lambda_away": 0.931255,
+                    "lambda_home": 2.026908,
+                    "last_result_used": "2026-11-26",
+                    "market": {
+                        "books": 14,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.619533,
+                        0.223671,
+                        0.156796
+                    ],
+                    "p_elo": [
+                        0.647353,
+                        0.227607,
+                        0.12504
+                    ],
+                    "p_market": [
+                        0.686506,
+                        0.183158,
+                        0.130336
+                    ],
+                    "p_stat": [
+                        0.658321,
+                        0.214207,
+                        0.127472
+                    ],
+                    "retained_mass": 0.999999999931,
+                    "rho": -0.084654,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5294,
+                    "draw_risk": false,
+                    "over_2_5": 0.5734,
+                    "p": [
+                        0.6583,
+                        0.2142,
+                        0.1275
+                    ],
+                    "p_display": [
+                        65.8,
+                        21.4,
+                        12.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1133,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1055,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.103,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1018,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0766,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.09,
+                                "draw": 0.17,
+                                "home": 0.74
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Taawoun are 17th with 5 points and 5 points from safety, yet have no wins in 12 league games (0W 5D 7L, 6 goals scored), while Al Ahli are 6 points off the leaders.",
+                                "Al Ahli have won all 5 home league games, scoring 19 and conceding 3, while Al Taawoun have won none of 6 away (5 goals scored).",
+                                "Al Ahli won all 5 recent league meetings, including 2-1 and 2-0 at home, with no defeats."
+                            ],
+                            "score": "3-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Taawoun are in the relegation zone, 5 points from safety, so they need points badly, but Al Ahli are only 6 points off the leaders and also have a strong incentive to win at home.",
+                                "Al Ahli have won all 5 home league games this season by a combined 19-3, while Al Taawoun have lost 5 of 6 away league games and are winless in 12 league matches overall.",
+                                "Al Ahli have won the last five league meetings between these sides, including both home fixtures."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.14,
+                                "home": 0.78
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Ahli's perfect home league record of five wins with 19 goals scored makes a comfortable home victory heavily favored against a winless Al Taawoun side that has lost five of six away league matches.",
+                                "Both sides have high stakes at opposite ends of the table, with Al Ahli chasing the title from six points back and Al Taawoun desperate to close a five-point gap to safety.",
+                                "One source lists no absences for either club yet, which does not confirm fully available squads so no team news adjustments are made."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.08,
+                                "draw": 0.16,
+                                "home": 0.76
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Taawoun are five points from safety in the relegation zone, while Al Ahli are only six points off the lead, so both have clear incentive but the hosts have the stronger platform.",
+                                "Al Ahli have won all five home league matches by 19-3, whereas Al Taawoun are winless in six away league games and have scored only five times.",
+                                "Al Ahli have won each of the last five league meetings with Al Taawoun, including their last two home meetings."
+                            ],
+                            "score": "3-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Taawoun sit 17th on 5 points, still in the drop zone and 5 points from safety, so they need a result more than 4th-placed Al Ahli, who are 6 points off the leaders with 22 games left.",
+                                "Al Ahli are unbeaten at home this season (5 wins, 19 goals for and 3 against), while Taawoun have no league win in 12 and only one point from six away games.",
+                                "Al Ahli have won each of the last five league meetings, including 2-0 and 2-1 at home."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6768,
+                        0.2041,
+                        0.1192
+                    ],
+                    "p_adj": [
+                        0.658321,
+                        0.214207,
+                        0.127472
+                    ],
+                    "p_llm": [
+                        0.744768,
+                        0.165542,
+                        0.08969
+                    ],
+                    "p_shadow": [
+                        0.676777,
+                        0.204052,
+                        0.119171
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-ahli-vs-al-taawoun-2026-11-28"
+            },
+            "sha256": "b8e9c39e1c5276c3c67765fa9448c23ea04cf382f1d4698ea11b7d2e08cd5e40",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0009-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "atletico-madrid",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0112",
+                "home": "elche",
+                "inputs": {
+                    "elo_away": 1661.6,
+                    "elo_home": 1339.5,
+                    "lambda_away": 1.642513,
+                    "lambda_home": 1.088084,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.248343,
+                        0.252258,
+                        0.499399
+                    ],
+                    "p_elo": [
+                        0.138463,
+                        0.23553,
+                        0.626007
+                    ],
+                    "p_market": [
+                        0.143282,
+                        0.196783,
+                        0.659935
+                    ],
+                    "p_stat": [
+                        0.179682,
+                        0.240221,
+                        0.580097
+                    ],
+                    "retained_mass": 0.999999999971,
+                    "rho": -0.029891,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5328,
+                    "draw_risk": false,
+                    "over_2_5": 0.5212,
+                    "p": [
+                        0.1797,
+                        0.2402,
+                        0.5801
+                    ],
+                    "p_display": [
+                        18,
+                        24,
+                        58
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1203,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1142,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1111,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.1021,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0654,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.58,
+                                "draw": 0.25,
+                                "home": 0.17
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Elche have 0 wins and 5 losses at home (4-14 goals), while Atlético have won 6 of 7 away games, so the gap in quality is large.",
+                                "Elche are missing Lemar and Houary and have Aguado doubtful, but none is a big scorer; Atlético lack regular starter Lookman (9 starts), with Romero doubtful, so both sides lose a little and Atlético's attack is hit slightly more; team news",
+                                "Elche are 1 point from safety and need points, while Atlético, 5 points off the lead, play Barcelona in 4 days and have only 3 rest days."
+                            ],
+                            "score": "0-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.58,
+                                "draw": 0.24,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Elche are missing several regulars, including midfielders Thomas Lemar and Marc Aguado (doubtful), who have contributed 2 of the team's 15 league goals, weakening an attack that has scored only 4 goals in 6 home league games.",
+                                "Elche have not won at home in La Liga this season (0W 1D 5L, 4 goals scored), while Atlético Madrid have won 6 of 7 away league games, making an away win the most likely outcome.",
+                                "Atlético Madrid are 5 points behind the leaders and need the points to stay in the title race, while Elche are 1 point from safety and desperate for points, but their poor home record suggests they will struggle to get them."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.65,
+                                "draw": 0.21,
+                                "home": 0.14
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Atlético Madrid have only three days of rest following their Champions League fixture and play away at title rivals Barcelona four days after this match, whereas Elche have had five days to prepare.",
+                                "Atlético Madrid are missing regular starter Ademola Lookman (9 league starts) according to two sources, while one source lists Elche midfielders Marc Aguado (6 starts) as doubtful and Thomas Lemar (5 starts) as out.",
+                                "Atlético Madrid have won six of their seven away league matches while Elche are winless in six home games with five defeats, making an away victory strongly favored."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.93,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.62,
+                                "draw": 0.23,
+                                "home": 0.15
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Elche are without two-goal forward Ali Houary and have Thomas Lemar reported out by one source, while Atlético miss regular-starting forward Ademola Lookman.",
+                                "Atlético have only three rest days after their European win and visit Barcelona four days later, a potentially demanding short sequence.",
+                                "Elche are one point from safety, while Atlético are five points off the lead, so both have clear incentive to pursue the points."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.64,
+                                "draw": 0.23,
+                                "home": 0.13
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Elche are winless at home (0-1-5, 4 goals) while Atlético have won 6 of 7 away, so home advantage is unlikely to offset the gap.",
+                                "Elche are in the relegation zone and only 1 point from safety, but that need does not close a 20-point gap on a side 5 points off the leaders.",
+                                "Atlético are without regular starter Lookman (9 league starts, only 4% of their goals; two sources); Elche's confirmed absences are squad players, and several other names are single-source or doubtful."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.1732,
+                        0.2407,
+                        0.5861
+                    ],
+                    "p_adj": [
+                        0.178443,
+                        0.242749,
+                        0.578808
+                    ],
+                    "p_llm": [
+                        0.153227,
+                        0.232126,
+                        0.614648
+                    ],
+                    "p_shadow": [
+                        0.173178,
+                        0.240712,
+                        0.58611
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "elche-vs-atletico-madrid-2026-11-28"
+            },
+            "sha256": "a5b442c17df64718d0afa32b097c2347ac1b5d40f5c4649bbeaa7511e2ea6d10",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0112-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "aston-villa",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0110",
+                "home": "ipswich-town",
+                "inputs": {
+                    "elo_away": 1533.2,
+                    "elo_home": 1261.1,
+                    "lambda_away": 1.895425,
+                    "lambda_home": 1.357601,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.269472,
+                        0.235396,
+                        0.495132
+                    ],
+                    "p_elo": [
+                        0.170511,
+                        0.251209,
+                        0.578281
+                    ],
+                    "p_market": [
+                        0.269925,
+                        0.246618,
+                        0.483457
+                    ],
+                    "p_stat": [
+                        0.215001,
+                        0.244165,
+                        0.540834
+                    ],
+                    "retained_mass": 0.999999999774,
+                    "rho": -0.058853,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6371,
+                    "draw_risk": false,
+                    "over_2_5": 0.6295,
+                    "p": [
+                        0.215,
+                        0.2442,
+                        0.5408
+                    ],
+                    "p_display": [
+                        21.5,
+                        24.4,
+                        54.1
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1093,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.103,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0758,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0736,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0664,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.28,
+                                "home": 0.32
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Aston Villa play on 4 days' rest after a Champions League trip to Galatasaray and face Everton four days later, while Ipswich had 7 rest days.",
+                                "Ipswich's doubtful left-back Leif Davis started all 11 league games and has 2 of the team's 15 goals; Villa's absences (Ruggeri 2 starts, Onana out) are mostly squad depth.",
+                                "Ipswich sit only 2 points above the drop zone and need points more than Villa, who are 5 clear."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.29,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Ipswich's regular left-back Leif Davis is doubtful; he has started all 11 league games and contributed 2 goals and 1 assist, so his absence would remove a key attacking outlet from the home side.",
+                                "Aston Villa are missing Amadou Mvom Onana to a long-term knee injury, while Matthew Cash is doubtful; Onana's absence weakens Villa's midfield, though the fact sheet does not list his league starts or goal contributions.",
+                                "Aston Villa have had only 4 rest days and played 2 matches in the last 14 days, including a Champions League defeat at Galatasaray, while Ipswich have had 7 rest days and only 1 match in that period."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.28,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Aston Villa have only four rest days after playing a Champions League match at Galatasaray, whereas Ipswich Town have had a full seven days to prepare.",
+                                "Ipswich Town defender Leif Davis, who has started all 11 league games and contributed two goals and an assist, is doubtful, while Aston Villa are without Amadou Onana and Matteo Ruggeri with Matty Cash also doubtful.",
+                                "Sitting just two points above the relegation zone, Ipswich Town have an urgent need for points to stay clear of the bottom three."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.28,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Villa are without midfielder Amadou Mvom Onana until April, while Ipswich's ever-present defender Leif Davis is only doubtful to return on matchday.",
+                                "Ipswich are only two points above the relegation zone, increasing the value of avoiding another home defeat.",
+                                "Villa have drawn their past three league matches, but Ipswich have lost three of their last four league games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.31,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Villa have only 4 rest days and two matches in the previous 14 days, including a European defeat on 24 November, while Ipswich have had 7 days and one match, so the visitors are the more stretched side.",
+                                "Ipswich are only 2 points above the relegation zone after 11 games, so they need the points more than Villa, who are 5 points clear of the bottom three.",
+                                "Leif Davis, a regular starter in all 11 league games with 2 goals and 1 assist, is only doubtful and expected back the same day (two sources); Villa’s confirmed outs are Onana, whose league role is not listed, and Ruggeri, who has started j"
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2352,
+                        0.2563,
+                        0.5085
+                    ],
+                    "p_adj": [
+                        0.21617,
+                        0.246629,
+                        0.537201
+                    ],
+                    "p_llm": [
+                        0.318053,
+                        0.288184,
+                        0.393763
+                    ],
+                    "p_shadow": [
+                        0.23522,
+                        0.256276,
+                        0.508504
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "ipswich-town-vs-aston-villa-2026-11-28"
+            },
+            "sha256": "b4c45405d203479cc71c12a80585af87804269628379b5ddee41e280e345f352",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0110-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "alverca",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "primeira-liga",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "pt-2627-0093",
+                "home": "academico-viseu",
+                "inputs": {
+                    "elo_away": 1365,
+                    "elo_home": 1340.6,
+                    "lambda_away": 1.027964,
+                    "lambda_home": 1.399149,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.466235,
+                        0.245636,
+                        0.288129
+                    ],
+                    "p_elo": [
+                        0.394149,
+                        0.284649,
+                        0.321202
+                    ],
+                    "p_market": [
+                        0.368435,
+                        0.298761,
+                        0.332804
+                    ],
+                    "p_stat": [
+                        0.443187,
+                        0.25634,
+                        0.300473
+                    ],
+                    "retained_mass": 0.999999999968,
+                    "rho": 0.091724,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.8825,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T18:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4754,
+                    "draw_risk": false,
+                    "over_2_5": 0.4336,
+                    "p": [
+                        0.4432,
+                        0.2563,
+                        0.3005
+                    ],
+                    "p_display": [
+                        44.3,
+                        25.6,
+                        30.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1285,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1203,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1068,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0844,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0822,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.26,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Viseu are 13 points clear of the drop zone and Alverca only 5, so Alverca need points more, though Viseu are chasing a top-six finish.",
+                                "Alverca are missing three players through injury, but only Meupiyou's role is listed (2 league starts in 11), so the effect on goals is small; Viseu's Maiga is a doubt from one source.",
+                                "Both sides have had 20 or more days of rest and have no midweek match, so fatigue is not a factor."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.25,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Alverca are missing Noah Raveyre and Sabit Abdulai, both listed out by two sources, while Académico de Viseu have only a single-source doubt in Issoufi Maiga, so the visitors' squad depth is more affected.",
+                                "Académico de Viseu are 6th and 13 points clear of the relegation zone, while Alverca are only 5 points above it, giving the away side a clearer need for points but also more pressure.",
+                                "Académico de Viseu have won 4 of their last 6 league matches, including a 2-1 win at Sporting CP, while Alverca have won only 1 of their last 5 league games."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.25,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Alverca have two absences confirmed by two sources in Noah Raveyre and Sabit Abdulai, while Académico de Viseu only have Issoufi Maiga listed as doubtful by one source.",
+                                "Both sides return from a three-week break with at least 20 rest days, leaving them fresh for this fixture.",
+                                "Académico de Viseu have won three straight home league games by 2-1 scorelines and face an Alverca side winless in their last four matches across all competitions."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.25,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Alverca have Raveyre, Meupiyou and Abdulai listed out; the only specified role is Meupiyou's limited two league starts, so the overall attacking adjustment is slight.",
+                                "Alverca are only five points above the relegation zone, giving them a stronger immediate need to protect or gain points.",
+                                "Viseu have won five of their past six league matches, while Alverca are winless in their last four league games."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.27,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Alverca sit only 5 points above the relegation zone after 11 games, while Viseu are 13 clear, so the visitors need the points more.",
+                                "Viseu's 6th place does not mean a dominant home edge: they have won only 3 of 5 at Fontelo and conceded 7 there.",
+                                "Raveyre and Abdulai are out on two sources but with no listed role, Meupiyou (2 league starts) is one source only, and Viseu's Maiga is a single-source doubtful, so no clear first-choice absence is established."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4504,
+                        0.2567,
+                        0.293
+                    ],
+                    "p_adj": [
+                        0.445935,
+                        0.256793,
+                        0.297273
+                    ],
+                    "p_llm": [
+                        0.468046,
+                        0.255935,
+                        0.276019
+                    ],
+                    "p_shadow": [
+                        0.450368,
+                        0.256675,
+                        0.292957
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "academico-viseu-vs-alverca-2026-11-28"
+            },
+            "sha256": "38c5db73688897ef6805290e1492ffc6447c8b44bcbc1f1e61498ca4bbf3f056",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pt-2627-0093-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "burgos",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0027",
+                "home": "eibar",
+                "inputs": {
+                    "elo_away": 1316,
+                    "elo_home": 1323.7,
+                    "lambda_away": 0.798237,
+                    "lambda_home": 1.17737,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.446125,
+                        0.305922,
+                        0.247952
+                    ],
+                    "p_elo": [
+                        0.428158,
+                        0.281879,
+                        0.289963
+                    ],
+                    "p_market": [
+                        0.520705,
+                        0.27178,
+                        0.207515
+                    ],
+                    "p_stat": [
+                        0.440341,
+                        0.292866,
+                        0.266793
+                    ],
+                    "retained_mass": 0.999999999962,
+                    "rho": -0.011121,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.3792,
+                    "draw_risk": false,
+                    "over_2_5": 0.32,
+                    "p": [
+                        0.4403,
+                        0.2929,
+                        0.2668
+                    ],
+                    "p_display": [
+                        44,
+                        29.3,
+                        26.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1597,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1342,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.1262,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1176,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0949,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Their last five league meetings produced four 1-0 results and a 0-0, so this fixture is usually tight and low scoring.",
+                                "Burgos are without midfielder David González (out, 10 starts, 3 goals) and Jon Karrikaburu is doubtful (3 goals), which could remove about 28% of the side's league goals; Eibar's Juan Bernat is a doubtful regular starter, all from one sourc",
+                                "Burgos are 6 points off automatic promotion and 3 clear of 7th, while Eibar are level with 6th, so both need the points for the play-offs."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.29,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "head_to_head",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Burgos are missing regular midfielder David González and have doubt over forward Jon Karrikaburu, who together account for 6 of Burgos' 21 league goals, so their attack is likely to be blunted.",
+                                "Recent meetings between these sides have been extremely tight, with four of the last five decided by one goal or drawn, including a 0-0 at Ipurua in March 2026.",
+                                "Burgos are protecting a promotion play-off place and sit 3 points clear of 7th, while Eibar are level on points with the last play-off spot, so both sides have a strong incentive to avoid defeat."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.3,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source reports Burgos are missing regular midfielder David González and have forward Jon Karrikaburu doubtful, threatening 28% of their league goals, while Eibar have regular defender Juan Bernat listed as doubtful by one source.",
+                                "Seventh-placed Eibar are level on points with sixth and can draw level on 27 points with fifth-placed Burgos in the promotion play-off race with a home win.",
+                                "The last five league meetings between these sides have all produced one goal or fewer, pointing toward another tight, low-scoring encounter."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.29,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Burgos are without regular midfielder David González, whose 3 league goals equal 14% of their total, while Karrikaburu is a one-source doubt.",
+                                "Eibar are level with the final play-off place, so a home win would move them directly into the promotion chase.",
+                                "Eibar have won only one of their last five league matches, while Burgos arrive after a win in four of their last five league games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.99,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.34,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Team news is single-source only: Eibar have regular defender Bernat doubtful, while Burgos have regular midfielder David González listed out (10 of 15 starts, 14% of their league goals) and Karrikaburu doubtful, a modest cut to Burgos' atta",
+                                "Burgos are 5th and 3 points clear of 7th in the play-off places, while Eibar are 7th, level on points with the last play-off spot and 9 points off automatic promotion, so both need the points.",
+                                "The last five league meetings were all 1-0 or 0-0, with Burgos winning three, so a tight, low-scoring game is the pattern rather than an open home win."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4381,
+                        0.2972,
+                        0.2647
+                    ],
+                    "p_adj": [
+                        0.442074,
+                        0.295552,
+                        0.262375
+                    ],
+                    "p_llm": [
+                        0.422113,
+                        0.303867,
+                        0.274021
+                    ],
+                    "p_shadow": [
+                        0.438066,
+                        0.297236,
+                        0.264699
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "eibar-vs-burgos-2026-11-28"
+            },
+            "sha256": "357627fd0db24c0f1e5266ab695a79c840eaa1398099fb6adec9b47ff76a3170",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0027-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "hibernian",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "scottish-premiership",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "sp-2627-0020",
+                "home": "motherwell",
+                "inputs": {
+                    "elo_away": 1494.1,
+                    "elo_home": 1472,
+                    "lambda_away": 1.189313,
+                    "lambda_home": 1.358831,
+                    "last_result_used": "2026-11-24",
+                    "market": {
+                        "books": 18,
+                        "captured_utc": "2026-11-27T18:12:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.409449,
+                        0.261135,
+                        0.329417
+                    ],
+                    "p_elo": [
+                        0.396614,
+                        0.284504,
+                        0.318881
+                    ],
+                    "p_market": [
+                        0.363248,
+                        0.266243,
+                        0.370509
+                    ],
+                    "p_stat": [
+                        0.403688,
+                        0.272199,
+                        0.324113
+                    ],
+                    "retained_mass": 0.99999999972,
+                    "rho": 0.018782,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9921,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T18:15:50Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5174,
+                    "draw_risk": false,
+                    "over_2_5": 0.465,
+                    "p": [
+                        0.4037,
+                        0.2722,
+                        0.3241
+                    ],
+                    "p_display": [
+                        40.4,
+                        27.2,
+                        32.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1293,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1071,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0939,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0847,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0791,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Motherwell won three of the last five league meetings with Hibernian, including 2-1 away on 2026-08-02, and lost none, so Hibernian have not beaten them in that run.",
+                                "Hibernian are without regular right-sided defender Felix Passlack (11 of 14 starts) and Rocky Bushiri, and Nathan Lowe is out too; Motherwell's absences are mostly fringe players. Team news comes from one source for most players.",
+                                "Motherwell have had 7 days of rest against Hibernian's 4, and Hibernian have played twice in the last 14 days, so Motherwell are fresher."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Hibernian are missing regular starting defender Felix Passlack (11 league starts, 2 assists) and forward Nathan Lowe, while Motherwell's absentees are mostly squad players, so Hibs' defensive continuity is slightly weakened.",
+                                "Motherwell have lost 8 of their last 10 league matches and have only 2 home wins all season, but Hibernian's away record is stronger than their overall form, making this closer than the table suggests.",
+                                "Both sides are near the relegation zone, with Motherwell only 4 points above it and in the play-off place, so the home side may have slightly more urgency to avoid defeat."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.27,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Motherwell currently sit in the relegation play-off place on 13 points and can overtake 14-point Hibernian with a win.",
+                                "One source lists Hibernian regular starting defender Felix Passlack (11 starts, 2 assists) as injured alongside two-source absentee Rocky Bushiri, while Motherwell's absentees have only one source and minimal league starts.",
+                                "Hibernian have won three of their six away league games while Motherwell have lost four of seven at home, giving the visitors an edge despite having three fewer rest days."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.26,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Hibernian are without regular-starting defender Felix Passlack (11 league starts) and forward Nathan Lowe; most listed absences are supported by only one source.",
+                                "Motherwell are in the relegation play-off place and only four points above the drop zone, making home points especially important.",
+                                "Motherwell have scored only five goals in seven home league matches, while Hibernian have won three of six away league games."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.29,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Motherwell are in the relegation play-off place, only 4 points above the drop zone, so they need the points more than Hibernian, who are 5 clear.",
+                                "Hibernian are without regular starter Felix Passlack (11 league starts, 2 assists), listed by one source, while Motherwell’s listed absentees are not regular starters and are also one source, so the goal impact is small.",
+                                "Hibernian have had 4 rest days and two matches in the last 14 days, against Motherwell’s 7 days and one match."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.3959,
+                        0.2734,
+                        0.3308
+                    ],
+                    "p_adj": [
+                        0.407584,
+                        0.273051,
+                        0.319365
+                    ],
+                    "p_llm": [
+                        0.349615,
+                        0.272635,
+                        0.37775
+                    ],
+                    "p_shadow": [
+                        0.395859,
+                        0.273376,
+                        0.330765
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "motherwell-vs-hibernian-2026-11-28"
+            },
+            "sha256": "6c774efdb0fbe299c7ba554b591280d9508a0a64f493b7acdedd53940841405f",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sp-2627-0020-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "grenoble",
                 "batch_id": "2026-11-23T2205Z-model-predict",
                 "competition": "coupe-de-france",
@@ -107,7 +3129,7 @@
                 "slug": "nimes-vs-grenoble-2026-11-28"
             },
             "sha256": "57ee1bde45c2eff3edd4e7b3f3b3ba8c5401732775a45e8144793cce621c5f36",
-            "commit": "pending",
+            "commit": "51a471b49557f06d86f2c79eb9c96fa2f02dec35",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0004-r1.json",
             "status": "pending",
             "result": null
@@ -345,7 +3367,7 @@
                 "slug": "angers-vs-lens-2026-11-28"
             },
             "sha256": "66c1218ae2a8a15c6f3fd0b549f8f013444f4c0b862aed08da52e17bc9d859f1",
-            "commit": "pending",
+            "commit": "51a471b49557f06d86f2c79eb9c96fa2f02dec35",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0054-r1.json",
             "status": "pending",
             "result": null
@@ -583,7 +3605,7 @@
                 "slug": "torino-vs-lazio-2026-11-28"
             },
             "sha256": "e839dfd16ea76dc9ad5e2b55451c6fc8ce4c7e84da65de8132ec1866a81822f3",
-            "commit": "pending",
+            "commit": "51a471b49557f06d86f2c79eb9c96fa2f02dec35",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0030-r1.json",
             "status": "pending",
             "result": null
@@ -821,7 +3843,7 @@
                 "slug": "vicenza-vs-cesena-2026-11-28"
             },
             "sha256": "733016a7bbfb4e4d6990766304a97ad6cd1d28e9af72036d7f396344faf231e3",
-            "commit": "pending",
+            "commit": "51a471b49557f06d86f2c79eb9c96fa2f02dec35",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0024-r1.json",
             "status": "pending",
             "result": null
