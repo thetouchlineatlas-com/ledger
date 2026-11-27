@@ -238,7 +238,7 @@
                 "slug": "vitoria-guimaraes-vs-estrela-amadora-2026-11-28"
             },
             "sha256": "a38e68d3629dda389755d9aba82af027e05b0a82e67c3e21d978ddf37b5ad552",
-            "commit": "pending",
+            "commit": "d4f806195966b33276f99604d5775be61158235d",
             "file": "https://thetouchlineatlas.com/ledger/pt-2627-0094-r1.json",
             "status": "pending",
             "result": null
@@ -21778,8 +21778,12 @@
             "sha256": "d564ff02333df08bfa1de23552cce17422df92abe7a0f95386744a743a16487b",
             "commit": "32893c97319aaf738c32ac35f3e74f9218c73227",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0010-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1722
+            }
         },
         {
             "record": {
@@ -22016,8 +22020,12 @@
             "sha256": "d6cab209b81b29fe73fb1d9c053d68d6fe4da7ceb1cd6acf3b2c612e443e0620",
             "commit": "32893c97319aaf738c32ac35f3e74f9218c73227",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0095-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "3-3",
+                "correct": false,
+                "rps": 0.15
+            }
         },
         {
             "record": {
@@ -22254,8 +22262,12 @@
             "sha256": "103ccfe73c933f77628273726ca1962a940ed5737d45d221898b812d89f41df5",
             "commit": "32893c97319aaf738c32ac35f3e74f9218c73227",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0049-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.1835
+            }
         },
         {
             "record": {
@@ -22492,8 +22504,12 @@
             "sha256": "9b38c52f0720f1eea57baf0b50e01788d34c818e27bc16f5bb90d3d3e19df43d",
             "commit": "32893c97319aaf738c32ac35f3e74f9218c73227",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0053-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-0",
+                "correct": true,
+                "rps": 0.2265
+            }
         },
         {
             "record": {
@@ -22730,8 +22746,12 @@
             "sha256": "8a75f9febeb2e3e9132069921354a4a83344aa68484c9527a6a54700e18ba99f",
             "commit": "32893c97319aaf738c32ac35f3e74f9218c73227",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0109-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-3",
+                "correct": false,
+                "rps": 0.4564
+            }
         },
         {
             "record": {
@@ -22968,8 +22988,12 @@
             "sha256": "b1a9582a695a10241e479f7f17d826ab95b490adc89fc6c1030d12ab2c49c53c",
             "commit": "32893c97319aaf738c32ac35f3e74f9218c73227",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0107-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "3-2",
+                "correct": false,
+                "rps": 0.2716
+            }
         },
         {
             "record": {
@@ -23206,8 +23230,12 @@
             "sha256": "bce01a63df1b76342ff0f7e5a18da9a2c01536d4f4490c4f5afacbd694c0fd4a",
             "commit": "32893c97319aaf738c32ac35f3e74f9218c73227",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0023-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1299
+            }
         },
         {
             "record": {
@@ -23444,8 +23472,12 @@
             "sha256": "a2918434af00e27a84f174e37421f9175a51c0f9bcf5c67c8fbcfcb7dbfc6443",
             "commit": "32893c97319aaf738c32ac35f3e74f9218c73227",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0028-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1886
+            }
         },
         {
             "record": {
