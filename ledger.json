@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "estrela-amadora",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "primeira-liga",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "pt-2627-0094",
+                "home": "vitoria-guimaraes",
+                "inputs": {
+                    "elo_away": 1319.9,
+                    "elo_home": 1451.6,
+                    "lambda_away": 0.980753,
+                    "lambda_home": 1.609959,
+                    "last_result_used": "2026-11-08",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-27T21:05:53Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.531472,
+                        0.227408,
+                        0.24112
+                    ],
+                    "p_elo": [
+                        0.557903,
+                        0.257048,
+                        0.18505
+                    ],
+                    "p_market": [
+                        0.571728,
+                        0.239781,
+                        0.188491
+                    ],
+                    "p_stat": [
+                        0.574554,
+                        0.228967,
+                        0.196479
+                    ],
+                    "retained_mass": 0.999999999785,
+                    "rho": 0.091724,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.8825,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T20:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T21:07:26Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4887,
+                    "draw_risk": false,
+                    "over_2_5": 0.4818,
+                    "p": [
+                        0.5746,
+                        0.2289,
+                        0.1965
+                    ],
+                    "p_display": [
+                        57.5,
+                        22.9,
+                        19.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1422,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1082,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.105,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.103,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0688,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.28,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Vitória SC are without ever-present defender João Mendes (11 of 11 starts, one source) and suspended Toni Borevković, so the back line is thinner, though the team still has a home edge.",
+                                "Both sides are within 3 points of the relegation zone (Vitória 2 above, Estrela 3 above), so a draw is a likely and acceptable outcome for each.",
+                                "Vitória SC won four of the last five league meetings, with the other a 2-2 draw, and kept clean sheets in 3 of those wins."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Vitória SC are missing first-choice defender João Mendes (11 league starts) and suspended defender Toni Borevković (5 starts, 1 goal), weakening a back line that has conceded only 4 goals in 6 home league games.",
+                                "Both sides are just above the relegation zone, with Vitória SC only 2 points clear and Estrela da Amadora 3 points clear, so this is a direct six-pointer in the fight to avoid the drop.",
+                                "Vitória SC have won the last four league meetings against Estrela da Amadora, including a 2-1 home win in February 2026, giving them a strong recent edge in this fixture."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.27,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "One source reports Vitória SC are without ever-present defender João Mendes (11 league starts) and suspended defender Toni Borevković (5 starts), which weakens a defence that has conceded just 4 goals in 6 home games.",
+                                "Both clubs are fighting to stay clear of the bottom two, with 14th-placed Vitória SC just two points above the relegation zone and Estrela da Amadora three points clear.",
+                                "Vitória SC are unbeaten across the last five league meetings between these sides, winning four of them including all three at home."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.28,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Vitória are without ever-present defender João Mendes and suspended five-start defender Toni Borevković, weakening their defensive depth; both absences are listed by one source.",
+                                "Both clubs are only two and three points above the relegation zone respectively, making this a high-value direct lower-table match.",
+                                "Vitória are unbeaten in the last five league meetings with Estrela, winning four, which supports a home edge despite the defensive absences."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.28,
+                                "home": 0.41
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Vitória are without João Mendes, a defender who started all 11 league games, and suspended Borevković (5 starts); both absences are one source, so the back line is thinner but the attack is only lightly cut.",
+                                "Vitória sit 2 points above the relegation places and Estrela 3, so both need points, with the hosts slightly more urgent.",
+                                "Vitória are unbeaten in the last five league meetings, winning four, including 3-0, 2-0 and 2-1 at home."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5427,
+                        0.2418,
+                        0.2155
+                    ],
+                    "p_adj": [
+                        0.567985,
+                        0.23182,
+                        0.200195
+                    ],
+                    "p_llm": [
+                        0.440021,
+                        0.278542,
+                        0.281438
+                    ],
+                    "p_shadow": [
+                        0.542692,
+                        0.241817,
+                        0.215491
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "vitoria-guimaraes-vs-estrela-amadora-2026-11-28"
+            },
+            "sha256": "a38e68d3629dda389755d9aba82af027e05b0a82e67c3e21d978ddf37b5ad552",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pt-2627-0094-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "hannover-96",
                 "batch_id": "2026-11-27T0015Z-model-predict",
                 "competition": "2-bundesliga",
@@ -238,7 +476,7 @@
                 "slug": "vfl-osnabruck-vs-hannover-96-2026-11-28"
             },
             "sha256": "981a3657850e57df00b081141086180307802fb895677c7230c97b2b817e1527",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0015-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +714,7 @@
                 "slug": "lommel-sk-vs-zulte-waregem-2026-11-28"
             },
             "sha256": "4d6ac0441d07d3895560a93c4abf832dfafc1cebd6c7909d5315f57baa4cb1ea",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0013-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +952,7 @@
                 "slug": "royal-charleroi-sc-vs-waasland-beveren-2026-11-28"
             },
             "sha256": "92dcc23a41904942c2a7c1c5b79eee10f1f5b46a79a24d5b7da23dbb4506fa0d",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0014-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +1190,7 @@
                 "slug": "sc-cambuur-vs-sparta-rotterdam-2026-11-28"
             },
             "sha256": "885821a623d21a2b2b73fc264555243e8da79a5c5878a08934f4b40a9b3cd6f7",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0025-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +1428,7 @@
                 "slug": "le-havre-ac-vs-strasbourg-2026-11-28"
             },
             "sha256": "d57e7bd27ca972680ec6797e407dbe4d2dc926d219c2f4dbe51c258be44fd7e8",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0055-r1.json",
             "status": "pending",
             "result": null
@@ -1428,7 +1666,7 @@
                 "slug": "le-mans-vs-lille-2026-11-28"
             },
             "sha256": "880b23a385d244c7ee1ac56fd39de568693a04e0999732b99977b50c8933ac3d",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0056-r1.json",
             "status": "pending",
             "result": null
@@ -1666,7 +1904,7 @@
                 "slug": "nice-vs-troyes-2026-11-28"
             },
             "sha256": "bb33ab84c23d9423cb6bef205e696007f10f454951f3eba6ca84c578956b7b08",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0057-r1.json",
             "status": "pending",
             "result": null
@@ -1904,7 +2142,7 @@
                 "slug": "paris-saint-germain-vs-lorient-2026-11-28"
             },
             "sha256": "e41adfd6f25b22a516c89e043587948c147fd3a2ba175ca767024fbc220fcd34",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0058-r1.json",
             "status": "pending",
             "result": null
@@ -2142,7 +2380,7 @@
                 "slug": "real-madrid-vs-alaves-2026-11-28"
             },
             "sha256": "fb92414066affcc27b6176e8d13ba6edf51db84be60d21bedd2de5ab1a27901a",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0113-r1.json",
             "status": "pending",
             "result": null
@@ -2380,7 +2618,7 @@
                 "slug": "real-valladolid-vs-real-sociedad-ii-2026-11-28"
             },
             "sha256": "90dda62d2334da7cbe7dc7d157e5fc927f142fdbec4765152a3145c036be306f",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0028-r1.json",
             "status": "pending",
             "result": null
@@ -2618,7 +2856,7 @@
                 "slug": "inter-milan-vs-genoa-2026-11-28"
             },
             "sha256": "f8a116462d58add005572910f8612b785763c784e5f6a396dc62bb0bffde54ff",
-            "commit": "pending",
+            "commit": "7678f314a50a55b5acf8cc7f1a218a61aa288fb3",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0031-r1.json",
             "status": "pending",
             "result": null
@@ -23444,8 +23682,12 @@
             "sha256": "f9a122c887590f3b7f143c5e24d01609d12e174c35bc00e562bc41ef4e733f13",
             "commit": "7316b940c665bb981edbb49ccfc03aaafa1eb2b6",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0022-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.2375
+            }
         },
         {
             "record": {
