@@ -238,7 +238,7 @@
                 "slug": "central-coast-mariners-fc-vs-auckland-fc-2026-11-28"
             },
             "sha256": "589b2bd5e531ab321180a4bebbede636596f69b4303a5b885f57c362bc04e323",
-            "commit": "pending",
+            "commit": "060c8614769d55a6792551c906cbda1b55363dac",
             "file": "https://thetouchlineatlas.com/ledger/al-2627-0003-r1.json",
             "status": "pending",
             "result": null
