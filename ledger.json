@@ -7,6 +7,827 @@
     "records": [
         {
             "record": {
+                "away": "grenoble",
+                "batch_id": "2026-11-23T2205Z-model-predict",
+                "competition": "coupe-de-france",
+                "cutoff_utc": "2026-11-23T22:05:53Z",
+                "data_status": "limited_context",
+                "fixture_id": "cf-2627-0004",
+                "home": "nimes",
+                "inputs": {
+                    "elo_away": 1194.4,
+                    "elo_home": 922.7,
+                    "lambda_away": 1.579289,
+                    "lambda_home": 0.726989,
+                    "last_result_used": "2026-11-23",
+                    "outside": {
+                        "club": "nimes",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.170859,
+                        0.251357,
+                        0.577783
+                    ],
+                    "p_elo": [
+                        0.170859,
+                        0.251357,
+                        0.577783
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.170859,
+                        0.251357,
+                        0.577783
+                    ],
+                    "retained_mass": 0.999999999834,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "nimes"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T17:07:39Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4101,
+                    "draw_risk": false,
+                    "over_2_5": 0.4056,
+                    "p": [
+                        0.1709,
+                        0.2513,
+                        0.5778
+                    ],
+                    "p_display": [
+                        17.1,
+                        25.1,
+                        57.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1574,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1243,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1144,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0996,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0903,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "nimes-vs-grenoble-2026-11-28"
+            },
+            "sha256": "57ee1bde45c2eff3edd4e7b3f3b3ba8c5401732775a45e8144793cce621c5f36",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cf-2627-0004-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "lens",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "ligue-1",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0054",
+                "home": "angers",
+                "inputs": {
+                    "elo_away": 1596.8,
+                    "elo_home": 1327.9,
+                    "lambda_away": 1.676003,
+                    "lambda_home": 0.857173,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-27T17:05:54Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.186325,
+                        0.250336,
+                        0.563339
+                    ],
+                    "p_elo": [
+                        0.172782,
+                        0.252169,
+                        0.575049
+                    ],
+                    "p_market": [
+                        0.195074,
+                        0.231102,
+                        0.573824
+                    ],
+                    "p_stat": [
+                        0.180552,
+                        0.252128,
+                        0.567319
+                    ],
+                    "retained_mass": 0.999999999962,
+                    "rho": -0.038214,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0083,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T16:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T17:07:39Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4725,
+                    "draw_risk": false,
+                    "over_2_5": 0.4644,
+                    "p": [
+                        0.1806,
+                        0.2521,
+                        0.5673
+                    ],
+                    "p_display": [
+                        18.1,
+                        25.2,
+                        56.7
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1296,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1193,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1123,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0963,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0844,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.99,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.25,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "form",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Angers have lost 7 of 11 and conceded 23 goals, including 0-4 at Paris FC last time out, so the home side is badly out of form.",
+                                "Lens have had 4 rest days after a Champions League trip to Leipzig and 2 matches in 14 days, against 6 days and 1 match for Angers, which gives the home side a small freshness edge.",
+                                "Lens are missing regular midfield starter Cuisance (8 starts) plus forward Édouard and defender Nawrocki, each confirmed by two sources, though none is a main scorer, so the effect is small; Angers' absences are minor, from one source."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.27,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Lens are missing regular midfielder Michaël Cuisance, who has started 8 of 11 league games and scored 1 of their 18 league goals, plus forward Odsonne Édouard; Angers' only listed absentees are a fringe midfielder and a backup goalkeeper, s",
+                                "Angers have lost their last four Ligue 1 matches without scoring, including 0-4 at Paris FC and 0-2 at home to Nice, while Lens have been inconsistent but beat Paris FC and drew with Toulouse in their last two league games.",
+                                "Lens have won the last five league meetings, including 5-1 away in March 2026 and 2-1 at Angers in November 2025, so they have a strong recent edge in this fixture."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.26,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lens are missing regular midfield starter Michaël Cuisance (8 starts) and squad forward Odsonne Édouard, accounting for 12% of their league goals, whereas Angers only have fringe absentees reported by one source.",
+                                "Angers sit 17th in the relegation zone, two points from safety, giving them an urgent need for points despite facing a Lens side with four days of rest after European travel.",
+                                "Angers have failed to score in four straight matches while losing six of their last seven, making a home upset unlikely against a Lens side that won all five recent league meetings between them."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.27,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lens are without regular-starting midfielder Michaël Cuisance plus forward Odsonne Édouard, trimming their attacking expectation; Angers' listed absences are only from one source and involve limited league starters.",
+                                "Lens have had four rest days after a Champions League trip to RB Leipzig, compared with Angers' six days and one match in the previous 14 days.",
+                                "Angers have lost four straight matches without scoring, while Lens have won each of the last five league head-to-head meetings."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.29,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Lens have only 4 rest days after a Champions League defeat and two matches in 14 days, while Angers have had 6 days and one match, so Lens arrive the more stretched side.",
+                                "Lens are without regular midfielder Cuisance (8 of 11 league starts, 6% of their goals); Angers' listed absences are a one-source squad midfielder and an unused goalkeeper, so they barely change the home side.",
+                                "Angers are 17th and 2 points from safety with 23 games left, so they need the points more than 11th-placed Lens, who sit 6 points above the drop."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2004,
+                        0.2595,
+                        0.5401
+                    ],
+                    "p_adj": [
+                        0.184789,
+                        0.256054,
+                        0.559156
+                    ],
+                    "p_llm": [
+                        0.271459,
+                        0.268262,
+                        0.460279
+                    ],
+                    "p_shadow": [
+                        0.2004,
+                        0.259534,
+                        0.540066
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "angers-vs-lens-2026-11-28"
+            },
+            "sha256": "66c1218ae2a8a15c6f3fd0b549f8f013444f4c0b862aed08da52e17bc9d859f1",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0054-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "lazio",
+                "batch_id": "2026-11-24T0014Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-24T00:14:57Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0030",
+                "home": "torino",
+                "inputs": {
+                    "elo_away": 1590.8,
+                    "elo_home": 1400.8,
+                    "lambda_away": 1.467727,
+                    "lambda_home": 1.005635,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-27T17:05:54Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.257843,
+                        0.265101,
+                        0.477056
+                    ],
+                    "p_elo": [
+                        0.233821,
+                        0.271953,
+                        0.494226
+                    ],
+                    "p_market": [
+                        0.279591,
+                        0.271933,
+                        0.448475
+                    ],
+                    "p_stat": [
+                        0.243399,
+                        0.266777,
+                        0.489824
+                    ],
+                    "retained_mass": 0.999999999938,
+                    "rho": -0.008802,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T17:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T17:07:39Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4892,
+                    "draw_risk": false,
+                    "over_2_5": 0.4494,
+                    "p": [
+                        0.2434,
+                        0.2668,
+                        0.4898
+                    ],
+                    "p_display": [
+                        24.3,
+                        26.7,
+                        49
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1263,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1259,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0938,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0932,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0859,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.26,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio are missing two regular defenders, Nuno Tavares (10 starts) and Šutalo (7 starts), and Zaccagni (5 assists) is doubtful on one source, which trims their attack and defence slightly.",
+                                "Lazio lead Serie A by 2 points and are unbeaten after 12 games, while Torino sit 13th, 6 points above the drop, so the visitors have more to gain.",
+                                "Lazio have 28 goals scored and 9 conceded and have won 5 of 6 away, while Torino have lost 3 of 6 at home and scored 0 in their last two defeats."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.54,
+                                "draw": 0.24,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio are missing three regular-starting defenders in Šutalo, Tavares and Marušić, plus Zaccagni is doubtful; Tavares and Zaccagni have combined for 8 goal involvements, so Lazio's left-side creativity and defensive stability are weakened.",
+                                "Lazio are top and only 2 points clear of 2nd, so they need the win to protect first place, while Torino are 6 points above the drop zone and will be wary of being dragged closer to relegation.",
+                                "Lazio are unbeaten in 12 league games with 5 wins from 6 away matches, while Torino have lost 3 of their last 4 and have only 2 home wins all season."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.27,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio are missing regular starting defender Nuno Tavares (10 starts, 3 assists), while one source also lists regular starter Josip Šutalo as out and key creator Mattia Zaccagni (10 starts, 2 goals, 5 assists) as doubtful, reducing both thei",
+                                "Lazio sit top of Serie A just two points clear of second place, giving them strong urgency to take all three points against a mid-table Torino side six points above the relegation zone.",
+                                "Unbeaten Lazio have won five of their six away league games while Torino are winless in their last four matches, making an away victory the most likely outcome despite Lazio's absences."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.02,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.55,
+                                "draw": 0.22,
+                                "home": 0.23
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio are without regular defenders Šutalo and Nuno Tavares, while regular creator Zaccagni is doubtful from one source, slightly raising Torino's scoring outlook.",
+                                "Lazio need points to protect a two-point lead at the top, whereas Torino are six points above the relegation zone.",
+                                "Lazio's 5W-1D-0L away record with only four goals conceded makes them clear favourites despite Torino's home advantage."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.53,
+                                "draw": 0.23,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lazio’s confirmed absentee is regular starter Tavares (10 league starts, 3 assists); Šutalo and creative doubtful Zaccagni are one source only, and Torino’s only two-source absence, Ismajli, has no starter role listed, so the away attack is",
+                                "Lazio are top and only 2 points clear of second, so they need the points to stay first, while Torino are 13th and 6 points above the relegation zone.",
+                                "Lazio are unbeaten with 5 wins from 6 away (15-4), against a Torino side that have lost 3 of 6 at home, so the league’s usual home edge is less likely to hold."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2455,
+                        0.2661,
+                        0.4884
+                    ],
+                    "p_adj": [
+                        0.24673,
+                        0.271869,
+                        0.481401
+                    ],
+                    "p_llm": [
+                        0.239962,
+                        0.243835,
+                        0.516203
+                    ],
+                    "p_shadow": [
+                        0.245473,
+                        0.266137,
+                        0.488391
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "torino-vs-lazio-2026-11-28"
+            },
+            "sha256": "e839dfd16ea76dc9ad5e2b55451c6fc8ce4c7e84da65de8132ec1866a81822f3",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0030-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "cesena",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0024",
+                "home": "vicenza",
+                "inputs": {
+                    "elo_away": 1164.6,
+                    "elo_home": 1068.4,
+                    "lambda_away": 1.604056,
+                    "lambda_home": 1.352927,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-27T17:05:54Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.31202,
+                        0.265067,
+                        0.422913
+                    ],
+                    "p_elo": [
+                        0.32064,
+                        0.284615,
+                        0.394745
+                    ],
+                    "p_market": [
+                        0.353742,
+                        0.282917,
+                        0.36334
+                    ],
+                    "p_stat": [
+                        0.315905,
+                        0.273332,
+                        0.410763
+                    ],
+                    "retained_mass": 0.999999999775,
+                    "rho": -0.098215,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T16:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T17:07:39Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6054,
+                    "draw_risk": false,
+                    "over_2_5": 0.564,
+                    "p": [
+                        0.3159,
+                        0.2733,
+                        0.4108
+                    ],
+                    "p_display": [
+                        31.6,
+                        27.3,
+                        41.1
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1277,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0879,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0773,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0702,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.065,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.29,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Cesena have won three of their last four league games, including 5-1 against Ascoli, while Vicenza have lost 7 of 13 and conceded 27 goals.",
+                                "Vicenza are 19th and only 2 points from safety, but Cesena are in the play-off places and 6 points off automatic promotion, so both sides need the points.",
+                                "Goalkeeper Jonathan Klinsmann is listed out by one source for Cesena, and his role in the squad is unknown, so the adjustment is small; Vicenza have no absences listed, also from one source."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.3,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Vicenza are in the relegation zone, 2 points from safety, while Cesena are 6th and defending a promotion play-off place, so the away side has a clearer incentive to push for all three points.",
+                                "Vicenza have lost 4 of their last 5 home league games and conceded 13 goals in 6 home matches, while Cesena have won their last two away games without conceding.",
+                                "Cesena are missing Jonathan Klinsmann, but he is a goalkeeper listed by only one source and his absence is not enough to shift the away side's expected goals."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.3,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides have clear early table pressure, as 19th-placed Vicenza are two points from safety while 6th-placed Cesena hold a three-point cushion inside the promotion play-off spots.",
+                                "Cesena enter unbeaten in five matches with four wins, making them clear favourites against a Vicenza side that is winless in five and has lost four of six home games.",
+                                "Team news comes from only one source, which lists no absences for Vicenza and reports Cesena's Jonathan Klinsmann out injured without confirmed starter details."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.29,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Cesena have Jonathan Klinsmann listed out by one source only, so the likely absence slightly reduces their attacking expectation but remains uncertain.",
+                                "Cesena have won four of their past five matches, while Vicenza are winless in four and have conceded 10 goals in that spell.",
+                                "Vicenza are two points from safety in the relegation zone, adding urgency, but Cesena also need points to protect their three-point play-off cushion."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.3,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Vicenza are in the relegation zone, 2 points from safety with 25 games left, while Cesena are in the play-off places and 3 points clear of 9th, so the home side need the points more but from a much weaker position.",
+                                "Vicenza have only 1 win from 6 home games and have conceded 13 there, while Cesena are unbeaten in their last four, including an away win, which points to a tight away edge rather than a home turnaround.",
+                                "Cesena list only Jonathan Klinsmann out, from one source and with no role given, and Vicenza's team news is one source listing no absences, so neither side's expected goals are adjusted."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3068,
+                        0.2791,
+                        0.4141
+                    ],
+                    "p_adj": [
+                        0.318791,
+                        0.274491,
+                        0.406717
+                    ],
+                    "p_llm": [
+                        0.261558,
+                        0.296404,
+                        0.442038
+                    ],
+                    "p_shadow": [
+                        0.306817,
+                        0.2791,
+                        0.414083
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "vicenza-vs-cesena-2026-11-28"
+            },
+            "sha256": "733016a7bbfb4e4d6990766304a97ad6cd1d28e9af72036d7f396344faf231e3",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0024-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "annecy",
                 "batch_id": "2026-11-22T0014Z-model-predict",
                 "competition": "coupe-de-france",
@@ -107,7 +928,7 @@
                 "slug": "us-feurs-vs-annecy-2026-11-28"
             },
             "sha256": "6470c11152d7ad51f3530c47467061b6a4602e4333389b67c0f532897881e16b",
-            "commit": "pending",
+            "commit": "de570055f294c700adf2cea6d6b5426c94d3c542",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0003-r1.json",
             "status": "pending",
             "result": null
@@ -345,7 +1166,7 @@
                 "slug": "excelsior-vs-telstar-2026-11-28"
             },
             "sha256": "4b1c6f150a1cb1edbb30ae3d8645a16a8062e504659fc9e57b0330cf7b71e01f",
-            "commit": "pending",
+            "commit": "de570055f294c700adf2cea6d6b5426c94d3c542",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0023-r1.json",
             "status": "pending",
             "result": null
@@ -583,7 +1404,7 @@
                 "slug": "malaga-vs-athletic-club-2026-11-28"
             },
             "sha256": "2f7272d14aae387824dc0c83fe556cc79a108e78503f793529e776c4602f81a3",
-            "commit": "pending",
+            "commit": "de570055f294c700adf2cea6d6b5426c94d3c542",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0111-r1.json",
             "status": "pending",
             "result": null
@@ -821,7 +1642,7 @@
                 "slug": "arouca-vs-rio-ave-2026-11-28"
             },
             "sha256": "9d611b870246dc430b6d11f347f8241ddbea7cba9779173de48301a4482c24ee",
-            "commit": "pending",
+            "commit": "de570055f294c700adf2cea6d6b5426c94d3c542",
             "file": "https://thetouchlineatlas.com/ledger/pt-2627-0091-r1.json",
             "status": "pending",
             "result": null
@@ -1059,7 +1880,7 @@
                 "slug": "moreirense-vs-santa-clara-2026-11-28"
             },
             "sha256": "6315edd184b6d224e8c008e8c55d9612e4e74ab2a691f798501cc45de25c9ca6",
-            "commit": "pending",
+            "commit": "de570055f294c700adf2cea6d6b5426c94d3c542",
             "file": "https://thetouchlineatlas.com/ledger/pt-2627-0092-r1.json",
             "status": "pending",
             "result": null
@@ -1297,7 +2118,7 @@
                 "slug": "albacete-vs-tenerife-2026-11-28"
             },
             "sha256": "9fe787fba38ba0fd84d21adac74bac0a6c4c229af5f5076c05ddd11ac09d2383",
-            "commit": "pending",
+            "commit": "de570055f294c700adf2cea6d6b5426c94d3c542",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0025-r1.json",
             "status": "pending",
             "result": null
@@ -1535,7 +2356,7 @@
                 "slug": "eldense-vs-girona-2026-11-28"
             },
             "sha256": "85095fce08bf241d4663c2b56de47c4ba8992469fd61feca786e544a2360ec2b",
-            "commit": "pending",
+            "commit": "de570055f294c700adf2cea6d6b5426c94d3c542",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0026-r1.json",
             "status": "pending",
             "result": null
@@ -1773,7 +2594,7 @@
                 "slug": "gaziantep-fk-vs-amed-sfk-2026-11-28"
             },
             "sha256": "34d832b5715552142778a6fe05e5e213a9be35b54cbe7ddb6a0c5466fa2ff9f3",
-            "commit": "pending",
+            "commit": "de570055f294c700adf2cea6d6b5426c94d3c542",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0026-r1.json",
             "status": "pending",
             "result": null
@@ -18411,8 +19232,12 @@
             "sha256": "f575530c57623ef5ed60082d804d07d7a8f32d890a4d11f9a7930798cf03bbb7",
             "commit": "6a3c6ecab73f2279cc24a7eb68d9961cb0c3be71",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0003-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.0385
+            }
         },
         {
             "record": {
