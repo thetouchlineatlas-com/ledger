@@ -7,6 +7,958 @@
     "records": [
         {
             "record": {
+                "away": "parma",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0029",
+                "home": "frosinone",
+                "inputs": {
+                    "elo_away": 1324,
+                    "elo_home": 1305.6,
+                    "lambda_away": 1.168103,
+                    "lambda_home": 1.744755,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-27T14:06:23Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.507866,
+                        0.237891,
+                        0.254243
+                    ],
+                    "p_elo": [
+                        0.400562,
+                        0.284254,
+                        0.315184
+                    ],
+                    "p_market": [
+                        0.654507,
+                        0.184709,
+                        0.160784
+                    ],
+                    "p_stat": [
+                        0.456907,
+                        0.259733,
+                        0.283359
+                    ],
+                    "retained_mass": 0.999999999931,
+                    "rho": -0.008648,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T14:13:49Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5765,
+                    "draw_risk": false,
+                    "over_2_5": 0.548,
+                    "p": [
+                        0.4569,
+                        0.2597,
+                        0.2834
+                    ],
+                    "p_display": [
+                        45.7,
+                        26,
+                        28.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1219,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0869,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0844,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0744,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0721,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.94,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.2,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frosinone are without Raimondo, a regular starter who has scored 8 of their 25 league goals (32%), and Bîrligea is also out, though both absences rest on one source.",
+                                "Parma are level on points with 18th and need points badly, while Frosinone sit 12 points clear of the drop and 7th.",
+                                "Frosinone have won 5 of 6 at home with 16 goals scored, while Parma have lost 4 of 5 away; both sides were beaten 1-5 in their last match."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.2,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frosinone are missing Antonio Raimondo, their regular starting forward with 8 league goals (32% of the team's total), which reduces their attacking threat.",
+                                "Parma are level on points with 18th, the top relegation place, so they need points badly, but Frosinone are 12 points clear of the drop zone and can play with less pressure.",
+                                "Frosinone have won 5 of 6 home league games this season, scoring 16 goals, while Parma have lost 4 of 5 away games."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.91,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.23,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Frosinone are without forwards Antonio Raimondo and Daniel Bîrligea, removing 40% of their league goals this season, while one source lists rotation defender Dominik Drobnič out for Parma.",
+                                "Parma sit 17th and level on 8 points with the relegation zone, giving them an urgent need for points against 7th-placed Frosinone.",
+                                "Frosinone's dominant home record of five wins and 16 goals scored across six games gives them a clear attacking edge over a Parma side that has lost four of five away trips."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.25,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frosinone are reported by one source to be without Raimondo, whose eight league goals are 32% of their total, plus Bîrligea; that materially reduces their attack.",
+                                "Parma are level on points with the relegation zone, giving the visitors added need to avoid defeat.",
+                                "Frosinone's five wins in six home league matches and Parma's four defeats in five away games point to sustained home control despite the hosts' forward absences."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Frosinone are without regular starter Antonio Raimondo, who has 8 league goals (32% of the side's), and that absence is only from one source, so the home attack is thinner than their 25-goal season total.",
+                                "Parma are level on points with 18th and need points to get clear of the relegation places, while 7th-placed Frosinone are 12 points above the drop.",
+                                "Frosinone have won 5 of 6 at home with no draws, and Parma have lost 4 of 5 away, which favours a home win over the league's draw rate."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4687,
+                        0.2574,
+                        0.2739
+                    ],
+                    "p_adj": [
+                        0.442465,
+                        0.265631,
+                        0.291905
+                    ],
+                    "p_llm": [
+                        0.573359,
+                        0.22041,
+                        0.206231
+                    ],
+                    "p_shadow": [
+                        0.468716,
+                        0.257389,
+                        0.273895
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "frosinone-vs-parma-2026-11-28"
+            },
+            "sha256": "a8415936eadd11d27fef5e9dcb20accd4b67508aacc017632c5f8ba9b1acb4ba",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0029-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "virtus-entella",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0021",
+                "home": "ascoli",
+                "inputs": {
+                    "elo_away": 1097.9,
+                    "elo_home": 1141.9,
+                    "lambda_away": 0.841303,
+                    "lambda_home": 1.4077,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-27T14:06:23Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.49055,
+                        0.297238,
+                        0.212212
+                    ],
+                    "p_elo": [
+                        0.46674,
+                        0.276788,
+                        0.256472
+                    ],
+                    "p_market": [
+                        0.503993,
+                        0.268133,
+                        0.227873
+                    ],
+                    "p_stat": [
+                        0.483025,
+                        0.28577,
+                        0.231205
+                    ],
+                    "retained_mass": 0.999999999965,
+                    "rho": -0.098215,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T14:13:49Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4399,
+                    "draw_risk": false,
+                    "over_2_5": 0.3937,
+                    "p": [
+                        0.483,
+                        0.2858,
+                        0.2312
+                    ],
+                    "p_display": [
+                        48.3,
+                        28.6,
+                        23.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1341,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1319,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1132,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.1029,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0866,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.99,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.29,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Ascoli sit in the play-off places, 3 points clear of 9th, while Entella are only 1 point above the relegation zone and need points badly.",
+                                "Entella are missing regular defender Alborghetti (10 of 13 starts), reported by one source only; Ascoli's absent midfielder Acampora has started 5 of 13 and matters less.",
+                                "Ascoli are unbeaten at home (3W 4D, 11-6), though they just conceded 5 at Cesena, while Entella have lost 3 of 6 away."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.29,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Virtus Entella are missing regular starting defender Mattia Alborghetti, who has started 10 of 13 league games and scored 1 of their 13 goals, weakening a defence that has conceded in four of their last five away matches.",
+                                "Ascoli sit 5th and are defending a promotion play-off place, only 3 points clear of 9th, while Entella are 1 point above the relegation zone, so the home side has a clear incentive to take all three points.",
+                                "Ascoli are unbeaten at home this season with 3 wins and 4 draws from 7 games, while Entella have lost 3 of their 6 away matches, suggesting the hosts are well placed to control this fixture."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.31,
+                                "home": 0.49
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Virtus Entella will be without regular starting defender Mattia Alborghetti (10 league starts) and Ascoli will miss rotation midfielder Gennaro Acampora (5 league starts), slightly weakening the visitors' defence if confi",
+                                "Virtus Entella sit just one point above the relegation zone and urgently need points for survival, while 5th-placed Ascoli are defending a three-point cushion inside the promotion play-off places.",
+                                "Ascoli are unbeaten in all seven home league matches this season (3W 4D) and have a strong chance to bounce back from a 5-1 midweek away defeat against a Virtus Entella side that has lost four of its last six games."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.29,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Entella are without regular-starting defender Mattia Alborghetti (10 league starts), though the absence is reported by one source, modestly improving Ascoli's attacking outlook.",
+                                "Entella sit only one point above the relegation zone, so they have a strong need to avoid defeat, while Ascoli are protecting a three-point play-off cushion.",
+                                "Ascoli are unbeaten in seven home league matches, whereas Entella have lost three of their last four away fixtures."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.29,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Entella sit one point above the drop zone and need points more than Ascoli, who are in the play-off places and three clear of 9th.",
+                                "Entella are without regular starter Alborghetti (10 of 13 league starts), listed out by one source only; Ascoli’s absences are not first-choice attackers or a keeper and are also single-source.",
+                                "Ascoli are unbeaten at home this season (3 wins, 4 draws), so a low-scoring home win is more likely than an ordinary Serie B away result for Entella."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4845,
+                        0.2877,
+                        0.2279
+                    ],
+                    "p_adj": [
+                        0.486521,
+                        0.286023,
+                        0.227455
+                    ],
+                    "p_llm": [
+                        0.476322,
+                        0.294215,
+                        0.229463
+                    ],
+                    "p_shadow": [
+                        0.484482,
+                        0.287654,
+                        0.227864
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "ascoli-vs-virtus-entella-2026-11-28"
+            },
+            "sha256": "6d8226b01650d32c150b7d8a950ae8e8c02afe331c90dbc18f470f27645e194f",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0021-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "juve-stabia",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0022",
+                "home": "carrarese",
+                "inputs": {
+                    "elo_away": 1177.2,
+                    "elo_home": 1137.2,
+                    "lambda_away": 0.983746,
+                    "lambda_home": 1.120223,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-27T14:06:23Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.372672,
+                        0.324593,
+                        0.302735
+                    ],
+                    "p_elo": [
+                        0.37791,
+                        0.285375,
+                        0.336716
+                    ],
+                    "p_market": [
+                        0.449219,
+                        0.291452,
+                        0.259329
+                    ],
+                    "p_stat": [
+                        0.376805,
+                        0.303951,
+                        0.319244
+                    ],
+                    "retained_mass": 0.999999999977,
+                    "rho": -0.097889,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T14:13:49Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4305,
+                    "draw_risk": true,
+                    "over_2_5": 0.3581,
+                    "p": [
+                        0.3768,
+                        0.304,
+                        0.3192
+                    ],
+                    "p_display": [
+                        37.7,
+                        30.4,
+                        31.9
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1382,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1266,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.1248,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1126,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0774,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.31,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Carrarese are 3 points off the play-off places and 4 above the drop, while Juve Stabia are level on points with 18th, so the home side has more room to climb and the visitors need points badly.",
+                                "Juve Stabia are missing three forwards and defenders (Sandrucci, Patanè, Pietrangeli), but none is a regular starter, so the effect is small; this comes from one source, and Carrarese's only absence, Bonfanti, has started 0 of 13.",
+                                "Carrarese have won 1-0 in their last two games, while Juve Stabia lost their last two, 0-2 and 1-3, and have conceded 5 in that run."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Juve Stabia are level on points with 18th, the top relegation place, so they need a result badly, but Carrarese are only 4 points above the drop zone and also cannot afford to lose.",
+                                "Juve Stabia are missing three forwards through injury, including Patanè who started 5 of 13 league games, though none is a main scorer; Carrarese's only listed absence is a forward with 0 league starts.",
+                                "Carrarese have won their last two matches 1-0, while Juve Stabia have lost their last two, conceding five goals."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Juve Stabia are level on points with the relegation zone after a four-point deduction, while Carrarese are equally close to the promotion play-offs (three points) and the relegation zone (four points).",
+                                "All reported absences rely on only one source and involve squad players rather than regular starters, though Juve Stabia could be without three rotational options including five-game starter Nicola Patanè.",
+                                "Carrarese enter with consecutive 1-0 wins while Juve Stabia have lost their last two games, giving the hosts momentum despite both teams collecting an identical 16 points on the pitch this season."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.99,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.31,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Juve Stabia have two injured forwards, including Patanè with five league starts, which modestly reduces their attacking options; all listed absences come from one source.",
+                                "Juve Stabia are level on points with the relegation places, adding urgency to their need for a result.",
+                                "Carrarese arrive on consecutive 1-0 wins, while Juve Stabia have lost their last two matches and conceded five goals."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.28,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Juve Stabia are level on points with 18th and the drop, so they need the result more than Carrarese, who are 4 points above the relegation zone and only 3 off the play-off places.",
+                                "Carrarese have just won 1-0 twice, while Juve Stabia have lost their last two, so the home side arrive in better shape for another tight, low-scoring game.",
+                                "This season Serie B home wins are only 39%, with draws 29% and away wins 32%, so Carrarese's edge at Dei Marmi stays modest rather than a clear home favourite."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3881,
+                        0.304,
+                        0.3079
+                    ],
+                    "p_adj": [
+                        0.379209,
+                        0.304675,
+                        0.316116
+                    ],
+                    "p_llm": [
+                        0.424151,
+                        0.299922,
+                        0.275927
+                    ],
+                    "p_shadow": [
+                        0.388128,
+                        0.303976,
+                        0.307896
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "carrarese-vs-juve-stabia-2026-11-28"
+            },
+            "sha256": "e9119d94ad97f4dd2529b31d5f384b554118172735fc3ce55e92038f64acb7e8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0022-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "hellas-verona",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0023",
+                "home": "empoli",
+                "inputs": {
+                    "elo_away": 1109.5,
+                    "elo_home": 1076.5,
+                    "lambda_away": 1.356607,
+                    "lambda_home": 1.425925,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-27T14:06:23Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.37723,
+                        0.27706,
+                        0.34571
+                    ],
+                    "p_elo": [
+                        0.385195,
+                        0.285098,
+                        0.329707
+                    ],
+                    "p_market": [
+                        0.214305,
+                        0.257864,
+                        0.52783
+                    ],
+                    "p_stat": [
+                        0.382485,
+                        0.279809,
+                        0.337707
+                    ],
+                    "retained_mass": 0.999999999938,
+                    "rho": -0.098215,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T14:13:49Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5764,
+                    "draw_risk": false,
+                    "over_2_5": 0.5254,
+                    "p": [
+                        0.3825,
+                        0.2798,
+                        0.3377
+                    ],
+                    "p_display": [
+                        38.2,
+                        28,
+                        33.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1328,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0865,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0793,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0776,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0744,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.3,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Empoli are on a bad run, losing 0-1 to Pisa and 0-5 at Benevento in the last two games, with 12 goals scored and 25 conceded in 13 games.",
+                                "Empoli are 20th and 3 points from safety, while Verona are 11th and only 3 points off the play-off places, so both sides need the points.",
+                                "Empoli lack midfielder Luca Magnino, a regular starter (9 of 13 league starts), while Verona have four players out and one doubtful, mostly squad players with few starts; all of this is from one source."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.3,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Empoli are in the relegation zone and 3 points from safety, so they need the points more urgently than Verona, who are 4 points above the drop zone and 3 points off the promotion play-offs.",
+                                "Empoli are missing regular starting midfielder Luca Magnino, who has started 9 of 13 league games, slightly weakening their midfield; Verona's absences are mostly squad players, with no regular starter ruled out.",
+                                "Empoli have lost 8 of 13 and were beaten 5-0 at Benevento in their last match, while Verona have also lost their last two, so neither side arrives with momentum."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.32,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Empoli are missing regular starting midfielder Luca Magnino (9 starts), while Hellas Verona's reported absences are limited to squad players with at most 4 starts.",
+                                "Both teams have urgent table objectives, with bottom-placed Empoli needing points to close a 3-point gap to safety and Hellas Verona sitting 3 points off the promotion play-offs.",
+                                "Empoli's winless run of 10 games and 4 losses in 6 home matches negate normal home advantage against a Verona side that has outscored them 20-12 this season."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.32,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Empoli are without regular-starting midfielder Luca Magnino, while Verona have several defensive and midfield absences, though all reports are from one source.",
+                                "Empoli are three points from safety and need a response from bottom place, while Verona are only three points outside the play-offs.",
+                                "Empoli's 0-5 loss at Benevento extended a poor run and, combined with just five home goals in six league games, limits their home-win case."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.3,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Empoli are 20th and 3 points from safety, so they need points more urgently than Verona, who sit 11th, 3 off the play-off places and 4 clear of the drop.",
+                                "One source only: Empoli miss regular-start midfielder Luca Magnino (9 of 13, 1 assist), a modest cut to their midfield, while Verona’s absentees are non-regular starters and also single-source.",
+                                "Empoli have lost 6 of their last 10 and scored only 5 goals in 6 home games, so a low-scoring away edge is more plausible than a typical Serie B home win."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "1/5",
+                    "ai_combined": [
+                        0.3646,
+                        0.2877,
+                        0.3477
+                    ],
+                    "p_adj": [
+                        0.379603,
+                        0.282035,
+                        0.338363
+                    ],
+                    "p_llm": [
+                        0.307495,
+                        0.308534,
+                        0.383971
+                    ],
+                    "p_shadow": [
+                        0.364628,
+                        0.287688,
+                        0.347684
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "empoli-vs-hellas-verona-2026-11-28"
+            },
+            "sha256": "145450fd78b9c6a7a69528e7cf8e85d1f374278d05e0981555234fa2fd24393f",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0023-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "stade-de-reims",
                 "batch_id": "2026-11-22T0014Z-model-predict",
                 "competition": "coupe-de-france",
@@ -107,7 +1059,7 @@
                 "slug": "olympique-charleville-prix-am-vs-stade-de-reims-2026-11-28"
             },
             "sha256": "30a40ba0a73c759b254862d15889bf2092f5ac090f8b4b62c1c3e9df23c33b98",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0001-r1.json",
             "status": "pending",
             "result": null
@@ -214,7 +1166,7 @@
                 "slug": "tremblay-vs-red-star-fc-93-2026-11-28"
             },
             "sha256": "4c20c14758102867cef2c964c750c9ea7bd1ec8dc266e61892b2d73da28ec98a",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0002-r1.json",
             "status": "pending",
             "result": null
@@ -452,7 +1404,7 @@
                 "slug": "blackburn-rovers-vs-charlton-athletic-2026-11-28"
             },
             "sha256": "a9858a3c01cb1876d158c0a83ac12bf12b7f70d0726beb1fbb0a2c57fb51df34",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0050-r1.json",
             "status": "pending",
             "result": null
@@ -690,7 +1642,7 @@
                 "slug": "lincoln-city-vs-wolverhampton-wanderers-2026-11-28"
             },
             "sha256": "b5e2a7cd31f1e098d61919fed016a00811daa0134a8627114be933e3cd86c032",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0051-r1.json",
             "status": "pending",
             "result": null
@@ -928,7 +1880,7 @@
                 "slug": "preston-north-end-vs-norwich-city-2026-11-28"
             },
             "sha256": "9eba87a24e62da53f242bba6110ea943975b420ad18219b2f1f19864bb2d9217",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0052-r1.json",
             "status": "pending",
             "result": null
@@ -1166,7 +2118,7 @@
                 "slug": "milton-keynes-dons-vs-notts-county-2026-11-28"
             },
             "sha256": "9b5c22af0068ea10e9f0a992163ca1563a89b6e52adf924c0a41fd69053aada2",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0059-r1.json",
             "status": "pending",
             "result": null
@@ -1404,7 +2356,7 @@
                 "slug": "peterborough-united-vs-cambridge-united-2026-11-28"
             },
             "sha256": "1c17bb621acdf554bd79ba125c9a665314f92c8bee442f09c8fb559ce5af6e75",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0060-r1.json",
             "status": "pending",
             "result": null
@@ -1642,7 +2594,7 @@
                 "slug": "real-betis-vs-rayo-vallecano-2026-11-28"
             },
             "sha256": "00816652741a0741573f47057ec29e7248f3678a3e5647c91278259fe02c5f4d",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0110-r1.json",
             "status": "pending",
             "result": null
@@ -1880,7 +2832,7 @@
                 "slug": "las-palmas-vs-fc-andorra-2026-11-28"
             },
             "sha256": "45468758e51dc64ab786a97c1a0fa79f904cd96f6ac360bddae09e17ed4e5605",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0024-r1.json",
             "status": "pending",
             "result": null
@@ -2118,7 +3070,7 @@
                 "slug": "samsunspor-vs-genclerbirligi-2026-11-28"
             },
             "sha256": "9a650193c4623b20ace275bce48b71175541f7f273f8901e03744dcff0d1f704",
-            "commit": "pending",
+            "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0025-r1.json",
             "status": "pending",
             "result": null
