@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "auckland-fc",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "a-league",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "al-2627-0003",
+                "home": "central-coast-mariners-fc",
+                "inputs": {
+                    "elo_away": 1536.4,
+                    "elo_home": 1439.2,
+                    "lambda_away": 1.579584,
+                    "lambda_home": 1.188741,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-27T09:05:49Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.277364,
+                        0.268225,
+                        0.454411
+                    ],
+                    "p_elo": [
+                        0.319653,
+                        0.284553,
+                        0.395794
+                    ],
+                    "p_market": [
+                        0.257604,
+                        0.249679,
+                        0.492717
+                    ],
+                    "p_stat": [
+                        0.302768,
+                        0.283372,
+                        0.41386
+                    ],
+                    "retained_mass": 0.99999999983,
+                    "rho": -0.081741,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.1315,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T08:40:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T09:20:18Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5661,
+                    "draw_risk": false,
+                    "over_2_5": 0.5167,
+                    "p": [
+                        0.3028,
+                        0.2833,
+                        0.4139
+                    ],
+                    "p_display": [
+                        30.3,
+                        28.3,
+                        41.4
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1347,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0848,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0815,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0765,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0765,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.32,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Auckland are missing Jake Brimmer (regular midfield starter, 3 of 5 league starts) plus Howieson, Calver and Sail, all out, with Middleton doubtful, all from one source; Central Coast list no absences, but that comes from one source only.",
+                                "Central Coast are 10th on 3 points, 7 behind the leaders, and need a win more than Auckland, who are 8th on 6 points and 4 behind.",
+                                "Draws are 43% of matches this season against 27% last season, and both sides have drawn 3 of 5 league games, so a draw is likely."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.38,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Auckland FC are missing regular starting midfielder Jake Brimmer plus four other players listed out or doubtful, weakening their midfield and depth; Central Coast have no absences listed.",
+                                "Central Coast are winless in their last five league games and have only 3 points from 5, but they have drawn all three home-adjacent fixtures this season and Auckland have won just once in five.",
+                                "The last meeting between these sides ended 1-0 to Central Coast at Auckland, and three of the last five head-to-head meetings have been draws, supporting a tight contest."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.33,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "One source lists Auckland FC regular starting midfielder Jake Brimmer and three other squad players as out injured, while listing no absences for Central Coast Mariners.",
+                                "Both teams have drawn three of their opening five league matches, including both of Central Coast Mariners' home games and Auckland's last three fixtures, pointing towards another close contest.",
+                                "Draws have been unusually common in the A-League Men early this season at 43% of the 28 matches played, while away teams have won just 11%."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 1.04,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.39,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Auckland have Jake Brimmer, a regular-starting midfielder (3 starts in 5), ruled out, though all listed absences are supported by only one source.",
+                                "Central Coast have scored only four goals in five league matches and are winless, which limits their home-win case despite Auckland's poor away start.",
+                                "The last five league meetings have all avoided a Central Coast home win, although the Mariners won the latest meeting 1-0 in Auckland."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.42,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Auckland are without regular starter Jake Brimmer (midfielder, 3 of 5 league starts) plus Howieson, Calver and Sail, all from one source only, so their midfield is thinner; Mariners have no absences listed, also from one source, which does ",
+                                "Both sides are drawing far more than they win—Mariners are 0W 3D 2L and unbeaten but winless at home (0W 2D), Auckland 1W 3D 1L and winless away—so another shared result is the pattern this meeting most resembles.",
+                                "This season’s 28 A-League Men matches have finished home win 46% and draw 43%, with away wins only 11%, which supports a low-scoring home-or-draw outcome over an Auckland win."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.3188,
+                        0.3029,
+                        0.3784
+                    ],
+                    "p_adj": [
+                        0.310008,
+                        0.286658,
+                        0.403335
+                    ],
+                    "p_llm": [
+                        0.347145,
+                        0.367485,
+                        0.28537
+                    ],
+                    "p_shadow": [
+                        0.318783,
+                        0.302854,
+                        0.378363
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "central-coast-mariners-fc-vs-auckland-fc-2026-11-28"
+            },
+            "sha256": "589b2bd5e531ab321180a4bebbede636596f69b4303a5b885f57c362bc04e323",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/al-2627-0003-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "sanfrecce-hiroshima",
                 "batch_id": "2026-11-27T0015Z-model-predict",
                 "competition": "j1-league",
