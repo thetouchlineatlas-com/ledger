@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "benevento",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0025",
+                "home": "palermo",
+                "inputs": {
+                    "elo_away": 1127.5,
+                    "elo_home": 1337.5,
+                    "lambda_away": 1.025719,
+                    "lambda_home": 1.844927,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-27T19:10:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.555021,
+                        0.247708,
+                        0.197271
+                    ],
+                    "p_elo": [
+                        0.633249,
+                        0.232905,
+                        0.133846
+                    ],
+                    "p_market": [
+                        0.513477,
+                        0.253351,
+                        0.233172
+                    ],
+                    "p_stat": [
+                        0.602041,
+                        0.238332,
+                        0.159626
+                    ],
+                    "retained_mass": 0.999999999847,
+                    "rho": -0.098215,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T18:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T19:12:30Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5458,
+                    "draw_risk": false,
+                    "over_2_5": 0.5528,
+                    "p": [
+                        0.602,
+                        0.2384,
+                        0.1596
+                    ],
+                    "p_display": [
+                        60.2,
+                        23.8,
+                        16
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1133,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1073,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.1046,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.102,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.066,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.26,
+                                "home": 0.51
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Palermo lead Serie B by 3 points and are 8 clear of 3rd, while Benevento sit 8th, 1 point clear of 9th and need points to stay in the play-off places.",
+                                "Palermo are missing defender Mattia Bani (8 league starts) plus Palumbo, Pierozzi, Barba and Joronen, mostly defensive depth, per one source; Benevento's Edoardo Pierozzi is only doubtful.",
+                                "Palermo have won all 6 home league games (15-5) but conceded 17 goals in 13, while Benevento have won only 2 of 5 away."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Palermo are missing regular centre-back Mattia Bani (8 league starts) plus three other defenders and midfielder Antonio Palumbo (2 goals), weakening a defence that has conceded 5 goals in 6 home games; Benevento's only doubt is Edoardo Pier",
+                                "Palermo have won all 6 home league games this season, scoring 15 and conceding 5, while Benevento have lost 3 of 5 away games, scoring only 5 goals on the road.",
+                                "Palermo are 3 points clear at the top and 8 points clear of 3rd, so they are protecting an automatic promotion place, while Benevento are only 1 point clear of 9th and need points to stay in the play-off places."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1.04,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Palermo without regular starting defender Mattia Bani and two squad defenders, which weakens their defensive depth compared to Benevento having only one defender doubtful according to one source.",
+                                "Palermo sit top of the table looking to protect their three-point lead, while Benevento are only one point clear in the final promotion play-off spot and need points to hold off ninth place.",
+                                "Palermo have won all six of their home league matches while scoring 15 goals, giving them a strong edge against a Benevento side that has lost three of five away games."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.04,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.25,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Palermo have single-source absences in regular centre-back Mattia Bani plus several defensive options, slightly weakening their defensive outlook; Benevento's Edoardo Pierozzi is only doubtful from one source.",
+                                "Palermo's six wins from six home league matches, scoring 15 goals, makes them clear favourites despite Benevento's recent 5-0 win over Empoli.",
+                                "Benevento are only one point above ninth and need points to protect a play-off place, while Palermo can preserve their three-point lead at the top."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Palermo have won all six Serie B home games (15-5), so this is less like a typical Serie B fixture, where home wins are only 39% this season.",
+                                "Benevento are only 1 point clear of 9th in the play-off places, so they need the points more than Palermo, who are already 3 clear of 2nd and 8 clear of 3rd.",
+                                "One source only lists Palermo without regular starter Mattia Bani (8 of 13) and other defenders, which slightly weakens the defence, while Palumbo accounts for just 7% of their goals; Benevento's only listed absence is doubtful."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5872,
+                        0.2438,
+                        0.169
+                    ],
+                    "p_adj": [
+                        0.595668,
+                        0.241487,
+                        0.162845
+                    ],
+                    "p_llm": [
+                        0.55232,
+                        0.252342,
+                        0.195338
+                    ],
+                    "p_shadow": [
+                        0.587184,
+                        0.243807,
+                        0.169009
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "palermo-vs-benevento-2026-11-28"
+            },
+            "sha256": "074b864ab8fb911a370c0cd12bef7593c73fbc470d3a91138fe00466229af92a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0025-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "kv-mechelen",
                 "batch_id": "2026-11-27T0015Z-model-predict",
                 "competition": "belgian-pro-league",
@@ -238,7 +476,7 @@
                 "slug": "cercle-brugge-ksv-vs-kv-mechelen-2026-11-28"
             },
             "sha256": "10cd9d79b0a2282a178053f4c58493dc62a5ca198d0656ca861dffccc3102630",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0012-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +714,7 @@
                 "slug": "vfb-stuttgart-vs-eintracht-frankfurt-2026-11-28"
             },
             "sha256": "ba9ecd77c757eb9a4f92a7610dc23ffdf07445167a5c6c9312f91c29703a5373",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0100-r1.json",
             "status": "pending",
             "result": null
@@ -583,7 +821,7 @@
                 "slug": "avenir-foot-lozere-vs-montpellier-2026-11-28"
             },
             "sha256": "1a2341c6fd10e8ed7679c599dce87f0e2e5c078ea7d1dbd7727d25f1fb3020cd",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0005-r1.json",
             "status": "pending",
             "result": null
@@ -690,7 +928,7 @@
                 "slug": "castanet-vs-pau-2026-11-28"
             },
             "sha256": "1546d49f59c80f278c96ca66dc14dceaf63e4332f2677477a59acdbb8526f199",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0006-r1.json",
             "status": "pending",
             "result": null
@@ -797,7 +1035,7 @@
                 "slug": "furiani-agliani-vs-as-nancy-lorraine-2026-11-28"
             },
             "sha256": "da24d593bec576bb9c7d2cae7d57bd206d476bbaad6af3237e0e90b22a29558e",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0007-r1.json",
             "status": "pending",
             "result": null
@@ -904,7 +1142,7 @@
                 "slug": "lannion-vs-stade-laval-2026-11-28"
             },
             "sha256": "1562362bc571f3b1fddf18a3182b48d877b3d04cacd9e27896c623cc8caa7c6b",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0008-r1.json",
             "status": "pending",
             "result": null
@@ -1011,7 +1249,7 @@
                 "slug": "montlucon-football-vs-clermont-foot-2026-11-28"
             },
             "sha256": "5514328c467b7a8731d67f763ace4f775dae727b14ee3963c6eb8aea03301545",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0009-r1.json",
             "status": "pending",
             "result": null
@@ -1118,7 +1356,7 @@
                 "slug": "saint-etienne-vs-villefranche-2026-11-28"
             },
             "sha256": "9cb7b2ce8d636ef540a898c2925e66aecc0dcf183ccdb5cd5620bc9bba4c445b",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0010-r1.json",
             "status": "pending",
             "result": null
@@ -1356,7 +1594,7 @@
                 "slug": "psv-eindhoven-vs-go-ahead-eagles-2026-11-28"
             },
             "sha256": "6486017b944ebada2a470335ad632101ade5ab7bf6a55edcc1561191de7566f2",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0024-r1.json",
             "status": "pending",
             "result": null
@@ -1594,7 +1832,7 @@
                 "slug": "kifisia-vs-kalamata-2026-11-28"
             },
             "sha256": "eb0df197931d61fac02092291bbb0a6859a1e4f940821bc19427552f7a277329",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0010-r1.json",
             "status": "pending",
             "result": null
@@ -1832,7 +2070,7 @@
                 "slug": "al-ahli-vs-al-taawoun-2026-11-28"
             },
             "sha256": "b8e9c39e1c5276c3c67765fa9448c23ea04cf382f1d4698ea11b7d2e08cd5e40",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0009-r1.json",
             "status": "pending",
             "result": null
@@ -2070,7 +2308,7 @@
                 "slug": "elche-vs-atletico-madrid-2026-11-28"
             },
             "sha256": "a5b442c17df64718d0afa32b097c2347ac1b5d40f5c4649bbeaa7511e2ea6d10",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0112-r1.json",
             "status": "pending",
             "result": null
@@ -2308,7 +2546,7 @@
                 "slug": "ipswich-town-vs-aston-villa-2026-11-28"
             },
             "sha256": "b4c45405d203479cc71c12a80585af87804269628379b5ddee41e280e345f352",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0110-r1.json",
             "status": "pending",
             "result": null
@@ -2546,7 +2784,7 @@
                 "slug": "academico-viseu-vs-alverca-2026-11-28"
             },
             "sha256": "38c5db73688897ef6805290e1492ffc6447c8b44bcbc1f1e61498ca4bbf3f056",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/pt-2627-0093-r1.json",
             "status": "pending",
             "result": null
@@ -2784,7 +3022,7 @@
                 "slug": "eibar-vs-burgos-2026-11-28"
             },
             "sha256": "357627fd0db24c0f1e5266ab695a79c840eaa1398099fb6adec9b47ff76a3170",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0027-r1.json",
             "status": "pending",
             "result": null
@@ -3022,7 +3260,7 @@
                 "slug": "motherwell-vs-hibernian-2026-11-28"
             },
             "sha256": "6c774efdb0fbe299c7ba554b591280d9508a0a64f493b7acdedd53940841405f",
-            "commit": "pending",
+            "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0020-r1.json",
             "status": "pending",
             "result": null
@@ -21778,8 +22016,12 @@
             "sha256": "abbc481d35b6b4234d54e89c95803ec75a74c03d77c426cced9cbc28f0a5a83f",
             "commit": "3171185f2a1287e027e2dded51c3c29226b2338c",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0023-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-2",
+                "correct": false,
+                "rps": 0.3528
+            }
         },
         {
             "record": {
@@ -22016,8 +22258,12 @@
             "sha256": "266d3a4a09da3191bdb5a50ed34133e5add91768c0b333c469bde22a58ee4897",
             "commit": "3171185f2a1287e027e2dded51c3c29226b2338c",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0024-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-2",
+                "correct": true,
+                "rps": 0.2305
+            }
         },
         {
             "record": {
