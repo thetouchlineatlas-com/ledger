@@ -7,6 +7,958 @@
     "records": [
         {
             "record": {
+                "away": "st-pauli",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0012",
+                "home": "dynamo-dresden",
+                "inputs": {
+                    "elo_away": 1206.7,
+                    "elo_home": 1214.1,
+                    "lambda_away": 1.296618,
+                    "lambda_home": 1.579975,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-27T12:15:03Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.434512,
+                        0.257553,
+                        0.307934
+                    ],
+                    "p_elo": [
+                        0.427884,
+                        0.281908,
+                        0.290208
+                    ],
+                    "p_market": [
+                        0.348141,
+                        0.265257,
+                        0.386602
+                    ],
+                    "p_stat": [
+                        0.433981,
+                        0.267953,
+                        0.298065
+                    ],
+                    "retained_mass": 0.999999999822,
+                    "rho": -0.049453,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T12:20:52Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.585,
+                    "draw_risk": false,
+                    "over_2_5": 0.5451,
+                    "p": [
+                        0.434,
+                        0.2679,
+                        0.2981
+                    ],
+                    "p_display": [
+                        43.4,
+                        26.8,
+                        29.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.126,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0911,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0832,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0724,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0702,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.3,
+                                "home": 0.44
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Dynamo are 13th and only 1 point above the relegation zone, while St. Pauli are 4 points clear, so the home side needs the points more.",
+                                "St. Pauli have drawn 5 of 6 away games, which points to a draw, while Dynamo have won 3 of 5 at home with 8 goals scored.",
+                                "Dynamo have 5 players out on one source only, but the two with known data started 0 league games, so the effect is small; St. Pauli have two doubtful, also on one source."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Dynamo Dresden's listed absentees are all single-source and none has started a league game this season, so there is no clear evidence of a first-choice player missing; St. Pauli's doubts are also single-source, so team news does not justify",
+                                "Dresden have won three of five home league games and scored eight goals at home, while St. Pauli are winless away with five draws from six, which points toward a competitive match but gives Dresden a slight edge at home.",
+                                "Dresden are only one point above the relegation zone and need home points urgently, while St. Pauli are mid-table and four points clear of danger, so the hosts may have the greater incentive."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.32,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Dynamo Dresden sit just one point above the relegation zone, giving them an urgent need for points at home despite having 22 games remaining.",
+                                "Dynamo Dresden face a German Cup match at VfB Stuttgart just three days after this fixture, which could prompt squad rotation compared to St. Pauli's eight-day break afterward.",
+                                "All reported absences and doubts for both sides rely on only one source, with no confirmed regular league starters verified as missing."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.31,
+                                "home": 0.43
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Dresden's listed absences are all single-source and Ezeh and Herrmann have made no league starts, while St. Pauli's two injuries are only doubts from one source.",
+                                "Dresden are only one point above the relegation zone, giving the home side added urgency for a result.",
+                                "Dresden have won three of five league home matches and conceded only four goals there, while St. Pauli remain winless in six away games."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.34,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "St. Pauli have drawn five of six away league games and won none, so a draw is more live here than the league base rate implies despite Dresden's unbeaten-in-draws home record.",
+                                "Dresden are only one point above the relegation zone and need the points more than eighth-placed St. Pauli, who are four clear of the drop and still eight off the play-off places.",
+                                "Dresden's DFB-Pokal trip to Stuttgart is only three days later, while St. Pauli's next league match is eight days away, which can blunt how hard Dresden push."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.432,
+                        0.2768,
+                        0.2912
+                    ],
+                    "p_adj": [
+                        0.433981,
+                        0.267953,
+                        0.298065
+                    ],
+                    "p_llm": [
+                        0.422075,
+                        0.313863,
+                        0.264061
+                    ],
+                    "p_shadow": [
+                        0.431976,
+                        0.276822,
+                        0.291202
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "dynamo-dresden-vs-st-pauli-2026-11-28"
+            },
+            "sha256": "14a706b26f147df1218aa21db11207383dc052d7580c9c2b4a992a90f530f690",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0012-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "karlsruher-sc",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0013",
+                "home": "hertha-berlin",
+                "inputs": {
+                    "elo_away": 1256,
+                    "elo_home": 1392.7,
+                    "lambda_away": 1.190533,
+                    "lambda_home": 2.255978,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-27T12:15:03Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.609584,
+                        0.203679,
+                        0.186738
+                    ],
+                    "p_elo": [
+                        0.56298,
+                        0.255641,
+                        0.181379
+                    ],
+                    "p_market": [
+                        0.678919,
+                        0.175902,
+                        0.145179
+                    ],
+                    "p_stat": [
+                        0.593409,
+                        0.225621,
+                        0.18097
+                    ],
+                    "retained_mass": 0.999999999957,
+                    "rho": -0.049408,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T12:20:52Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6326,
+                    "draw_risk": false,
+                    "over_2_5": 0.6613,
+                    "p": [
+                        0.5934,
+                        0.2256,
+                        0.181
+                    ],
+                    "p_display": [
+                        59.3,
+                        22.6,
+                        18.1
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0995,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0939,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0789,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0706,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0658,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Hertha lead the table by 10 points and are 11 clear of 3rd, while Karlsruher sit 1 point above the relegation zone and need points badly.",
+                                "Hertha miss only rotation midfielder Soufian Gouram (4 starts, 2 assists), while Karlsruher are without forward Moritz Broschinski (2 of their 15 goals) with two more doubtful, all from one source.",
+                                "Hertha play at Bayern Munich in the cup 3 days later, so some rotation is possible, but both sides had 6 rest days."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Hertha are 10 points clear at the top and 11 clear of 3rd, so they can strengthen their automatic promotion grip, while Karlsruhe sit only 1 point above the relegation zone and badly need points.",
+                                "Hertha have won 11 of 12 league games and all 5 at home, whereas Karlsruhe are winless away this season with 2 draws and 3 defeats and have conceded 13 goals in those 5 away matches.",
+                                "Karlsruhe are missing forward Moritz Broschinski, who has 2 of their 15 league goals, and have two doubtful midfielders, while Hertha's only listed absence is a squad midfielder."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.11,
+                                "draw": 0.17,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Hertha Berlin hold a ten-point lead at the top and face a cup tie at Bayern Munich in three days, which could temper their intensity compared to a desperate Karlsruher SC side sitting just one point above the relegation zone.",
+                                "Unbeaten Hertha Berlin have won all five home league games this season, making them heavy favourites against a Karlsruher SC side that is winless in five away matches and has conceded 13 goals on the road.",
+                                "All listed absences rely on only one source and involve squad players with at most four league starts, such as suspended Hertha midfielder Soufian Gouram and injured Karlsruher forward Moritz Broschinski."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.95,
+                            "m_home": 0.99,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Karlsruhe's single-source absence list includes Broschinski, whose two league goals account for 13% of their total, slightly reducing their attacking outlook.",
+                                "Karlsruhe are only one point above the relegation zone, so they have a strong need for points despite the difficult away assignment.",
+                                "Hertha's perfect five-win home league record contrasts with Karlsruhe's winless away start, making a home-controlled match more likely."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.2,
+                                "home": 0.7
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Karlsruhe sit 15th, only 1 point above the relegation zone, so they need the result more, while Hertha are already 10 clear of 2nd and 11 clear of 3rd in the automatic promotion places.",
+                                "Hertha are unbeaten with a perfect 5 wins from 5 at home (11-4), while Karlsruhe have not won any of 5 away games (0W 2D 3L, 5-13), so the home side should control this match.",
+                                "Listed absences are not regular starters and come from one source only: Hertha miss Gouram (4 league starts, suspended) and Karlsruhe are without Broschinski (2 starts, 13% of their goals), with two others only doubtful, so expected goals a"
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6195,
+                        0.2181,
+                        0.1623
+                    ],
+                    "p_adj": [
+                        0.59512,
+                        0.226133,
+                        0.178747
+                    ],
+                    "p_llm": [
+                        0.708559,
+                        0.183912,
+                        0.107528
+                    ],
+                    "p_shadow": [
+                        0.619536,
+                        0.218133,
+                        0.162332
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "hertha-berlin-vs-karlsruher-sc-2026-11-28"
+            },
+            "sha256": "9c85657867bd6156e5298d6d679a24e949c7717533acf0cbc5c6327711eee6e7",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0013-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "kaiserslautern",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0014",
+                "home": "holstein-kiel",
+                "inputs": {
+                    "elo_away": 1322.3,
+                    "elo_home": 1185.2,
+                    "lambda_away": 1.171873,
+                    "lambda_home": 1.333292,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-27T12:15:03Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.397763,
+                        0.281255,
+                        0.320982
+                    ],
+                    "p_elo": [
+                        0.281084,
+                        0.280754,
+                        0.438162
+                    ],
+                    "p_market": [
+                        0.405528,
+                        0.266356,
+                        0.328116
+                    ],
+                    "p_stat": [
+                        0.337663,
+                        0.282507,
+                        0.379829
+                    ],
+                    "retained_mass": 0.999999999778,
+                    "rho": -0.049408,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T12:20:52Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5155,
+                    "draw_risk": false,
+                    "over_2_5": 0.4563,
+                    "p": [
+                        0.3377,
+                        0.2825,
+                        0.3798
+                    ],
+                    "p_display": [
+                        33.8,
+                        28.2,
+                        38
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1345,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1058,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0885,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0884,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0871,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.3,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kaiserslautern are 5th, 2 points off automatic promotion, while Kiel are 18th and 4 points from safety, so both sides need the points.",
+                                "Kaiserslautern lack regular starter Marlon Ritter (7 of 12 league starts), a small attacking loss; Kiel's absentees are not regular starters, and all news comes from one source.",
+                                "Kiel have lost 4 of their last 5 league games and scored 11 goals in 12, while Kaiserslautern have conceded only 9, so a low-scoring match is likely."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.3,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kaiserslautern are missing regular starter Marlon Ritter, a midfielder with 7 league starts, which slightly weakens their midfield; Holstein Kiel's listed absences are squad players with 0 league starts, so their XI is effectively unchanged",
+                                "Holstein Kiel are in the relegation zone, 4 points from safety, and need home points badly, while Kaiserslautern are 1 point off the promotion play-off places and also have a strong incentive to win.",
+                                "Holstein Kiel have drawn 4 of 6 home league games and are hard to beat at Holstein-Stadion despite their low table position, while Kaiserslautern have won 3 of 6 away games but score few goals on the road."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.32,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides have high stakes at opposite ends of the table, with 18th-placed Holstein Kiel four points from safety and 5th-placed Kaiserslautern just one point off the promotion play-off spot.",
+                                "One source lists Kaiserslautern midfielder Marlon Ritter, a regular starter in seven of 12 league games, as injured, which slightly weakens the visitors in midfield.",
+                                "Holstein Kiel have drawn four of their six home league games while Kaiserslautern have scored and conceded just four goals across six away trips, pointing toward a tight, low-scoring draw."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.3,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kaiserslautern are without regular-starting midfielder Marlon Ritter (7 league starts), although all listed absences are supported by one source only.",
+                                "Kaiserslautern are only two points off automatic promotion, while Kiel need points to close a four-point gap to safety.",
+                                "Kiel have lost their last three matches and scored once, whereas Kaiserslautern have lost only one of their last six."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.33,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Kiel are 18th and 4 points from safety with 22 games left, while Kaiserslautern are 5th and only 1 point off the play-off places and 2 off automatic promotion, so both sides need the points and Kiel more urgently.",
+                                "Team news is one source only: Kaiserslautern miss regular-starter midfielder Marlon Ritter (7 of 12 league starts), while their other listed absences and Kiel's two absences are non-starters or have no confirmed role, so the expected-goals ",
+                                "Kiel have drawn 4 of 6 at home and won only once all season, and Kaiserslautern have scored just 4 in 6 away games, which points to a tight away edge rather than an open home win."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.3359,
+                        0.2891,
+                        0.375
+                    ],
+                    "p_adj": [
+                        0.341545,
+                        0.283855,
+                        0.3746
+                    ],
+                    "p_llm": [
+                        0.313655,
+                        0.310535,
+                        0.37581
+                    ],
+                    "p_shadow": [
+                        0.335904,
+                        0.289111,
+                        0.374985
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "holstein-kiel-vs-kaiserslautern-2026-11-28"
+            },
+            "sha256": "799c3e375cc83936aca06627622e6fc74ed3e34f8a98c27b61c6d52ce8807352",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0014-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "al-nassr",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "saudi-pro-league",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "ks-2627-0005",
+                "home": "al-hazem",
+                "inputs": {
+                    "elo_away": 1775.2,
+                    "elo_home": 1358.1,
+                    "lambda_away": 2.598598,
+                    "lambda_home": 0.931665,
+                    "last_result_used": "2026-11-26",
+                    "market": {
+                        "books": 14,
+                        "captured_utc": "2026-11-27T12:15:03Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.106115,
+                        0.16863,
+                        0.725254
+                    ],
+                    "p_elo": [
+                        0.090479,
+                        0.202359,
+                        0.707162
+                    ],
+                    "p_market": [
+                        0.08149,
+                        0.127745,
+                        0.790765
+                    ],
+                    "p_stat": [
+                        0.085481,
+                        0.17039,
+                        0.744129
+                    ],
+                    "retained_mass": 0.999999999947,
+                    "rho": -0.084567,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9192,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-28T12:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-27T12:20:52Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5649,
+                    "draw_risk": false,
+                    "over_2_5": 0.6858,
+                    "p": [
+                        0.0855,
+                        0.1704,
+                        0.7441
+                    ],
+                    "p_display": [
+                        8.6,
+                        17,
+                        74.4
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "0-2",
+                    "top_score_overall": "0-2",
+                    "top_scores": [
+                        {
+                            "p": 0.1015,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0946,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0879,
+                            "score": "0-3"
+                        },
+                        {
+                            "p": 0.0819,
+                            "score": "1-3"
+                        },
+                        {
+                            "p": 0.0777,
+                            "score": "1-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.64,
+                                "draw": 0.19,
+                                "home": 0.17
+                            },
+                            "reason_types": [
+                                "base_rate",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Nassr have scored 29 goals in 12 league games against 14 for Al Hazem, who have conceded 20, and the last four league meetings all went to Al Nassr or ended 4-4.",
+                                "Al Hazem are 15th, only 1 point above the relegation zone, while Al Nassr are 2 points off the lead and need the win.",
+                                "Only Sultan Al Ghannam is listed out for Al Nassr, from one source, and his role is unknown, so the effect is small; Al Hazem list no absences from one source."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.99,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.7,
+                                "draw": 0.18,
+                                "home": 0.12
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Al Nassr are 2 points behind the leaders and need a win to keep pressure on the title race, while Al Hazem are only 1 point above the relegation zone, so both have clear motivation but Al Nassr have far more quality to convert it.",
+                                "Al Nassr are missing Sultan Al Ghannam, a regular right-back, but the absence is single-source and Al Hazem have no confirmed absences, so the team-news impact is minimal.",
+                                "Al Nassr have won the last three league meetings by an aggregate of 10-2, including a 2-0 win at Al Hazem in October 2025 and a 4-0 home win in February 2026."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.65,
+                                "draw": 0.21,
+                                "home": 0.14
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides have urgent incentives, with Al Nassr two points off the league lead and Al Hazem sitting just one point above the relegation zone.",
+                                "Al Hazem have had 30 rest days compared to just four for Al Nassr following their midweek continental fixture, giving the hosts a major freshness advantage.",
+                                "Team news relies on one source, which lists no absences for Al Hazem and only Sultan Al Ghannam out injured for Al Nassr."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.62,
+                                "draw": 0.22,
+                                "home": 0.16
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Al Nassr's Sultan Al Ghannam is out according to one source, a modest defensive-wide absence that slightly reduces their attacking expectation.",
+                                "Al Nassr have had only four rest days after two matches in 14 days, while Al Hazem have had 30 days without a match.",
+                                "Al Nassr are two points off the lead, so the stronger side have a clear incentive to maintain pressure at the top."
+                            ],
+                            "score": "0-2"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.54,
+                                "draw": 0.26,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Al Hazem sit 1 point above the relegation places, so they need points more than in a mid-table meeting, while Al Nassr are only 2 points off the leaders.",
+                                "Al Nassr have had 4 rest days and 2 matches in the last 14 days, against 30 rest days and none in that span for Al Hazem.",
+                                "Al Nassr list Sultan Al Ghannam out from one source only, with no role or start totals given, and Al Hazem absences come from one source that does not confirm a full squad."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.0978,
+                        0.18,
+                        0.7223
+                    ],
+                    "p_adj": [
+                        0.086339,
+                        0.171684,
+                        0.741977
+                    ],
+                    "p_llm": [
+                        0.156653,
+                        0.211586,
+                        0.631761
+                    ],
+                    "p_shadow": [
+                        0.097776,
+                        0.179952,
+                        0.722272
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "al-hazem-vs-al-nassr-2026-11-28"
+            },
+            "sha256": "bb4ef5791ab0652d84058d8296a5a12c9881ce1580f824e96adc32cb54e60ea4",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ks-2627-0005-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "auckland-fc",
                 "batch_id": "2026-11-27T0015Z-model-predict",
                 "competition": "a-league",
