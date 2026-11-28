@@ -238,7 +238,7 @@
                 "slug": "machida-zelvia-vs-tokyo-verdy-1969-2026-11-29"
             },
             "sha256": "c5dccbec55469bc0453c9f87ce23e5e4739c5028269e64dd9e17ce7945d1ab05",
-            "commit": "pending",
+            "commit": "e1390255c23af993ee63f523a1a8417e2531e228",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0027-r1.json",
             "status": "pending",
             "result": null
@@ -21778,8 +21778,12 @@
             "sha256": "071b6097d4049938d98d18010f5e668ad513a55b4db5c405608a1d53cd29bccf",
             "commit": "ba2264d00faad04d5ff6aa47f3d7888eca2f83e2",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0020-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-1",
+                "correct": false,
+                "rps": 0.1927
+            }
         },
         {
             "record": {
@@ -22016,8 +22020,12 @@
             "sha256": "400481ee8f95aa457441d4526d24549c12d560368767a8a02dca0f39939a6e3d",
             "commit": "ba2264d00faad04d5ff6aa47f3d7888eca2f83e2",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0021-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-1",
+                "correct": true,
+                "rps": 0.0655
+            }
         },
         {
             "record": {
