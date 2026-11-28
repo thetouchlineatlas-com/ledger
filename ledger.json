@@ -7,6 +7,958 @@
     "records": [
         {
             "record": {
+                "away": "bayer-leverkusen",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "bundesliga",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "bl-2627-0103",
+                "home": "borussia-dortmund",
+                "inputs": {
+                    "elo_away": 1651.6,
+                    "elo_home": 1709.2,
+                    "lambda_away": 1.29737,
+                    "lambda_home": 1.886206,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 23,
+                        "captured_utc": "2026-11-28T19:05:59Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.506295,
+                        0.236324,
+                        0.257382
+                    ],
+                    "p_elo": [
+                        0.481139,
+                        0.274378,
+                        0.244483
+                    ],
+                    "p_market": [
+                        0.452884,
+                        0.239217,
+                        0.307899
+                    ],
+                    "p_stat": [
+                        0.485746,
+                        0.25896,
+                        0.255294
+                    ],
+                    "retained_mass": 0.99999999979,
+                    "rho": -0.057852,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0521,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T18:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T19:08:40Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6279,
+                    "draw_risk": false,
+                    "over_2_5": 0.6084,
+                    "p": [
+                        0.4857,
+                        0.259,
+                        0.2553
+                    ],
+                    "p_display": [
+                        48.6,
+                        25.9,
+                        25.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1176,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0917,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0707,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0694,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.068,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.99,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.23,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Dortmund lead the table by 2 points on 24, while Leverkusen are 5 points back in 5th, so the home side has more to protect and the visitors need the win to keep pace.",
+                                "Absences on both sides are minor: Konstantelias started 1 of 10 and Inácio 0 of 10 for Dortmund, Vázquez started 2 of 10 and Terrier 0 of 10 for Leverkusen, all confirmed by two sources, so goal expectations barely change.",
+                                "Leverkusen have 3 rest days after a Europa League match on Thursday against Dortmund's 5, and both play the DFB-Pokal again 3 days later."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.24,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Dortmund lead the Bundesliga and are 2 points clear at the top, so they need the points to protect first place, while Leverkusen sit 5th and 5 points behind the leaders.",
+                                "The absences are mostly squad players: Dortmund are missing Emre Can plus two players with 1 or 0 league starts, and Leverkusen are missing Lucas Vázquez (2 starts) and Martin Terrier (0 starts), so neither side loses a key regular starter.",
+                                "Dortmund are unbeaten in the league and have won 4 of 5 at home, whereas Leverkusen have lost 2 of 5 away and conceded 12 away goals, which points to a home win."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.24,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "League leaders Borussia Dortmund hold a two-point lead at the top, while fifth-placed Bayer Leverkusen can close a five-point gap to the summit.",
+                                "Dortmund have five days of rest after playing on Tuesday compared to just three days for Leverkusen following their Thursday trip to Dinamo Zagreb, with both sides facing cup ties three days later.",
+                                "Dortmund's unbeaten league defense that has conceded just three times in five home games faces a high-scoring Leverkusen side that has conceded 12 goals across five away league fixtures."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.25,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Leverkusen have only three rest days after their Europa League trip to Dinamo Zagreb, versus Dortmund's five, slightly reducing the visitors' attacking expectation.",
+                                "Leverkusen's confirmed absences include defender Lucas Vázquez, though he has started only two league matches, while Dortmund's listed absentees include no established league regular.",
+                                "Dortmund are unbeaten in the league and have conceded only three goals in five home matches, but Leverkusen's 24 league goals make them capable of matching them."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.27,
+                                "home": 0.47
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Leverkusen have only 3 rest days to Dortmund’s 5, and both have a DFB-Pokal tie three days later, which weighs more on the away side.",
+                                "Dortmund are 2 points clear at the top, while Leverkusen are 5 behind, so the visitors need the points more and are likelier to push.",
+                                "Dortmund are unbeaten in the league and have taken 13 of 15 home points, which makes a home win more likely than Leverkusen’s mixed away record of 2 wins from 5."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4875,
+                        0.2563,
+                        0.2562
+                    ],
+                    "p_adj": [
+                        0.485746,
+                        0.25896,
+                        0.255294
+                    ],
+                    "p_llm": [
+                        0.494195,
+                        0.24605,
+                        0.259755
+                    ],
+                    "p_shadow": [
+                        0.487459,
+                        0.256343,
+                        0.256198
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "borussia-dortmund-vs-bayer-leverkusen-2026-11-29"
+            },
+            "sha256": "8705449daed55b5b8eb681cb7edfedc44da0ebc8ed0477a75ee1cab078523659",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/bl-2627-0103-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fc-twente",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0030",
+                "home": "nec-nijmegen",
+                "inputs": {
+                    "elo_away": 1631.6,
+                    "elo_home": 1504.6,
+                    "lambda_away": 1.710776,
+                    "lambda_home": 1.429678,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T19:05:59Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.314993,
+                        0.249255,
+                        0.435752
+                    ],
+                    "p_elo": [
+                        0.290635,
+                        0.281958,
+                        0.427407
+                    ],
+                    "p_market": [
+                        0.233379,
+                        0.222982,
+                        0.543639
+                    ],
+                    "p_stat": [
+                        0.301285,
+                        0.262513,
+                        0.436202
+                    ],
+                    "retained_mass": 0.999999999945,
+                    "rho": -0.070502,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T19:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T19:08:40Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6334,
+                    "draw_risk": false,
+                    "over_2_5": 0.603,
+                    "p": [
+                        0.3013,
+                        0.2625,
+                        0.4362
+                    ],
+                    "p_display": [
+                        30.1,
+                        26.3,
+                        43.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1193,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0906,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0724,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0681,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0666,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.25,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Twente have scored 32 and conceded 13 in 13 league games, while NEC are winless at home (0W 4D 3L, goals 10-16) and have let in 16 in 7 home games.",
+                                "NEC are without defenders Schuurs (2 league goals, 10% of the team's) and Nuytinck, while Twente lose goalkeeper Unnerstall (6 of 13 starts) and defender Bruns (5 starts), though none is a clear regular starter.",
+                                "Both sides have 3 rest days, but Twente also have a KNVB Beker tie at Fortuna Sittard 3 days later, after a Europa trip to Freiburg, so rotation is possible."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.27,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "FC Twente are missing first-choice goalkeeper Lars Unnerstall (6 league starts) and regular defender Max Bruns (5 starts), while NEC are without Perr Schuurs, who has contributed 2 goals and 2 assists from defence.",
+                                "NEC have not won any of their 7 home league games this season (4D 3L), while Twente have won 3 of 6 away games and scored 18 away goals.",
+                                "Twente sit 2 points behind the leaders and need the points to stay in the title race, whereas NEC are 5 points above the relegation zone and under less immediate pressure."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.27,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "FC Twente sit just two points off the league lead and have strong motivation to keep pace at the top, whereas NEC are five points clear of the relegation zone.",
+                                "Both defences are depleted, with NEC missing centre-back Perr Schuurs (four starts, two goals, two assists) alongside doubtful defenders reported by one source, while Twente lack goalkeeper Lars Unnerstall (six starts) and defender Max Brun",
+                                "NEC are still winless after seven home league games (four draws, three losses), making them vulnerable to a Twente side that averages three goals per game across six away league outings."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 1.06,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.25,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Twente are without first-choice goalkeeper Lars Unnerstall and five-start defender Max Bruns, while NEC's confirmed defensive absences include Schuurs and Nuytinck.",
+                                "Twente are only two points off the lead, giving their stronger side a clear incentive to press for an away win.",
+                                "Twente's away record of 3 wins, 2 draws and 18-5 goals from six matches contrasts with NEC's winless home league record."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.54,
+                                "draw": 0.28,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "NEC have not won any of seven home league games (0W 4D 3L, 10-16), while Twente have scored 18 and conceded 5 in six away games, so the usual home edge is reversed.",
+                                "Twente are only 2 points behind the leaders with 21 games left and need the points more; NEC are 5 points above the relegation zone, not in immediate drop danger.",
+                                "No confirmed regular starter (half of league games) is absent; Twente's goalkeeper Unnerstall (6 of 13) is out on two sources, NEC's outs are squad players including Schuurs (4 starts, 10% of goals), and two NEC doubts are single-source."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2901,
+                        0.2652,
+                        0.4446
+                    ],
+                    "p_adj": [
+                        0.302314,
+                        0.264816,
+                        0.43287
+                    ],
+                    "p_llm": [
+                        0.244154,
+                        0.264778,
+                        0.491067
+                    ],
+                    "p_shadow": [
+                        0.29013,
+                        0.265231,
+                        0.444638
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "nec-nijmegen-vs-fc-twente-2026-11-29"
+            },
+            "sha256": "c4a47cc4a04306665c5c87de38353f3d608da620f09684b2291afc66d83279fb",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0030-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "paok",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0014",
+                "home": "aek-athens-gr",
+                "inputs": {
+                    "elo_away": 1722.2,
+                    "elo_home": 1758.8,
+                    "lambda_away": 1.020224,
+                    "lambda_home": 1.636813,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-28T19:05:59Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.499544,
+                        0.282568,
+                        0.217888
+                    ],
+                    "p_elo": [
+                        0.45891,
+                        0.277984,
+                        0.263106
+                    ],
+                    "p_market": [
+                        0.575152,
+                        0.235101,
+                        0.189747
+                    ],
+                    "p_stat": [
+                        0.48341,
+                        0.279108,
+                        0.237481
+                    ],
+                    "retained_mass": 0.999999999731,
+                    "rho": -0.154753,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T19:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T19:08:40Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5335,
+                    "draw_risk": false,
+                    "over_2_5": 0.4966,
+                    "p": [
+                        0.4834,
+                        0.2791,
+                        0.2375
+                    ],
+                    "p_display": [
+                        48.3,
+                        27.9,
+                        23.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1336,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0936,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0928,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0909,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0872,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.24,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "PAOK have both first-choice goalkeepers out (Pavlenka, Monastirlis) and Ndiaye (5 of the team's 23 league goals) is doubtful, all from one source, which lowers their expected goals and defensive stability.",
+                                "AEK have won all 5 home league games 19-1, though PAOK beat them 3-1 in the cup on 28 October and AEK are playing a European and cup-heavy schedule.",
+                                "AEK have 5 rest days against 7 for PAOK, and both sides play a cup match on 2 December, so rotation is possible but the gap is small."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.25,
+                                "draw": 0.23,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "PAOK are missing or doubtful for a large group, including top scorer Cherif Ndiaye (5 league goals, 22% of their total) and both first-choice goalkeepers Pavlenka and Monastirlis, which weakens their attack and last line.",
+                                "AEK have won all 5 home league games this season with 19 goals scored and only 1 conceded, while PAOK have lost 2 of 5 away league games.",
+                                "PAOK won the most recent meeting 3-1 in the Cup in late October, but AEK won the last league meeting at this ground 3-0 in April."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.91,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.24,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "One source lists PAOK's regular starting forward Cherif Ndiaye (22% of their league goals) as doubtful alongside two goalkeepers and multiple squad players out.",
+                                "AEK Athens have won all five home league games this season by a combined score of 19-1, giving them a clear edge over a PAOK side that has lost two of five away.",
+                                "PAOK have a slight freshness advantage with seven rest days compared to five for AEK Athens, who travelled to Como in the Champions League midweek."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google AI Studio"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 1.06,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.25,
+                                "home": 0.51
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "PAOK have multiple single-source absences including two goalkeepers and Shoretire, while 11-start, five-goal Ndiaye is doubtful, reducing their depth and attacking outlook.",
+                                "AEK have won all five league home matches by a 19-1 aggregate, a major home-edge contrast to PAOK's even 8-8 away goal record.",
+                                "Separated by one point and both already seven or eight points off the leaders, this is a direct match neither side can comfortably concede."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.24,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "This is a direct title-race meeting, not a routine fixture: AEK are 7 points off the lead with a game in hand, PAOK 8 back, so the home side can open a gap on a rival.",
+                                "AEK have won all five home league games and conceded only once, so PAOK's level away record (2W 1D 2L, 8-8) faces a defence that has barely been breached at OPAP Arena.",
+                                "Every absence is from one source only; PAOK's main scorer Ndiaye (11 of 11 starts, 22% of their league goals) is only doubtful, so the away attack is trimmed slightly rather than treated as confirmed out, while AEK's listed absentees are sq"
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5,
+                        0.2714,
+                        0.2286
+                    ],
+                    "p_adj": [
+                        0.492687,
+                        0.279544,
+                        0.227769
+                    ],
+                    "p_llm": [
+                        0.528429,
+                        0.240341,
+                        0.231229
+                    ],
+                    "p_shadow": [
+                        0.499978,
+                        0.271408,
+                        0.228613
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "aek-athens-gr-vs-paok-2026-11-29"
+            },
+            "sha256": "fadf2edc425187b84604bf2319deb64a0306775625ba8f840c0cbea7bb000107",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0014-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "pisa",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0029",
+                "home": "arezzo",
+                "inputs": {
+                    "elo_away": 1136.5,
+                    "elo_home": 1066.9,
+                    "lambda_away": 1.81916,
+                    "lambda_home": 0.997209,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T19:05:59Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.194096,
+                        0.249987,
+                        0.555917
+                    ],
+                    "p_elo": [
+                        0.347314,
+                        0.285636,
+                        0.36705
+                    ],
+                    "p_market": [
+                        0.232965,
+                        0.269146,
+                        0.497889
+                    ],
+                    "p_stat": [
+                        0.263531,
+                        0.271424,
+                        0.465046
+                    ],
+                    "retained_mass": 0.999999999875,
+                    "rho": -0.098099,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T18:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T19:08:40Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5494,
+                    "draw_risk": false,
+                    "over_2_5": 0.5222,
+                    "p": [
+                        0.2635,
+                        0.2715,
+                        0.465
+                    ],
+                    "p_display": [
+                        26.4,
+                        27.1,
+                        46.5
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1294,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0828,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0826,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0821,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0765,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.3,
+                                "home": 0.23
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Arezzo have scored 10 goals in 13 games and lost 0-3 at Mantova four days ago, while Pisa have scored 22 and are unbeaten in their last four.",
+                                "Arezzo sit 18th, level on goal difference with 17th and 7 points off the play-offs, while Pisa are 7th and 2 points clear of 9th, so both need points.",
+                                "Chierico is out for Arezzo (one source), but he started only 3 of 13 games and scored 1 of the team's 10 goals, so the effect is small; Lusuardi's role for Pisa is not listed."
+                            ],
+                            "score": "0-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.31,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Arezzo are missing midfielder Luca Chierico, who has started only 3 of 13 league games and scored 1 of their 10 league goals, so the absence is minor; Pisa's only listed absentee, Mateus Lusuardi, is single-source with no role detail, so no",
+                                "Arezzo are winless at home this season (0W 3D 3L, 4 goals scored) and have lost their last two matches 0-3 and 0-1, while Pisa have the league's stronger away record at 3W 2D 1L with 10 goals scored.",
+                                "Pisa sit 7th and need points to protect a promotion play-off place, only 2 points clear of 9th, while Arezzo are in the relegation zone on goal difference and desperate for a first home win."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.31,
+                                "home": 0.23
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides have immediate table pressure as Arezzo sit in the relegation zone on goal difference while Pisa hold a promotion play-off spot by just 2 points.",
+                                "Pisa have lost only once in 6 away league outings while winless-at-home Arezzo have scored just 4 goals in 6 home games, making an away victory likely.",
+                                "Team news carries only one source for the injuries to rotation midfielder Luca Chierico for Arezzo and Mateus Lusuardi for Pisa, leaving expected lineups largely unaffected."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.52,
+                                "draw": 0.28,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Arezzo are without single-source-listed midfielder Luca Chierico, whose one league goal accounts for 10% of their total; Pisa's Lusuardi absence is also reported by only one source and has no role data supplied.",
+                                "Arezzo are winless at home (0W-3D-3L, 4-11 goals), while Pisa have won three of six away matches and conceded only five.",
+                                "Arezzo are in the relegation zone on goal difference, whereas Pisa need points to protect a two-point promotion-play-off margin."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.32,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Pisa have won three and drawn two of six away league games, while Arezzo are still winless at home with only four goals in six, so the visitors look the more reliable side in this setting.",
+                                "Arezzo are in the relegation zone and level with 17th only on goal difference, so they need the points more than Pisa, who sit in the play-off places two points clear of 9th.",
+                                "Arezzo’s only listed absence is a midfielder with three league starts and one goal, from one source, and Pisa’s absentee has no role detail from one source, so neither looks like a first-choice loss."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2521,
+                        0.2781,
+                        0.4698
+                    ],
+                    "p_adj": [
+                        0.260674,
+                        0.271607,
+                        0.46772
+                    ],
+                    "p_llm": [
+                        0.219695,
+                        0.304162,
+                        0.476143
+                    ],
+                    "p_shadow": [
+                        0.252128,
+                        0.278069,
+                        0.469803
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "arezzo-vs-pisa-2026-11-29"
+            },
+            "sha256": "2e33548f3b147a9cee19863196460305d1891395b165a56144b97467444e7b5a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0029-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "club-brugge-be",
                 "batch_id": "2026-11-28T0015Z-model-predict",
                 "competition": "belgian-pro-league",
@@ -238,7 +1190,7 @@
                 "slug": "standard-liege-vs-club-brugge-be-2026-11-29"
             },
             "sha256": "3d6e9e7d004505655e910515d9d2ea186a4f5eb799a5c8ad5b4b605bec27f1fb",
-            "commit": "pending",
+            "commit": "3964292cd8f6aac8326a4e6fa4a89ac98f7a765e",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0017-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +1428,7 @@
                 "slug": "union-st-gilloise-be-vs-kaa-gent-be-2026-11-29"
             },
             "sha256": "d340394c159e8d6f877902fdef076a110a04c419f5512a0ed2d756febc81a3cc",
-            "commit": "pending",
+            "commit": "3964292cd8f6aac8326a4e6fa4a89ac98f7a765e",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0018-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +1666,7 @@
                 "slug": "celta-vigo-vs-villarreal-2026-11-29"
             },
             "sha256": "b3329621c719f9c437cb688976b6732722bec11d4f1b42252983e5d3c23d0c72",
-            "commit": "pending",
+            "commit": "3964292cd8f6aac8326a4e6fa4a89ac98f7a765e",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0116-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +1904,7 @@
                 "slug": "gil-vicente-vs-estoril-praia-2026-11-29"
             },
             "sha256": "cc78a9bde04a5753c6a4baaa4212bfcda47e21f1665bcc5a435bf133b95e0d3b",
-            "commit": "pending",
+            "commit": "3964292cd8f6aac8326a4e6fa4a89ac98f7a765e",
             "file": "https://thetouchlineatlas.com/ledger/pt-2627-0095-r1.json",
             "status": "pending",
             "result": null
@@ -1190,7 +2142,7 @@
                 "slug": "cadiz-vs-cordoba-2026-11-29"
             },
             "sha256": "1b5183a6e5101bce8599d879df2c95cb8c9d7d6b87581865c09fe69f6f613cda",
-            "commit": "pending",
+            "commit": "3964292cd8f6aac8326a4e6fa4a89ac98f7a765e",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0031-r1.json",
             "status": "pending",
             "result": null
@@ -18815,8 +19767,12 @@
             "sha256": "66c1218ae2a8a15c6f3fd0b549f8f013444f4c0b862aed08da52e17bc9d859f1",
             "commit": "51a471b49557f06d86f2c79eb9c96fa2f02dec35",
             "file": "https://thetouchlineatlas.com/ledger/l1-2627-0054-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-5",
+                "correct": true,
+                "rps": 0.1099
+            }
         },
         {
             "record": {
@@ -19053,8 +20009,12 @@
             "sha256": "e839dfd16ea76dc9ad5e2b55451c6fc8ce4c7e84da65de8132ec1866a81822f3",
             "commit": "51a471b49557f06d86f2c79eb9c96fa2f02dec35",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0030-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-2",
+                "correct": true,
+                "rps": 0.1598
+            }
         },
         {
             "record": {
