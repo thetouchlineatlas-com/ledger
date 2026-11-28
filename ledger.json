@@ -7,6 +7,244 @@
     "records": [
         {
             "record": {
+                "away": "kocaelispor",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0027",
+                "home": "corum-fk",
+                "inputs": {
+                    "elo_away": 1380.8,
+                    "elo_home": 1345.6,
+                    "lambda_away": 1.216869,
+                    "lambda_home": 1.400849,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T11:05:51Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.40274,
+                        0.280349,
+                        0.316912
+                    ],
+                    "p_elo": [
+                        0.382905,
+                        0.285194,
+                        0.331901
+                    ],
+                    "p_market": [
+                        0.492891,
+                        0.268612,
+                        0.238497
+                    ],
+                    "p_stat": [
+                        0.395448,
+                        0.280681,
+                        0.323871
+                    ],
+                    "retained_mass": 0.999999999963,
+                    "rho": -0.075559,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T10:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T11:12:07Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.54,
+                    "draw_risk": false,
+                    "over_2_5": 0.4858,
+                    "p": [
+                        0.3954,
+                        0.2807,
+                        0.3239
+                    ],
+                    "p_display": [
+                        39.5,
+                        28.1,
+                        32.4
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.134,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0911,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0855,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0825,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0811,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.28,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Çorum FK concede freely (25 goals in 12 games, 0-5 and 2-4 in the last two away/home losses) while Kocaelispor have the league's tighter record (11 conceded) and drew 2-2 with Fenerbahçe.",
+                                "Çorum FK may be without Gokhan Sazdagi (started 10 of 12, doubtful on one source) and Berat Özdemir is out; Kocaelispor have Petković out and several defenders doubtful, mostly on one source, so both sides get a small cut.",
+                                "Home wins are 48% this season but only 42% last season with 29% draws, so a balanced match with a fair chance of a draw fits."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.24,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Çorum FK may be without regular midfielder Gokhan Sazdagi (10 starts, 2 assists), while Kocaelispor have several doubtful defenders including Massadio Haïdara (6 starts, 1 goal) and Tanguy Zoukrou (5 starts), so neither side is at full stre",
+                                "Çorum FK have lost their last two league games 0-5 at home to Fenerbahçe and 2-4 at Istanbul Basaksehir, conceding 9 goals, while Kocaelispor are unbeaten in their last three league matches including a 2-2 draw with Fenerbahçe.",
+                                "Kocaelispor sit 8th on 20 points and are 12 points clear of relegation but 11 behind the leaders, so they have more incentive to push for a European place, while Çorum FK are only 8 points above the drop zone and need home points to avoid b"
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.24,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Çorum FK are without midfielder Berat Özdemir (5 starts) per two sources, while regular starter Gökhan Sazdağı (10 starts, 2 assists) and Kocaelispor defender Massadio Haïdara (6 starts) are doubtful according to only one source.",
+                                "Kocaelispor arrive on a five-match unbeaten run across all competitions, whereas high-scoring Çorum FK have conceded 25 league goals and lost their last two matches.",
+                                "Both teams have gone without a draw in their respective home and away league games this season, matching a Süper Lig campaign where only 15% of matches have ended level."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.24,
+                                "home": 0.32
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "base_rate"
+                            ],
+                            "reasons": [
+                                "Çorum have Özdemir out and may also miss regular starter Sazdagi (10 starts, two assists), though Sazdagi is listed by one source.",
+                                "Kocaelispor are unbeaten in their last three league matches, including a 2-0 away win at Eyüpspor and a 2-2 draw with Fenerbahçe, while Çorum have conceded nine in their last two.",
+                                "Away wins have accounted for 36% of Süper Lig matches this season, supporting Kocaelispor's edge despite Çorum's home venue."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.27,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "The only two-source absence is Çorum midfielder Berat Özdemir (5 of 12 starts, not a main scorer); Sazdagi, Haïdara and Petković are doubtful or out on one source only, so expected goals are left unchanged.",
+                                "Both sides have had a light fortnight and then a Turkish Cup tie three days later, so neither has a clear rest or rotation edge.",
+                                "Kocaelispor are the more reliable side here: unbeaten in their last five, tighter all season (15-11), while Çorum have lost their last two and are 2W 3L with 6-9 at home."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "1/5",
+                    "ai_combined": [
+                        0.3834,
+                        0.2775,
+                        0.3391
+                    ],
+                    "p_adj": [
+                        0.392383,
+                        0.282996,
+                        0.32462
+                    ],
+                    "p_llm": [
+                        0.34628,
+                        0.254105,
+                        0.399615
+                    ],
+                    "p_shadow": [
+                        0.383439,
+                        0.277505,
+                        0.339056
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "corum-fk-vs-kocaelispor-2026-11-29"
+            },
+            "sha256": "5f8dcf12c848cf7052165c2c4b1ae0beb6bfe0b53ee5167221640b5c855dcc8b",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0027-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "tokyo-verdy-1969",
                 "batch_id": "2026-11-27T0015Z-model-predict",
                 "competition": "j1-league",
@@ -21302,8 +21540,12 @@
             "sha256": "589b2bd5e531ab321180a4bebbede636596f69b4303a5b885f57c362bc04e323",
             "commit": "060c8614769d55a6792551c906cbda1b55363dac",
             "file": "https://thetouchlineatlas.com/ledger/al-2627-0003-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-3",
+                "correct": true,
+                "rps": 0.2176
+            }
         },
         {
             "record": {
