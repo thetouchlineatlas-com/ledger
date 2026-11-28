@@ -7,6 +7,482 @@
     "records": [
         {
             "record": {
+                "away": "gamba-osaka",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0025",
+                "home": "kawasaki-frontale",
+                "inputs": {
+                    "elo_away": 1452.6,
+                    "elo_home": 1530.4,
+                    "lambda_away": 1.407871,
+                    "lambda_home": 1.915997,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T06:12:03Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.493546,
+                        0.224307,
+                        0.282147
+                    ],
+                    "p_elo": [
+                        0.502408,
+                        0.270325,
+                        0.227267
+                    ],
+                    "p_market": [
+                        0.497298,
+                        0.232901,
+                        0.269801
+                    ],
+                    "p_stat": [
+                        0.503666,
+                        0.244609,
+                        0.251725
+                    ],
+                    "retained_mass": 0.999999999736,
+                    "rho": -0.01187,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T06:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T06:17:17Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6495,
+                    "draw_risk": false,
+                    "over_2_5": 0.6395,
+                    "p": [
+                        0.5037,
+                        0.2446,
+                        0.2517
+                    ],
+                    "p_display": [
+                        50.4,
+                        24.4,
+                        25.2
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1072,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.095,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0714,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0692,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0675,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.25,
+                                "home": 0.53
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Gamba Osaka are 19th, 3 points from safety, while Kawasaki in 5th are 9 points off the leaders, so both sides need points but Gamba's need is more urgent.",
+                                "Gamba Osaka play at Jeonbuk in the AFC Champions League Elite 3 days after this match, which could affect their lineup, while Kawasaki's next game is 5 days away.",
+                                "Kawasaki are 5W 2D 1L at home with 18 goals, while Gamba have won only once in 8 away league games."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Gamba Osaka are in the relegation zone, 3 points from safety, so they need points badly, but Kawasaki are 5th and chasing the leaders, so the home side also has clear motivation.",
+                                "Kawasaki have won 5 of 8 home league games this season, while Gamba have won only 1 of 8 away, which points to a strong home advantage in this matchup.",
+                                "Gamba have not lost any of the last five league meetings, winning three, so they have a recent edge in this fixture despite their poor league position."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "targets",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Gamba Osaka are in the relegation zone and three points from safety, giving them an urgent need for points despite facing fifth-placed Kawasaki Frontale.",
+                                "Gamba Osaka have an AFC Champions League Elite away match against Jeonbuk Hyundai Motors just three days after this fixture, which may force them to manage player minutes.",
+                                "One source lists no absences for either side yet, so expected goal adjustments remain neutral rather than guessing at squad availability."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.24,
+                                "home": 0.57
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Gamba are three points from safety in the relegation zone, giving them a pressing need for points despite Kawasaki also remaining nine points off the lead.",
+                                "Kawasaki's 5-2-1 home league record contrasts with Gamba's one away win in eight, favouring the hosts in this fixture.",
+                                "Each side has no absences listed by only one source, so neither squad should be assumed fully available."
+                            ],
+                            "score": "2-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.26,
+                                "home": 0.54
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "targets",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Unlike an ordinary table mismatch, Gamba are unbeaten in the last five league meetings, with three wins and two draws.",
+                                "Gamba are 19th and three points from safety, so they need the points more than fifth-placed Kawasaki, who are nine off the leaders.",
+                                "Both sides have four rest days, but Gamba's next match is AFC Champions League Elite away in three days, which can split focus."
+                            ],
+                            "score": "2-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5133,
+                        0.246,
+                        0.2407
+                    ],
+                    "p_adj": [
+                        0.503666,
+                        0.244609,
+                        0.251725
+                    ],
+                    "p_llm": [
+                        0.550122,
+                        0.250058,
+                        0.19982
+                    ],
+                    "p_shadow": [
+                        0.513307,
+                        0.246013,
+                        0.24068
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "kawasaki-frontale-vs-gamba-osaka-2026-11-29"
+            },
+            "sha256": "613aa9bed62f67745862b578f7c0f222a8f8c82d112bf6820b7a5c6814156be0",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0025-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "avispa-fukuoka",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "j1-league",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "j1-2627-0026",
+                "home": "nagoya-grampus",
+                "inputs": {
+                    "elo_away": 1358.7,
+                    "elo_home": 1448.7,
+                    "lambda_away": 0.977292,
+                    "lambda_home": 1.390587,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T06:12:03Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.462856,
+                        0.274402,
+                        0.262742
+                    ],
+                    "p_elo": [
+                        0.515056,
+                        0.26764,
+                        0.217304
+                    ],
+                    "p_market": [
+                        0.520311,
+                        0.264363,
+                        0.215326
+                    ],
+                    "p_stat": [
+                        0.493288,
+                        0.269689,
+                        0.237023
+                    ],
+                    "retained_mass": 0.99999999997,
+                    "rho": -0.011938,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T06:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T06:17:17Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4681,
+                    "draw_risk": false,
+                    "over_2_5": 0.4245,
+                    "p": [
+                        0.4933,
+                        0.2697,
+                        0.237
+                    ],
+                    "p_display": [
+                        49.3,
+                        27,
+                        23.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1372,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1266,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0965,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0943,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0936,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Fukuoka are 20th, 7 points from safety, while Nagoya sit 4 points above the drop and need points to stay clear.",
+                                "Fukuoka have lost all 7 away league games (4-16 goals), and Nagoya have not lost in their last two league outings.",
+                                "Only one source lists no absences for either side, which does not confirm full squads, so no adjustment is made."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Avispa Fukuoka are 20th, 7 points from safety with 22 left, so they must chase the game away from home, which can leave them open against a Nagoya side only 4 points above the drop zone and also needing points.",
+                                "Avispa Fukuoka have lost all 7 away league games this season, scoring 4 and conceding 16, while Nagoya have won 2 of their last 3 league matches.",
+                                "Nagoya won 5-1 in the most recent meeting at Avispa Fukuoka in March 2026, though the April 2026 home meeting ended 2-2."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides urgently need points near the bottom, with Nagoya only four points above the relegation zone and 20th-placed Fukuoka already seven points adrift of safety.",
+                                "Avispa Fukuoka have lost all seven of their away league matches this season while conceding 16 goals, making them heavy underdogs on the road.",
+                                "One source lists no absences for either club yet, so expected goal adjustments remain neutral rather than guessing at squad availability."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.25,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Avispa are seven points from safety and need a result, while Nagoya are only four points above the relegation zone.",
+                                "Avispa have lost all seven league away matches, conceding 16 goals, which gives Nagoya a clear home-side edge.",
+                                "No absences are listed for either side, but each squad-status list currently comes from one source only."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.26,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Avispa are 20th and 7 points from safety with 22 games left, so they need points more than Nagoya, who sit only 4 points above the drop zone.",
+                                "Avispa have taken no points from 7 away league games (4 goals, 16 conceded), so a road win here would break a season-long pattern rather than extend one.",
+                                "One source lists no absences for either side, which does not confirm that either squad is fully available."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5069,
+                        0.2665,
+                        0.2266
+                    ],
+                    "p_adj": [
+                        0.493288,
+                        0.269689,
+                        0.237023
+                    ],
+                    "p_llm": [
+                        0.560177,
+                        0.252096,
+                        0.187727
+                    ],
+                    "p_shadow": [
+                        0.506859,
+                        0.26653,
+                        0.226611
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "nagoya-grampus-vs-avispa-fukuoka-2026-11-29"
+            },
+            "sha256": "5c26b131e04a4a1f7b421453be35bcab226f160f43b046539c7c27a93b324517",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/j1-2627-0026-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "v-varen-nagasaki",
                 "batch_id": "2026-11-27T0015Z-model-predict",
                 "competition": "j1-league",
@@ -238,7 +714,7 @@
                 "slug": "mito-hollyhock-vs-v-varen-nagasaki-2026-11-29"
             },
             "sha256": "e51ddaba1b2868914dab9fe829beb41ebc8065bae6ffa19af16192eb5acee66f",
-            "commit": "pending",
+            "commit": "76cbb3bf526840ddc5d427635937fc2377333de8",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0023-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +952,7 @@
                 "slug": "yokohama-f-marinos-vs-fc-tokyo-2026-11-29"
             },
             "sha256": "729988f6e7f1ccf97fa196bcb81dec95d9229008b3fa3c024117ec46ccb6edb1",
-            "commit": "pending",
+            "commit": "76cbb3bf526840ddc5d427635937fc2377333de8",
             "file": "https://thetouchlineatlas.com/ledger/j1-2627-0024-r1.json",
             "status": "pending",
             "result": null
