@@ -7,6 +7,958 @@
     "records": [
         {
             "record": {
+                "away": "as-monaco",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "ligue-1",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0072",
+                "home": "lyon",
+                "inputs": {
+                    "elo_away": 1584.5,
+                    "elo_home": 1603.4,
+                    "lambda_away": 1.30452,
+                    "lambda_home": 1.684265,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T20:08:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.460239,
+                        0.245885,
+                        0.293876
+                    ],
+                    "p_elo": [
+                        0.44006,
+                        0.280525,
+                        0.279415
+                    ],
+                    "p_market": [
+                        0.407661,
+                        0.277804,
+                        0.314534
+                    ],
+                    "p_stat": [
+                        0.449381,
+                        0.263417,
+                        0.287202
+                    ],
+                    "retained_mass": 0.999999999958,
+                    "rho": -0.032029,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0083,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T20:12:22Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6013,
+                    "draw_risk": false,
+                    "over_2_5": 0.5683,
+                    "p": [
+                        0.4494,
+                        0.2634,
+                        0.2872
+                    ],
+                    "p_display": [
+                        45,
+                        26.3,
+                        28.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1223,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.091,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0793,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0705,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0697,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.88,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.24,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Monaco are missing Brunner (4 of their 14 league goals) and Golovin (10 starts), have Coulibaly suspended and Diop (3 goals) doubtful, with several of these on one source only, so their attack is thin.",
+                                "Lyon lose midfield starters Bidstrup (9 starts) and Morton (6 starts), but their goals come from elsewhere, so the attack is hit less than the midfield.",
+                                "Lyon have won 4 of 5 at home with 12 goals scored, while Monaco have drawn 5 league games and won only 2 of 6 away."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.88,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.26,
+                                "home": 0.48
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Monaco are missing their main scorer Paris Brunner (4 league goals, 29% of the team's total) and regular creator Aleksandr Golovin (10 starts, 3 assists), which blunts an attack that has only 14 goals in 11 games.",
+                                "Lyon lose three midfield regulars in Bidstrup, Morton and Šulc, but their home attack has scored 12 goals in 5 league games and Monaco's absences are more concentrated in goal threat.",
+                                "Lyon are unbeaten at home in Ligue 1 this season with 4 wins and 1 draw, while Monaco have won only 2 of 6 away games, making a home win the most likely outcome."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.87,
+                            "m_home": 0.92,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.25,
+                                "home": 0.51
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "AS Monaco's attack is heavily depleted with regular starters Paris Brunner (29% of their league goals) and Aleksandr Golovin (3 assists) confirmed out, while one source also lists Edan Diop (21% of their goals) as doubtful and Mamadou Couli",
+                                "Lyon are missing key midfield options with regular starters Mads Bidstrup and Tyler Morton both out alongside three-assist creator Pavel Šulc.",
+                                "Lyon's unbeaten home league record of four wins and one draw from five games gives them a strong platform against a Monaco side winless in their last five domestic fixtures."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.85,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.24,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Monaco are without regular forward Brunner (4 league goals) and creator Golovin (3 assists), with Diop also doubtful after scoring three goals; their team news has one single-source absence.",
+                                "Lyon miss three regular midfield options—Bidstrup, Morton and Šulc—reducing their midfield depth despite a strong home record.",
+                                "Lyon's 4W-1D home league record, including only three goals conceded, gives them a clear home edge over Monaco's even 2W-2D-2L away return."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.88,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Monaco are without regular starter Paris Brunner, 4 of their 14 league goals (29%), and regular starter Golovin (3 assists), both listed by two sources; Coulibaly’s suspension and Diop’s doubt are one source only, so they are not treated as",
+                                "Lyon miss regular midfield starters Bidstrup (9 of 11, 6% of league goals) and Morton (6 of 11) plus Šulc (5 starts, 3 assists), all two sources, which trims chance creation without removing their main scorers.",
+                                "Lyon are unbeaten at home (4W 1D, 12-3), so a narrow home win is still the likeliest outcome even with the midfield absences."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4624,
+                        0.2672,
+                        0.2704
+                    ],
+                    "p_adj": [
+                        0.450013,
+                        0.270682,
+                        0.279305
+                    ],
+                    "p_llm": [
+                        0.512174,
+                        0.252074,
+                        0.235753
+                    ],
+                    "p_shadow": [
+                        0.462431,
+                        0.267212,
+                        0.270357
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "lyon-vs-as-monaco-2026-11-29"
+            },
+            "sha256": "3cf070f39bf865cb25e9bf5b2fd095ab6127297ad434e0f6b0c06743292f2c5d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0072-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "sevilla",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0117",
+                "home": "real-sociedad",
+                "inputs": {
+                    "elo_away": 1412.3,
+                    "elo_home": 1467.3,
+                    "lambda_away": 1.180551,
+                    "lambda_home": 1.784422,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T20:08:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.512049,
+                        0.239112,
+                        0.24884
+                    ],
+                    "p_elo": [
+                        0.478448,
+                        0.274849,
+                        0.246703
+                    ],
+                    "p_market": [
+                        0.452567,
+                        0.260727,
+                        0.286706
+                    ],
+                    "p_stat": [
+                        0.505855,
+                        0.251543,
+                        0.242602
+                    ],
+                    "retained_mass": 0.999999999905,
+                    "rho": -0.029526,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T20:12:22Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5828,
+                    "draw_risk": false,
+                    "over_2_5": 0.5647,
+                    "p": [
+                        0.5059,
+                        0.2515,
+                        0.2426
+                    ],
+                    "p_display": [
+                        50.6,
+                        25.1,
+                        24.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1176,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0957,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0877,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0811,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0625,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.27,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Real Sociedad are missing four players, including regular starters Aramburu (9 of 13 starts) and Barrenetxea (8 starts, 2 goals, 2 assists), which trims their attack and defence.",
+                                "Real Sociedad have only 3 days of rest after a Thursday European trip to Crystal Palace and face Real Madrid 3 days later, while Sevilla have had 8 days of rest.",
+                                "Sevilla are 7th and only 7 points above the drop, so they need points, while Real Sociedad in 5th are 10 clear and still in a European race."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.27,
+                                "draw": 0.27,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Real Sociedad are missing regular starters Jon Aramburu and Ander Barrenetxea, plus Yangel Herrera, removing a forward with 2 goals and 2 assists and weakening their right side and midfield.",
+                                "Sevilla's main doubt is Miguel Sierra, a regular starter with 2 league goals, but his status is uncertain; their only confirmed outfield absence is a defender with no league starts.",
+                                "Real Sociedad have had only 3 rest days and played 2 matches in the last 14 days, while Sevilla have had 8 rest days and only 1 match in that period."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.93,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.27,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Real Sociedad have only three days of rest after playing away in the Europa League and host Real Madrid in another three days, whereas Sevilla have had eight days to prepare.",
+                                "Real Sociedad are missing regular starters Jon Aramburu in defence and Ander Barrenetxea up front along with midfielder Yangel Herrera, who together account for 13% of their league goals, while Sevilla forward Miguel Sierra (11% of their go",
+                                "Despite losing their last two away matches, Real Sociedad have won four of their six home league games this season, which offsets Sevilla's rest advantage and keeps the hosts slight favourites."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 0.91,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.28,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Real Sociedad are without regular starters Aramburu, Herrera and Barrenetxea, removing defensive continuity and 13% of their league goals.",
+                                "Sociedad have only three days' rest after Crystal Palace and face Real Madrid three days later, while Sevilla have had eight days to prepare.",
+                                "Sociedad's strong 4-1-1 home league record still gives them an edge, but Sevilla's balanced 2-2-2 away record supports a close match."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.99,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.31,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sociedad are without regular starter Aramburu and regular forward Barrenetxea (2 goals, 9% of league goals, plus 2 assists); Sevilla’s only notable name, regular forward Sierra (2 goals, 11%), is doubtful rather than confirmed out, and both",
+                                "Sociedad have 3 days’ rest after a Europa League defeat and face Real Madrid three days later, while Sevilla have had 8 days’ rest and only one match in the previous 14 days.",
+                                "Sociedad’s last three matches were all defeats, including the midweek European loss, so their solid home record (4 wins from 6) is less convincing for this kick-off than the table suggests."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4826,
+                        0.2621,
+                        0.2553
+                    ],
+                    "p_adj": [
+                        0.492891,
+                        0.25749,
+                        0.249619
+                    ],
+                    "p_llm": [
+                        0.441853,
+                        0.280027,
+                        0.27812
+                    ],
+                    "p_shadow": [
+                        0.48264,
+                        0.262069,
+                        0.255291
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "real-sociedad-vs-sevilla-2026-11-29"
+            },
+            "sha256": "6488326e9ee6ac0721c00fc8336d368574c30eb399defca1d0a204edb4efc041",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0117-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "sporting-gijon",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0032",
+                "home": "almeria",
+                "inputs": {
+                    "elo_away": 1254.8,
+                    "elo_home": 1369.1,
+                    "lambda_away": 1.106309,
+                    "lambda_home": 1.994006,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T20:08:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.578143,
+                        0.217088,
+                        0.204769
+                    ],
+                    "p_elo": [
+                        0.540208,
+                        0.2617,
+                        0.198092
+                    ],
+                    "p_market": [
+                        0.620988,
+                        0.216696,
+                        0.162315
+                    ],
+                    "p_stat": [
+                        0.565495,
+                        0.235973,
+                        0.198532
+                    ],
+                    "retained_mass": 0.999999999946,
+                    "rho": -0.012393,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T20:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T20:12:22Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5843,
+                    "draw_risk": false,
+                    "over_2_5": 0.5923,
+                    "p": [
+                        0.5655,
+                        0.236,
+                        0.1985
+                    ],
+                    "p_display": [
+                        56.6,
+                        23.6,
+                        19.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1093,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0969,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0876,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0866,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0644,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.94,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.22,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sporting are missing Alejo Sarco (3 league goals, 19% of the team's) and have Antonio Casas (3 goals, 19%) doubtful, so up to 38% of their goals are at risk; Almería lose only Džodić, who scored once, and all of this comes from one source.",
+                                "Almería lead on 35 points, only 2 clear of 2nd, so they need the win to hold the top spot, while Sporting are 1 point off the play-offs and 10 off automatic promotion.",
+                                "Almería have won 6 of 7 at home, scoring 17 goals, against a Sporting side that has lost 3 of its last 5 games and scored just 16 goals in 15 league games."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.22,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sporting Gijón are missing or doubtful over several attacking regulars: Alejo Sarco and Antonio Casas have scored 6 of the team's 16 league goals between them, while César Gelabert is a regular starter in midfield, weakening their away thre",
+                                "Almería are unbeaten at home this season with 6 wins and 1 draw in 7, scoring 17 goals, while Sporting have lost their last two league games and conceded 4 at Castellón recently.",
+                                "Almería are top and 8 points clear of 3rd, so they are defending an automatic promotion cushion, while Sporting are only 1 point off the play-off places and need points to stay in that race."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.24,
+                                "home": 0.59
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "One source reports that Almería are without suspended regular midfield starter Stefan Džodić, while Sporting Gijón have six injured or doubtful players accounting for 50% of their league goals.",
+                                "Almería's unbeaten home league record of six wins and one draw from seven matches makes them heavy favourites against a Sporting Gijón side winless in their last three league outings.",
+                                "Both sides have high stakes, with Almería defending a two-point lead at the top of the table and Sporting Gijón sitting just one point outside the promotion play-off places."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.88,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sporting are without Sarco (3 league goals) and Manu Rodríguez, with regular starter Gelabert doubtful, reducing their attacking and midfield options; all team-news listings have one source.",
+                                "Almería's unbeaten 6-1-0 home league record includes 17 goals in seven matches, a major home-edge against a Sporting side coming off two league defeats.",
+                                "Almería are only two points clear at the top, so a home win is important to protect their automatic-promotion position."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.17,
+                                "draw": 0.23,
+                                "home": 0.6
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Team news is single-source only: Almería miss regular midfielder Džodić (12 of 15 starts, only 3% of their goals), while Sporting are without Sarco (19% of their league goals) and midfielder Rodríguez, with regular starter Gelabert only dou",
+                                "Almería are top and 8 points clear of 3rd, so a home win protects automatic promotion, whereas Sporting sit 1 point off the play-off places and need the points more.",
+                                "Almería are unbeaten at home (6W 1D, 17-6) and have won four of their last five in all competitions, while Sporting have taken one point from their last three league games."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5733,
+                        0.2357,
+                        0.191
+                    ],
+                    "p_adj": [
+                        0.568011,
+                        0.238096,
+                        0.193893
+                    ],
+                    "p_llm": [
+                        0.594464,
+                        0.226108,
+                        0.179428
+                    ],
+                    "p_shadow": [
+                        0.573341,
+                        0.235704,
+                        0.190955
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "almeria-vs-sporting-gijon-2026-11-29"
+            },
+            "sha256": "5b7dffc85c67adbcd8e2229c56d4b36caeab1631d31ac828b53d26c5971d4cb8",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0032-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "juventus",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0035",
+                "home": "como",
+                "inputs": {
+                    "elo_away": 1609.9,
+                    "elo_home": 1562.4,
+                    "lambda_away": 1.052749,
+                    "lambda_home": 1.237164,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-28T20:08:04Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.402285,
+                        0.286564,
+                        0.311152
+                    ],
+                    "p_elo": [
+                        0.370123,
+                        0.285581,
+                        0.344296
+                    ],
+                    "p_market": [
+                        0.485166,
+                        0.262167,
+                        0.252667
+                    ],
+                    "p_stat": [
+                        0.387543,
+                        0.285117,
+                        0.32734
+                    ],
+                    "retained_mass": 0.99999999992,
+                    "rho": -0.013981,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T19:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T20:12:22Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4638,
+                    "draw_risk": false,
+                    "over_2_5": 0.4014,
+                    "p": [
+                        0.3875,
+                        0.2852,
+                        0.3273
+                    ],
+                    "p_display": [
+                        38.8,
+                        28.5,
+                        32.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1331,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1189,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1102,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1026,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0786,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.26,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Como are without forwards Diao (2 league goals, 5 starts) and Kean, but most absentees are rotation players, so only a small attacking dip; Juventus miss Yıldız and Locatelli and have Kalulu (11 of 12 starts) doubtful.",
+                                "Juventus have 3 rest days against Como's 5, and both sides have a Coppa Italia tie within 4 days, so rotation risk is real for both.",
+                                "Como are 4W 1D 0L at home with a 7-1 goal difference and lead Juventus by 5 points, but the league's draw rate of 26% last season keeps a draw live."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.94,
+                            "m_home": 0.96,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Como are missing forward Assane Diao, who has 2 of their 20 league goals, plus three other forwards, while Juventus have doubts over regular defender Pierre Kalulu and are without midfielder Khéphren Thuram-Ulien.",
+                                "Como are unbeaten at home this season (4W 1D, 7-1 goals) and have won their last two meetings with Juventus, including 2-0 at home last season.",
+                                "Como are 5th and only 6 points off the leaders, while Juventus are 6th and 11 points back, so the home side has more immediate title-race incentive."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.27,
+                                "home": 0.45
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Juventus have defensive and midfield concerns with regular starter Pierre Kalulu (11 starts) doubtful and Manuel Locatelli out, while Como miss rotational forward Assane Diao (two goals, 10% of their league tally).",
+                                "Como hold a recovery advantage with five rest days after their Tuesday European tie, whereas Juventus played in the Europa League on Thursday and have only three days of rest.",
+                                "Como's unbeaten home league record with only one goal conceded in five games makes them well placed to contain a Juventus side that has won just twice in six away league trips."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.93,
+                            "m_home": 0.95,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.25,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Como are without Diao (two league goals) while Juventus miss midfielder Locatelli and may also lack regular-starting defender Kalulu; several listings have only one source.",
+                                "Juventus have had only three rest days after their Europa League match, compared with five for Como.",
+                                "Como's unbeaten home league record (4W, 1D, 7-1 goals) meets a Juventus away side that has been split evenly between wins, draws and defeats."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.27,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Como are without Assane Diao, a forward with 5 league starts and 10% of their league goals, while Juventus list regular starter Pierre Kalulu only as doubtful; most other absences are low-start squad players, and several are single-source.",
+                                "Como are unbeaten at home with just one goal conceded in five league games, while Juventus are only even away (2W 2D 2L, 8-8), which points to a tight home edge rather than an open game.",
+                                "Como have won the last two league meetings, 2-0 at home and 0-2 at Juventus, so recent history favours them more than an ordinary meeting of a 5th-placed side and 6th."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4016,
+                        0.2847,
+                        0.3136
+                    ],
+                    "p_adj": [
+                        0.387779,
+                        0.289457,
+                        0.322764
+                    ],
+                    "p_llm": [
+                        0.458281,
+                        0.26445,
+                        0.27727
+                    ],
+                    "p_shadow": [
+                        0.401623,
+                        0.284749,
+                        0.313628
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "como-vs-juventus-2026-11-29"
+            },
+            "sha256": "a6ed9fd85ef4f4abe6d8bb314e09ab38a2cfd8328c8f9811cc2decb105928a93",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0035-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "bayer-leverkusen",
                 "batch_id": "2026-11-28T0015Z-model-predict",
                 "competition": "bundesliga",
@@ -238,7 +1190,7 @@
                 "slug": "borussia-dortmund-vs-bayer-leverkusen-2026-11-29"
             },
             "sha256": "8705449daed55b5b8eb681cb7edfedc44da0ebc8ed0477a75ee1cab078523659",
-            "commit": "pending",
+            "commit": "5e427aa3536745f14b33f3f3dca29952c4b79271",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0103-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +1428,7 @@
                 "slug": "nec-nijmegen-vs-fc-twente-2026-11-29"
             },
             "sha256": "c4a47cc4a04306665c5c87de38353f3d608da620f09684b2291afc66d83279fb",
-            "commit": "pending",
+            "commit": "5e427aa3536745f14b33f3f3dca29952c4b79271",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0030-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +1666,7 @@
                 "slug": "aek-athens-gr-vs-paok-2026-11-29"
             },
             "sha256": "fadf2edc425187b84604bf2319deb64a0306775625ba8f840c0cbea7bb000107",
-            "commit": "pending",
+            "commit": "5e427aa3536745f14b33f3f3dca29952c4b79271",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0014-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +1904,7 @@
                 "slug": "arezzo-vs-pisa-2026-11-29"
             },
             "sha256": "2e33548f3b147a9cee19863196460305d1891395b165a56144b97467444e7b5a",
-            "commit": "pending",
+            "commit": "5e427aa3536745f14b33f3f3dca29952c4b79271",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0029-r1.json",
             "status": "pending",
             "result": null
@@ -16638,8 +17590,12 @@
             "sha256": "10cd9d79b0a2282a178053f4c58493dc62a5ca198d0656ca861dffccc3102630",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0012-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-1",
+                "correct": true,
+                "rps": 0.2011
+            }
         },
         {
             "record": {
@@ -16876,8 +17832,12 @@
             "sha256": "ba9ecd77c757eb9a4f92a7610dc23ffdf07445167a5c6c9312f91c29703a5373",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0100-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1645
+            }
         },
         {
             "record": {
@@ -16983,8 +17943,12 @@
             "sha256": "1a2341c6fd10e8ed7679c599dce87f0e2e5c078ea7d1dbd7727d25f1fb3020cd",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0005-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "1-2",
+                "correct": true,
+                "rps": 0.0637
+            }
         },
         {
             "record": {
@@ -17090,8 +18054,12 @@
             "sha256": "1546d49f59c80f278c96ca66dc14dceaf63e4332f2677477a59acdbb8526f199",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0006-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "0-0",
+                "correct": false,
+                "rps": 0.1958
+            }
         },
         {
             "record": {
@@ -17518,8 +18486,12 @@
             "sha256": "9cb7b2ce8d636ef540a898c2925e66aecc0dcf183ccdb5cd5620bc9bba4c445b",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0010-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "5-0",
+                "correct": true,
+                "rps": 0.025
+            }
         },
         {
             "record": {
@@ -17756,8 +18728,12 @@
             "sha256": "6486017b944ebada2a470335ad632101ade5ab7bf6a55edcc1561191de7566f2",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0024-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-0",
+                "correct": true,
+                "rps": 0.0229
+            }
         },
         {
             "record": {
@@ -17994,8 +18970,12 @@
             "sha256": "eb0df197931d61fac02092291bbb0a6859a1e4f940821bc19427552f7a277329",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0010-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1457
+            }
         },
         {
             "record": {
@@ -18232,8 +19212,12 @@
             "sha256": "b8e9c39e1c5276c3c67765fa9448c23ea04cf382f1d4698ea11b7d2e08cd5e40",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/ks-2627-0009-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-1",
+                "correct": true,
+                "rps": 0.0665
+            }
         },
         {
             "record": {
@@ -18470,8 +19454,12 @@
             "sha256": "a5b442c17df64718d0afa32b097c2347ac1b5d40f5c4649bbeaa7511e2ea6d10",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0112-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-3",
+                "correct": true,
+                "rps": 0.1043
+            }
         },
         {
             "record": {
@@ -18708,8 +19696,12 @@
             "sha256": "b4c45405d203479cc71c12a80585af87804269628379b5ddee41e280e345f352",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0110-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1693
+            }
         },
         {
             "record": {
@@ -18946,8 +19938,12 @@
             "sha256": "38c5db73688897ef6805290e1492ffc6447c8b44bcbc1f1e61498ca4bbf3f056",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/pt-2627-0093-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-2",
+                "correct": false,
+                "rps": 0.3429
+            }
         },
         {
             "record": {
@@ -19184,8 +20180,12 @@
             "sha256": "357627fd0db24c0f1e5266ab695a79c840eaa1398099fb6adec9b47ff76a3170",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0027-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-0",
+                "correct": true,
+                "rps": 0.1922
+            }
         },
         {
             "record": {
@@ -19422,8 +20422,12 @@
             "sha256": "6c774efdb0fbe299c7ba554b591280d9508a0a64f493b7acdedd53940841405f",
             "commit": "6295f7932478e9fecaec04ff097b21decd15059b",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0020-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-0",
+                "correct": true,
+                "rps": 0.2303
+            }
         },
         {
             "record": {
@@ -19529,8 +20533,12 @@
             "sha256": "57ee1bde45c2eff3edd4e7b3f3b3ba8c5401732775a45e8144793cce621c5f36",
             "commit": "51a471b49557f06d86f2c79eb9c96fa2f02dec35",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0004-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "1-0",
+                "correct": false,
+                "rps": 0.5106
+            }
         },
         {
             "record": {
