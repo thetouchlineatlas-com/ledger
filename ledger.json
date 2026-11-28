@@ -7,6 +7,958 @@
     "records": [
         {
             "record": {
+                "away": "cardiff-city",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "championship",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "ch-2627-0060",
+                "home": "swansea-city",
+                "inputs": {
+                    "elo_away": 1355.1,
+                    "elo_home": 1511.2,
+                    "lambda_away": 1.106361,
+                    "lambda_home": 1.878411,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T12:14:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.551572,
+                        0.229386,
+                        0.219042
+                    ],
+                    "p_elo": [
+                        0.582083,
+                        0.250062,
+                        0.167854
+                    ],
+                    "p_market": [
+                        0.449352,
+                        0.250606,
+                        0.300043
+                    ],
+                    "p_stat": [
+                        0.541659,
+                        0.251767,
+                        0.206574
+                    ],
+                    "retained_mass": 0.999999999803,
+                    "rho": -0.022911,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.124,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T12:22:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5749,
+                    "draw_risk": false,
+                    "over_2_5": 0.5658,
+                    "p": [
+                        0.5417,
+                        0.2517,
+                        0.2066
+                    ],
+                    "p_display": [
+                        54.2,
+                        25.2,
+                        20.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1179,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0969,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0909,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0876,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0607,
+                            "score": "3-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.24,
+                                "draw": 0.26,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cardiff are missing regular defenders Perry Ng (14 starts) and Gabriel Osho (10 starts), both from one source, which weakens a back line that has conceded 33 goals and just lost 0-4.",
+                                "Swansea lose regular midfielder Marko Stamenić (12 starts) to suspension, with Franco doubtful, which trims their midfield but not their home strength.",
+                                "Cardiff have no away wins from 8 (goals 7-16) and arrive after two straight defeats, while Swansea have lost five of their last seven despite a 13-5 home goal record."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.94,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.26,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Cardiff are missing two regular starting centre-backs in Perry Ng and Gabriel Osho, weakening the away side's defence against a Swansea attack that has scored 13 goals in 8 home league games.",
+                                "Cardiff have lost all 6 away league games this season and have taken only 2 points from 8 away matches, while Swansea have lost just once at home.",
+                                "Swansea are 4 points off the play-off places and need the points more, while Cardiff are 6 points above the relegation zone and have less immediate pressure."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.93,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Cardiff City are missing regular starting defenders Perry Ng (14 starts) and Gabriel Osho (10 starts), while Swansea City lose regular midfielder Marko Stamenić (12 starts) to suspension.",
+                                "Swansea City sit four points outside the play-off places with 29 games remaining, giving them an immediate opportunity to close the gap on the top six against a rival six points above relegation.",
+                                "Cardiff City are winless in all eight away league matches this season (0W 2D 6L, conceding 16 goals), making it tough to break down a Swansea side that has conceded only five times in eight home games."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Cardiff have two single-source listed regular defensive absences in Ng and Osho, weakening a side already vulnerable away from home; Swansea also lose regular-starting midfielder Stamenić.",
+                                "Swansea's 4-3-1 home record with only five goals conceded contrasts sharply with Cardiff's winless 0-2-6 away record.",
+                                "Swansea are four points off the play-off places, so a home derby win would materially strengthen their promotion push."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.27,
+                                "home": 0.51
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "This is not a full-strength meeting: Swansea are without regular midfielder Stamenić (suspended, 12 league starts, one source), while Cardiff are missing regular defenders Ng (14 starts, 4% of their league goals) and Osho (10 starts), each ",
+                                "Cardiff have won none of eight away league games (7 scored, 16 conceded), so their travel record points to another low-scoring afternoon for the visitors rather than an ordinary away result.",
+                                "Swansea, four points off the play-off places, need the points more than Cardiff, who sit six points above the relegation zone."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.5395,
+                        0.2551,
+                        0.2054
+                    ],
+                    "p_adj": [
+                        0.540818,
+                        0.254721,
+                        0.204461
+                    ],
+                    "p_llm": [
+                        0.534323,
+                        0.256368,
+                        0.209309
+                    ],
+                    "p_shadow": [
+                        0.539521,
+                        0.255054,
+                        0.205425
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "swansea-city-vs-cardiff-city-2026-11-29"
+            },
+            "sha256": "cc355848620cc0380d79f0fd071ab9d5722517f60ceb3a857c0422b024cba287",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ch-2627-0060-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fc-utrecht",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0026",
+                "home": "ado-den-haag",
+                "inputs": {
+                    "elo_away": 1497.8,
+                    "elo_home": 1246.1,
+                    "lambda_away": 1.842502,
+                    "lambda_home": 1.370268,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T12:14:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.279409,
+                        0.241449,
+                        0.479142
+                    ],
+                    "p_elo": [
+                        0.185033,
+                        0.257041,
+                        0.557925
+                    ],
+                    "p_market": [
+                        0.348554,
+                        0.255726,
+                        0.39572
+                    ],
+                    "p_stat": [
+                        0.224527,
+                        0.24695,
+                        0.528523
+                    ],
+                    "retained_mass": 0.999999999848,
+                    "rho": -0.070502,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T11:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T12:22:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6344,
+                    "draw_risk": false,
+                    "over_2_5": 0.6221,
+                    "p": [
+                        0.2245,
+                        0.247,
+                        0.5285
+                    ],
+                    "p_display": [
+                        22.5,
+                        24.7,
+                        52.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1113,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1032,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0753,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0739,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0656,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.27,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "ADO Den Haag sit 17th, 1 point from safety, while Utrecht are only 3 points clear, so both need the points and a draw is a real possibility.",
+                                "ADO lose regular starting defender Matteo Waem to suspension (10 of 13 league starts, one source), which weakens the back line; Utrecht's five absences include no listed regular starter, though Engwanda, Jensen, Jonathans and Ohio have no r",
+                                "Utrecht have lost their last three games, conceding 3 or more in each of two, while ADO have conceded 28 goals in 13 games, which points to goals at both ends."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.28,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "ADO Den Haag are without regular starting defender Matteo Waem through suspension, weakening a defence that has conceded 28 goals in 13 league games.",
+                                "ADO Den Haag sit in the relegation zone, one point from safety, so they need the points more than Utrecht, who are three points above the drop zone.",
+                                "Utrecht have lost their last three league games but won away at FC Twente and Excelsior earlier this season, while ADO have lost three of their last four league matches."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 1.03,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.25,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports ADO Den Haag defender Matteo Waem (10 league starts) is suspended, which weakens the hosts' backline, while two sources confirm five FC Utrecht injury absences, though role data is only available for non-starter Kevin Par",
+                                "ADO Den Haag start in the relegation zone one point from safety, making this a crucial six-pointer against an FC Utrecht side sitting just three points above them.",
+                                "FC Utrecht enter on a three-match losing streak having conceded 10 goals in those games, giving ADO Den Haag a realistic chance of scoring despite their own poor overall record."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.05,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.27,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "ADO regular-starting defender Matteo Waem is suspended, reported by one source, modestly improving Utrecht's attacking outlook.",
+                                "ADO are one point from safety while Utrecht are only three points above the relegation zone, making this a high-stakes direct battle.",
+                                "Utrecht have lost their last three league matches and conceded 10 goals in them, limiting confidence in a clear away win."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.29,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "ADO are 17th and one point from safety, so they need the result more than Utrecht, who sit three points above the drop.",
+                                "ADO miss regular starter Matteo Waem (10 of 13 league starts, one source); Utrecht’s listed absences are not confirmed regular starters or scorers, so only Waem is treated as material.",
+                                "Utrecht have lost their last three league games, while ADO’s last home league match was a 3-1 win, which slightly lifts the hosts despite a leaky home record."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "3/5",
+                    "ai_combined": [
+                        0.2446,
+                        0.2548,
+                        0.5006
+                    ],
+                    "p_adj": [
+                        0.221564,
+                        0.24775,
+                        0.530686
+                    ],
+                    "p_llm": [
+                        0.347617,
+                        0.272911,
+                        0.379472
+                    ],
+                    "p_shadow": [
+                        0.244578,
+                        0.254808,
+                        0.500614
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "ado-den-haag-vs-fc-utrecht-2026-11-29"
+            },
+            "sha256": "813535bf509a02726c55146c66a945835730b9e6bc395773765ae44eaee1c375",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0026-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "liverpool",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0111",
+                "home": "everton",
+                "inputs": {
+                    "elo_away": 1648,
+                    "elo_home": 1449.2,
+                    "lambda_away": 1.501654,
+                    "lambda_home": 1.099255,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-28T12:14:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.270443,
+                        0.271885,
+                        0.457672
+                    ],
+                    "p_elo": [
+                        0.226473,
+                        0.270121,
+                        0.503406
+                    ],
+                    "p_market": [
+                        0.205648,
+                        0.241444,
+                        0.552908
+                    ],
+                    "p_stat": [
+                        0.247149,
+                        0.27084,
+                        0.482011
+                    ],
+                    "retained_mass": 0.999999999915,
+                    "rho": -0.058548,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T12:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T12:22:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5246,
+                    "draw_risk": false,
+                    "over_2_5": 0.4829,
+                    "p": [
+                        0.2471,
+                        0.2709,
+                        0.482
+                    ],
+                    "p_display": [
+                        24.7,
+                        27.1,
+                        48.2
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1292,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1098,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0969,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0881,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0811,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.27,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Everton lose Tarkowski, an ever-present starter at centre-back (11 of 11 league starts), through a three-match ban, which weakens a defence that just conceded four at Brentford.",
+                                "Liverpool are missing Gakpo (out) and have Muñoz (3 league goals, 17% of the team's) and Gravenberch doubtful, which trims their attack slightly; both sides' news comes from two sources.",
+                                "Liverpool have 4 rest days against Everton's 6 and both play again in 3 days, but Liverpool's 4-0 and 3-0 wins in their last two matches show form that outweighs the fatigue."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.92,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.27,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Liverpool are missing Cody Gakpo (7 starts, 1 goal, 3 assists) and have Hugo Ekitiké out, with Víctor Muñoz (3 goals, 17% of their league goals) doubtful, weakening their attack.",
+                                "Everton are without first-choice defender James Tarkowski, who has started all 11 league games, which should make their defence more vulnerable.",
+                                "Liverpool have won 4 of 5 away league games this season, while Everton lost 0-4 at Brentford in their last match, suggesting the visitors are better placed despite the derby setting."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.49,
+                                "draw": 0.26,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Everton are without suspended ever-present defender James Tarkowski, while Liverpool miss regular starting forward Cody Gakpo (1 goal, 3 assists) and have doubts over forward Víctor Muñoz (17% of their league goals).",
+                                "Everton have a two-day rest advantage with six days to prepare compared to four for Liverpool after their midweek European away trip.",
+                                "Liverpool's unbeaten away league record (4W 1D, 10 goals scored in 5 matches) and three-game winning streak make them strong favourites against an Everton side coming off a 4-0 defeat."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.02,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.28,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Everton lose ever-present defender James Tarkowski, while Liverpool are without regular forward Cody Gakpo and have Víctor Muñoz doubtful after his three league goals.",
+                                "Liverpool have only four rest days after winning at Club Brugge, compared with Everton's six, which slightly offsets the visitors' stronger squad.",
+                                "Liverpool's unbeaten 4W-1D away league record gives them an edge, though Everton's 3W-1D-1L home return points to a competitive derby."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.94,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.28,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Everton miss suspended regular centre-back Tarkowski (11 of 11 league starts), while Liverpool are without regular forward Gakpo (3 assists) and have Ekitiké out, with Muñoz (17% of their league goals) only doubtful; those listings come fro",
+                                "Liverpool have had four rest days and two matches in the previous 14 days, including a Champions League win on 25 November, while Everton have had six days' rest.",
+                                "Liverpool have won the last three league meetings, including 1-2 at Everton on 19 April 2026."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2503,
+                        0.274,
+                        0.4757
+                    ],
+                    "p_adj": [
+                        0.246559,
+                        0.274322,
+                        0.47912
+                    ],
+                    "p_llm": [
+                        0.265655,
+                        0.272346,
+                        0.461998
+                    ],
+                    "p_shadow": [
+                        0.250306,
+                        0.27397,
+                        0.475724
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "everton-vs-liverpool-2026-11-29"
+            },
+            "sha256": "e365050bddd084f042ac88d0920d91fa2003cfcc313b97c5fefda1c3e99e048a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0111-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "fiorentina",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0032",
+                "home": "udinese",
+                "inputs": {
+                    "elo_away": 1430.6,
+                    "elo_home": 1366.4,
+                    "lambda_away": 1.415698,
+                    "lambda_home": 1.314312,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-28T12:14:40Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.346993,
+                        0.259534,
+                        0.393473
+                    ],
+                    "p_elo": [
+                        0.352804,
+                        0.285699,
+                        0.361497
+                    ],
+                    "p_market": [
+                        0.303838,
+                        0.264963,
+                        0.431199
+                    ],
+                    "p_stat": [
+                        0.350476,
+                        0.271014,
+                        0.37851
+                    ],
+                    "retained_mass": 0.999999999949,
+                    "rho": -0.013938,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T11:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T12:22:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5584,
+                    "draw_risk": false,
+                    "over_2_5": 0.5098,
+                    "p": [
+                        0.3505,
+                        0.271,
+                        0.3785
+                    ],
+                    "p_display": [
+                        35.1,
+                        27.1,
+                        37.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1285,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0872,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0849,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0826,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0806,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.96,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.28,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Udinese in 20th are 2 points from safety and Fiorentina in 16th are only 1 point above the drop, so a relegation-zone six-pointer where neither side wants to lose.",
+                                "Udinese are without Keinan Davis (9 league starts, 2 assists) and Ebosse is doubtful; Fiorentina miss Pongračić, Viery and Parisi, with Kean doubtful from one source.",
+                                "Udinese have lost 8 of 12 and not won at home (0W 1D 5L), but Fiorentina arrive off a 0-3 loss at Monza and have lost 4 of 6 away, which keeps this close."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.27,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Udinese are missing regular forward Keinan Davis (9 league starts, 2 assists) and have Ebosse doubtful, weakening an attack that has scored only 4 goals in 6 home games.",
+                                "This is a relegation six-pointer: Udinese are 2 points from safety while Fiorentina are only 1 point above the drop zone, so both sides badly need the points.",
+                                "Udinese have not won at home this season (0W 1D 5L) and have lost 8 of 12 overall, but Fiorentina have lost 4 of 6 away, making a low-scoring, tight contest likely."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.27,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are fighting near the bottom of the table, with 20th-placed Udinese two points from safety and 16th-placed Fiorentina just one point above the relegation zone.",
+                                "Udinese's attack is weakened by the confirmed absence of regular starting forward Keinan Davis (9 league starts, 2 assists), while defender Enzo Ebosse and Fiorentina's Moise Kean are doubtful according to only one source.",
+                                "Udinese are winless in their last ten matches and have lost five of their six home league games, giving Fiorentina a clear edge despite their own defensive struggles."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.25,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Udinese are without regular-starting forward Keinan Davis, who has two assists, while Fiorentina's Moise Kean is only a one-source doubt.",
+                                "This is a direct survival fixture: Udinese are two points from safety and Fiorentina only one point above the relegation zone.",
+                                "Udinese's 0-1-5 home record with only four goals makes their home advantage unusually weak, despite Fiorentina's inconsistent away results."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.3,
+                                "home": 0.26
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Udinese are without regular starter Keinan Davis (9 league starts, 2 assists); Fiorentina's Kean and Sottil are only doubtful from one source, so they are not treated as confirmed absences.",
+                                "Udinese are in the drop zone, 2 points from safety, while Fiorentina are only 1 point above it, so both need points but a home defeat would leave Udinese further adrift.",
+                                "Udinese have not won any of 6 home league games, scoring 4 and conceding 14, which points to another low home total against an inconsistent but more productive away side."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.3385,
+                        0.2741,
+                        0.3874
+                    ],
+                    "p_adj": [
+                        0.344497,
+                        0.273714,
+                        0.38179
+                    ],
+                    "p_llm": [
+                        0.314932,
+                        0.275047,
+                        0.410022
+                    ],
+                    "p_shadow": [
+                        0.338496,
+                        0.274082,
+                        0.387421
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "udinese-vs-fiorentina-2026-11-29"
+            },
+            "sha256": "fc3873b3add58693b7be4c104bfe2a66e400c043e23600c223896da5ece3794e",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0032-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "kocaelispor",
                 "batch_id": "2026-11-28T0015Z-model-predict",
                 "competition": "super-lig",
@@ -238,7 +1190,7 @@
                 "slug": "corum-fk-vs-kocaelispor-2026-11-29"
             },
             "sha256": "5f8dcf12c848cf7052165c2c4b1ae0beb6bfe0b53ee5167221640b5c855dcc8b",
-            "commit": "pending",
+            "commit": "56750a947147bfccccc51671a8f5bf108a2f1ab5",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0027-r1.json",
             "status": "pending",
             "result": null
