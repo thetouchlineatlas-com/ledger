@@ -7,6 +7,2386 @@
     "records": [
         {
             "record": {
+                "away": "ajax-amsterdam",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0027",
+                "home": "feyenoord-rotterdam",
+                "inputs": {
+                    "elo_away": 1677.1,
+                    "elo_home": 1691.2,
+                    "lambda_away": 1.517314,
+                    "lambda_home": 1.856134,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.451465,
+                        0.237824,
+                        0.310711
+                    ],
+                    "p_elo": [
+                        0.435,
+                        0.281124,
+                        0.283875
+                    ],
+                    "p_market": [
+                        0.427133,
+                        0.236865,
+                        0.336002
+                    ],
+                    "p_stat": [
+                        0.448559,
+                        0.255852,
+                        0.295588
+                    ],
+                    "retained_mass": 0.999999999825,
+                    "rho": -0.070502,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T13:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6691,
+                    "draw_risk": false,
+                    "over_2_5": 0.649,
+                    "p": [
+                        0.4486,
+                        0.2558,
+                        0.2956
+                    ],
+                    "p_display": [
+                        44.9,
+                        25.6,
+                        29.5
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1111,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.089,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0731,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0697,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0587,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.25,
+                                "home": 0.32
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Feyenoord are without Anis Hadj Moussa (7 league goals, 18% of the team's, single source) plus several defenders out, while Ajax miss Mokio (4 goals, 11%) and have Dolberg out and two doubtful.",
+                                "Feyenoord have lost five of their last six games in all competitions, while Ajax have won seven of their last ten and are 5W 1D 0L away in the league.",
+                                "Ajax are 1 point off the leaders and Feyenoord 4 points behind, so the home side needs the points to stay in the title race, though Ajax have only 3 rest days against Feyenoord's 5."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.93,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.28,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Feyenoord are missing Anis Hadj Moussa, a regular starter with 7 league goals (18% of their total), which removes a key attacking threat from a side already struggling for results.",
+                                "Ajax are without regular midfielder Jorthy Mokio (4 goals, 1 assist) and forward Kasper Dolberg (2 goals, 3 assists), but retain most of the attack that has scored 20 away league goals.",
+                                "Feyenoord have lost four of their last five in all competitions, while Ajax are unbeaten in their last five, making the visitors the more confident side despite the derby setting."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.93,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.25,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides are in the Eredivisie title race, with Ajax sitting just one point behind the leaders and Feyenoord four points off the top.",
+                                "One source reports Feyenoord regular starter Anis Hadj Moussa (18% of their league goals) is out, while two sources confirm Ajax are missing regular midfielder Jorthy Mokio (11% of their goals) and rotation forward Kasper Dolberg.",
+                                "Ajax enter on an eight-match unbeaten run across all competitions and have won five of six away league games, whereas Feyenoord have lost their last four matches."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.25,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Feyenoord are without 11-start, seven-goal forward Hadj Moussa plus several defenders, while Ajax miss regular midfielder Mokio and Dolberg.",
+                                "Ajax have won five of their last six matches, whereas Feyenoord have lost four straight, giving the visitors the stronger current platform.",
+                                "Both are close to the lead, but Ajax are only one point behind the leaders and Feyenoord trail by four, raising the value of a direct-rival win."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.26,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "This is not a normal De Kuip meeting: Feyenoord have lost five in a row, including league defeats to Heerenveen and Excelsior, while Ajax are unbeaten away in the league (5W 1D, 20-6).",
+                                "Feyenoord's main league scorer Anis Hadj Moussa (11 starts, 7 goals, 18% of their league goals) is listed out by one source only, and Ajax are without regular midfielder Jorthy Mokio (11 starts, 4 goals), so the home attack is the side more",
+                                "Ajax, 1 point off the leaders, need the points more in the title race than Feyenoord, who are 4 points back in 5th with 21 games left."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "0/5",
+                    "ai_combined": [
+                        0.4117,
+                        0.2631,
+                        0.3251
+                    ],
+                    "p_adj": [
+                        0.4409,
+                        0.261399,
+                        0.297701
+                    ],
+                    "p_llm": [
+                        0.299455,
+                        0.25836,
+                        0.442185
+                    ],
+                    "p_shadow": [
+                        0.411748,
+                        0.263137,
+                        0.325116
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "feyenoord-rotterdam-vs-ajax-amsterdam-2026-11-29"
+            },
+            "sha256": "a234a09b557d53ec5c17c10e97653c788dbdc02b53fc94055f6b9316256779f0",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0027-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "heerenveen",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0028",
+                "home": "fortuna-sittard",
+                "inputs": {
+                    "elo_away": 1518.2,
+                    "elo_home": 1412.6,
+                    "lambda_away": 1.559795,
+                    "lambda_home": 1.372804,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.327978,
+                        0.261076,
+                        0.410946
+                    ],
+                    "p_elo": [
+                        0.311259,
+                        0.283962,
+                        0.40478
+                    ],
+                    "p_market": [
+                        0.258007,
+                        0.247803,
+                        0.49419
+                    ],
+                    "p_stat": [
+                        0.318864,
+                        0.269904,
+                        0.411232
+                    ],
+                    "retained_mass": 0.999999999835,
+                    "rho": -0.070502,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T13:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5997,
+                    "draw_risk": false,
+                    "over_2_5": 0.5584,
+                    "p": [
+                        0.3189,
+                        0.2699,
+                        0.4112
+                    ],
+                    "p_display": [
+                        31.9,
+                        27,
+                        41.1
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1262,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.089,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0761,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0751,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0648,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.26,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Fortuna's first-choice keeper Branderhorst (12 of 13 starts) and midfielder Michut (8 starts, 2 assists) are both doubtful, from one source only, so a small cut to home expected goals.",
+                                "Heerenveen have won 7 of their last 8 and scored 27 league goals against Fortuna's 21, while Fortuna have drawn 5 of their last 8 league games.",
+                                "Both sides play the KNVB Beker three days later, but each had a week or more of rest (7 and 8 days), so fatigue should not separate them."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.28,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Fortuna Sittard's first-choice goalkeeper Mattijs Branderhorst is doubtful, and regular midfielder Edouard Michut is also doubtful; Michut has contributed 1 goal and 2 assists, so their absence would weaken Fortuna's spine and build-up.",
+                                "Heerenveen have won five of their last six league games, including a 5-3 home win over Feyenoord and a 3-1 away win at Groningen, while Fortuna have drawn four of their last five league matches.",
+                                "Both sides are in the top seven and within six points of the leaders, so neither has a clearly greater need for the points, but a win would keep either club in the title conversation."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.27,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "One source lists Fortuna Sittard's first-choice goalkeeper Mattijs Branderhorst (12 league starts) and regular midfielder Edouard Michut (8 starts, 2 assists) as doubtful, which could disrupt the hosts' spine.",
+                                "Heerenveen arrive on a six-match winning streak across all competitions and have scored 14 goals in six away league games, giving them the edge against a Fortuna side that has conceded 11 in six at home.",
+                                "Fortuna Sittard face a tougher KNVB Beker tie against FC Twente in three days compared to Heerenveen's cup game against De Treffers, which may affect how the hosts manage their minutes."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.04,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.26,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Fortuna's goalkeeper Mattijs Branderhorst and midfielder Edouard Michut are doubtful from one source; Branderhorst's 12 league starts particularly raises Heerenveen's scoring outlook.",
+                                "Heerenveen have won six straight matches and taken 11 points from six away league games, giving them the stronger current edge despite Fortuna's home venue.",
+                                "Fortuna are unbeaten in their last three home league meetings with Heerenveen, which supports a draw as the likeliest individual scoreline."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.28,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Fortuna's first-choice goalkeeper Branderhorst (12 of 13 starts) and midfielder Michut are only doubtful via one source, so neither absence is assumed; Heerenveen's confirmed absentee Petrov has started none of 13 league games.",
+                                "Heerenveen have won six of their last seven in all competitions and scored 14 in six away league games, while Fortuna have only two wins and an 8-11 goal record in six home games.",
+                                "That away lean is tempered by Fortuna winning the last two home league meetings 3-0 and 2-0, so a narrow Heerenveen win is more plausible than a rout."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "4/5",
+                    "ai_combined": [
+                        0.314,
+                        0.2707,
+                        0.4153
+                    ],
+                    "p_adj": [
+                        0.313618,
+                        0.270717,
+                        0.415665
+                    ],
+                    "p_llm": [
+                        0.315665,
+                        0.270493,
+                        0.413842
+                    ],
+                    "p_shadow": [
+                        0.314027,
+                        0.270673,
+                        0.4153
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "fortuna-sittard-vs-heerenveen-2026-11-29"
+            },
+            "sha256": "3bd9ed854f1182f58a4cb264a04e505f0522b5f0b98b3465639bb3eefcb69c8a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0028-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "marseille",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "ligue-1",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "l1-2627-0070",
+                "home": "aj-auxerre",
+                "inputs": {
+                    "elo_away": 1593.8,
+                    "elo_home": 1392.3,
+                    "lambda_away": 1.802777,
+                    "lambda_home": 1.298001,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.272996,
+                        0.237374,
+                        0.48963
+                    ],
+                    "p_elo": [
+                        0.224226,
+                        0.269533,
+                        0.506241
+                    ],
+                    "p_market": [
+                        0.262518,
+                        0.245945,
+                        0.491537
+                    ],
+                    "p_stat": [
+                        0.248576,
+                        0.254086,
+                        0.497337
+                    ],
+                    "retained_mass": 0.999999999889,
+                    "rho": -0.032313,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 1.0083,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.614,
+                    "draw_risk": false,
+                    "over_2_5": 0.5939,
+                    "p": [
+                        0.2486,
+                        0.2541,
+                        0.4973
+                    ],
+                    "p_display": [
+                        24.9,
+                        25.4,
+                        49.7
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1164,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0964,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.079,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0743,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.066,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.25,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Auxerre are missing forward Danny Namaso (10 starts, 3 of the team's 14 goals, 2 assists) and defender Lamine Sy (9 starts), both confirmed out by two sources, which weakens attack and defence.",
+                                "Marseille have only 3 rest days after a midweek Europa League game, while Auxerre have had 8, which trims the away side's edge a little.",
+                                "Auxerre are 3 points above the drop zone and have lost 6 of 11, while Marseille at 18 points are 8 behind the leaders and still pushing for the top places."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.25,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Auxerre are missing regular starters Lamine Sy and Danny Namaso, who together account for 4 of their 14 league goals (29%), weakening their defence and attack.",
+                                "Marseille have only 3 rest days after a Europa League win over Levski Sofia, while Auxerre have had 8 days to prepare, which may offset some of Marseille's quality advantage.",
+                                "Auxerre sit just 3 points above the relegation zone and need home points urgently, while Marseille are chasing the top of the table, 8 points behind the leaders."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1.04,
+                            "m_home": 0.9,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.53,
+                                "draw": 0.23,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Auxerre are missing regular starting forward Danny Namaso (3 goals, 2 assists) and regular starting defender Lamine Sy (9 starts), taking away 28% of their league goals and weakening their backline.",
+                                "Marseille have only three days of rest following Thursday's Europa League win over Levski Sofia, whereas Auxerre have had eight days to prepare.",
+                                "Marseille have won four of their last five Ligue 1 matches and zero of their 11 league games this season have ended in a draw, pointing toward an away victory."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.99,
+                            "m_home": 0.89,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.25,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Auxerre are without regular defender Lamine Sy and forward Danny Namaso, whose three goals and two assists remove a notable share of their attack.",
+                                "Marseille have only three rest days after Thursday's Europa League win, versus eight days for Auxerre, which slightly tempers the away edge.",
+                                "Marseille have won seven of their last ten matches in all competitions and have taken three wins from five league away games."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.28,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Auxerre are without regular starter Danny Namaso, who has 3 league goals (21% of the side's) and 2 assists from 10 starts, plus regular defender Lamine Sy (9 league starts); both absences are listed by two sources.",
+                                "Marseille have only 3 rest days after a Europa League match on 26 November and two games in the last 14 days, while Auxerre have had 8 days' rest and one match in that span.",
+                                "Auxerre sit 15th, only 3 points above the relegation places with 23 games left, so they need points more urgently than sixth-placed Marseille, who are 8 off the leaders and 10 clear of the drop zone."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2404,
+                        0.254,
+                        0.5056
+                    ],
+                    "p_adj": [
+                        0.234372,
+                        0.254278,
+                        0.511349
+                    ],
+                    "p_llm": [
+                        0.265706,
+                        0.252191,
+                        0.482102
+                    ],
+                    "p_shadow": [
+                        0.240437,
+                        0.253974,
+                        0.505589
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "aj-auxerre-vs-marseille-2026-11-29"
+            },
+            "sha256": "68b6212ba676eddf0d6ccb17b938adb36a459f555e3d44f02e4b993a8ad498f1",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/l1-2627-0070-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "newcastle-united",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0112",
+                "home": "brighton",
+                "inputs": {
+                    "elo_away": 1484,
+                    "elo_home": 1547.9,
+                    "lambda_away": 1.262427,
+                    "lambda_home": 1.838995,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.503168,
+                        0.240357,
+                        0.256475
+                    ],
+                    "p_elo": [
+                        0.487775,
+                        0.273176,
+                        0.239048
+                    ],
+                    "p_market": [
+                        0.624269,
+                        0.205862,
+                        0.169869
+                    ],
+                    "p_stat": [
+                        0.497193,
+                        0.255748,
+                        0.24706
+                    ],
+                    "retained_mass": 0.999999999854,
+                    "rho": -0.058357,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T14:05:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6126,
+                    "draw_risk": false,
+                    "over_2_5": 0.5938,
+                    "p": [
+                        0.4972,
+                        0.2557,
+                        0.2471
+                    ],
+                    "p_display": [
+                        49.7,
+                        25.6,
+                        24.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1176,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0949,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0757,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0752,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0645,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.21,
+                                "draw": 0.24,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Brighton are without Mitoma, Ferguson and Yalcouyé, with Boscagli (11 of 11 starts) and O'Riley doubtful on one source each, while Newcastle miss Joelinton.",
+                                "Newcastle have had 8 rest days against Brighton's 3, and both play again on 2 December, so Brighton's squad rotation is a risk.",
+                                "Brighton have scored 15 and conceded 1 in five home league games, while Newcastle have won 3 of 11 and are only 4 points above the relegation zone."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.23,
+                                "draw": 0.25,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Brighton are missing Kaoru Mitoma and have Costinha suspended, while Boscagli and Tzimas are doubtful; Mitoma's absence removes a key creative threat, so Brighton's attack is adjusted down slightly.",
+                                "Brighton have won 4 of 5 home league games with a 15-1 goal record, while Newcastle have lost 2 of 5 away games, making Brighton's home strength a decisive factor.",
+                                "Brighton are 2nd and chasing the leaders, while Newcastle are 13th and only 4 points above the relegation zone, so Brighton have more incentive to push for a win."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.97,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.24,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Brighton have several attacking absences including Kaoru Mitoma, Evan Ferguson and Malick Yalcouyé (8% of their league goals), while regular starter Olivier Boscagli is listed as doubtful by only one source.",
+                                "Brighton enter with just three days of rest following a Thursday European match, whereas Newcastle United have had eight days to prepare.",
+                                "Brighton's dominant home record of four wins and a draw from five league games with a 15-1 goal difference makes them strong favourites to overcome a mid-table Newcastle side."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.94,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Brighton are without Mitoma and Yalcouyé, whose two league goals account for 8% of their total, while Costinha is suspended; Boscagli and O’Riley are only listed by one source as doubtful.",
+                                "Brighton have had only three rest days after their Conference League match and face Bournemouth three days later, whereas Newcastle have had eight days to prepare.",
+                                "Brighton’s unbeaten home league record includes 15 goals scored and only one conceded in five matches, giving them a strong home edge despite the absences."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.19,
+                                "draw": 0.25,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Brighton have had only 3 rest days after a Conference League match and play again in 3 days, while Newcastle have had 8, so the hosts are the side more exposed to fatigue or rotation.",
+                                "Mitoma and Ferguson are out and Costinha is suspended, all on two sources, which trims Brighton's options; Boscagli, a regular-starting defender, is only doubtful on one source, so that absence is not confirmed.",
+                                "Brighton are 6 points behind the leaders and need points to stay in the title race, while Newcastle are 4 points above the relegation zone and under less immediate pressure."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4998,
+                        0.258,
+                        0.2422
+                    ],
+                    "p_adj": [
+                        0.486971,
+                        0.260607,
+                        0.252422
+                    ],
+                    "p_llm": [
+                        0.550219,
+                        0.246149,
+                        0.203632
+                    ],
+                    "p_shadow": [
+                        0.499776,
+                        0.258045,
+                        0.242179
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "brighton-vs-newcastle-united-2026-11-29"
+            },
+            "sha256": "5f05f12a22ab82cc3c74b1e4de7768c50ec31d1475be1ce70d42c0e5bb7d14b9",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0112-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "hull-city",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0113",
+                "home": "crystal-palace",
+                "inputs": {
+                    "elo_away": 1209.3,
+                    "elo_home": 1398.3,
+                    "lambda_away": 1.187208,
+                    "lambda_home": 1.146375,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.341685,
+                        0.296585,
+                        0.361731
+                    ],
+                    "p_elo": [
+                        0.613794,
+                        0.23981,
+                        0.146397
+                    ],
+                    "p_market": [
+                        0.508752,
+                        0.249893,
+                        0.241354
+                    ],
+                    "p_stat": [
+                        0.480924,
+                        0.278801,
+                        0.240275
+                    ],
+                    "retained_mass": 0.999999999931,
+                    "rho": -0.058357,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T14:05:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.478,
+                    "draw_risk": false,
+                    "over_2_5": 0.4184,
+                    "p": [
+                        0.4809,
+                        0.2788,
+                        0.2403
+                    ],
+                    "p_display": [
+                        48.1,
+                        27.9,
+                        24
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1456,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1313,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1064,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0984,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0897,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.29,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Palace lack suspended Pino (10 of 11 starts, 2 league goals, 17% of the team's) and Mateta, a 3-match ban, while Hull's absentees are mostly squad players.",
+                                "Palace have 3 rest days after a Europa League game on Thursday against Hull's 7, and both sides play again on 2 December.",
+                                "Palace are 20th and 4 points from safety, so they need the points more, but their 12-27 goal record shows how leaky they are."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.3,
+                                "home": 0.32
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Crystal Palace are missing suspended regular starter Yeremy Pino, who has 2 of their 12 league goals and 1 assist, plus forward Mateta; this removes a meaningful share of an already blunt attack.",
+                                "Crystal Palace have had only 3 rest days and played a Europa League match on 2026-11-26, while Hull have had 7 rest days and played once in the last 14 days, so Hull should be fresher.",
+                                "Palace are bottom, 4 points from safety, and need the points more urgently, but Hull are only 5 points above the drop zone and will also be motivated to avoid being dragged closer to it."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Crystal Palace are missing suspended regular starter Yeremy Pino, who has contributed two of their 12 league goals, alongside suspended forward Jean-Philippe Mateta.",
+                                "Crystal Palace have only three days of rest following their Thursday Europa League match, whereas Hull City have had a full week to prepare.",
+                                "Hull City have drawn five of their 11 league matches and concede barely a goal per game, making a share of the spoils likely against a Palace side that has lost eight of 11."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.91,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.29,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Palace are without regular-starting creator Yeremy Pino (2 league goals, 1 assist) and suspended forward Mateta, reducing an attack that has scored 12 league goals.",
+                                "Palace have only three rest days after beating Real Sociedad in Europe, versus Hull's seven, with Chelsea away three days later.",
+                                "Hull's recent win over Brighton and tighter league defensive record (11 conceded) contrast with Palace losing eight of 11 league matches and conceding 27."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.98,
+                            "m_home": 0.94,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.31,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Two sources list Yeremy Pino suspended: a regular starter (10 of 11) with 2 league goals (17% of Palace's) and 1 assist, with Mateta also banned, so Palace's attack is thinner than usual.",
+                                "Palace have had only 3 rest days and a European match in a congested run, with Chelsea three days later, while Hull have had 7 days since their last match.",
+                                "Palace are 20th and 4 points from safety with 27 games left, so they need the points more than Hull, who sit 11th and 5 points above the drop."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.4462,
+                        0.2886,
+                        0.2652
+                    ],
+                    "p_adj": [
+                        0.472559,
+                        0.283326,
+                        0.244114
+                    ],
+                    "p_llm": [
+                        0.342631,
+                        0.300508,
+                        0.356861
+                    ],
+                    "p_shadow": [
+                        0.446169,
+                        0.288649,
+                        0.265182
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "crystal-palace-vs-hull-city-2026-11-29"
+            },
+            "sha256": "478fdb0224dfe87322a55d11405a5371b455b70f49786f003c22f6cadac395d5",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0113-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "bournemouth",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0114",
+                "home": "fulham",
+                "inputs": {
+                    "elo_away": 1529.7,
+                    "elo_home": 1443.6,
+                    "lambda_away": 1.259399,
+                    "lambda_home": 1.33386,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.378082,
+                        0.278756,
+                        0.343161
+                    ],
+                    "p_elo": [
+                        0.330631,
+                        0.285139,
+                        0.384229
+                    ],
+                    "p_market": [
+                        0.339517,
+                        0.273687,
+                        0.386796
+                    ],
+                    "p_stat": [
+                        0.354216,
+                        0.281917,
+                        0.363868
+                    ],
+                    "retained_mass": 0.999999999723,
+                    "rho": -0.058357,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T14:05:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5357,
+                    "draw_risk": false,
+                    "over_2_5": 0.4787,
+                    "p": [
+                        0.3542,
+                        0.2819,
+                        0.3639
+                    ],
+                    "p_display": [
+                        35.4,
+                        28.2,
+                        36.4
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1344,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0921,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0866,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0839,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.083,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.27,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "form",
+                                "schedule",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Bournemouth have won all ten of their recent matches across competitions, while Fulham have drawn five of their last seven without a win in the league.",
+                                "Fulham have had 8 rest days against Bournemouth's 3, and Bournemouth also play Brighton 3 days later after a Europa League trip, so some rotation or fatigue is possible.",
+                                "Fulham are missing Andersen, who started only 2 of 11 league games, while Bournemouth's absences are mostly non-starters, so the effect is small; the Kroupi and Doak illness doubts rest on one source."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.3,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "form",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Bournemouth arrive on a run of ten straight wins in all competitions, including away league wins at Manchester United and Ipswich, while Fulham have drawn four of their last five league games and won only once at home this season.",
+                                "Bournemouth played a Europa League match at Celta Vigo only three days before this game, whereas Fulham have had eight rest days, which may offset some of Bournemouth's momentum.",
+                                "Fulham are only two points above the relegation zone and need home points urgently, while Bournemouth are fifth and chasing a European place, so both sides have clear incentives."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.29,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Bournemouth have only three rest days after playing away at Celta Vigo in the Europa League on Thursday, whereas Fulham have had eight days to prepare.",
+                                "Bournemouth enter the match on a ten-game winning streak across all competitions, though Fulham have proved tough to beat by drawing their last three league games against Aston Villa, Newcastle, and Manchester City.",
+                                "With Fulham sitting just two points above the relegation zone and five of their 11 league games ending level, the hosts have every incentive to keep things tight against fifth-placed Bournemouth."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.28,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Bournemouth have only three rest days after Thursday's Europa League trip to Celta Vigo, compared with Fulham's eight, which narrows the away side's edge.",
+                                "Bournemouth have won 10 straight in all competitions, including four consecutive away victories, giving them the stronger current performance level.",
+                                "Fulham are only two points above the relegation zone, so the home side have added incentive to protect a result."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.29,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "form",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Bournemouth have won their last 10 in all competitions, so they arrive far sharper than Fulham, who have drawn four of their last five league games and taken only one win in five at home.",
+                                "Bournemouth have had only 3 rest days after a Europa League match and play again in 3 days, while Fulham have had 8, which may blunt the visitors' edge.",
+                                "Fulham are only 2 points above the relegation zone after 11 games, so they need the points more than fifth-placed Bournemouth, who are 9 clear of the drop."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3426,
+                        0.2832,
+                        0.3742
+                    ],
+                    "p_adj": [
+                        0.354216,
+                        0.281916,
+                        0.363868
+                    ],
+                    "p_llm": [
+                        0.29773,
+                        0.28629,
+                        0.415981
+                    ],
+                    "p_shadow": [
+                        0.342584,
+                        0.283169,
+                        0.374247
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "fulham-vs-bournemouth-2026-11-29"
+            },
+            "sha256": "0063980e0421a2bde3564020f3087167f467be0e699a5bd65d4f547b50124393",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0114-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "tottenham-hotspur",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "premier-league",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "pl-2627-0115",
+                "home": "sunderland",
+                "inputs": {
+                    "elo_away": 1430.5,
+                    "elo_home": 1300,
+                    "lambda_away": 1.174205,
+                    "lambda_home": 1.224477,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.366247,
+                        0.291896,
+                        0.341857
+                    ],
+                    "p_elo": [
+                        0.28726,
+                        0.281553,
+                        0.431187
+                    ],
+                    "p_market": [
+                        0.237201,
+                        0.273793,
+                        0.489007
+                    ],
+                    "p_stat": [
+                        0.325918,
+                        0.287759,
+                        0.386323
+                    ],
+                    "retained_mass": 0.999999999901,
+                    "rho": -0.058548,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9917,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T14:05:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4947,
+                    "draw_risk": false,
+                    "over_2_5": 0.4312,
+                    "p": [
+                        0.3259,
+                        0.2878,
+                        0.3863
+                    ],
+                    "p_display": [
+                        32.6,
+                        28.8,
+                        38.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1363,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1119,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0971,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0922,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0866,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.29,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sunderland are without Brobbey (3 league goals, 38% of the team's) and Xhaka (started 10 of 11), plus Danso and Ballard in defence, so they lose both scoring and midfield control.",
+                                "Sunderland have 3 rest days after a Europa League match and visit Liverpool in 3 days, while Tottenham have 8 rest days.",
+                                "Sunderland are in the relegation zone, 2 points from safety, so they need the points more, while Tottenham are 6 points clear of the drop."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.9,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.31,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sunderland are missing regular starters Brian Brobbey (38% of their league goals) and Granit Xhaka (10 league starts), plus two defenders with 5 starts each, which weakens their attack and midfield.",
+                                "Tottenham are without regular starter Mathys Tel and several squad options, but their core XI is less affected than Sunderland's.",
+                                "Sunderland are in the relegation zone, 2 points from safety, so they need a result at home, while Tottenham are 6 points clear of the bottom three and under less immediate pressure."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.94,
+                            "m_home": 0.87,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.28,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sunderland are without regular starters Granit Xhaka and Brian Brobbey—who accounts for 38% of their league goals—plus defenders Danny Ballard and Kevin Danso (listed out by one source), while Tottenham Hotspur miss regular starting forward",
+                                "Tottenham Hotspur have a significant freshness advantage with eight rest days compared to three for Sunderland, who played a European fixture on Thursday and visit Liverpool in three days.",
+                                "Sitting 18th and two points from safety, Sunderland have an urgent need for points to escape the relegation zone, though they have scored only twice in five home league games."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.97,
+                            "m_home": 0.85,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.29,
+                                "home": 0.2
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sunderland are without Brobbey, scorer of 3 league goals (38% of their total), and regular-starting midfielder Xhaka, reducing an already low-scoring side's options.",
+                                "Sunderland had European action three days ago and have only three rest days, while Tottenham have had eight days to prepare.",
+                                "Tottenham have won three of their last five competitive matches, whereas Sunderland have scored only eight league goals in 11 games."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 0.96,
+                            "m_home": 0.88,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.32,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Sunderland are without regular starter Brobbey, 3 of their 8 league goals, and Xhaka, who has started 10 of 11; Ballard is also confirmed out, while Danso is only one source. Spurs lose regular starter Tel, just 8% of their league goals, wi",
+                                "Sunderland have 3 rest days after a Europa League match and play at Liverpool 3 days later, against 8 rest days and one match in 14 days for Tottenham.",
+                                "Sunderland sit 18th, 2 points from safety, so they need the points more, but their blunt home attack (2 goals in 5) and missing scorer limit how much that changes the result."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3004,
+                        0.2957,
+                        0.4039
+                    ],
+                    "p_adj": [
+                        0.31053,
+                        0.294262,
+                        0.395208
+                    ],
+                    "p_llm": [
+                        0.261547,
+                        0.300077,
+                        0.438375
+                    ],
+                    "p_shadow": [
+                        0.300364,
+                        0.295726,
+                        0.40391
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "sunderland-vs-tottenham-hotspur-2026-11-29"
+            },
+            "sha256": "968e289c71c8300f0a1e20f9e99ac749adc900c089ced6fbba563474496be9c3",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/pl-2627-0115-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "napoli",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "serie-a",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "sa-2627-0033",
+                "home": "sassuolo",
+                "inputs": {
+                    "elo_away": 1624.7,
+                    "elo_home": 1314.5,
+                    "lambda_away": 1.850266,
+                    "lambda_home": 1.020705,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 25,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.204466,
+                        0.22906,
+                        0.566474
+                    ],
+                    "p_elo": [
+                        0.14565,
+                        0.239419,
+                        0.614931
+                    ],
+                    "p_market": [
+                        0.197156,
+                        0.218887,
+                        0.583957
+                    ],
+                    "p_stat": [
+                        0.169568,
+                        0.231917,
+                        0.598515
+                    ],
+                    "retained_mass": 0.999999999841,
+                    "rho": -0.013938,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5397,
+                    "draw_risk": false,
+                    "over_2_5": 0.5485,
+                    "p": [
+                        0.1696,
+                        0.2319,
+                        0.5985
+                    ],
+                    "p_display": [
+                        17,
+                        23.2,
+                        59.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1098,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1092,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1046,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.1024,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0645,
+                            "score": "1-3"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.25,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sassuolo are without Adžić (3 of their 16 league goals, regular starter) and Leysen, with Bakola doubtful, while Napoli lose Di Lorenzo, Lobotka and goalkeeper Meret, so both sides are weakened.",
+                                "Sassuolo are 18th on 8 points, level with 17th, and have lost 8 of 12; Napoli are 10 points clear of the drop and have less pressure.",
+                                "Sassuolo have lost 7 of their last 8 games and conceded 31 league goals, so Napoli's 19 goals should be enough to win."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.9,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.6,
+                                "draw": 0.22,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Sassuolo are missing regular midfielders Adžić (3 league goals, 19% of the team's) and likely Bakola, plus defender Leysen, weakening a side already conceding heavily at home.",
+                                "Napoli are without first-choice goalkeeper Meret and regular starters Di Lorenzo and Lobotka, but retain enough depth to control a struggling Sassuolo midfield.",
+                                "Napoli have won the last five league meetings, including 2-0 and 1-0 wins in the most recent two, and have not lost to Sassuolo in this run."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.92,
+                            "m_home": 0.9,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.55,
+                                "draw": 0.24,
+                                "home": 0.21
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Both sides have key absences: Sassuolo are without regular starter Vasilije Adžić and Cristian Volpato, missing 25% of their league goals, while Napoli lack first-choice goalkeeper Alex Meret and outfield regular starters Giovanni Di Lorenz",
+                                "Sassuolo enter on a six-match losing streak in which they conceded 21 goals, giving Napoli a clear advantage against a fragile defence.",
+                                "Sitting 18th in the relegation zone only on goal difference, Sassuolo are under immediate pressure to take points to climb out of the bottom three."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.96,
+                            "m_home": 0.99,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.25,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Sassuolo’s confirmed absences include Adžić, scorer of 3 league goals, while Napoli miss regulars Meret, Di Lorenzo and Lobotka; several other injury listings have only one source.",
+                                "Sassuolo have lost six straight matches and conceded 21 goals in that run, making Napoli’s stronger underlying squad the likelier winner despite their own absences.",
+                                "Napoli have won each of the last five league meetings with Sassuolo, keeping a clean sheet in all five."
+                            ],
+                            "score": "1-2"
+                        },
+                        "grok": {
+                            "m_away": 0.88,
+                            "m_home": 0.92,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.51,
+                                "draw": 0.27,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Both sides are short of regular starters: Sassuolo are without Adžić (19% of their league goals), while Napoli are missing first-choice goalkeeper Meret plus Di Lorenzo and Lobotka; several other names are only from one source.",
+                                "Sassuolo are 18th and level with 17th on goal difference, so they need the points more than Napoli, who sit 10 points above the relegation zone.",
+                                "Napoli have won all five listed recent league meetings, including 0-2 and 1-6 at Sassuolo."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.177,
+                        0.2385,
+                        0.5846
+                    ],
+                    "p_adj": [
+                        0.166654,
+                        0.235923,
+                        0.597423
+                    ],
+                    "p_llm": [
+                        0.222897,
+                        0.24648,
+                        0.530623
+                    ],
+                    "p_shadow": [
+                        0.176978,
+                        0.238462,
+                        0.58456
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "sassuolo-vs-napoli-2026-11-29"
+            },
+            "sha256": "ef1a5238d2a22e209eebcfa2ce3cd6837db205292ed914d2673be9d31649380d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sa-2627-0033-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "padova",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0026",
+                "home": "modena",
+                "inputs": {
+                    "elo_away": 1122.1,
+                    "elo_home": 1251.6,
+                    "lambda_away": 0.811629,
+                    "lambda_home": 1.464496,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.513796,
+                        0.290108,
+                        0.196096
+                    ],
+                    "p_elo": [
+                        0.555753,
+                        0.257633,
+                        0.186613
+                    ],
+                    "p_market": [
+                        0.673459,
+                        0.200576,
+                        0.125965
+                    ],
+                    "p_stat": [
+                        0.540078,
+                        0.271606,
+                        0.188316
+                    ],
+                    "retained_mass": 0.999999999941,
+                    "rho": -0.098099,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4344,
+                    "draw_risk": false,
+                    "over_2_5": 0.4049,
+                    "p": [
+                        0.5401,
+                        0.2716,
+                        0.1883
+                    ],
+                    "p_display": [
+                        54,
+                        27.2,
+                        18.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1455,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.1255,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1158,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1073,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0939,
+                            "score": "2-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.22,
+                                "draw": 0.27,
+                                "home": 0.51
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Padova are without suspended regular midfielder Fusi and forward Artistico (3 of the team's 14 goals), plus Lasagna and Caprari, so their attack is thin; the team news comes from one source.",
+                                "Modena are 2nd, 3 points off the leaders and 5 clear of 3rd, while Padova are 12th, 3 points off the play-offs and 4 above the drop.",
+                                "Modena are 4W 1D 1L at home with 11 goals scored, while Padova have won only 2 of 6 away games and scored 6 goals."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.9,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.25,
+                                "home": 0.55
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Padova are missing three forwards including Gabriele Artistico, who has scored 3 of their 14 league goals (21%), plus regular midfielder Pietro Fusi through suspension, which blunts an attack that has only scored 14 goals in 13 games.",
+                                "Modena are without regular starters Daniel Tonoli (8 league starts, 3 assists) and Francesco Zampano (7 starts), but their squad depth and strong home record should absorb this better than Padova's absentees.",
+                                "Modena sit 2nd and are 5 points clear of 3rd in the automatic promotion places, while Padova are 3 points off the play-off spots and 4 above the relegation zone, so the home side has both the stronger incentive and the stronger position."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.9,
+                            "m_home": 0.95,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.26,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Although reported by only one source, Padova are missing suspended regular midfielder Pietro Fusi and injured forwards including Gabriele Artistico, removing at least 35% of their league goals while Modena lack regular starters Francesco Za",
+                                "Modena need a win to defend their automatic promotion spot and stay within three points of the league leaders, whereas mid-table Padova sit equidistant from the play-off places and the relegation zone.",
+                                "Modena are unbeaten in their last six games and have won four of six at home, putting them in strong position to punish a Padova side that is winless in four matches."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.87,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.27,
+                                "home": 0.57
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "All absences are reported by one source; Padova would lose 3-goal forward Artistico, regular midfielder Fusi and further forward depth, while Modena lack regular defender Tonoli.",
+                                "Padova are only three points from the play-off places but also four above relegation, adding importance to avoiding defeat.",
+                                "Modena are unbeaten in their past five matches and have won four of six home league games, making their promotion-level home form the key edge."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 0.92,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.28,
+                                "home": 0.52
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "All absences are one source: Padova miss regular starter Fusi (suspended) and Artistico, who has 21% of their league goals, while Modena are without regular starters Tonoli and Zampano.",
+                                "Modena are 2nd and in the automatic promotion places, 3 points off the lead, while Padova are 3 points short of the play-off places and need the points more.",
+                                "Padova won both league meetings last season, including 2-1 at Modena, so this is not a straightforward home edge."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.543,
+                        0.2736,
+                        0.1834
+                    ],
+                    "p_adj": [
+                        0.543089,
+                        0.275397,
+                        0.181514
+                    ],
+                    "p_llm": [
+                        0.542483,
+                        0.266285,
+                        0.191232
+                    ],
+                    "p_shadow": [
+                        0.543003,
+                        0.273567,
+                        0.183429
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "modena-vs-padova-2026-11-29"
+            },
+            "sha256": "eaa4163da386bc32a8659347e555adc738778c9d4300e735b2cedf11c79d9aad",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0026-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "mantova",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "serie-b",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "sb-2627-0027",
+                "home": "sudtirol",
+                "inputs": {
+                    "elo_away": 1171.7,
+                    "elo_home": 1159.6,
+                    "lambda_away": 1.114382,
+                    "lambda_home": 1.368893,
+                    "last_result_used": "2026-11-25",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T14:06:28Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.413956,
+                        0.293406,
+                        0.292638
+                    ],
+                    "p_elo": [
+                        0.407179,
+                        0.283784,
+                        0.309037
+                    ],
+                    "p_market": [
+                        0.32643,
+                        0.289379,
+                        0.384191
+                    ],
+                    "p_stat": [
+                        0.41268,
+                        0.287439,
+                        0.29988
+                    ],
+                    "retained_mass": 0.999999999975,
+                    "rho": -0.098099,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T14:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T14:11:05Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5122,
+                    "draw_risk": false,
+                    "over_2_5": 0.454,
+                    "p": [
+                        0.4127,
+                        0.2874,
+                        0.2999
+                    ],
+                    "p_display": [
+                        41.3,
+                        28.7,
+                        30
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.137,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1015,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.094,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0869,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0825,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.31,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Mantova lack suspended regular starter Trimboli (9 of 13 starts) and injured Silva (6 starts), thinning their midfield; Sudtirol miss Bjarkason (5 starts) and Zeroli, a lesser loss; all team news is from one source.",
+                                "Sudtirol are 1 point off the play-off places while Mantova are 4th and 4 points clear of 9th, so both need the points.",
+                                "Sudtirol are unbeaten at home (3W 4D, 7-3) but just lost 1-4 at Palermo, while Mantova's away record (3W 2D 1L) points to a tight game."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.95,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.31,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Mantova are missing regular starter Simone Trimboli (9 league starts) and Jonathan Silva (6 starts), weakening their midfield; Sudtirol's absences are mostly squad players, with Bjarkason (5 starts) the most notable.",
+                                "Sudtirol are unbeaten at home this season (3W 4D) and have conceded only 3 goals in 7 home games, but Mantova have won 3 of 6 away, so a tight contest is likely.",
+                                "Mantova sit 4th and are protecting a promotion play-off place, while Sudtirol are 1 point outside the play-off spots, so both sides have a clear incentive to avoid defeat."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.34,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Mantova regular starter Simone Trimboli as suspended and rotation midfielder Jonathan Silva out injured, weakening the visitors' midfield options more than Sudtirol's single-source squad absences.",
+                                "Sudtirol sit ninth and just one point outside the promotion play-off places, giving them a direct incentive to close the four-point gap on fourth-placed Mantova.",
+                                "Sudtirol are unbeaten in seven home league matches while conceding only three goals, which should neutralise a Mantova side that has lost just once in six away trips."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.31,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Mantova are without regular-starting midfielder Simone Trimboli (9 league starts) and Jonathan Silva (6 starts), although both absences are reported by one source.",
+                                "Sudtirol are one point outside the play-off places, giving the unbeaten home side a strong incentive to protect or improve its position.",
+                                "Sudtirol's 3-4-0 home record with only three goals conceded should offset much of Mantova's stronger overall league position."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.35,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "head_to_head",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Unlike a typical meeting, Mantova won 0-3 at Stadio Druso in April and are unbeaten in the last three league meetings.",
+                                "Mantova are without regular starter Trimboli (9 of 13 league starts) and Silva, both only from one source, which trims their midfield; Sudtirol's absences are not regular starters.",
+                                "Sudtirol sit one point off the play-off places, while Mantova are already in them and five points off automatic promotion, so both need the result."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "2/5",
+                    "ai_combined": [
+                        0.4008,
+                        0.2971,
+                        0.3022
+                    ],
+                    "p_adj": [
+                        0.415433,
+                        0.290023,
+                        0.294544
+                    ],
+                    "p_llm": [
+                        0.344018,
+                        0.324148,
+                        0.331835
+                    ],
+                    "p_shadow": [
+                        0.400753,
+                        0.297067,
+                        0.302179
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "sudtirol-vs-mantova-2026-11-29"
+            },
+            "sha256": "1e9d1acc2e3beac86bad2fd7fd6890fc3d5be5401426bc2cfffda49ffec15a5a",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sb-2627-0027-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "energie-cottbus",
                 "batch_id": "2026-11-27T0015Z-model-predict",
                 "competition": "2-bundesliga",
@@ -238,7 +2618,7 @@
                 "slug": "1-fc-magdeburg-vs-energie-cottbus-2026-11-29"
             },
             "sha256": "c85b966962dfced4f02181ecddbf40b4e79f417a4d9a0ccd743c67e75b05909c",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0016-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +2856,7 @@
                 "slug": "spvgg-greuther-furth-vs-arminia-bielefeld-2026-11-29"
             },
             "sha256": "2697ad34850879a0eabc1fdb648e28871149897d3434bc64de681e6cf20a7a99",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0017-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +3094,7 @@
                 "slug": "tsv-eintracht-braunschweig-vs-vfl-wolfsburg-2026-11-29"
             },
             "sha256": "6917c9cc21e18cec641d98dc88036358a389f860e4fe9b10a877adbbdfe614c6",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0018-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +3332,7 @@
                 "slug": "sint-truidense-be-vs-racing-genk-2026-11-29"
             },
             "sha256": "d3bacd721e5cf651848f25478cf2ca1acd6d0f7551a766ad4deada3a9879562c",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0015-r1.json",
             "status": "pending",
             "result": null
@@ -1059,7 +3439,7 @@
                 "slug": "saint-die-kellermann-vs-sochaux-2026-11-29"
             },
             "sha256": "9ab1ccdb0815d78d43088d34788f005bc758fcbc0996e8d290072ea968bb565e",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0011-r1.json",
             "status": "pending",
             "result": null
@@ -1297,7 +3677,7 @@
                 "slug": "lyngby-boldklub-vs-viborg-ff-2026-11-29"
             },
             "sha256": "2a12640043b938c4d7c740b526e4cdc87dd157b3386e7df4fd3077a95a5d6a80",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0008-r1.json",
             "status": "pending",
             "result": null
@@ -1535,7 +3915,7 @@
                 "slug": "randers-fc-vs-ac-horsens-2026-11-29"
             },
             "sha256": "72f7f0c1b15756f13ebaf34db22d2f108ba3ef5c14c3b74d634ffc8d1f8e73f2",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0009-r1.json",
             "status": "pending",
             "result": null
@@ -1773,7 +4153,7 @@
                 "slug": "valencia-vs-osasuna-2026-11-29"
             },
             "sha256": "e67f6c05853d2396d0b11ea1e515f4d8fa9f4e7da2bb9f43265b82dd8d866c24",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/ll-2627-0114-r1.json",
             "status": "pending",
             "result": null
@@ -2011,7 +4391,7 @@
                 "slug": "granada-vs-ceuta-2026-11-29"
             },
             "sha256": "8746a0c3bafdc4de705f0590392578c301fd275328ef4fbc3a9c9fe0c346538d",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/s2-2627-0029-r1.json",
             "status": "pending",
             "result": null
@@ -2249,7 +4629,7 @@
                 "slug": "eyupspor-vs-istanbul-basaksehir-2026-11-29"
             },
             "sha256": "f4a3d5a6e94ea7f48b9347607e8d2ff8a20c4386a158ae2922265ed3827c3923",
-            "commit": "pending",
+            "commit": "f21bf3cf267bd08b1b40bf4db542ea6be72098d1",
             "file": "https://thetouchlineatlas.com/ledger/sl-2627-0028-r1.json",
             "status": "pending",
             "result": null
@@ -23789,8 +26169,12 @@
             "sha256": "14a706b26f147df1218aa21db11207383dc052d7580c9c2b4a992a90f530f690",
             "commit": "23bdd3362892da16eb1214e15e2b1d568e872df1",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0012-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-1",
+                "correct": true,
+                "rps": 0.2046
+            }
         },
         {
             "record": {
@@ -24027,8 +26411,12 @@
             "sha256": "9c85657867bd6156e5298d6d679a24e949c7717533acf0cbc5c6327711eee6e7",
             "commit": "23bdd3362892da16eb1214e15e2b1d568e872df1",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0013-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "4-0",
+                "correct": true,
+                "rps": 0.099
+            }
         },
         {
             "record": {
@@ -24265,8 +26653,12 @@
             "sha256": "799c3e375cc83936aca06627622e6fc74ed3e34f8a98c27b61c6d52ce8807352",
             "commit": "23bdd3362892da16eb1214e15e2b1d568e872df1",
             "file": "https://thetouchlineatlas.com/ledger/b2-2627-0014-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "3-0",
+                "correct": false,
+                "rps": 0.2914
+            }
         },
         {
             "record": {
