@@ -7,6 +7,1196 @@
     "records": [
         {
             "record": {
+                "away": "az-alkmaar",
+                "batch_id": "2026-11-27T2105Z-model-predict",
+                "competition": "eredivisie",
+                "cutoff_utc": "2026-11-27T21:05:55Z",
+                "data_status": "limited_context",
+                "fixture_id": "ed-2627-0029",
+                "home": "pec-zwolle",
+                "inputs": {
+                    "elo_away": 1588.9,
+                    "elo_home": 1374.6,
+                    "lambda_away": 1.916979,
+                    "lambda_home": 1.155886,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T16:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.219885,
+                        0.236319,
+                        0.543797
+                    ],
+                    "p_elo": [
+                        0.213749,
+                        0.266618,
+                        0.519633
+                    ],
+                    "p_market": [
+                        0.169987,
+                        0.199487,
+                        0.630526
+                    ],
+                    "p_stat": [
+                        0.212254,
+                        0.247275,
+                        0.540471
+                    ],
+                    "retained_mass": 0.999999999737,
+                    "rho": -0.070876,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9596,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T15:45:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T16:10:42Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5941,
+                    "draw_risk": false,
+                    "over_2_5": 0.5891,
+                    "p": [
+                        0.2123,
+                        0.2472,
+                        0.5405
+                    ],
+                    "p_display": [
+                        21.2,
+                        24.7,
+                        54.1
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1149,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0977,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0845,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.081,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0624,
+                            "score": "1-3"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.9,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.25,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "AZ are missing many players, including main scorer Meerdink (6 goals, 21% of team's goals) and regular starters Dijkstra and Schouten, so their expected goals drop; Zwolle's absences are minor and Floranus is a part-time starter.",
+                                "Zwolle have had 8 rest days against AZ's 3, and AZ also played in Europe three days ago, which narrows the quality gap.",
+                                "AZ are 3 points behind the leaders and need the points more, while Zwolle are 6 points above the relegation zone."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.52,
+                                "draw": 0.26,
+                                "home": 0.22
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "AZ are missing several regular starters, including Mexx Meerdink, who has 6 league goals and 3 assists (21% of the team's goals), plus first-choice defenders Elijah Dijkstra and Lewis Schouten, which should blunt their attack and weaken the",
+                                "AZ have only 3 rest days and are coming off a Europa League trip to Sparta Prague, while PEC Zwolle have had 8 days to prepare, which may reduce AZ's sharpness late in the match.",
+                                "AZ are 3 points behind the leaders and need the win to stay in the title race, whereas PEC Zwolle are 6 points above the relegation zone and can play with less pressure."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.89,
+                            "m_home": 0.98,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.5,
+                                "draw": 0.25,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "AZ Alkmaar are weakened by the confirmed absence of regular defensive starter Lewis Schouten (two sources), while one source also lists regular starters Elijah Dijkstra, Weslley Patati and six-goal forward Mexx Meerdink (21% of their league",
+                                "AZ Alkmaar have just three rest days after playing away at Sparta Prague on Thursday, giving PEC Zwolle a five-day rest advantage.",
+                                "Fourth-placed AZ Alkmaar sit just three points off the top of the table and have strong incentive to attack a PEC Zwolle side that has lost four of six home league games."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.87,
+                            "m_home": 1.08,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.48,
+                                "draw": 0.25,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "AZ are without 13-start, six-goal forward Meerdink plus two regular-starting defenders, while some of their listed absences have only one source; this notably reduces their attacking and defensive strength.",
+                                "AZ have only three rest days after their Europa League match in Prague, compared with eight for PEC Zwolle.",
+                                "AZ's strong 4-1-2 away league record still gives them an edge, but PEC Zwolle arrive after seven points from their last three league matches."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.88,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.29,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "AZ are missing Meerdink, a 13-game starter with 21% of their league goals and 3 assists, plus regular defenders Dijkstra and Schouten and forward Patati; Meerdink, Dijkstra and Patati are one source only, while Zwolle's listed outs are not ",
+                                "AZ have only 3 rest days after a European match and two games in 14 days, against 8 rest days and one match for Zwolle, with PSV six days later.",
+                                "AZ sit 3 points behind the leaders, so the points matter in the title race, while Zwolle are 6 points above the relegation zone and less urgent."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2309,
+                        0.2584,
+                        0.5107
+                    ],
+                    "p_adj": [
+                        0.224628,
+                        0.257715,
+                        0.517658
+                    ],
+                    "p_llm": [
+                        0.257292,
+                        0.2602,
+                        0.482509
+                    ],
+                    "p_shadow": [
+                        0.230938,
+                        0.258352,
+                        0.51071
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "pec-zwolle-vs-az-alkmaar-2026-11-29"
+            },
+            "sha256": "8d02a54ea96e59cbfe95d9d19ba9d8d82ec0b22977b32a42b9751bb695dbafe6",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ed-2627-0029-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "levadiakos",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "greek-super-league",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "gr-2627-0012",
+                "home": "ofi-crete-gr",
+                "inputs": {
+                    "elo_away": 1452.1,
+                    "elo_home": 1451,
+                    "lambda_away": 1.330736,
+                    "lambda_home": 1.546295,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 19,
+                        "captured_utc": "2026-11-28T16:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.406638,
+                        0.28314,
+                        0.310222
+                    ],
+                    "p_elo": [
+                        0.418818,
+                        0.282804,
+                        0.298378
+                    ],
+                    "p_market": [
+                        0.46871,
+                        0.27321,
+                        0.25808
+                    ],
+                    "p_stat": [
+                        0.414839,
+                        0.281711,
+                        0.30345
+                    ],
+                    "retained_mass": 0.999999999859,
+                    "rho": -0.154753,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T15:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T16:10:42Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5965,
+                    "draw_risk": false,
+                    "over_2_5": 0.5493,
+                    "p": [
+                        0.4148,
+                        0.2818,
+                        0.3034
+                    ],
+                    "p_display": [
+                        41.5,
+                        28.2,
+                        30.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1331,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0914,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0754,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0739,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0705,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.93,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.26,
+                                "draw": 0.28,
+                                "home": 0.46
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "OFI Crete have eight players out on one source, including regular starting defender Poungouras and forward Kodro, who has 4 of the side's 14 league goals.",
+                                "OFI Crete have only 3 rest days after a Europa League loss and face a cup match three days later, while Levadiakos have had 7 days.",
+                                "Levadiakos are level on points with the relegation place and have scored only 5 league goals in 11 games, so they need a point badly but lack the attack to take it."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.94,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.24,
+                                "home": 0.58
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "OFI are missing regular centre-back Achilleas Poungouras (9 league starts) and forward Kenan Kodro, whose 4 league goals are 29% of the team's total, so their attack and defence are both weakened.",
+                                "OFI have had only 3 rest days and played 2 matches in the last 14 days, including a Europa League defeat to Anderlecht on 2026-11-26, while Levadiakos have had 7 rest days and only 1 match in that period.",
+                                "Levadiakos are level on points with 13th, the top relegation place, so they need points badly, but their away record of 0W 2D 3L with 1 goal scored in 5 away games makes an away win unlikely."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.91,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.26,
+                                "home": 0.56
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists OFI Crete without regular starter Achilleas Poungouras in defence and forward Kenan Kodro, who has scored 29% of their league goals.",
+                                "OFI Crete have only three rest days after a midweek European fixture and play a cup game three days later, whereas Levadiakos have had a full week of rest.",
+                                "OFI Crete are unbeaten at home in the league while Levadiakos have scored just once in five away matches, giving the hosts a clear edge despite their fatigue and absences."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.9,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.27,
+                                "home": 0.53
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "OFI's single-source absences include Kodro, scorer of 4 league goals, and regular-starting defender Poungouras, reducing their attacking and defensive depth.",
+                                "OFI have only three rest days after an Anderlecht defeat and face a cup match three days later, while Levadiakos have had seven days to prepare.",
+                                "OFI's unbeaten home league record (3 wins, 2 draws, 8-3 goals) contrasts with Levadiakos's winless away return and only one away goal."
+                            ],
+                            "score": "1-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.2,
+                                "draw": 0.3,
+                                "home": 0.5
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "All OFI absences are single-source: Kenan Kodro (4 league goals, 29% of the side's) and regular-starter defender Achilleas Poungouras (9 of 11) are listed out, which trims both their scoring and their back line; Levadiakos only miss a one-s",
+                                "OFI have 3 rest days after a Europa League defeat and a Cup group game three days later, while Levadiakos have had 7 days and no midweek match.",
+                                "Levadiakos are level on points with 13th and the relegation places, so they need a result more than 6th-placed OFI, who sit 10 points clear of the drop."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4259,
+                        0.2848,
+                        0.2894
+                    ],
+                    "p_adj": [
+                        0.400435,
+                        0.286063,
+                        0.313503
+                    ],
+                    "p_llm": [
+                        0.526568,
+                        0.270456,
+                        0.202977
+                    ],
+                    "p_shadow": [
+                        0.425854,
+                        0.284795,
+                        0.289352
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "ofi-crete-gr-vs-levadiakos-2026-11-29"
+            },
+            "sha256": "6a4502e597eb56f2598deb9786b539873e93b8c9ec5307e734fe0bdf7175f1fd",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/gr-2627-0012-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "barcelona",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0115",
+                "home": "deportivo-la-coruna",
+                "inputs": {
+                    "elo_away": 1829.4,
+                    "elo_home": 1313.9,
+                    "lambda_away": 2.482491,
+                    "lambda_home": 1.024043,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T16:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.134676,
+                        0.17536,
+                        0.689964
+                    ],
+                    "p_elo": [
+                        0.056378,
+                        0.167359,
+                        0.776262
+                    ],
+                    "p_market": [
+                        0.078257,
+                        0.119527,
+                        0.802216
+                    ],
+                    "p_stat": [
+                        0.079167,
+                        0.162296,
+                        0.758537
+                    ],
+                    "retained_mass": 0.999999999808,
+                    "rho": -0.02961,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T15:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T16:10:42Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5806,
+                    "draw_risk": false,
+                    "over_2_5": 0.6905,
+                    "p": [
+                        0.0792,
+                        0.1623,
+                        0.7585
+                    ],
+                    "p_display": [
+                        7.9,
+                        16.2,
+                        75.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-2",
+                    "top_scores": [
+                        {
+                            "p": 0.1041,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.1016,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0861,
+                            "score": "1-3"
+                        },
+                        {
+                            "p": 0.0841,
+                            "score": "0-3"
+                        },
+                        {
+                            "p": 0.0794,
+                            "score": "0-1"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.93,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.69,
+                                "draw": 0.19,
+                                "home": 0.12
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Barcelona lack suspended Fermín López (8 league goals, 16% of the team's) and Xavi Espart, and Lamine Yamal (10 goals, 9 assists) is doubtful on one source, which trims their expected goals.",
+                                "Barcelona have only 4 rest days and face Atlético Madrid 3 days later, while Deportivo have had 8 days, so some rotation is possible.",
+                                "Barcelona have won all 6 away league games (24-6), while Deportivo have lost 3 of their last 4 league matches and are only 3 points above the relegation zone."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.93,
+                            "m_home": 0.99,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.74,
+                                "draw": 0.16,
+                                "home": 0.1
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Barcelona are missing suspended regular starter Fermín López, who has 8 league goals and 5 assists, and Lamine Yamal is doubtful despite being their top scorer with 10 goals and 9 assists; this removes or threatens a large share of their at",
+                                "Barcelona have won all 6 away league games this season, scoring 24 goals, while Deportivo have only 2 wins in 6 home games and sit 3 points above the relegation zone.",
+                                "Barcelona are top but only 3 points clear of 2nd, so they need the points to protect their title lead, while Deportivo are just 3 points above the drop zone and also need a result."
+                            ],
+                            "score": "1-3",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.88,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.63,
+                                "draw": 0.21,
+                                "home": 0.16
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Barcelona lose 16% of their league goals with regular starter Fermín López suspended across two sources, while one source lists regular starters Lamine Yamal (20% of league goals) as doubtful and Xavi Espart as out.",
+                                "Barcelona have only four rest days after a midweek European trip and face Atlético Madrid in the league just three days later, whereas Deportivo La Coruña have had eight days to prepare.",
+                                "Barcelona have won all six away league matches while averaging four goals per game on the road, making them strong favourites even with a depleted attack."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.87,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.68,
+                                "draw": 0.19,
+                                "home": 0.13
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Barcelona are without suspended 8-goal midfielder Fermín López and regular defender Xavi Espart, while Yamal is only doubtful on one source despite contributing 10 goals and 9 assists.",
+                                "Barcelona have only four rest days after a Champions League trip and face Atlético Madrid three days later, increasing rotation and fatigue risk.",
+                                "Barcelona's perfect six-match away league record, with 24 goals scored, still gives them a decisive matchup edge over Deportivo."
+                            ],
+                            "score": "0-2"
+                        },
+                        "grok": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.71,
+                                "draw": 0.18,
+                                "home": 0.11
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "schedule"
+                            ],
+                            "reasons": [
+                                "Fermín López is suspended on two sources, a regular starter with 8 league goals (16% of Barcelona's) and 5 assists, which trims their chance creation; Yamal (doubtful, expected back the same day) and Xavi Espart are only one source, so they",
+                                "Barcelona have won all six away league games, scoring 24 and drawing none all season, so Deportivo's five points from six tight home games (8 goals) are unlikely to hold a side that has barely dropped points.",
+                                "Barcelona have only four rest days after a midweek Champions League win and play Atlético in three days, a mild fatigue risk versus Deportivo's eight days' rest, not a confirmed rotation."
+                            ],
+                            "score": "0-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.0913,
+                        0.1738,
+                        0.7349
+                    ],
+                    "p_adj": [
+                        0.084658,
+                        0.170518,
+                        0.744824
+                    ],
+                    "p_llm": [
+                        0.122791,
+                        0.185893,
+                        0.691316
+                    ],
+                    "p_shadow": [
+                        0.091333,
+                        0.173751,
+                        0.734916
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "deportivo-la-coruna-vs-barcelona-2026-11-29"
+            },
+            "sha256": "565aaafff698013a5b8912a087accfb891d4db3999e2f347aa7dae7851ab4810",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0115-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "castellon",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0030",
+                "home": "mallorca",
+                "inputs": {
+                    "elo_away": 1367,
+                    "elo_home": 1178.5,
+                    "lambda_away": 1.120459,
+                    "lambda_home": 1.161544,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T15:08:13Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.366063,
+                        0.288237,
+                        0.3457
+                    ],
+                    "p_elo": [
+                        0.235068,
+                        0.272251,
+                        0.492681
+                    ],
+                    "p_market": [
+                        0.398186,
+                        0.279285,
+                        0.322529
+                    ],
+                    "p_stat": [
+                        0.296464,
+                        0.282778,
+                        0.420758
+                    ],
+                    "retained_mass": 0.999999999948,
+                    "rho": -0.012393,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T15:15:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T16:10:42Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4634,
+                    "draw_risk": false,
+                    "over_2_5": 0.4007,
+                    "p": [
+                        0.2965,
+                        0.2827,
+                        0.4208
+                    ],
+                    "p_display": [
+                        29.6,
+                        28.3,
+                        42.1
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1372,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1319,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1017,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0947,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0906,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.28,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Mallorca have six players out or doubtful, including midfielder Manu Morlanes (7 of 14 league starts) and defenders Moreno and Donald, so the side is thinner; all of this comes from one source.",
+                                "Castellón are 2nd and only 2 points off the lead with 6 points clear of 3rd, while Mallorca are 9 points off automatic promotion and need wins to stay in the play-off places.",
+                                "Castellón have conceded just 5 goals in 14 games and won 6 of 8 away, which should limit Mallorca's strong home scoring (15 goals in 7 games)."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.92,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.28,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Mallorca are missing several regular starters, including midfielder Manu Morlanes (7 league starts) and defenders Alberto Moreno and Antonio Sánchez (6 starts each), which weakens a side that has conceded only 10 goals in 14 league games.",
+                                "Castellón are 2nd and only 2 points off the leaders, so they need the points to keep automatic promotion pressure on, while Mallorca are level on points with 7th and need a result to protect their play-off place.",
+                                "Castellón have the best away record in the division with 6 wins from 8 away games and have won their last two league matches, while Mallorca have drawn four of their last six league games."
+                            ],
+                            "score": "0-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.94,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.33,
+                                "draw": 0.3,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Mallorca are missing regular midfield starter Manu Morlanes alongside semi-regular starters Antonio Sánchez and Alberto Moreno, which weakens the hosts' depth.",
+                                "Sixth-placed Mallorca are level on points with seventh and need a result to stay in the play-off places, while second-placed Castellón can close a two-point gap to the league leaders.",
+                                "Mallorca's five wins from seven home league matches collide with a Castellón side that has won six of eight away and conceded just five goals all season, pointing to a tight contest."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.06,
+                            "m_home": 0.95,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.28,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Mallorca have several defensive absences plus regular-starting midfielder Manu Morlanes unavailable, although all listed reports are from one source, reducing their balance at both ends.",
+                                "Castellón’s 6-1-1 away record with only four goals conceded makes them unusually well equipped to resist Mallorca’s strong home attack.",
+                                "Mallorca are level with seventh and need points to protect a play-off place, while Castellón can strengthen their six-point hold on automatic promotion."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.3,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Castellón sit 2nd and only 2 points off the leaders in an automatic promotion place, so they need the result more than 6th-placed Mallorca, who are level with 7th in the play-off zone.",
+                                "Mallorca are without regular-starting midfielder Manu Morlanes plus several part-time defenders, all from one source only, which slightly trims their expected output; Castellón’s two absences have no listed roles.",
+                                "Castellón have conceded only 5 goals in 14 league games and won 6 of 8 away, so their control away offsets Mallorca’s strong home scoring record."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "3/5",
+                    "ai_combined": [
+                        0.297,
+                        0.2854,
+                        0.4175
+                    ],
+                    "p_adj": [
+                        0.288649,
+                        0.284242,
+                        0.427109
+                    ],
+                    "p_llm": [
+                        0.331448,
+                        0.288962,
+                        0.37959
+                    ],
+                    "p_shadow": [
+                        0.297017,
+                        0.285444,
+                        0.417539
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "mallorca-vs-castellon-2026-11-29"
+            },
+            "sha256": "e0535cd6569b6b2cad73ce0636bd004545752e558e4d7716c750103b9271c194",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0030-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "erzurum-bb",
+                "batch_id": "2026-11-27T1910Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-27T19:10:29Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0029",
+                "home": "fenerbahce",
+                "inputs": {
+                    "elo_away": 1310.4,
+                    "elo_home": 1740.9,
+                    "lambda_away": 0.668303,
+                    "lambda_home": 2.823471,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-28T16:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.812594,
+                        0.130117,
+                        0.057289
+                    ],
+                    "p_elo": [
+                        0.797218,
+                        0.155432,
+                        0.04735
+                    ],
+                    "p_market": [
+                        0.79149,
+                        0.141053,
+                        0.067457
+                    ],
+                    "p_stat": [
+                        0.818868,
+                        0.134123,
+                        0.047009
+                    ],
+                    "retained_mass": 0.999999999791,
+                    "rho": -0.07582,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T16:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T16:10:42Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4625,
+                    "draw_risk": false,
+                    "over_2_5": 0.6772,
+                    "p": [
+                        0.8189,
+                        0.1341,
+                        0.047
+                    ],
+                    "p_display": [
+                        81.9,
+                        13.4,
+                        4.7
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "high",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1223,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1151,
+                            "score": "3-0"
+                        },
+                        {
+                            "p": 0.0822,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0817,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0812,
+                            "score": "4-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.19,
+                                "home": 0.66
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe are without regular starter Nathan Aké (8 of 12 league starts) plus Oosterwolde, with Diouf doubtful, which slightly weakens defence; Erzurum's Ovacikli (12 of 12 starts) is doubtful, from one source only.",
+                                "Fenerbahçe have 4 days rest after a European trip, while Erzurum had 7 days and have a Turkish Cup tie in 3 days, so rotation is possible.",
+                                "Fenerbahçe have scored 17 goals in 5 home league games against an Erzurum side that has scored 5 in 6 away games and lost its last three."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.16,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe are missing regular starting defender Nathan Aké and have Asensio out, but Erzurum BB's regular defender Orhan Ovacikli is doubtful, so the visitors' back line is more unsettled.",
+                                "Fenerbahçe have scored 17 goals in 5 home league games and won 3 of them, while Erzurum BB have lost 3 of 6 away and scored only 5 away goals.",
+                                "Fenerbahçe are 11 points off the top and need wins to stay in the title race, whereas Erzurum BB are only 6 points above the relegation zone and may prioritise their upcoming Turkish Cup tie."
+                            ],
+                            "score": "3-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.16,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe are without regular starting defender Nathan Aké (confirmed by two sources) and squad midfielder Marco Asensio (one source), while Erzurum BB's ever-present defender Orhan Ovacikli is listed as doubtful by one source.",
+                                "Fenerbahçe have just four rest days after playing away in the Champions League midweek, giving Erzurum BB a three-day rest advantage.",
+                                "Fenerbahçe's high-scoring attack (31 goals in 12 league games, 17 in 5 at home) faces an Erzurum BB side arriving on a three-match losing streak."
+                            ],
+                            "score": "3-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.94,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Fenerbahçe's confirmed loss of regular-starting defender Nathan Aké is offset by Erzurum's potentially weakened defence, with 12-start Orhan Ovacikli doubtful on one source.",
+                                "Fenerbahçe have four days' rest after a Champions League trip, versus Erzurum's seven, which slightly moderates the home advantage.",
+                                "Fenerbahçe's 17 home league goals in five matches and Erzurum's five away goals in six point toward a controlled home win."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.98,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.21,
+                                "home": 0.63
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Nathan Aké, a regular starter (8 of 12), is confirmed out by two sources; the other Fenerbahçe absences and Erzurum’s doubtful defenders are single-source, so the cut to Fenerbahçe’s expected goals is only slight.",
+                                "Fenerbahçe have only four rest days after an away Champions League match, while Erzurum BB have had seven.",
+                                "Erzurum BB have lost three in a row and scored only five goals in six away games, so they are unlikely to match a Fenerbahçe side that has already scored 17 at home."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.7939,
+                        0.1465,
+                        0.0596
+                    ],
+                    "p_adj": [
+                        0.81478,
+                        0.137284,
+                        0.047936
+                    ],
+                    "p_llm": [
+                        0.68307,
+                        0.181487,
+                        0.135443
+                    ],
+                    "p_shadow": [
+                        0.793917,
+                        0.146526,
+                        0.059557
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "fenerbahce-vs-erzurum-bb-2026-11-29"
+            },
+            "sha256": "5119202c28ba6e4fa07007f92e892952dc93eccc8162b6719adea149cb5374eb",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0029-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "anderlecht-be",
                 "batch_id": "2026-11-28T0015Z-model-predict",
                 "competition": "belgian-pro-league",
@@ -238,7 +1428,7 @@
                 "slug": "antwerp-vs-anderlecht-be-2026-11-29"
             },
             "sha256": "fcb712d20d51b9e485e97ed9f64cf4100a1ac2dcfe53ab85084fa899d059e62d",
-            "commit": "pending",
+            "commit": "8e7ff73bd9fe135f9677271585acc800e69edbb5",
             "file": "https://thetouchlineatlas.com/ledger/be-2627-0016-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +1666,7 @@
                 "slug": "sc-freiburg-vs-rb-leipzig-2026-11-29"
             },
             "sha256": "b9a0216cb990dc313b03795e9bcfc5e17c755b2bdf0c7f702f1b940028bc615e",
-            "commit": "pending",
+            "commit": "8e7ff73bd9fe135f9677271585acc800e69edbb5",
             "file": "https://thetouchlineatlas.com/ledger/bl-2627-0101-r1.json",
             "status": "pending",
             "result": null
@@ -583,7 +1773,7 @@
                 "slug": "nantes-vs-nueillaubiers-2026-11-29"
             },
             "sha256": "b29035c6113fc1632e0892de2135d903bffdd4f3df5246a4aec601063ecb3e11",
-            "commit": "pending",
+            "commit": "8e7ff73bd9fe135f9677271585acc800e69edbb5",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0012-r1.json",
             "status": "pending",
             "result": null
@@ -821,7 +2011,7 @@
                 "slug": "fc-copenhagen-vs-fc-midtjylland-dk-2026-11-29"
             },
             "sha256": "6a656eead17c0be1d23cbaea6ae50bd8de444ee8c0db573255a5e6710742068c",
-            "commit": "pending",
+            "commit": "8e7ff73bd9fe135f9677271585acc800e69edbb5",
             "file": "https://thetouchlineatlas.com/ledger/dk-2627-0010-r1.json",
             "status": "pending",
             "result": null
@@ -1059,7 +2249,7 @@
                 "slug": "atromitos-vs-panathinaikos-gr-2026-11-29"
             },
             "sha256": "dd3dd7e91d800c94f108dfbc12b645b1c76bd9286a6b59a2584c517ac383b391",
-            "commit": "pending",
+            "commit": "8e7ff73bd9fe135f9677271585acc800e69edbb5",
             "file": "https://thetouchlineatlas.com/ledger/gr-2627-0011-r1.json",
             "status": "pending",
             "result": null
@@ -1297,7 +2487,7 @@
                 "slug": "hearts-vs-celtic-2026-11-29"
             },
             "sha256": "1d7ad4af13cd301004b15a5c36b4b7a0c48397355653a6251a4cf1408e8de24a",
-            "commit": "pending",
+            "commit": "8e7ff73bd9fe135f9677271585acc800e69edbb5",
             "file": "https://thetouchlineatlas.com/ledger/sp-2627-0021-r1.json",
             "status": "pending",
             "result": null
@@ -24396,8 +25586,12 @@
             "sha256": "a8415936eadd11d27fef5e9dcb20accd4b67508aacc017632c5f8ba9b1acb4ba",
             "commit": "d712cf05a8fcd0d192dc61bf9ddd8c3069e379f8",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0029-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-0",
+                "correct": true,
+                "rps": 0.1876
+            }
         },
         {
             "record": {
@@ -24634,8 +25828,12 @@
             "sha256": "6d8226b01650d32c150b7d8a950ae8e8c02afe331c90dbc18f470f27645e194f",
             "commit": "d712cf05a8fcd0d192dc61bf9ddd8c3069e379f8",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0021-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "2-0",
+                "correct": true,
+                "rps": 0.1604
+            }
         },
         {
             "record": {
@@ -24872,8 +26070,12 @@
             "sha256": "e9119d94ad97f4dd2529b31d5f384b554118172735fc3ce55e92038f64acb7e8",
             "commit": "d712cf05a8fcd0d192dc61bf9ddd8c3069e379f8",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0022-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "correct",
+            "result": {
+                "score_90": "3-1",
+                "correct": true,
+                "rps": 0.2451
+            }
         },
         {
             "record": {
@@ -25110,8 +26312,12 @@
             "sha256": "145450fd78b9c6a7a69528e7cf8e85d1f374278d05e0981555234fa2fd24393f",
             "commit": "d712cf05a8fcd0d192dc61bf9ddd8c3069e379f8",
             "file": "https://thetouchlineatlas.com/ledger/sb-2627-0023-r1.json",
-            "status": "pending",
-            "result": null
+            "status": "missed",
+            "result": {
+                "score_90": "2-2",
+                "correct": false,
+                "rps": 0.1302
+            }
         },
         {
             "record": {
@@ -25328,11 +26534,11 @@
             "sha256": "4c20c14758102867cef2c964c750c9ea7bd1ec8dc266e61892b2d73da28ec98a",
             "commit": "1fc69ba562baf1732e65522e81ebb63f91a0ce3b",
             "file": "https://thetouchlineatlas.com/ledger/cf-2627-0002-r1.json",
-            "status": "missed",
+            "status": "correct",
             "result": {
-                "score_90": "0-0",
-                "correct": false,
-                "rps": 0.2094
+                "score_90": "0-1",
+                "correct": true,
+                "rps": 0.0762
             }
         },
         {
