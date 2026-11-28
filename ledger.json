@@ -7,6 +7,2255 @@
     "records": [
         {
             "record": {
+                "away": "energie-cottbus",
+                "batch_id": "2026-11-27T0015Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-27T00:15:47Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0016",
+                "home": "1-fc-magdeburg",
+                "inputs": {
+                    "elo_away": 1183.6,
+                    "elo_home": 1323.4,
+                    "lambda_away": 1.237769,
+                    "lambda_home": 2.52733,
+                    "last_result_used": "2026-11-22",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.650323,
+                        0.183544,
+                        0.166134
+                    ],
+                    "p_elo": [
+                        0.566026,
+                        0.254781,
+                        0.179192
+                    ],
+                    "p_market": [
+                        0.606058,
+                        0.201301,
+                        0.192641
+                    ],
+                    "p_stat": [
+                        0.616339,
+                        0.213945,
+                        0.169716
+                    ],
+                    "retained_mass": 0.999999999746,
+                    "rho": -0.049408,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.665,
+                    "draw_risk": false,
+                    "over_2_5": 0.7142,
+                    "p": [
+                        0.6163,
+                        0.214,
+                        0.1697
+                    ],
+                    "p_display": [
+                        61.6,
+                        21.4,
+                        17
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.0887,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0868,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0731,
+                            "score": "3-1"
+                        },
+                        {
+                            "p": 0.0701,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.0661,
+                            "score": "2-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.18,
+                                "draw": 0.22,
+                                "home": 0.6
+                            },
+                            "reason_types": [
+                                "form",
+                                "targets",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Magdeburg have won 5 of 6 at home with a 19-8 goal record, while Cottbus have won only 1 of 6 away and just lost 0-4 to Hertha.",
+                                "Magdeburg are 1 point off automatic promotion, while 17th-placed Cottbus are 1 point from safety and need points badly.",
+                                "Cottbus lose suspended defender Doumbia (5 league starts) and injured forward Engelhardt, with Guttau doubtful, all from one source; Magdeburg's only absence is Musonda, who has not started."
+                            ],
+                            "score": "2-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.16,
+                                "draw": 0.22,
+                                "home": 0.62
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Magdeburg are essentially at full strength: their only listed absence is a defender with 0 league starts, so no adjustment is needed. Cottbus miss suspended defender Fousseny Doumbia, a regular starter with 5 league starts, plus two squad p",
+                                "Magdeburg have won 5 of 6 home league games this season, scoring 19 goals, while Cottbus have won only 1 of 6 away games and just lost 0-4 at home to Hertha Berlin.",
+                                "Magdeburg are 1 point off automatic promotion and need the points to stay in the promotion race, while Cottbus are in the relegation zone and 1 point from safety, so both have motivation but the home side's quality gap is decisive."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.21,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Both sides have immediate pressure for points, with 1. FC Magdeburg just one point off automatic promotion in third and Energie Cottbus one point from safety in 17th.",
+                                "Magdeburg's prolific home attack, which has scored 19 goals across five wins in six home league games, gives them a clear edge over an Energie Cottbus side winless in seven.",
+                                "All reported absences are backed by only one source and involve non-regular starters, with Cottbus defender Fousseny Doumbia (5 of 12 league starts) the most notable."
+                            ],
+                            "score": "2-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.19,
+                                "home": 0.69
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Cottbus have defender Fousseny Doumbia suspended after five league starts, modestly improving Magdeburg's attacking outlook; all listed team news is from one source.",
+                                "Magdeburg are one point from automatic promotion, while Cottbus are one point from safety, making this high-value for both but especially supportive of an assertive home approach.",
+                                "Magdeburg have won five of six home league matches and scored 19 goals there, whereas Cottbus enter after a 0-4 loss at Hertha."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.15,
+                                "draw": 0.24,
+                                "home": 0.61
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Cottbus are in the relegation zone and only one point from safety, so they need points more than a mid-table side, while Magdeburg are one point off automatic promotion.",
+                                "Magdeburg have won five of six at home and scored 19, so this looks more one-sided than a typical 2. Bundesliga meeting.",
+                                "Team news is single-source only: Cottbus miss defender Doumbia (5 of 12 starts), not a regular starter by the 50% rule, while the other listed absences barely started."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6219,
+                        0.214,
+                        0.1641
+                    ],
+                    "p_adj": [
+                        0.619062,
+                        0.21348,
+                        0.167458
+                    ],
+                    "p_llm": [
+                        0.63292,
+                        0.215961,
+                        0.151119
+                    ],
+                    "p_shadow": [
+                        0.62191,
+                        0.214008,
+                        0.164082
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "1-fc-magdeburg-vs-energie-cottbus-2026-11-29"
+            },
+            "sha256": "c85b966962dfced4f02181ecddbf40b4e79f417a4d9a0ccd743c67e75b05909c",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0016-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "arminia-bielefeld",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0017",
+                "home": "spvgg-greuther-furth",
+                "inputs": {
+                    "elo_away": 1232.7,
+                    "elo_home": 1203.5,
+                    "lambda_away": 1.551424,
+                    "lambda_home": 1.583893,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.383219,
+                        0.247563,
+                        0.369219
+                    ],
+                    "p_elo": [
+                        0.389096,
+                        0.284917,
+                        0.325986
+                    ],
+                    "p_market": [
+                        0.292487,
+                        0.266551,
+                        0.440961
+                    ],
+                    "p_stat": [
+                        0.38802,
+                        0.264324,
+                        0.347657
+                    ],
+                    "retained_mass": 0.999999999697,
+                    "rho": -0.049638,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6354,
+                    "draw_risk": false,
+                    "over_2_5": 0.6008,
+                    "p": [
+                        0.388,
+                        0.2643,
+                        0.3477
+                    ],
+                    "p_display": [
+                        38.8,
+                        26.4,
+                        34.8
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1197,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0857,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0781,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0701,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0644,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Fürth are only 1 point above the relegation zone, while Bielefeld sit 6 points clear of it and 6 off the play-off places, so the home side needs the points more.",
+                                "Absences are minor: Fürth's Dal has started 0 of 12 and Bielefeld's Min 1 of 12, both from one source, so no goal adjustment is made.",
+                                "Fürth have won the last two league meetings, 3-1 away and 2-1 at home, which lifts their home chances slightly."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Fürth are only 1 point above the relegation zone and need points at home, while Bielefeld are 6 points above it and 6 off the promotion play-off, so the hosts have the more urgent incentive.",
+                                "Team news is thin: Fürth's only listed absence is a defender with 0 league starts, and Bielefeld's only listed forward absence has 1 start, so neither side loses a regular starter.",
+                                "Bielefeld have won 3 of their last 5 league games but have lost 4 of 6 away this season, while Fürth have lost 3 of their last 4, making a close match likely."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.31,
+                                "draw": 0.27,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "SpVgg Greuther Fürth sit just one point above the relegation zone and urgently need points to stay clear of the bottom two, whereas Arminia Bielefeld have a six-point cushion.",
+                                "All reported absences for both sides come from only one source and involve non-regular starters, leaving expected goals unadjusted.",
+                                "Arminia Bielefeld have won four of their last six matches, though four losses in six away league games suggest they remain vulnerable at a Fürth side that has won its last two home outings."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.3,
+                                "draw": 0.28,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both teams’ listed absences come from one source and include Fürth defender Maxim Dal with no league starts and Bielefeld forward David Min with one start, so there is no material goals adjustment.",
+                                "Fürth are only one point above the relegation zone, giving the home side added urgency for a result.",
+                                "Bielefeld have taken three wins in their past five league matches, but their 2-0-4 away record tempers their overall edge."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.31,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Fürth are only one point above the relegation zone after 12 games, so a home result matters more to them than to Bielefeld, who are six points clear of the drop and six off the play-off places.",
+                                "Bielefeld's higher league place is undercut here by four losses and 10 goals conceded in six away league games, against a Fürth side that has taken points in three of five home matches.",
+                                "This is not a neutral historical meeting: Fürth have won three of the last four league games between the sides, including both of the last two at home."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3938,
+                        0.2679,
+                        0.3383
+                    ],
+                    "p_adj": [
+                        0.38802,
+                        0.264324,
+                        0.347657
+                    ],
+                    "p_llm": [
+                        0.416146,
+                        0.281784,
+                        0.30207
+                    ],
+                    "p_shadow": [
+                        0.39379,
+                        0.267932,
+                        0.338278
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "spvgg-greuther-furth-vs-arminia-bielefeld-2026-11-29"
+            },
+            "sha256": "2697ad34850879a0eabc1fdb648e28871149897d3434bc64de681e6cf20a7a99",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0017-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "vfl-wolfsburg",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "2-bundesliga",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "b2-2627-0018",
+                "home": "tsv-eintracht-braunschweig",
+                "inputs": {
+                    "elo_away": 1256.5,
+                    "elo_home": 1204.6,
+                    "lambda_away": 1.8939,
+                    "lambda_home": 1.396676,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.279415,
+                        0.23329,
+                        0.487295
+                    ],
+                    "p_elo": [
+                        0.365448,
+                        0.285659,
+                        0.348892
+                    ],
+                    "p_market": [
+                        0.248771,
+                        0.225759,
+                        0.525471
+                    ],
+                    "p_stat": [
+                        0.322347,
+                        0.258989,
+                        0.418664
+                    ],
+                    "retained_mass": 0.999999999776,
+                    "rho": -0.049638,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6518,
+                    "draw_risk": false,
+                    "over_2_5": 0.6285,
+                    "p": [
+                        0.3223,
+                        0.259,
+                        0.4187
+                    ],
+                    "p_display": [
+                        32.2,
+                        25.9,
+                        41.9
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1148,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0801,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0793,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0723,
+                            "score": "2-2"
+                        },
+                        {
+                            "p": 0.0574,
+                            "score": "0-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.98,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.47,
+                                "draw": 0.26,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Wolfsburg are 4th, 2 points off automatic promotion and 1 off the play-offs, while Braunschweig are only 3 points above the relegation zone, so both need the points.",
+                                "Braunschweig miss starter Di Benedetto (8 starts, 1 goal, 2 assists) and Jäkel, while Wolfsburg are without four players including Eriksen and Svanberg; all from one source, and only Svanberg's role is listed (2 starts).",
+                                "Wolfsburg have scored 29 goals in 12 games against Braunschweig's 18, and they won 3-0 last time out, so their attack is the stronger side."
+                            ],
+                            "score": "1-2"
+                        },
+                        "deepseek": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.45,
+                                "draw": 0.27,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Wolfsburg are 4th, only 1 point off the promotion play-off place and 2 off automatic promotion, so they have a strong incentive to take all three points, while Braunschweig are mid-table and only 3 points above the relegation zone.",
+                                "Braunschweig are missing regular midfielder Samuele Di Benedetto, who has started 8 of 12 league games and contributed 1 goal and 2 assists, reducing their midfield creativity.",
+                                "Wolfsburg have scored 29 goals in 12 league games and won 3-0 in their last match, while Braunschweig have lost 6 of 12 and have a negative goal difference, suggesting the visitors carry the greater attacking threat."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.99,
+                            "m_home": 0.97,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.46,
+                                "draw": 0.26,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Both sides have immediate pressure at opposite ends of the table, with Wolfsburg just one point off the promotion play-off spot and Braunschweig only three points above the relegation zone.",
+                                "All reported absences rely on only one source, with Braunschweig potentially missing regular midfield starter Samuele Di Benedetto (8 starts, 1 goal, 2 assists) while Wolfsburg's listed absentees have barely featured this season.",
+                                "Wolfsburg's league-high attacking output of 29 goals in 12 games gives them the edge, even though their away record (2W 2D 2L) matches Braunschweig's home record."
+                            ],
+                            "score": "1-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.27,
+                                "home": 0.31
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "All listed absences have only one source; Braunschweig lose regular-starting midfielder Di Benedetto, while Wolfsburg have four injury listings including Eriksen.",
+                                "Wolfsburg are only one point off the promotion play-off place, giving the stronger side a clear incentive to press for all three points.",
+                                "Wolfsburg's 29 league goals exceed Braunschweig's 18, but both sides have identical 2W-2D-2L home/away records, supporting a competitive draw risk."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.28,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Wolfsburg sit 1 point off the play-off places and 2 off automatic promotion, while Braunschweig are only 3 points above the relegation zone, so both need the result but Wolfsburg are chasing the top three.",
+                                "Every absence is one source only: Braunschweig miss regular starter Di Benedetto (8 league starts, 2 assists, 6% of their goals), while Wolfsburg’s listed absences have no regular-starter evidence except Svanberg (2 starts).",
+                                "Wolfsburg have scored 29 league goals to Braunschweig’s 18 and still average 2 goals away, which outweighs Braunschweig’s even 2-2-2 home record."
+                            ],
+                            "score": "1-2",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.3137,
+                        0.2624,
+                        0.424
+                    ],
+                    "p_adj": [
+                        0.320285,
+                        0.260811,
+                        0.418904
+                    ],
+                    "p_llm": [
+                        0.287904,
+                        0.268152,
+                        0.443944
+                    ],
+                    "p_shadow": [
+                        0.313659,
+                        0.262371,
+                        0.42397
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "tsv-eintracht-braunschweig-vs-vfl-wolfsburg-2026-11-29"
+            },
+            "sha256": "6917c9cc21e18cec641d98dc88036358a389f860e4fe9b10a877adbbdfe614c6",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/b2-2627-0018-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "racing-genk",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "belgian-pro-league",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "be-2627-0015",
+                "home": "sint-truidense-be",
+                "inputs": {
+                    "elo_away": 1580.3,
+                    "elo_home": 1498.3,
+                    "lambda_away": 1.437679,
+                    "lambda_home": 1.479947,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.384293,
+                        0.250236,
+                        0.365471
+                    ],
+                    "p_elo": [
+                        0.334681,
+                        0.285303,
+                        0.380016
+                    ],
+                    "p_market": [
+                        0.396429,
+                        0.256718,
+                        0.346852
+                    ],
+                    "p_stat": [
+                        0.359761,
+                        0.266022,
+                        0.374216
+                    ],
+                    "retained_mass": 0.999999999885,
+                    "rho": -0.014778,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T12:30:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5946,
+                    "draw_risk": false,
+                    "over_2_5": 0.5529,
+                    "p": [
+                        0.3598,
+                        0.266,
+                        0.3742
+                    ],
+                    "p_display": [
+                        36,
+                        26.6,
+                        37.4
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-2",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1241,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0847,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0797,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0778,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0733,
+                            "score": "1-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.26,
+                                "home": 0.4
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Genk are without suspended regular starting defender Matte Smets (11 of 12 league starts), which weakens their back line; the other absentees are not regular starters, and all of this comes from one source.",
+                                "Sint-Truidense have only 3 rest days after a European trip to Hajduk Split, while Genk have had 8 days, which offsets some of the home edge.",
+                                "Genk have taken no away wins in 6 league games and conceded 11, so Truidense's home side that scores freely (10 goals in 6) has a real chance, but the 12th-place side is 5 points above the drop and has lost half its games."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.35,
+                                "draw": 0.27,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Genk are missing regular starting defender Matte Smets through suspension, which weakens a back line that has kept only two clean sheets in six away league games.",
+                                "Sint-Truidense have played two matches in the last 14 days including a Conference League trip to Hajduk Split, while Genk have had eight rest days and only one match in that period.",
+                                "Genk have not won away in the league this season (0W 2D 4L), while Sint-Truidense have been competitive at home with 10 goals scored in 6 games."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1.04,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.26,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "schedule",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Sint-Truidense have only three rest days after an away European match on Thursday, whereas Racing Genk have had eight days to prepare.",
+                                "One source lists regular starting defender Matte Smets (11 of 12 league starts) as suspended for Racing Genk, while one source lists no absences for Sint-Truidense.",
+                                "Despite sitting sixth overall, Racing Genk are winless in six away league games (two draws, four losses), softening their edge over 12th-placed Sint-Truidense."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 1.03,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.39,
+                                "draw": 0.27,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Genk are without regular-starting defender Matte Smets (11 league starts), albeit this suspension is listed by one source, slightly improving Sint-Truidense's scoring outlook.",
+                                "Sint-Truidense have only three rest days after winning at Hajduk Split, while Genk have had eight days to prepare.",
+                                "Genk's 0-2-4 away league record gives Sint-Truidense a stronger home chance than the table gap alone suggests."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.95,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.34,
+                                "draw": 0.3,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "schedule",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source lists Genk regular starter Matte Smets (11 of 12 league starts) as suspended, a real defensive loss, while the other named Genk absentees have not started league games; Sint-Truidense absences come from one source only and do not",
+                                "Sint-Truidense have only 3 rest days after a Conference League away win, against 8 for Genk, so the home side is the more fatigued of the two.",
+                                "Genk’s higher league place is undercut by 0 wins and 5 goals in 6 away league games, which points this meeting toward a tight score rather than an away win."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "1/5",
+                    "ai_combined": [
+                        0.3653,
+                        0.2682,
+                        0.3666
+                    ],
+                    "p_adj": [
+                        0.364087,
+                        0.267206,
+                        0.368707
+                    ],
+                    "p_llm": [
+                        0.36999,
+                        0.272009,
+                        0.358
+                    ],
+                    "p_shadow": [
+                        0.365275,
+                        0.26817,
+                        0.366555
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "sint-truidense-be-vs-racing-genk-2026-11-29"
+            },
+            "sha256": "d3bacd721e5cf651848f25478cf2ca1acd6d0f7551a766ad4deada3a9879562c",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/be-2627-0015-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "sochaux",
+                "batch_id": "2026-11-23T2205Z-model-predict",
+                "competition": "coupe-de-france",
+                "cutoff_utc": "2026-11-23T22:05:53Z",
+                "data_status": "limited_context",
+                "fixture_id": "cf-2627-0011",
+                "home": "saint-die-kellermann",
+                "inputs": {
+                    "elo_away": 1123.7,
+                    "elo_home": 922.7,
+                    "lambda_away": 1.43156,
+                    "lambda_home": 0.855233,
+                    "last_result_used": "2026-11-23",
+                    "outside": {
+                        "club": "saint-die-kellermann",
+                        "kind": "nodata",
+                        "label": "Lower division"
+                    },
+                    "p_dc": [
+                        0.224624,
+                        0.269638,
+                        0.505738
+                    ],
+                    "p_elo": [
+                        0.224624,
+                        0.269638,
+                        0.505738
+                    ],
+                    "p_market": null,
+                    "p_stat": [
+                        0.224624,
+                        0.269638,
+                        0.505738
+                    ],
+                    "retained_mass": 0.999999999956,
+                    "rho": 0,
+                    "score_markets": false,
+                    "small_sample": [
+                        "saint-die-kellermann"
+                    ],
+                    "weights": {
+                        "temperature": 1,
+                        "w_dc": 0
+                    }
+                },
+                "kickoff_utc": "2026-11-29T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4375,
+                    "draw_risk": false,
+                    "over_2_5": 0.4004,
+                    "p": [
+                        0.2246,
+                        0.2697,
+                        0.5057
+                    ],
+                    "p_display": [
+                        22.4,
+                        27,
+                        50.6
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "0-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1454,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1244,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1041,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.1016,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.089,
+                            "score": "1-2"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": [],
+                    "ai_combined": null,
+                    "note": "AI layer not run for this fixture"
+                },
+                "slug": "saint-die-kellermann-vs-sochaux-2026-11-29"
+            },
+            "sha256": "9ab1ccdb0815d78d43088d34788f005bc758fcbc0996e8d290072ea968bb565e",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/cf-2627-0011-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "viborg-ff",
+                "batch_id": "2026-11-27T2005Z-model-predict",
+                "competition": "danish-superliga",
+                "cutoff_utc": "2026-11-27T20:05:54Z",
+                "data_status": "limited_context",
+                "fixture_id": "dk-2627-0008",
+                "home": "lyngby-boldklub",
+                "inputs": {
+                    "elo_away": 1557.5,
+                    "elo_home": 1353.9,
+                    "lambda_away": 1.591043,
+                    "lambda_home": 1.109629,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.253715,
+                        0.272847,
+                        0.473438
+                    ],
+                    "p_elo": [
+                        0.222458,
+                        0.269061,
+                        0.50848
+                    ],
+                    "p_market": [
+                        0.267678,
+                        0.246564,
+                        0.485758
+                    ],
+                    "p_stat": [
+                        0.235386,
+                        0.26936,
+                        0.495254
+                    ],
+                    "retained_mass": 0.999999999816,
+                    "rho": -0.098264,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5439,
+                    "draw_risk": false,
+                    "over_2_5": 0.5085,
+                    "p": [
+                        0.2354,
+                        0.2693,
+                        0.4953
+                    ],
+                    "p_display": [
+                        23.6,
+                        26.9,
+                        49.5
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1285,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0996,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.0987,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0889,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0778,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.98,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.44,
+                                "draw": 0.29,
+                                "home": 0.27
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lyngby sit 11th, 1 point from safety with 17 games left, while Viborg are 3rd and 8 points off the leaders, so both have something to play for but Viborg are the stronger side.",
+                                "Lyngby are missing defender Munashe Garananga (8 league starts) and Oskar Snorre, and Viborg lack four players including forward Roald Mitchell (0 starts); all from one source only, so the effect is small.",
+                                "Lyngby have drawn 5 of 7 at home, but they have conceded 31 goals in 15 games against Viborg's 13, which points to a Viborg edge."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.97,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.32,
+                                "home": 0.3
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Lyngby are missing regular starting defender Munashe Garananga, which weakens a defence that has already conceded 31 goals in 15 league games.",
+                                "Lyngby are in the relegation zone, one point from safety, so they need points at home, while Viborg are 8 points off the top and chasing a strong finish.",
+                                "Recent meetings have been tight, with three of the last five league head-to-heads ending level, including two 0-0 draws at Lyngby."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.34,
+                                "home": 0.25
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lyngby sit in the relegation zone just one point from safety, giving them an urgent need for points despite trailing third-placed Viborg by 16 points.",
+                                "All reported injuries for both sides rely on only one source, though the potential absence of regular starting defender Munashe Garananga (8 league starts) would slightly weaken Lyngby's backline.",
+                                "Lyngby have drawn five of their seven home league matches and lost only once at home, making a stalemate a strong possibility against a Viborg side that has conceded only 13 league goals."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.04,
+                            "m_home": 1,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.4,
+                                "draw": 0.31,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lyngby are without regular-starting defender Munashe Garananga (8 league starts), modestly improving Viborg's scoring outlook; the absence is reported by one source.",
+                                "Lyngby are one point from safety in the relegation zone, giving the hosts strong incentive to protect a home point or chase a crucial win.",
+                                "Lyngby's five draws in seven home league matches suggest they can make this difficult despite Viborg's stronger overall season."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.43,
+                                "draw": 0.33,
+                                "home": 0.24
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Lyngby are in the relegation zone, one point from safety with 17 games left, so they need points more than third-placed Viborg, who are eight points off the leaders.",
+                                "Absences are single-source only: Lyngby are without regular-starting defender Garananga (8 of 15 league starts), while Viborg's listed absentees have no confirmed regular-starter role and Mitchell has started none of 15.",
+                                "Lyngby's home record is 1 win and 5 draws from 7, so this is likelier to stay tight than an ordinary meeting despite Viborg's much better season record."
+                            ],
+                            "score": "1-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.2391,
+                        0.2793,
+                        0.4816
+                    ],
+                    "p_adj": [
+                        0.23128,
+                        0.269526,
+                        0.499194
+                    ],
+                    "p_llm": [
+                        0.269572,
+                        0.318162,
+                        0.412266
+                    ],
+                    "p_shadow": [
+                        0.239062,
+                        0.279304,
+                        0.481634
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "lyngby-boldklub-vs-viborg-ff-2026-11-29"
+            },
+            "sha256": "2a12640043b938c4d7c740b526e4cdc87dd157b3386e7df4fd3077a95a5d6a80",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/dk-2627-0008-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "ac-horsens",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "danish-superliga",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "dk-2627-0009",
+                "home": "randers-fc",
+                "inputs": {
+                    "elo_away": 1401.6,
+                    "elo_home": 1425.2,
+                    "lambda_away": 1.484818,
+                    "lambda_home": 1.477543,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 22,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.364857,
+                        0.267067,
+                        0.368075
+                    ],
+                    "p_elo": [
+                        0.445104,
+                        0.279892,
+                        0.275004
+                    ],
+                    "p_market": [
+                        0.424805,
+                        0.260274,
+                        0.314922
+                    ],
+                    "p_stat": [
+                        0.407092,
+                        0.273455,
+                        0.319453
+                    ],
+                    "retained_mass": 0.999999999861,
+                    "rho": -0.098362,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.6095,
+                    "draw_risk": false,
+                    "over_2_5": 0.566,
+                    "p": [
+                        0.4071,
+                        0.2734,
+                        0.3195
+                    ],
+                    "p_display": [
+                        40.7,
+                        27.3,
+                        32
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "2-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1275,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.0935,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0731,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.0728,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0643,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.99,
+                            "m_home": 0.96,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.38,
+                                "draw": 0.29,
+                                "home": 0.33
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "head_to_head"
+                            ],
+                            "reasons": [
+                                "Randers sit 1 point above the relegation zone while Horsens are 8 clear, so Randers need the points more but have conceded 27 goals in 15 games.",
+                                "Randers are without first-choice goalkeeper Paul Izzo (9 league starts) plus defender Wessel Dammers, though all of this comes from one source; Horsens' two absentees have no role data.",
+                                "The October meeting at Horsens finished 0-0, and Randers have lost 9 of 15 league games with just 8 home goals scored in 8 matches."
+                            ],
+                            "score": "1-1"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.37,
+                                "draw": 0.29,
+                                "home": 0.34
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Randers are missing first-choice goalkeeper Paul Izzo, who started 9 of 15 league games, plus three other squad players; that weakens a defence that has already conceded 19 goals in 8 home league games.",
+                                "Randers sit only 1 point above the relegation zone and need the points far more than Horsens, who are 8 points clear of danger.",
+                                "Randers have lost 7 of their last 9 league games and were beaten 6-1 at home by Nordsjaelland in their most recent home match, while Horsens won 3-1 at home to Silkeborg last time out."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 1.02,
+                            "m_home": 1,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.36,
+                                "draw": 0.28,
+                                "home": 0.36
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Randers FC sit just one point above the relegation zone compared to an eight-point cushion for AC Horsens, giving the hosts a much more urgent need for points.",
+                                "One source lists Randers FC's regular starting goalkeeper Paul Izzo (9 league starts) and defender Wessel Dammers (5 starts) as injured, which further weakens a defence that has already conceded 19 goals in 8 home games.",
+                                "Randers FC are winless in their last nine league games and have lost five of eight at home, offsetting normal home advantage against a higher-scoring AC Horsens side."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.42,
+                                "draw": 0.29,
+                                "home": 0.29
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Randers are without goalkeeper Paul Izzo, a starter in 9 league matches, plus two defenders; all listed absences have only one source.",
+                                "Randers sit only one point above the relegation zone, making a home point or win especially urgent.",
+                                "Horsens have taken 19 points to Randers' 12 and arrive after a 3-1 win, while Randers have won none of their last eight matches."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.93,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.41,
+                                "draw": 0.31,
+                                "home": 0.28
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Randers are without regular goalkeeper Paul Izzo (9 of 15 league starts), listed by one source only; their other absentees have 1–5 starts, and Horsens’ two absences are also one source with no role given, so only the goalkeeper is treated ",
+                                "Randers sit 10th, one point above the relegation zone with 17 games left, so they need the points more than Horsens, who are 7th and eight points clear of the drop.",
+                                "Randers’ home record of 2 wins and 5 losses with 8 goals scored and 19 conceded makes a home win less likely than the league norm, while Horsens’ own away record of 2 wins and 4 losses keeps this from being a clear away win."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "1/5",
+                    "ai_combined": [
+                        0.3827,
+                        0.2795,
+                        0.3377
+                    ],
+                    "p_adj": [
+                        0.399268,
+                        0.275563,
+                        0.325169
+                    ],
+                    "p_llm": [
+                        0.31928,
+                        0.292512,
+                        0.388208
+                    ],
+                    "p_shadow": [
+                        0.382735,
+                        0.279549,
+                        0.337717
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": true
+                },
+                "slug": "randers-fc-vs-ac-horsens-2026-11-29"
+            },
+            "sha256": "72f7f0c1b15756f13ebaf34db22d2f108ba3ef5c14c3b74d634ffc8d1f8e73f2",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/dk-2627-0009-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "osasuna",
+                "batch_id": "2026-11-27T2206Z-model-predict",
+                "competition": "la-liga",
+                "cutoff_utc": "2026-11-27T22:06:13Z",
+                "data_status": "limited_context",
+                "fixture_id": "ll-2627-0114",
+                "home": "valencia",
+                "inputs": {
+                    "elo_away": 1392.5,
+                    "elo_home": 1426.8,
+                    "lambda_away": 1.007751,
+                    "lambda_home": 1.356027,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.443865,
+                        0.281403,
+                        0.274733
+                    ],
+                    "p_elo": [
+                        0.456407,
+                        0.278349,
+                        0.265244
+                    ],
+                    "p_market": [
+                        0.447494,
+                        0.292663,
+                        0.259843
+                    ],
+                    "p_stat": [
+                        0.457695,
+                        0.27635,
+                        0.265955
+                    ],
+                    "retained_mass": 0.999999999764,
+                    "rho": -0.02961,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9417,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.4737,
+                    "draw_risk": false,
+                    "over_2_5": 0.4228,
+                    "p": [
+                        0.4577,
+                        0.2763,
+                        0.266
+                    ],
+                    "p_display": [
+                        45.8,
+                        27.6,
+                        26.6
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "low",
+                    "top_score_in_pick": "1-0",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1299,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1276,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0961,
+                            "score": "0-0"
+                        },
+                        {
+                            "p": 0.0899,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0892,
+                            "score": "2-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.95,
+                            "m_home": 0.97,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.29,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "targets",
+                                "team_news",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Valencia are level on 12 points with 18th place, while Osasuna sit only 3 points above the drop, so both need points and a low-scoring game is likely.",
+                                "Osasuna are without suspended Catena (12 starts) and Bretones (10 starts) in defence, plus first-choice-rotating keeper Aitor Fernández; Valencia's Danjuma and Guido Rodríguez are doubtful, each from one source.",
+                                "Valencia have not won at home this season (0W 2D 5L, 3 goals scored) but won 1-0 at Rayo last time, while Osasuna have won only 1 of 6 away games."
+                            ],
+                            "score": "1-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.9,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.3,
+                                "home": 0.38
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Osasuna are missing regular starting defenders Alejandro Catena (suspended) and Abel Bretones (injured), plus goalkeeper Aitor Fernández, weakening the spine of a side that has conceded 23 league goals.",
+                                "Valencia have doubts over regular starters Guido Rodríguez and Arnaut Danjuma, but their absences are single-source and less certain than Osasuna's confirmed defensive losses.",
+                                "Valencia are level on points with the relegation places and winless at home this season, so they need the points more urgently than Osasuna, who sit three points above the drop zone."
+                            ],
+                            "score": "1-1",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.96,
+                            "m_home": 1.02,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.28,
+                                "draw": 0.3,
+                                "home": 0.42
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Osasuna are missing two regular starting defenders confirmed by two sources in Alejandro Catena and Abel Bretones, while Valencia's doubts over regular starters Guido Rodríguez and Arnaut Danjuma are reported by only one source.",
+                                "Valencia are level on 12 points with the 18th-placed relegation spot, giving them an urgent need to win against an Osasuna side sitting just three points ahead.",
+                                "Valencia are winless in seven home league matches with just three goals scored, though Osasuna have lost five of their six away league games while conceding 19 times."
+                            ],
+                            "score": "1-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.02,
+                            "m_home": 1.07,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.32,
+                                "draw": 0.29,
+                                "home": 0.39
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Osasuna are without regular defenders Alejandro Catena and Abel Bretones, lifting Valencia's attacking outlook, while Valencia's Guido Rodríguez and Arnaut Danjuma doubts are each reported by one source.",
+                                "Valencia are level on points with the relegation zone and Osasuna are only three points clear, making this a high-pressure meeting for both sides.",
+                                "Valencia's seven home league matches have produced no wins, but Osasuna have lost five of six away league games, pointing to a tight, low-confidence contest."
+                            ],
+                            "score": "1-1"
+                        },
+                        "grok": {
+                            "m_away": 0.97,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.29,
+                                "draw": 0.34,
+                                "home": 0.37
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Osasuna are confirmed without two regular starters in defence, suspended Catena (12 league starts, 8% of their league goals) and injured Bretones (10 starts), while Valencia's notable names are only doubtful and single-source, including Dan",
+                                "Valencia are level on 12 points with the top relegation place after 13 games, so they need the points more than Osasuna, who are three points above the drop zone.",
+                                "Valencia have still not won at Mestalla (0 wins and only 3 goals in 7), so even against a weakened defence this points to a tight, low-scoring game rather than a comfortable home win."
+                            ],
+                            "score": "1-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.4493,
+                        0.2826,
+                        0.2681
+                    ],
+                    "p_adj": [
+                        0.46283,
+                        0.277022,
+                        0.260148
+                    ],
+                    "p_llm": [
+                        0.396074,
+                        0.303928,
+                        0.299998
+                    ],
+                    "p_shadow": [
+                        0.449304,
+                        0.282627,
+                        0.268069
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "valencia-vs-osasuna-2026-11-29"
+            },
+            "sha256": "e67f6c05853d2396d0b11ea1e515f4d8fa9f4e7da2bb9f43265b82dd8d866c24",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/ll-2627-0114-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "ceuta",
+                "batch_id": "2026-11-26T0014Z-model-predict",
+                "competition": "la-liga-2",
+                "cutoff_utc": "2026-11-26T00:14:50Z",
+                "data_status": "limited_context",
+                "fixture_id": "s2-2627-0029",
+                "home": "granada",
+                "inputs": {
+                    "elo_away": 1096.8,
+                    "elo_home": 1265.9,
+                    "lambda_away": 0.909875,
+                    "lambda_home": 2.087535,
+                    "last_result_used": "2026-11-23",
+                    "market": {
+                        "books": 21,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.644242,
+                        0.202638,
+                        0.15312
+                    ],
+                    "p_elo": [
+                        0.594823,
+                        0.246092,
+                        0.159084
+                    ],
+                    "p_market": [
+                        0.621955,
+                        0.21738,
+                        0.160665
+                    ],
+                    "p_stat": [
+                        0.627038,
+                        0.220359,
+                        0.152603
+                    ],
+                    "retained_mass": 0.999999999893,
+                    "rho": -0.011447,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.975,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5296,
+                    "draw_risk": false,
+                    "over_2_5": 0.5692,
+                    "p": [
+                        0.627,
+                        0.2204,
+                        0.1526
+                    ],
+                    "p_display": [
+                        62.7,
+                        22,
+                        15.3
+                    ],
+                    "pick": "home",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "2-0",
+                    "top_score_overall": "2-0",
+                    "top_scores": [
+                        {
+                            "p": 0.1059,
+                            "score": "2-0"
+                        },
+                        {
+                            "p": 0.1043,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1004,
+                            "score": "1-0"
+                        },
+                        {
+                            "p": 0.0963,
+                            "score": "2-1"
+                        },
+                        {
+                            "p": 0.0737,
+                            "score": "3-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.92,
+                            "m_home": 0.99,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.14,
+                                "draw": 0.22,
+                                "home": 0.64
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Ceuta lack Jordi Escobar (4 league goals, 33% of the team's, 9 starts) and Cedric Teguia is suspended, while Toni Abad is doubtful; all from one source, so this is unconfirmed.",
+                                "Granada are 4th, 6 points off automatic promotion and 3 clear of 7th, while bottom-placed Ceuta are 9 points from safety and have won once in 15.",
+                                "Ceuta have lost 12 of 15 and are 0W 1D 6L away with 4 goals scored and 20 conceded, while Granada have 4W 1D 1L at home."
+                            ],
+                            "score": "2-0"
+                        },
+                        "deepseek": {
+                            "m_away": 0.88,
+                            "m_home": 0.98,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.13,
+                                "draw": 0.19,
+                                "home": 0.68
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Ceuta are missing their main scorer Jordi Escobar, who has 4 of their 12 league goals, and are also without suspended midfielder Cedric Teguia, weakening an already struggling attack.",
+                                "Granada are unbeaten in eight league games with six wins, while Ceuta have lost six of their last seven league matches and are winless away all season.",
+                                "Granada are in the promotion play-off places and need points to chase automatic promotion, while bottom-side Ceuta are 9 points from safety and desperate but have shown little away resilience."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.9,
+                            "m_home": 0.99,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "One source reports Ceuta are missing suspended midfielder Cedric Teguia and injured regular forward Jordi Escobar, taking away 41% of their league goals this season.",
+                                "Fourth-placed Granada need the points to stay inside the promotion play-off places with only a three-point cushion over seventh, while bottom-side Ceuta are nine points adrift of safety.",
+                                "Granada are unbeaten in their last eight matches across all competitions with seven wins, whereas Ceuta have lost seven of their last eight league games and conceded 20 goals in seven away outings."
+                            ],
+                            "score": "2-0",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 0.88,
+                            "m_home": 0.98,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.1,
+                                "draw": 0.18,
+                                "home": 0.72
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Ceuta are without regular-starting forward Jordi Escobar, who has 4 of their 12 league goals, plus suspended midfielder Cedric Teguia; both listings have one source.",
+                                "Granada have won seven of their past eight league matches, while Ceuta have lost six straight league games and all but one away match.",
+                                "Granada can protect their play-off position and move closer to automatic promotion, whereas Ceuta are already nine points from safety."
+                            ],
+                            "score": "2-0"
+                        },
+                        "grok": {
+                            "m_away": 0.9,
+                            "m_home": 1,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.12,
+                                "draw": 0.21,
+                                "home": 0.67
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Ceuta are without regular starter Jordi Escobar, who has scored 33% of their league goals, and midfielder Teguia; every absence is one source only, while Granada only miss squad forward Emeka (3 league starts, 9% of goals).",
+                                "Granada sit in the play-off places, 6 points off automatic promotion and only 3 clear of 7th, while Ceuta are 9 points from safety, so both have something to play for but the gap favours the home side.",
+                                "Ceuta have no away wins and have conceded 20 goals in 7 away games, which points to another blunt away display against a Granada side with 4 wins from 6 at home."
+                            ],
+                            "score": "2-0",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.6467,
+                        0.2147,
+                        0.1385
+                    ],
+                    "p_adj": [
+                        0.636278,
+                        0.21946,
+                        0.144262
+                    ],
+                    "p_llm": [
+                        0.686987,
+                        0.195817,
+                        0.117196
+                    ],
+                    "p_shadow": [
+                        0.646749,
+                        0.214725,
+                        0.138526
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "granada-vs-ceuta-2026-11-29"
+            },
+            "sha256": "8746a0c3bafdc4de705f0590392578c301fd275328ef4fbc3a9c9fe0c346538d",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/s2-2627-0029-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
+                "away": "istanbul-basaksehir",
+                "batch_id": "2026-11-28T0015Z-model-predict",
+                "competition": "super-lig",
+                "cutoff_utc": "2026-11-28T00:15:58Z",
+                "data_status": "limited_context",
+                "fixture_id": "sl-2627-0028",
+                "home": "eyupspor",
+                "inputs": {
+                    "elo_away": 1563.4,
+                    "elo_home": 1290.8,
+                    "lambda_away": 1.736842,
+                    "lambda_home": 1.002224,
+                    "last_result_used": "2026-11-27",
+                    "market": {
+                        "books": 20,
+                        "captured_utc": "2026-11-28T13:05:58Z",
+                        "method": "shin-median"
+                    },
+                    "p_dc": [
+                        0.20864,
+                        0.253668,
+                        0.537692
+                    ],
+                    "p_elo": [
+                        0.170232,
+                        0.25109,
+                        0.578679
+                    ],
+                    "p_market": [
+                        0.126884,
+                        0.18816,
+                        0.684956
+                    ],
+                    "p_stat": [
+                        0.183149,
+                        0.248416,
+                        0.568435
+                    ],
+                    "retained_mass": 0.999999999936,
+                    "rho": -0.075559,
+                    "small_sample": [],
+                    "weights": {
+                        "temperature": 0.9581,
+                        "w_dc": 0.5
+                    }
+                },
+                "kickoff_utc": "2026-11-29T13:00:00Z",
+                "late": false,
+                "locked_at": "2026-11-28T13:11:45Z",
+                "model_version": "v1.7-2026-11",
+                "published": {
+                    "btts": 0.5273,
+                    "draw_risk": false,
+                    "over_2_5": 0.5192,
+                    "p": [
+                        0.1831,
+                        0.2485,
+                        0.5684
+                    ],
+                    "p_display": [
+                        18.3,
+                        24.9,
+                        56.8
+                    ],
+                    "pick": "away",
+                    "source": "statistical",
+                    "tier": "medium",
+                    "top_score_in_pick": "0-1",
+                    "top_score_overall": "1-1",
+                    "top_scores": [
+                        {
+                            "p": 0.1185,
+                            "score": "1-1"
+                        },
+                        {
+                            "p": 0.1097,
+                            "score": "0-1"
+                        },
+                        {
+                            "p": 0.1033,
+                            "score": "1-2"
+                        },
+                        {
+                            "p": 0.1031,
+                            "score": "0-2"
+                        },
+                        {
+                            "p": 0.0716,
+                            "score": "0-0"
+                        }
+                    ]
+                },
+                "revision": 1,
+                "shadow": {
+                    "agents": {
+                        "claude": {
+                            "m_away": 0.97,
+                            "m_home": 0.95,
+                            "model": "claude-sonnet-5-5",
+                            "p": {
+                                "away": 0.68,
+                                "draw": 0.2,
+                                "home": 0.12
+                            },
+                            "reason_types": [
+                                "form",
+                                "team_news",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Eyüpspor have lost 11 of 12 league games with goals 3-31, and scored only 2 goals in 6 home league games, while Basaksehir have won 4 of their last 5 games in all competitions.",
+                                "Eyüpspor have three doubtful defenders and forwards (two regular defender starters) with two sources each, which weakens an already leaky back line; Basaksehir have four doubtful players, all on one source, so I only trim their attack sligh",
+                                "Eyüpspor are 8 points from safety and need points badly, but Basaksehir are 12 points clear of the drop and have Fenerbahçe next, so motivation does not close the quality gap."
+                            ],
+                            "score": "0-2"
+                        },
+                        "deepseek": {
+                            "m_away": 1,
+                            "m_home": 0.95,
+                            "model": "deepseek/deepseek-v4-pro-0813",
+                            "p": {
+                                "away": 0.6,
+                                "draw": 0.22,
+                                "home": 0.18
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "form",
+                                "targets"
+                            ],
+                            "reasons": [
+                                "Eyüpspor have three regular starters doubtful in defence and attack, including defenders Giordano and Ülvan, weakening a side that has already conceded 31 goals in 12 league games.",
+                                "Eyüpspor have lost 11 of 12 league games and scored only 3 goals all season, while Basaksehir have won their last three league matches, scoring 11 goals in that run.",
+                                "Eyüpspor are 8 points from safety and effectively must win, but Basaksehir are 12 points clear of the relegation zone and can play with less pressure."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Together"
+                        },
+                        "gemini": {
+                            "m_away": 0.98,
+                            "m_home": 0.96,
+                            "model": "google/gemini-4-argon",
+                            "p": {
+                                "away": 0.65,
+                                "draw": 0.21,
+                                "home": 0.14
+                            },
+                            "reason_types": [
+                                "targets",
+                                "form",
+                                "team_news"
+                            ],
+                            "reasons": [
+                                "Eyüpspor sit bottom in the relegation zone and are already eight points from safety with just three points from 12 matches, making their need for points desperate despite severe quality limitations.",
+                                "Eyüpspor have lost 11 of their 12 league matches while scoring only three goals all season, which gives an Istanbul Basaksehir side on a three-match winning streak a strong advantage.",
+                                "Eyüpspor have two regular starting defenders doubtful according to two sources, while Istanbul Basaksehir's doubts over regular starters Emin Bayram and Ousseynou Ba are reported by only one source."
+                            ],
+                            "score": "0-2",
+                            "served_by": "Google"
+                        },
+                        "gpt": {
+                            "m_away": 1.07,
+                            "m_home": 1.01,
+                            "model": "gpt-5.6-terra",
+                            "p": {
+                                "away": 0.67,
+                                "draw": 0.2,
+                                "home": 0.13
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Eyüpspor have two doubtful regular defenders, Giordano and Ülvan, which slightly increases Başakşehir's scoring outlook; Başakşehir's defensive doubts are listed by only one source.",
+                                "Eyüpspor are eight points from safety after only three points from 12 matches, making this a high-pressure home fixture.",
+                                "Eyüpspor have lost 11 of 12 league matches and scored only three goals, while Başakşehir have won their last three competitive games."
+                            ],
+                            "score": "0-1"
+                        },
+                        "grok": {
+                            "m_away": 1,
+                            "m_home": 0.96,
+                            "model": "x-ai/grok-4.7",
+                            "p": {
+                                "away": 0.62,
+                                "draw": 0.22,
+                                "home": 0.16
+                            },
+                            "reason_types": [
+                                "team_news",
+                                "targets",
+                                "form"
+                            ],
+                            "reasons": [
+                                "Eyüpspor have three two-source doubtfuls, including regular starters Giordano and Ülvan, a modest defensive hit; Basaksehir’s only confirmed absence is Yusuf Sarı (1 league start), and Bayram, Opéri, Ba and Fayzullayev are single-source dou",
+                                "Eyüpspor are 8 points from safety after 12 games and need points, while Basaksehir are 7th, 12 points above the drop and not in a survival fight.",
+                                "Eyüpspor have 3 points and 3 league goals from 12, including 2-11 at home, so a home win is a stretch; Basaksehir’s 3-10 away record points to a narrow away win rather than a rout."
+                            ],
+                            "score": "0-1",
+                            "served_by": "xAI"
+                        }
+                    },
+                    "agreement": "5/5",
+                    "ai_combined": [
+                        0.1716,
+                        0.2404,
+                        0.588
+                    ],
+                    "p_adj": [
+                        0.178612,
+                        0.248045,
+                        0.573343
+                    ],
+                    "p_llm": [
+                        0.144808,
+                        0.210324,
+                        0.644868
+                    ],
+                    "p_shadow": [
+                        0.171572,
+                        0.240416,
+                        0.588012
+                    ],
+                    "protocol": "panel-v3-2026-11",
+                    "upset_watch": false
+                },
+                "slug": "eyupspor-vs-istanbul-basaksehir-2026-11-29"
+            },
+            "sha256": "f4a3d5a6e94ea7f48b9347607e8d2ff8a20c4386a158ae2922265ed3827c3923",
+            "commit": "pending",
+            "file": "https://thetouchlineatlas.com/ledger/sl-2627-0028-r1.json",
+            "status": "pending",
+            "result": null
+        },
+        {
+            "record": {
                 "away": "cardiff-city",
                 "batch_id": "2026-11-27T2206Z-model-predict",
                 "competition": "championship",
@@ -238,7 +2487,7 @@
                 "slug": "swansea-city-vs-cardiff-city-2026-11-29"
             },
             "sha256": "cc355848620cc0380d79f0fd071ab9d5722517f60ceb3a857c0422b024cba287",
-            "commit": "pending",
+            "commit": "ed9e10ad343754fd4fb7b803b835d882eda79e67",
             "file": "https://thetouchlineatlas.com/ledger/ch-2627-0060-r1.json",
             "status": "pending",
             "result": null
@@ -476,7 +2725,7 @@
                 "slug": "ado-den-haag-vs-fc-utrecht-2026-11-29"
             },
             "sha256": "813535bf509a02726c55146c66a945835730b9e6bc395773765ae44eaee1c375",
-            "commit": "pending",
+            "commit": "ed9e10ad343754fd4fb7b803b835d882eda79e67",
             "file": "https://thetouchlineatlas.com/ledger/ed-2627-0026-r1.json",
             "status": "pending",
             "result": null
@@ -714,7 +2963,7 @@
                 "slug": "everton-vs-liverpool-2026-11-29"
             },
             "sha256": "e365050bddd084f042ac88d0920d91fa2003cfcc313b97c5fefda1c3e99e048a",
-            "commit": "pending",
+            "commit": "ed9e10ad343754fd4fb7b803b835d882eda79e67",
             "file": "https://thetouchlineatlas.com/ledger/pl-2627-0111-r1.json",
             "status": "pending",
             "result": null
@@ -952,7 +3201,7 @@
                 "slug": "udinese-vs-fiorentina-2026-11-29"
             },
             "sha256": "fc3873b3add58693b7be4c104bfe2a66e400c043e23600c223896da5ece3794e",
-            "commit": "pending",
+            "commit": "ed9e10ad343754fd4fb7b803b835d882eda79e67",
             "file": "https://thetouchlineatlas.com/ledger/sa-2627-0032-r1.json",
             "status": "pending",
             "result": null
